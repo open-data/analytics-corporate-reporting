@@ -1,0 +1,117 @@
+country_region:
+  country:
+    Canada : Canada
+    United States : États-Unis
+    India : Inde
+    France : France
+    United Kingdom : Royaume Unis
+    China : Chine
+    Germany : Allemagne
+    Australia : Australie
+    Brazil : Brésil
+    Unknown : Inconnu
+    Russia : Russie
+    Pakistan : Pakistan
+    Algeria : Algérie
+    Spain : Espagne
+    Mexico : Mexique
+    Japan : Japon
+    Philippines : Philippines
+    South Korea : Corée du Sud
+    Italy : Italie
+    United Arab Emirates : Émirats Arabe Unis
+    Turkey : Turquie
+    Morocco : Maroc
+    Ukraine : Ukraine
+    Netherlands : Hollande
+    Saudi Arabia : Arabie Saoudite
+    Iran : Iran
+    Taiwan : Taiwan
+    Nigeria : Nigéria
+    Hong Kong : Hong Kong
+    Vietnam : Vietnam
+    Indonesia : Indonésie
+    Belgium : Belgique
+    Singapore : Singapour
+    Bangladesh : Bangladesh
+    Switzerland : Suisse
+    Malaysia : Malaysie
+    Egypt : Égypte
+    Colombia : Colombie
+    Tunisia : Tunisie
+    Thailand : Thaïlande
+    South Africa : Afrique du Sud
+    Poland : Pologne
+    Ireland : Irlande
+    Romania : Roumanie
+    Sweden : Suède
+    Kenya : Kenya
+    Israel : Israël
+    New Zealand : Nouvelle-Zélande
+    Argentina : Argentine
+    Greece : Grèce
+    Portugal : Portugal
+    Lebanon : Liban
+    Czechia : Tchétchénie
+    Côte d’Ivoire : Côte d’Ivoire
+    Denmark : Danemark
+    Austria : Autriche
+    Norway : Norvège
+    Cameroon : Cameroon
+    Finland : Finlande
+    Peru : Pérou
+    Qatar : Qatar
+    Chile : Chili
+    Hungary : Hongrie
+    Sri Lanka : Sri Lanka
+    Jordan : Jordanie
+    Bulgaria : Bulgarie
+    Kuwait : Koweit
+    Kazakhstan : Kazakhstan
+    Iraq : Iraq
+    Jamaica : Jamaïque
+    Serbia : Serbie
+    Senegal : Sénégal
+    Nepal : Népal
+    Venezuela : Vénézuela
+    Ghana : Ghana
+    Croatia : Croatie
+    Syria : Syrie
+    Slovakia : Slovaquie
+    Costa Rica : Costa Rica
+    Ecuador : Équateur
+    Dominican Republic : République Dominicaine
+    Sudan : Soudan
+    Belarus : Biélorussie
+    Ethiopia : Éthiopie
+    Oman : Oman
+    Haiti : Haïti
+    Moldova : Moldavie
+    Lithuania : Lithuanie
+    Trinidad & Tobago : Trinidad & Tobago
+    Tanzania : Tanzanie
+    Albania : Albanie
+    Mauritius : Maurice
+    Benin : Bénin
+    Congo - Kinshasa : Congo - Kinshasa
+    Luxembourg : Luxembourg
+    Madagascar : Madagascar
+    Togo : Togo
+    Uganda : Ouganda
+    Georgia : Géorgie
+    Slovenia : Slovénie
+
+  region:
+    Ontario : Ontario
+    Quebec : Québec
+    British Columbia : Colombie-Britannique
+    Alberta : Alberta
+    Nova Scotia : Nouvelle-Écosse
+    Manitoba : Manitoba
+    Saskatchewan : Saskatchewan
+    New Brunswick : Nouveau-Brunswick
+    Newfoundland and Labrador : Terre-Neuve-et-Labrador
+    Prince Edward Island : Île-du-Prince-Édouard
+    Northwest Territories : Territoires du Nord-Ouest
+    Yukon Territory : Yukon
+    Nunavut : Nunavut
