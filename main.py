@@ -79,26 +79,7 @@ def by_country(start,end,property_id="359129908", csv_file= None):
         
     )
     response = client.run_report(request) 
-    data, rows_retuned = parseReport(response, 'country', 'sessions')
-        # body={
-        #     'reportRequests': [
-        #         {
-        #           'viewId': VIEW_ID,
-        #           'dateRanges': [{'startDate': '2012-01-01', 'endDate': end}],
-        #               'metrics': [{'expression': 'ga:sessions'} ],
-        #           'dimensions':[{'name':'ga:country'}],
-
-        #           'orderBys':[
-        #             {'fieldName': 'ga:sessions',
-        #              'sortOrder': 'DESCENDING'
-        #             }],
-        #            'pageToken': '0',
-        #            'pageSize': '1000',
-        #         }]
-        #     }
-        # response = analytics.reports().batchGet(body=body
-        #     ).execute()
-    
+    data, rows_retuned = parseReport(response, 'country', 'sessions')            
     total = 0
     country_fr = [c for c in country_name.values()]
     country_en = [c for c in country_name.keys()]
@@ -115,13 +96,10 @@ def by_country(start,end,property_id="359129908", csv_file= None):
         row[1] = int(row[1])
 
     for c, count in data:
-        total += count
-        #print(count, total)
+        total += count        
     data = [ [country, int(count), "%.2f"%((count*100.0)/total) + '%' ] for [country, count] in data ]
-    df = pd.DataFrame(data,columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
     data.insert(0,['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
-    print(df.head())        
-    #write_csv(csv_file, data)
+    write_csv(csv_file, data)
 
 # Total visits and downloads within a given period 
 def total_usage( start, end, csv_file,property_id="359129908"):
@@ -218,4 +196,4 @@ def getRawReport(start, end, property_id="359129908"):
     print(df.head())    
 getRawReport("2023-04-01","today")
 total_usage("2023-04-01","today", csv_file='usage.csv')
-by_country( '2023-04-01','2023-04-30', csv_file= None)
+by_country( '2023-04-01','2023-04-30', csv_file= 'visits_by_Country.csv')
