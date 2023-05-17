@@ -4,6 +4,7 @@ import pandas as pd
 import codecs
 import unicodecsv
 import yaml
+import math
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
     DateRange,
@@ -115,10 +116,14 @@ def total_usage( start, end, csv_file,property_id="359129908"):
 
         
     )
-        response = client.run_report(request)
-        data, rows_retuned = parseReport(response, None, 'sessions')             
-        for [vcount] in data: 
-            total += int(vcount)
+        while True:
+            response = client.run_report(request)
+            data, rows_returned = parseReport(response, None, 'sessions')             
+            for [vcount] in data: 
+                    total += int(vcount)
+            if (rows_returned<=request.limit or (rows_returned - request.offset)<=request.limit):
+                break
+            request.offset += request.limit      
 
         request = RunReportRequest(
         property=f"properties/{property_id}",
@@ -147,16 +152,17 @@ def total_usage( start, end, csv_file,property_id="359129908"):
         #print(f"Visits:{total} and Downloads:  {downloads}")
         # Checking if the report is up to date and updating otherwise
         [year, month, _] = start.split('-')
-        data = read_csv(csv_file)
+        data = read_csv(csv_file)        
         if int(data[1][0]) == int(year) and int(data[1][1]) == int(month):
             print ('entry exists, no overwriting')
             return
         row = [year, month, total, downloads]
+        print(row)
         data[0] = ['year / année', 'month / mois', 'visits / visites', 'downloads / téléchargements']
         data.insert(1,row)
         write_csv(csv_file, data)
         
-        print(data)
+        
 
 def getRawReport(start, end, property_id="359129908"):
     """Runs a simple report on a Google Analytics 4 property."""
