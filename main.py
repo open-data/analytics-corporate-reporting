@@ -67,6 +67,7 @@ def by_country(start,end,property_id="359129908", csv_file= None):
     metrics=[Metric(name="sessions")],
     date_ranges=[DateRange(start_date= start, end_date=end)]
         , 
+    
     # dimension_filter  = FilterExpression(
     #     filter = Filter (
     #         field_name ='eventName',
