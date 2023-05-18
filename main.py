@@ -13,6 +13,9 @@ from google.analytics.data_v1beta.types import (
     Filter,
     FilterExpression,
     RunReportRequest,
+    OrderBy,
+    
+    
 )
 
 os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
@@ -67,7 +70,11 @@ def by_country(start,end,property_id="359129908", csv_file= None):
     metrics=[Metric(name="sessions")],
     date_ranges=[DateRange(start_date= start, end_date=end)]
         , 
-    
+     
+    order_bys =[OrderBy(
+        desc = True,
+        metric = OrderBy.MetricOrderBy(metric_name = "sessions")
+    )],   
     # dimension_filter  = FilterExpression(
     #     filter = Filter (
     #         field_name ='eventName',
@@ -142,9 +149,10 @@ def total_usage( start, end, csv_file,property_id="359129908"):
             )
 
         ),
+                
         limit = 100000,
         offset = 0,
-        
+       
     )
         response = client.run_report(request)
         data, rows_retuned = parseReport(response, None, 'eventCount')         
