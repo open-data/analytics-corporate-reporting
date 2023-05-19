@@ -14,6 +14,7 @@ from google.analytics.data_v1beta.types import (
     FilterExpression,
     RunReportRequest,
     OrderBy,
+    FilterExpressionList
     
     
 )
@@ -55,33 +56,75 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
                 if response.dimension_headers[i].name == dimension_name:          
                     dim.append(dimension_value.value)         
 
-        for i, metric_value in enumerate(row.metric_values):            
-            mtr.append(metric_value.value)
+        for i, metric_value in enumerate(row.metric_values): 
+            if response.metric_headers[i].name == metric_name:    
+                 mtr.append(metric_value.value)
         if dimension_name:                     
             data.append(dim + mtr)
         else:
-             data.append(mtr)
+             data.extend(mtr)
     rows_returned = response.row_count
     return data, rows_returned
-def by_country(start,end,property_id="359129908", csv_file= None):
+def by_region( end, property_id, csv_file=None):
+    request = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions= [Dimension(name="region")],
+        metrics=[Metric(name="sessions"), 
+                 Metric(name="eventValue")],
+        date_ranges=[DateRange(start_date= '2023-04-01', end_date=end)]
+         , 
+        dimension_filter  = FilterExpression(
+            filter = Filter (
+                field_name ='country',
+                string_filter = Filter.StringFilter(match_type="BEGINS_WITH", 
+                                                        value = 'canada', 
+                                                        case_sensitive=False)
+            )
+
+        ),
+        order_bys =[OrderBy(
+        desc = True,
+        metric = OrderBy.MetricOrderBy(metric_name = "sessions")
+        )],        
+        limit = 100000,
+        offset = 0,
+       
+    )
+    response = client.run_report(request)
+    data, rows_retuned = parseReport(response, 'region', 'sessions')  
+
+    total =  0 # should initialized with records upto 2023-04-01
+    data = [ [country, int(count)] for [country, count] in data ]
+    for c, count in data:
+        total += count
+
+    data = [ [country if country !='(not set)' else 'unknown / Inconnu', int(count), "%.2f"%((count*100.0)/total) + '%' ] for [country, count] in data ]
+    region_fr = [r for r in region_name.values()]
+    region_en = [r for r in region_name.keys()]
+    assert( len(region_en)==len(region_fr))
+    region_dict = { region_en[i]:region_fr[i] for i in range(len(region_en)) }
+    for row in data:
+        r = row[0]
+        if r == '(not set)':
+            row[0] = 'unknown / Inconnu'
+        else:
+            r_fr = region_dict.get(r, r)
+            row[0] = r + u' | ' + r_fr
+    df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
+    print (df.head())
+    data.insert(0,['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
+    write_csv(csv_file, data)
+def by_country(start,end,property_id, csv_file= None):
     request = RunReportRequest(
     property=f"properties/{property_id}",
     dimensions= [Dimension(name="country")],
     metrics=[Metric(name="sessions")],
     date_ranges=[DateRange(start_date= start, end_date=end)]
-        , 
-     
+        ,      
     order_bys =[OrderBy(
         desc = True,
         metric = OrderBy.MetricOrderBy(metric_name = "sessions")
     )],   
-    # dimension_filter  = FilterExpression(
-    #     filter = Filter (
-    #         field_name ='eventName',
-    #         string_filter = Filter.StringFilter(value = 'file_download')
-    #     )
-
-    # ),
     limit = 100000,
     offset = 0,
 
@@ -111,24 +154,27 @@ def by_country(start,end,property_id="359129908", csv_file= None):
     write_csv(csv_file, data)
 
 # Total visits and downloads within a given period 
-def total_usage( start, end, csv_file,property_id="359129908"):
+def monthly_usage( start, end, csv_file,property_id):
         total, downloads = 0, 0        
         request = RunReportRequest(
         property=f"properties/{property_id}",
         dimensions= [ Dimension(name="PagePath")],
-        metrics=[Metric(name="sessions")],
+        metrics=[Metric(name="sessions"),
+                 Metric(name="screenPageViews")],
         date_ranges=[DateRange(start_date= start, end_date=end)]
         ,
+        order_bys =[OrderBy(
+        desc = True,
+        metric = OrderBy.MetricOrderBy(metric_name = "screenPageViews")
+        )],   
         limit = 100000,
-        offset = 0,
-
-        
+        offset = 0,        
     )
         while True:
             response = client.run_report(request)
             data, rows_returned = parseReport(response, None, 'sessions')             
-            for [vcount] in data: 
-                    total += int(vcount)
+            for eCount in data: 
+                    total += int(eCount)
             if (rows_returned<=request.limit or (rows_returned - request.offset)<=request.limit):
                 break
             request.offset += request.limit      
@@ -156,7 +202,7 @@ def total_usage( start, end, csv_file,property_id="359129908"):
     )
         response = client.run_report(request)
         data, rows_retuned = parseReport(response, None, 'eventCount')         
-        for eCount , eVal in data:
+        for eCount in data:
             downloads += int(eCount)
         #print(f"Visits:{total} and Downloads:  {downloads}")
         # Checking if the report is up to date and updating otherwise
@@ -171,9 +217,54 @@ def total_usage( start, end, csv_file,property_id="359129908"):
         data.insert(1,row)
         write_csv(csv_file, data)
         
-        
+def getRawVisitReport( start, end, property_id):
+        """Runs a simple report on a Google Analytics 4 property."""
+        # TODO(developer): Uncomment this variable and replace with your
+        #  Google Analytics 4 property ID before running the sample.
+        property_id = property_id
+        # Using a default constructor instructs the client to use the credentials
+        # specified in GOOGLE_APPLICATION_CREDENTIALS environment variable.
+        #client = BetaAnalyticsDataClient()
+        request = RunReportRequest(
+        property=f"properties/{property_id}",
+        dimensions= [Dimension(name="pagePath")],
+        metrics=[Metric(name="sessions"), 
+                Metric(name="screenPageViews")],
+        date_ranges=[DateRange(start_date= start, end_date=end)]
+        , 
+        dimension_filter  = FilterExpression(
+            or_group= FilterExpressionList(
+                expressions=[
+                    FilterExpression(            
+                filter = Filter (
+                    field_name ='pagePath',
+                    string_filter = Filter.StringFilter(match_type="BEGINS_WITH", 
+                                                        value = '/data/en/dataset/', 
+                                                        case_sensitive=True)
+                )
+                    ),
+                FilterExpression(            
+                filter = Filter (
+                    field_name ='pagePath',
+                    string_filter = Filter.StringFilter(match_type="BEGINS_WITH", 
+                                                        value = '/data/fr/dataset/', 
+                                                        case_sensitive=True)
+                )
 
-def getRawReport(start, end, property_id="359129908"):
+        )
+                ]
+            )
+        ),
+        order_bys =[OrderBy(
+        desc = True,
+        metric = OrderBy.MetricOrderBy(metric_name = "screenPageViews")
+        )],   
+        limit = 100000,
+        offset = 0,        
+        )
+        return client.run_report(request)   
+
+def getRawReport(start, end, property_id):
     """Runs a simple report on a Google Analytics 4 property."""
     # TODO(developer): Uncomment this variable and replace with your
     #  Google Analytics 4 property ID before running the sample.
@@ -182,7 +273,8 @@ def getRawReport(start, end, property_id="359129908"):
 
     # Using a default constructor instructs the client to use the credentials
     # specified in GOOGLE_APPLICATION_CREDENTIALS environment variable.
-    client = BetaAnalyticsDataClient()
+    #client = BetaAnalyticsDataClient()
+
 
     request = RunReportRequest(
         property=f"properties/{property_id}",
@@ -200,15 +292,24 @@ def getRawReport(start, end, property_id="359129908"):
             )
 
         ),
+        order_bys =[OrderBy(
+        desc = True,
+        metric = OrderBy.MetricOrderBy(metric_name = "eventCount")
+    )],   
         limit = 100000,
         offset = 0,
-
-        
+       
     )
-    response = client.run_report(request)   
-    data, rows_retuned = parseReport(response, 'eventName', 'sessions') 
-    df = pd.DataFrame(data, columns=['eventName','eventValue', 'eventCount'])
-    print(df.head())    
-getRawReport("2023-04-01","today")
-total_usage("2023-04-01","today", csv_file='usage.csv')
-by_country( '2023-04-01','2023-04-30', csv_file= 'visits_by_Country.csv')
+    return client.run_report(request)   
+def main ():
+    R = "363143703"
+    S = "359129908"
+    response = getRawReport("2023-04-01","today", R)
+    data, rows_retuned = parseReport(response, 'eventName', 'eventCount') 
+    df = pd.DataFrame(data, columns=['eventName','eventCount'])
+    print(df.head(20))    
+    monthly_usage("2023-04-01","2023-04-30", 'usage.csv',R)
+    by_country( '2023-04-01','2023-04-30',R, 'visits_by_Country.csv')
+    by_region( "today", R, csv_file='visits_by_region.csv')
+if __name__ == '__main__':
+  main()
