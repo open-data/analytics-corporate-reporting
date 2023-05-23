@@ -245,8 +245,7 @@ def getRawVisitReport( ga, start, end, property_id):
         #client = BetaAnalyticsDataClient()
         request = RunReportRequest(
         property=f"properties/{property_id}",
-        dimensions= [Dimension(name="pagePath"), 
-                     Dimension(name="eventName")],
+        dimensions= [Dimension(name="pagePath")],
         metrics=[Metric(name="sessions"), 
                 Metric(name="screenPageViews")],
         date_ranges=[DateRange(start_date= start, end_date=end)]
@@ -324,17 +323,17 @@ def main ():
     client = initialize_analyticsreporting(client_secrets_path)
     R = "363143703"
     S = "359129908"
-    response = getRawReport(client, "2023-04-01","today", R)
-    data, rows_retuned = parseReport(response, 'eventName', 'eventCount') 
-    df = pd.DataFrame(data, columns=['eventName','eventCount'])
-    print(df.head(20))    
+    # response = getRawReport(client, "2023-04-01","today", R)
+    # data, rows_retuned = parseReport(response, 'eventName', 'eventCount') 
+    # df = pd.DataFrame(data, columns=['eventName','eventCount'])
+    #print(df.head(20))    
     # monthly_usage(client, "2023-04-01","2023-04-30", 'usage.csv',R)
     # by_country(client, '2023-04-01','2023-04-30',R, 'visits_by_Country.csv')
     # by_region( client, "today", R, csv_file='visits_by_region.csv')
-    #test = getRawVisitReport( client, '2023-04-01','today',R)
-    # d, rt = parseReport(test, 'pagePath', 'screenPageViews')
-    # df1 = pd.DataFrame(d, columns=['pagePath','screenPageViews'])
-    # df1.to_csv("test.csv",index=False)
-    #print(df1.head())
+    test = getRawVisitReport( client, '2023-04-01','today',R)
+    d, rt = parseReport(test, 'pagePath', 'screenPageViews')
+    df1 = pd.DataFrame(d, columns=['pagePath','screenPageViews'])
+    df1.to_csv("test.csv",index=False)
+    print(df1.head())
 if __name__ == '__main__':
   main()
