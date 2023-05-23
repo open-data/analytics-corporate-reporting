@@ -19,11 +19,29 @@ from google.analytics.data_v1beta.types import (
     
 )
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = "credentials.json"
-client = BetaAnalyticsDataClient()
+
+
 country = yaml.full_load(open('reg.yml', 'r', encoding='utf-8'))
 country_name = country.get('country_region').get('country')
 region_name = country.get('country_region').get('region')
+client_secrets_path = "credentials.json"
+def initialize_analyticsreporting(client_secrets_path):
+ 
+  # Parse command-line arguments.
+#  parser = argparse.ArgumentParser(
+#      formatter_class=argparse.RawDescriptionHelpFormatter,
+#      parents=[tools.argparser])
+  # flags = parser.parse_args(['--noauth_local_webserver'])
+#  flags = parser.parse_args([])
+
+  # Set up a Flow object to be used if we need to authenticate.
+  os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = client_secrets_path
+
+  # Build the service object.
+  client = BetaAnalyticsDataClient()
+#http=http, discoveryServiceUrl=DISCOVERY_URI)
+
+  return client
 def write_csv(filename, rows, header=None):
     outf=open(filename, 'wb')
     outf.write(codecs.BOM_UTF8)
@@ -65,7 +83,7 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
              data.extend(mtr)
     rows_returned = response.row_count
     return data, rows_returned
-def by_region( end, property_id, csv_file=None):
+def by_region( ga, end, property_id, csv_file=None):
     request = RunReportRequest(
         property=f"properties/{property_id}",
         dimensions= [Dimension(name="region")],
@@ -90,7 +108,7 @@ def by_region( end, property_id, csv_file=None):
         offset = 0,
        
     )
-    response = client.run_report(request)
+    response = ga.run_report(request)
     data, rows_retuned = parseReport(response, 'region', 'sessions')  
 
     total =  0 # should initialized with records upto 2023-04-01
@@ -114,7 +132,7 @@ def by_region( end, property_id, csv_file=None):
     print (df.head())
     data.insert(0,['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
     write_csv(csv_file, data)
-def by_country(start,end,property_id, csv_file= None):
+def by_country(ga, start,end,property_id, csv_file= None):
     request = RunReportRequest(
     property=f"properties/{property_id}",
     dimensions= [Dimension(name="country")],
@@ -130,7 +148,7 @@ def by_country(start,end,property_id, csv_file= None):
 
         
     )
-    response = client.run_report(request) 
+    response = ga.run_report(request) 
     data, rows_retuned = parseReport(response, 'country', 'sessions')            
     total = 0
     country_fr = [c for c in country_name.values()]
@@ -154,7 +172,7 @@ def by_country(start,end,property_id, csv_file= None):
     write_csv(csv_file, data)
 
 # Total visits and downloads within a given period 
-def monthly_usage( start, end, csv_file,property_id):
+def monthly_usage(ga, start, end, csv_file,property_id):
         total, downloads = 0, 0        
         request = RunReportRequest(
         property=f"properties/{property_id}",
@@ -171,7 +189,7 @@ def monthly_usage( start, end, csv_file,property_id):
         offset = 0,        
     )
         while True:
-            response = client.run_report(request)
+            response = ga.run_report(request)
             data, rows_returned = parseReport(response, None, 'sessions')             
             for eCount in data: 
                     total += int(eCount)
@@ -200,7 +218,7 @@ def monthly_usage( start, end, csv_file,property_id):
         offset = 0,
        
     )
-        response = client.run_report(request)
+        response = ga.run_report(request)
         data, rows_retuned = parseReport(response, None, 'eventCount')         
         for eCount in data:
             downloads += int(eCount)
@@ -217,7 +235,7 @@ def monthly_usage( start, end, csv_file,property_id):
         data.insert(1,row)
         write_csv(csv_file, data)
         
-def getRawVisitReport( start, end, property_id):
+def getRawVisitReport( ga, start, end, property_id):
         """Runs a simple report on a Google Analytics 4 property."""
         # TODO(developer): Uncomment this variable and replace with your
         #  Google Analytics 4 property ID before running the sample.
@@ -227,7 +245,8 @@ def getRawVisitReport( start, end, property_id):
         #client = BetaAnalyticsDataClient()
         request = RunReportRequest(
         property=f"properties/{property_id}",
-        dimensions= [Dimension(name="pagePath")],
+        dimensions= [Dimension(name="pagePath"), 
+                     Dimension(name="eventName")],
         metrics=[Metric(name="sessions"), 
                 Metric(name="screenPageViews")],
         date_ranges=[DateRange(start_date= start, end_date=end)]
@@ -262,9 +281,9 @@ def getRawVisitReport( start, end, property_id):
         limit = 100000,
         offset = 0,        
         )
-        return client.run_report(request)   
+        return ga.run_report(request)   
 
-def getRawReport(start, end, property_id):
+def getRawReport(ga, start, end, property_id):
     """Runs a simple report on a Google Analytics 4 property."""
     # TODO(developer): Uncomment this variable and replace with your
     #  Google Analytics 4 property ID before running the sample.
@@ -288,7 +307,7 @@ def getRawReport(start, end, property_id):
         dimension_filter  = FilterExpression(
             filter = Filter (
                 field_name ='eventName',
-                string_filter = Filter.StringFilter(value = 'file_download')
+                string_filter = Filter.StringFilter(value = 'page_view')
             )
 
         ),
@@ -300,16 +319,22 @@ def getRawReport(start, end, property_id):
         offset = 0,
        
     )
-    return client.run_report(request)   
+    return ga.run_report(request)   
 def main ():
+    client = initialize_analyticsreporting(client_secrets_path)
     R = "363143703"
     S = "359129908"
-    response = getRawReport("2023-04-01","today", R)
+    response = getRawReport(client, "2023-04-01","today", R)
     data, rows_retuned = parseReport(response, 'eventName', 'eventCount') 
     df = pd.DataFrame(data, columns=['eventName','eventCount'])
     print(df.head(20))    
-    monthly_usage("2023-04-01","2023-04-30", 'usage.csv',R)
-    by_country( '2023-04-01','2023-04-30',R, 'visits_by_Country.csv')
-    by_region( "today", R, csv_file='visits_by_region.csv')
+    # monthly_usage(client, "2023-04-01","2023-04-30", 'usage.csv',R)
+    # by_country(client, '2023-04-01','2023-04-30',R, 'visits_by_Country.csv')
+    # by_region( client, "today", R, csv_file='visits_by_region.csv')
+    #test = getRawVisitReport( client, '2023-04-01','today',R)
+    # d, rt = parseReport(test, 'pagePath', 'screenPageViews')
+    # df1 = pd.DataFrame(d, columns=['pagePath','screenPageViews'])
+    # df1.to_csv("test.csv",index=False)
+    #print(df1.head())
 if __name__ == '__main__':
   main()
