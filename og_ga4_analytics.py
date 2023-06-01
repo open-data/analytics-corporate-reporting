@@ -15,10 +15,8 @@ import requests
 import unicodecsv
 import codecs
 from collections import defaultdict
-
 import ckanapi
 from ckanapi.errors import CKANAPIError
-
 import configparser
 import psycopg2
 import traceback
@@ -35,9 +33,7 @@ from google.analytics.data_v1beta.types import (
     FilterExpression,
     RunReportRequest,
     OrderBy,
-    FilterExpressionList
-    
-    
+    FilterExpressionList     
 )
 
 def cleanup_illegal_characters(rows):
@@ -214,7 +210,6 @@ class DatasetDownload():
         self.orgs = {}
         self.org_name2id = {}
         self.org_id2name = {}
-
         for rec in orgs:
             title = rec['title'].split('|')
             self.orgs[rec['id']] = title
@@ -486,8 +481,7 @@ class DatasetDownload():
         metric = OrderBy.MetricOrderBy(metric_name = "eventCount")
         )],   
         limit = 100000,
-        offset = offset,
-           
+        offset = offset,           
         )
         return self.ga.run_report(request)  
     def parseReport(self, response):
@@ -640,9 +634,7 @@ class DatasetDownload():
             metric = OrderBy.MetricOrderBy(metric_name = "sessions")
         )],   
         limit = 100000,
-        offset = 0,
-
-            
+        offset = 0,            
         )
         response = self.ga.run_report(request) 
         data, rowCount = parseReport(response, 'country', 'sessions')            
@@ -851,7 +843,6 @@ class DatasetDownload():
         country_en = [c.strip() for c in country_en.split('\n')]
         assert( len(country_en)==len(country_fr))
         country_dict = { country_en[i]:country_fr[i] for i in range(len(country_en)) }
-
         for row in data:
             c = row[0]
             if c == '(not set)':
@@ -933,6 +924,7 @@ class DatasetDownload():
         self.file = ''.join([ga_static_dir,'/od-do-canada.',y,m,d,'.jl.gz'])
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
+        
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['Department or Agency', 'Ministère ou organisme',
@@ -960,11 +952,9 @@ class DatasetDownload():
                 org_stats[rec['owner_org']] += 1
         org_stats = dict(org_stats)
         self.by_org(org_stats, csv_file)
-
         ds = read_csv(csv_month_file)
         header = ds[0]
         total = ds[-1]
-
         ds = ds[1:-1]
         en_months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
         fr_months = ['janv.','févr.','mars','avril','mai','juin','juil.','août','sept.','oct.','nov.','déc.']
@@ -1010,7 +1000,6 @@ class DatasetDownload():
                 'ceaa-acee': 'iaac-aeic',
                 'neb-one': 'cer-rec',
             }.get(name, name)
-
             org_id = self.org_name2id[name]
             exists[org_id] = True
             titles =  self.orgs.get(org_id, ['', ''])
@@ -1020,12 +1009,10 @@ class DatasetDownload():
             link = link_en + ' | ' + link_fr
             row[0] = title
             row[1] = link
-
             count = org_stats.get(org_id, 0)
             var = count - int(row[-1])
             row[-1] = count
             row.insert(-1, var)
-
             pr, c = int(row[2]), int(row[3])
             del row[2]
             row[2] = pr + c
@@ -1046,14 +1033,12 @@ class DatasetDownload():
             row[-2] = row[-1] = count
             ds.append(row)
         ds.sort(key=lambda x:x[0])
-
         var = total_num - int(total[-1])
         total[-1] = total_num
         total.insert(-1, var)
         pr, c = int(total[2]), int(total[3].replace(',', ''))
         del total[2]
         total[2] = pr + c
-
         ds.append(total)
         write_csv(csv_month_file, ds, header)
 
@@ -1067,7 +1052,6 @@ def report(client_secret_path, property_id, og_config_file, start, end, va):
           return ds.getVisitStats(og_type)
       elif og_type == 'download':
           return ds.getStats(og_type)
-
       ga_tmp_dir = os.environ['GA_TMP_DIR']
       ds.getStats(og_type); time.sleep(2)
       ds.monthly_usage(os.path.join(ga_tmp_dir, 'od_ga_month.csv')); time.sleep(2)
