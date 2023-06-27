@@ -1,0 +1,5 @@
+https://open.canada.ca/static/openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv
+https://open.canada.ca/static/openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv
+https://open.canada.ca/static/openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv
+https://open.canada.ca/static/openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv
+https://open.canada.ca/static/openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv

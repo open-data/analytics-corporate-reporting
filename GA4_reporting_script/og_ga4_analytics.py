@@ -23,6 +23,7 @@ import traceback
 import openpyxl
 import heapq
 import re
+import yaml
 from openpyxl.utils.exceptions import IllegalCharacterError
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
@@ -35,6 +36,8 @@ from google.analytics.data_v1beta.types import (
     OrderBy,
     FilterExpressionList
 )
+import down_files, rename_files, archive
+
 
 
 def cleanup_illegal_characters(rows):
@@ -58,11 +61,11 @@ def write_xls(filename, sheets):
 
         cols = [col for col in ws.columns]
         widths = sheet.get('col_width', {})
-        for k, v in widths.iteritems():
+        for k, v in widths.items():
             ws.column_dimensions[cols[k][0].column_letter].width = v
     try:
-        sheet1 = book.get_sheet_by_name("Sheet")
-        book.remove_sheet(sheet1)
+        sheet1 = book["Sheet"]
+        book.remove(sheet1)
     except:
         pass
     book.save(filename)
@@ -104,19 +107,7 @@ def simplify_lang(titles):
 
 def initialize_analyticsreporting(client_secrets_path):
 
-    # Parse command-line arguments.
-    #  parser = argparse.ArgumentParser(
-    #      formatter_class=argparse.RawDescriptionHelpFormatter,
-    #      parents=[tools.argparser])
-    # flags = parser.parse_args(['--noauth_local_webserver'])
-    #  flags = parser.parse_args([])
-
-    # Set up a Flow object to be used if we need to authenticate.
-    # os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = client_secrets_path
-
-    # Build the service object.
-    # client = BetaAnalyticsDataClient()
-    # http=http, discoveryServiceUrl=DISCOVERY_URI)
+    
     client = BetaAnalyticsDataClient.from_service_account_file(
         client_secrets_path)
     return client
@@ -145,49 +136,62 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
 
 
 class DatasetDownload():
-    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file):
-        ga_tmp_dir = os.environ['GA_TMP_DIR']
-        ga_rmote_ckan = os.environ['GA_REMOTE_CKAN']
+    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file = None):
+       # self.ga_tmp_dir = os.environ['GA_TMP_DIR']
+        ga_rmote_ckan = "https://open.canada.ca/data"       
         self.ga = ga
         self.property_id = property_id
-        self.file = os.path.join(ga_tmp_dir, 'od-do-canada.jl.gz')
+        #self.file = os.path.join(self.ga_tmp_dir, 'od-do-canada.jl.gz')
         self.site = ckanapi.RemoteCKAN(ga_rmote_ckan)
         self.start_date = start_date
         self.end_date = end_date
-        self.og_type = og_type
-        self.read_orgs()
-        user, passwd, host, db = self.read_conf(conf_file)
-        db = db.split('?')[0]
-        try:
-            self.conn = psycopg2.connect(
-                database=db, user=user,
-                password=passwd, host=host, port="5432")
-        except:
-            import traceback
-            traceback.print_exce()
-            print("Opened database failed")
-            sys.exit(-1)
+        self.og_type = og_type   
+        self.read_orgs()     
+        self.country = yaml.full_load(open('reg.yml', 'r', encoding='utf-8'))
+        
+    def deleted_dataset(self, old_cat ):    
+    
+        deleted_data = []
+        recent_data= []
+        
+        for records in self.download():
 
-    def read_conf(self, filename):
-        config = configparser.ConfigParser()
-        config.read(filename)
-        psql_conn_str = config.get('app:main', 'sqlalchemy.url')
-        import re
-        r = re.match(r'^postgresql://(.*):(.*)@(.*)/(.*)', psql_conn_str)
-        return (r.group(1), r.group(2), r.group(3), r.group(4))
+            for record in records:     
 
-    def get_deleted_dataset(self, id):
-        cur = self.conn.cursor()
-        cur.execute('''SELECT a.id, c.value, a.owner_org from package a,
-                    package_extra c
-                    where a.state='deleted' 
-                        and a.id=c.package_id and c.key='title_translated'; ''')
-        rows = cur.fetchall()
-        for row in rows[:1]:
-            id, title, org = row[0], row[1], row[2]
-            return (title, org)
+                try:    
+                                            
+                    recent_data.append(record['id'])
+                
+                except IndexError as e:
+                    print(e)           
+                    continue    
+        #old_id = [i[0] for i in old_dataset]
+        for records in self.download(old_cat):
 
-        return (None, None)
+            for record in records:     
+
+                try:    
+                    if  record['id'] not in recent_data :                          
+                        deleted_data.append([record['id'],record['title_translated'], record['owner_org']])                                
+
+                except IndexError as e:
+                    print(e)           
+                    continue    
+    
+        return deleted_data 
+        
+    def get_deleted_dataset(self, del_id ): 
+       #print(del_id,"checking")   
+        #id, title, org = zip(*self.deleted_data)
+       for  id, title, org in self.deleted_data:
+            
+            if  del_id == id :
+                print("found", id)  
+                print(title,org)                     
+                
+                return (title, org)  
+       return (None, None)              
+     
 
     def __delete__(self):
         if not self.file:
@@ -241,9 +245,10 @@ class DatasetDownload():
                 self.ds[rec['id']] = {'title_translated': rec['title_translated'],
                                       'owner_org': rec['owner_org']}
                 self.org_count[rec['owner_org']] += 1
+                
 
     def getVisitStats(self, og_type):
-        self.set_catalogue_file(self.end_date)
+        self.set_catalogue_file()
         self.og_type = og_type
         offset = 0
         limit = 100000
@@ -251,7 +256,7 @@ class DatasetDownload():
         while True:
             response = self.getRawVisitReport(offset)
             data, rowCount = parseReport(
-                response, 'pagePath', 'screenPageViews')
+                response, 'pagePath', 'screenPageViews')           
             for [url, count] in data:
                 id = url.split('/')[-1]
                 if id[:8] == 'dataset?':
@@ -267,13 +272,13 @@ class DatasetDownload():
             else:
                 offset += limit
                 print(offset)
-        stats = dict(stats)
+        stats = dict(stats)        
         self.read_portal(stats)
 
         self.dump(stats, True)
 
     def getStats(self, og_type):
-        self.set_catalogue_file(self.end_date)
+        self.set_catalogue_file()
         self.og_type = og_type
 
         offset = 0
@@ -281,7 +286,8 @@ class DatasetDownload():
         stats = defaultdict(int)
         while True:
             response = self.getRawReport(offset)
-            data, rowCount = self.parseReport(response)
+            data, rowCount = parseReport(response)
+            #print(data)
             for [url, count] in data:
                 id = url.split('/dataset/')[-1]
                 id = id.split('/')[0]
@@ -296,7 +302,7 @@ class DatasetDownload():
                 print(offset)
         stats = dict(stats)
         self.read_portal(stats)
-
+        
         if self.og_type == 'info':
             self.dump_info(stats)
         else:
@@ -304,7 +310,7 @@ class DatasetDownload():
 
     def dump_info(self, data):
         sheets = []
-        top100 = [[id, c] for id, c in data.iteritems()]
+        top100 = [[id, c] for id, c in data.items()]
         top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
         rows = [['ID / Identificateur',
                  'Title English / Titre en anglais',
@@ -317,7 +323,7 @@ class DatasetDownload():
             if len(rows) >= 21:
                 break
             rec = self.ds.get(rec_id, None)
-            if not rec:
+            if not rec:                
                 # deleted, skip it
                 continue
             else:
@@ -337,25 +343,31 @@ class DatasetDownload():
                   'col_width': {0: 40, 1: 50, 2: 50, 3: 50, 4: 50, 5: 40}
                   }
         sheets.insert(0, sheet1)
-        ga_tmp_dir = os.environ['GA_TMP_DIR']
-        write_xls(os.path.join(ga_tmp_dir, 'downloads_info.xls'), sheets)
+        #ga_tmp_dir = os.environ['GA_TMP_DIR']
+        write_xls(os.path.join("GA_TMP_DIR", 'downloads_info.xlsx'), sheets)
+        #write_xls('downloads_info.xls', sheets)
 
     def dump(self, data, ignore_deleted=False):
         # further reduce to departments
         ds = defaultdict(int)
         sheets = defaultdict(list)
         deleted_ds = {}
-        for id, c in data.iteritems():
+        self.deleted_data = self.deleted_dataset(self.old_file ) 
+        for id, c in data.items():
             rec = self.ds.get(id, None)
             if (not rec) and ignore_deleted:
                 deleted_ds[id] = True
                 continue
             if not rec:
+                
                 print(id, ' deleted')
                 rec_title, org_id = self.get_deleted_dataset(id)
-                deleted_ds[id] = {'title_translated': rec_title,
-                                  'org_id': org_id}
-                print(rec_title, org_id)
+                if (not rec_title ) or (not org_id):
+                   continue
+                else:
+                    deleted_ds[id] = {'title_translated': rec_title,
+                                    'org_id': org_id}
+                            #print(rec_title, org_id)
             else:
                 org_id = rec['owner_org']
             ds[org_id] += c
@@ -363,12 +375,12 @@ class DatasetDownload():
             sheet = sheets[org_id]
             sheet.append(id)
         if ignore_deleted:
-            for k, v in deleted_ds.iteritems():
+            for k, v in deleted_ds.items():
                 data.pop(k)
             deleted_ds = {}
 
         rows = []
-        for k, v in ds.iteritems():
+        for k, v in ds.items():
             title = self.orgs.get(k, ['', ''])
             if len(title) == 1:
                 title.append(title[0])
@@ -386,7 +398,7 @@ class DatasetDownload():
     def saveXls(self, org_recs, data, org_stats, deleted_ds, isVisit=False):
         sheets = []
         rows = []
-        for k, [name, title] in self.org_id2name.iteritems():
+        for k, [name, title] in self.org_id2name.items():
             count = org_stats.get(k, 0)
             if count == 0:
                 continue
@@ -406,7 +418,7 @@ class DatasetDownload():
                   }
 
         # get top100
-        top100 = [[id, c] for id, c in data.iteritems()]
+        top100 = [[id, c] for id, c in data.items()]
         top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
         rows = [['ID / Identificateur',
                  'Title English / Titre en anglais',
@@ -418,12 +430,19 @@ class DatasetDownload():
             rows[0][5] = "Number of visits / Nombre de visites"
         for rec_id, count in top100:
             rec = self.ds.get(rec_id, None)
+            
             if not rec:
-                rec_title = deleted_ds[rec_id]['title_translated']
-                rec_title = simplify_lang(json.loads(rec_title))
-                org_id = deleted_ds[rec_id]['org_id']
-            else:
+                continue
+                print(deleted_ds.keys())
+                if rec_id in deleted_ds.keys():
+                    rec_title = deleted_ds[rec_id]['title_translated']                    
+                    rec_title = simplify_lang(rec_title)                                     
+                    org_id = deleted_ds[rec_id]['org_id']
+                else:
+                    continue
+            else:                
                 rec_title = simplify_lang(rec['title_translated'])
+               
                 org_id = rec['owner_org']
             [_, org_title] = self.org_id2name.get(org_id)
             org_title = org_title.split('|')
@@ -436,17 +455,18 @@ class DatasetDownload():
                   # col:width
                   'col_width': {0: 40, 1: 50, 2: 50, 3: 50, 4: 50, 5: 40}
                   }
-        ga_tmp_dir = os.environ['GA_TMP_DIR']
-        write_csv(os.path.join(ga_tmp_dir, "od_ga_top100.csv"), rows)
+        #ga_tmp_dir = os.environ['GA_TMP_DIR']
+        write_csv(os.path.join("GA_TMP_DIR", "od_ga_top100.csv"), rows)
+        #write_csv("od_ga_top100.csv", rows)
 
-        for org_id, recs in org_recs.iteritems():
+        for org_id, recs in org_recs.items():
             rows = []
             title = self.org_id2name.get(org_id, ['unknown'])[0]
             for rec_id in recs:
                 rec = self.ds.get(rec_id, None)
                 if not rec:
-                    rec_title = deleted_ds[rec_id]['title_translated']
-                    rec_title = simplify_lang(json.loads(rec_title))
+                    rec_title = deleted_ds[rec_id]['title_translated']                 
+                    rec_title = simplify_lang(rec_title)                    
                 else:
                     rec_title = simplify_lang(rec['title_translated'])
                 count = data.get(rec_id)
@@ -468,7 +488,8 @@ class DatasetDownload():
         sheets.sort(key=lambda x: x['name'])
         sheets.insert(0, sheet2)
         sheets.insert(0, sheet1)
-        write_xls(os.path.join(ga_tmp_dir, 'od_ga_downloads.xls'), sheets)
+        write_xls(os.path.join("GA_TMP_DIR", 'od_ga_downloads.xlsx'), sheets)
+        #write_xls('od_ga_downloads.xls', sheets)
 
     def getRawReport(self, offset):
         request = RunReportRequest(
@@ -491,13 +512,13 @@ class DatasetDownload():
                 desc=True,
                 metric=OrderBy.MetricOrderBy(metric_name="eventCount")
             )],
-            limit=100000,
+            limit=1000,
             offset=offset,
         )
         return self.ga.run_report(request)
 
-    def parseReport(self, response):
-        return parseReport(response, 'ga:pagePath', 'ga:totalEvents')
+    """ def parseReport(self, response):
+        return parseReport(response, 'ga:pagePath', 'ga:totalEvents') """
 
     def getRawVisitReport(self, offset):
         request = RunReportRequest(
@@ -539,37 +560,58 @@ class DatasetDownload():
         )
         return self.ga.run_report(request)
 
-    def download(self):
-        if not self.file:
-            # dataset http://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7
-            url = 'http://open.canada.ca/static/od-do-canada.jl.gz'
-            r = requests.get(url, stream=True)
-
-            f = tempfile.NamedTemporaryFile(delete=False)
-            for chunk in r.iter_content(1024 * 64):
-                f.write(chunk)
-            f.close()
-            self.download_file = f.name
-
+    def download (self, old_catalogue = None):
         records = []
-        fname = self.file or f.name
-        try:
-            with gzip.open(fname, 'rb') as fd:
-                for line in fd:
-                    records.append(json.loads(line.decode('utf-8')))
-                    if len(records) >= 500:
-                        yield (records)
-                        records = []
-            if len(records) > 0:
-                yield (records)
-                records = []
-        except GeneratorExit:
-            pass
-        except:
-            import traceback
-            traceback.print_exc()
-            print('error reading downloaded file')
-            sys.exit(0)
+        if old_catalogue:
+            try:
+                with gzip.open(old_catalogue, 'rb') as fd:
+                    for line in fd:
+                        records.append(json.loads(line.decode('utf-8')))
+                        if len(records) >= 500:
+                            yield (records)
+                            records = []
+                if len(records) > 0:
+                    yield (records)
+                    records = []
+            except GeneratorExit:
+                pass
+            except:
+                import traceback
+                traceback.print_exc()
+                print('error reading downloaded file')
+                sys.exit(0)
+        else:        
+        
+            if not self.file:
+                print("downloading new catalogue")
+                # dataset http://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7
+                url = 'http://open.canada.ca/static/od-do-canada.jl.gz'
+                r = requests.get(url, stream=True)                
+                f = tempfile.NamedTemporaryFile(delete=False)
+                for chunk in r.iter_content(1024 * 64):
+                    f.write(chunk)
+                f.close()
+                self.download_file = f.name
+
+            
+            fname = self.file or f.name
+            try:
+                with gzip.open(fname, 'rb') as fd:
+                    for line in fd:
+                        records.append(json.loads(line.decode('utf-8')))
+                        if len(records) >= 500:
+                            yield (records)
+                            records = []
+                if len(records) > 0:
+                    yield (records)
+                    records = []
+            except GeneratorExit:
+                pass
+            except:
+                import traceback
+                traceback.print_exc()
+                print('error reading downloaded file')
+                sys.exit(0)
 
     def monthly_usage(self, csv_file):
         total, downloads = 0, 0
@@ -636,12 +678,13 @@ class DatasetDownload():
         write_csv(csv_file, data)
 
     def by_country(self, csv_file):
+        country_name = self.country.get('country_region').get('country')
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
             dimensions=[Dimension(name="country")],
             metrics=[Metric(name="sessions")],
             date_ranges=[
-                DateRange(start_date='2023-04-01', end_date=self.end_date)],
+                DateRange(start_date=self.start_date, end_date=self.end_date)],
             order_bys=[OrderBy(
                 desc=True,
                 metric=OrderBy.MetricOrderBy(metric_name="sessions")
@@ -652,208 +695,9 @@ class DatasetDownload():
         response = self.ga.run_report(request)
         data, rowCount = parseReport(response, 'country', 'sessions')
         total = 0  # should be initialized with cummul upto 2023-07-01
-        country_fr = u'''Canada
-            États-Unis
-            Inde
-            France
-            Royaume Unis
-            Chine
-            Allemagne
-            Australie
-            Brésil
-            Inconnu
-            Russie
-            Pakistan
-            Algérie
-            Espagne
-            Mexique
-            Japon
-            Philippines
-            Corée du Sud
-            Italie
-            Émirats Arabe Unis
-            Turquie
-            Maroc
-            Ukraine
-            Hollande
-            Arabie Saoudite
-            Iran
-            Taiwan
-            Nigéria
-            Hong Kong
-            Vietnam
-            Indonésie
-            Belgique
-            Singapour
-            Bangladesh
-            Suisse
-            Malaysie
-            Égypte
-            Colombie
-            Tunisie
-            Thaïlande
-            Afrique du Sud
-            Pologne
-            Irlande
-            Roumanie
-            Suède
-            Kenya
-            Israël
-            Nouvelle-Zélande
-            Argentine
-            Grèce
-            Portugal
-            Liban
-            Tchétchénie
-            Côte d’Ivoire
-            Danemark
-            Autriche
-            Norvège
-            Cameroon
-            Finlande
-            Pérou
-            Qatar
-            Chili
-            Hongrie
-            Sri Lanka
-            Jordanie
-            Bulgarie
-            Koweit
-            Kazakhstan
-            Iraq
-            Jamaïque
-            Serbie
-            Sénégal
-            Népal
-            Vénézuela
-            Ghana
-            Croatie
-            Syrie
-            Slovaquie
-            Costa Rica
-            Équateur
-            République Dominicaine
-            Soudan
-            Biélorussie
-            Éthiopie
-            Oman
-            Haïti
-            Moldavie
-            Lithuanie
-            Trinidad & Tobago
-            Tanzanie
-            Albanie
-            Maurice
-            Bénin
-            Congo - Kinshasa
-            Luxembourg
-            Madagascar
-            Togo
-            Ouganda
-            Géorgie
-            Slovénie'''
-        country_en = u'''Canada
-            United States
-            India
-            France
-            United Kingdom
-            China
-            Germany
-            Australia
-            Brazil
-            Unknown
-            Russia
-            Pakistan
-            Algeria
-            Spain
-            Mexico
-            Japan
-            Philippines
-            South Korea
-            Italy
-            United Arab Emirates
-            Turkey
-            Morocco
-            Ukraine
-            Netherlands
-            Saudi Arabia
-            Iran
-            Taiwan
-            Nigeria
-            Hong Kong
-            Vietnam
-            Indonesia
-            Belgium
-            Singapore
-            Bangladesh
-            Switzerland
-            Malaysia
-            Egypt
-            Colombia
-            Tunisia
-            Thailand
-            South Africa
-            Poland
-            Ireland
-            Romania
-            Sweden
-            Kenya
-            Israel
-            New Zealand
-            Argentina
-            Greece
-            Portugal
-            Lebanon
-            Czechia
-            Côte d’Ivoire
-            Denmark
-            Austria
-            Norway
-            Cameroon
-            Finland
-            Peru
-            Qatar
-            Chile
-            Hungary
-            Sri Lanka
-            Jordan
-            Bulgaria
-            Kuwait
-            Kazakhstan
-            Iraq
-            Jamaica
-            Serbia
-            Senegal
-            Nepal
-            Venezuela
-            Ghana
-            Croatia
-            Syria
-            Slovakia
-            Costa Rica
-            Ecuador
-            Dominican Republic
-            Sudan
-            Belarus
-            Ethiopia
-            Oman
-            Haiti
-            Moldova
-            Lithuania
-            Trinidad & Tobago
-            Tanzania
-            Albania
-            Mauritius
-            Benin
-            Congo - Kinshasa
-            Luxembourg
-            Madagascar
-            Togo
-            Uganda
-            Georgia
-            Slovenia'''
-        country_fr = [c.strip() for c in country_fr.split('\n')]
-        country_en = [c.strip() for c in country_en.split('\n')]
+        
+        country_fr = [c for c in country_name.values()]
+        country_en = [c for c in country_name.keys()]
         assert (len(country_en) == len(country_fr))
         country_dict = {country_en[i]: country_fr[i]
                         for i in range(len(country_en))}
@@ -875,13 +719,14 @@ class DatasetDownload():
         write_csv(csv_file, data)
 
     def by_region(self, csv_file):
+        region_name = self.country.get('country_region').get('region')
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
             dimensions=[Dimension(name="region")],
             metrics=[Metric(name="sessions"),
                      Metric(name="eventValue")],
             date_ranges=[
-                DateRange(start_date='2023-04-01', end_date=self.end_date)],
+                DateRange(start_date=self.start_date, end_date=self.end_date)],
             dimension_filter=FilterExpression(
                 filter=Filter(
                     field_name='country',
@@ -906,21 +751,10 @@ class DatasetDownload():
         data = [[country, int(count)] for [country, count] in data]
         for c, count in data:
             total += count
-        region_dict = {
-            'Ontario': u'Ontario',
-            'Quebec': u'Québec',
-            'British Columbia': u'Colombie-Britannique',
-            'Alberta': u'Alberta',
-            'Nova Scotia': u'Nouvelle-Écosse',
-            'Manitoba': u'Manitoba',
-            'Saskatchewan': u'Saskatchewan',
-            'New Brunswick': u'Nouveau-Brunswick',
-            'Newfoundland and Labrador': u'Terre-Neuve-et-Labrador',
-            'Prince Edward Island': u'Île-du-Prince-Édouard',
-            'Northwest Territories': u'Territoires du Nord-Ouest',
-            'Yukon Territory': u'Yukon',
-            'Nunavut': u'Nunavut',
-        }
+        region_fr = [r for r in region_name.values()]
+        region_en = [r for r in region_name.keys()]
+        assert( len(region_en)==len(region_fr))
+        region_dict = { region_en[i]:region_fr[i] for i in range(len(region_en)) }
         data = [[country if country != '(not set)' else 'unknown / Inconnu', int(
             count), "%.2f" % ((count*100.0)/total) + '%'] for [country, count] in data]
         for row in data:
@@ -936,19 +770,31 @@ class DatasetDownload():
                     'percentage of total visits / Pourcentage du nombre total de visites'])
         write_csv(csv_file, data)
 
-    def set_catalogue_file(self, end):
-        y, m, d = end.split('-')
-        ga_static_dir = os.environ['GA_STATIC_DIR']
+    def set_catalogue_file(self):
+        y, m, d = self.end_date.split('-')
+        y_s, m_s, d_s = self.start_date.split('-')
+        #ga_static_dir = os.environ['GA_STATIC_DIR']
         self.file = ''.join(
-            [ga_static_dir, '/od-do-canada.', y, m, d, '.jl.gz'])
+            ["GA_STATIC_DIR", '\od-do-canada.', y, m, d, '.jl.gz'])
+           
+        #old_m = str("%02d" %(int(m)-1))
+        self.old_file = ''.join(
+            ["GA_STATIC_DIR",'\od-do-canada.', y_s, m_s, d_s, '.jl.gz'])
+        # self.file = ''.join(
+        #     [ga_static_dir, '/od-do-canada.', y, m, d, '.jl.gz'])
+            
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
+            print (os.path)
+        elif not os.path.exists(self.old_file):
+            raise Exception('not found ' + self.file)
+            
 
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['Department or Agency', 'Ministère ou organisme',
                   'Department or Agency datasets', 'Jeux de données du Ministère ou organisme', 'Total']
-        for org_id, count in org_stats.iteritems():
+        for org_id, count in org_stats.items():
             [title_en, title_fr] = self.orgs.get(org_id, ['', ''])
             name = self.org_id2name[org_id][0]
             link_en = 'http://open.canada.ca/data/en/dataset?organization=' + name
@@ -959,7 +805,7 @@ class DatasetDownload():
         write_csv(csv_file, rows, header)
 
     def by_org_month(self, csv_month_file, csv_file):
-        self.set_catalogue_file(self.end_date)
+        self.set_catalogue_file()
         # need to use cataloge file downloaded at 1st day of each month (or last day of prev month), same for by_org
         # need to update the last column, insert before last column
         # insert row if new org is created
@@ -1040,7 +886,7 @@ class DatasetDownload():
             row[2] = pr + c
 
         # New org
-        for org_id, count in org_stats.iteritems():
+        for org_id, count in org_stats.items():
             if org_id in exists:
                 continue
             titles = self.orgs.get(org_id, ['', ''])
@@ -1065,45 +911,52 @@ class DatasetDownload():
         write_csv(csv_month_file, ds, header)
 
 
-def report(client_secret_path, property_id, og_config_file, start, end, va):
+def report(client_secret_path, property_id, start, end, va, og_config_file=None):
+    
+    #ga_tmp_dir = os.environ['GA_TMP_DIR']
     og_type = va
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
                          property_id, og_config_file)
+    ds.set_catalogue_file()
+    
     if og_type == 'info':
         return ds.getStats(og_type)
     elif og_type == 'visit':
         return ds.getVisitStats(og_type)
     elif og_type == 'download':
         return ds.getStats(og_type)
-    ga_tmp_dir = os.environ['GA_TMP_DIR']
+    
     ds.getStats(og_type)
     time.sleep(2)
-    ds.monthly_usage(os.path.join(ga_tmp_dir, 'od_ga_month.csv'))
+    ds.monthly_usage(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv'))
     time.sleep(2)
-    ds.by_country(os.path.join(ga_tmp_dir, 'od_ga_by_country.csv'))
+    ds.by_country(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv'))
     time.sleep(2)
-    ds.by_region(os.path.join(ga_tmp_dir, 'od_ga_by_region.csv'))
-    ds.by_org_month(os.path.join(ga_tmp_dir, 'od_ga_by_org_month.csv'),
-                    os.path.join(ga_tmp_dir, 'od_ga_by_org.csv'))
+    ds.by_region(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv'))
+    ds.by_org_month(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv'),
+                    os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv'))
 
 
 def main():
-    report(*sys.argv[1:])
+   # report(*sys.argv[1:])
+#    start_date = sys.argv[1]
+#    end_date = sys.argv[2]
+  
+   start_date = "2023-05-31"
+   end_date = "2023-06-27"
+   down_files.csv_download()
+   down_files.cat_download(end_date)
+   va = ["info", "dataset","visit", "download"]
+   for org in va:   
+        report ("credentials.json", "363143703", start_date ,end_date , org)
+   rename_files.old_to_new_names(end_date)
+   archive.archive_files(end_date)
 
+#Staging-portal 374861301
+#Staging-registry 359129908
+#registry 363143703
 
 if __name__ == '__main__':
     main()
 
-# python $GA_OG_ANALYTICS \
-#    $GA_CLIENT_SECRET 68455797 $GA_PORTAL_INI \
-#    $STARTYR-$CURMTH-01 $PRVYR-$PRVMTH-$LASTDY info
-# Should be set to :
-# $GA_OG_ANALYTICS \
-#    $GA_CLIENT_SECRET - Credentials.json path
-#  68455797 - property_id ( 363143703 or 359129908)
-# $GA_PORTAL_INI  CKAN INI FILE
-#  $STARTYR-$CURMTH-01 - start_date
-#  $PRVYR-$PRVMTH-$LASTDY - end_date
-#  info - og_type (info, visit, download)
-# CSV files downloaded.
