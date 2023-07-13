@@ -977,6 +977,7 @@ def report(client_secret_path, property_id, start, end, va, og_config_file=None)
 def run_report (start_date, end_date):
    down_files.csv_download()
    down_files.cat_download(end_date)
+   down_files.archive_download()
    va = ["info", "dataset","visit", "download"]
    for org in va:   
         report ("credentials.json", "359132180", start_date ,end_date , org)
