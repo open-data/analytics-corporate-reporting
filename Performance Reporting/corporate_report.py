@@ -12,10 +12,7 @@ from ckanapi import RemoteCKAN
 from dateutil import parser
 
 class corporate :
-    def __init__(self):  
-        # converting string to date      
-        # self.start_date = parser.parse(start_date)
-        # self.end_date = parser.parse(end_date)       
+    def __init__(self):              
         self.offset = "0"
         self.limit = 10000
     
@@ -62,11 +59,7 @@ class corporate :
                     error_report.append([record['organization']['title'].split("|")[0],record['organization']['created'].split('T')[0],record['type'],record['collection']])
                     continue                
         df =pd.DataFrame(report,columns=['organization', 'type', 'package id','metadata_created','metadata_modified','number of ressources','datastore_active','any_datastore_active', 'all_datastore_active','collection'])
-        return df
-        # df.to_csv('open_data_&_info.csv', index=False,encoding = 'UTF-8')
-        # df_dataset = df.query ('type == "dataset" ')
-        # federated_dt = df.query('collection == "federated" ')
-        # print(df.shape[0], df_dataset.shape[0], federated_dt.shape[0])
+        return df        
         
     # Downloads the most updated openness score do data 
     def openness_dow(self):        
