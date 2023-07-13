@@ -25,9 +25,9 @@ def filedow (reqURL):
  # downloading catalogue files in STATIC directory 
 def cat_download (end):
     y, m, d = end.split('-')
-    ga_static_dir = os.environ['GA_STATIC_DIR']
+    #ga_static_dir = os.environ['GA_STATIC_DIR']
     file = ''.join(
-        [ga_static_dir, '\od-do-canada.', y, m, d, '.jl.gz'])
+        ["GA_STATIC_DIR", '\od-do-canada.', y, m, d, '.jl.gz'])
     url = 'http://open.canada.ca/static/od-do-canada.jl.gz'
     r = requests.get(url, stream=True)                
     with open (file, 'wb') as f:
@@ -35,7 +35,7 @@ def cat_download (end):
             f.write(chunk)
     f.close()
     
- # downloading all csv the files in TMP directory    
+ # Removes old files form TMP and downloads all csv the files fresh copy    
 def csv_download():
     for filename in os.listdir(ga_tmp_dir):
        file_path = os.path.join(ga_tmp_dir, filename)

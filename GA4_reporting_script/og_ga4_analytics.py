@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 """OG Analytics Reporting GA 4."""
-
+from datetime import *
 import argparse
 import os
 import tempfile
@@ -24,6 +24,7 @@ import openpyxl
 import heapq
 import re
 import yaml
+import pandas as pd
 from openpyxl.utils.exceptions import IllegalCharacterError
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
@@ -36,7 +37,7 @@ from google.analytics.data_v1beta.types import (
     OrderBy,
     FilterExpressionList
 )
-import down_files, rename_files, archive
+import down_files, rename_files, archive, resource_patch
 
 
 
@@ -226,7 +227,7 @@ class DatasetDownload():
             self.org_name2id[rec['name']] = rec['id']
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
-        print('total orgs ', len(self.orgs))
+        #print('total orgs ', len(self.orgs))
 
     def read_portal(self, stats):
         self.ds = {}
@@ -234,7 +235,7 @@ class DatasetDownload():
         count = 0
         for records in self.download():
             count += len(records)
-            print('read records ', count, ' ',  len(self.ds))
+            #print('read records ', count, ' ',  len(self.ds))
             for rec in records:
                 if not stats.get(rec['id']):
                     continue
@@ -334,8 +335,8 @@ class DatasetDownload():
             org_title = [x.strip() for x in org_title]
             rows.append([rec_id, rec_title['en'], rec_title['fr'],
                          org_title[0], org_title[1], count])
-        rows.append([])
-        rows.append([self.start_date, self.end_date])
+        # rows.append([])
+        #rows.append([self.start_date, self.end_date])
         rows = cleanup_illegal_characters(rows)
         sheet1 = {'name': 'Top 20 Information',
                   'data': rows,
@@ -714,9 +715,10 @@ class DatasetDownload():
             total += count
         data = [[country, int(count), "%.2f" % ((count*100.0)/total) + '%']
                 for [country, count] in data]
-        data.insert(0, ['region / Région', 'visits / Visites',
-                    'percentage of total visits / Pourcentage du nombre total de visites'])
-        write_csv(csv_file, data)
+        self.hist_visits(data, csv_file )
+        # data.insert(0, ['region / Région', 'visits / Visites',
+        #             'percentage of total visits / Pourcentage du nombre total de visites'])
+        # write_csv(csv_file, data)
 
     def by_region(self, csv_file):
         region_name = self.country.get('country_region').get('region')
@@ -731,7 +733,7 @@ class DatasetDownload():
                 filter=Filter(
                     field_name='country',
                     string_filter=Filter.StringFilter(match_type="BEGINS_WITH",
-                                                      value='canada',
+                                                      value='Canada',
                                                       case_sensitive=False)
                 )
 
@@ -748,27 +750,57 @@ class DatasetDownload():
         data, rowCount = parseReport(response, 'region', 'sessions')
 
         total = 0  # should be initialized with cummul upto 2023-07-01
-        data = [[country, int(count)] for [country, count] in data]
+        data = [[region, int(count)] for [region, count] in data]        
         for c, count in data:
             total += count
         region_fr = [r for r in region_name.values()]
         region_en = [r for r in region_name.keys()]
         assert( len(region_en)==len(region_fr))
         region_dict = { region_en[i]:region_fr[i] for i in range(len(region_en)) }
-        data = [[country if country != '(not set)' else 'unknown / Inconnu', int(
-            count), "%.2f" % ((count*100.0)/total) + '%'] for [country, count] in data]
+        data = [[region if region != ('(not set)' or "") else 'unknown / Inconnu', int(
+            count), "%.2f" % ((count*100.0)/total) + '%'] for [region, count] in data]       
         for row in data:
             r = row[0]
             if r == '(not set)':
                 row[0] = 'unknown / Inconnu'
-            else:
+            elif r:
                 r_fr = region_dict.get(r, r)
                 row[0] = r + u' | ' + r_fr
-        # df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
-        # print (df.head())
-        data.insert(0, ['region / Région', 'visits / Visites',
-                    'percentage of total visits / Pourcentage du nombre total de visites'])
-        write_csv(csv_file, data)
+        #df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
+        self.hist_visits(data, csv_file )
+        # data.insert(0, ['region / Région', 'visits / Visites',
+        #             'percentage of total visits / Pourcentage du nombre total de visites'])
+        # write_csv(csv_file, data)
+
+    # To include historical visits from last reporting
+    def hist_visits (self, data, csv_file ):
+        df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
+        old_df = pd.read_csv(csv_file)
+        last_region = [c for c in old_df['region / Région']]
+        new_region = [c for c in df['region / Région']]
+        new_region_visit = {}
+        old_region_visit = {}
+        for i in range(len(df)):
+            new_region_visit[df.iloc[i]['region / Région']] = df.iloc[i]['visits / Visites']
+        for i in range(len(old_df)):
+            old_region_visit[old_df.iloc[i]['region / Région']] = old_df.iloc[i]['visits / Visites']
+
+        for c in last_region:
+            if c in new_region:              
+                old_region_visit[c] += new_region_visit[c]
+                
+        for c in new_region:
+            if c not in last_region:
+                old_region_visit[c] = new_region_visit[c] 
+        
+        new_df = pd.DataFrame.from_dict(old_region_visit, orient='index', columns = [ 'visits / Visites' ])
+        new_df.reset_index(inplace =True)
+        new_df.rename(columns = {'index':'region / Région'}, inplace=True)
+        total = sum(new_df['visits / Visites'])
+        per_tage =["%.2f" % ((count*100.0)/total) + '%' for count in new_df['visits / Visites']]
+        new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
+       
+        new_df.to_csv(csv_file, encoding="utf-8", index=False)
 
     def set_catalogue_file(self):
         y, m, d = self.end_date.split('-')
@@ -787,7 +819,7 @@ class DatasetDownload():
             raise Exception('not found ' + self.file)
             print (os.path)
         elif not os.path.exists(self.old_file):
-            raise Exception('not found ' + self.file)
+            raise Exception('not found ' + self.old_file)
             
 
     def by_org(self, org_stats, csv_file):
@@ -811,6 +843,7 @@ class DatasetDownload():
         # insert row if new org is created
         org_stats = defaultdict(int)
         total_num = 0
+        total_new =0
         for records in self.download():
             total_num += len(records)
             for rec in records:
@@ -884,6 +917,9 @@ class DatasetDownload():
             pr, c = int(row[2]), int(row[3])
             del row[2]
             row[2] = pr + c
+            total_new += row[2]
+        del total[2]
+        total[2] = total_new
 
         # New org
         for org_id, count in org_stats.items():
@@ -904,9 +940,9 @@ class DatasetDownload():
         var = total_num - int(total[-1])
         total[-1] = total_num
         total.insert(-1, var)
-        pr, c = int(total[2]), int(total[3].replace(',', ''))
-        del total[2]
-        total[2] = pr + c
+        # pr, c = int(total[2]), int(total[3].replace(',', ''))
+        # del total[2]
+        # total[2] = pr + c
         ds.append(total)
         write_csv(csv_month_file, ds, header)
 
@@ -938,24 +974,32 @@ def report(client_secret_path, property_id, start, end, va, og_config_file=None)
                     os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv'))
 
 
-def main():
-   # report(*sys.argv[1:])
-#    start_date = sys.argv[1]
-#    end_date = sys.argv[2]
-  
-   start_date = "2023-05-31"
-   end_date = "2023-06-27"
+def run_report (start_date, end_date):
    down_files.csv_download()
    down_files.cat_download(end_date)
    va = ["info", "dataset","visit", "download"]
    for org in va:   
-        report ("credentials.json", "363143703", start_date ,end_date , org)
+        report ("credentials.json", "359132180", start_date ,end_date , org)
    rename_files.old_to_new_names(end_date)
    archive.archive_files(end_date)
+   resource_patch.resources_update()
+
+
+def main():
+    run_report(*sys.argv[1:])
+"""  today = date.today()
+   last_day = today- timedelta(days=today.day)   
+   first_day = last_day-timedelta(days=last_day.day-1)
+   last_day= last_day.strftime('%Y-%m-%d')
+   first_day= first_day.strftime('%Y-%m-%d')
+   run_report (first_day, last_day) """
+   
+        
 
 #Staging-portal 374861301
 #Staging-registry 359129908
 #registry 363143703
+#Production Portal 359132180 
 
 if __name__ == '__main__':
     main()
