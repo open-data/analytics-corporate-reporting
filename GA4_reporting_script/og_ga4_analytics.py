@@ -25,6 +25,7 @@ import heapq
 import re
 import yaml
 import pandas as pd
+import math
 from openpyxl.utils.exceptions import IllegalCharacterError
 from google.analytics.data_v1beta import BetaAnalyticsDataClient
 from google.analytics.data_v1beta.types import (
@@ -116,9 +117,9 @@ def initialize_analyticsreporting(client_secrets_path):
 
 def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
     data, rowCount = [], 0
-
+    count , test = 0 , 0
     for rowIdx, row in enumerate(response.rows):
-
+        test +=1
         dim, mtr = [], []
         if dimension_name:
             for i, dimension_value in enumerate(row.dimension_values):
@@ -128,11 +129,12 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
         for i, metric_value in enumerate(row.metric_values):
             if response.metric_headers[i].name == metric_name:
                 mtr.append(metric_value.value)
+                count += int(metric_value.value)
         if dimension_name:
             data.append(dim + mtr)
         else:
-            data.extend(mtr)
-    rowCount = response.row_count
+            data.extend(mtr)            
+    rowCount = response.row_count    
     return data, rowCount
 
 
@@ -181,9 +183,7 @@ class DatasetDownload():
     
         return deleted_data 
         
-    def get_deleted_dataset(self, del_id ): 
-       #print(del_id,"checking")   
-        #id, title, org = zip(*self.deleted_data)
+    def get_deleted_dataset(self, del_id ):        
        for  id, title, org in self.deleted_data:
             
             if  del_id == id :
@@ -227,15 +227,14 @@ class DatasetDownload():
             self.org_name2id[rec['name']] = rec['id']
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
-        #print('total orgs ', len(self.orgs))
+
 
     def read_portal(self, stats):
         self.ds = {}
         self.org_count = defaultdict(int)
         count = 0
         for records in self.download():
-            count += len(records)
-            #print('read records ', count, ' ',  len(self.ds))
+            count += len(records)            
             for rec in records:
                 if not stats.get(rec['id']):
                     continue
@@ -252,8 +251,9 @@ class DatasetDownload():
         self.set_catalogue_file()
         self.og_type = og_type
         offset = 0
-        limit = 100000
+        limit = 1000
         stats = defaultdict(int)
+        test = 0
         while True:
             response = self.getRawVisitReport(offset)
             data, rowCount = parseReport(
@@ -267,12 +267,11 @@ class DatasetDownload():
                 if len(id) != 36:
                     continue  # make sure it is an UUID
                 stats[id] += int(count)
-            if (rowCount <= limit or (rowCount - offset) <= limit):
-                print('Done ', offset, len(stats))
+                test += int(count)
+            if (rowCount <= limit or (rowCount - offset) <= limit):                
                 break
             else:
-                offset += limit
-                print(offset)
+                offset += limit               
         stats = dict(stats)        
         self.read_portal(stats)
 
@@ -281,26 +280,22 @@ class DatasetDownload():
     def getStats(self, og_type):
         self.set_catalogue_file()
         self.og_type = og_type
-
         offset = 0
         limit = 100000
         stats = defaultdict(int)
         while True:
             response = self.getRawReport(offset)
             data, rowCount = parseReport(response)
-            #print(data)
             for [url, count] in data:
                 id = url.split('/dataset/')[-1]
                 id = id.split('/')[0]
                 if len(id) != 36:
                     continue  # make sure it is an UUID
                 stats[id] += int(count)
-            if (rowCount <= limit or (rowCount - offset) <= limit):
-                print('Done ', offset, len(stats))
+            if (rowCount <= limit or (rowCount - offset) <= limit):                
                 break
             else:
-                offset += limit
-                print(offset)
+                offset += limit               
         stats = dict(stats)
         self.read_portal(stats)
         
@@ -367,8 +362,7 @@ class DatasetDownload():
                    continue
                 else:
                     deleted_ds[id] = {'title_translated': rec_title,
-                                    'org_id': org_id}
-                            #print(rec_title, org_id)
+                                    'org_id': org_id}                           
             else:
                 org_id = rec['owner_org']
             ds[org_id] += c
@@ -615,19 +609,21 @@ class DatasetDownload():
                 sys.exit(0)
 
     def monthly_usage(self, csv_file):
-        total, downloads = 0, 0
+        total, downloads = 0 , 0
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
-            dimensions=[Dimension(name="PagePath")],
-            metrics=[Metric(name="sessions"),
-                     Metric(name="screenPageViews")],
+            #dimensions=[Dimension(name="PagePath")],
+            metrics=[Metric(name="sessions")
+                    #  ,
+                    #  Metric(name="screenPageViews")
+                     ],
             date_ranges=[
                 DateRange(start_date=self.start_date, end_date=self.end_date)],
-            order_bys=[OrderBy(
-                desc=True,
-                metric=OrderBy.MetricOrderBy(metric_name="screenPageViews")
-            )],
-            limit=100000,
+            # order_bys=[OrderBy(
+            #     desc=True,
+            #     metric=OrderBy.MetricOrderBy(metric_name="screenPageViews")
+            # )],
+            limit=10000,
             offset=0,
         )
         while True:
@@ -635,11 +631,9 @@ class DatasetDownload():
             data, rowCount = parseReport(response, None, 'sessions')
             for eCount in data:
                 total += int(eCount)
-            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):
-               # print(f'row count {rowCount}, limit {request.limit} and offset {request.offset} with total:{total}')
+            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):              
                 break
             request.offset += request.limit
-
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
             dimensions=[Dimension(name="eventName"),
@@ -657,15 +651,20 @@ class DatasetDownload():
 
             ),
 
-            limit=100000,
+            limit=10000,
             offset=0,
 
         )
-        response = self.ga.run_report(request)
-        data, rowCount = parseReport(response, None, 'eventCount')
-        for eCount in data:
-            downloads += int(eCount)
-        # print(f"Visits:{total} and Downloads:  {downloads}")
+        while True:
+            response = self.ga.run_report(request)
+            data, rowCount = parseReport(response, None, 'eventCount')
+            for eCount in data:
+                downloads += int(eCount)
+            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):
+                #print(f'row count {rowCount}, limit {request.limit} and offset {request.offset} with total:{total}')
+                break
+            request.offset += request.limit
+        
         # Checking if the report is up to date and updating otherwise
         [year, month, _] = self.end_date.split('-')
         data = read_csv(csv_file)
@@ -694,7 +693,7 @@ class DatasetDownload():
             offset=0,
         )
         response = self.ga.run_report(request)
-        data, rowCount = parseReport(response, 'country', 'sessions')
+        data, rowCount = parseReport(response, 'country', 'sessions')        
         total = 0  # should be initialized with cummul upto 2023-07-01
         
         country_fr = [c for c in country_name.values()]
@@ -714,7 +713,7 @@ class DatasetDownload():
         for c, count in data:
             total += count
         data = [[country, int(count), "%.2f" % ((count*100.0)/total) + '%']
-                for [country, count] in data]
+                for [country, count] in data]        
         self.hist_visits(data, csv_file )
         # data.insert(0, ['region / Région', 'visits / Visites',
         #             'percentage of total visits / Pourcentage du nombre total de visites'])
@@ -811,13 +810,10 @@ class DatasetDownload():
            
         #old_m = str("%02d" %(int(m)-1))
         self.old_file = ''.join(
-            ["GA_STATIC_DIR",'\od-do-canada.', y_s, m_s, d_s, '.jl.gz'])
-        # self.file = ''.join(
-        #     [ga_static_dir, '/od-do-canada.', y, m, d, '.jl.gz'])
+            ["GA_STATIC_DIR",'\od-do-canada.', y_s, m_s, d_s, '.jl.gz'])        
             
         if not os.path.exists(self.file):
-            raise Exception('not found ' + self.file)
-            print (os.path)
+            raise Exception('not found ' + self.file)            
         elif not os.path.exists(self.old_file):
             raise Exception('not found ' + self.old_file)
             
@@ -987,7 +983,11 @@ def run_report (start_date, end_date):
 
 
 def main():
+    t0 = time.time()
     run_report(*sys.argv[1:])
+    time_m = math.floor((time.time()-t0)/60)
+    time_s = (time.time()-t0) - time_m*60
+    print (f"All done in {time_m} min and {time_s:.2f} s")
 """  today = date.today()
    last_day = today- timedelta(days=today.day)   
    first_day = last_day-timedelta(days=last_day.day-1)
