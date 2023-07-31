@@ -100,6 +100,117 @@ country_region:
     Uganda : Ouganda
     Georgia : Géorgie
     Slovenia : Slovénie
+    Afghanistan : Afghanistan
+    Angola : Angola
+    Antarctica : Antarctique
+    Antigua & Barbuda : Antigua-et-Barbuda
+    Armenia : Arménie
+    Aruba : Aruba
+    Azerbaijan : Azerbaïdjan
+    Bahamas : Bahamas
+    Bahrain : Bahreïn
+    Barbados : Barbade
+    Belize : Belize
+    Bermuda : Bermudes
+    Bhutan : Bhoutan
+    Bolivia : Bolivie
+    Bosnia & Herzegovina : Bosnie-Herzégovine
+    Botswana : Botswana
+    British Virgin Islands : Îles Vierges britanniques
+    Brunei : Brunéi 
+    Burkina Faso : Burkina Faso
+    Burundi : Burundi
+    Cambodia : Cambodge
+    Cape Verde : Cap-Vert
+    Caribbean Netherlands : Pays-Bas caribéens
+    Cayman Islands : Îles Caïmans
+    Chad : Tchad
+    Congo - Brazzaville : Congo-Brazzaville
+    Cook Islands :  Îles Cook
+    Cuba : Cuba
+    Curaçao : Curaçao
+    Cyprus : Chypre
+    Djibouti : Djibouti
+    Dominica : Dominique
+    El Salvador : Salvador
+    Equatorial Guinea : Guinée équatoriale
+    Estonia : Estonie
+    Eswatini : Eswatini
+    Faroe Islands : Îles Féroé
+    Fiji : Fidji
+    French Guiana : Guyane française
+    French Polynesia : Polynésie française
+    Gabon : Gabon
+    Gambia : Gambie
+    Gibraltar : Gibraltar
+    Greenland : Groenland
+    Grenada : Grenade
+    Guadeloupe : Guadeloupe
+    Guam : Guam 
+    Guatemala : Guatemala
+    Guernsey : Guernesey
+    Guinea : Guinée
+    Guinea-Bissau : Guinée-Bissau
+    Guyana : Guyana
+    Honduras : Honduras
+    Iceland : Islande
+    Isle of Man : Île de Man
+    Jersey : Jersey
+    Kosovo : Kosovo
+    Kyrgyzstan : Kirghizistan
+    Laos :  Laos
+    Latvia : Lettonie
+    Lesotho : Lesotho
+    Liberia : Liberia
+    Libya : Libye
+    Liechtenstein : Liechtenstein
+    Timor-Leste : Timor-Oriental
+    Macao : Macao
+    Malawi : Malawi
+    Maldives : Maldives
+    Mali : Mali
+    Malta : Malte
+    Martinique : Martinique
+    Mauritania : Mauritanie
+    Monaco : Monaco
+    Mongolia : Mongolie
+    Montenegro : Monténégro
+    Mozambique : Mozambique
+    Myanmar (Burma) : Myanmar (Birmanie)
+    Namibia : Namibie
+    New Caledonia : Nouvelle-Calédonie
+    Nicaragua : Nicaragua
+    Niger : Niger
+    North Macedonia : Macédoine du Nord
+    Palestine : Palestine
+    Panama : Panama
+    Papua New Guinea : Papouasie-Nouvelle-Guinée
+    Paraguay : Paraguay
+    Puerto Rico : Puerto Rico
+    Réunion : Réunion
+    Rwanda : Rwanda
+    Seychelles : Seychelles
+    Sierra Leone : Sierra Leone
+    Sint Maarten : Saint-Martin
+    Somalia : Somalie
+    South Sudan : Soudan du Sud
+    St. Kitts & Nevis : Saint-Kitts-et-Nevis
+    St. Lucia : Sainte-Lucie
+    St. Vincent & Grenadines : Saint-Vincent-et-les-Grenadines
+    Suriname : Suriname
+    Svalbard & Jan Mayen : Svalbard et Jan Mayen 
+    Tajikistan : Tadjikistan
+    Türkiye : Turquie
+    U.S. Virgin Islands : Les îles Vierges des États-Unis
+    Uruguay : Uruguay
+    Uzbekistan : Ouzbékistan
+    Vanuatu : Vanuatu
+    Western Sahara : Sahara occidental
+    Yemen : Yémen
+    Zambia : Zambie
+    Zimbabwe : Zimbabwe
+    Kiribati : Kiribati
+    Montserrat : Montserrat 
 
   region:
     Ontario : Ontario

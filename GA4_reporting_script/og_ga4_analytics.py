@@ -671,7 +671,7 @@ class DatasetDownload():
         if int(data[1][0]) == int(year) and int(data[1][1]) == int(month):
             print('entry exists, no overwriting')
             return
-        row = [year, month, total, downloads]
+        row = [year, month, total, downloads]        
         data[0] = ['year / année', 'month / mois',
                    'visits / visites', 'downloads / téléchargements']
         data.insert(1, row)
@@ -701,19 +701,28 @@ class DatasetDownload():
         assert (len(country_en) == len(country_fr))
         country_dict = {country_en[i]: country_fr[i]
                         for i in range(len(country_en))}
+        total_visits = 0
+        for country, visits in data:
+            total_visits += int(visits)
         for row in data:
             c = row[0]
             if c == '(not set)':
                 row[0] = 'unknown / Inconnu'
-            else:
+            elif c in country_en:
                 c_fr = country_dict.get(c, c)
                 row[0] = c + u' | ' + c_fr
+            else:
+                print(f'{row[0]} ,{row[1]}')
             row[1] = int(row[1])
 
         for c, count in data:
             total += count
         data = [[country, int(count), "%.2f" % ((count*100.0)/total) + '%']
-                for [country, count] in data]        
+                for [country, count] in data] 
+        """ df = pd.DataFrame(data, columns = ['Country','visits', 'percentage of visits'])
+        country_file = os.path.join("GA_TMP_DIR", "by_country.csv")
+        df.to_csv(country_file,index=False )         
+        print(total, total_visits)      """
         self.hist_visits(data, csv_file )
         # data.insert(0, ['region / Région', 'visits / Visites',
         #             'percentage of total visits / Pourcentage du nombre total de visites'])
@@ -798,7 +807,7 @@ class DatasetDownload():
         total = sum(new_df['visits / Visites'])
         per_tage =["%.2f" % ((count*100.0)/total) + '%' for count in new_df['visits / Visites']]
         new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
-       
+        new_df.sort_values(by = 'visits / Visites',axis=0, ascending=False, inplace=True )
         new_df.to_csv(csv_file, encoding="utf-8", index=False)
 
     def set_catalogue_file(self):
