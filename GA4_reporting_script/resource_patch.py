@@ -39,7 +39,9 @@ def resources_update():
     ckan.action.resource_patch(
           
           #id="2026faa9-88b4-40dd-8abe-84a140adf647",
-          #id="674bf651-03d5-4b9f-8794-5cc5e6b91e9f",
+          id="674bf651-03d5-4b9f-8794-5cc5e6b91e9f",
+          # analytic resources
+          #id: " 8debb421-e9cb-49de-98b0-6ce0f421597b"
           upload= open (os.path.join("GA_STATIC_DIR", "archive.zip"), "rb")
 
         ) 
