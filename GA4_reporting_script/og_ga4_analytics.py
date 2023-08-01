@@ -984,27 +984,36 @@ def run_report (start_date, end_date):
    down_files.cat_download(end_date)
    down_files.archive_download()
    va = ["info", "dataset","visit", "download"]
+   y,m,d = end_date.split("-")
+   old_download = os.path.join("GA_TMP_DIR", "od_ga_downloads.xlsx")
    for org in va:   
         report ("credentials.json", "359132180", start_date ,end_date , org)
-   rename_files.old_to_new_names(end_date)
+        if org =="visit":         
+            new_download = os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.visits", 
+                                        "".join([m,str(int(y)-1)]),"".join([m,y, ".xlsx"])])) 
+            rename_files.file_rename(old_download, new_download)
+        elif org =="download":
+            new_download = os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.downloads", 
+                                        "".join([m,str(int(y)-1)]),"".join([m,y, ".xlsx"])])) 
+            rename_files.file_rename(old_download, new_download)
+   rename_files.old_to_new_names()
    archive.archive_files(end_date)
    resource_patch.resources_update()
 
 
 def main():
     t0 = time.time()
-    run_report(*sys.argv[1:])
+   # run_report(*sys.argv[1:])
+    
+    today = date.today()
+    last_day = today- timedelta(days=today.day)   
+    first_day = last_day-timedelta(days=last_day.day-1)
+    last_day= last_day.strftime('%Y-%m-%d')
+    first_day= first_day.strftime('%Y-%m-%d')
+    run_report (first_day, last_day)   
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
-    print (f"All done in {time_m} min and {time_s:.2f} s")
-"""  today = date.today()
-   last_day = today- timedelta(days=today.day)   
-   first_day = last_day-timedelta(days=last_day.day-1)
-   last_day= last_day.strftime('%Y-%m-%d')
-   first_day= first_day.strftime('%Y-%m-%d')
-   run_report (first_day, last_day) """
-   
-        
+    print (f"All done in {time_m} min and {time_s:.2f} s")       
 
 #Staging-portal 374861301
 #Staging-registry 359129908
