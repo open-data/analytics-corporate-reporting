@@ -31,10 +31,8 @@ from google.analytics.data_v1beta.types import (
     FilterExpressionList
 )
 import down_files
-# import rename_files
-# import archive
 import onetime_concat
-#import resource_patch
+import resource_patch
 
 def write_csv(filename, rows, header=None):
     outf = open(filename, 'wb')
@@ -749,10 +747,10 @@ def main():
     first_day = last_day-timedelta(days=last_day.day-1)
     last_day = last_day.strftime('%Y-%m-%d')
     first_day = first_day.strftime('%Y-%m-%d')
-    report("credentials.json", "359132180", "2023-09-01", "2023-09-15")  
+    report("credentials.json", "359132180", first_day, last_day)  
     onetime_concat.concat_hist() 
     down_files.archive_files(last_day)
-    #resource_patch.resources_update()    
+    resource_patch.resources_update()    
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
