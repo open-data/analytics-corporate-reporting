@@ -2,13 +2,11 @@
 
 """OG Analytics Reporting GA 4."""
 from datetime import *
-import argparse
 import os
 import tempfile
 import time
 import gzip
 import json
-import urllib
 import sys
 import csv
 import requests
@@ -17,12 +15,6 @@ import codecs
 from collections import defaultdict
 import ckanapi
 from ckanapi.errors import CKANAPIError
-import configparser
-import psycopg2
-import traceback
-import openpyxl
-import heapq
-import re
 import yaml
 import pandas as pd
 import math
@@ -38,40 +30,11 @@ from google.analytics.data_v1beta.types import (
     OrderBy,
     FilterExpressionList
 )
-import down_files, rename_files, archive, resource_patch
-
-
-
-def cleanup_illegal_characters(rows):
-    for row in rows:
-        for cell in rows:
-            if (isinstance(cell, str)):
-                cell = re.sub(r'[\000-\010]|[\013-\014]|[\016-\037]', '', cell)
-    return rows
-
-
-def write_xls(filename, sheets):
-    book = openpyxl.Workbook()
-
-    for sheet in sheets:
-        ws = book.create_sheet(title=sheet.get('name', 'sheet 1'))
-        try:
-            for row in sheet.get('data', []):
-                ws.append(row)
-        except IllegalCharacterError as e:
-            pass
-
-        cols = [col for col in ws.columns]
-        widths = sheet.get('col_width', {})
-        for k, v in widths.items():
-            ws.column_dimensions[cols[k][0].column_letter].width = v
-    try:
-        sheet1 = book["Sheet"]
-        book.remove(sheet1)
-    except:
-        pass
-    book.save(filename)
-
+import down_files
+# import rename_files
+# import archive
+import onetime_concat
+#import resource_patch
 
 def write_csv(filename, rows, header=None):
     outf = open(filename, 'wb')
@@ -109,104 +72,52 @@ def simplify_lang(titles):
 
 def initialize_analyticsreporting(client_secrets_path):
 
-    
     client = BetaAnalyticsDataClient.from_service_account_file(
         client_secrets_path)
     return client
 
 
 def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
-    data, rowCount = [], 0
-    count , test = 0 , 0
-    for rowIdx, row in enumerate(response.rows):
-        test +=1
+    data, rowCount = [], 0    
+    for rowIdx, row in enumerate(response.rows):        
         dim, mtr = [], []
         if dimension_name:
             for i, dimension_value in enumerate(row.dimension_values):
                 if response.dimension_headers[i].name == dimension_name:
                     dim.append(dimension_value.value)
-
         for i, metric_value in enumerate(row.metric_values):
             if response.metric_headers[i].name == metric_name:
-                mtr.append(metric_value.value)
-                count += int(metric_value.value)
+                mtr.append(metric_value.value)                
         if dimension_name:
             data.append(dim + mtr)
         else:
-            data.extend(mtr)            
-    rowCount = response.row_count    
+            data.extend(mtr)
+    rowCount = response.row_count
     return data, rowCount
 
 
 class DatasetDownload():
-    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file = None):
+    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):
        # self.ga_tmp_dir = os.environ['GA_TMP_DIR']
-        ga_rmote_ckan = "https://open.canada.ca/data"       
+        ga_rmote_ckan = "https://open.canada.ca/data"
         self.ga = ga
         self.property_id = property_id
-        #self.file = os.path.join(self.ga_tmp_dir, 'od-do-canada.jl.gz')
+        # self.file = os.path.join(self.ga_tmp_dir, 'od-do-canada.jl.gz')
         self.site = ckanapi.RemoteCKAN(ga_rmote_ckan)
         self.start_date = start_date
         self.end_date = end_date
-        self.og_type = og_type   
-        self.read_orgs()     
-        self.country = yaml.full_load(open('reg.yml', 'r', encoding='utf-8'))
-        
-    def deleted_dataset(self, old_cat ):    
+        self.og_type = og_type
+        self.read_orgs()
+        self.country = yaml.full_load(open('country_region.yml', 'r', encoding='utf-8'))
+
     
-        deleted_data = []
-        recent_data= []
-        
-        for records in self.download():
-
-            for record in records:     
-
-                try:    
-                                            
-                    recent_data.append(record['id'])
-                
-                except IndexError as e:
-                    print(e)           
-                    continue    
-        #old_id = [i[0] for i in old_dataset]
-        for records in self.download(old_cat):
-
-            for record in records:     
-
-                try:    
-                    if  record['id'] not in recent_data :                          
-                        deleted_data.append([record['id'],record['title_translated'], record['owner_org']])                                
-
-                except IndexError as e:
-                    print(e)           
-                    continue    
-    
-        return deleted_data 
-        
-    def get_deleted_dataset(self, del_id ):        
-       for  id, title, org in self.deleted_data:
-            
-            if  del_id == id :
-                print("found", id)  
-                print(title,org)                     
-                
-                return (title, org)  
-       return (None, None)              
-     
-
     def __delete__(self):
         if not self.file:
             if self.download_file:
                 os.unlink(self.download_file)
                 print('temp file deleted', self.download_file)
 
-    def get_details(self, id):
-        try:
-            target_pkg = self.site.action.package_show(id=id)
-        except:
-            target_pkg = None
-        return target_pkg
-
+   
     def read_orgs(self):
         count = 0
         while count <= 5:
@@ -228,37 +139,36 @@ class DatasetDownload():
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
 
-
-    def read_portal(self, stats):
+    def read_portal(self, stats, og_type=None):
         self.ds = {}
         self.org_count = defaultdict(int)
+        og_type = og_type
         count = 0
         for records in self.download():
-            count += len(records)            
+            count += len(records)
             for rec in records:
                 if not stats.get(rec['id']):
                     continue
-                if self.og_type == 'info':
+               # if self.og_type == 'info':
+                if og_type == 'info':
                     if rec['type'] != 'info':
                         stats.pop(rec['id'])  # not open info
                         continue
                 self.ds[rec['id']] = {'title_translated': rec['title_translated'],
                                       'owner_org': rec['owner_org']}
                 self.org_count[rec['owner_org']] += 1
-                
 
-    def getVisitStats(self, og_type):
-        self.set_catalogue_file()
-        self.og_type = og_type
+# Screen and page view per month and dataset
+    def getVisitStats(self): 
+        self.set_catalogue_file()        
         offset = 0
-        limit = 1000
-        stats = defaultdict(int)
-        test = 0
-        while True:
-            response = self.getRawVisitReport(offset)
+        limit = 10000
+        stats = defaultdict(int)        
+        while True:            
+            response = self.getRawReport(offset, limit, "page_view")            
             data, rowCount = parseReport(
-                response, 'pagePath', 'screenPageViews')           
-            for [url, count] in data:
+                response, 'pagePath', 'screenPageViews')
+            for [url, count] in data:                
                 id = url.split('/')[-1]
                 if id[:8] == 'dataset?':
                     continue
@@ -267,59 +177,52 @@ class DatasetDownload():
                 if len(id) != 36:
                     continue  # make sure it is an UUID
                 stats[id] += int(count)
-                test += int(count)
-            if (rowCount <= limit or (rowCount - offset) <= limit):                
+
+            if (rowCount <= limit or (rowCount - offset) <= limit):
                 break
             else:
-                offset += limit               
-        stats = dict(stats)        
-        self.read_portal(stats)
-
+                offset += limit
+        stats = dict(stats)     
         self.dump(stats, True)
-
-    def getStats(self, og_type):
+# Downloads per month and dataset (either info or data)
+    def getStats(self): #, og_type
         self.set_catalogue_file()
-        self.og_type = og_type
-        offset = 0
-        limit = 100000
+        #self.og_type = og_type
+        offset = 0        
+        limit = 10000
         stats = defaultdict(int)
         while True:
-            response = self.getRawReport(offset)
+            response = self.getRawReport(offset, limit, "file_download")           
             data, rowCount = parseReport(response)
             for [url, count] in data:
                 id = url.split('/dataset/')[-1]
-                id = id.split('/')[0]
+                id = id.split('/')[0]                
                 if len(id) != 36:
+                    print(f"not an UUID {id} : {count}")
                     continue  # make sure it is an UUID
                 stats[id] += int(count)
-            if (rowCount <= limit or (rowCount - offset) <= limit):                
+            if (rowCount <= limit or (rowCount - offset) <= limit):
                 break
             else:
-                offset += limit               
-        stats = dict(stats)
-        self.read_portal(stats)
+                offset += limit
+        stats = dict(stats)        
+        self.dump(stats)
+        self.dump_info(stats)      
         
-        if self.og_type == 'info':
-            self.dump_info(stats)
-        else:
-            self.dump(stats)
-
+# genrates statisc file for TOP info downloads and last month info download
     def dump_info(self, data):
+        self.read_portal(data, og_type = 'info')
+        y, m, d = self.start_date.split('-')
         sheets = []
-        top100 = [[id, c] for id, c in data.items()]
-        top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
-        rows = [['ID / Identificateur',
-                 'Title English / Titre en anglais',
-                 'Title French / Titre en français',
-                 "Department Name English / Nom du ministère en anglais",
-                 "Department Name French / Nom du ministère en français",
-                 "number of downloads / nombre de téléchargements"]]
-        for rec_id, count in top100:
-            # get top20
-            if len(rows) >= 21:
-                break
+        all_rec = [[id, c] for id, c in data.items()]
+        all_rec.sort(key=lambda x: x[1], reverse=True)
+        # top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
+        rows = [['id','title', 'titre', 'department',
+                 'ministere', 'downloads_telechargements', 
+                 'month_mois', 'year_annee']]
+        for rec_id, count in all_rec:
             rec = self.ds.get(rec_id, None)
-            if not rec:                
+            if not rec:
                 # deleted, skip it
                 continue
             else:
@@ -329,300 +232,184 @@ class DatasetDownload():
             org_title = org_title.split('|')
             org_title = [x.strip() for x in org_title]
             rows.append([rec_id, rec_title['en'], rec_title['fr'],
-                         org_title[0], org_title[1], count])
-        # rows.append([])
-        #rows.append([self.start_date, self.end_date])
-        rows = cleanup_illegal_characters(rows)
-        sheet1 = {'name': 'Top 20 Information',
-                  'data': rows,
-                  # col:width
-                  'col_width': {0: 40, 1: 50, 2: 50, 3: 50, 4: 50, 5: 40}
-                  }
-        sheets.insert(0, sheet1)
-        #ga_tmp_dir = os.environ['GA_TMP_DIR']
-        write_xls(os.path.join("GA_TMP_DIR", 'downloads_info.xlsx'), sheets)
-        #write_xls('downloads_info.xls', sheets)
-
+                         org_title[0], org_title[1], count, m, y])
+            if len(rows) == 21:
+                write_csv(os.path.join("GA_TMP_DIR", "".join(["openDataPortal.siteAnalytics.top20Info", m, y,".csv"])), rows)
+        write_csv(os.path.join("GA_TMP_DIR",
+                  "od_ga_All_Info_download.csv"), rows)
+        
+# genrates statisc files for views and downloads of datasets last month (Top 100 downlads and all downloads/dataset)
     def dump(self, data, ignore_deleted=False):
-        # further reduce to departments
-        ds = defaultdict(int)
-        sheets = defaultdict(list)
-        deleted_ds = {}
-        self.deleted_data = self.deleted_dataset(self.old_file ) 
+        self.read_portal(data)               
+        ds = defaultdict(int)        
+        deleted_ds = {}       
+        count = 0
         for id, c in data.items():
             rec = self.ds.get(id, None)
             if (not rec) and ignore_deleted:
                 deleted_ds[id] = True
                 continue
             if not rec:
-                
-                print(id, ' deleted')
-                rec_title, org_id = self.get_deleted_dataset(id)
-                if (not rec_title ) or (not org_id):
-                   continue
-                else:
-                    deleted_ds[id] = {'title_translated': rec_title,
-                                    'org_id': org_id}                           
+                count +=1   
+                print(id, ' deleted', count)
+                continue               
             else:
                 org_id = rec['owner_org']
             ds[org_id] += c
-
-            sheet = sheets[org_id]
-            sheet.append(id)
+            
         if ignore_deleted:
             for k, v in deleted_ds.items():
                 data.pop(k)
             deleted_ds = {}
 
-        rows = []
-        for k, v in ds.items():
-            title = self.orgs.get(k, ['', ''])
-            if len(title) == 1:
-                title.append(title[0])
-            rows.append([title[0].strip(), title[1].strip(), v])
-        rows.sort(key=lambda x: -x[2])
-        header = ["Department Name English / Nom du ministère en anglais",
-                  "Department Name French / Nom du ministère en français",
-                  "number of downloads / nombre de téléchargements"]
+        self.save_csv( data, ds, deleted_ds, ignore_deleted)
 
-        # write_csv('/tmp/a.csv', rows, header)
-
-        # now save to xls
-        self.saveXls(sheets, data, ds, deleted_ds, ignore_deleted)
-
-    def saveXls(self, org_recs, data, org_stats, deleted_ds, isVisit=False):
+# Save dataset download and view records to csv files. 
+    def save_csv(self, data, org_stats, deleted_ds, isVisit=False):
         sheets = []
         rows = []
-        for k, [name, title] in self.org_id2name.items():
-            count = org_stats.get(k, 0)
-            if count == 0:
-                continue
-            title = title.split('|')
-            rows.append([name, title[0].strip(), title[1].strip(), count])
-        rows.sort(key=lambda x: -x[3])
-        rows.insert(0, ['Abbreviation / Abréviation',
-                        "Department Name English / Nom du ministère en anglais",
-                        "Department Name French / Nom du ministère en français",
-                        "Number of downloads / Nombre de téléchargements"])
-        if isVisit:
-            rows[0][3] = "Number of visits / Nombre de visites"
-        rows = cleanup_illegal_characters(rows)
-        sheet1 = {'name': 'Summary by departments',
-                  'data': rows,
-                  'col_width': {0: 26, 1: 50, 2: 50, 3: 40}  # col:width
-                  }
+        y, m, d = self.start_date.split("-")       
+        all_rec = [[id, c] for id, c in data.items()]
+        all_rec.sort(key=lambda x: x[1], reverse=True)        
 
-        # get top100
-        top100 = [[id, c] for id, c in data.items()]
-        top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
-        rows = [['ID / Identificateur',
-                 'Title English / Titre en anglais',
-                 'Title French / Titre en français',
-                 "Department Name English / Nom du ministère en anglais",
-                 "Department Name French / Nom du ministère en français",
-                 "number of downloads / nombre de téléchargements"]]
+        rows = [['id','title', 'titre', 'department',
+                 'ministere', 'downloads_telechargements', 
+                 'month_mois', 'year_annee']]        
         if isVisit:
-            rows[0][5] = "Number of visits / Nombre de visites"
-        for rec_id, count in top100:
+            rows[0][5] = "visits_visites"
+        for rec_id, count in all_rec:
             rec = self.ds.get(rec_id, None)
-            
             if not rec:
-                continue
-                print(deleted_ds.keys())
+                # continue
                 if rec_id in deleted_ds.keys():
-                    rec_title = deleted_ds[rec_id]['title_translated']                    
-                    rec_title = simplify_lang(rec_title)                                     
+                    rec_title = deleted_ds[rec_id]['title_translated']
+                    rec_title = simplify_lang(rec_title)
                     org_id = deleted_ds[rec_id]['org_id']
                 else:
-                    continue
-            else:                
+                    continue            
+            else:
                 rec_title = simplify_lang(rec['title_translated'])
-               
+
                 org_id = rec['owner_org']
             [_, org_title] = self.org_id2name.get(org_id)
             org_title = org_title.split('|')
             org_title = [x.strip() for x in org_title]
             rows.append([rec_id, rec_title['en'], rec_title['fr'],
-                         org_title[0], org_title[1], count])
-        rows = cleanup_illegal_characters(rows)
-        sheet2 = {'name': 'Top 100 Datasets',
-                  'data': rows,
-                  # col:width
-                  'col_width': {0: 40, 1: 50, 2: 50, 3: 50, 4: 50, 5: 40}
-                  }
-        #ga_tmp_dir = os.environ['GA_TMP_DIR']
-        write_csv(os.path.join("GA_TMP_DIR", "od_ga_top100.csv"), rows)
-        #write_csv("od_ga_top100.csv", rows)
+                         org_title[0], org_title[1], count, m, y])
+            if not isVisit and len(rows) == 101:
+                write_csv( os.path.join("GA_TMP_DIR", "".join(["openDataPortal.siteAnalytics.top100Datasets.bilingual", m, y,".csv"])), rows)
+        if isVisit:
+            write_csv(os.path.join(
+                "GA_TMP_DIR",  ".".join(["openDataPortal.siteAnalytics.visits", "csv"])), rows)
+        else:
+            write_csv(os.path.join("GA_TMP_DIR", ".".join(["openDataPortal.siteAnalytics.downloads","csv"])), rows)
 
-        for org_id, recs in org_recs.items():
-            rows = []
-            title = self.org_id2name.get(org_id, ['unknown'])[0]
-            for rec_id in recs:
-                rec = self.ds.get(rec_id, None)
-                if not rec:
-                    rec_title = deleted_ds[rec_id]['title_translated']                 
-                    rec_title = simplify_lang(rec_title)                    
-                else:
-                    rec_title = simplify_lang(rec['title_translated'])
-                count = data.get(rec_id)
-                rows.append([rec_id, rec_title['en'], rec_title['fr'], count])
-            rows.sort(key=lambda x: -x[3])
-            rows.insert(0, ['ID / Identificateur',
-                            'Title English / Titre en anglais',
-                            'Title French / Titre en français',
-                            'Number of downloads / Nombre de téléchargements'])
-            if isVisit:
-                rows[0][3] = "Number of visits / Nombre de visites"
-            rows.append(['total', '', '', org_stats.get(org_id)])
-            rows = cleanup_illegal_characters(rows)
-            sheets.append({'name': title,
-                           'data': rows,
-                           'col_width': {0: 40, 1: 50, 2: 50, 3: 40}
-                           }
-                          )
-        sheets.sort(key=lambda x: x['name'])
-        sheets.insert(0, sheet2)
-        sheets.insert(0, sheet1)
-        write_xls(os.path.join("GA_TMP_DIR", 'od_ga_downloads.xlsx'), sheets)
-        #write_xls('od_ga_downloads.xls', sheets)
-
-    def getRawReport(self, offset):
+#Get raw report from GA4 API filtered by screenPageViews or downloads
+    def getRawReport(self, offset, limit, eventName):
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
-            dimensions=[Dimension(name="eventName"),
-                        Dimension(name="pagePath")
-                        ],
-            metrics=[Metric(name="eventValue"),
+            dimensions=[
+                Dimension(name="pagePath")
+            ],
+            metrics=[Metric(name="screenPageViews"),
                      Metric(name="eventCount")],
             date_ranges=[
                 DateRange(start_date=self.start_date, end_date=self.end_date)],
             dimension_filter=FilterExpression(
-                filter=Filter(
-                    field_name='eventName',
-                    string_filter=Filter.StringFilter(value='page_view')
-                )
-
-            ),
-            order_bys=[OrderBy(
-                desc=True,
-                metric=OrderBy.MetricOrderBy(metric_name="eventCount")
-            )],
-            limit=1000,
-            offset=offset,
-        )
-        return self.ga.run_report(request)
-
-    """ def parseReport(self, response):
-        return parseReport(response, 'ga:pagePath', 'ga:totalEvents') """
-
-    def getRawVisitReport(self, offset):
-        request = RunReportRequest(
-            property=f"properties/{self.property_id}",
-            dimensions=[Dimension(name="pagePath")],
-            metrics=[Metric(name="sessions"),
-                     Metric(name="screenPageViews")],
-            date_ranges=[
-                DateRange(start_date=self.start_date, end_date=self.end_date)],
-            dimension_filter=FilterExpression(
-                or_group=FilterExpressionList(
+                and_group=FilterExpressionList(
                     expressions=[
+
                         FilterExpression(
                             filter=Filter(
-                                field_name='pagePath',
-                                string_filter=Filter.StringFilter(match_type="BEGINS_WITH",
-                                                                  value='/data/en/dataset/',
-                                                                  case_sensitive=True)
+                                field_name='eventName',
+                                string_filter=Filter.StringFilter(
+                                    value=eventName)
                             )
                         ),
-                        FilterExpression(
-                            filter=Filter(
-                                field_name='pagePath',
-                                string_filter=Filter.StringFilter(match_type="BEGINS_WITH",
-                                                                  value='/data/fr/dataset/',
-                                                                  case_sensitive=True)
-                            )
 
+                        FilterExpression(
+
+                            or_group=FilterExpressionList(
+                                expressions=[
+                                    FilterExpression(
+                                        filter=Filter(
+                                            field_name='pagePath',
+                                            string_filter=Filter.StringFilter(match_type="BEGINS_WITH",
+                                                                              value='/data/en/dataset/',
+                                                                              case_sensitive=True)
+                                        )
+                                    ),
+                                    FilterExpression(
+                                        filter=Filter(
+                                            field_name='pagePath',
+                                            string_filter=Filter.StringFilter(match_type="BEGINS_WITH",
+                                                                              value='/data/fr/dataset/',
+                                                                              case_sensitive=True)
+                                        )
+
+                                    )
+                                ]
+                            )
                         )
+
                     ]
                 )
+
             ),
             order_bys=[OrderBy(
                 desc=True,
                 metric=OrderBy.MetricOrderBy(metric_name="screenPageViews")
             )],
-            limit=100000,
+            limit=limit,
             offset=offset,
         )
         return self.ga.run_report(request)
+    
+# Download the catalogue
+    def download(self): 
+        records = []              
+        if not self.file:
+            print("downloading new catalogue")
+            # dataset http://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7
+            url = 'http://open.canada.ca/static/od-do-canada.jl.gz'
+            r = requests.get(url, stream=True)
+            f = tempfile.NamedTemporaryFile(delete=False)
+            for chunk in r.iter_content(1024 * 64):
+                f.write(chunk)
+            f.close()
+            self.download_file = f.name
 
-    def download (self, old_catalogue = None):
-        records = []
-        if old_catalogue:
-            try:
-                with gzip.open(old_catalogue, 'rb') as fd:
-                    for line in fd:
-                        records.append(json.loads(line.decode('utf-8')))
-                        if len(records) >= 500:
-                            yield (records)
-                            records = []
-                if len(records) > 0:
-                    yield (records)
-                    records = []
-            except GeneratorExit:
-                pass
-            except:
-                import traceback
-                traceback.print_exc()
-                print('error reading downloaded file')
-                sys.exit(0)
-        else:        
-        
-            if not self.file:
-                print("downloading new catalogue")
-                # dataset http://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7
-                url = 'http://open.canada.ca/static/od-do-canada.jl.gz'
-                r = requests.get(url, stream=True)                
-                f = tempfile.NamedTemporaryFile(delete=False)
-                for chunk in r.iter_content(1024 * 64):
-                    f.write(chunk)
-                f.close()
-                self.download_file = f.name
+        fname = self.file or f.name
+        try:
+            with gzip.open(fname, 'rb') as fd:
+                for line in fd:
+                    records.append(json.loads(line.decode('utf-8')))
+                    if len(records) >= 500:
+                        yield (records)
+                        records = []
+            if len(records) > 0:
+                yield (records)
+                records = []
+        except GeneratorExit:
+            pass
+        except:
+            import traceback
+            traceback.print_exc()
+            print('error reading downloaded file')
+            sys.exit(0)
 
-            
-            fname = self.file or f.name
-            try:
-                with gzip.open(fname, 'rb') as fd:
-                    for line in fd:
-                        records.append(json.loads(line.decode('utf-8')))
-                        if len(records) >= 500:
-                            yield (records)
-                            records = []
-                if len(records) > 0:
-                    yield (records)
-                    records = []
-            except GeneratorExit:
-                pass
-            except:
-                import traceback
-                traceback.print_exc()
-                print('error reading downloaded file')
-                sys.exit(0)
+# Monthly downloads and visits stat
 
     def monthly_usage(self, csv_file):
-        total, downloads = 0 , 0
+        total, downloads = 0, 0
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
-            #dimensions=[Dimension(name="PagePath")],
+            # dimensions=[Dimension(name="PagePath")],
             metrics=[Metric(name="sessions")
-                    #  ,
-                    #  Metric(name="screenPageViews")
                      ],
             date_ranges=[
                 DateRange(start_date=self.start_date, end_date=self.end_date)],
-            # order_bys=[OrderBy(
-            #     desc=True,
-            #     metric=OrderBy.MetricOrderBy(metric_name="screenPageViews")
-            # )],
+
             limit=10000,
             offset=0,
         )
@@ -631,7 +418,7 @@ class DatasetDownload():
             data, rowCount = parseReport(response, None, 'sessions')
             for eCount in data:
                 total += int(eCount)
-            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):              
+            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):
                 break
             request.offset += request.limit
         request = RunReportRequest(
@@ -648,35 +435,33 @@ class DatasetDownload():
                     field_name='eventName',
                     string_filter=Filter.StringFilter(value='file_download')
                 )
-
             ),
 
             limit=10000,
             offset=0,
-
         )
         while True:
             response = self.ga.run_report(request)
             data, rowCount = parseReport(response, None, 'eventCount')
             for eCount in data:
                 downloads += int(eCount)
-            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):
-                #print(f'row count {rowCount}, limit {request.limit} and offset {request.offset} with total:{total}')
+            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):                
                 break
             request.offset += request.limit
-        
+
         # Checking if the report is up to date and updating otherwise
         [year, month, _] = self.end_date.split('-')
         data = read_csv(csv_file)
         if int(data[1][0]) == int(year) and int(data[1][1]) == int(month):
             print('entry exists, no overwriting')
             return
-        row = [year, month, total, downloads]        
+        row = [year, month, total, downloads]
         data[0] = ['year / année', 'month / mois',
                    'visits / visites', 'downloads / téléchargements']
         data.insert(1, row)
         write_csv(csv_file, data)
-
+ 
+ # Visits by country stat
     def by_country(self, csv_file):
         country_name = self.country.get('country_region').get('country')
         request = RunReportRequest(
@@ -693,9 +478,9 @@ class DatasetDownload():
             offset=0,
         )
         response = self.ga.run_report(request)
-        data, rowCount = parseReport(response, 'country', 'sessions')        
+        data, rowCount = parseReport(response, 'country', 'sessions')
         total = 0  # should be initialized with cummul upto 2023-07-01
-        
+
         country_fr = [c for c in country_name.values()]
         country_en = [c for c in country_name.keys()]
         assert (len(country_en) == len(country_fr))
@@ -718,16 +503,10 @@ class DatasetDownload():
         for c, count in data:
             total += count
         data = [[country, int(count), "%.2f" % ((count*100.0)/total) + '%']
-                for [country, count] in data] 
-        """ df = pd.DataFrame(data, columns = ['Country','visits', 'percentage of visits'])
-        country_file = os.path.join("GA_TMP_DIR", "by_country.csv")
-        df.to_csv(country_file,index=False )         
-        print(total, total_visits)      """
-        self.hist_visits(data, csv_file )
-        # data.insert(0, ['region / Région', 'visits / Visites',
-        #             'percentage of total visits / Pourcentage du nombre total de visites'])
-        # write_csv(csv_file, data)
+                for [country, count] in data]
+        self.hist_visits(data, csv_file)
 
+    # Visits by region stat
     def by_region(self, csv_file):
         region_name = self.country.get('country_region').get('region')
         request = RunReportRequest(
@@ -758,15 +537,16 @@ class DatasetDownload():
         data, rowCount = parseReport(response, 'region', 'sessions')
 
         total = 0  # should be initialized with cummul upto 2023-07-01
-        data = [[region, int(count)] for [region, count] in data]        
+        data = [[region, int(count)] for [region, count] in data]
         for c, count in data:
             total += count
         region_fr = [r for r in region_name.values()]
         region_en = [r for r in region_name.keys()]
-        assert( len(region_en)==len(region_fr))
-        region_dict = { region_en[i]:region_fr[i] for i in range(len(region_en)) }
+        assert (len(region_en) == len(region_fr))
+        region_dict = {region_en[i]: region_fr[i]
+                       for i in range(len(region_en))}
         data = [[region if region != ('(not set)' or "") else 'unknown / Inconnu', int(
-            count), "%.2f" % ((count*100.0)/total) + '%'] for [region, count] in data]       
+            count), "%.2f" % ((count*100.0)/total) + '%'] for [region, count] in data]
         for row in data:
             r = row[0]
             if r == '(not set)':
@@ -774,59 +554,51 @@ class DatasetDownload():
             elif r:
                 r_fr = region_dict.get(r, r)
                 row[0] = r + u' | ' + r_fr
-        #df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
-        self.hist_visits(data, csv_file )
-        # data.insert(0, ['region / Région', 'visits / Visites',
-        #             'percentage of total visits / Pourcentage du nombre total de visites'])
-        # write_csv(csv_file, data)
+        self.hist_visits(data, csv_file)
 
     # To include historical visits from last reporting
-    def hist_visits (self, data, csv_file ):
-        df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites', 'percentage of total visits / Pourcentage du nombre total de visites'])
+    def hist_visits(self, data, csv_file):
+        df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites',
+                          'percentage of total visits / Pourcentage du nombre total de visites'])
         old_df = pd.read_csv(csv_file)
         last_region = [c for c in old_df['region / Région']]
         new_region = [c for c in df['region / Région']]
         new_region_visit = {}
         old_region_visit = {}
         for i in range(len(df)):
-            new_region_visit[df.iloc[i]['region / Région']] = df.iloc[i]['visits / Visites']
+            new_region_visit[df.iloc[i]['region / Région']
+                             ] = df.iloc[i]['visits / Visites']
         for i in range(len(old_df)):
-            old_region_visit[old_df.iloc[i]['region / Région']] = old_df.iloc[i]['visits / Visites']
+            old_region_visit[old_df.iloc[i]['region / Région']
+                             ] = old_df.iloc[i]['visits / Visites']
 
         for c in last_region:
-            if c in new_region:              
+            if c in new_region:
                 old_region_visit[c] += new_region_visit[c]
-                
+
         for c in new_region:
             if c not in last_region:
-                old_region_visit[c] = new_region_visit[c] 
-        
-        new_df = pd.DataFrame.from_dict(old_region_visit, orient='index', columns = [ 'visits / Visites' ])
-        new_df.reset_index(inplace =True)
-        new_df.rename(columns = {'index':'region / Région'}, inplace=True)
-        total = sum(new_df['visits / Visites'])
-        per_tage =["%.2f" % ((count*100.0)/total) + '%' for count in new_df['visits / Visites']]
-        new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
-        new_df.sort_values(by = 'visits / Visites',axis=0, ascending=False, inplace=True )
-        new_df.to_csv(csv_file, encoding="utf-8", index=False)
+                old_region_visit[c] = new_region_visit[c]
 
+        new_df = pd.DataFrame.from_dict(
+            old_region_visit, orient='index', columns=['visits / Visites'])
+        new_df.reset_index(inplace=True)
+        new_df.rename(columns={'index': 'region / Région'}, inplace=True)
+        total = sum(new_df['visits / Visites'])
+        per_tage = ["%.2f" % ((count*100.0)/total) +
+                    '%' for count in new_df['visits / Visites']]
+        new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
+        new_df.sort_values(by='visits / Visites', axis=0,
+                           ascending=False, inplace=True)
+        new_df.to_csv(csv_file, encoding="utf-8", index=False)
+# set catalogue file name
     def set_catalogue_file(self):
-        y, m, d = self.end_date.split('-')
-        y_s, m_s, d_s = self.start_date.split('-')
-        #ga_static_dir = os.environ['GA_STATIC_DIR']
+        y, m, d = self.end_date.split('-')    
         self.file = ''.join(
             ["GA_STATIC_DIR", '\od-do-canada.', y, m, d, '.jl.gz'])
-           
-        #old_m = str("%02d" %(int(m)-1))
-        self.old_file = ''.join(
-            ["GA_STATIC_DIR",'\od-do-canada.', y_s, m_s, d_s, '.jl.gz'])        
-            
         if not os.path.exists(self.file):
-            raise Exception('not found ' + self.file)            
-        elif not os.path.exists(self.old_file):
-            raise Exception('not found ' + self.old_file)
-            
-
+            raise Exception('not found ' + self.file)
+   # generate catalogue      
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['Department or Agency', 'Ministère ou organisme',
@@ -838,9 +610,8 @@ class DatasetDownload():
             link_fr = 'http://ouvert.canada.ca//data/fr/dataset?organization=' + name
             rows.append([title_en, title_fr, link_en, link_fr, count])
         rows.sort(key=lambda x: x[0])
-        rows = cleanup_illegal_characters(rows)
         write_csv(csv_file, rows, header)
-
+# Generates dataset released by organization by month for the last 12 month
     def by_org_month(self, csv_month_file, csv_file):
         self.set_catalogue_file()
         # need to use cataloge file downloaded at 1st day of each month (or last day of prev month), same for by_org
@@ -848,7 +619,7 @@ class DatasetDownload():
         # insert row if new org is created
         org_stats = defaultdict(int)
         total_num = 0
-        total_new =0
+        total_new = 0
         for records in self.download():
             total_num += len(records)
             for rec in records:
@@ -874,7 +645,6 @@ class DatasetDownload():
         header[1] = 'Department or Agency datasets / Jeux de données du Ministère ou organisme'
         header[-1] = 'Total number of datasets / Nombre de jeux de données'
         header.insert(-1, new_header)
-
         # need to rotate, merge column 2, and 3, update the title
         del header[2]
 
@@ -945,81 +715,48 @@ class DatasetDownload():
         var = total_num - int(total[-1])
         total[-1] = total_num
         total.insert(-1, var)
-        # pr, c = int(total[2]), int(total[3].replace(',', ''))
-        # del total[2]
-        # total[2] = pr + c
         ds.append(total)
         write_csv(csv_month_file, ds, header)
 
 
-def report(client_secret_path, property_id, start, end, va, og_config_file=None):
-    
-    #ga_tmp_dir = os.environ['GA_TMP_DIR']
+def report(client_secret_path, property_id, start, end, va=None, og_config_file=None):
     og_type = va
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
                          property_id, og_config_file)
-    ds.set_catalogue_file()
-    
-    if og_type == 'info':
-        return ds.getStats(og_type)
-    elif og_type == 'visit':
-        return ds.getVisitStats(og_type)
-    elif og_type == 'download':
-        return ds.getStats(og_type)
-    
-    ds.getStats(og_type)
+    ds.set_catalogue_file()   
+    ds.getVisitStats()
     time.sleep(2)
-    ds.monthly_usage(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv'))
+    ds.getStats()
     time.sleep(2)
-    ds.by_country(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv'))
+    ds.monthly_usage(os.path.join(
+        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv'))
     time.sleep(2)
-    ds.by_region(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv'))
+    ds.by_country(os.path.join(
+        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv'))
+    time.sleep(2)
+    ds.by_region(os.path.join(
+        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv'))
     ds.by_org_month(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv'),
                     os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv'))
-
-
-def run_report (start_date, end_date):
-   down_files.csv_download()
-   down_files.cat_download(end_date)
-   down_files.archive_download()
-   va = ["info", "dataset","visit", "download"]
-   y,m,d = end_date.split("-")
-   old_download = os.path.join("GA_TMP_DIR", "od_ga_downloads.xlsx")
-   for org in va:   
-        report ("credentials.json", "359132180", start_date ,end_date , org)
-        if org =="visit":         
-            new_download = os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.visits", 
-                                        "".join([m,str(int(y)-1)]),"".join([m,y, ".xlsx"])])) 
-            rename_files.file_rename(old_download, new_download)
-        elif org =="download":
-            new_download = os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.downloads", 
-                                        "".join([m,str(int(y)-1)]),"".join([m,y, ".xlsx"])])) 
-            rename_files.file_rename(old_download, new_download)
-   rename_files.old_to_new_names()
-   archive.archive_files(end_date)
-   resource_patch.resources_update()
-
-
+ 
 def main():
-    t0 = time.time()
-   # run_report(*sys.argv[1:])
-    
+    down_files.csv_download()    
+    down_files.archive_download() 
+    t0 = time.time() 
     today = date.today()
-    last_day = today- timedelta(days=today.day)   
+    last_day = today - timedelta(days=today.day)
     first_day = last_day-timedelta(days=last_day.day-1)
-    last_day= last_day.strftime('%Y-%m-%d')
-    first_day= first_day.strftime('%Y-%m-%d')
-    run_report (first_day, last_day)   
+    last_day = last_day.strftime('%Y-%m-%d')
+    first_day = first_day.strftime('%Y-%m-%d')
+    report("credentials.json", "359132180", "2023-09-01", "2023-09-15")  
+    onetime_concat.concat_hist() 
+    down_files.archive_files(last_day)
+    #resource_patch.resources_update()    
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
-    print (f"All done in {time_m} min and {time_s:.2f} s")       
+    print(f"All done in {time_m} min and {time_s:.2f} s")
 
-#Staging-portal 374861301
-#Staging-registry 359129908
-#registry 363143703
-#Production Portal 359132180 
 
 if __name__ == '__main__':
     main()
-
