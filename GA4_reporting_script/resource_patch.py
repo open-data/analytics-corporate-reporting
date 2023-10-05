@@ -2,33 +2,20 @@ from ckanapi import RemoteCKAN
 from ckanapi.errors import CKANAPIError
 import os
 
-#['openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv', 'openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv',
-#  'openDataPortal.siteAnalytics.downloads-082022-082023.csv', 'openDataPortal.siteAnalytics.info-082022-082023.csv', 
-# 'openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv', 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv',
-#  'openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv', 'openDataPortal.siteAnalytics.visits-082022-082023.csv', 
-# 'opendataportal.siteanalytics.top100datasets.bilingual.csv', 'opendataportal.siteanalytics.top20info.csv']
 
 def resources_update():
 
     all_files = sorted([filename for filename in os.listdir('GA_TMP_DIR')]) 
     print (len (all_files) ) 
      
-    # Analytics resources
-    resource_ids =["5a1b343d-2fea-4c31-8652-f77506e3ea37","f09148f9-a09b-46ec-bf5b-52f26720f3f3","4ebc050f-6c3c-4dfd-817e-875b2caf3ec6","b1dfa726-7ed1-4a6b-ae49-77a200abee72", 
-                  "b52ee0b2-f2be-4bc5-a27a-db93a228d38b","e06f06a9-d897-4a35-9b73-4c2bc1c2d5cf","02a92b0f-b26d-4fbd-9601-d27651703715", "c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db","ba980e38-f110-466a-ad92-3ee0d5a60d49",
-                  "9d395c98-f33f-4d40-9e3b-3d383321c577"]
+    #Analytics resources
+    resource_ids =["5a1b343d-2fea-4c31-8652-f77506e3ea37","f09148f9-a09b-46ec-bf5b-52f26720f3f3","4ebc050f-6c3c-4dfd-817e-875b2caf3ec6", 
+                   "b1dfa726-7ed1-4a6b-ae49-77a200abee72","b52ee0b2-f2be-4bc5-a27a-db93a228d38b","e06f06a9-d897-4a35-9b73-4c2bc1c2d5cf",
+                   "02a92b0f-b26d-4fbd-9601-d27651703715", "c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db","ba980e38-f110-466a-ad92-3ee0d5a60d49",
+                   "9d395c98-f33f-4d40-9e3b-3d383321c577"]
 
-    #Registry resources Id 
-    """ resource_ids =["5dda926f-0718-4f1d-ac00-c601cb05194c","9ae83baa-dd01-4755-b079-60f697b52ebd","5eb3595a-3242-416f-8ee1-e885eb4356eb", 
-                  "371d7ed8-a8e1-48d2-b53d-3f8b6fdd1259","de9f3d98-87f9-47a3-b8f7-c12e27fe3f76", "34d53825-0693-43b2-8cf4-cda323602a53",
-                    "df33b8c2-ebed-4d86-9a01-3df80c584c56","eca0267e-4164-4bd1-8bfb-73117be1daec" ] """
-    #Staging registery
-    """ resource_ids =["926c4041-ad91-4624-951f-dfaf92acb15c","2a9fba67-5a33-49b5-946a-23a21f6b10c4","77e8753d-4da8-42a1-ae74-af0f9129674b", 
-                   "02a205b2-3797-4f45-a146-520643ca47a3","150a6d3c-d057-4094-a572-7139a365f1f5","3450046b-29f4-4cbd-a53a-73c114b07bb6","f097b167-fd7c-41ab-92ff-c0819434a3ac",
-                  "dc3626bc-e085-4e77-8cd9-ec04d9ba2307", "efa94ec1-b294-429a-851e-bd69bdc295d7","724e8a64-1288-43e3-9a28-07f266d94b69"] """ 
-
-    ckan = RemoteCKAN('https://registry.open.canada.ca/', apikey=APIKEY)
-    #ckan = RemoteCKAN('https://registry-staging.open.canada.ca/', apikey=APIKEY)
+    ckan = RemoteCKAN('https://registry.open.canada.ca/', apikey=APIKEY)   
+    # Uploading all csv files to registry
     for id, filename in enumerate(all_files):
         print (f'{os.path.join("GA_TMP_DIR", filename)} corresponds to {resource_ids[id]}')
         try:
@@ -38,20 +25,18 @@ def resources_update():
             upload= open (os.path.join("GA_TMP_DIR", filename), "rb")
 
           )
+          
         except CKANAPIError as e:
            print(resource_ids[id])
            print (e)
-
-    ckan.action.resource_patch(
-          #Registry
-          #id="2026faa9-88b4-40dd-8abe-84a140adf647",
-          #staging
-          #id="674bf651-03d5-4b9f-8794-5cc5e6b91e9f",
-          # analytic resources
+        except Exception as e:
+           print(e)
+           continue
+        print(f"sucessfully uploaded {id}")
+   # uploading archive to the registry
+    ckan.action.resource_patch(         
           id = "8debb421-e9cb-49de-98b0-6ce0f421597b",
-
           upload= open (os.path.join("GA_STATIC_DIR", "archive.zip"), "rb")
 
         ) 
-#resources_update()
-# dataset / package_id : 102e17d5-d573-463a-b5bc-94376e3ff48e
+

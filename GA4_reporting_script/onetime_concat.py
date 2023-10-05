@@ -18,13 +18,13 @@ current_visits = os.path.join ("GA_TMP_DIR","openDataPortal.siteAnalytics.visits
 current_downloads = os.path.join ("GA_TMP_DIR", "openDataPortal.siteAnalytics.downloads.csv")
 current_info = os.path.join ("GA_TMP_DIR", "od_ga_All_Info_download.csv")
 
-file_list = [(os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.downloads", 
+file_list = [(os.path.join("GA_TMP_DIR", "-".join(["opendataportal.siteanalytics.downloads", 
                                         "".join([last_month,str(int(y)-1)]),"".join([last_month,y, ".csv"])])) ,
                                         current_downloads, new_download, False), 
-             (os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.visits", 
+             (os.path.join("GA_TMP_DIR", "-".join(["opendataportal.siteanalytics.visits", 
                                         "".join([last_month,str(int(y)-1)]),"".join([last_month,y, ".csv"])])) ,
                                           current_visits, new_visit, True),
-             (os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.info", 
+             (os.path.join("GA_TMP_DIR", "-".join(["opendataportal.siteanalytics.info", 
                                         "".join([last_month,str(int(y)-1)]),"".join([last_month,y, ".csv"])])),
                                           current_info, new_info, False)]
 

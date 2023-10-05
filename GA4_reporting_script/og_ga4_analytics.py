@@ -31,6 +31,8 @@ from google.analytics.data_v1beta.types import (
     FilterExpressionList
 )
 import down_files
+# import rename_files
+# import archive
 import onetime_concat
 import resource_patch
 
@@ -74,7 +76,7 @@ def initialize_analyticsreporting(client_secrets_path):
         client_secrets_path)
     return client
 
-
+# GA API response parser and returs data in list and total rows for pagination
 def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
     data, rowCount = [], 0    
     for rowIdx, row in enumerate(response.rows):        
@@ -95,8 +97,7 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
 
 
 class DatasetDownload():
-    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):
-       # self.ga_tmp_dir = os.environ['GA_TMP_DIR']
+    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):       
         ga_rmote_ckan = "https://open.canada.ca/data"
         self.ga = ga
         self.property_id = property_id
@@ -137,6 +138,7 @@ class DatasetDownload():
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
 
+# reads the catalogue file 
     def read_portal(self, stats, og_type=None):
         self.ds = {}
         self.org_count = defaultdict(int)
@@ -156,7 +158,7 @@ class DatasetDownload():
                                       'owner_org': rec['owner_org']}
                 self.org_count[rec['owner_org']] += 1
 
-# Screen and page view per month and dataset
+# Screen and page views per month and per dataset
     def getVisitStats(self): 
         self.set_catalogue_file()        
         offset = 0
@@ -182,6 +184,7 @@ class DatasetDownload():
                 offset += limit
         stats = dict(stats)     
         self.dump(stats, True)
+
 # Downloads per month and dataset (either info or data)
     def getStats(self): #, og_type
         self.set_catalogue_file()
@@ -259,7 +262,6 @@ class DatasetDownload():
             for k, v in deleted_ds.items():
                 data.pop(k)
             deleted_ds = {}
-
         self.save_csv( data, ds, deleted_ds, ignore_deleted)
 
 # Save dataset download and view records to csv files. 
@@ -397,7 +399,6 @@ class DatasetDownload():
             sys.exit(0)
 
 # Monthly downloads and visits stat
-
     def monthly_usage(self, csv_file):
         total, downloads = 0, 0
         request = RunReportRequest(
@@ -478,7 +479,6 @@ class DatasetDownload():
         response = self.ga.run_report(request)
         data, rowCount = parseReport(response, 'country', 'sessions')
         total = 0  # should be initialized with cummul upto 2023-07-01
-
         country_fr = [c for c in country_name.values()]
         country_en = [c for c in country_name.keys()]
         assert (len(country_en) == len(country_fr))
@@ -589,6 +589,7 @@ class DatasetDownload():
         new_df.sort_values(by='visits / Visites', axis=0,
                            ascending=False, inplace=True)
         new_df.to_csv(csv_file, encoding="utf-8", index=False)
+
 # set catalogue file name
     def set_catalogue_file(self):
         y, m, d = self.end_date.split('-')    
@@ -596,11 +597,12 @@ class DatasetDownload():
             ["GA_STATIC_DIR", '\od-do-canada.', y, m, d, '.jl.gz'])
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
+        
    # generate catalogue      
     def by_org(self, org_stats, csv_file):
         rows = []
-        header = ['Department or Agency', 'Ministère ou organisme',
-                  'Department or Agency datasets', 'Jeux de données du Ministère ou organisme', 'Total']
+        header = ['department', 'ministere',
+                  'datasets', 'jeux_de_donnees', 'total']
         for org_id, count in org_stats.items():
             [title_en, title_fr] = self.orgs.get(org_id, ['', ''])
             name = self.org_id2name[org_id][0]
@@ -609,10 +611,11 @@ class DatasetDownload():
             rows.append([title_en, title_fr, link_en, link_fr, count])
         rows.sort(key=lambda x: x[0])
         write_csv(csv_file, rows, header)
+
 # Generates dataset released by organization by month for the last 12 month
     def by_org_month(self, csv_month_file, csv_file):
         self.set_catalogue_file()
-        # need to use cataloge file downloaded at 1st day of each month (or last day of prev month), same for by_org
+        # need to use cataloge file downloaded at last day of prev month
         # need to update the last column, insert before last column
         # insert row if new org is created
         org_stats = defaultdict(int)
@@ -639,9 +642,9 @@ class DatasetDownload():
         if header[-2] == new_header:
             print('exists ', new_header)
             return
-        header[0] = 'Government of Canada Department or Agency / Ministère ou organisme'
-        header[1] = 'Department or Agency datasets / Jeux de données du Ministère ou organisme'
-        header[-1] = 'Total number of datasets / Nombre de jeux de données'
+        header[0] = 'department_ministere'
+        header[1] = 'datasets_jeux_de_donnees'
+        header[-1] = 'total'
         header.insert(-1, new_header)
         # need to rotate, merge column 2, and 3, update the title
         del header[2]
@@ -750,11 +753,10 @@ def main():
     report("credentials.json", "359132180", first_day, last_day)  
     onetime_concat.concat_hist() 
     down_files.archive_files(last_day)
-    resource_patch.resources_update()    
+    #resource_patch.resources_update()    
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
-
 
 if __name__ == '__main__':
     main()
