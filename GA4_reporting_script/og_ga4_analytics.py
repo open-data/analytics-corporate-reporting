@@ -36,6 +36,7 @@ import down_files
 import onetime_concat
 import resource_patch
 
+
 def write_csv(filename, rows, header=None):
     outf = open(filename, 'wb')
     outf.write(codecs.BOM_UTF8)
@@ -77,9 +78,11 @@ def initialize_analyticsreporting(client_secrets_path):
     return client
 
 # GA API response parser and returs data in list and total rows for pagination
+
+
 def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
-    data, rowCount = [], 0    
-    for rowIdx, row in enumerate(response.rows):        
+    data, rowCount = [], 0
+    for rowIdx, row in enumerate(response.rows):
         dim, mtr = [], []
         if dimension_name:
             for i, dimension_value in enumerate(row.dimension_values):
@@ -87,7 +90,7 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
                     dim.append(dimension_value.value)
         for i, metric_value in enumerate(row.metric_values):
             if response.metric_headers[i].name == metric_name:
-                mtr.append(metric_value.value)                
+                mtr.append(metric_value.value)
         if dimension_name:
             data.append(dim + mtr)
         else:
@@ -97,7 +100,7 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
 
 
 class DatasetDownload():
-    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):       
+    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):
         ga_rmote_ckan = "https://open.canada.ca/data"
         self.ga = ga
         self.property_id = property_id
@@ -107,16 +110,15 @@ class DatasetDownload():
         self.end_date = end_date
         self.og_type = og_type
         self.read_orgs()
-        self.country = yaml.full_load(open('country_region.yml', 'r', encoding='utf-8'))
+        self.country = yaml.full_load(
+            open('country_region.yml', 'r', encoding='utf-8'))
 
-    
     def __delete__(self):
         if not self.file:
             if self.download_file:
                 os.unlink(self.download_file)
                 print('temp file deleted', self.download_file)
 
-   
     def read_orgs(self):
         count = 0
         while count <= 5:
@@ -138,7 +140,7 @@ class DatasetDownload():
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
 
-# reads the catalogue file 
+# reads the catalogue file
     def read_portal(self, stats, og_type=None):
         self.ds = {}
         self.org_count = defaultdict(int)
@@ -159,16 +161,16 @@ class DatasetDownload():
                 self.org_count[rec['owner_org']] += 1
 
 # Screen and page views per month and per dataset
-    def getVisitStats(self): 
-        self.set_catalogue_file()        
+    def getVisitStats(self):
+        self.set_catalogue_file()
         offset = 0
         limit = 10000
-        stats = defaultdict(int)        
-        while True:            
-            response = self.getRawReport(offset, limit, "page_view")            
+        stats = defaultdict(int)
+        while True:
+            response = self.getRawReport(offset, limit, "page_view")
             data, rowCount = parseReport(
                 response, 'pagePath', 'screenPageViews')
-            for [url, count] in data:                
+            for [url, count] in data:
                 id = url.split('/')[-1]
                 if id[:8] == 'dataset?':
                     continue
@@ -182,22 +184,22 @@ class DatasetDownload():
                 break
             else:
                 offset += limit
-        stats = dict(stats)     
+        stats = dict(stats)
         self.dump(stats, True)
 
 # Downloads per month and dataset (either info or data)
-    def getStats(self): #, og_type
+    def getStats(self):  # , og_type
         self.set_catalogue_file()
-        #self.og_type = og_type
-        offset = 0        
+        # self.og_type = og_type
+        offset = 0
         limit = 10000
         stats = defaultdict(int)
         while True:
-            response = self.getRawReport(offset, limit, "file_download")           
+            response = self.getRawReport(offset, limit, "file_download")
             data, rowCount = parseReport(response)
             for [url, count] in data:
                 id = url.split('/dataset/')[-1]
-                id = id.split('/')[0]                
+                id = id.split('/')[0]
                 if len(id) != 36:
                     print(f"not an UUID {id} : {count}")
                     continue  # make sure it is an UUID
@@ -206,20 +208,20 @@ class DatasetDownload():
                 break
             else:
                 offset += limit
-        stats = dict(stats)        
+        stats = dict(stats)
         self.dump(stats)
-        self.dump_info(stats)      
-        
+        self.dump_info(stats)
+
 # genrates statisc file for TOP info downloads and last month info download
     def dump_info(self, data):
-        self.read_portal(data, og_type = 'info')
+        self.read_portal(data, og_type='info')
         y, m, d = self.start_date.split('-')
         sheets = []
         all_rec = [[id, c] for id, c in data.items()]
         all_rec.sort(key=lambda x: x[1], reverse=True)
         # top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
-        rows = [['id','title', 'titre', 'department',
-                 'ministere', 'downloads_telechargements', 
+        rows = [['id', 'title', 'titre', 'department',
+                 'ministere', 'downloads_telechargements',
                  'month_mois', 'year_annee']]
         for rec_id, count in all_rec:
             rec = self.ds.get(rec_id, None)
@@ -235,15 +237,16 @@ class DatasetDownload():
             rows.append([rec_id, rec_title['en'], rec_title['fr'],
                          org_title[0], org_title[1], count, m, y])
             if len(rows) == 21:
-                write_csv(os.path.join("GA_TMP_DIR", "".join(["openDataPortal.siteAnalytics.top20Info", m, y,".csv"])), rows)
+                write_csv(os.path.join("GA_TMP_DIR", "".join(
+                    ["openDataPortal.siteAnalytics.top20Info", m, y, ".csv"])), rows)
         write_csv(os.path.join("GA_TMP_DIR",
                   "od_ga_All_Info_download.csv"), rows)
-        
+
 # genrates statisc files for views and downloads of datasets last month (Top 100 downlads and all downloads/dataset)
     def dump(self, data, ignore_deleted=False):
-        self.read_portal(data)               
-        ds = defaultdict(int)        
-        deleted_ds = {}       
+        self.read_portal(data)
+        ds = defaultdict(int)
+        deleted_ds = {}
         count = 0
         for id, c in data.items():
             rec = self.ds.get(id, None)
@@ -251,30 +254,30 @@ class DatasetDownload():
                 deleted_ds[id] = True
                 continue
             if not rec:
-                count +=1   
+                count += 1
                 print(id, ' deleted', count)
-                continue               
+                continue
             else:
                 org_id = rec['owner_org']
             ds[org_id] += c
-            
+
         if ignore_deleted:
             for k, v in deleted_ds.items():
                 data.pop(k)
             deleted_ds = {}
-        self.save_csv( data, ds, deleted_ds, ignore_deleted)
+        self.save_csv(data, ds, deleted_ds, ignore_deleted)
 
-# Save dataset download and view records to csv files. 
+# Save dataset download and view records to csv files.
     def save_csv(self, data, org_stats, deleted_ds, isVisit=False):
         sheets = []
         rows = []
-        y, m, d = self.start_date.split("-")       
+        y, m, d = self.start_date.split("-")
         all_rec = [[id, c] for id, c in data.items()]
-        all_rec.sort(key=lambda x: x[1], reverse=True)        
+        all_rec.sort(key=lambda x: x[1], reverse=True)
 
-        rows = [['id','title', 'titre', 'department',
-                 'ministere', 'downloads_telechargements', 
-                 'month_mois', 'year_annee']]        
+        rows = [['id', 'title', 'titre', 'department',
+                 'ministere', 'downloads_telechargements',
+                 'month_mois', 'year_annee']]
         if isVisit:
             rows[0][5] = "visits_visites"
         for rec_id, count in all_rec:
@@ -286,7 +289,7 @@ class DatasetDownload():
                     rec_title = simplify_lang(rec_title)
                     org_id = deleted_ds[rec_id]['org_id']
                 else:
-                    continue            
+                    continue
             else:
                 rec_title = simplify_lang(rec['title_translated'])
 
@@ -297,14 +300,16 @@ class DatasetDownload():
             rows.append([rec_id, rec_title['en'], rec_title['fr'],
                          org_title[0], org_title[1], count, m, y])
             if not isVisit and len(rows) == 101:
-                write_csv( os.path.join("GA_TMP_DIR", "".join(["openDataPortal.siteAnalytics.top100Datasets.bilingual", m, y,".csv"])), rows)
+                write_csv(os.path.join("GA_TMP_DIR", "".join(
+                    ["openDataPortal.siteAnalytics.top100Datasets.bilingual", m, y, ".csv"])), rows)
         if isVisit:
             write_csv(os.path.join(
                 "GA_TMP_DIR",  ".".join(["openDataPortal.siteAnalytics.visits", "csv"])), rows)
         else:
-            write_csv(os.path.join("GA_TMP_DIR", ".".join(["openDataPortal.siteAnalytics.downloads","csv"])), rows)
+            write_csv(os.path.join("GA_TMP_DIR", ".".join(
+                ["openDataPortal.siteAnalytics.downloads", "csv"])), rows)
 
-#Get raw report from GA4 API filtered by screenPageViews or downloads
+# Get raw report from GA4 API filtered by screenPageViews or downloads
     def getRawReport(self, offset, limit, eventName):
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
@@ -364,10 +369,10 @@ class DatasetDownload():
             offset=offset,
         )
         return self.ga.run_report(request)
-    
+
 # Download the catalogue
-    def download(self): 
-        records = []              
+    def download(self):
+        records = []
         if not self.file:
             print("downloading new catalogue")
             # dataset http://open.canada.ca/data/en/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7
@@ -444,7 +449,7 @@ class DatasetDownload():
             data, rowCount = parseReport(response, None, 'eventCount')
             for eCount in data:
                 downloads += int(eCount)
-            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):                
+            if (rowCount <= request.limit or (rowCount - request.offset) <= request.limit):
                 break
             request.offset += request.limit
 
@@ -459,7 +464,7 @@ class DatasetDownload():
                    'visits / visites', 'downloads / téléchargements']
         data.insert(1, row)
         write_csv(csv_file, data)
- 
+
  # Visits by country stat
     def by_country(self, csv_file):
         country_name = self.country.get('country_region').get('country')
@@ -592,13 +597,13 @@ class DatasetDownload():
 
 # set catalogue file name
     def set_catalogue_file(self):
-        y, m, d = self.end_date.split('-')    
+        y, m, d = self.end_date.split('-')
         self.file = ''.join(
             ["GA_STATIC_DIR", '\od-do-canada.', y, m, d, '.jl.gz'])
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
-        
-   # generate catalogue      
+
+   # generate catalogue
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['department', 'ministere',
@@ -725,7 +730,7 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
                          property_id, og_config_file)
-    ds.set_catalogue_file()   
+    ds.set_catalogue_file()
     ds.getVisitStats()
     time.sleep(2)
     ds.getStats()
@@ -740,23 +745,25 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
         "GA_TMP_DIR", 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv'))
     ds.by_org_month(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv'),
                     os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv'))
- 
+
+
 def main():
-    down_files.csv_download()    
-    down_files.archive_download() 
-    t0 = time.time() 
+    down_files.csv_download()
+    down_files.archive_download()
+    t0 = time.time()
     today = date.today()
     last_day = today - timedelta(days=today.day)
     first_day = last_day-timedelta(days=last_day.day-1)
     last_day = last_day.strftime('%Y-%m-%d')
     first_day = first_day.strftime('%Y-%m-%d')
-    report("credentials.json", "359132180", first_day, last_day)  
-    onetime_concat.concat_hist() 
+    report("credentials.json", "359132180", first_day, last_day)
+    onetime_concat.concat_hist()
     down_files.archive_files(last_day)
-    #resource_patch.resources_update()    
+    # resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
+
 
 if __name__ == '__main__':
     main()
