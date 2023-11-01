@@ -31,8 +31,6 @@ from google.analytics.data_v1beta.types import (
     FilterExpressionList
 )
 import down_files
-# import rename_files
-# import archive
 import onetime_concat
 import resource_patch
 
@@ -41,7 +39,6 @@ def write_csv(filename, rows, header=None):
     outf = open(filename, 'wb')
     outf.write(codecs.BOM_UTF8)
     writer = unicodecsv.writer(outf)
-
     if header:
         writer.writerow(header)
     for row in rows:
@@ -72,14 +69,12 @@ def simplify_lang(titles):
 
 
 def initialize_analyticsreporting(client_secrets_path):
-
     client = BetaAnalyticsDataClient.from_service_account_file(
         client_secrets_path)
     return client
 
+
 # GA API response parser and returs data in list and total rows for pagination
-
-
 def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
     data, rowCount = [], 0
     for rowIdx, row in enumerate(response.rows):
@@ -101,6 +96,7 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
 
 class DatasetDownload():
     def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):
+       # self.ga_tmp_dir = os.environ['GA_TMP_DIR']
         ga_rmote_ckan = "https://open.canada.ca/data"
         self.ga = ga
         self.property_id = property_id
@@ -403,6 +399,7 @@ class DatasetDownload():
             print('error reading downloaded file')
             sys.exit(0)
 
+
 # Monthly downloads and visits stat
     def monthly_usage(self, csv_file):
         total, downloads = 0, 0
@@ -467,6 +464,7 @@ class DatasetDownload():
 
  # Visits by country stat
     def by_country(self, csv_file):
+        y, m, t = self.end_date.split("-")
         country_name = self.country.get('country_region').get('country')
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
@@ -507,10 +505,18 @@ class DatasetDownload():
             total += count
         data = [[country, int(count), "%.2f" % ((count*100.0)/total) + '%']
                 for [country, count] in data]
-        self.hist_visits(data, csv_file)
+        if os.path.isfile(csv_file) and csv_file.split(".")[-2] != "".join(["bilingual", m, y]):
+            self.hist_visits(data, csv_file)
+            os.remove(csv_file)
+        elif not os.path.isfile(csv_file):
+            print(csv_file, "not found")
+        else:
+            print('entry exists, no overwriting')
 
-    # Visits by region stat
+     # Visits by region stat
+
     def by_region(self, csv_file):
+        y, m, t = self.end_date.split("-")
         region_name = self.country.get('country_region').get('region')
         request = RunReportRequest(
             property=f"properties/{self.property_id}",
@@ -538,7 +544,6 @@ class DatasetDownload():
         )
         response = self.ga.run_report(request)
         data, rowCount = parseReport(response, 'region', 'sessions')
-
         total = 0  # should be initialized with cummul upto 2023-07-01
         data = [[region, int(count)] for [region, count] in data]
         for c, count in data:
@@ -557,10 +562,18 @@ class DatasetDownload():
             elif r:
                 r_fr = region_dict.get(r, r)
                 row[0] = r + u' | ' + r_fr
-        self.hist_visits(data, csv_file)
+        if os.path.isfile(csv_file) and csv_file.split(".")[-2] != "".join(["bilingual", m, y]):
+            self.hist_visits(data, csv_file)
+            os.remove(csv_file)
+        elif not os.path.isfile(csv_file):
+            print(csv_file, "not found")
+        else:
+            print('entry exists, no overwriting')
 
-    # To include historical visits from last reporting
+
+# To include historical visits from last reporting
     def hist_visits(self, data, csv_file):
+        y, m, t = self.end_date.split("-")
         df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites',
                           'percentage of total visits / Pourcentage du nombre total de visites'])
         old_df = pd.read_csv(csv_file)
@@ -593,7 +606,8 @@ class DatasetDownload():
         new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
         new_df.sort_values(by='visits / Visites', axis=0,
                            ascending=False, inplace=True)
-        new_df.to_csv(csv_file, encoding="utf-8", index=False)
+        new_df.to_csv("".join([".".join(csv_file.split(
+            ".")[0:-1]), m, y, ".csv"]), encoding="utf-8", index=False)
 
 # set catalogue file name
     def set_catalogue_file(self):
@@ -603,7 +617,7 @@ class DatasetDownload():
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
 
-   # generate catalogue
+ # generate catalogue
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['department', 'ministere',
@@ -620,7 +634,7 @@ class DatasetDownload():
 # Generates dataset released by organization by month for the last 12 month
     def by_org_month(self, csv_month_file, csv_file):
         self.set_catalogue_file()
-        # need to use cataloge file downloaded at last day of prev month
+        # need to use cataloge file downloaded at 1st day of each month (or last day of prev month), same for by_org
         # need to update the last column, insert before last column
         # insert row if new org is created
         org_stats = defaultdict(int)
@@ -726,6 +740,7 @@ class DatasetDownload():
 
 
 def report(client_secret_path, property_id, start, end, va=None, og_config_file=None):
+    y, m, d = end.split("-")
     og_type = va
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
@@ -736,15 +751,15 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
     ds.getStats()
     time.sleep(2)
     ds.monthly_usage(os.path.join(
-        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.totalMonthlyUsage.bilingual.csv'))
+        "GA_TMP_DIR", 'opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv'))
     time.sleep(2)
     ds.by_country(os.path.join(
-        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.internationalUsageBreakdown.bilingual.csv'))
+        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.internationalusagebreakdown.bilingual', m, y, ".csv"])))
     time.sleep(2)
     ds.by_region(os.path.join(
-        "GA_TMP_DIR", 'openDataPortal.siteAnalytics.provincialUsageBreakdown.bilingual.csv'))
-    ds.by_org_month(os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrgByMonth.bilingual.csv'),
-                    os.path.join("GA_TMP_DIR", 'openDataPortal.siteAnalytics.datasetsByOrg.bilingual.csv'))
+        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.provincialusagebreakdown.bilingual', m, y, ".csv"])))
+    ds.by_org_month(os.path.join("GA_TMP_DIR", 'opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual.csv'),
+                    os.path.join("GA_TMP_DIR", 'opendataportal.siteanalytics.datasetsbyorg.bilingual.csv'))
 
 
 def main():
