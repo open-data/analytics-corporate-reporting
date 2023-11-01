@@ -774,7 +774,7 @@ def main():
     report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist()
     down_files.archive_files(last_day)
-    # resource_patch.resources_update()
+    # resource_patch.resources_update() # to be activate the output is verified to avoid pushing unexpected resources to registry
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
