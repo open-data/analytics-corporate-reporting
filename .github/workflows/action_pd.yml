@@ -2,7 +2,7 @@ name: run pd count and corporate reporting
 
 on:
   schedule:
-    - cron: '0 0 * * *' # everyday
+    - cron: '* * * * *' # everyday
 
 jobs:
   build:
