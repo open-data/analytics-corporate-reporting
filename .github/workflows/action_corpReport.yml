@@ -1,4 +1,4 @@
-name: run pd count
+name: corporate reporting
 
 on:
   schedule:
@@ -22,9 +22,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirement.txt
           
-      - name: execute py script # run pd_count.py and corporate_report.py
+      - name: execute py script # corporate_report.py
         
-        run:  python pd_count.py
+        run: python corporate_report.py
           
           
       - name: commit files

@@ -135,8 +135,7 @@ def main():
         df_column.append([current_date, filename, len_df])
     for i,elmt in enumerate(pd_list):
         print(pd_count[i+1])
-        df_column.append([current_date, elmt, pd_count[i+1]])
-    print(df_column)
+        df_column.append([current_date, elmt, pd_count[i+1]])   
     headers.append("total")
     row.append(total)
     total_all = row[-1] + pd_count[-1]
