@@ -61,8 +61,8 @@ def filedow(reqURL):
         if req.status_code == 200:
             df = pd.read_csv(io.StringIO(
                 req.content.decode("utf-8")), low_memory=False)
-            file_path = os.path.join("resources", "".join([filename, ".csv"]))
-            df.to_csv(file_path, index=False, encoding="utf-8")
+           # file_path = os.path.join("resources", "".join([filename, ".csv"]))
+           # df.to_csv(file_path, index=False, encoding="utf-8")
         return filename, len(df)
     except Exception as e:
         print(e)
@@ -147,7 +147,7 @@ def main():
     add_record(row, "structure_pd.csv", headers)
     add_record(pd_count, "nonstruc_pd.csv", pd_col)
     add_record(all_pd, "all_pd.csv", ["date","structured_pd", "non_structured_pd", "total"])
-    add_record_plus(df_column, "structure_pd_new.csv",
+    add_record_plus(df_column, "all_pd_new.csv",
                     ["date", "pd_type", "pd_count"])
 
 if __name__ == '__main__':
