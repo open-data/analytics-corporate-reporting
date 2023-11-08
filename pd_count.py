@@ -94,7 +94,7 @@ def add_record_plus(data, csv_file, col_head):
     df = pd.read_csv(csv_file)
     for row in data:
         df.loc[len(df.index)] = row
-        df.sort_values(by='date', axis=0, ascending=False, inplace=True)
+        df.sort_values(by=['date','pd_type'], axis=0, ascending=False, inplace=True)
         df.reset_index(drop=True, inplace=True)
     df.to_csv(csv_file, index=False)
 
@@ -133,6 +133,10 @@ def main():
         total += len_df
         row.append(len_df)
         df_column.append([current_date, filename, len_df])
+    for i,elmt in enumerate(pd_list):
+        print(pd_count[i+1])
+        df_column.append([current_date, elmt, pd_count[i+1]])
+    print(df_column)
     headers.append("total")
     row.append(total)
     total_all = row[-1] + pd_count[-1]
