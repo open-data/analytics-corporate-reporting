@@ -16,6 +16,7 @@ total = 0
 all_pd = [current_date]
 pd_count = [current_date]
 headers = ["date"]
+total_all = 0
 pd_col = ["date", "transition", "transition_deputy", "parliament_report",
           "parliament_committee", "parliament_committee_deputy", "total"]
 pd_list = [elm for elm in pd_col if not elm in ["date", "total"]]
@@ -139,7 +140,7 @@ def main():
     headers.append("total")
     row.append(total)
     total_all = row[-1] + pd_count[-1]
-    all_pd.extend([row[-1], pd_count[-1], total ])
+    all_pd.extend([row[-1], pd_count[-1], total_all ])
     
 
 # adding records to csv files
