@@ -10,7 +10,7 @@ import pandas as pd
 import tempfile
 
 pd_data = []
-current_date = datetime.now().strftime('%a %d %b %Y')
+current_date = datetime.now().strftime('%d %b %Y')
 row = [current_date]
 total = 0
 all_pd = [current_date]
