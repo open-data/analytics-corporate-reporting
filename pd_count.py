@@ -5,12 +5,12 @@ import requests
 import os
 import io
 from collections import defaultdict
-from datetime import datetime
+from datetime import *
 import pandas as pd
 import tempfile
 
 pd_data = []
-current_date = datetime.now().strftime('%d %b %Y')
+current_date = date.today().strftime('%Y-%m-%d')
 row = [current_date]
 total = 0
 all_pd = [current_date]
@@ -83,7 +83,6 @@ def add_record(row, csv_file, col_head):
         print('record exist no overwriting ')
         return
     else:
-
         df.loc[len(df.index)] = row
         df.sort_values(by='date', axis=0, ascending=False, inplace=True)
         df.reset_index(drop=True, inplace=True)

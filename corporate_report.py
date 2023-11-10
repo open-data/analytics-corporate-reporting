@@ -72,7 +72,6 @@ class corporate:
         # records = []
         fields = ["_id", "Department Name Englist | Nom du ministere en francais",
                   "Title English | Titre en francais", "URL", "Openness Rating | Cote d'ouverture"]
-        openness_record = []
         record_agg = []
         while True:
             ckan = RemoteCKAN('https://open.canada.ca/data')
@@ -126,21 +125,21 @@ class corporate:
         corporate_metrics = []
         today = date.today()
         if today.month > 3:
-            fiscal_year = str(today.year) + '-'+str(today.year + 1)[-2:]
+            # fiscal_year = str(today.year) + '-'+str(today.year + 1)[-2:]
             start_date = parser.parse(str(today.year) + "-04-01")
             end_date = today
 
         else:
             start_date = parser.parse(str(today.year-1) + "-04-01")
             end_date = today
-            fiscal_year = str(today.year - 1) + '-'+str(today.year)[-2:]
+            # fiscal_year = str(today.year - 1) + '-'+str(today.year)[-2:]
 
         # df = pd.read_csv('open_data_&_info.csv')
         df = self.datasets_generation()
         df_fiscal = df[(df['metadata_created'] >= str(start_date)) & (df['metadata_created'] <= str(
             end_date)) & (df['type'] == "dataset")]  # & df["any_datastore_active"]==True
         total = df_fiscal.shape[0]
-        federated_dt = df_fiscal.query('collection == "federated" ')
+        # federated_dt = df_fiscal.query('collection == "federated" ')
         df_openness = self.openness_dow()
         df_openness['ID'] = df_openness.URL.str.rsplit(
             '/', n=1, expand=True)[1]
@@ -189,9 +188,7 @@ def main():
     cr = corporate()  # "2022-04-01", "2023-03-31"
     header = ["Date", "From", "To", "number of datasets", "Non geospatial", "% of non-geospatial with 3+ rating",
               "number of API enabled datasets", "% of API enable datasets", "Totals downloads", "Total visits"]
-    data = []
     cr.datasets_generation()
-    today = date.today().strftime('%Y-%m-%d')
     row = cr.corporate_report('open_data_&_info.csv')
     cr.add_record(row, "corporate_report.csv", header)
 
