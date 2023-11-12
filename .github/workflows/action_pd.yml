@@ -2,7 +2,7 @@ name: run pd count
 
 on:
   schedule:
-    - cron: '0 12 * * *' # everyday
+    - cron: '0 11 * * *' # everyday
 
 jobs:
   build:
