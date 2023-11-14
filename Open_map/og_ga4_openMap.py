@@ -5,6 +5,7 @@ import gzip
 import json
 import sys
 import io
+import os
 import requests
 from collections import defaultdict
 import pandas as pd
@@ -24,7 +25,7 @@ from google.analytics.data_v1beta.types import (
 warnings.resetwarnings()
 warnings.simplefilter('ignore', SyntaxWarning)
 warnings.simplefilter('ignore', pd.errors.SettingWithCopyWarning)
-
+import open_map_patch
 
 def initialize_analyticsreporting(client_secrets_path):
 
@@ -188,11 +189,14 @@ def main():
                  ).strftime('%Y-%m-%d')
     last_day = last_day.strftime('%Y-%m-%d')
     y, m, d = last_day.split("-")
-    df = report("credentials.json", "359132180", first_day, last_day)
+    df = report("credentials.json", "359132180", "2023-10-01", "2023-10-31")
+    df.to_csv("current_map.csv", encoding="utf-8", index=False)
+    #df = report("credentials.json", "359132180", first_day, last_day)
     Url = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/15eeafa2-c331-44e7-b37f-d0d54a51d2eb/download/open-maps-analytics.csv"
     r = requests.get(Url).content
     old_df = pd.read_csv(io.StringIO(r.decode('utf-8')))
     old_df_current = old_df.query(f'year == {str(y)} & month == {int(m)}')
+    print (old_df.head(20))
     if len(old_df_current) > 0:
         print("Record already exists and no overwriting")
         return
@@ -201,6 +205,7 @@ def main():
         df.sort_values(['year', 'month', 'pageviews'],
                        ascending=False, inplace=True)
         df.to_csv('open-maps-analytics.csv', encoding='utf-8', index=False)
-
+    if os.path.isfile('open-maps-analytics.csv'):    
+        open_map_patch.resources_update()
 if __name__ == '__main__':
     main()
