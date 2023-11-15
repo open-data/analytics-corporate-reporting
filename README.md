@@ -1,8 +1,8 @@
-**# analytics-corporate-reporting**
+# ** analytics-corporate-reporting**
 
 Analytics and Corporate Reporting for the Open Government Portal
 
-**# About**
+# ** About**
 
 This repository contains python scripts developed to generate statics on the user journey on open data and proactive disclosure resources. These statics includes page views and downloads with regional and international dimensions.
 
@@ -21,7 +21,7 @@ Create a new GA4 credential and save the JSON file as credentials.json locally. 
 **Step 3:** Download daily generated JSON Lines catalogue at the end of  the month from https://open.canada.ca/static/od-do-canada.jsonl.gz  and rename is as follow od-do-canada.YYYYMMDD.jl.gz (ex: od-do-canada.20231031.jl.gz)
 Step 4: Run og_ga4_analytics.py with resource_patch.resources_update() being disabled to avoid uploading unexpected results to registry. It defaults to last month’s records and saves the csv files generated in GA_TMP_DIR and updated archive in GA_STATIC_DIR. Spot check csv files and rerun with resource_patch.resources_update() once validated. It will upload last month statistics into the registry and should be available on the portal with 15 min at Open Government Analytics - Open Government Portal (canada.ca)
 
-**# Open Map**
+# **Open Map**
 We also use GA4 to track the usage of our geospatial data using open map view. 
 
 **Step 1:** clone the main repository or download the content of Open_map folder. Then install prerequisite package in the requirement.txt. 
