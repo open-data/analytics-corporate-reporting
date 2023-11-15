@@ -1,8 +1,8 @@
-# ** analytics-corporate-reporting**
+# **analytics-corporate-reporting**
 
 Analytics and Corporate Reporting for the Open Government Portal
 
-# ** About**
+# **About**
 
 This repository contains python scripts developed to generate statics on the user journey on open data and proactive disclosure resources. These statics includes page views and downloads with regional and international dimensions.
 
@@ -10,7 +10,7 @@ This repository contains python scripts developed to generate statics on the use
 
 Google Analytic 4 (GA4) is used to track open Canada portal usage. This script should run once a month to retrieve reports from GA4 using its API. 
 
-**Prerequisite: **
+**Prerequisite:**
 
 Create a new GA4 credential and save the JSON file as credentials.json locally. Then open the file  with an editor and copy the email contained to your GA4 property access management. Here is the link to create :  https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py#create_credentials
 
