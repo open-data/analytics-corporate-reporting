@@ -22,7 +22,6 @@ urls = ["https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f41
         "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/9d395c98-f33f-4d40-9e3b-3d383321c577/download/opendataportal.siteanalytics.top20info.csv",
         "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/ba980e38-f110-466a-ad92-3ee0d5a60d49/download/opendataportal.siteanalytics.top100datasets.bilingual.csv"]
 
-ga_tmp_dir = os.environ["GA_TMP_DIR"]
 
 
 def filedow(reqURL):
@@ -30,7 +29,7 @@ def filedow(reqURL):
         req = requests.get(reqURL)
         if req.status_code == 200:
             filename = reqURL.split('/')[-1]
-            file_path = os.path.join(ga_tmp_dir, filename)
+            file_path = os.path.join("GA_TMP_DIR", filename)
             with open(file_path, 'wb') as f:
                 for chunk in req.iter_content(chunk_size=1024):
                     if chunk:
@@ -44,8 +43,8 @@ def filedow(reqURL):
 
 # Removes old files form TMP and downloads all csv the files fresh copy
 def csv_download():
-    for filename in os.listdir(ga_tmp_dir):
-        file_path = os.path.join(ga_tmp_dir, filename)
+    for filename in os.listdir("GA_TMP_DIR"):
+        file_path = os.path.join("GA_TMP_DIR", filename)
         os.remove(file_path)
 
     for url in urls:
@@ -72,7 +71,7 @@ def archive_download():
 def archive_files(end):
     archive = os.path.join("GA_STATIC_DIR", "archive.zip")
     for filename in os.listdir("GA_TMP_DIR"):
-        file_source = os.path.join("ga_tmp_dir", filename)
+        file_source = os.path.join("GA_TMP_DIR", filename)
         file_des = os.path.join("analytics", end, filename)
         full_path = os.path.join(archive, "analytics", end)
         archive_files = "/".join(["analytics", end, filename])
