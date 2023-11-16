@@ -17,7 +17,6 @@ Create a new GA4 credential and save the JSON file as credentials.json locally. 
 **Step 1:** clone this repository or download GA4_reporting_script’s content only. Then add the credential file downloaded previously and two new folders named GA_TMP_DIR and GA_STATIC_DIR in the same folder. 
 ![
   ](https://github.com/open-data/analytics-corporate-reporting/blob/main/GA4_reporting_script.png)
-
 **Step 2:** Install required packages from requirements.txt file. You could step up a new environment prior for your convenience. 
 
  ![
