@@ -1,4 +1,4 @@
-name: run main.py
+name: run JSON LINES catalogue file download
 
 on:
   schedule:
@@ -22,8 +22,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
           
-      - name: execute py script # run main.py
-        run: python main.py
+      - name: execute py script 
+        run: python cat_down.py
           
       - name: commit files
         run: |
