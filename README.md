@@ -37,4 +37,4 @@ We also use GA4 to track the usage of our geospatial data using open map view.
 ## **Proactive disclosure visualization**
 
 ![
-](https://github.com/open-data/analytics-corporate-reporting/blob/main/plot.svg=900x700)
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/plot.svg =900x700)
