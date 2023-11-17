@@ -29,4 +29,4 @@ fig.update_layout(
     legend_title_font_color="green"
 )
 fig.show()
-fig.write_image("plot.svg", width=900, height = 700)
+fig.write_image("plot.svg", width=800, height = 500)
