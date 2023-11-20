@@ -15,6 +15,7 @@ Google Analytic 4 (GA4) is used to track open Canada portal usage. This script s
 Create a new GA4 credential and save the JSON file as credentials.json locally. Then open the file  with an editor and copy the email contained to your GA4 property access management. Here is the link to create :  https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py#create_credentials
 
 **Step 1:** clone this repository or download GA4_reporting_script’s content only. Then add the credential file downloaded previously and two new folders named GA_TMP_DIR and GA_STATIC_DIR in the same folder. 
+
 ![
   ](https://github.com/open-data/analytics-corporate-reporting/blob/main/GA4_reporting_script.png)
 
