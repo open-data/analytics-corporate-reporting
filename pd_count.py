@@ -9,145 +9,173 @@ from datetime import *
 import pandas as pd
 import tempfile
 
-pd_data = []
-current_date = date.today().strftime('%Y-%m-%d')
-row = [current_date]
-total = 0
-all_pd = [current_date]
-pd_count = [current_date]
-headers = ["date"]
-total_all = 0
-pd_col = ["date", "transition", "transition_deputy", "parliament_report",
-          "parliament_committee", "parliament_committee_deputy", "total"]
-pd_list = [elm for elm in pd_col if not elm in ["date", "total"]]
-df_column = []
+class Proactive_disclosure:
+    def __init__(self, current_date):              
+        self.current_date = current_date
+        self.pd_list = ["transition", "transition_deputy", "parliament_report",
+                "parliament_committee", "parliament_committee_deputy"]        
+        self.headers = ["date"]        
+        self.unstruct_pd_count = [self.current_date]  
+        self.df_pd_org = pd.DataFrame()
+        self.df_melt = pd.DataFrame()
+        self.record_added = False
+        
+        
 
 
-def download():
-    url = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
-    r = requests.get(url, stream=True)
-    f = tempfile.NamedTemporaryFile(delete=False)
-    for chunk in r.iter_content(1024 * 64):
-        f.write(chunk)
-    f.close()
-    records = []
-    fname = f.name
-    records = []
-    try:
-        with gzip.open(fname, 'rb') as fd:
-            for line in fd:
-                records.append(json.loads(line.decode('utf-8')))
-                if len(records) >= 500:
-                    yield (records)
-                    records = []
-        if len(records) > 0:
-            yield (records)
-            records = []
-    except GeneratorExit:
-        pass
-    except:
-        import traceback
-        traceback.print_exc()
-        print('error reading downloaded file')
-        sys.exit(0)
+    def download(self):
+        url = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
+        r = requests.get(url, stream=True)
+        f = tempfile.NamedTemporaryFile(delete=False)
+        for chunk in r.iter_content(1024 * 64):
+            f.write(chunk)
+        f.close()
+        records = []
+        fname = f.name
+        records = []
+        try:
+            with gzip.open(fname, 'rb') as fd:
+                for line in fd:
+                    records.append(json.loads(line.decode('utf-8')))
+                    if len(records) >= 500:
+                        yield (records)
+                        records = []
+            if len(records) > 0:
+                yield (records)
+                records = []
+        except GeneratorExit:
+            pass
+        except:
+            import traceback
+            traceback.print_exc()
+            print('error reading downloaded file')
+            sys.exit(0)
+
+    # Structured PDs download
+    def filedow(self,reqURL):     
+        try:
+            req = requests.get(reqURL)
+            filename = reqURL.split("/")[-1]
+            filename = filename.split(".")[0]
+            filename = "_".join(filename.split("-"))
+            self.headers.append(filename)
+            if req.status_code == 200:
+                df = pd.read_csv(io.StringIO(
+                    req.content.decode("utf-8")), low_memory=False)
+                if filename != "adminaircraft":
+                    # count_label = "_".join([filename,"org"])
+                    df_agg = df.groupby(
+                        "owner_org").size().reset_index(name="count")
+                    df_agg["type"] = filename
+                    self.df_pd_org = pd.concat([self.df_pd_org, df_agg], ignore_index=True)
+                    #df_agg[["owner_org", "type", "count"]].to_csv(os.path.join(
+                    #    "resources", ".".join([filename, "csv"])), index=False)
+            return filename, len(df)
+        except Exception as e:
+            print(e)
 
 
-def filedow(reqURL):
-    try:
-        req = requests.get(reqURL)
-        filename = reqURL.split("/")[-1]
-        filename = filename.split(".")[0]
-        filename = "_".join(filename.split("-"))
-        headers.append(filename)
-        if req.status_code == 200:
-            df = pd.read_csv(io.StringIO(
-                req.content.decode("utf-8")), low_memory=False)
-           # file_path = os.path.join("resources", "".join([filename, ".csv"]))
-           # df.to_csv(file_path, index=False, encoding="utf-8")
-        return filename, len(df)
-    except Exception as e:
-        print(e)
+    # Create CSV file if it does not exist (initialize)
+    def csv_file_create(self, csv_file, col_head):        
+        if not os.path.isfile(csv_file):
+            print("no file should create")
+            df = pd.DataFrame(columns=col_head)
+            df.to_csv(csv_file, index=False, encoding="utf-8")
 
 
-def csv_file_create(csv_file, col_head):
-    if not os.path.isfile(csv_file):
-        print("no file should create")
-        df = pd.DataFrame(columns=col_head)
-        df.to_csv(csv_file, index=False, encoding="utf-8")
-
-
-def add_record(row, csv_file, col_head):
-    csv_file_create(csv_file, col_head)
-    df = pd.read_csv(csv_file)
-    if row[0] in df['date'].values:
-        print('record exist no overwriting ')
+    def add_record(self, row, csv_file, col_head,combined = False):        
+        self.csv_file_create(csv_file, col_head)
+        df = pd.read_csv(csv_file)
+        if row[0] in df['date'].values:
+            print('record exist no overwriting ')
+            self.record_added = False
+            return 
+        else:
+            df.loc[len(df.index)] = row
+            df.sort_values(by='date', axis=0, ascending=False, inplace=True)
+            df.reset_index(drop=True, inplace=True)
+        if not combined:            
+            header = col_head.remove("date")            
+            df_unpivot = pd.melt(df, id_vars=['date'], value_vars = header)            
+            self.df_melt = pd.concat([self.df_melt, df_unpivot], ignore_index=True)
+        df.to_csv(csv_file, index=False)
+        self.record_added = True
         return
-    else:
-        df.loc[len(df.index)] = row
-        df.sort_values(by='date', axis=0, ascending=False, inplace=True)
-        df.reset_index(drop=True, inplace=True)
-    df.to_csv(csv_file, index=False)
 
-
-def add_record_plus(data, csv_file, col_head):
-    csv_file_create(csv_file, col_head)
-    df = pd.read_csv(csv_file)
-    for row in data:
-        df.loc[len(df.index)] = row
-        df.sort_values(by=['date','pd_type'], axis=0, ascending=False, inplace=True)
-        df.reset_index(drop=True, inplace=True)
-    df.to_csv(csv_file, index=False)
-
-
-def main():
-    total = 0
-    # Non Structured pd types downloads and count
-    for records in download():
-        # package_id, date_created = [], []
-        for record in records:
-            try:
-                pd_data.append([record["owner_org"], record["organization"],
-                                record["title"], record["type"], record["collection"],])
-            except IndexError as e:
-                print(e)
-            except Exception as e:
-                print(e)
-    df = pd.DataFrame(pd_data, columns=[
-        "owner_org", "organization", "title", "type", "collection"])
-    for elmt in pd_list:
-        elmt = df[df['collection'] == elmt]
-        total += len(elmt)
-        pd_count.append(len(elmt))
-    pd_count.append(total)
-    current_date = datetime.now().strftime('%a %d %b %Y')
-
-    # Structured pd types downloads and count
-    with open("links.txt", "r") as f:
-        Urls = [line.rstrip('\n') for line in f]
-    f.close
-
-    total = 0  # reusing the same variable
-
-    for url in Urls:
-        filename, len_df = filedow(url)
-        total += len_df
-        row.append(len_df)
-        df_column.append([current_date, filename, len_df])
-    for i,elmt in enumerate(pd_list):
-        print(pd_count[i+1])
-        df_column.append([current_date, elmt, pd_count[i+1]])   
-    headers.append("total")
-    row.append(total)
-    total_all = row[-1] + pd_count[-1]
-    all_pd.extend([row[-1], pd_count[-1], total_all ])
+    def unstruct_pd (self):  # Non Structured pd types downloads and count
+        total = 0
+        non_struc_pd = []
+        pd_col = ["date"]
+        pd_col.extend(self.pd_list)    
+        for records in self.download():
+            for record in records:
+                try:
+                    non_struc_pd.append([record["owner_org"], record["organization"],
+                                    record["title"], record["type"], record["collection"],])
+                except IndexError as e:
+                    print(e)
+                except Exception as e:
+                    print(e)
+        df = pd.DataFrame(non_struc_pd, columns=[
+            "owner_org", "organization", "title", "type", "collection"])
+        for elmt in self.pd_list:
+            elmt = df[df['collection'] == elmt]
+            total += len(elmt)
+            self.unstruct_pd_count.append(len(elmt))
+        pd_col.extend(["total"])
+                  
+        self.unstruct_pd_count.append(total)        
+        self.add_record(self.unstruct_pd_count, "nonstruc_pd.csv", pd_col )        
+        return total
+        
+    def struct_pd (self):
+        pd_name =[]
+        row = [self.current_date]
+        total = 0        
+         # Structured pd types downloads and count
+        with open("links.txt", "r") as f:
+            Urls = [line.rstrip('\n') for line in f]
+        f.close
+        for url in Urls:
+            filename, len_df = self.filedow(url)
+            if filename != "adminaircraft":
+                pd_name.append(filename)            
+            total += len_df
+            row.append(len_df)      
+        pd_name.sort()         
+        self.headers.append("total")
+        row.append(total)       
+        self.add_record(row, "structure_pd.csv", self.headers)
+        return total 
     
+    def pd_combined (self):        
+        all_pd = [self.current_date] 
+        struc_pd_total =  self.struct_pd () # Structured pds total
+        unstruc_pd_total  = self.unstruct_pd() # unstructured pds total
+        total_all = struc_pd_total + unstruc_pd_total
+        all_pd.extend([struc_pd_total, unstruc_pd_total, total_all])
+        if self.record_added:        
+            self.df_melt.sort_values(by='date', axis=0, ascending=False, inplace=True)
+            self.df_melt.to_csv("unpevoted_pd.csv", encoding="utf-8", index=False)
+        self.add_record(all_pd, "all_pd.csv", [
+                "date", "structured_pd", "non_structured_pd", "total"], True)
+        
+    
+    def pd_per_dept(self):
+        df_dpt = self.df_pd_org.pivot(index="owner_org", columns="type")
+        df_dpt = df_dpt['count'].reset_index()
+        df_dpt.columns.name = None
+        df_dpt.fillna(0, inplace=True)
+        df_dpt = df_dpt.astype({'ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
+                            'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
+        df_dpt.to_csv("pd_per_dept.csv", encoding='utf-8', index=False)
 
-# adding records to csv files
-    add_record(row, "structure_pd.csv", headers)
-    add_record(pd_count, "nonstruc_pd.csv", pd_col)
-    add_record(all_pd, "all_pd.csv", ["date","structured_pd", "non_structured_pd", "total"])
-    add_record_plus(df_column, "all_pd_new.csv",
-                    ["date", "pd_type", "pd_count"])
+def main(): 
+    current_date = date.today().strftime('%Y-%m-%d')
+    pd_obj = Proactive_disclosure(current_date) 
+    pd_obj.pd_combined()
+    pd_obj.pd_per_dept()
+    
 
 if __name__ == '__main__':
     main()
