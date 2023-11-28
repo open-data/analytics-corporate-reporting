@@ -9,19 +9,17 @@ from datetime import *
 import pandas as pd
 import tempfile
 
+
 class Proactive_disclosure:
-    def __init__(self, current_date):              
+    def __init__(self, current_date):
         self.current_date = current_date
         self.pd_list = ["transition", "transition_deputy", "parliament_report",
-                "parliament_committee", "parliament_committee_deputy"]        
-        self.headers = ["date"]        
-        self.unstruct_pd_count = [self.current_date]  
+                        "parliament_committee", "parliament_committee_deputy"]
+        self.headers = ["date"]
+        self.unstruct_pd_count = [self.current_date]
         self.df_pd_org = pd.DataFrame()
         self.df_melt = pd.DataFrame()
         self.record_added = False
-        
-        
-
 
     def download(self):
         url = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
@@ -52,7 +50,7 @@ class Proactive_disclosure:
             sys.exit(0)
 
     # Structured PDs download
-    def filedow(self,reqURL):     
+    def filedow(self, reqURL):
         try:
             req = requests.get(reqURL)
             filename = reqURL.split("/")[-1]
@@ -67,51 +65,51 @@ class Proactive_disclosure:
                     df_agg = df.groupby(
                         "owner_org").size().reset_index(name="count")
                     df_agg["type"] = filename
-                    self.df_pd_org = pd.concat([self.df_pd_org, df_agg], ignore_index=True)
-                    #df_agg[["owner_org", "type", "count"]].to_csv(os.path.join(
+                    self.df_pd_org = pd.concat(
+                        [self.df_pd_org, df_agg], ignore_index=True)
+                    # df_agg[["owner_org", "type", "count"]].to_csv(os.path.join(
                     #    "resources", ".".join([filename, "csv"])), index=False)
             return filename, len(df)
         except Exception as e:
             print(e)
 
-
     # Create CSV file if it does not exist (initialize)
-    def csv_file_create(self, csv_file, col_head):        
+    def csv_file_create(self, csv_file, col_head):
         if not os.path.isfile(csv_file):
             print("no file should create")
             df = pd.DataFrame(columns=col_head)
             df.to_csv(csv_file, index=False, encoding="utf-8")
 
-
-    def add_record(self, row, csv_file, col_head,combined = False):        
+    def add_record(self, row, csv_file, col_head, combined=False):
         self.csv_file_create(csv_file, col_head)
         df = pd.read_csv(csv_file)
         if row[0] in df['date'].values:
             print('record exist no overwriting ')
             self.record_added = False
-            return 
+            return
         else:
             df.loc[len(df.index)] = row
             df.sort_values(by='date', axis=0, ascending=False, inplace=True)
             df.reset_index(drop=True, inplace=True)
-        if not combined:            
-            header = col_head.remove("date")            
-            df_unpivot = pd.melt(df, id_vars=['date'], value_vars = header)            
-            self.df_melt = pd.concat([self.df_melt, df_unpivot], ignore_index=True)
+        if not combined:
+            header = col_head.remove("date")
+            df_unpivot = pd.melt(df, id_vars=['date'], value_vars=header)
+            self.df_melt = pd.concat(
+                [self.df_melt, df_unpivot], ignore_index=True)
         df.to_csv(csv_file, index=False)
         self.record_added = True
         return
 
-    def unstruct_pd (self):  # Non Structured pd types downloads and count
+    def unstruct_pd(self):  # Non Structured pd types downloads and count
         total = 0
         non_struc_pd = []
         pd_col = ["date"]
-        pd_col.extend(self.pd_list)    
+        pd_col.extend(self.pd_list)
         for records in self.download():
             for record in records:
                 try:
                     non_struc_pd.append([record["owner_org"], record["organization"],
-                                    record["title"], record["type"], record["collection"],])
+                                         record["title"], record["type"], record["collection"],])
                 except IndexError as e:
                     print(e)
                 except Exception as e:
@@ -123,59 +121,60 @@ class Proactive_disclosure:
             total += len(elmt)
             self.unstruct_pd_count.append(len(elmt))
         pd_col.extend(["total"])
-                  
-        self.unstruct_pd_count.append(total)        
-        self.add_record(self.unstruct_pd_count, "nonstruc_pd.csv", pd_col )        
+        self.unstruct_pd_count.append(total)
+        self.add_record(self.unstruct_pd_count, "nonstruc_pd.csv", pd_col)
         return total
-        
-    def struct_pd (self):
-        pd_name =[]
+
+    def struct_pd(self):
+        pd_name = []
         row = [self.current_date]
-        total = 0        
-         # Structured pd types downloads and count
+        total = 0
+        # Structured pd types downloads and count
         with open("links.txt", "r") as f:
             Urls = [line.rstrip('\n') for line in f]
         f.close
         for url in Urls:
             filename, len_df = self.filedow(url)
             if filename != "adminaircraft":
-                pd_name.append(filename)            
+                pd_name.append(filename)
             total += len_df
-            row.append(len_df)      
-        pd_name.sort()         
+            row.append(len_df)
+        pd_name.sort()
         self.headers.append("total")
-        row.append(total)       
+        row.append(total)
         self.add_record(row, "structure_pd.csv", self.headers)
-        return total 
-    
-    def pd_combined (self):        
-        all_pd = [self.current_date] 
-        struc_pd_total =  self.struct_pd () # Structured pds total
-        unstruc_pd_total  = self.unstruct_pd() # unstructured pds total
+        return total
+
+    def pd_combined(self):
+        all_pd = [self.current_date]
+        struc_pd_total = self.struct_pd()  # Structured pds total
+        unstruc_pd_total = self.unstruct_pd()  # unstructured pds total
         total_all = struc_pd_total + unstruc_pd_total
         all_pd.extend([struc_pd_total, unstruc_pd_total, total_all])
-        if self.record_added:        
-            self.df_melt.sort_values(by='date', axis=0, ascending=False, inplace=True)
-            self.df_melt.to_csv("unpevoted_pd.csv", encoding="utf-8", index=False)
+        if self.record_added:
+            self.df_melt.sort_values(
+                by='date', axis=0, ascending=False, inplace=True)
+            self.df_melt.to_csv("unpivoted_pd.csv",
+                                encoding="utf-8", index=False)
         self.add_record(all_pd, "all_pd.csv", [
-                "date", "structured_pd", "non_structured_pd", "total"], True)
-        
-    
+            "date", "structured_pd", "non_structured_pd", "total"], True)
+
     def pd_per_dept(self):
         df_dpt = self.df_pd_org.pivot(index="owner_org", columns="type")
         df_dpt = df_dpt['count'].reset_index()
         df_dpt.columns.name = None
         df_dpt.fillna(0, inplace=True)
         df_dpt = df_dpt.astype({'ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
-                            'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
+                                'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
         df_dpt.to_csv("pd_per_dept.csv", encoding='utf-8', index=False)
 
-def main(): 
+
+def main():
     current_date = date.today().strftime('%Y-%m-%d')
-    pd_obj = Proactive_disclosure(current_date) 
+    pd_obj = Proactive_disclosure(current_date)
     pd_obj.pd_combined()
     pd_obj.pd_per_dept()
-    
+
 
 if __name__ == '__main__':
     main()
