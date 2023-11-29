@@ -61,14 +61,12 @@ class Proactive_disclosure:
                 df = pd.read_csv(io.StringIO(
                     req.content.decode("utf-8")), low_memory=False)
                 if filename != "adminaircraft":
-                    # count_label = "_".join([filename,"org"])
                     df_agg = df.groupby(
                         "owner_org").size().reset_index(name="count")
                     df_agg["type"] = filename
                     self.df_pd_org = pd.concat(
                         [self.df_pd_org, df_agg], ignore_index=True)
-                    # df_agg[["owner_org", "type", "count"]].to_csv(os.path.join(
-                    #    "resources", ".".join([filename, "csv"])), index=False)
+
             return filename, len(df)
         except Exception as e:
             print(e)
@@ -129,7 +127,6 @@ class Proactive_disclosure:
         pd_name = []
         row = [self.current_date]
         total = 0
-        # Structured pd types downloads and count
         with open("links.txt", "r") as f:
             Urls = [line.rstrip('\n') for line in f]
         f.close
@@ -153,7 +150,10 @@ class Proactive_disclosure:
         all_pd.extend([struc_pd_total, unstruc_pd_total, total_all])
         if self.record_added:
             self.df_melt.sort_values(
-                by='date', axis=0, ascending=False, inplace=True)
+                by='date', axis=0, ascending=False, inplace=True)            
+            self.df_melt.rename(
+                columns={"variable": "pd_type", "value": "pd_count"}, inplace=True)            
+            self.df_melt = self.df_melt.query(f'pd_type != "total"')
             self.df_melt.to_csv("unpivoted_pd.csv",
                                 encoding="utf-8", index=False)
         self.add_record(all_pd, "all_pd.csv", [
