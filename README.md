@@ -35,7 +35,19 @@ We also use GA4 to track the usage of our geospatial data using open map view.
 
 **Step 2:** run og_ga4_openMap.py once at the beginning of every month to retrieve last month’s statistic. Then spot check the csv file generated, it should append last month’s usage to historical record available on open government analytics page. Once the result aligns with expected outcome run open_map_patch.py to replace statistic with update csv file. 
 
-## **Proactive disclosure visualization**
+## **Proactive disclosure**
+Daily jobs run to reflect updates on Proactive disclosure (PD) in the following csv files:
+-	structure_pd.csv  contains daily updates on standardized proactive publication. 
+-	nonstruc_pd.csv contains daily updates on non-standardized proactive publication. 
+-	all_pd.csv contains aggregated records by proactive disclosure categories (standardized and non-standardized).
+-	unpivoted_pd.csv  contains all PDs update in unpivoted format for analytics purposes.
+-	pd_per_dept.csv contains PD updates per department.
 
 ![
-](https://github.com/open-data/analytics-corporate-reporting/blob/main/plot.svg)
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/PD_plot.svg)
+
+## **Open Data**
+We also provide in this repository open data and non-geospatial open data created within the current fiscal year and the ratio of openness rating. 
+
+![
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)
