@@ -4,7 +4,6 @@ import pandas as pd
 df = pd.read_csv("structure_pd.csv", encoding="utf-8")
 df.rename(columns={"ati_all": "ATI", "contracts": "Contracts", "grants": "Grants",
           "travelq": "Travel", "hospitalityq": "Hospitality"}, inplace=True)
-
 base_val = [("ATI", df["ATI"][6]), ("Contracts", df["Contracts"][6]), ("Grants",
                 df["Grants"][6]), ("Travel", df["Travel"][6]), ("Hospitality", df["Hospitality"][6])]
 for lab, val in base_val:
@@ -25,7 +24,7 @@ fig_pd.update_layout(
     font_color="blue",
     title_font_family="Times New Roman",
     title_font_color="blue",
-    title_text="New ATI, contracts, grants, travel and hospitality in last 15 days",
+    title_text="New ATI, contracts, grants, travel and hospitality in last 7 days",
     title_font_size=24,
     title_x=0.5,
     legend_title_font_color="green"
