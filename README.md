@@ -29,7 +29,7 @@ Create a new GA4 credential and save the JSON file as credentials.json locally. 
 **Step 4:** Run og_ga4_analytics.py with resource_patch.resources_update() being disabled to avoid uploading unexpected results to registry. It defaults to last month’s records and saves the csv files generated in GA_TMP_DIR and updated archive in GA_STATIC_DIR. Add to country_region.yml file any country that appears on your terminal as highlighted in the picture below with their respective translation. 
 
  ![
-](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.png)
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
 
 Then spot check csv files and rerun with resource_patch.resources_update() once validated. It will upload last month statistics into the registry and should be available on the portal with 15 min at Open Government Analytics - Open Government Portal (canada.ca)
 
