@@ -189,7 +189,7 @@ def main():
                  ).strftime('%Y-%m-%d')
     last_day = last_day.strftime('%Y-%m-%d')
     y, m, d = last_day.split("-")
-    df = report("credentials.json", "359132180", "2023-10-01", "2023-10-31")
+    df = report("credentials.json", "359132180", first_day, last_day)
     df.to_csv("current_map.csv", encoding="utf-8", index=False)
     #df = report("credentials.json", "359132180", first_day, last_day)
     Url = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/15eeafa2-c331-44e7-b37f-d0d54a51d2eb/download/open-maps-analytics.csv"
