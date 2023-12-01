@@ -38,7 +38,7 @@ We also use GA4 to track the usage of our geospatial data using open map view.
 
 **Step 1:** clone the main repository or download the content of Open_map folder. Then install prerequisite package in the requirement.txt. 
 
-**Step 2:** run og_ga4_openMap.py once at the beginning of every month to retrieve last month’s statistic. Then spot check the csv file generated, it should append last month’s usage to historical record available on open government analytics page. Once the result aligns with expected outcome run open_map_patch.py to replace statistic with update csv file. 
+**Step 2:** run og_ga4_openMap.py with open_map_patch.resources_update() disabled once at the beginning of every month to retrieve last month’s statistic. Then spot check the csv file generated, it should append last month’s usage to historical record available on open government analytics page. Once the result aligns with expected outcome rerun with open_map_patch.resources_update() enabled to replace current statistic with updated csv file. 
 
 ## **Proactive disclosure**
 Daily jobs run to reflect updates on Proactive disclosure (PD) in the following csv files:

@@ -206,6 +206,6 @@ def main():
                        ascending=False, inplace=True)
         df.to_csv('open-maps-analytics.csv', encoding='utf-8', index=False)
     if os.path.isfile('open-maps-analytics.csv'):    
-        open_map_patch.resources_update()
+        #open_map_patch.resources_update()
 if __name__ == '__main__':
     main()
