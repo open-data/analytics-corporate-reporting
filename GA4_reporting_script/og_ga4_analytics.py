@@ -607,7 +607,7 @@ class DatasetDownload():
         new_df.sort_values(by='visits / Visites', axis=0,
                            ascending=False, inplace=True)
         new_df.to_csv("".join([".".join(csv_file.split(
-            ".")[0:-1]), m, y, ".csv"]), encoding="utf-8", index=False)
+            ".")[0:-2]),".bilingual", m, y, ".csv"]), encoding="utf-8", index=False)
 
 # set catalogue file name
     def set_catalogue_file(self):
@@ -741,6 +741,7 @@ class DatasetDownload():
 
 def report(client_secret_path, property_id, start, end, va=None, og_config_file=None):
     y, m, d = end.split("-")
+    last_month = str("%02d" %(int(m)-1))
     og_type = va
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
@@ -754,10 +755,10 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
         "GA_TMP_DIR", 'opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv'))
     time.sleep(2)
     ds.by_country(os.path.join(
-        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.internationalusagebreakdown.bilingual', m, y, ".csv"])))
+        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.internationalusagebreakdown.bilingual', last_month, y, ".csv"])))
     time.sleep(2)
     ds.by_region(os.path.join(
-        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.provincialusagebreakdown.bilingual', m, y, ".csv"])))
+        "GA_TMP_DIR", "".join(['opendataportal.siteanalytics.provincialusagebreakdown.bilingual', last_month, y, ".csv"])))
     ds.by_org_month(os.path.join("GA_TMP_DIR", 'opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual.csv'),
                     os.path.join("GA_TMP_DIR", 'opendataportal.siteanalytics.datasetsbyorg.bilingual.csv'))
 
@@ -774,7 +775,7 @@ def main():
     report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist()
     down_files.archive_files(last_day)
-    # resource_patch.resources_update()
+    #resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
