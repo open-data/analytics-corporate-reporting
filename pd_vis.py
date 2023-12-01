@@ -4,6 +4,7 @@ import pandas as pd
 df = pd.read_csv("structure_pd.csv", encoding="utf-8")
 df.rename(columns={"ati_all": "ATI", "contracts": "Contracts", "grants": "Grants",
           "travelq": "Travel", "hospitalityq": "Hospitality"}, inplace=True)
+df = df.head(7)
 base_val = [("ATI", df["ATI"][6]), ("Contracts", df["Contracts"][6]), ("Grants",
                 df["Grants"][6]), ("Travel", df["Travel"][6]), ("Hospitality", df["Hospitality"][6])]
 for lab, val in base_val:
