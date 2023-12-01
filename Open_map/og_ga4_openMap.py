@@ -205,7 +205,8 @@ def main():
         df.sort_values(['year', 'month', 'pageviews'],
                        ascending=False, inplace=True)
         df.to_csv('open-maps-analytics.csv', encoding='utf-8', index=False)
-    if os.path.isfile('open-maps-analytics.csv'):    
+    if os.path.isfile('open-maps-analytics.csv'):          
         #open_map_patch.resources_update()
+        pass
 if __name__ == '__main__':
     main()
