@@ -2,7 +2,7 @@ name: run pd visualization
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # everyday 
+    - cron: '*/10 * * * *'  # everyday '0 12 * * *'
 
 jobs:
   build:
