@@ -457,8 +457,8 @@ class DatasetDownload():
             print('entry exists, no overwriting')
             return
         row = [year, month, total, downloads]
-        data[0] = ['year / année', 'month / mois',
-                   'visits / visites', 'downloads / téléchargements']
+        data[0] = ['year_annee', 'month_mois',
+                   'visits_visites', 'downloads_telechargements']
         data.insert(1, row)
         write_csv(csv_file, data)
 

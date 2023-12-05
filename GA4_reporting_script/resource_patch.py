@@ -18,23 +18,31 @@ def resources_update():
    
     api_reg = os.environ['API_Registry']
     ckan = RemoteCKAN('https://registry.open.canada.ca/', apikey=api_reg)
-    
+    count =0
     for id, filename in enumerate(all_files):
         print (f'{os.path.join("GA_TMP_DIR", filename)} corresponds to {resource_ids[id]}')
-        try:
-          ckan.action.resource_patch(
+        while count <= 5:
+          try:
+            ckan.action.resource_patch(
+              
+              id =resource_ids[id],
+              upload= open (os.path.join("GA_TMP_DIR", filename), "rb")
             
-            id =resource_ids[id],
-            upload= open (os.path.join("GA_TMP_DIR", filename), "rb")
 
-          )
-          print("sucess")
-        except CKANAPIError as e:
-           print(resource_ids[id])
-           print (e)
-        except Exception as e:
-           print(e)
-           continue
+
+            )
+            print("sucess")
+            break
+          except CKANAPIError as e:
+            count +=1
+            print(resource_ids[id])
+            print (e)
+            time.sleep(3*count)
+          except Exception as e:
+            count +=1
+            print(e)
+            continue  
+   
 
     ckan.action.resource_patch(
           
