@@ -12,7 +12,7 @@ from ckanapi import RemoteCKAN
 from dateutil import parser
 
 
-class corporate:
+class Corporate:
     def __init__(self):
         self.offset = "0"
         self.limit = 10000
@@ -103,17 +103,18 @@ class corporate:
             url = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/02a92b0f-b26d-4fbd-9601-d27651703715/download/opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv"
             r = requests.get(url, stream=True).content
             df_dow = pd.read_csv(io.StringIO(r.decode("UTF-8")))
-            df_dow.rename(columns={'year / année': "year", 'month / mois': "month", 'visits / visites': "visits",
-                                   'downloads / téléchargements': "downloads"}, inplace=True)
+            #year_annee	month_mois	visits_visites	downloads_telechargements
+            # df_dow.rename(columns={'year / année': "year", 'month / mois': "month", 'visits / visites': "visits",
+            #                        'downloads / téléchargements': "downloads"}, inplace=True)
             if today.month < 4:
                 start_year = today.year - 1
             else:
                 start_year = today.year
           # start_year = int(fiscal_year.split("-")[0])
             down_list = df_dow.query(
-                f'(year == {start_year} & month > 3) | (year == {start_year + 1} & month < 4)')
-            data["visits"] = sum(down_list['visits'])
-            data["downloads"] = sum(down_list['downloads'])
+                f'(year_annee == {start_year} & month_mois > 3) | (year_annee == {start_year + 1} & month_mois < 4)')
+            data["visits_visites"] = sum(down_list['visits_visites'])
+            data["downloads_telechargements"] = sum(down_list['downloads_telechargements'])
             return data
 
         except Exception as e:
@@ -162,7 +163,7 @@ class corporate:
         eligible_API = Non_geo.query('collection != "federated"')
         data = self.get_fy_download()
         corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], round(100*Non_geo_good.shape[0]/Non_geo.shape[0], 2), API_enable.shape[0],
-                             round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads'], data['visits']]
+                             round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
         return corporate_metrics
 
     def csv_file_create(self, csv_file, col_head):
@@ -185,7 +186,7 @@ class corporate:
 
 
 def main():
-    cr = corporate()  # "2022-04-01", "2023-03-31"
+    cr = Corporate()  # "2022-04-01", "2023-03-31"
     header = ["Date", "From", "To", "number of datasets", "Non geospatial", "% of non-geospatial with 3+ rating",
               "number of API enabled datasets", "% of API enable datasets", "Totals downloads", "Total visits"]
     cr.datasets_generation()
