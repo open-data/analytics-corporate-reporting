@@ -9,7 +9,7 @@ base_val = [("ATI", df["ATI"][7]), ("Contracts", df["Contracts"][7]), ("Grants",
                 df["Grants"][7]), ("Travel", df["Travel"][7]), ("Hospitality", df["Hospitality"][7])]
 for lab, val in base_val:
     df[lab] = df[lab]-val
-df.drop([len(df)-1], inplace=True)
+df.drop([len(df)-1], inplace=True) # drop the last row with zero values
 sel_col = ["ATI", "Contracts", "Grants", "Travel", "Hospitality"]
 df_melt = pd.melt(df.head(15), id_vars=['date'], value_vars=sel_col)
 df_melt.rename(columns={"variable": "pd_type",
