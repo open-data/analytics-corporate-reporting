@@ -574,19 +574,19 @@ class DatasetDownload():
 # To include historical visits from last reporting
     def hist_visits(self, data, csv_file):
         y, m, t = self.end_date.split("-")
-        df = pd.DataFrame(data, columns=['region / Région', 'visits / Visites',
-                          'percentage of total visits / Pourcentage du nombre total de visites'])
+        df = pd.DataFrame(data, columns=['region', 'visits_visites',
+                          'percentage_of_visits_pourcentage_des_visites'])
         old_df = pd.read_csv(csv_file)
-        last_region = [c for c in old_df['region / Région']]
-        new_region = [c for c in df['region / Région']]
+        last_region = [c for c in old_df['region']]
+        new_region = [c for c in df['region']]
         new_region_visit = {}
         old_region_visit = {}
         for i in range(len(df)):
-            new_region_visit[df.iloc[i]['region / Région']
-                             ] = df.iloc[i]['visits / Visites']
+            new_region_visit[df.iloc[i]['region']
+                             ] = df.iloc[i]['visits_visites']
         for i in range(len(old_df)):
-            old_region_visit[old_df.iloc[i]['region / Région']
-                             ] = old_df.iloc[i]['visits / Visites']
+            old_region_visit[old_df.iloc[i]['region']
+                             ] = old_df.iloc[i]['visits_visites']
 
         for c in last_region:
             if c in new_region:
@@ -597,14 +597,14 @@ class DatasetDownload():
                 old_region_visit[c] = new_region_visit[c]
 
         new_df = pd.DataFrame.from_dict(
-            old_region_visit, orient='index', columns=['visits / Visites'])
+            old_region_visit, orient='index', columns=['visits_visites'])
         new_df.reset_index(inplace=True)
-        new_df.rename(columns={'index': 'region / Région'}, inplace=True)
-        total = sum(new_df['visits / Visites'])
+        new_df.rename(columns={'index': 'region'}, inplace=True)
+        total = sum(new_df['visits_visites'])
         per_tage = ["%.2f" % ((count*100.0)/total) +
-                    '%' for count in new_df['visits / Visites']]
-        new_df['percentage of total visits / Pourcentage du nombre total de visites'] = per_tage
-        new_df.sort_values(by='visits / Visites', axis=0,
+                    '%' for count in new_df['visits_visites']]
+        new_df['percentage_of_visits_pourcentage_des_visites'] = per_tage
+        new_df.sort_values(by='visits_visites', axis=0,
                            ascending=False, inplace=True)
         new_df.to_csv("".join([".".join(csv_file.split(
             ".")[0:-2]),".bilingual", m, y, ".csv"]), encoding="utf-8", index=False)
@@ -764,7 +764,7 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
 
 
 def main():
-    down_files.csv_download()
+    
     down_files.archive_download()
     t0 = time.time()
     today = date.today()
@@ -772,14 +772,14 @@ def main():
     first_day = last_day-timedelta(days=last_day.day-1)
     last_day = last_day.strftime('%Y-%m-%d')
     first_day = first_day.strftime('%Y-%m-%d')
-    report("credentials.json", "359132180", first_day, last_day)
-    onetime_concat.concat_hist()
+    down_files.csv_download(last_day)
+    report("credentials.json", "359132180",first_day, last_day)
+    onetime_concat.concat_hist(last_day)
     down_files.archive_files(last_day)
     #resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
-
 
 if __name__ == '__main__':
     main()
