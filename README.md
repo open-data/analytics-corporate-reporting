@@ -1,3 +1,5 @@
+> # **La version française suit**
+
 # **analytics-corporate-reporting**
 
 Analytics and Corporate Reporting for the Open Government Portal
@@ -48,11 +50,76 @@ Daily jobs run to reflect updates on Proactive disclosure (PD) in the following 
 -	**unpivoted_pd.csv**  contains all PDs update in unpivoted format for analytics purposes.
 -	**pd_per_dept.csv** contains PD updates per department.
 
+**New ATI, contracts, grants, travel and hospitality in last 7 days**
+
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/PD_plot.svg)
 
 ## **Open Data**
 We also provide in this repository open data and non-geospatial open data created within the current fiscal year and the ratio of openness rating. 
+
+![
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)
+
+# **version française**
+
+## **À propos**
+
+Ce référentiel contient des scripts en python qui ont pour but de produire les statistiques du parcours des visiteurs dans le portail ouvert de Canada. Il contient également les statistiques des divulgations proactives et des données ouvertes produites par les départements.
+Script de création de rapport depuis GA4
+Google analytiques 4 (GA4) est utilisé pour le suivi du parcourt des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
+
+**Prérequis:**
+
+Créer un nouveau identifiant de GA4 et l’enregistrer localement en tant que credentials.json. Ensuite ouvrir le fichier avec un éditeur et copier le courriel contenu dans la gestion des accès à la propriété du compte GA4. Voici le lien pour créer l’identifiant : Présentation de l'API Analytics Reporting v4 ; guide de démarrage rapide pour Python pour les comptes de service  |  Analytics Reporting API v4  |  Google for Developers
+
+**Étape 1:** Cloner le référentiel ou télécharger le contenu du répertoire GA4_reporting_script. Puis ajouter l’identifiant télécharger précédemment et deux nouveaux répertoires nommés GA_TMP_DIR and GA_STATIC_DIR dans le même répertoire.  Vous trouvez ci-dessous un aperçu du contenu du répertoire GA4_reporting_script. 
+ 
+![
+  ](https://github.com/open-data/analytics-corporate-reporting/blob/main/GA4_reporting_script.png)
+
+**Étape 2:** Installer les progiciels requis depuis le fichier requirements.txt. Par ailleurs, La création d’un nouvel environnement tel qu’illustré dans la figure ci-dessous est à votre discrétion.
+ 
+ 
+ ![
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/ga_venv_requirement.png)
+
+**Étape 3:** Télécharger à la fin de chaque mois à partir du lien https://open.canada.ca/static/od-do-canada.jsonl.gz  le catalogue en format JSON Lines généré quotidiennement. Ensuite renommé le fichier ainsi  od-do-canada.YYYYMMDD.jl.gz (ex: od-do-canada.20231031.jl.gz). Vous pouvez également télécharger depuis ce référentiel à fin du mois.
+
+**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produits et enregistrés dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardés dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
+
+ ![
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
+
+Vérifier aléatoirement les fichiers générés et puis relancer l’exécution du og_ga4_analytics.py avec le resource_patch.resources_update() activé une fois validé. Tous les statistiques générés seront reproduits et téléversés automatiquement sur le registre. Ces mis à jour seront disponibles sur le portail public dans une quinzaine de minutes.
+
+## **Carte ouverte**
+
+Nous utilisons également GA4 pour suivre l’utilisation de la visualisation de carte ouverte avec nos données géospatiales.
+
+**Étape 1:**  Cloner le référentiel ou télécharger le contenu du répertoire Open_map. Ensuite installer les progiciels requis depuis le fichier requirements.txt.
+
+**Étape 2:** Exécuter og_ga4_openMap.py au début de chaque mois en gardant open_map_patch.resources_update() désactivé. Ensuite vérifier que le contenu du fichier généré inclut l’historique et les statistiques du mois dernier. Si c’est le cas, relancer l’exécution avec open_map_patch.resources_update() activé afin de téléverser le nouveau rapport dans le registre. 
+
+## **Divulgation proactive**
+
+Des tâches s’exécutent quotidiennement pour refléter les mis à jour des divulgations proactives dans les fichiers suivants :
+-	**structure_pd.csv**  contient les mis à jour quotidien sur les divulgations proactives normalisées. 
+-	**nonstruc_pd.csv** contient les mis à jour quotidien sur les divulgations proactives non normalisées.
+-	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive toute confondues.
+-	**unpivoted_pd.csv**  contient toutes les divulgations proactives en format non croisés. 
+-	**pd_per_dept.csv** Contient les mis à jour des divulgations proactives par ministères.
+
+**Nouveaux ATI, contrats, subventions, voyages et hospitalité au cours des 7 derniers jours**
+
+![
+](https://github.com/open-data/analytics-corporate-reporting/blob/main/PD_plot.svg)
+
+
+## **Données ouvertes**
+Nous fournissons aussi dans ce référentiel le données ouvertes et données ouvertes non géospatiales créé courant l’année fiscale en cours et le taux de la côte d’ouverture.
+
+**Données ouvertes créées au cours de l’exercice en cours**
 
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)

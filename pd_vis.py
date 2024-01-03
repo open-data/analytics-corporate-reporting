@@ -24,8 +24,7 @@ fig_pd.update_layout(
     font_family="Courier New",
     font_color="blue",
     title_font_family="Times New Roman",
-    title_font_color="blue",
-    title_text="New ATI, contracts, grants, travel and hospitality in last 7 days",
+    title_font_color="blue",    
     title_font_size=24,
     title_x=0.5,
     legend_title_font_color="green"
@@ -43,8 +42,7 @@ fig_od.update_layout(
     font_family="Courier New",
     font_color="blue",
     title_font_family="Times New Roman",
-    title_font_color="blue",
-    title_text="Open Data created within the current fiscal year",
+    title_font_color="blue",    
     title_font_size=24,
     title_x=0.5,
     legend_title_font_color="green"
