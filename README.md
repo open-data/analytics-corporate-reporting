@@ -51,13 +51,13 @@ Daily jobs run to reflect updates on Proactive disclosure (PD) in the following 
 -	**pd_per_dept.csv** contains PD updates per department.
 
 **New ATI, contracts, grants, travel and hospitality in last 7 days**
-
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/PD_plot.svg)
 
 ## **Open Data**
-We also provide in this repository open data and non-geospatial open data created within the current fiscal year and the ratio of openness rating. 
+We also provide in this repository open data and non-geospatial open data created within the current fiscal year and the ratio of openness rating.
 
+**Open data created within the current fiscal year**
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)
 
@@ -66,7 +66,9 @@ We also provide in this repository open data and non-geospatial open data create
 ## **À propos**
 
 Ce référentiel contient des scripts en python qui ont pour but de produire les statistiques du parcours des visiteurs dans le portail ouvert de Canada. Il contient également les statistiques des divulgations proactives et des données ouvertes produites par les départements.
-Script de création de rapport depuis GA4
+
+## **Script de création de rapport depuis GA4**
+
 Google analytiques 4 (GA4) est utilisé pour le suivi du parcourt des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
 
 **Prérequis:**
@@ -106,12 +108,11 @@ Nous utilisons également GA4 pour suivre l’utilisation de la visualisation de
 Des tâches s’exécutent quotidiennement pour refléter les mis à jour des divulgations proactives dans les fichiers suivants :
 -	**structure_pd.csv**  contient les mis à jour quotidien sur les divulgations proactives normalisées. 
 -	**nonstruc_pd.csv** contient les mis à jour quotidien sur les divulgations proactives non normalisées.
--	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive toute confondues.
+-	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive toutes confondues.
 -	**unpivoted_pd.csv**  contient toutes les divulgations proactives en format non croisés. 
 -	**pd_per_dept.csv** Contient les mis à jour des divulgations proactives par ministères.
 
 **Nouveaux ATI, contrats, subventions, voyages et hospitalité au cours des 7 derniers jours**
-
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/PD_plot.svg)
 
@@ -120,6 +121,5 @@ Des tâches s’exécutent quotidiennement pour refléter les mis à jour des di
 Nous fournissons aussi dans ce référentiel le données ouvertes et données ouvertes non géospatiales créé courant l’année fiscale en cours et le taux de la côte d’ouverture.
 
 **Données ouvertes créées au cours de l’exercice en cours**
-
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)
