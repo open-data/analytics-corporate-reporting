@@ -12,9 +12,7 @@ This repository contains python scripts developed to generate statics on the use
 
 Google Analytic 4 (GA4) is used to track open Canada portal usage. This script should run once a month to retrieve reports from GA4 using its API. 
 
-**Prerequisite:**
-
-Create a new GA4 credential and save the JSON file as credentials.json locally. Then open the file  with an editor and copy the email contained to your GA4 property access management. Here is the link to create :  https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py#create_credentials
+**Prerequisite:** Create a new GA4 credential and save the JSON file as credentials.json locally. Then open the file  with an editor and copy the email contained to your GA4 property access management. Here is the link to create :  https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py#create_credentials
 
 **Step 1:** clone this repository or download GA4_reporting_script’s content only. Then add the credential file downloaded previously and two new folders named GA_TMP_DIR and GA_STATIC_DIR in the same folder. 
 
@@ -71,16 +69,14 @@ Ce référentiel contient des scripts en python qui ont pour but de produire les
 
 Google analytiques 4 (GA4) est utilisé pour le suivi du parcours des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
 
-**Prérequis:**
-
-Créer un nouveau identifiant de GA4 et l’enregistrer localement en tant que credentials.json. Ensuite ouvrir le fichier avec un éditeur et copier le courriel contenu dans la gestion des accès à la propriété du compte GA4. Voici le lien pour créer l’identifiant : Présentation de l'API Analytics Reporting v4 ; guide de démarrage rapide pour Python pour les comptes de service  |  Analytics Reporting API v4  |  Google for Developers
+**Prérequis:** Créer un nouveau identifiant de GA4 et l’enregistrer localement en tant que credentials.json. Ensuite ouvrir le fichier avec un éditeur et copier le courriel dans la gestion des accès à la propriété du compte GA4. Voici le lien pour créer l’identifiant : https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py?hl=fr#create_credentials
 
 **Étape 1:** Cloner le référentiel ou télécharger le contenu du répertoire GA4_reporting_script. Puis ajouter l’identifiant télécharger précédemment et deux nouveaux répertoires nommés GA_TMP_DIR and GA_STATIC_DIR dans le même répertoire.  Vous trouvez ci-dessous un aperçu du contenu du répertoire GA4_reporting_script. 
  
 ![
   ](https://github.com/open-data/analytics-corporate-reporting/blob/main/GA4_reporting_script.png)
 
-**Étape 2:** Installer les progiciels requis depuis le fichier requirements.txt. Par ailleurs, La création d’un nouvel environnement tel qu’illustré dans la figure ci-dessous est à votre discrétion.
+**Étape 2:** Installer les progiciels requis depuis le fichier requirements.txt. En revanche, La création d’un nouvel environnement tel qu’illustré dans la figure ci-dessous est à votre discrétion.
  
  
  ![
@@ -97,7 +93,7 @@ Vérifier aléatoirement les fichiers générés et puis relancer l’exécution
 
 ## **Carte ouverte**
 
-Nous utilisons également GA4 pour suivre l’utilisation de la visualisation de carte ouverte avec nos données géospatiales.
+Nous utilisons également GA4 pour suivre la visualisation de carte ouverte avec nos données géospatiales.
 
 **Étape 1:**  Cloner le référentiel ou télécharger le contenu du répertoire Open_map. Ensuite installer les progiciels requis depuis le fichier requirements.txt.
 
@@ -108,7 +104,7 @@ Nous utilisons également GA4 pour suivre l’utilisation de la visualisation de
 Des tâches s’exécutent quotidiennement pour refléter les mis à jour des divulgations proactives dans les fichiers suivants :
 -	**structure_pd.csv**  contient les mis à jour quotidien sur les divulgations proactives normalisées. 
 -	**nonstruc_pd.csv** contient les mis à jour quotidien sur les divulgations proactives non normalisées.
--	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive toutes confondues.
+-	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive.
 -	**unpivoted_pd.csv**  contient toutes les divulgations proactives en format non croisés. 
 -	**pd_per_dept.csv** Contient les mis à jour des divulgations proactives par ministères.
 
