@@ -69,7 +69,7 @@ Ce référentiel contient des scripts en python qui ont pour but de produire les
 
 ## **Script de création de rapport depuis GA4**
 
-Google analytiques 4 (GA4) est utilisé pour le suivi du parcourt des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
+Google analytiques 4 (GA4) est utilisé pour le suivi du parcours des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
 
 **Prérequis:**
 
