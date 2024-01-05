@@ -19,6 +19,7 @@ class Proactive_disclosure:
         self.unstruct_pd_count = [self.current_date]
         self.df_pd_org = pd.DataFrame()
         self.df_melt = pd.DataFrame()
+        self.df_unpd_org = pd.DataFrame()
         self.record_added = False
 
     def download(self):
@@ -60,13 +61,13 @@ class Proactive_disclosure:
             if req.status_code == 200:
                 df = pd.read_csv(io.StringIO(
                     req.content.decode("utf-8")), low_memory=False)
-                if filename != "adminaircraft":
+                if filename != "adminaircraft":                  
                     df_agg = df.groupby(
                         "owner_org").size().reset_index(name="count")
                     df_agg["type"] = filename
                     self.df_pd_org = pd.concat(
                         [self.df_pd_org, df_agg], ignore_index=True)
-
+                   
             return filename, len(df)
         except Exception as e:
             print(e)
@@ -106,19 +107,24 @@ class Proactive_disclosure:
         for records in self.download():
             for record in records:
                 try:
-                    non_struc_pd.append([record["owner_org"], record["organization"],
+                    non_struc_pd.append([record["organization"]["name"], record["organization"]["title"],
                                          record["title"], record["type"], record["collection"],])
                 except IndexError as e:
                     print(e)
                 except Exception as e:
                     print(e)
         df = pd.DataFrame(non_struc_pd, columns=[
-            "owner_org", "organization", "title", "type", "collection"])
+            "owner_org", "organization", "title", "type", "collection"])        
         for elmt in self.pd_list:
-            elmt = df[df['collection'] == elmt]
-            total += len(elmt)
-            self.unstruct_pd_count.append(len(elmt))
-        pd_col.extend(["total"])
+            elmt_df = df[df['collection'] == elmt]
+            elmt_agg = elmt_df.groupby(
+                        "owner_org").size().reset_index(name="count")
+            elmt_agg['type'] = elmt
+            self.df_unpd_org = pd.concat(
+                        [self.df_unpd_org, elmt_agg], ignore_index=True)
+            total += len(elmt_df)
+            self.unstruct_pd_count.append(len(elmt_df))
+        pd_col.extend(["total"])        
         self.unstruct_pd_count.append(total)
         self.add_record(self.unstruct_pd_count, "nonstruc_pd.csv", pd_col)
         return total
@@ -126,7 +132,7 @@ class Proactive_disclosure:
     def struct_pd(self):
         pd_name = []
         row = [self.current_date]
-        total = 0
+        total = 0       
         with open("links.txt", "r") as f:
             Urls = [line.rstrip('\n') for line in f]
         f.close
@@ -150,9 +156,10 @@ class Proactive_disclosure:
         all_pd.extend([struc_pd_total, unstruc_pd_total, total_all])
         if self.record_added:
             self.df_melt.sort_values(
-                by='date', axis=0, ascending=False, inplace=True)            
-            self.df_melt.rename(
-                columns={"variable": "pd_type", "value": "pd_count"}, inplace=True)            
+                by='date', axis=0, ascending=False, inplace=True)
+            #print (self.df_melt.head())
+            self.df_melt.rename(columns = {"variable":"pd_type", "value": "pd_count"}, inplace=True)
+            print (self.df_melt.head())
             self.df_melt = self.df_melt.query(f'pd_type != "total"')
             self.df_melt.to_csv("unpivoted_pd.csv",
                                 encoding="utf-8", index=False)
@@ -160,11 +167,14 @@ class Proactive_disclosure:
             "date", "structured_pd", "non_structured_pd", "total"], True)
 
     def pd_per_dept(self):
-        df_dpt = self.df_pd_org.pivot(index="owner_org", columns="type")
+        all_pd_df = pd.concat(
+                        [self.df_unpd_org, self.df_pd_org], ignore_index=True)        
+        df_dpt = all_pd_df.pivot(index="owner_org", columns="type")        
         df_dpt = df_dpt['count'].reset_index()
         df_dpt.columns.name = None
         df_dpt.fillna(0, inplace=True)
-        df_dpt = df_dpt.astype({'ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
+        df_dpt = df_dpt.astype({'transition':'int', 'transition_deputy':'int', 'parliament_report':'int',
+                        'parliament_committee':'int', 'parliament_committee_deputy':'int','ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
                                 'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
         df_dpt.to_csv("pd_per_dept.csv", encoding='utf-8', index=False)
 
