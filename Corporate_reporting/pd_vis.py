@@ -2,7 +2,7 @@ import plotly.express as px
 import pandas as pd
 import os 
 # PD visualization
-df = pd.read_csv(os.path.join("pd_count","structure_pd.csv"), encoding="utf-8")
+df = pd.read_csv(os.path.join("corporate_report.csv","pd_count","structure_pd.csv"), encoding="utf-8")
 df.rename(columns={"ati_all": "ATI", "contracts": "Contracts", "grants": "Grants",
           "travelq": "Travel", "hospitalityq": "Hospitality"}, inplace=True)
 df = df.head(8)
@@ -31,7 +31,7 @@ fig_pd.update_layout(
     legend_title_font_color="green"
 )
 # Open data visualization
-df = pd.read_csv(os.path.join("open_data","corporate_report.csv"), encoding="utf-8")
+df = pd.read_csv(os.path.join("corporate_report.csv","open_data","corporate_report.csv"), encoding="utf-8")
 df.rename(columns={"number of datasets":"# of open data",}, inplace=True)
 df_melt = pd.melt(df, id_vars=['Date'], value_vars=["# of open data", "Non geospatial" ])
 df_melt.rename(columns={"variable": "type",
