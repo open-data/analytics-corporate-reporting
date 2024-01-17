@@ -2,7 +2,7 @@ name: run JSON LINES catalogue file download
 
 on:
   schedule:
-    - cron: '*/4 * * * *' # 1st and 28 to 31 of the month 
+    - cron: '* 12 1,28-31 * *' # 1st and 28 to 31 of the month 
 
 jobs:
   build:
