@@ -1,0 +1,37 @@
+name: run pd visualization
+
+on:
+  schedule:
+    - cron: '0 12 * * *'  # everyday 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner
+
+      - name: setup python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9.12' # install the python version needed
+          
+      - name: install python packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirement.txt
+          
+      - name: execute py script # run pd_count.py and corporate_report.py
+        
+        run:  python pd_vis.py
+          
+          
+      - name: commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -a -m "updates" --allow-empty
+          git push -f
+       
