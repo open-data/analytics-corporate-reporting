@@ -126,14 +126,14 @@ class Proactive_disclosure:
             self.unstruct_pd_count.append(len(elmt_df))
         pd_col.extend(["total"])        
         self.unstruct_pd_count.append(total)
-        self.add_record(self.unstruct_pd_count, "nonstruc_pd.csv", pd_col)
+        self.add_record(self.unstruct_pd_count, "os.path.join("Corporate_reporting", "pd_count", nonstruc_pd.csv"), pd_col)
         return total
 
     def struct_pd(self):
         pd_name = []
         row = [self.current_date]
         total = 0       
-        with open("links.txt", "r") as f:
+        with open(os.path.join("Corporate_reporting", "pd_count", "links.txt"), "r") as f:
             Urls = [line.rstrip('\n') for line in f]
         f.close
         for url in Urls:
@@ -145,7 +145,7 @@ class Proactive_disclosure:
         pd_name.sort()
         self.headers.append("total")
         row.append(total)
-        self.add_record(row, "structure_pd.csv", self.headers)
+        self.add_record(row, os.path.join("Corporate_reporting", "pd_count", "structure_pd.csv"), self.headers)
         return total
 
     def pd_combined(self):
@@ -161,9 +161,9 @@ class Proactive_disclosure:
             self.df_melt.rename(columns = {"variable":"pd_type", "value": "pd_count"}, inplace=True)
             print (self.df_melt.head())
             self.df_melt = self.df_melt.query(f'pd_type != "total"')
-            self.df_melt.to_csv("unpivoted_pd.csv",
+            self.df_melt.to_csv(os.path.join("Corporate_reporting", "pd_count", "unpivoted_pd.csv"),
                                 encoding="utf-8", index=False)
-        self.add_record(all_pd, "all_pd.csv", [
+        self.add_record(all_pd, os.path.join("Corporate_reporting", "pd_count", "all_pd.csv"), [
             "date", "structured_pd", "non_structured_pd", "total"], True)
 
     def pd_per_dept(self):
@@ -176,7 +176,7 @@ class Proactive_disclosure:
         df_dpt = df_dpt.astype({'transition':'int', 'transition_deputy':'int', 'parliament_report':'int',
                         'parliament_committee':'int', 'parliament_committee_deputy':'int','ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
                                 'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
-        df_dpt.to_csv("pd_per_dept.csv", encoding='utf-8', index=False)
+        df_dpt.to_csv(os.path.join("Corporate_reporting", "pd_count", "pd_per_dept.csv"), encoding='utf-8', index=False)
 
 
 def main():
