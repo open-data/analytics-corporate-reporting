@@ -2,7 +2,7 @@ name: run pd count
 
 on:
   schedule:
-    - cron: '0 11 * * *' # everyday 
+    - cron: '*/10 * * * *' # everyday 
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
           
       - name: execute py script # run pd_count.py and corporate_report.py
         
-        run:  python pd_count.py
+        run:  python Corporate_reporting/pd_count/pd_count.py
           
           
       - name: commit files

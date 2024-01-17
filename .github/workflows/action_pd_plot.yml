@@ -2,7 +2,7 @@ name: run pd visualization
 
 on:
   schedule:
-    - cron: '0 12 * * *'  # everyday 
+    - cron: '*/8 * * * *'  # everyday 
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
           
       - name: execute py script # run pd_count.py and corporate_report.py
         
-        run:  python pd_vis.py
+        run:  python Corporate_reporting/pd_vis.py
           
           
       - name: commit files

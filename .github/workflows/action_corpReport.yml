@@ -2,7 +2,7 @@ name: corporate reporting
 
 on:
   schedule:
-    - cron: '0 12 * * *' # everyday 
+    - cron: '*/6 * * * *' # everyday 
 
 jobs:
   build:
@@ -24,7 +24,7 @@ jobs:
           
       - name: execute py script # corporate_report.py
         
-        run: python corporate_report.py
+        run: python Corporate_reporting/open_data/corporate_report.py
           
           
       - name: commit files
