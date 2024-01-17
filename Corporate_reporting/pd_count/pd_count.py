@@ -126,7 +126,7 @@ class Proactive_disclosure:
             self.unstruct_pd_count.append(len(elmt_df))
         pd_col.extend(["total"])        
         self.unstruct_pd_count.append(total)
-        self.add_record(self.unstruct_pd_count, "os.path.join("Corporate_reporting", "pd_count", nonstruc_pd.csv"), pd_col)
+        self.add_record(self.unstruct_pd_count, os.path.join("Corporate_reporting", "pd_count", "nonstruc_pd.csv"), pd_col)
         return total
 
     def struct_pd(self):
