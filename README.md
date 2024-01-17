@@ -65,9 +65,9 @@ We also provide in this repository open data and non-geospatial open data create
 
 Ce référentiel contient des scripts en python qui ont pour but de produire les statistiques du parcours des visiteurs dans le portail ouvert de Canada. Il contient également les statistiques des divulgations proactives et des données ouvertes produites par les départements.
 
-## **Script de création de rapport depuis GA4**
+## **Script de création des rapports depuis GA4**
 
-Google analytiques 4 (GA4) est utilisé pour le suivi du parcours des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
+Google analytiques 4 (GA4) est utilisé pour assurer le suivi du parcours des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
 
 **Prérequis:** Créer un nouveau identifiant de GA4 et l’enregistrer localement en tant que credentials.json. Ensuite ouvrir le fichier avec un éditeur et copier le courriel dans la gestion des accès à la propriété du compte GA4. Voici le lien pour créer l’identifiant : https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py?hl=fr#create_credentials
 
