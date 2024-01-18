@@ -191,7 +191,7 @@ def main():
               "number of API enabled datasets", "% of API enable datasets", "Totals downloads", "Total visits"]
     cr.datasets_generation()
     row = cr.corporate_report('open_data_&_info.csv')
-    cr.add_record(row, "corporate_report.csv", header)
+    cr.add_record(row, os.path.join("Corporate_reporting", "open_data", "corporate_report.csv"), header)
 
 
 if __name__ == '__main__':
