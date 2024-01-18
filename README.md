@@ -114,7 +114,7 @@ Des tâches s’exécutent quotidiennement pour refléter les mis à jour des di
 
 
 ## **Données ouvertes**
-Vous trouvez également dans ce référentiel les données ouvertes créés courant l’année fiscale en cours et le taux de la côte d’ouverture.
+Vous trouvez également dans ce référentiel les données ouvertes créées courant l’année fiscale en cours et le taux de la côte d’ouverture.
 
 **Données ouvertes créées au cours de l’exercice en cours**
 ![
