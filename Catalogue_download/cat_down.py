@@ -23,8 +23,10 @@ def previous_file_delete():
     today = date.today()
     if today.month >2:
         previous_date = date(year=today.year, month=(today.month-2), day=today.day)
+    elif today.month ==2:
+        previous_date = date(year=today.year -1 , month=12, day=today.day)
     else:
-        previous_date = date(year=today.year -1 , month=abs((today.month-2)%12), day=today.day)
+        previous_date = date(year=today.year -1 , month=11, day=today.day)
     previous_date = previous_date.strftime('%Y-%m-%d')
     y, m, d = previous_date.split('-')
     previous_file = os.path.join("Catalogue_download",''.join(
