@@ -34,7 +34,7 @@ import down_files
 import onetime_concat
 import resource_patch
 
-
+# Generates a CSV file
 def write_csv(filename, rows, header=None):
     outf = open(filename, 'wb')
     outf.write(codecs.BOM_UTF8)
@@ -44,7 +44,7 @@ def write_csv(filename, rows, header=None):
     for row in rows:
         writer.writerow(row)
 
-
+# Reads CSV file.
 def read_csv(filename):
     content = []
     with open(filename, encoding='UTF-8') as f:
@@ -65,7 +65,6 @@ def simplify_lang(titles):
 # https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/installed-py
 # https://developers.google.com/analytics/devguides/reporting/core/v4/basics
 # CLIENT_SECRETS_PATH = 'client_secrets.json' # Path to client_secrets.json file.
-# VIEW_ID = '<REPLACE_WITH_VIEW_ID>'
 
 
 def initialize_analyticsreporting(client_secrets_path):
@@ -93,14 +92,12 @@ def parseReport(response, dimension_name='pagePath', metric_name='eventCount'):
     rowCount = response.row_count
     return data, rowCount
 
-
+# Analytics Reporting Class
 class DatasetDownload():
-    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):
-       # self.ga_tmp_dir = os.environ['GA_TMP_DIR']
+    def __init__(self, start_date, end_date, og_type, ga, property_id, conf_file=None):       
         ga_rmote_ckan = "https://open.canada.ca/data"
         self.ga = ga
-        self.property_id = property_id
-        # self.file = os.path.join(self.ga_tmp_dir, 'od-do-canada.jl.gz')
+        self.property_id = property_id        
         self.site = ckanapi.RemoteCKAN(ga_rmote_ckan)
         self.start_date = start_date
         self.end_date = end_date
@@ -114,7 +111,7 @@ class DatasetDownload():
             if self.download_file:
                 os.unlink(self.download_file)
                 print('temp file deleted', self.download_file)
-
+#Read organization details
     def read_orgs(self):
         count = 0
         while count <= 5:
@@ -136,7 +133,7 @@ class DatasetDownload():
             self.org_id2name[rec['id']] = [rec['name'], rec['title']]
         assert (len(self.orgs) > 100)
 
-# reads the catalogue file
+# reads the catalogue file (open data metadata)
     def read_portal(self, stats, og_type=None):
         self.ds = {}
         self.org_count = defaultdict(int)
@@ -184,9 +181,8 @@ class DatasetDownload():
         self.dump(stats, True)
 
 # Downloads per month and dataset (either info or data)
-    def getStats(self):  # , og_type
-        self.set_catalogue_file()
-        # self.og_type = og_type
+    def getStats(self):  # 
+        self.set_catalogue_file()       
         offset = 0
         limit = 10000
         stats = defaultdict(int)
@@ -214,8 +210,7 @@ class DatasetDownload():
         y, m, d = self.start_date.split('-')
         sheets = []
         all_rec = [[id, c] for id, c in data.items()]
-        all_rec.sort(key=lambda x: x[1], reverse=True)
-        # top100 = heapq.nlargest(100, top100, key=lambda x: x[1])
+        all_rec.sort(key=lambda x: x[1], reverse=True)        
         rows = [['id', 'title', 'titre', 'department',
                  'ministere', 'downloads_telechargements',
                  'month_mois', 'year_annee']]
@@ -235,6 +230,7 @@ class DatasetDownload():
             if len(rows) == 21:
                 write_csv(os.path.join("GA_TMP_DIR", "".join(
                     ["openDataPortal.siteAnalytics.top20Info", m, y, ".csv"])), rows)
+
         write_csv(os.path.join("GA_TMP_DIR",
                   "od_ga_All_Info_download.csv"), rows)
 
@@ -278,8 +274,7 @@ class DatasetDownload():
             rows[0][5] = "visits_visites"
         for rec_id, count in all_rec:
             rec = self.ds.get(rec_id, None)
-            if not rec:
-                # continue
+            if not rec:                
                 if rec_id in deleted_ds.keys():
                     rec_title = deleted_ds[rec_id]['title_translated']
                     rec_title = simplify_lang(rec_title)
@@ -404,8 +399,7 @@ class DatasetDownload():
     def monthly_usage(self, csv_file):
         total, downloads = 0, 0
         request = RunReportRequest(
-            property=f"properties/{self.property_id}",
-            # dimensions=[Dimension(name="PagePath")],
+            property=f"properties/{self.property_id}",            
             metrics=[Metric(name="sessions")
                      ],
             date_ranges=[
@@ -514,7 +508,6 @@ class DatasetDownload():
             print('entry exists, no overwriting')
 
      # Visits by region stat
-
     def by_region(self, csv_file):
         y, m, t = self.end_date.split("-")
         region_name = self.country.get('country_region').get('region')
@@ -571,9 +564,9 @@ class DatasetDownload():
             print('entry exists, no overwriting')
 
 
-# To include historical visits from last reporting
+# To include historical visits by country or region from last reporting
     def hist_visits(self, data, csv_file):
-        y, m, t = self.end_date.split("-")
+        y, m, d = self.end_date.split("-")
         df = pd.DataFrame(data, columns=['region', 'visits_visites',
                           'percentage_of_visits_pourcentage_des_visites'])
         old_df = pd.read_csv(csv_file)
@@ -607,7 +600,7 @@ class DatasetDownload():
         new_df.sort_values(by='visits_visites', axis=0,
                            ascending=False, inplace=True)
         new_df.to_csv("".join([".".join(csv_file.split(
-            ".")[0:-2]),".bilingual", m, y, ".csv"]), encoding="utf-8", index=False)
+            ".")[0:-2]), ".bilingual", m, y, ".csv"]), encoding="utf-8", index=False)
 
 # set catalogue file name
     def set_catalogue_file(self):
@@ -617,7 +610,7 @@ class DatasetDownload():
         if not os.path.exists(self.file):
             raise Exception('not found ' + self.file)
 
- # generate catalogue
+ # generate total dataset realsed by organizaton and datasets released or deleted within last 12 months by org and by months in unpivoted format
     def by_org(self, org_stats, csv_file):
         rows = []
         header = ['department', 'ministere',
@@ -625,11 +618,31 @@ class DatasetDownload():
         for org_id, count in org_stats.items():
             [title_en, title_fr] = self.orgs.get(org_id, ['', ''])
             name = self.org_id2name[org_id][0]
-            link_en = 'http://open.canada.ca/data/en/dataset?organization=' + name
-            link_fr = 'http://ouvert.canada.ca//data/fr/dataset?organization=' + name
+            link_en = 'https://open.canada.ca/data/organization/' + name
+            link_fr = 'https://ouvert.canada.ca/data/fr/organization/' + name
             rows.append([title_en, title_fr, link_en, link_fr, count])
         rows.sort(key=lambda x: x[0])
+        df_old = pd.read_csv(csv_file, encoding='utf-8')
         write_csv(csv_file, rows, header)
+        y, m, d = self.end_date.split("-")        
+        df_new = pd.read_csv(csv_file, encoding="utf-8")
+        df_old.drop(['ministere', 'datasets', 'jeux_de_donnees'],
+                    axis=1, inplace=True)
+        df_ByOrgByMonth = df_new.merge(df_old, how="inner", on='department')
+        df_ByOrgByMonth['total'] = df_ByOrgByMonth['total_x'] - \
+            df_ByOrgByMonth['total_y']
+        df_ByOrgByMonth["department_ministere"] = df_ByOrgByMonth['department'] + \
+            ' | ' + df_ByOrgByMonth['ministere']
+        df_ByOrgByMonth["links_liens"] = df_ByOrgByMonth['datasets'] + \
+            ' | ' + df_ByOrgByMonth['jeux_de_donnees']
+        df_ByOrgByMonth.drop(
+            ['department', 'ministere', 'datasets', 'jeux_de_donnees'], axis=1, inplace=True)
+        df_ByOrgByMonth.rename(
+            columns={"total": "datasets_jeux_de_donnees"}, inplace=True)
+        df_ByOrgByMonth['month_mois'] = m
+        df_ByOrgByMonth['year_annee'] = y
+        df_ByOrgByMonth[['department_ministere', 'links_liens', 'month_mois', 'year_annee', 'datasets_jeux_de_donnees']].to_csv(os.path.join("GA_TMP_DIR", "".join(
+            ["opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual_new", m, y, ".csv"])), encoding='utf-8', index=False)
 
 # Generates dataset released by organization by month for the last 12 month
     def by_org_month(self, csv_month_file, csv_file):
@@ -700,8 +713,8 @@ class DatasetDownload():
             exists[org_id] = True
             titles = self.orgs.get(org_id, ['', ''])
             title = titles[0] + ' | ' + titles[1]
-            link_en = 'http://open.canada.ca/data/en/dataset?organization=' + name
-            link_fr = 'http://ouvert.canada.ca//data/fr/dataset?organization=' + name
+            link_en = 'https://open.canada.ca/data/organization/' + name
+            link_fr = 'https://ouvert.canada.ca/data/fr/organization/' + name
             link = link_en + ' | ' + link_fr
             row[0] = title
             row[1] = link
@@ -723,8 +736,8 @@ class DatasetDownload():
             titles = self.orgs.get(org_id, ['', ''])
             title = titles[0] + ' | ' + titles[1]
             name = self.org_id2name[org_id][0]
-            link_en = 'http://open.canada.ca/data/en/dataset?organization=' + name
-            link_fr = 'http://ouvert.canada.ca//data/fr/dataset?organization=' + name
+            link_en = 'https://open.canada.ca/data/organization/' + name
+            link_fr = 'https://ouvert.canada.ca/data/fr/organization/' + name
             link = link_en + ' | ' + link_fr
             row = [0 for i in range(len(header))]
             row[0] = title
@@ -741,7 +754,13 @@ class DatasetDownload():
 
 def report(client_secret_path, property_id, start, end, va=None, og_config_file=None):
     y, m, d = end.split("-")
-    last_month = str("%02d" %(int(m)-1))
+    if int(m) > 2:
+        last_month = str("%02d" % (int(m)-1))
+    elif int(m) == 1:
+        last_month = str(12)
+        y = str(int(y) - 1)
+    else:
+        last_month = str("%02d" % (abs((int(m)-1) % 12)))
     og_type = va
     client = initialize_analyticsreporting(client_secret_path)
     ds = DatasetDownload(start, end, og_type, client,
@@ -764,7 +783,7 @@ def report(client_secret_path, property_id, start, end, va=None, og_config_file=
 
 
 def main():
-    
+
     down_files.archive_download()
     t0 = time.time()
     today = date.today()
@@ -773,13 +792,14 @@ def main():
     last_day = last_day.strftime('%Y-%m-%d')
     first_day = first_day.strftime('%Y-%m-%d')
     down_files.csv_download(last_day)
-    report("credentials.json", "359132180",first_day, last_day)
+    report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist(last_day)
     down_files.archive_files(last_day)
-    #resource_patch.resources_update()
+    # resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
+
 
 if __name__ == '__main__':
     main()

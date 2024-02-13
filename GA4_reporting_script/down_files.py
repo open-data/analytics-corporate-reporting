@@ -29,21 +29,28 @@ def csv_download(end):
     # last_day = today - timedelta(days=today.day)
     # last_day = last_day.strftime('%Y-%m-%d')
     y, m, d = end.split("-") # last_day
-    last_month = str("%02d" % (int(m)-1))
+    if int(m) > 2:
+        last_month = str("%02d" %(int(m)-1))        
+    elif int(m) == 1:
+        last_month = str(12)
+        y= str(int(y) -1)       
+    else:
+        last_month = str("%02d" %(abs((int(m)-1)%12)))
     resource_link = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/"
-    urls = ["https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/02a92b0f-b26d-4fbd-9601-d27651703715/download/opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv",
+    urls = [resource_link + "02a92b0f-b26d-4fbd-9601-d27651703715/download/opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv",
             resource_link + "e06f06a9-d897-4a35-9b73-4c2bc1c2d5cf/download/opendataportal.siteanalytics.provincialusagebreakdown.bilingual"+last_month+y+".csv",
             resource_link + "b52ee0b2-f2be-4bc5-a27a-db93a228d38b/download/opendataportal.siteanalytics.internationalusagebreakdown.bilingual"+last_month+y+".csv",
-            "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/5a1b343d-2fea-4c31-8652-f77506e3ea37/download/opendataportal.siteanalytics.datasetsbyorg.bilingual.csv",
-            "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/f09148f9-a09b-46ec-bf5b-52f26720f3f3/download/opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual.csv",
+            resource_link + "5a1b343d-2fea-4c31-8652-f77506e3ea37/download/opendataportal.siteanalytics.datasetsbyorg.bilingual.csv",
+            resource_link + "f09148f9-a09b-46ec-bf5b-52f26720f3f3/download/opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual.csv",
             resource_link + "4ebc050f-6c3c-4dfd-817e-875b2caf3ec6/download/opendataportal.siteanalytics.downloads" +
             "-" + last_month + str(int(y)-1) + "-" + last_month+y+".csv",
             resource_link + "c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db/download/opendataportal.siteanalytics.visits" +
             "-" + last_month + str(int(y)-1) + "-" + last_month+y+".csv",
             resource_link + "b1dfa726-7ed1-4a6b-ae49-77a200abee72/download/opendataportal.siteanalytics.info" +
             "-" + last_month + str(int(y)-1) + "-" + last_month+y+".csv",
-            "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/9d395c98-f33f-4d40-9e3b-3d383321c577/download/opendataportal.siteanalytics.top20info.csv",
-            "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/ba980e38-f110-466a-ad92-3ee0d5a60d49/download/opendataportal.siteanalytics.top100datasets.bilingual.csv"]
+            resource_link + "9d395c98-f33f-4d40-9e3b-3d383321c577/download/opendataportal.siteanalytics.top20info.csv",
+            resource_link + "ba980e38-f110-466a-ad92-3ee0d5a60d49/download/opendataportal.siteanalytics.top100datasets.bilingual.csv",
+            resource_link + "d9138bac-8f9a-42e3-ac7c-450420c5d272/download/opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual_new.csv"]
     for filename in os.listdir("GA_TMP_DIR"):
         file_path = os.path.join("GA_TMP_DIR", filename)
         os.remove(file_path)

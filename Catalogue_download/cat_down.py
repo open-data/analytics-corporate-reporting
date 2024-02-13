@@ -34,7 +34,6 @@ def previous_file_delete():
     if os.path.isfile(previous_file):
         os.remove(previous_file)
 
-
 if __name__ == '__main__':
     cat_download()
     previous_file_delete()
