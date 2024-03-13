@@ -48,7 +48,7 @@ def concat_hist(end):
         y= str(int(y) -1)
     else:
         last_month = str("%02d" %(abs((int(m)-1)%12)))
-        
+        print(last_month)
     next_month = str("%02d" %(int(m)+ 1))
     new_download = os.path.join("GA_TMP_DIR", "-".join(["openDataPortal.siteAnalytics.downloads", 
                                             "".join([m,str(int(y)-1)]),"".join([m,y, ".csv"])])) 

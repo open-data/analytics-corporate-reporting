@@ -702,8 +702,8 @@ class DatasetDownload():
         # update exists one
         exists = {}
         for row in ds:
-            # get org shortname
-            name = row[1].split('=')[-1]
+            # get org shortname            
+            name = row[1].split('/')[-1]
             # some orgs got new shortforms
             name = {
                 'ceaa-acee': 'iaac-aeic',
@@ -795,7 +795,7 @@ def main():
     report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist(last_day)
     down_files.archive_files(last_day)
-    # resource_patch.resources_update()
+    #resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
