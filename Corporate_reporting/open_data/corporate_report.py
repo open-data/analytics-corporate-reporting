@@ -162,8 +162,15 @@ class Corporate:
         API_enable = fiscal_openess_score.query('any_datastore_active == True')
         eligible_API = Non_geo.query('collection != "federated"')
         data = self.get_fy_download()
-        corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], round(100*Non_geo_good.shape[0]/Non_geo.shape[0], 2), API_enable.shape[0],
-                             round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
+        print(eligible_API.shape[0])
+        print (Non_geo.shape[0])
+        try:
+            corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], round(100*Non_geo_good.shape[0]/Non_geo.shape[0], 2), API_enable.shape[0],
+                                round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
+        except Exception:
+             corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], 0, API_enable.shape[0],
+                                0, data['downloads_telechargements'], data['visits_visites']]
+
         return corporate_metrics
 
     def csv_file_create(self, csv_file, col_head):
