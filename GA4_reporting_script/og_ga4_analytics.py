@@ -204,7 +204,7 @@ class DatasetDownload():
         self.dump(stats)
         self.dump_info(stats)
 
-# genrates statisc file for TOP info downloads and last month info download
+# genrates statisc file for last month info and TOP info downloads
     def dump_info(self, data):
         self.read_portal(data, og_type='info')
         y, m, d = self.start_date.split('-')
@@ -234,7 +234,7 @@ class DatasetDownload():
         write_csv(os.path.join("GA_TMP_DIR",
                   "od_ga_All_Info_download.csv"), rows)
 
-# genrates statisc files for views and downloads of datasets last month (Top 100 downlads and all downloads/dataset)
+# genrates statisc files for last month views and downloads of datasets (Top 100 downlads and all downloads/dataset)
     def dump(self, data, ignore_deleted=False):
         self.read_portal(data)
         ds = defaultdict(int)
@@ -644,7 +644,7 @@ class DatasetDownload():
         df_ByOrgByMonth[['department_ministere', 'links_liens', 'month_mois', 'year_annee', 'datasets_jeux_de_donnees']].to_csv(os.path.join("GA_TMP_DIR", "".join(
             ["opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual_new", m, y, ".csv"])), encoding='utf-8', index=False)
 
-# Generates dataset released by organization by month for the last 12 month
+# Generates dataset released by organization by month for the last 12 month. Will get rid of if the above unpivoted format is approved.
     def by_org_month(self, csv_month_file, csv_file):
         self.set_catalogue_file()
         # need to use cataloge file downloaded at 1st day of each month (or last day of prev month), same for by_org
@@ -795,6 +795,7 @@ def main():
     report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist(last_day)
     down_files.archive_files(last_day)
+    #IMPORTANT!Make sure that resource_patch.resources_update() is disabled until you validate the stats 
     #resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
