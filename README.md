@@ -42,11 +42,14 @@ We also use GA4 to track the usage of our geospatial data using open map view.
 
 ## **Proactive disclosure**
 Daily jobs run to reflect updates on Proactive disclosure (PD) in the following csv files:
--	**structure_pd.csv**  contains daily updates on standardized proactive publication. 
--	**nonstruc_pd.csv** contains daily updates on non-standardized proactive publication. 
--	**all_pd.csv contains** aggregated records by proactive disclosure categories (standardized and non-standardized).
--	**unpivoted_pd.csv**  contains all PDs update in unpivoted format for analytics purposes.
--	**pd_per_dept.csv** contains PD updates per department.
+
+| File | Flat Viewer |
+|--|--|
+|**structure_pd.csv**  contains daily updates on standardized proactive publication.  | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)]([https://flatgithub.com/PatLittle/OpenGov_R_Scripts](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fstructure_pd.csv))|
+|**nonstruc_pd.csv** contains daily updates on non-standardized proactive publication.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)]([https://flatgithub.com/PatLittle/OpenGov_R_Scripts](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fnonstruc_pd.csv))|
+|**all_pd.csv contains** aggregated records by proactive disclosure categories (standardized and non-standardized).|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)]([https://flatgithub.com/PatLittle/OpenGov_R_Scripts](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fall_pd.csv))|
+|**unpivoted_pd.csv**  contains all PDs update in unpivoted format for analytics purposes.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)]([https://flatgithub.com/PatLittle/OpenGov_R_Scripts](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Funpivoted_pd.csv))|
+|**pd_per_dept.csv** contains PD updates per department.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)]([https://flatgithub.com/PatLittle/OpenGov_R_Scripts](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fpd_per_dept.csv))|
 
 **New ATI, contracts, grants, travel and hospitality in last 7 days**
 ![
