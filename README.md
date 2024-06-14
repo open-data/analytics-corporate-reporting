@@ -87,7 +87,7 @@ Google analytiques 4 (GA4) est utilisé pour assurer le suivi du parcours des us
 
 **Étape 3:** Télécharger à la fin de chaque mois à partir du lien https://open.canada.ca/static/od-do-canada.jsonl.gz  le catalogue en format JSON Lines généré quotidiennement. Ensuite renommé le fichier ainsi  od-do-canada.YYYYMMDD.jl.gz (ex: od-do-canada.20231031.jl.gz). Vous pouvez également télécharger depuis ce référentiel à fin du mois.
 
-**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produits et enregistrés dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardés dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
+**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produites et enregistrées dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardées dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
 
  ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
