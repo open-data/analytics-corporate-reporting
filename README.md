@@ -104,12 +104,12 @@ Nous utilisons également GA4 pour suivre la visualisation de carte ouverte avec
 
 ## **Divulgation proactive**
 
-Des tâches s’exécutent quotidiennement pour refléter les mis à jour des divulgations proactives dans les fichiers suivants :
--	**structure_pd.csv**  contient les mis à jour quotidien sur les divulgations proactives normalisées. 
--	**nonstruc_pd.csv** contient les mis à jour quotidien sur les divulgations proactives non normalisées.
+Des tâches s’exécutent quotidiennement pour refléter les mises à jour des divulgations proactives dans les fichiers suivants :
+-	**structure_pd.csv**  contient les mises à jour quotidiennes sur les divulgations proactives normalisées. 
+-	**nonstruc_pd.csv** contient les mises à jour quotidiennes sur les divulgations proactives non normalisées.
 -	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive.
 -	**unpivoted_pd.csv**  contient toutes les divulgations proactives en format non croisés. 
--	**pd_per_dept.csv** Contient les mis à jour des divulgations proactives par ministères.
+-	**pd_per_dept.csv** Contient les mises à jour des divulgations proactives par ministères.
 
 **Nouveaux ATI, contrats, subventions, voyages et hospitalité au cours des 7 derniers jours**
 ![
