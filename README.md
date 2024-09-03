@@ -42,11 +42,14 @@ We also use GA4 to track the usage of our geospatial data using open map view.
 
 ## **Proactive disclosure**
 Daily jobs run to reflect updates on Proactive disclosure (PD) in the following csv files:
--	**structure_pd.csv**  contains daily updates on standardized proactive publication. 
--	**nonstruc_pd.csv** contains daily updates on non-standardized proactive publication. 
--	**all_pd.csv contains** aggregated records by proactive disclosure categories (standardized and non-standardized).
--	**unpivoted_pd.csv**  contains all PDs update in unpivoted format for analytics purposes.
--	**pd_per_dept.csv** contains PD updates per department.
+
+| File | Flat Viewer |
+|--|--|
+|**structure_pd.csv**  contains daily updates on standardized proactive publication.  | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fstructure_pd.csv)|
+|**nonstruc_pd.csv** contains daily updates on non-standardized proactive publication.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fnonstruc_pd.csv)|
+|**all_pd.csv contains** aggregated records by proactive disclosure categories (standardized and non-standardized).|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fall_pd.csv)|
+|**unpivoted_pd.csv**  contains all PDs update in unpivoted format for analytics purposes.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Funpivoted_pd.csv)|
+|**pd_per_dept.csv** contains PD updates per department.|[![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=Corporate_reporting%2Fpd_count%2Fpd_per_dept.csv)|
 
 **New ATI, contracts, grants, travel and hospitality in last 7 days**
 ![
@@ -84,7 +87,7 @@ Google analytiques 4 (GA4) est utilisé pour assurer le suivi du parcours des us
 
 **Étape 3:** Télécharger à la fin de chaque mois à partir du lien https://open.canada.ca/static/od-do-canada.jsonl.gz  le catalogue en format JSON Lines généré quotidiennement. Ensuite renommé le fichier ainsi  od-do-canada.YYYYMMDD.jl.gz (ex: od-do-canada.20231031.jl.gz). Vous pouvez également télécharger depuis ce référentiel à fin du mois.
 
-**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produits et enregistrés dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardés dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
+**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produites et enregistrées dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardées dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
 
  ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
@@ -101,12 +104,12 @@ Nous utilisons également GA4 pour suivre la visualisation de carte ouverte avec
 
 ## **Divulgation proactive**
 
-Des tâches s’exécutent quotidiennement pour refléter les mis à jour des divulgations proactives dans les fichiers suivants :
--	**structure_pd.csv**  contient les mis à jour quotidien sur les divulgations proactives normalisées. 
--	**nonstruc_pd.csv** contient les mis à jour quotidien sur les divulgations proactives non normalisées.
+Des tâches s’exécutent quotidiennement pour refléter les mises à jour des divulgations proactives dans les fichiers suivants :
+-	**structure_pd.csv**  contient les mises à jour quotidiennes sur les divulgations proactives normalisées. 
+-	**nonstruc_pd.csv** contient les mises à jour quotidiennes sur les divulgations proactives non normalisées.
 -	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive.
 -	**unpivoted_pd.csv**  contient toutes les divulgations proactives en format non croisés. 
--	**pd_per_dept.csv** Contient les mis à jour des divulgations proactives par ministères.
+-	**pd_per_dept.csv** Contient les mises à jour des divulgations proactives par ministères.
 
 **Nouveaux ATI, contrats, subventions, voyages et hospitalité au cours des 7 derniers jours**
 ![
