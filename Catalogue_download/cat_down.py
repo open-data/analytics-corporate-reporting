@@ -36,7 +36,11 @@ def previous_file_delete():
 
 if __name__ == '__main__':
     cat_download()
-    previous_file_delete()
+    try:
+        previous_file_delete()
+    except Exception as e:
+        print("file does not exist")
+
 
  
     

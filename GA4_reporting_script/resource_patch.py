@@ -33,7 +33,7 @@ def resources_update():
 
 
             )
-            print("sucess")
+            print("success")
             break
           except CKANAPIError as e:
             count +=1
@@ -54,3 +54,4 @@ def resources_update():
 
         ) 
 
+#resources_update()
