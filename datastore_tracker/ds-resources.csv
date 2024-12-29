@@ -4,8 +4,8 @@ cbsa-asfc,000fe5aa-1d77-42d1-bfe7-458c51dacfef,Historical Border Wait Times – 
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,15dffa94-0066-493a-808b-377cfa6e5c34,Indicator I1 – Number of Days to complete an external staffing process,2388
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,78eda841-ae3f-4235-a517-2a9b6ed48bb5,Indicator I9 – Percentage of new hires under the age of 35,63940
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,1f079599-21e4-4e34-be00-228e57976506,Indicator I11 – Percentage of new hires who applied from outside the National Capital Region,4476
-tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,8282db2a-878f-475c-af10-ad56aa8fa72c,Proactive Disclosure - Travel Expenses,58585264
-tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,d3f883ce-4133-48da-bc76-c6b063d257a2,Proactive Disclosure - Travel Expenses Nothing to Report,252887
+tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,8282db2a-878f-475c-af10-ad56aa8fa72c,Proactive Disclosure - Travel Expenses,58727498
+tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,d3f883ce-4133-48da-bc76-c6b063d257a2,Proactive Disclosure - Travel Expenses Nothing to Report,252994
 csa-asc,0176458c-553b-48b4-a5e2-492022c81e85,The Geospace Observatory (GO) Canada Initiative,b335e213-16e9-4755-8125-a22b55319cb5,GO_Canada_Carte_Data_FR,19622
 csa-asc,0176458c-553b-48b4-a5e2-492022c81e85,The Geospace Observatory (GO) Canada Initiative,8d5b21aa-f5b6-4586-9b2b-5ac44779b66a,GO_Canada_Map_Data_EN,19331
 esdc-edsc,01c0f9da-f52d-4436-9899-f375b905e481,"Canadian Citizen and Permanent Resident Workforce Population by Designated Groups, Employment Equity Occupational Groups and National Occupational Classification Unit Groups",2f76d34f-308d-48aa-b851-70df5108d3a0,"Canadian Citizen and Permanent Resident Workforce Representation by 4 Designated Groups by Canada, Provinces, Territories and Census Metropolitan Areas",5907
@@ -43,7 +43,7 @@ cfia-acia,0714a84f-b5cf-4d28-b3d2-fd71919b6ecd,CFIA-Undeclared Allergens and Glu
 pc,071dce01-7b0c-4124-a1a3-08216e991d4a,Deer Browse - Summer Herbaceous - Thousand Islands,900533c6-7757-4dff-9f40-04bc5016145a,Deer Browse - Summer Herbaceous - Thousand Islands -Data,28415
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,53dfdb9a-1ff0-4edc-be5a-d9dbb39b4324,Forest vegetation community areal extent and distribution - Elk Island,1500
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,28341dca-d053-4aef-b624-aa3253fd3879,Forest vegetation community areal extent and distribution - Elk Island - Data dictionary,771
-tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,19383ca2-b01a-487d-88f7-e1ffbc7d39c2,Completed Access to Information Request Summaries dataset,99116315
+tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,19383ca2-b01a-487d-88f7-e1ffbc7d39c2,Completed Access to Information Request Summaries dataset,99117439
 tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,5a1386a5-ba69-4725-8338-2f26004d7382,Completed Access to Information Request Summaries dataset (Nothing to report),449772
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,52da9d9f-7be4-4077-a4e3-e2fdfd876c4b,Forest Birds - Jasper,666247
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,b1e78c43-5a15-4c12-aa36-191f958d6c66,Forest Birds - Jasper - Data Dictionary,7871
@@ -434,7 +434,7 @@ tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,4ebc050f-
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db,"dataset visits per department, last 12 months",45933503
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b1dfa726-7ed1-4a6b-ae49-77a200abee72,"Open Information downloads per department, last 12 months",438862
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,88c73a5e-905e-4c78-b440-c5d5c3acfea8,Openness rating per dataset,15732708
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,1008840
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,1009206
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d22d2aca-155b-4978-b5c1-1d39837e1993,Datasets that have been deleted,990157
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,15eeafa2-c331-44e7-b37f-d0d54a51d2eb,Open Maps Views,4971467
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,e664cf3d-6cb7-4aaa-adfa-e459c2552e3e,ATI informal requests per summary,61929734
@@ -1577,8 +1577,8 @@ pc,b90fce08-2425-4a50-ba31-2975b5d9eb58,Coastal_Rare plants_Mingan_Abundance_Dat
 esdc-edsc,b9f150d7-d55d-445c-994e-269f1a807080,Elder Abuse Advertising Campaign Evaluation Tool (ACET) Methodology Report,fed0e0c9-16b7-4bfc-8c47-5c2ea8764348,2009 Elder Abuse Advertising Campaign Evaluation Tool - DATASET,299574
 pc,b9f21e91-d34d-4730-8195-edf051121e9d,Beaver abundance & distribution - Elk Island,cb670925-7e88-4b80-b61a-5fe746d0a4a3,Beaver abundance & distribution - Elk Island,2108173
 pc,b9f21e91-d34d-4730-8195-edf051121e9d,Beaver abundance & distribution - Elk Island,a848bad5-9e00-411c-96ed-a2c79aec114c,Beaver abundance & distribution - Elk Island - Data dictionary,5322
-tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed,Proactive Disclosure - Hospitality Expenses,24476804
-tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,36a3b6cc-4f45-4081-8dbd-2340ca487041,Proactive Disclosure - Hospitality Nothing to Report,420450
+tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed,Proactive Disclosure - Hospitality Expenses,24498372
+tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,36a3b6cc-4f45-4081-8dbd-2340ca487041,Proactive Disclosure - Hospitality Nothing to Report,420992
 pc,ba31c525-b49d-4eb6-b99f-fe08372fda18,"Percentage of historical and archaeological collection, cultural landscapes and archaeological sites in Parks Canada’s care that are safeguarded",9d566840-08a8-4a57-9fa1-8f2a2859894f,"Percentage of historical and archaeological collection, cultural landscapes and archaeological sites in Parks Canada’s care that are safeguarded 2021-2022",1091
 pc,ba8f8a4a-3c4f-4cd5-b1f9-7e4dd8c21f28,Coastal Wetland Water Quality - Fathom Five,c8b9ec2a-6528-49a9-b9b0-b4b3dda94d3b,Coastal Wetland Water Quality - Fathom Five,37041
 pc,ba8f8a4a-3c4f-4cd5-b1f9-7e4dd8c21f28,Coastal Wetland Water Quality - Fathom Five,48d2df24-1358-4a93-a72e-23eaa71cdf67,Coastal Wetland Water Quality - Fathom Five - Data Dictonary,1066
@@ -1655,11 +1655,11 @@ pc,c3b178a5-cdc6-4802-8895-1bd44644d37b,Stream Benthic Invertebrates Stress - Th
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,9c41870c-c7dd-427b-9fc0-f231995b90a2,Traits data,1248991
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,bdc21d3e-b33d-4fe8-89b3-5372d5da13d8,Data dictionary,19932
 esdc-edsc,c488ca75-b78a-492b-9dfe-5490aebb3e31,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,ff2f8d3a-a583-47a2-92f0-7a0252de5e46,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,36107
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,111607605
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106149477
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,837938
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5762877
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10198
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,111607588
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106148605
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,837914
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5763132
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10199
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,8f179106-597e-4ff0-97b1-31fe73d4898e,Alpine Terrestrial Birds - Glacier,92619
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,7f789522-f597-49c3-ab2b-a8261402ed0e,Alpine Terrestrial Birds - Glacier - Data Dictionary,1743
 pc,c54269eb-e45d-4c84-87ab-0a2927655b64,Songbirds - Gwaii Haanas,e2f8e5fa-dc9b-4b9b-8225-c5933af690a0,Songbirds - Gwaii Haanas,16352
@@ -1735,7 +1735,7 @@ cra-arc,d7fce72c-6daa-453c-b471-6c1801a4217f,Individual Statistics by Tax Filing
 cra-arc,d7fce72c-6daa-453c-b471-6c1801a4217f,Individual Statistics by Tax Filing Method (ISTFM) – 2021 tax year,c5061a7a-6ef1-4aaa-91c2-99420d05b0ff,Table 2 – ISTFM for All Returns Filed – Demographic Characteristics – 2021 tax year,
 pc,d87383f6-5313-430d-8416-1b6d6e377e02,Black Oystercatcher Population – Pacific Rim,6e10535e-273f-4eca-a335-5e00a77a68fe,Black Oystercatcher - Pacific Rim - Nesting Counts - Data,8744
 pc,d87383f6-5313-430d-8416-1b6d6e377e02,Black Oystercatcher Population – Pacific Rim,829bc895-a528-4759-a075-8aeead993152,Black Oystercatcher - Pacific Rim - Resighting Matrix - Data Dictionary,3883
-tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fac950c0-00d5-4ec1-a4d3-9cbebf98a305,"Contracts over $10,000",542326374
+tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fac950c0-00d5-4ec1-a4d3-9cbebf98a305,"Contracts over $10,000",543348476
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fa4ff6c4-e9af-4491-9d4e-2b468e415a68,Proactive Publication - Contracts Nothing to Report,8913
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,2e9a82e2-bb18-4bff-a61e-59af3b429672,Aggregated Total - Contracts $10K and under,78995
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,7f9b18ca-f627-4852-93d5-69adeb9437d6,"Contracts over $10,000 – Legacy Data",957109
@@ -2055,7 +2055,7 @@ pc,eddc5332-42e8-40c1-94df-95c43cc23ba1,Invasive Plant Cover - Waterton Lakes - 
 pc,eddc5332-42e8-40c1-94df-95c43cc23ba1,Invasive Plant Cover - Waterton Lakes - Conservation and Restoration Project (Fescue),fce5f9e7-2991-4856-987a-4d2793e2a449,Invasive Plant Cover - Waterton Lakes - percent cover and density data dictionary - 2,2272
 hc-sc,ededff77-a021-48d6-89a5-cdbcd75fb4ff,Pest Management Regulatory Agency (PMRA) List of Formulants ,5dc86d17-6ae2-4d77-bb6f-cb2c0aae41e4,PMRA List of Formulants - Single Substance,155956
 hc-sc,ededff77-a021-48d6-89a5-cdbcd75fb4ff,Pest Management Regulatory Agency (PMRA) List of Formulants ,c29f87cd-2c2a-4ecd-ba8c-cb6a70222ca9,PMRA List of Formulants - Trade Name,231672
-tbs-sct,ee9bd7e8-90a5-45db-9287-85c8cf3589b6,Proactive Disclosure - Briefing Note Titles and Numbers,299a2e26-5103-4a49-ac3a-53db9fcc06c7,Proactive Disclosure - Briefing Note Titles and Numbers,44904547
+tbs-sct,ee9bd7e8-90a5-45db-9287-85c8cf3589b6,Proactive Disclosure - Briefing Note Titles and Numbers,299a2e26-5103-4a49-ac3a-53db9fcc06c7,Proactive Disclosure - Briefing Note Titles and Numbers,44947061
 tbs-sct,ee9bd7e8-90a5-45db-9287-85c8cf3589b6,Proactive Disclosure - Briefing Note Titles and Numbers,5e28b544-720b-4745-9e55-3aac6464a4fb,Proactive Publication - Briefing Note Titles and Numbers Nothing to Report,7843
 esdc-edsc,eeb3e442-9f19-4d12-8b38-c488fe4f6e5e,Occupational and Skills Information System (OaSIS),103d18f2-dbae-47ba-b15c-68877b21e968,Labels 2023 v1.0,37226
 esdc-edsc,eeb3e442-9f19-4d12-8b38-c488fe4f6e5e,Occupational and Skills Information System (OaSIS),97e5f5a7-e865-4e7e-bd8e-903d8359618d,Labels 2023 v1.0,56915
