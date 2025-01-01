@@ -30,6 +30,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add DS_num_tracker.csv ds-resources.csv
+          git add DS_num_tracker.csv ds-resources.csv org_stats.csv
           git commit -m "Auto-update DS_num_tracker.csv [skip ci]"
           git push
