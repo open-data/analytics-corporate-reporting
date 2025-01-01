@@ -117,6 +117,7 @@ def main():
         "num_dept": num_dept,
         "num_datasets": num_datasets,
         "num_res": num_res,
+        "ds_size_bytes": ds_size_bytes,
         "ds_size_readable": ds_size_readable
     }])
 
