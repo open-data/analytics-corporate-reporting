@@ -18,7 +18,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install requests pandas ujson
+          pip install requests pandas ujson tqdm
 
       - name: Run script
         working-directory: datastore_tracker    
