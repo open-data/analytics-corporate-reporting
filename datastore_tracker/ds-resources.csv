@@ -434,7 +434,7 @@ tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,4ebc050f-
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db,"dataset visits per department, last 12 months",46536640
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b1dfa726-7ed1-4a6b-ae49-77a200abee72,"Open Information downloads per department, last 12 months",518418
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,88c73a5e-905e-4c78-b440-c5d5c3acfea8,Openness rating per dataset,15732708
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,1014757
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,1015001
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d22d2aca-155b-4978-b5c1-1d39837e1993,Datasets that have been deleted,990157
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,15eeafa2-c331-44e7-b37f-d0d54a51d2eb,Open Maps Views,4971467
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,e664cf3d-6cb7-4aaa-adfa-e459c2552e3e,ATI informal requests per summary,61929734
@@ -573,8 +573,8 @@ pc,39492503-657a-482f-95b3-ef47dab0da77,Forest_stands - Forillon,4579f976-9403-4
 pc,3953fc63-40f7-4dce-bb56-dd60f1ca6544,Erosion and Deposition - Point Pelee,bcafed8b-5f6e-4bad-96a9-d69aa5b7d66f,Erosion and Deposition - Point Pelee - Monitoring Data,641
 tbs-sct,39954bc7-ff7a-4180-8b6e-b02bee35078a,Experimentation Inventory,07151ad9-52e2-4f99-b4fd-7cd208816a64,Experimental Inventory,78035
 dnd-mdn,3a0b1de7-060c-4e40-afbf-d2bf476a1fb1,Percentage of Canadian Armed Forces families who feel they meet the challenges of military life,3c74d41c-d639-4b52-bce4-b50646b93409,% of CAF families who feel they meet the challenges of military life,2380
-tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,c0cf9766-b85b-48c3-b295-34f72305aaf6,Service Identification Information & Metrics (2024),2957347
-tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,8736cd7e-9bf9-4a45-9eee-a6cb3c43c07e,Service Standards & Performance Results (2024),2003444
+tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,c0cf9766-b85b-48c3-b295-34f72305aaf6,Service Identification Information & Metrics (2024),2958136
+tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,8736cd7e-9bf9-4a45-9eee-a6cb3c43c07e,Service Standards & Performance Results (2024),2004225
 tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,3acf79c0-a5f5-4d9a-a30d-fb5ceba4b60a,Service Identification Information & Metrics (2018-2023),14009936
 tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,272143a7-533e-42a1-b72d-622116474a21,Service Standards & Performance Results (2018-2023),8848467
 tbs-sct,3aeb9234-2cce-4495-970e-a177d23199ae,Federal public service executive and non-executive statistics,466d8829-968e-498a-a155-e42a3133f644,Population of the federal public service by executive level,3963
@@ -1264,7 +1264,7 @@ pch,92984c11-6fd4-40c4-b23c-e8832e1f4cd5,"Data on funding provided in 2016-2017 
 pc,92ac974e-d7f8-46d7-aac7-bd5682a6ad6b,Stream Hydrology - Terra Nova,96f0b053-9d2b-4607-90f2-dcc715f99fc3,Stream Hydrology - Terra Nova,3746272
 pc,932b4e4d-9c09-4864-8646-24db93fc1b36,Mammals - Jasper,946766c4-c5bf-415d-826e-20ba9a27ef0a,Mammals - Jasper,2411322
 pc,932b4e4d-9c09-4864-8646-24db93fc1b36,Mammals - Jasper,1ebecd7f-63e7-4e13-8404-aec5d42a497b,Mammals - Jasper - data dictionary,4526
-tbs-sct,933c7f9d-deb0-4367-940d-06c38f494153,Open Government Portal Department List,04cbec5c-5a3d-4d34-927d-e41c9e6e3736,Government of Canada Department List,47699
+tbs-sct,933c7f9d-deb0-4367-940d-06c38f494153,Open Government Portal Department List,04cbec5c-5a3d-4d34-927d-e41c9e6e3736,Government of Canada Department List,47781
 pc,9360db43-2d1c-4bc4-9cbd-61ce42b2cff8,Situation of the Black Bear - La Mauricie,9c8e2714-4d33-431b-8e3e-427c480ff628,Black Bear - Data 1,1568
 pc,9360db43-2d1c-4bc4-9cbd-61ce42b2cff8,Situation of the Black Bear - La Mauricie,21f3a0af-76df-4296-962d-1fd1ccbabcfa,Black Bear - Data 2,1372
 pc,9360db43-2d1c-4bc4-9cbd-61ce42b2cff8,Situation of the Black Bear - La Mauricie,1691faf8-0510-4af2-9ae8-f4dff37b2458,Black Bear - Data Dictionary,270
@@ -1660,11 +1660,11 @@ pc,c3b178a5-cdc6-4802-8895-1bd44644d37b,Stream Benthic Invertebrates Stress - Th
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,9c41870c-c7dd-427b-9fc0-f231995b90a2,Traits data,1248991
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,bdc21d3e-b33d-4fe8-89b3-5372d5da13d8,Data dictionary,19932
 esdc-edsc,c488ca75-b78a-492b-9dfe-5490aebb3e31,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,ff2f8d3a-a583-47a2-92f0-7a0252de5e46,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,36107
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,142183822
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,99495371
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,663338
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,3390837
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10189
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,111684811
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106198068
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,839774
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5796166
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10197
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,8f179106-597e-4ff0-97b1-31fe73d4898e,Alpine Terrestrial Birds - Glacier,92619
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,7f789522-f597-49c3-ab2b-a8261402ed0e,Alpine Terrestrial Birds - Glacier - Data Dictionary,1743
 pc,c54269eb-e45d-4c84-87ab-0a2927655b64,Songbirds - Gwaii Haanas,e2f8e5fa-dc9b-4b9b-8225-c5933af690a0,Songbirds - Gwaii Haanas,16352
