@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 
 import requests
@@ -96,7 +97,8 @@ with open("od-do-canada.jsonl", "r", encoding="utf-8") as f:
                     "resource_id":   resource.get("id", ""),
                     "resource_name": resource.get("name", ""),
                     "metadata_modified": resource.get("metadata_modified", ""),
-                    "size":          resource.get("size", "")
+                    "size":          resource.get("size", ""),
+                    "url":           resource.get("url", "")
                 }
                 list_of_dicts.append(row_dict)
 
@@ -115,6 +117,8 @@ date_str = datetime.now().strftime('%Y-%m-%d')
 num_dept = list_of_res["owner"].nunique()
 num_datasets = list_of_res["package_id"].nunique()
 num_res = list_of_res["resource_id"].nunique()
+count_open_canada = list_of_res["url"].str.contains("open.canada.ca").sum()
+count_remote_xload = (~list_of_res["url"].str.contains("open.canada.ca")).sum()
 
 # ---------------------------------------------------------------------
 # 6. Fetch datastore size from CKAN API (database-level info)
@@ -179,7 +183,10 @@ DS_num_tracker_df = pd.DataFrame([{
     "ds_size_bytes": ds_size_bytes,
     "ds_size_readable": ds_size_readable,
     "sum_ds_fields": list_of_res["ds_fields"].sum(),
-    "sum_ds_count": list_of_res["ds_count"].sum()
+    "sum_ds_count": list_of_res["ds_count"].sum(),
+    "count_open_canada": count_open_canada,
+    "count_remote_xload": count_remote_xload
+
 }])
 
 # ---------------------------------------------------------------------
