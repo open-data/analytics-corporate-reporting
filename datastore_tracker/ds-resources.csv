@@ -44,7 +44,7 @@ pc,071dce01-7b0c-4124-a1a3-08216e991d4a,Deer Browse - Summer Herbaceous - Thousa
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,53dfdb9a-1ff0-4edc-be5a-d9dbb39b4324,Forest vegetation community areal extent and distribution - Elk Island,1500
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,28341dca-d053-4aef-b624-aa3253fd3879,Forest vegetation community areal extent and distribution - Elk Island - Data dictionary,771
 tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,19383ca2-b01a-487d-88f7-e1ffbc7d39c2,Completed Access to Information Request Summaries dataset,100658228
-tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,5a1386a5-ba69-4725-8338-2f26004d7382,Completed Access to Information Request Summaries dataset (Nothing to report),459542
+tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,5a1386a5-ba69-4725-8338-2f26004d7382,Completed Access to Information Request Summaries dataset (Nothing to report),459672
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,52da9d9f-7be4-4077-a4e3-e2fdfd876c4b,Forest Birds - Jasper,666247
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,b1e78c43-5a15-4c12-aa36-191f958d6c66,Forest Birds - Jasper - Data Dictionary,7871
 pc,07c1c8d0-ad43-4411-bb79-278f9f50fb96,Stream Fish Occupancy - Banff,96860bd7-633b-4e6e-967a-c31341fd1785,Stream Fish Occupancy - Banff,944
@@ -1678,11 +1678,11 @@ pc,c3b178a5-cdc6-4802-8895-1bd44644d37b,Stream Benthic Invertebrates Stress - Th
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,9c41870c-c7dd-427b-9fc0-f231995b90a2,Traits data,1248991
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,bdc21d3e-b33d-4fe8-89b3-5372d5da13d8,Data dictionary,19932
 esdc-edsc,c488ca75-b78a-492b-9dfe-5490aebb3e31,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,ff2f8d3a-a583-47a2-92f0-7a0252de5e46,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,36107
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,111991590
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106634896
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,841899
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5817021
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10198
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,112056078
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106729577
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,843535
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5850901
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10199
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,8f179106-597e-4ff0-97b1-31fe73d4898e,Alpine Terrestrial Birds - Glacier,92619
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,7f789522-f597-49c3-ab2b-a8261402ed0e,Alpine Terrestrial Birds - Glacier - Data Dictionary,1743
 pc,c54269eb-e45d-4c84-87ab-0a2927655b64,Songbirds - Gwaii Haanas,e2f8e5fa-dc9b-4b9b-8225-c5933af690a0,Songbirds - Gwaii Haanas,16352
