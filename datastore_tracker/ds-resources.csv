@@ -426,21 +426,21 @@ pc,27fa5915-2e9a-4942-b986-953119c6fae2,Aquatic fish inventory - Jasper,03b1702d
 cfia-acia,28697a77-b339-4aed-a0dd-a7d613d8c31d,"Food Microbiology - Targeted Surveys - 2016 - 2017 Bacterial Pathogens, Parasites and Viruses in Unpasteurized and HPP Juices - Final Report",c7016d11-4bea-42f9-8710-5844399d75d0,"Food Microbiology - Targeted Surveys - 2016 - 2017 Bacterial Pathogens, Parasites and Viruses in Unpasteurized and HPP Juices - Final Report",3091900
 ssc-spc,29017f8f-54ce-42a9-9ff7-61f53d5abee1,Percentage of time IT security services are available,5d711bed-8361-406e-9c49-34561e8d0dcc,Percentage of time IT security services are available,16000
 ssc-spc,29017f8f-54ce-42a9-9ff7-61f53d5abee1,Percentage of time IT security services are available,8f104dca-6a38-4ab1-a6db-071030b50107,Percentage of time IT security services are available,18347
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,02a92b0f-b26d-4fbd-9601-d27651703715,"Number of Visits, Downloads",2951
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,ba980e38-f110-466a-ad92-3ee0d5a60d49,Top 100 Downloaded Datasets (for the month prior),444066
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,5a1b343d-2fea-4c31-8652-f77506e3ea37,Datasets by Department or Agency,23695
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d9138bac-8f9a-42e3-ac7c-450420c5d272,Datasets Released by Organization by Month ,572527
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,f09148f9-a09b-46ec-bf5b-52f26720f3f3,Datasets Released by Month,28507
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,02a92b0f-b26d-4fbd-9601-d27651703715,"Number of Visits, Downloads",2973
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,ba980e38-f110-466a-ad92-3ee0d5a60d49,Top 100 Downloaded Datasets (for the month prior),468600
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,5a1b343d-2fea-4c31-8652-f77506e3ea37,Datasets by Department or Agency,23777
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d9138bac-8f9a-42e3-ac7c-450420c5d272,Datasets Released by Organization by Month ,597282
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,f09148f9-a09b-46ec-bf5b-52f26720f3f3,Datasets Released by Month,28589
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,e06f06a9-d897-4a35-9b73-4c2bc1c2d5cf,Percentages of Site Visits by Province and Territory,690
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b52ee0b2-f2be-4bc5-a27a-db93a228d38b,Percentages of Site Visits by Country,11877
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,9d395c98-f33f-4d40-9e3b-3d383321c577,Top 20 downloaded Open Information ,101271
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,4ebc050f-6c3c-4dfd-817e-875b2caf3ec6,"Downloads per organization, last 12 months",18184863
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db,"dataset visits per department, last 12 months",46536640
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b1dfa726-7ed1-4a6b-ae49-77a200abee72,"Open Information downloads per department, last 12 months",518418
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b52ee0b2-f2be-4bc5-a27a-db93a228d38b,Percentages of Site Visits by Country,11878
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,9d395c98-f33f-4d40-9e3b-3d383321c577,Top 20 downloaded Open Information ,106172
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,4ebc050f-6c3c-4dfd-817e-875b2caf3ec6,"Downloads per organization, last 12 months",18508476
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db,"dataset visits per department, last 12 months",47192301
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b1dfa726-7ed1-4a6b-ae49-77a200abee72,"Open Information downloads per department, last 12 months",616755
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,88c73a5e-905e-4c78-b440-c5d5c3acfea8,Openness rating per dataset,15732708
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,0
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d22d2aca-155b-4978-b5c1-1d39837e1993,Datasets that have been deleted,990157
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,15eeafa2-c331-44e7-b37f-d0d54a51d2eb,Open Maps Views,4971467
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,15eeafa2-c331-44e7-b37f-d0d54a51d2eb,Open Maps Views,5232400
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,e664cf3d-6cb7-4aaa-adfa-e459c2552e3e,ATI informal requests per summary,61929734
 hc-sc,29892c85-2ff5-484c-873c-f494ffba6e1b,The Healthy Eating Food Index 2019 ,192fa2e2-7401-4b20-8b94-be9c21c6a7ee,ASA24 2018 Complete Database,520117
 hc-sc,29892c85-2ff5-484c-873c-f494ffba6e1b,The Healthy Eating Food Index 2019 ,e296fa8b-195f-49e4-bbd3-df90defad00b,ASA24 2018 Complete Database,548968
@@ -1456,6 +1456,7 @@ nrcan-rncan,aa426a7e-cf6b-4161-b84d-745820afe139,Cumulative effects of disturban
 pc,ab0fffb5-98a1-471d-b736-c29f35aa0c8d,Adult Salmon  Health (Snorkel Surveys) - Cape Breton Highlands,d517799d-c35d-4afd-aef4-9a453c5b098a,Adult Salmon Health - Cape Breton Highlands - Data,40202
 pc,ab0fffb5-98a1-471d-b736-c29f35aa0c8d,Adult Salmon  Health (Snorkel Surveys) - Cape Breton Highlands,570728f9-77b7-4bec-aec0-a97a3e710aa0,Adult Salmon Health - Cape Breton Highlands - Survey Data,6023
 pc,ab0fffb5-98a1-471d-b736-c29f35aa0c8d,Adult Salmon  Health (Snorkel Surveys) - Cape Breton Highlands,bc07bfed-52ea-49da-9da2-a242cf3631f4,Adult Salmon Health - Cape Breton Highlands - Data Dictionary,1141
+psc-cfp,ab36a4ab-9b69-49b1-8be6-6faa3f0d0c67,List of post-secondary academic institutions and programs validated by the Public Service Commission,370840dc-b8ad-4564-88db-6f3b633e9219,List of post-secondary academic institutions and programs validated by the Public Service Commission - 2025-02-01,
 psc-cfp,ab36a4ab-9b69-49b1-8be6-6faa3f0d0c67,List of post-secondary academic institutions and programs validated by the Public Service Commission,d48132c9-9eac-4237-9fdd-3e41720b39ee,List of post-secondary academic institutions and programs validated by the Public Service Commission - 2025-01-01,
 psc-cfp,ab36a4ab-9b69-49b1-8be6-6faa3f0d0c67,List of post-secondary academic institutions and programs validated by the Public Service Commission,b3dbd574-81c0-44bb-a0e5-148b5b4a7fa4,List of post-secondary academic institutions and programs validated by the Public Service Commission - 2024-12-01,
 psc-cfp,ab36a4ab-9b69-49b1-8be6-6faa3f0d0c67,List of post-secondary academic institutions and programs validated by the Public Service Commission,8fe9ae54-315a-4613-a30f-ba8136603856,List of post-secondary academic institutions and programs validated by the Public Service Commission - 2024-11-01,2682717
@@ -1679,10 +1680,10 @@ nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,9
 nrcan-rncan,c3d02090-959d-4762-a5ff-77339c7414b6,NTSC TOPIC - Tree Seed Traits,bdc21d3e-b33d-4fe8-89b3-5372d5da13d8,Data dictionary,19932
 esdc-edsc,c488ca75-b78a-492b-9dfe-5490aebb3e31,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,ff2f8d3a-a583-47a2-92f0-7a0252de5e46,Occupational Injuries in the Canadian Federal Jurisdiction by Industry Sector: 2008-2021,36107
 tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,112056078
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106729577
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,843535
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5850901
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10199
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,106728771
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,843604
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,5851396
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,10198
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,8f179106-597e-4ff0-97b1-31fe73d4898e,Alpine Terrestrial Birds - Glacier,92619
 pc,c522329f-5d67-487b-a419-1db204821725,Alpine Terrestrial Birds - Glacier,7f789522-f597-49c3-ab2b-a8261402ed0e,Alpine Terrestrial Birds - Glacier - Data Dictionary,1743
 pc,c54269eb-e45d-4c84-87ab-0a2927655b64,Songbirds - Gwaii Haanas,e2f8e5fa-dc9b-4b9b-8225-c5933af690a0,Songbirds - Gwaii Haanas,16352
