@@ -4,7 +4,7 @@ cbsa-asfc,000fe5aa-1d77-42d1-bfe7-458c51dacfef,Historical Border Wait Times – 
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,15dffa94-0066-493a-808b-377cfa6e5c34,Indicator I1 – Number of Days to complete an external staffing process,2388
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,78eda841-ae3f-4235-a517-2a9b6ed48bb5,Indicator I9 – Percentage of new hires under the age of 35,63940
 psc-cfp,00887ede-ac6b-47c1-af0c-aea61f2be345,Public Service Commission (PSC) Departmental Results Framework Indicators,1f079599-21e4-4e34-be00-228e57976506,Indicator I11 – Percentage of new hires who applied from outside the National Capital Region,4476
-tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,8282db2a-878f-475c-af10-ad56aa8fa72c,Proactive Disclosure - Travel Expenses,59814426
+tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,8282db2a-878f-475c-af10-ad56aa8fa72c,Proactive Disclosure - Travel Expenses,59810863
 tbs-sct,009f9a49-c2d9-4d29-a6d4-1a228da335ce,Proactive Disclosure - Travel Expenses,d3f883ce-4133-48da-bc76-c6b063d257a2,Proactive Disclosure - Travel Expenses Nothing to Report,255718
 csa-asc,0176458c-553b-48b4-a5e2-492022c81e85,The Geospace Observatory (GO) Canada Initiative,b335e213-16e9-4755-8125-a22b55319cb5,GO_Canada_Carte_Data_FR,19622
 csa-asc,0176458c-553b-48b4-a5e2-492022c81e85,The Geospace Observatory (GO) Canada Initiative,8d5b21aa-f5b6-4586-9b2b-5ac44779b66a,GO_Canada_Map_Data_EN,19331
@@ -43,8 +43,8 @@ cfia-acia,0714a84f-b5cf-4d28-b3d2-fd71919b6ecd,CFIA-Undeclared Allergens and Glu
 pc,071dce01-7b0c-4124-a1a3-08216e991d4a,Deer Browse - Summer Herbaceous - Thousand Islands,900533c6-7757-4dff-9f40-04bc5016145a,Deer Browse - Summer Herbaceous - Thousand Islands -Data,28415
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,53dfdb9a-1ff0-4edc-be5a-d9dbb39b4324,Forest vegetation community areal extent and distribution - Elk Island,1500
 pc,072803b9-0374-44b0-b602-36fb19c52e1c,Forest vegetation community areal extent and distribution - Elk Island,28341dca-d053-4aef-b624-aa3253fd3879,Forest vegetation community areal extent and distribution - Elk Island - Data dictionary,771
-tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,19383ca2-b01a-487d-88f7-e1ffbc7d39c2,Completed Access to Information Request Summaries dataset,100698789
-tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,5a1386a5-ba69-4725-8338-2f26004d7382,Completed Access to Information Request Summaries dataset (Nothing to report),462519
+tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,19383ca2-b01a-487d-88f7-e1ffbc7d39c2,Completed Access to Information Request Summaries dataset,100706840
+tbs-sct,0797e893-751e-4695-8229-a5066e4fe43c,Completed Access to Information Request Summaries dataset,5a1386a5-ba69-4725-8338-2f26004d7382,Completed Access to Information Request Summaries dataset (Nothing to report),462696
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,52da9d9f-7be4-4077-a4e3-e2fdfd876c4b,Forest Birds - Jasper,666247
 pc,07c0eed8-2b08-4c0b-b81c-8fed4a6e1d06,Forest Birds - Jasper,b1e78c43-5a15-4c12-aa36-191f958d6c66,Forest Birds - Jasper - Data Dictionary,7871
 pc,07c1c8d0-ad43-4411-bb79-278f9f50fb96,Stream Fish Occupancy - Banff,96860bd7-633b-4e6e-967a-c31341fd1785,Stream Fish Occupancy - Banff,944
@@ -438,7 +438,7 @@ tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,4ebc050f-
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db,"dataset visits per department, last 12 months",47192301
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,b1dfa726-7ed1-4a6b-ae49-77a200abee72,"Open Information downloads per department, last 12 months",616755
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,88c73a5e-905e-4c78-b440-c5d5c3acfea8,Openness rating per dataset,15732708
-tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,4323045
+tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,8353523a-8e4e-4cd0-a91e-b42abe2e6ee5,User Ratings,4325976
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,d22d2aca-155b-4978-b5c1-1d39837e1993,Datasets that have been deleted,990157
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,15eeafa2-c331-44e7-b37f-d0d54a51d2eb,Open Maps Views,5232400
 tbs-sct,2916fad5-ebcc-4c86-b0f3-4f619b29f412,Open Government Analytics,e664cf3d-6cb7-4aaa-adfa-e459c2552e3e,ATI informal requests per summary,65951953
@@ -578,7 +578,7 @@ pc,39492503-657a-482f-95b3-ef47dab0da77,Forest_stands - Forillon,4579f976-9403-4
 pc,3953fc63-40f7-4dce-bb56-dd60f1ca6544,Erosion and Deposition - Point Pelee,bcafed8b-5f6e-4bad-96a9-d69aa5b7d66f,Erosion and Deposition - Point Pelee - Monitoring Data,641
 tbs-sct,39954bc7-ff7a-4180-8b6e-b02bee35078a,Experimentation Inventory,07151ad9-52e2-4f99-b4fd-7cd208816a64,Experimental Inventory,78035
 dnd-mdn,3a0b1de7-060c-4e40-afbf-d2bf476a1fb1,Percentage of Canadian Armed Forces families who feel they meet the challenges of military life,3c74d41c-d639-4b52-bce4-b50646b93409,% of CAF families who feel they meet the challenges of military life,2380
-tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,c0cf9766-b85b-48c3-b295-34f72305aaf6,Service Identification Information & Metrics (2024),3093806
+tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,c0cf9766-b85b-48c3-b295-34f72305aaf6,Service Identification Information & Metrics (2024),3093798
 tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,8736cd7e-9bf9-4a45-9eee-a6cb3c43c07e,Service Standards & Performance Results (2024),2069452
 tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,3acf79c0-a5f5-4d9a-a30d-fb5ceba4b60a,Service Identification Information & Metrics (2018-2023),14009859
 tbs-sct,3ac0d080-6149-499a-8b06-7ce5f00ec56c,GC Service Inventory,272143a7-533e-42a1-b72d-622116474a21,Service Standards & Performance Results (2018-2023),8848423
@@ -1077,7 +1077,7 @@ pc,7a9190d4-baa3-4b71-aba6-a085055d8e9e,Forest Vegetation - Nahanni,0e0f1025-d6d
 pc,7a9190d4-baa3-4b71-aba6-a085055d8e9e,Forest Vegetation - Nahanni,b1c685fd-aa48-4c37-bbf0-d575a2d5da5c,Forest Vegetation - Nahanni - Data dictionary,7316
 pc,7bab74f4-52a5-434d-a4f0-279bed437120,Blister Rust - Yoho,7a3fff19-49e4-4ebe-8a71-f697fd7cd520,Blister Rust - Yoho,3806
 pc,7bab74f4-52a5-434d-a4f0-279bed437120,Blister Rust - Yoho,5e984c05-8046-46f0-b150-10f687470489,Blister Rust - Yoho - data dictionary,763
-pco-bcp,7c03f039-3753-4093-af60-74b0f7b2385d,Government of Canada - Consultations,92bec4b7-6feb-4215-a5f7-61da342b2354,Consultations - All ,6155616
+pco-bcp,7c03f039-3753-4093-af60-74b0f7b2385d,Government of Canada - Consultations,92bec4b7-6feb-4215-a5f7-61da342b2354,Consultations - All ,6162133
 cfia-acia,7c2ec6ef-48de-4594-8c6a-b2fc2a5803ff,CFIA Mercury and Metals in Fish Products - 2000-2021,56150107-d756-4ce2-a295-f8da6134e673,CFIA Mercury and Metals in Fish Products - 2000-2021,18238981
 pc,7c3a6db2-cd73-4a53-9313-038f6409d3be,Kelp Fish Community - Pacific Rim,6440de32-9292-4d75-b7ad-37b872c6c23e,Kelp Fish Community - Pacific Rim - Data,46546
 pc,7c3a6db2-cd73-4a53-9313-038f6409d3be,Kelp Fish Community - Pacific Rim,44037b91-015a-4ece-8f90-da997a7403db,Kelp Fish Community - Pacific Rim - Data Dictionary,3808
@@ -1147,7 +1147,7 @@ pc,856b9876-58f2-4629-b1a5-a43cc934a49c,Fresh Water Quality - Pacific Rim,404217
 pc,856b9876-58f2-4629-b1a5-a43cc934a49c,Fresh Water Quality - Pacific Rim,1a085eca-383d-4c2a-8e49-3a2b8f317cc9,Freshwater Quality - Pacific Rim - Data Dictionary,628
 pc,85ce7cf5-358c-4c2e-964d-3abd42cb9f12,American Badger - Kootenay,0bd3ef55-860d-4ae9-82f3-6af61c1ffa60,American Badger - Kootenay,995
 pc,85e0ba82-b514-4cad-b262-7dd0f630898c,Forest Area Burned - Kootenay,0427e708-b575-4a4f-887f-8ace61ea3e0e,Forest Area Burned - Kootenay,16017
-tbs-sct,8634f1c9-597e-416d-91f2-df24d2ffbeea,Proactive Disclosure - Departmental Audit Committees,499383b6-cd2a-466a-9fcf-910d3e427700,Proactive Disclosure - Departmental Audit Committees (2018-2019-Q2 and later),1349493
+tbs-sct,8634f1c9-597e-416d-91f2-df24d2ffbeea,Proactive Disclosure - Departmental Audit Committees,499383b6-cd2a-466a-9fcf-910d3e427700,Proactive Disclosure - Departmental Audit Committees (2018-2019-Q2 and later),1349877
 esdc-edsc,86a9d46f-5e4c-479a-bfb5-36ec15bcae42,"Average monthly payments for new Canada Pension Plan (CPP) disability beneficiaries by province, gender and calendar year ($)",be3756cb-d31f-4da4-99e9-3f4d97f2ed5d,"Average monthly payments for new Canada Pension Plan (CPP) disability beneficiaries by province, gender and calendar year",3474
 esdc-edsc,86a9d46f-5e4c-479a-bfb5-36ec15bcae42,"Average monthly payments for new Canada Pension Plan (CPP) disability beneficiaries by province, gender and calendar year ($)",33371ad9-8b14-4331-8589-2dfabf30814d,"Average monthly payments for new Canada Pension Plan (CPP) disability beneficiaries by province, gender and calendar year",3807
 esdc-edsc,8709504b-ecb0-4058-91b8-f4c35dac2049,Yearly Registered Education Savings Plan (RESP) Contributions by Forward Sortation Area ,6c3cb61c-6c62-412e-aa27-65da4e6ad619,Yearly Registered Education Savings Plan (RESP) Contributions by Forward Sortation Area ,174659
@@ -1309,8 +1309,8 @@ nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,026e45
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,0b0f5a42-b00b-4b6a-9185-4d4de1424801,Battery-electric vehicles 2012-2025 (2025-02-03),107278
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,8812228b-a6aa-4303-b3d0-66489225120d,Plug-in hybrid electric vehicles 2012-2025 (2025-01-15),45579
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,fcccabad-e478-45b0-8d34-a25b77028c1d,Plug-in hybrid electric vehicles 2012-2025 (2025-01-15),47054
-nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,d589f2bc-9a85-4f65-be2f-20f17debfcb1,2025 Fuel Consumption Ratings (2025-01-31),50118
-nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,2e1a460f-464d-44b7-b711-8870a6eef7b9,2025 Fuel Consumption Ratings (2025-01-31),52343
+nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,d589f2bc-9a85-4f65-be2f-20f17debfcb1,2025 Fuel Consumption Ratings (2025-02-07),50572
+nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,2e1a460f-464d-44b7-b711-8870a6eef7b9,2025 Fuel Consumption Ratings (2025-02-07),52814
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,edba4afa-dc19-480c-bbe4-57992fc9d0d6,2024 Fuel Consumption Ratings (2024-09-11),65828
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,476872f0-cc09-42d1-a9d3-9fab9ffde53c,2024 Fuel Consumption Ratings (2024-09-11),68616
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,b6100f60-5e63-437d-b122-db76c467c0a7,2023 Fuel Consumption Ratings (2025-01-22),78521
@@ -1604,7 +1604,7 @@ pc,b90fce08-2425-4a50-ba31-2975b5d9eb58,Coastal_Rare plants_Mingan_Abundance_Dat
 esdc-edsc,b9f150d7-d55d-445c-994e-269f1a807080,Elder Abuse Advertising Campaign Evaluation Tool (ACET) Methodology Report,fed0e0c9-16b7-4bfc-8c47-5c2ea8764348,2009 Elder Abuse Advertising Campaign Evaluation Tool - DATASET,299574
 pc,b9f21e91-d34d-4730-8195-edf051121e9d,Beaver abundance & distribution - Elk Island,cb670925-7e88-4b80-b61a-5fe746d0a4a3,Beaver abundance & distribution - Elk Island,2108173
 pc,b9f21e91-d34d-4730-8195-edf051121e9d,Beaver abundance & distribution - Elk Island,a848bad5-9e00-411c-96ed-a2c79aec114c,Beaver abundance & distribution - Elk Island - Data dictionary,5322
-tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed,Proactive Disclosure - Hospitality Expenses,24744789
+tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed,Proactive Disclosure - Hospitality Expenses,24744222
 tbs-sct,b9f51ef4-4605-4ef2-8231-62a2edda1b54,Proactive Disclosure - Hospitality Expenses,36a3b6cc-4f45-4081-8dbd-2340ca487041,Proactive Disclosure - Hospitality Nothing to Report,427413
 pc,ba31c525-b49d-4eb6-b99f-fe08372fda18,"Percentage of historical and archaeological collection, cultural landscapes and archaeological sites in Parks Canada’s care that are safeguarded",9d566840-08a8-4a57-9fa1-8f2a2859894f,"Percentage of historical and archaeological collection, cultural landscapes and archaeological sites in Parks Canada’s care that are safeguarded 2021-2022",1091
 pc,ba8f8a4a-3c4f-4cd5-b1f9-7e4dd8c21f28,Coastal Wetland Water Quality - Fathom Five,c8b9ec2a-6528-49a9-b9b0-b4b3dda94d3b,Coastal Wetland Water Quality - Fathom Five,37041
@@ -1762,7 +1762,7 @@ cra-arc,d7fce72c-6daa-453c-b471-6c1801a4217f,Individual Statistics by Tax Filing
 cra-arc,d7fce72c-6daa-453c-b471-6c1801a4217f,Individual Statistics by Tax Filing Method (ISTFM) – 2021 tax year,c5061a7a-6ef1-4aaa-91c2-99420d05b0ff,Table 2 – ISTFM for All Returns Filed – Demographic Characteristics – 2021 tax year,
 pc,d87383f6-5313-430d-8416-1b6d6e377e02,Black Oystercatcher Population – Pacific Rim,6e10535e-273f-4eca-a335-5e00a77a68fe,Black Oystercatcher - Pacific Rim - Nesting Counts - Data,8744
 pc,d87383f6-5313-430d-8416-1b6d6e377e02,Black Oystercatcher Population – Pacific Rim,829bc895-a528-4759-a075-8aeead993152,Black Oystercatcher - Pacific Rim - Resighting Matrix - Data Dictionary,3883
-tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fac950c0-00d5-4ec1-a4d3-9cbebf98a305,"Contracts over $10,000",555825468
+tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fac950c0-00d5-4ec1-a4d3-9cbebf98a305,"Contracts over $10,000",555851809
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,fa4ff6c4-e9af-4491-9d4e-2b468e415a68,Proactive Publication - Contracts Nothing to Report,9020
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,2e9a82e2-bb18-4bff-a61e-59af3b429672,Aggregated Total - Contracts $10K and under,78995
 tbs-sct,d8f85d91-7dec-4fd1-8055-483b77225d8b,Proactive Publication - Contracts,7f9b18ca-f627-4852-93d5-69adeb9437d6,"Contracts over $10,000 – Legacy Data",957109
@@ -2182,7 +2182,7 @@ tbs-sct,f0d12b41-54dc-4784-ad2b-83dffed2ab84,Federal public service statistics,c
 pc,f1052872-1086-4354-bff5-db5a32f1a546,Freshwater Benthic Macroinvertebrate Index - Jasper,9afd6437-0ee2-4b5f-82bd-23c4789def32,Freshwater Benthic Macroinvertebrate Index  - Jasper,1571
 pc,f1052872-1086-4354-bff5-db5a32f1a546,Freshwater Benthic Macroinvertebrate Index - Jasper,2d32b0e4-2048-4e41-8be7-44a09ac19813,Freshwater Benthic Macroinvertebrate Index  - Jasper - Data Dictionary,532
 atssc-scdata,f12ba1a4-99c0-4b4a-ac69-e57de57cddfe,2016-2017 Departmental Results Report - Program 1.1: Tribunal Specialized and Expert Support Services,233e6a9e-0d5b-4c10-b273-47e44745e03b,Results achieved,688
-tbs-sct,f132b8a6-abad-43d6-b6ad-2301e778b1b6,Proactive Disclosure - Position Reclassification,bdaa5515-3782-4e5c-9d44-c25e032addb7,Proactive Disclosure - Position Reclassification,2990797
+tbs-sct,f132b8a6-abad-43d6-b6ad-2301e778b1b6,Proactive Disclosure - Position Reclassification,bdaa5515-3782-4e5c-9d44-c25e032addb7,Proactive Disclosure - Position Reclassification,2991327
 tbs-sct,f132b8a6-abad-43d6-b6ad-2301e778b1b6,Proactive Disclosure - Position Reclassification,1e955e4d-df35-4441-bf38-b7086192ece2,Proactive Disclosure - Position Reclassification Nothing to Report,106134
 pc,f140e1d0-ed60-4818-85d6-f02fcb69fda1,Snowpack - Wapusk National Park,bc0d0db6-fc48-425c-8f33-b4acc28e7d2e,Snowpack - Wapusk National Park,128925
 pc,f140e1d0-ed60-4818-85d6-f02fcb69fda1,Snowpack - Wapusk National Park,33d51f54-f17f-4aeb-a079-74372dc950b0,Snowpack - Wapusk National Park - Data Dictionary,2565
