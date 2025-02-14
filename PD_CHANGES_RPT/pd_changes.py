@@ -1,3 +1,4 @@
+
 import requests
 import base64
 import pandas as pd
@@ -124,9 +125,17 @@ for col in df_current.columns:  # Iterate through all numeric columns
     ordered_columns.append(col)  # Add the main column first
     for label, df_old in df_past.items():
         change_col_name = f"{col}_change_{label}"
-        df_changes[change_col_name] = df_current[col] - df_old[col]
-        ordered_columns.append(change_col_name)  # Insert the change column right after the main column
+        # Check if the column exists in both DataFrames before calculating the difference
+        if col in df_old.columns: 
+            df_changes[change_col_name] = df_current[col] - df_old[col]
+            ordered_columns.append(change_col_name)  # Insert the change column right after the main column
+        else:
+            print(f"Warning: Column '{col}' not found in DataFrame for {label}. Skipping change calculation.") # Print warning if column is missing
+            df_changes[change_col_name] = float('nan') # or 0 or any other default value
+            ordered_columns.append(change_col_name)
 
+# Reorder columns
+df_changes = df_changes[ordered_columns]
 # Reorder columns
 df_changes = df_changes[ordered_columns]
 
