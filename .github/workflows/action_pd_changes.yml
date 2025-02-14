@@ -1,7 +1,6 @@
 name: Generate PD Activity Reports
 on:
- push:
-   branches: [ main ]
+# push:   branches: [ main ]
  schedule:
  - cron: '15 11 * * *'  # everyday
  workflow_dispatch:
