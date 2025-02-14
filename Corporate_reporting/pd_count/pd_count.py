@@ -175,7 +175,7 @@ class Proactive_disclosure:
         df_dpt.fillna(0, inplace=True)
         df_dpt = df_dpt.astype({'transition':'int', 'transition_deputy':'int', 'parliament_report':'int',
                         'parliament_committee':'int', 'parliament_committee_deputy':'int','ati_all': 'int', 'ati_nil': 'int', 'briefingt': 'int', 'contracts': 'int', 'contracts_nil': 'int', 'contractsa': 'int', 'dac': 'int', 'grants': 'int', 'grants_nil': 'int',
-                                'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
+                                'hospitalityq': 'int', 'hospitalityq_nil': 'int', 'qpnotes': 'int', 'qpnotes_nil': 'int', 'reclassification': 'int', 'reclassification_nil': 'int', 'travela': 'int', 'travelq': 'int', 'travelq_nil': 'int', 'wrongdoing': 'int'})
         df_dpt.to_csv(os.path.join("Corporate_reporting", "pd_count", "pd_per_dept.csv"), encoding='utf-8', index=False)
 
 

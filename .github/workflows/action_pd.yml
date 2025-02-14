@@ -2,7 +2,8 @@ name: run pd count
 
 on:
   schedule:
-    - cron: '0 11 * * *'  # everyday 
+    - cron: '0 11 * * *'  # everyday
+  workflow_dispatch:
 
 jobs:
   build:
