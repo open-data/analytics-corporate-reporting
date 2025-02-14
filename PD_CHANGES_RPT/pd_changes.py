@@ -10,7 +10,7 @@ import os
 # CKAN API Base URL
 CKAN_API_URL = "https://open.canada.ca/data/api/3/action/organization_show?id={}"
 # Define the file name for the Excel workbook
-excel_filename = "PD_Activity.xlsx"
+excel_filename = "PD_CHANGES_RPT/PD_Activity.xlsx"
 
 
 
@@ -253,7 +253,7 @@ with pd.ExcelWriter(excel_filename, engine="xlsxwriter") as writer:
         worksheet_changes.write(0, i+1, new_header, header_format)
 
 # Write df_changes to CSV file, including the index
-df_changes.to_csv("pd_changes_data.csv", index=True)
+df_changes.to_csv("PD_CHANGES_RPT/pd_changes_data.csv", index=True)
 
 # Write df_ckan to CSV file without the index
-df_ckan.to_csv("pd_org_data.csv", index=False)
+df_ckan.to_csv("PD_CHANGES_RPT/pd_org_data.csv", index=False)
