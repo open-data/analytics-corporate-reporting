@@ -1,0 +1,38 @@
+name: Generate PD Activity Reports
+on:
+ push:
+   branches: [ main ]
+ workflow_dispatch:
+jobs:
+ generate-reports:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout Repository
+       uses: actions/checkout@v3
+     - name: Set Up Python
+       uses: actions/setup-python@v4
+       with:
+         python-version: '3.11'
+     - name: Install Dependencies
+       run: |
+         pip install pandas xlsxwriter requests
+     - name: Run PD Changes Report Generation
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
+       run: python pd_changes.py
+     - name: commit files
+       run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -a -m "updates" --allow-empty
+          git push -f
+
+     - name: Upload Generated Files
+       uses: actions/upload-artifact@v3
+       with:
+         name: PD-Activity-Reports
+         path: |
+           PD_Activity.xlsx
+           pd_changes_data.csv
+           pd_org_data.csv
