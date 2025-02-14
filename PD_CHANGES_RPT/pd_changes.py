@@ -257,3 +257,26 @@ df_changes.to_csv("PD_CHANGES_RPT/pd_changes_data.csv", index=True)
 
 # Write df_ckan to CSV file without the index
 df_ckan.to_csv("PD_CHANGES_RPT/pd_org_data.csv", index=False)
+
+
+# Function to write to GitHub Actions job summary
+def write_to_job_summary(content):
+    summary_file = os.getenv("GITHUB_STEP_SUMMARY")
+    if summary_file:
+        with open(summary_file, "a") as f:
+            f.write(content + "\n")
+    else:
+        print("Warning: GITHUB_STEP_SUMMARY environment variable not found. Job summary not written.")
+
+# Format the DATES_TO_FIND dictionary as markdown
+summary_content = "## Dates to Find\n\n"
+summary_content += "| Period | Date |\n"
+summary_content += "|--------|------|\n"
+for period, date in DATES_TO_FIND.items():
+    summary_content += f"| {period} | {date.strftime('%Y-%m-%d %H:%M:%S UTC')} |\n"
+
+# Write the content to the job summary
+write_to_job_summary(summary_content)
+
+# Optional: Print to console for debugging
+print(summary_content)
