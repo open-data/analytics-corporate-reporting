@@ -17,8 +17,8 @@ df_melt.rename(columns={"variable": "pd_type",
                         "value": "count"}, inplace=True)
 df_melt.sort_values(by=['date'], axis=0, ascending=False, inplace=True)
 fig_pd = px.bar(df_melt, x="date", y="count", color="pd_type",
-             barmode="group", text_auto='s')
-fig_pd.update_traces(textfont_size=12, textangle=0,
+             barmode="group", width=800, height=800)
+fig_pd.update_traces(textfont_size=16, textangle=0,
                   textposition="outside", cliponaxis=False)
 
 fig_pd.update_layout(
@@ -36,7 +36,7 @@ df.rename(columns={"number of datasets":"# of open data",}, inplace=True)
 df_melt = pd.melt(df, id_vars=['Date'], value_vars=["# of open data", "Non geospatial" ])
 df_melt.rename(columns={"variable": "type",
                         "value": "count"}, inplace=True)
-fig_od = px.line(df_melt, x="Date", y="count", color ="type")
+fig_od = px.line(df_melt, x="Date", y="count", color ="type",width=800, height=800)
 
 
 fig_od.update_layout(
