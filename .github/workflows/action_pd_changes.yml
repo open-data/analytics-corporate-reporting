@@ -21,7 +21,7 @@ jobs:
      - name: Run PD Changes Report Generation
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
-       run: python pd_changes.py
+       run: python PD_CHANGES_RPT/pd_changes.py
      - name: commit files
        run: |
           git config --local user.email "action@github.com"
