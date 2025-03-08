@@ -28,7 +28,7 @@ ced-dec,Canada Economic Development for Quebec Regions | Développement économi
 ceefc-cfuec,Canada Enterprise Emergency Funding Corporation | La Corporation de financement d’urgence d’entreprises du Canada,atip-aiprp@cdev.gc.ca,0,2021-01-09,NA,atip-aiprp@cdev.gc.ca
 celd,Canada Eldor Inc. | Canada Eldor Inc.,atip-aiprp@cdev.ca,0,2018-07-27,NA,
 cer-rec,Canada Energy Regulator | La Régie de l’énergie du Canada,ATIPOffice-BureauAIPRP@neb-one.gc.ca,78,2016-09-23,NA,
-cfia-acia,Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,ATIP-CFIA-AIPRP@inspection.gc.ca,237,2016-09-23,2,
+cfia-acia,Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,ATIP-CFIA-AIPRP@inspection.gc.ca,239,2016-09-23,2,
 cfmws-sbmfc,Canadian Forces Morale and Welfare Services | Services de bien-être et moral des Forces canadiennes,ATIP.AIPRP@cfmws.com,0,2019-07-13,NA,
 cgc-ccg,Canadian Grain Commission | Commission canadienne des grains,atip-aiprp@grainscanada.gc.ca,13,2016-09-23,1.1,
 cgf-fcc,Canada Growth Fund Inc. | Fonds de Croissance du Canada Inc.,atip-aiprp@cdev.gc.ca,0,2024-08-17,3,
@@ -56,11 +56,11 @@ cnsopb,Canada-Nova Scotia Offshore Energy Regulator  | Régie Canada-Nouvelle-É
 cpata-cabamc,College of Patent Agents and Trademark Agents | Collège des agents de brevets et des agents de marques de commerce,adiaz@cpata-cabamc.ca,0,2023-09-16,NA,admin@cpata-cabamc.ca
 cpc-cpp,Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,ATIP.AIPRP@crcc-ccetp.gc.ca,27,2016-09-23,1.1,
 cpc-scp,Canada Post | Postes Canada,ATIP_AIPRP@canadapost.postescanada.ca,0,2016-09-23,3,
-cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.ca,314,2016-09-23,2,
+cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.ca,315,2016-09-23,2,
 crrf-fcrr,Canadian Race Relations Foundation | La Fondation Canadienne des relations raciales,atavassoli@crrf-fcrr.ca,0,2018-04-24,NA,
 crtc,Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,AIPRP-ATIP@crtc.gc.ca,72,2016-09-23,1.1,
 csa-asc,Canadian Space Agency | Agence spatiale canadienne,AIPRP-ATIP@asc-csa.gc.ca,132,2016-09-23,1.1,
-csc-scc,Correctional Service of Canada | Service correctionnel du Canada,CSC.ATIP-AIPRP.SCC@csc-scc.gc.ca,205,2016-09-23,1.1,
+csc-scc,Correctional Service of Canada | Service correctionnel du Canada,CSC.ATIP-AIPRP.SCC@csc-scc.gc.ca,206,2016-09-23,1.1,
 csec-cstc,Communications Security Establishment Canada | Centre de la sécurité des télécommunications Canada,atip-aiprp@cse-cst.gc.ca,251,2016-09-23,NA,
 csis-scrs,Canadian Security Intelligence Service | Service canadien du renseignement de sécurité,ATIP-AIPRP@smtp.gc.ca,18,2016-09-23,1.1,
 csps-efpc,Canada School of Public Service | École de la fonction publique du Canada,atipaiprp@csps-efpc.gc.ca,8,2016-09-23,2,
@@ -110,7 +110,7 @@ irb-cisr,Immigration and Refugee Board of Canada | Commission de l'immigration e
 isc-sac,Indigenous Services Canada | Services aux Autochtones Canada,aadnc.atiprequest-aiprpdemande.aandc@canada.ca,27,2018-02-01,1,
 jccbi-pjcci,Jacques Cartier and Champlain Bridges Incorporated | Ponts Jacques Cartier et Champlain Incorporée,atip-aiprp@pjcci.ca,1,2016-09-23,NA,
 jfpc-cfp,The Joint Federal/Provincial Commission into the April 2020 Nova Scotia Mass Casualty | Commission fédérale-provinciale sur les événements d’avril 2020 en Nouvelle Écosse,open-ouvert@tbs-sct.gc.ca,0,2021-03-25,NA,open-ouvert@tbs-sct.gc.ca
-jus,Department of Justice Canada | Ministère de la Justice Canada,ATIP-AIPRP-JusticeCanada@justice.gc.ca,481,2016-09-23,1,
+jus,Department of Justice Canada | Ministère de la Justice Canada,ATIP-AIPRP-JusticeCanada@justice.gc.ca,483,2016-09-23,1,
 lac-bac,Library and Archives Canada | Bibliothèque et Archives Canada,daiprp-atipd@bac-lac.gc.ca,52,2016-09-23,NA,
 lpa-apl,Laurentian Pilotage Authority Canada | Administration de pilotage des Laurentides Canada,Josee.Bonneville@apl.gc.ca,1,2016-09-23,NA,
 mai,Marine Atlantic Inc. | Marine Atlantique S.C.C.,atip-aiprp@ma.ca,0,2016-09-23,3,
@@ -191,7 +191,7 @@ sopf-cidp,Office of the Administrator of the Ship-source Oil Pollution Fund; (op
 spa-aps,Saguenay Port Authority | Administration portuaire du Saguenay,apoudrier@portsaguenay.ca,0,2016-09-23,NA,
 ssc-spc,Shared Services Canada | Services partagés Canada,ATIP-AIPRP@ssc-spc.gc.ca,109,2016-09-23,1.1,
 sshrc-crsh,Social Sciences and Humanities Research Council of Canada | Conseil de recherches en sciences humaines du Canada,ATIP-AIPRP@sshrc-crsh.gc.ca,9,2016-09-23,2,
-statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9733,2016-09-23,1.1,
+statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9734,2016-09-23,1.1,
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
