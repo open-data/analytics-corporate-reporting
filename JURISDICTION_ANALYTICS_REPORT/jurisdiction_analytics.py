@@ -61,41 +61,46 @@ jurisdiction_mapviews = jurisdiction_mapviews.sort_values(['year', 'month', 'pag
 
 jurisdiction_mapviews = jurisdiction_mapviews.rename(columns={'pageviews': 'Open Maps Views'})
 
+# Save DataFrames to individual CSV files without index
+jurisdiction_dl.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_dl.csv', index=False)
+jurisdiction_visits.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_visits.csv', index=False)
+jurisdiction_mapviews.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_mapviews.csv', index=False)
 
-#create a mermaid xychart for jurisdiction_dl with 3 lines, 1 for each jurisdiction value.
-def generate_mermaid_xychart(df, title):
-  """Generates Mermaid XYChart code for a given dataframe."""
-  mermaid_code = """
+# Create a dictionary to store data for each jurisdiction
+jurisdiction_data = {}
+for jurisdiction in jurisdiction_dl['jurisdiction'].unique():
+    jurisdiction_df = jurisdiction_dl[jurisdiction_dl['jurisdiction'] == jurisdiction]
+    jurisdiction_data[jurisdiction] = jurisdiction_df
+
+# Create the Mermaid code
+mermaid_code = """
 xychart-beta
-    title "{}"
-    x-axis """.format(title)
+    title "Downloads by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
+    x-axis """
 
-  x_axis_labels = []
-  # Ensure that the dataframe is sorted by year and month in descending order.
-  df = df.sort_values(['year_annee', 'month_mois'], ascending=[False, False])
-  for index, row in df.head(12).iterrows():
-    x_axis_labels.append(str(row['year_annee']) + '-' + str(row['month_mois']))
-  mermaid_code += "[" + ", ".join(x_axis_labels[::-1]) + "]"
+x_axis_labels = []
+# Assuming your data has 'year_annee' and 'month_mois' columns
+for year, month in jurisdiction_dl[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
+  x_axis_labels.append(str(year) + '-' + str(month))
 
-  # Find unique jurisdictions
-  jurisdictions = df['jurisdiction'].unique()
+mermaid_code += "[" + ", ".join(x_axis_labels[::-1]) + "]"
 
-  # Generate a line for each jurisdiction
-  for jurisdiction in jurisdictions:
-    temp_df = df[df['jurisdiction'] == jurisdiction]
+mermaid_code += """
+    y-axis "Downloads" 0 --> """ + str(jurisdiction_dl['downloads_telechargements'].max() + 10)
 
-    y_values = temp_df['downloads_telechargements'].head(12).tolist()[::-1]
+for jurisdiction in jurisdiction_data:
+  jurisdiction_df = jurisdiction_data[jurisdiction]
+  downloads_values = []
+  for year, month in jurisdiction_dl[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
+      download_for_month = jurisdiction_df[(jurisdiction_df['year_annee'] == year) & (jurisdiction_df['month_mois'] == month)]['downloads_telechargements'].sum()
+      downloads_values.append(str(download_for_month))
+      
+  mermaid_code += """
+    line """
+  mermaid_code += "[" + ", ".join(downloads_values[::-1]) + "]"
+  mermaid_code += """ label """ + '"' + jurisdiction + '"'
 
-    mermaid_code += """
-    line "{}" """.format(jurisdiction)
-    mermaid_code += "[" + ", ".join(map(str, y_values)) + "]"
-
-
-  return mermaid_code
-
-
-# Generate the Mermaid code and print it
-mermaid_code = generate_mermaid_xychart(jurisdiction_dl, "Downloads by Jurisdiction")
+mermaid_code
 
 with open('JURISDICTION_ANALYTICS_REPORT/readme.md', 'w') as f:
   f.write('\n## Downloads by Jurisdiction last 12 months\n\n')
