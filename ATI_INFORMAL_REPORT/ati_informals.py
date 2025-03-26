@@ -43,18 +43,18 @@ top_10_df = top_10_df.sort_values(['Year', 'Month'], ascending=[False, False])
 # write top_10_df, org_df, idtot_df, yrmonth_df, and orgtot_df to csv files 
 
 
-top_10_df.to_csv('top_10_df.csv', index=False)
-org_df.to_csv('org_df.csv', index=False)
-idtot_df.head(100).to_csv('idtot_df.csv', index=False)
-yrmonth_df.to_csv('yrmonth_df.csv', index=False)
-orgtot_df.to_csv('orgtot_df.csv', index=False)
+top_10_df.to_csv('ATI_INFORMAL_REPORT/top_10_df.csv', index=False)
+org_df.to_csv('ATI_INFORMAL_REPORT/org_df.csv', index=False)
+idtot_df.head(100).to_csv('ATI_INFORMAL_REPORT/idtot_df.csv', index=False)
+yrmonth_df.to_csv('ATI_INFORMAL_REPORT/yrmonth_df.csv', index=False)
+orgtot_df.to_csv('ATI_INFORMAL_REPORT/orgtot_df.csv', index=False)
 
 # Generate Markdown table from DataFrame
 yrmonth_table = yrmonth_df.head(24).to_markdown(index=False)
 orgtot_table = orgtot_df.head(25).to_markdown(index=False)
 idtot_table = idtot_df.head(25).to_markdown(index=False)
 
-with open('readme.md', 'w') as f:
+with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
   f.write('# Data Tables\n\n')
   f.write('## ID Totals Table\n\n')
   f.write(idtot_table + '\n\n')
