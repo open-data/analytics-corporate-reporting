@@ -19,14 +19,17 @@ df = pd.read_csv(url)
 
 yrmonth_df = df.groupby(['Year', 'Month'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
 yrmonth_df = yrmonth_df.sort_values(['Year', 'Month'], ascending=[False, False])
+yrmonth_df = yrmonth_df.rename(columns={'Unique Identifier': 'Unique Packages'})
 
 #  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by Year and Month and organization, sorted by year and month desc
 org_df = df.groupby(['Year', 'Month','Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
 org_df = org_df.sort_values(['Year', 'Month'], ascending=[False, False])
+org_df = org_df.rename(columns={'Unique Identifier': 'Unique Packages'})
 
 #  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by organization, sorted by Number of Informal Requests desc
 orgtot_df = df.groupby(['Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
 orgtot_df = orgtot_df.sort_values(['Number of Informal Requests'], ascending=[False])
+orgtot_df = orgtot_df.rename(columns={'Unique Identifier': 'Unique Packages'})
 
 #  from the df create a new df that gets the top 100 most requested Informal Requests,
 idtot_df = df.groupby(['Unique Identifier', 'Request Number', 'Summary - EN','Summary - FR', 'owner_org', 'Organization Name - EN','Organization Name - FR'], as_index=False).agg({'Number of Informal Requests': 'sum'})
