@@ -54,12 +54,16 @@ yrmonth_table = yrmonth_df.head(24).to_markdown(index=False)
 orgtot_table = orgtot_df.head(25).to_markdown(index=False)
 idtot_table = idtot_df.head(25).to_markdown(index=False)
 
-with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
+with open('readme.md', 'w') as f:
+  f.write('\n## Chart\n\n')
+  f.write('```mermaid\n')
+  f.write(mermaid_code)
+  f.write('\n```\n')
+  f.write('## Year-Month Table\n\n')
+  f.write(yrmonth_table + '\n\n')
   f.write('# Data Tables\n\n')
   f.write('## ID Totals Table\n\n')
   f.write(idtot_table + '\n\n')
   f.write('## Organization Totals Table\n\n')
   f.write(orgtot_table + '\n\n')
-  f.write('## Year-Month Table\n\n')
-  f.write(yrmonth_table + '\n\n')
 
