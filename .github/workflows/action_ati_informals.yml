@@ -16,7 +16,7 @@ jobs:
          python-version: '3.11'
      - name: Install Dependencies
        run: |
-         pip install pandas ckanapi
+         pip install pandas ckanapi tabulate
      - name: Run Report Generation
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
