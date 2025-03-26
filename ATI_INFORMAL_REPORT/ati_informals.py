@@ -54,6 +54,35 @@ yrmonth_table = yrmonth_df.head(24).to_markdown(index=False)
 orgtot_table = orgtot_df.head(25).to_markdown(index=False)
 idtot_table = idtot_df.head(25).to_markdown(index=False)
 
+ #generate a mermaid.js xychart for yrmonth_df.head(24)
+
+mermaid_code = """
+xychart-beta
+    title "Informal Requests and Unique Packages Over Time"
+    x-axis """
+
+x_axis_labels = []
+for index, row in yrmonth_df.head(24).iterrows():
+  x_axis_labels.append(str(row['Year']) + '-' + str(row['Month']))
+
+mermaid_code += "[" + ", ".join(x_axis_labels[::-1]) + "]"
+mermaid_code += """
+    y-axis "Unique Packages" 0 --> """ + str(yrmonth_df['Unique Packages'].max() + 10) + """
+    y-axis "Number of Informal Requests" 0 --> """ + str(yrmonth_df['Number of Informal Requests'].max() + 10) + """
+
+    line """
+
+unique_packages_values = yrmonth_df['Unique Packages'].head(24).tolist()[::-1]
+mermaid_code += "[" + ", ".join(map(str, unique_packages_values)) + "]"
+
+mermaid_code += """
+    line """
+
+informal_requests_values = yrmonth_df['Number of Informal Requests'].head(24).tolist()[::-1]
+mermaid_code += "[" + ", ".join(map(str, informal_requests_values)) + "]"
+
+
+
 with open('readme.md', 'w') as f:
   f.write('\n## Chart\n\n')
   f.write('```mermaid\n')
