@@ -25,16 +25,22 @@ yrmonth_df = yrmonth_df.rename(columns={'Unique Identifier': 'Unique Packages'})
 org_df = df.groupby(['Year', 'Month','Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
 org_df = org_df.sort_values(['Year', 'Month'], ascending=[False, False])
 org_df = org_df.rename(columns={'Unique Identifier': 'Unique Packages'})
+org_df['owner_org'] = 'https://open.canada.ca/data/organization/' + org_df['owner_org'].astype(str)
 
 #  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by organization, sorted by Number of Informal Requests desc
 orgtot_df = df.groupby(['Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
 orgtot_df = orgtot_df.sort_values(['Number of Informal Requests'], ascending=[False])
 orgtot_df = orgtot_df.rename(columns={'Unique Identifier': 'Unique Packages'})
+orgtot_df['owner_org'] = 'https://open.canada.ca/data/organization/' + orgtot_df['owner_org'].astype(str)
+
 
 #  from the df create a new df that gets the top 100 most requested Informal Requests,
 idtot_df = df.groupby(['Unique Identifier', 'Request Number', 'Summary - EN','Summary - FR', 'owner_org', 'Organization Name - EN','Organization Name - FR'], as_index=False).agg({'Number of Informal Requests': 'sum'})
 idtot_df = idtot_df.sort_values(['Number of Informal Requests'], ascending=[False])
 idtot_df.head(100)
+idtot_md=idtot_df[['Unique Identifier', 'Request Number','owner_org', 'Organization Name - EN','Organization Name - FR','Number of Informal Requests']]
+idtot_md['Unique Identifier'] = '['+ idtot_df['Unique Identifier'] +']' + '('+'https://open.canada.ca/en/search/ati/reference/' + idtot_df['Unique Identifier'].astype(str) + ')'
+idtot_md['owner_org'] = '['+ idtot_df['owner_org'] +']' + '('+'https://open.canada.ca/data/organization/' + idtot_df['owner_org'].astype(str) + ')'
 
 # in a new df get the sum of Number of Informal Requests for each unique idenifier, grouped by year and month and return the top 10 for each year and month from the dataframe called df
 
@@ -55,13 +61,13 @@ orgtot_df.to_csv('ATI_INFORMAL_REPORT/orgtot_df.csv', index=False)
 # Generate Markdown table from DataFrame
 yrmonth_table = yrmonth_df.head(24).to_markdown(index=False)
 orgtot_table = orgtot_df.head(25).to_markdown(index=False)
-idtot_table = idtot_df.head(25).to_markdown(index=False)
+idtot_table = idtot_md.head(25).to_markdown(index=False)
 
  #generate a mermaid.js xychart for yrmonth_df.head(24)
 
 mermaid_code = """
 xychart-beta
-    title "Informal Requests and Unique Packages Over Time"
+    title "Informal Requests🟩 and Unique Packages🟦 Over Time"
     x-axis """
 
 x_axis_labels = []
@@ -95,4 +101,6 @@ with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
   f.write(yrmonth_table + '\n\n')
   f.write('## Organization Totals Table\n\n')
   f.write(orgtot_table + '\n\n')
+  f.write('## Top 25 Most Requested\n\n')
+  f.write(idtot_table + '\n\n')     
 
