@@ -1,0 +1,30 @@
+name: Generate ATI INFORMAL Reports
+on:
+# push:   branches: [ main ]
+ schedule:
+ - cron: '30 11 * * *'  # everyday
+ workflow_dispatch:
+jobs:
+ generate-reports:
+   runs-on: ubuntu-latest
+   steps:
+     - name: Checkout Repository
+       uses: actions/checkout@v3
+     - name: Set Up Python
+       uses: actions/setup-python@v4
+       with:
+         python-version: '3.11'
+     - name: Install Dependencies
+       run: |
+         pip install pandas ckanapi
+     - name: Run Report Generation
+       env:
+         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
+       run: python ATI_INFORMAL_REPORT/ati_informals.py
+     - name: commit files
+       run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -a -m "updates" --allow-empty
+          git push -f
