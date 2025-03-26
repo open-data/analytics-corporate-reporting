@@ -65,7 +65,7 @@ xychart-beta
     x-axis """
 
 x_axis_labels = []
-for index, row in yrmonth_df.head(24).iterrows():
+for index, row in yrmonth_df.head(12).iterrows():
   x_axis_labels.append(str(row['Year']) + '-' + str(row['Month']))
 
 mermaid_code += "[" + ", ".join(x_axis_labels[::-1]) + "]"
@@ -75,27 +75,24 @@ mermaid_code += """
 
     line """
 
-unique_packages_values = yrmonth_df['Unique Packages'].head(24).tolist()[::-1]
+unique_packages_values = yrmonth_df['Unique Packages'].head(12).tolist()[::-1]
 mermaid_code += "[" + ", ".join(map(str, unique_packages_values)) + "]"
 
 mermaid_code += """
     line """
 
-informal_requests_values = yrmonth_df['Number of Informal Requests'].head(24).tolist()[::-1]
+informal_requests_values = yrmonth_df['Number of Informal Requests'].head(12).tolist()[::-1]
 mermaid_code += "[" + ", ".join(map(str, informal_requests_values)) + "]"
 
 
 
-with open('readme.md', 'w') as f:
-  f.write('\n## Chart\n\n')
+with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
+  f.write('\n## Requests and Unique Package Requests last 12 months\n\n')
   f.write('```mermaid\n')
   f.write(mermaid_code)
   f.write('\n```\n')
-  f.write('## Year-Month Table\n\n')
+  f.write('## Number of Requests and Unique Package Requests last 24 Months\n\n')
   f.write(yrmonth_table + '\n\n')
-  f.write('# Data Tables\n\n')
-  f.write('## ID Totals Table\n\n')
-  f.write(idtot_table + '\n\n')
   f.write('## Organization Totals Table\n\n')
   f.write(orgtot_table + '\n\n')
 
