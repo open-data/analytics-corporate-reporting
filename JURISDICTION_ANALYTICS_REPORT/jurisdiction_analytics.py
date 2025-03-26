@@ -98,7 +98,7 @@ for jurisdiction in jurisdiction_data:
   mermaid_code += """
     line """
   mermaid_code += "[" + ", ".join(downloads_values[::-1]) + "]"
-  mermaid_code += """ label """ + '"' + jurisdiction + '"'
+  
 
 mermaid_code
 
