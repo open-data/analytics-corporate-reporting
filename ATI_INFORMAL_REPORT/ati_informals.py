@@ -67,7 +67,7 @@ idtot_table = idtot_md.head(25).to_markdown(index=False)
 
 mermaid_code = """
 xychart-beta
-    title "Informal Requests🟩 and Unique Packages🟦 Over Time"
+    title "Monthly 🟩Num. Informal Requests and 🟦Num. Unique Packages Requested - Last 12 Months"
     x-axis """
 
 x_axis_labels = []
@@ -90,16 +90,17 @@ mermaid_code += """
 informal_requests_values = yrmonth_df['Number of Informal Requests'].head(12).tolist()[::-1]
 mermaid_code += "[" + ", ".join(map(str, informal_requests_values)) + "]"
 
-
+with open('ATI_INFORMAL_REPORT/static.md', 'r', encoding='utf-8') as source_file: content = source_file.read()
 
 with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
+  f.write(content)     
   f.write('\n## Requests and Unique Package Requests last 12 months\n\n')
   f.write('```mermaid\n')
   f.write(mermaid_code)
   f.write('\n```\n')
   f.write('## Number of Requests and Unique Package Requests last 24 Months\n\n')
   f.write(yrmonth_table + '\n\n')
-  f.write('## Organization Totals Table\n\n')
+  f.write('## Total Informal Requests Top 25 Organizations \n\n')
   f.write(orgtot_table + '\n\n')
   f.write('## Top 25 Most Requested\n\n')
   f.write(idtot_table + '\n\n')     
