@@ -1,5 +1,5 @@
 year,month,jurisdiction,Open Maps Views
-2025,3,federal,17698
+2025,3,federal,17697
 2025,3,provincial,5338
 2025,3,municipal,47
 2025,2,federal,15623
@@ -23,16 +23,16 @@ year,month,jurisdiction,Open Maps Views
 2024,6,federal,10098
 2024,6,provincial,3624
 2024,6,municipal,26
-2024,5,federal,12868
+2024,5,federal,12867
 2024,5,provincial,4974
 2024,5,municipal,19
-2024,4,federal,13302
+2024,4,federal,13301
 2024,4,provincial,4111
 2024,4,municipal,16
-2024,3,federal,13424
+2024,3,federal,13422
 2024,3,provincial,3638
 2024,3,municipal,40
-2024,2,federal,9173
+2024,2,federal,9172
 2024,2,provincial,1210
 2024,2,municipal,16
 2024,1,federal,8987
@@ -46,18 +46,18 @@ year,month,jurisdiction,Open Maps Views
 2023,11,municipal,1
 2023,10,federal,9225
 2023,10,provincial,1036
-2023,9,federal,7548
+2023,9,federal,7547
 2023,9,provincial,1059
 2023,8,federal,5322
 2023,8,provincial,864
 2023,8,municipal,2
-2023,6,federal,7130
+2023,6,federal,7129
 2023,6,provincial,849
 2023,6,municipal,7
 2023,5,federal,8291
 2023,5,provincial,830
 2023,5,municipal,2
-2023,4,federal,7122
+2023,4,federal,7121
 2023,4,provincial,576
 2023,4,municipal,3
 2023,3,federal,8018
@@ -71,7 +71,7 @@ year,month,jurisdiction,Open Maps Views
 2022,12,federal,6765
 2022,12,provincial,463
 2022,12,municipal,1
-2022,11,federal,10251
+2022,11,federal,10250
 2022,11,provincial,651
 2022,11,municipal,3
 2022,10,federal,6875
@@ -91,7 +91,7 @@ year,month,jurisdiction,Open Maps Views
 2022,5,municipal,1
 2022,4,federal,5078
 2022,4,provincial,589
-2022,3,federal,6629
+2022,3,federal,6627
 2022,3,provincial,423
 2022,2,federal,2874
 2022,2,provincial,172
