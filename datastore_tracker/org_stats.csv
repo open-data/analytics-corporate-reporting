@@ -1,7 +1,7 @@
 owner,sum_size,unique_packages,unique_resources,sum_ds_fields,sum_ds_n_rows
 aafc-aac,8.5KB,7,16,20.0,102.0
 atssc-scdata,1.2KB,4,4,18.0,7.0
-cbsa-asfc,55.8MB,3,6,28.0,1001530.0
+cbsa-asfc,57.8MB,3,6,28.0,1001530.0
 cer-rec,2.3KB,1,1,4.0,23.0
 cfia-acia,111.5MB,53,63,796.0,262863.0
 cic,464.2KB,2,2,18.0,4811.0
@@ -33,7 +33,7 @@ psc-cfp,976.6MB,16,113,1651.0,5315914.0
 pwgsc-tpsgc,13.5KB,1,1,10.0,42.0
 rcmp-grc,67.5MB,1,1,21.0,328649.0
 ssc-spc,6.5MB,16,38,330.0,62323.0
-tbs-sct,6.2GB,50,175,2184.0,12406103.0
+tbs-sct,6.2GB,50,175,2184.0,12426268.0
 tc,107.2MB,14,28,571.0,762654.0
 vac-acc,260.7KB,3,12,59.0,3965.0
 wd-deo,1.8KB,10,10,27.0,47.0
