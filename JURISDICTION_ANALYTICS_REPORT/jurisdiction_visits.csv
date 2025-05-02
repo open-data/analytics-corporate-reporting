@@ -1,4 +1,7 @@
 year_annee,month_mois,jurisdiction,visits_visites
+2025,4,federal,272331
+2025,4,provincial,85702
+2025,4,municipal,7841
 2025,3,federal,253426
 2025,3,provincial,79185
 2025,3,municipal,6965
@@ -32,6 +35,3 @@ year_annee,month_mois,jurisdiction,visits_visites
 2024,5,federal,212874
 2024,5,provincial,59519
 2024,5,municipal,5719
-2024,4,federal,249088
-2024,4,provincial,60970
-2024,4,municipal,5312
