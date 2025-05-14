@@ -92,7 +92,7 @@ Google analytiques 4 (GA4) est utilisé pour assurer le suivi du parcours des us
  ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
 
-Vérifier aléatoirement les fichiers générés et puis relancer l’exécution du og_ga4_analytics.py avec le resource_patch.resources_update() activé une fois validé. Tous les statistiques générés seront reproduits et téléversés automatiquement sur le registre. Ces mis à jour seront disponibles sur le portail public dans une quinzaine de minutes.
+Vérifier aléatoirement les fichiers générés et puis relancer l’exécution du og_ga4_analytics.py avec le resource_patch.resources_update() activé une fois validé. Toutes les statistiques générées seront reproduites et téléversées automatiquement sur le registre. Ces mis à jour seront disponibles sur le portail public dans une quinzaine de minutes.
 
 ## **Carte ouverte**
 
