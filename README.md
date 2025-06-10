@@ -66,45 +66,46 @@ We also provide in this repository open data and non-geospatial open data create
 
 ## **À propos**
 
-Ce référentiel contient des scripts en python qui ont pour but de produire les statistiques du parcours des visiteurs dans le portail ouvert de Canada. Il contient également les statistiques des divulgations proactives et des données ouvertes produites par les départements.
+Ce référentiel regroupe des scripts Python conçus pour générer des statistiques sur le parcours des visiteurs du Portail ouvert du Canada. Il inclut également des analyses statistiques relatives aux divulgations proactives ainsi qu’aux ensembles de données ouvertes publiés par les institutions.
 
 ## **Script de création des rapports depuis GA4**
 
-Google analytiques 4 (GA4) est utilisé pour assurer le suivi du parcours des usagers dans le portail ouvert de Canada. Les scripts dans le répertoire nommé GA4 Reporting Script permettent de récupérer les rapports en utilisant l’API de GA4.
+Google Analytics 4 (GA4) est utilisé pour suivre le parcours des utilisateurs sur le Portail ouvert du Canada. Les scripts dans le répertoire intitulé GA4 Reporting Script permettent d’extraire des rapports à l’aide de l’API GA4.
 
-**Prérequis:** Créer un nouveau identifiant de GA4 et l’enregistrer localement en tant que credentials.json. Ensuite ouvrir le fichier avec un éditeur et copier le courriel dans la gestion des accès à la propriété du compte GA4. Voici le lien pour créer l’identifiant : https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py?hl=fr#create_credentials
+**Prérequis:** Créer un nouvel identifiant pour GA4, puis l’enregistrer localement sous le nom credentials.json. Ensuite, ouvrez ce fichier avec un éditeur de texte et copiez l’adresse courriel qui y figure. Ajoutez cette adresse dans la section Gestion des accès de la propriété GA4 afin de lui accorder les autorisations nécessaires. Voici le lien pour créer l’identifiant : https://developers.google.com/analytics/devguides/reporting/core/v4/quickstart/service-py?hl=fr#create_credentials
 
-**Étape 1:** Cloner le référentiel ou télécharger le contenu du répertoire GA4_reporting_script. Puis ajouter l’identifiant télécharger précédemment et deux nouveaux répertoires nommés GA_TMP_DIR and GA_STATIC_DIR dans le même répertoire.  Vous trouvez ci-dessous un aperçu du contenu du répertoire GA4_reporting_script. 
+**Étape 1:** Cloner le référentiel ou télécharger le contenu du répertoire GA4_reporting_script. Ensuite, ajoutez le fichier d’identifiants téléchargé précédemment (credentials.json) et créez deux nouveaux répertoires nommés GA_TMP_DIR et GA_STATIC_DIR dans le même répertoire.
+Vous trouverez ci-dessous un aperçu du contenu du répertoire GA4_reporting_script.
  
 ![
   ](https://github.com/open-data/analytics-corporate-reporting/blob/main/GA4_reporting_script.png)
 
-**Étape 2:** Installer les progiciels requis depuis le fichier requirements.txt. En revanche, La création d’un nouvel environnement tel qu’illustré dans la figure ci-dessous est à votre discrétion.
+**Étape 2:** Installez les dépendances nécessaires à partir du fichier requirements.txt. La création d’un environnement virtuel, comme illustré dans la figure ci-dessous, reste à votre discrétion.
  
  
  ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/ga_venv_requirement.png)
 
-**Étape 3:** Télécharger à la fin de chaque mois à partir du lien https://open.canada.ca/static/od-do-canada.jsonl.gz  le catalogue en format JSON Lines généré quotidiennement. Ensuite renommé le fichier ainsi  od-do-canada.YYYYMMDD.jl.gz (ex: od-do-canada.20231031.jl.gz). Vous pouvez également télécharger depuis ce référentiel à fin du mois.
+**Étape 3:** À la fin de chaque mois, téléchargez le catalogue au format JSON Lines, généré quotidiennement, à partir du lien suivant : https://open.canada.ca/static/od-do-canada.jsonl.gz. Renommez ensuite le fichier selon le format suivant : od-do-canada.YYYYMMDD.jl.gz (exemple : od-do-canada.20231031.jl.gz). Il est également possible de télécharger ce fichier directement depuis ce référentiel à la fin de chaque mois.
 
-**Étape 4:** Exécuter og_ga4_analytics.py en gardant le resource_patch.resources_update() désactivé pour éviter le téléversement des statistiques inattendus au registre. Par défaut, les statistiques du mois dernier seront produites et enregistrées dans le répertoire GA_TMP_DIR. Les archives mis à jour seront quant à eux sauvegardées dans le répertoire GA_STATIC_DIR.  Ajouter dans le fichier country_region.yml tout nouveau pays qui apparait sur le terminal et sa traduction en français. 
+**Étape 4:**Exécutez le script og_ga4_analytics.py en veillant à ce que la fonction resource_patch.resources_update() reste désactivée, afin d’éviter tout téléversement inattendu de statistiques vers le registre. Par défaut, les statistiques du mois précédent seront générées et enregistrées dans le répertoire GA_TMP_DIR. Les archives mises à jour seront quant à elles sauvegardées dans le répertoire GA_STATIC_DIR. Ajoutez dans le fichier country_region.yml tout nouveau pays apparaissant dans le terminal, ainsi que sa traduction en français.
 
  ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/new_country.PNG)
 
-Vérifier aléatoirement les fichiers générés et puis relancer l’exécution du og_ga4_analytics.py avec le resource_patch.resources_update() activé une fois validé. Toutes les statistiques générées seront reproduites et téléversées automatiquement sur le registre. Ces mis à jour seront disponibles sur le portail public dans une quinzaine de minutes.
+Procédez à une vérification aléatoire des fichiers générés. Une fois la validation effectuée, relancez l’exécution du script og_ga4_analytics.py avec la fonction resource_patch.resources_update() activée. Toutes les statistiques seront alors régénérées et automatiquement téléversées sur le registre. Ces mises à jour seront visibles sur le portail public dans un délai d’environ quinze minutes.
 
 ## **Carte ouverte**
 
-Nous utilisons également GA4 pour suivre la visualisation de carte ouverte avec nos données géospatiales.
+Nous utilisons également Google Analytics 4 (GA4) pour suivre la consultation des cartes interactives intégrant nos données géospatiales.
 
-**Étape 1:**  Cloner le référentiel ou télécharger le contenu du répertoire Open_map. Ensuite installer les progiciels requis depuis le fichier requirements.txt.
+**Étape 1:**  Cloner le référentiel ou télécharger le contenu du répertoire Open_map. Ensuite, installez les dépendances requises à partir du fichier requirements.txt.
 
-**Étape 2:** Exécuter og_ga4_openMap.py au début de chaque mois en gardant open_map_patch.resources_update() désactivé. Ensuite vérifier que le contenu du fichier généré inclut l’historique et les statistiques du mois dernier. Si c’est le cas, relancer l’exécution avec open_map_patch.resources_update() activé afin de téléverser le nouveau rapport dans le registre. 
+**Étape 2:** Exécutez le script og_ga4_openMap.py au début de chaque mois, en veillant à ce que la fonction open_map_patch.resources_update() soit désactivée. Vérifiez ensuite que le fichier généré contient bien l’historique ainsi que les statistiques du mois précédent. Si le contenu est conforme, relancez l’exécution du script avec open_map_patch.resources_update() activée, afin de téléverser le nouveau rapport dans le registre.
 
 ## **Divulgation proactive**
 
-Des tâches s’exécutent quotidiennement pour refléter les mises à jour des divulgations proactives dans les fichiers suivants :
+Des tâches s’exécutent quotidiennement afin de refléter les mises à jour des divulgations proactives dans les fichiers suivants :
 -	**structure_pd.csv**  contient les mises à jour quotidiennes sur les divulgations proactives normalisées. 
 -	**nonstruc_pd.csv** contient les mises à jour quotidiennes sur les divulgations proactives non normalisées.
 -	**all_pd.csv**  contient des enregistrements agrégés par type de divulgation proactive.
@@ -117,8 +118,8 @@ Des tâches s’exécutent quotidiennement pour refléter les mises à jour des 
 
 
 ## **Données ouvertes**
-Vous trouvez également dans ce référentiel les données ouvertes créées courant l’année fiscale en cours et le taux de la côte d’ouverture.
+Ce référentiel contient également les ensembles de données ouvertes créés au cours de l’année fiscale en cours, ainsi que le taux de la cote d’ouverture.
 
-**Données ouvertes créées au cours de l’exercice en cours**
+**Données ouvertes créées au cours de l’exercice financier en cours**
 ![
 ](https://github.com/open-data/analytics-corporate-reporting/blob/main/opendata.svg)
