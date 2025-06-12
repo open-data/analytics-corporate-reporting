@@ -73,7 +73,7 @@ dfatd-maecd,Global Affairs Canada | Affaires mondiales Canada,dcp@international.
 dfi-ifd,Development Finance Institution - FinDev Canada | Institution de financement du développement - FinDev Canada,atipteam@edc.ca,2,2023-06-13,NA,
 dfo-mpo,Fisheries and Oceans Canada | Pêches et Océans Canada,atip-laiprp@dfo-mpo.gc.ca,789,2016-09-23,1,
 dnd-mdn,National Defence | Défense nationale,ATIP-AIPRP@forces.gc.ca,160,2016-09-23,1,
-ec,Environment and Climate Change Canada | Environnement et Changement climatique Canada,ecatip-ecaiprp@ec.gc.ca,1115,2016-09-23,NA,
+ec,Environment and Climate Change Canada | Environnement et Changement climatique Canada,ecatip-ecaiprp@ec.gc.ca,1102,2016-09-23,NA,
 edc,Export Development Canada | Exportation et développement Canada,atipteam@edc.ca,9,2016-09-23,3,
 elections,Elections Canada | Élections Canada,aiprp-atip@elections.ca,46,2016-09-23,NA,
 erc-cee,RCMP External Review Committee | Comité externe d'examen de la GRC,corporateandhrservices-servicesgenerauxetrh@erc-cee.gc.ca,0,2016-09-23,NA,
@@ -83,7 +83,7 @@ fbcl-spfl,Federal Bridge Corporation | Société des ponts fédéraux,info@feder
 fcac-acfc,Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,Nathalie.forester@fcac-acfc.gc.ca,31,2016-09-23,1.1,
 fcc-fac,Farm Credit Canada | Financement agricole Canada,ATIP_AIPRP@fcc-fac.ca,0,2016-09-23,3,
 feddevontario,Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,atip-aiprp@feddevontario.gc.ca,11,2016-09-23,1.1,im-it-gi-ti@feddevontario.gc.ca
-fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,4,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
+fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,5,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
 ffmc-ocped,Freshwater Fish Marketing Corporation | Office de commercialisation du poisson d'eau douce,ATIPcontrol@freshwaterfish.com,0,2016-09-23,3,
 fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,105,2016-09-23,1,
 fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,atip-aiprp@fintrac-canafe.gc.ca,26,2016-09-23,NA,
@@ -100,7 +100,7 @@ hc-sc,Health Canada | Santé Canada,hc.atip-aiprp.sc@canada.ca,2953,2016-09-23,1
 hgr-tgf,VIA HFR - VIA TGF Inc. | VIA HFR - VIA TGF Inc.,,0,2023-12-01,NA,
 hsmbc-clmhc,Historic Sites and Monuments Board of Canada | Commission des lieux et monuments historiques du Canada,pc.clmhc-hsmbc.pc@canada.ca,0,2018-08-21,NA,
 iaac-aeic,Impact Assessment Agency of Canada | Agence d'évaluation d'impact du Canada,atip-aiprp@iaac-aeic.gc.ca,94,2016-09-23,1.1,
-ic,"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",ic.atip-aiprpa.ic@ised-isde.gc.ca,91,2016-09-23,NA,
+ic,"Innovation, Science and Economic Development Canada | Innovation, Sciences et Développement économique Canada",ic.atip-aiprpa.ic@ised-isde.gc.ca,92,2016-09-23,NA,
 idrc-crdi,International Development Research Centre | Centre de recherches pour le développement international,llahaie@idrc.ca,2,2016-09-23,NA,
 iic-iac,Invest in Canada | Investir Au Canada,open-ouvert@tbs-sct.gc.ca,14,2021-05-07,2,
 ijc-cmi,International Joint Commission | Commission mixte internationale,open-ouvert@tbs-sct.gc.ca,0,2017-09-07,NA,
@@ -160,7 +160,7 @@ phac-aspc,Public Health Agency of Canada | Agence de la santé publique du Canad
 pkcc-pcprc,President of the King’s Privy Council for Canada | Président du Conseil privé du Roi pour le Canada,ATIP-AIPRP@pco-bcp.gc.ca,0,2020-01-31,NA,
 pmo-cpm,Office of the Prime Minister | Cabinet du premier ministre,ATIP-AIPRP@pco-bcp.gc.ca,0,2019-07-30,NA,
 pmprb-cepmb,Patented Medicine Prices Review Board Canada | Conseil d'examen du prix des médicaments brevetés Canada,pmprb.atip-aiprb.cepmb@pmprb-cepmb.gc.ca,3,2016-09-23,1.1,Johanne.gamache@pmprb-cepmb.gc.ca
-polar-polaire,Polar Knowledge Canada | Savoir polaire Canada,Brodie.larocque@polar-polaire.gc.ca,2,2016-09-23,2,
+polar-polaire,Polar Knowledge Canada | Savoir polaire Canada,Brodie.larocque@polar-polaire.gc.ca,3,2016-09-23,2,
 ppa-app,Pacific Pilotage Authority Canada | Administration de pilotage du Pacifique Canada,smackenzie@ppa.gc.ca,0,2016-09-23,3,
 ppsc-sppc,Public Prosecution Service of Canada | Service des poursuites pénales du Canada,ATIP-AIPRP@ppsc-sppc.gc.ca,8,2016-09-23,NA,
 pptc,Passport Canada | Passeport Canada,ATIP-AIPRP@pptc.gc.ca,0,2016-09-23,NA,
@@ -191,7 +191,7 @@ sopf-cidp,Office of the Administrator of the Ship-source Oil Pollution Fund; (op
 spa-aps,Saguenay Port Authority | Administration portuaire du Saguenay,apoudrier@portsaguenay.ca,0,2016-09-23,NA,
 ssc-spc,Shared Services Canada | Services partagés Canada,ATIP-AIPRP@ssc-spc.gc.ca,110,2016-09-23,1.1,
 sshrc-crsh,Social Sciences and Humanities Research Council of Canada | Conseil de recherches en sciences humaines du Canada,ATIP-AIPRP@sshrc-crsh.gc.ca,9,2016-09-23,2,
-statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9887,2016-09-23,1.1,
+statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9891,2016-09-23,1.1,
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
