@@ -3,7 +3,7 @@ aafc-aac,Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canad
 aandc-aadnc,Crown-Indigenous Relations and Northern Affairs Canada | Relations Couronne-Autochtones et Affaires du Nord Canada,aadnc.atiprequest-aiprpdemande.aandc@canada.ca,43,2016-09-23,1,
 acoa-apeca,Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,atip-aiprp@acoa-apeca.gc.ca,37,2016-09-23,1.1,
 aecl-eacl,"Atomic Energy of Canada Limited | Énergie atomique du Canada, Limitée",igaudreault@aecl.ca,0,2016-09-23,3,igaudreault@aecl.ca
-apa,Atlantic Pilotage Authority Canada | Administration de pilotage de l'Atlantique Canada,bbradley@atlanticpilotage.com,4,2016-09-23,3,
+apa,Atlantic Pilotage Authority Canada | Administration de pilotage de l'Atlantique Canada,bbradley@atlanticpilotage.com,5,2016-09-23,3,
 apfc-fapc,Asia-Pacific Foundation of Canada | Fondation Asie Pacifique du Canada,atip.coordinator@asiapacific.ca,0,2016-09-23,NA,
 atssc-scdata,Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,ATIP-AIPRP@tribunal.gc.ca,49,2016-09-23,1.1,
 bc,Bank of Canada | Banque du Canada,ATIP-AIPRP@bankofcanada.ca,0,2016-09-23,NA,
@@ -56,7 +56,7 @@ cnsopb,Canada-Nova Scotia Offshore Energy Regulator  | Régie Canada-Nouvelle-É
 cpata-cabamc,College of Patent Agents and Trademark Agents | Collège des agents de brevets et des agents de marques de commerce,adiaz@cpata-cabamc.ca,0,2023-09-16,NA,admin@cpata-cabamc.ca
 cpc-cpp,Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,ATIP.AIPRP@crcc-ccetp.gc.ca,27,2016-09-23,1.1,
 cpc-scp,Canada Post | Postes Canada,ATIP_AIPRP@canadapost.postescanada.ca,0,2016-09-23,3,
-cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.ca,303,2016-09-23,2,
+cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.ca,305,2016-09-23,2,
 crrf-fcrr,Canadian Race Relations Foundation | La Fondation Canadienne des relations raciales,atavassoli@crrf-fcrr.ca,0,2018-04-24,NA,
 crtc,Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,AIPRP-ATIP@crtc.gc.ca,75,2016-09-23,1.1,
 csa-asc,Canadian Space Agency | Agence spatiale canadienne,AIPRP-ATIP@asc-csa.gc.ca,133,2016-09-23,1.1,
@@ -83,7 +83,7 @@ fbcl-spfl,Federal Bridge Corporation | Société des ponts fédéraux,info@feder
 fcac-acfc,Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,Nathalie.forester@fcac-acfc.gc.ca,31,2016-09-23,1.1,
 fcc-fac,Farm Credit Canada | Financement agricole Canada,ATIP_AIPRP@fcc-fac.ca,0,2016-09-23,3,
 feddevontario,Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,atip-aiprp@feddevontario.gc.ca,11,2016-09-23,1.1,im-it-gi-ti@feddevontario.gc.ca
-fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,5,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
+fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,12,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
 ffmc-ocped,Freshwater Fish Marketing Corporation | Office de commercialisation du poisson d'eau douce,ATIPcontrol@freshwaterfish.com,0,2016-09-23,3,
 fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,105,2016-09-23,1,
 fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,atip-aiprp@fintrac-canafe.gc.ca,26,2016-09-23,NA,
@@ -150,7 +150,7 @@ ovo-bov,Office of the Veterans Ombudsman | Bureau de l'ombudsman des vétérans,
 pacifican,Pacific Economic Development Canada | Développement économique Canada pour le Pacifique,pacifican.atip-aiprp@pacifican.gc.ca,3,2021-08-24,1.1,
 papa-appa,Port Alberni Port Authority | Administration portuaire de Port Alberni,molson@papa-appa.ca,0,2016-09-23,NA,
 pb,Port of Belledune | Port de Belledune,moffitt@portofbelledune.ca,0,2016-09-23,NA,
-pbc-clcc,Parole Board of Canada | Commission des libérations conditionnelles du Canada,ATIP-AIPRP@PBC-CLCC.GC.CA,18,2016-09-23,1.1,
+pbc-clcc,Parole Board of Canada | Commission des libérations conditionnelles du Canada,ATIP-AIPRP@PBC-CLCC.GC.CA,19,2016-09-23,1.1,
 pc,Parks Canada | Parcs Canada,pc.aiprp-atip.pc@canada.ca,574,2016-09-23,2,
 pch,Canadian Heritage | Patrimoine canadien,aiprp-atip@pch.gc.ca,126,2016-09-23,1,
 pco-bcp,Privy Council Office | Bureau du Conseil privé,ATIP-AIPRP@pco-bcp.gc.ca,5,2016-09-23,1.1,
