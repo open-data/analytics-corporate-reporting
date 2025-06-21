@@ -51,7 +51,7 @@ cmhr-mcdp,Canadian Museum for Human Rights | Musée canadien pour les droits de 
 cmip-mciq,Canadian Museum of Immigration at Pier 21 | Musée canadien de l'immigration du Quai 21,ablack@pier21.ca,5,2016-09-23,3,
 cmn-mcn,Canadian Museum of Nature | Musée canadien de la nature,kdoucette@nature.ca,0,2016-09-23,3,
 cnlopb,Canada-Newfoundland and Labrador Offshore Petroleum Board | Office Canada–Terre-Neuve-et Labrador des hydrocarbures extracôtiers,TBennett@cnlopb.nl.ca,0,2016-09-23,NA,
-cnsc-ccsn,Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,ATIP-AIPRP@cnsc-ccsn.gc.ca,72,2016-09-23,2,
+cnsc-ccsn,Canadian Nuclear Safety Commission | Commission canadienne de sûreté nucléaire,ATIP-AIPRP@cnsc-ccsn.gc.ca,73,2016-09-23,2,
 cnsopb,Canada-Nova Scotia Offshore Energy Regulator  | Régie Canada-Nouvelle-Écosse de l’énergie extracôtière ,atip@cnsoer.ca,0,2016-09-23,NA,
 cpata-cabamc,College of Patent Agents and Trademark Agents | Collège des agents de brevets et des agents de marques de commerce,adiaz@cpata-cabamc.ca,0,2023-09-16,NA,admin@cpata-cabamc.ca
 cpc-cpp,Civilian Review and Complaints Commission for the RCMP | Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,ATIP.AIPRP@crcc-ccetp.gc.ca,27,2016-09-23,1.1,
@@ -83,7 +83,7 @@ fbcl-spfl,Federal Bridge Corporation | Société des ponts fédéraux,info@feder
 fcac-acfc,Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,Nathalie.forester@fcac-acfc.gc.ca,31,2016-09-23,1.1,
 fcc-fac,Farm Credit Canada | Financement agricole Canada,ATIP_AIPRP@fcc-fac.ca,0,2016-09-23,3,
 feddevontario,Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,atip-aiprp@feddevontario.gc.ca,11,2016-09-23,1.1,im-it-gi-ti@feddevontario.gc.ca
-fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,14,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
+fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,15,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
 ffmc-ocped,Freshwater Fish Marketing Corporation | Office de commercialisation du poisson d'eau douce,ATIPcontrol@freshwaterfish.com,0,2016-09-23,3,
 fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,105,2016-09-23,1,
 fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,atip-aiprp@fintrac-canafe.gc.ca,26,2016-09-23,NA,
@@ -96,7 +96,7 @@ glpa-apgl,Great Lakes Pilotage Authority Canada | Administration de pilotage des
 glwb-ogte,Gwich’in Land and Water Board | Office Gwich’in des terres et des eaux,l.debastien@glwb.com,0,2018-08-21,NA,
 halpa-aphal,Halifax Port Authority | Administration portuaire de Halifax,ATIP-AIPRP@porthalifax.ca,0,2018-07-27,NA,ATIP-AIPRP@porthalifax.ca
 hampa-apham,Hamilton-Oshawa  Port Authority | Administration portuaire de Hamilton-Oshawa,atip@hopaports.ca,0,2018-07-27,NA,
-hc-sc,Health Canada | Santé Canada,hc.atip-aiprp.sc@canada.ca,2952,2016-09-23,1,
+hc-sc,Health Canada | Santé Canada,hc.atip-aiprp.sc@canada.ca,2954,2016-09-23,1,
 hgr-tgf,VIA HFR - VIA TGF Inc. | VIA HFR - VIA TGF Inc.,,0,2023-12-01,NA,
 hsmbc-clmhc,Historic Sites and Monuments Board of Canada | Commission des lieux et monuments historiques du Canada,pc.clmhc-hsmbc.pc@canada.ca,0,2018-08-21,NA,
 iaac-aeic,Impact Assessment Agency of Canada | Agence d'évaluation d'impact du Canada,atip-aiprp@iaac-aeic.gc.ca,94,2016-09-23,1.1,
@@ -156,7 +156,7 @@ pch,Canadian Heritage | Patrimoine canadien,aiprp-atip@pch.gc.ca,126,2016-09-23,
 pco-bcp,Privy Council Office | Bureau du Conseil privé,ATIP-AIPRP@pco-bcp.gc.ca,5,2016-09-23,1.1,
 pdp,Parc Downsview Park Inc. | Parc Downsview Park Inc,atip-aiprp@clc-sic.ca,0,2018-07-27,NA,
 petf-fpet,Pierre Elliott Trudeau Foundation | Fondation Pierre Elliott Trudeau,communications@FondationTrudeau.ca,0,2016-09-23,NA,
-phac-aspc,Public Health Agency of Canada | Agence de la santé publique du Canada,ATIP-AIPRP@HC-SC.GC.CA,757,2016-09-23,1.1,
+phac-aspc,Public Health Agency of Canada | Agence de la santé publique du Canada,ATIP-AIPRP@HC-SC.GC.CA,758,2016-09-23,1.1,
 pkcc-pcprc,President of the King’s Privy Council for Canada | Président du Conseil privé du Roi pour le Canada,ATIP-AIPRP@pco-bcp.gc.ca,0,2020-01-31,NA,
 pmo-cpm,Office of the Prime Minister | Cabinet du premier ministre,ATIP-AIPRP@pco-bcp.gc.ca,0,2019-07-30,NA,
 pmprb-cepmb,Patented Medicine Prices Review Board Canada | Conseil d'examen du prix des médicaments brevetés Canada,pmprb.atip-aiprb.cepmb@pmprb-cepmb.gc.ca,3,2016-09-23,1.1,Johanne.gamache@pmprb-cepmb.gc.ca
