@@ -156,9 +156,13 @@ class Corporate:
             columns={"Openness Rating | Cote d'ouverture": "Openness_Rating"})
         fiscal_openess_score.Openness_Rating = fiscal_openess_score.Openness_Rating.astype(
             int)
-        Non_geo = fiscal_openess_score.query(
+        Non_geo = df_fiscal.query('collection != "fgp" & collection !="geogratis"')        
+        Non_geo_rating =fiscal_openess_score.query('collection != "fgp" & collection !="geogratis"')
+        Non_geo_good = Non_geo_rating.query('Openness_Rating >=3')
+
+        """ Non_geo = fiscal_openess_score.query(
             'collection != "fgp" & collection !="geogratis"')
-        Non_geo_good = Non_geo.query('Openness_Rating >=3')
+        Non_geo_good = Non_geo.query('Openness_Rating >=3') """
         API_enable = fiscal_openess_score.query('any_datastore_active == True')
         eligible_API = Non_geo.query('collection != "federated"')
         data = self.get_fy_download()

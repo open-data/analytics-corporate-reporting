@@ -25,17 +25,16 @@ def filedow(reqURL):
 
 # Removes old files form TMP and downloads all csv the files fresh copy
 def csv_download(end):
+   
     # today = date.today()
     # last_day = today - timedelta(days=today.day)
     # last_day = last_day.strftime('%Y-%m-%d')
-    y, m, d = end.split("-") # last_day
-    if int(m) > 2:
-        last_month = str("%02d" %(int(m)-1))        
-    elif int(m) == 1:
-        last_month = str(12)
-        y= str(int(y) -1)       
-    else:
-        last_month = str("%02d" %(abs((int(m)-1)%12)))
+    end_date = datetime.strptime(end,"%Y-%m-%d")
+    last_month_end = end_date-timedelta(days=end_date.day)
+
+    y, m, d = last_month_end.strftime('%Y-%m-%d').split("-") # last_day
+ 
+    last_month = str("%02d" %int(m))
     resource_link = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/"
     urls = [resource_link + "02a92b0f-b26d-4fbd-9601-d27651703715/download/opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv",
             resource_link + "e06f06a9-d897-4a35-9b73-4c2bc1c2d5cf/download/opendataportal.siteanalytics.provincialusagebreakdown.bilingual"+last_month+y+".csv",

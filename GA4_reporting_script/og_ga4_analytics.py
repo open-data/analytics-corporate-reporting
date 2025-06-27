@@ -47,7 +47,7 @@ def write_csv(filename, rows, header=None):
 # Reads CSV file.
 def read_csv(filename):
     content = []
-    with open(filename, encoding='UTF-8') as f:
+    with open(filename, encoding='UTF-8-sig') as f:
         reader = csv.reader(f)
         firstrow = next(reader)
         # firstrow[0] = firstrow[0].lstrip(codecs.BOM_UTF8)
@@ -104,7 +104,7 @@ class DatasetDownload():
         self.og_type = og_type
         self.read_orgs()
         self.country = yaml.full_load(
-            open('country_region.yml', 'r', encoding='utf-8'))
+            open('country_region.yml', 'r', encoding='utf-8-sig'))
 
     def __delete__(self):
         if not self.file:
@@ -379,7 +379,7 @@ class DatasetDownload():
         try:
             with gzip.open(fname, 'rb') as fd:
                 for line in fd:
-                    records.append(json.loads(line.decode('utf-8')))
+                    records.append(json.loads(line.decode('utf-8-sig')))
                     if len(records) >= 500:
                         yield (records)
                         records = []
@@ -447,6 +447,7 @@ class DatasetDownload():
         # Checking if the report is up to date and updating otherwise
         [year, month, _] = self.end_date.split('-')
         data = read_csv(csv_file)
+        print("error lin", data[1][0])
         if int(data[1][0]) == int(year) and int(data[1][1]) == int(month):
             print('entry exists, no overwriting')
             return
@@ -600,7 +601,7 @@ class DatasetDownload():
         new_df.sort_values(by='visits_visites', axis=0,
                            ascending=False, inplace=True)
         new_df.to_csv("".join([".".join(csv_file.split(
-            ".")[0:-2]), ".bilingual", m, y, ".csv"]), encoding="utf-8", index=False)
+            ".")[0:-2]), ".bilingual", m, y, ".csv"]), encoding="utf-8-sig", index=False)
 
 # set catalogue file name
     def set_catalogue_file(self):
@@ -622,10 +623,10 @@ class DatasetDownload():
             link_fr = 'https://ouvert.canada.ca/data/fr/organization/' + name
             rows.append([title_en, title_fr, link_en, link_fr, count])
         rows.sort(key=lambda x: x[0])
-        df_old = pd.read_csv(csv_file, encoding='utf-8')
+        df_old = pd.read_csv(csv_file, encoding='utf-8-sig')
         write_csv(csv_file, rows, header)
         y, m, d = self.end_date.split("-")        
-        df_new = pd.read_csv(csv_file, encoding="utf-8")
+        df_new = pd.read_csv(csv_file, encoding="utf-8-sig")
         df_old.drop(['ministere', 'datasets', 'jeux_de_donnees'],
                     axis=1, inplace=True)
         df_ByOrgByMonth = df_new.merge(df_old, how="inner", on='department')
@@ -642,7 +643,7 @@ class DatasetDownload():
         df_ByOrgByMonth['month_mois'] = m
         df_ByOrgByMonth['year_annee'] = y
         df_ByOrgByMonth[['department_ministere', 'links_liens', 'month_mois', 'year_annee', 'datasets_jeux_de_donnees']].to_csv(os.path.join("GA_TMP_DIR", "".join(
-            ["opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual_new", m, y, ".csv"])), encoding='utf-8', index=False)
+            ["opendataportal.siteanalytics.datasetsbyorgbymonth.bilingual_new", m, y, ".csv"])), encoding='utf-8-sig', index=False)
 
 # Generates dataset released by organization by month for the last 12 month. Will get rid of if the above unpivoted format is approved.
     def by_org_month(self, csv_month_file, csv_file):
@@ -794,13 +795,12 @@ def main():
     down_files.csv_download(last_day)
     report("credentials.json", "359132180", first_day, last_day)
     onetime_concat.concat_hist(last_day)
-    down_files.archive_files(last_day)
+    #down_files.archive_files(last_day)
     #IMPORTANT!Make sure that resource_patch.resources_update() is disabled until you validate the stats 
     #resource_patch.resources_update()
     time_m = math.floor((time.time()-t0)/60)
     time_s = (time.time()-t0) - time_m*60
     print(f"All done in {time_m} min and {time_s:.2f} s")
-
 
 if __name__ == '__main__':
     main()
