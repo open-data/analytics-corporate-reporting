@@ -1,4 +1,7 @@
 year,month,jurisdiction,Open Maps Views
+2025,6,federal,12379
+2025,6,provincial,5888
+2025,6,municipal,51
 2025,5,federal,13256
 2025,5,provincial,6050
 2025,5,municipal,52
@@ -9,10 +12,10 @@ year,month,jurisdiction,Open Maps Views
 2025,3,provincial,5338
 2025,3,municipal,47
 2025,2,federal,15623
-2025,2,provincial,4890
+2025,2,provincial,4892
 2025,2,municipal,45
 2025,1,federal,16601
-2025,1,provincial,5429
+2025,1,provincial,5439
 2025,1,municipal,52
 2024,10,federal,16771
 2024,10,provincial,5247
