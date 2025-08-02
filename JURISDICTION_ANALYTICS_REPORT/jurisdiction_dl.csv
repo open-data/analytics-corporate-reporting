@@ -1,4 +1,7 @@
 year_annee,month_mois,jurisdiction,downloads_telechargements
+2025,7,federal,57151
+2025,7,provincial,9371
+2025,7,municipal,953
 2025,6,federal,51386
 2025,6,provincial,10758
 2025,6,municipal,966
@@ -32,6 +35,3 @@ year_annee,month_mois,jurisdiction,downloads_telechargements
 2024,8,federal,55592
 2024,8,provincial,2950
 2024,8,municipal,398
-2024,7,federal,54331
-2024,7,provincial,4302
-2024,7,municipal,416
