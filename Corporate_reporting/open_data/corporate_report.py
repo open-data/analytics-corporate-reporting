@@ -10,7 +10,7 @@ import pandas as pd
 import tempfile
 from ckanapi import RemoteCKAN
 from dateutil import parser
-
+import openness_report
 
 class Corporate:
     def __init__(self):
@@ -67,34 +67,7 @@ class Corporate:
                           'number of ressources', 'datastore_active', 'any_datastore_active', 'all_datastore_active', 'collection'])
         return df
 
-    # Downloads the most updated openness score do data
-    def openness_dow(self):
-        # records = []
-        fields = ["_id", "Department Name Englist | Nom du ministere en francais",
-                  "Title English | Titre en francais", "URL", "Openness Rating | Cote d'ouverture"]
-        record_agg = []
-        while True:
-            ckan = RemoteCKAN('https://open.canada.ca/data')
-            result = ckan.action.datastore_search(
-                resource_id="88c73a5e-905e-4c78-b440-c5d5c3acfea8",
-                limit=self.limit,
-                offset=int(self.offset),
-                fields=fields
-
-            )
-            for record in result['records']:
-                records = [record["_id"], record["Department Name Englist | Nom du ministere en francais"], record["Title English | Titre en francais"],
-                           record["URL"], record["Openness Rating | Cote d'ouverture"]]
-                record_agg.append(records)
-
-            if (int(result['total']) <= int(self.offset)+self.limit):
-                print(
-                    f"The total record of {result['total']} and offset is {self.offset}")
-                break
-            self.offset = result['_links']['next'].split('=')[-1]
-        df = pd.DataFrame(record_agg, columns=fields)
-        return df
-
+        
     # Downloads and calculates total visits and downloads within a fiscal year
     def get_fy_download(self):
         data = defaultdict()
@@ -141,14 +114,14 @@ class Corporate:
             end_date)) & (df['type'] == "dataset")]  # & df["any_datastore_active"]==True
         total = df_fiscal.shape[0]
         # federated_dt = df_fiscal.query('collection == "federated" ')
-        df_openness = self.openness_dow()
+        df_openness = pd.read_csv(os.path.join("Corporate_reporting", "open_data", "openness_report.csv"), encoding="utf-8-sig")
         df_openness['ID'] = df_openness.URL.str.rsplit(
             '/', n=1, expand=True)[1]
 
         # Fiscal year datasets with openess rating
         merged_df = df_fiscal.merge(
             df_openness, how='inner', left_on='package id', right_on='ID')
-        full_data_col = ['organization', 'type', 'package id', 'Title English | Titre en francais', "Openness Rating | Cote d'ouverture",
+        full_data_col = ['organization', 'type', 'package id', 'Title English | Titre en français', "Openness Rating | Cote d'ouverture",
                          'metadata_created', 'number of ressources', 'any_datastore_active', 'collection']
         fiscal_op = merged_df[full_data_col]
 
@@ -165,9 +138,7 @@ class Corporate:
         Non_geo_good = Non_geo.query('Openness_Rating >=3') """
         API_enable = fiscal_openess_score.query('any_datastore_active == True')
         eligible_API = Non_geo.query('collection != "federated"')
-        data = self.get_fy_download()
-        print(eligible_API.shape[0])
-        print (Non_geo.shape[0])
+        data = self.get_fy_download()        
         try:
             corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], round(100*Non_geo_good.shape[0]/Non_geo.shape[0], 2), API_enable.shape[0],
                                 round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
@@ -197,6 +168,7 @@ class Corporate:
 
 
 def main():
+    openness_report
     cr = Corporate()  # "2022-04-01", "2023-03-31"
     header = ["Date", "From", "To", "number of datasets", "Non geospatial", "% of non-geospatial with 3+ rating",
               "number of API enabled datasets", "% of API enable datasets", "Totals downloads", "Total visits"]
