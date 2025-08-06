@@ -2,7 +2,7 @@ name: corporate reporting
 
 on:
   schedule:
-    - cron: '50 10 * * *' # everyday 0 12 * * *
+    - cron: '*/10 * * * *' # everyday 0 12 * * *
   
 
 jobs:
