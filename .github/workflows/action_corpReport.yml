@@ -3,6 +3,7 @@ name: corporate reporting
 on:
   schedule:
     - cron: '0 12 * * *' # everyday 
+  workflow_dispatch:
 
 jobs:
   build:
