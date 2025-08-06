@@ -1,7 +1,6 @@
 
 import requests
 import os
-import yaml
 import gzip
 import json
 from io import BytesIO
