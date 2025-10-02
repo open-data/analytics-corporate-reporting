@@ -54,12 +54,13 @@ jurisdiction_mapviews = pd.merge(dfs['Open Maps Views'],
                              dfs['datasets metadata'][['id', 'jurisdiction']],
                              on='id',
                              how='left')
-
-jurisdiction_mapviews = jurisdiction_mapviews.groupby(['year', 'month', 'jurisdiction'])['pageviews'].sum().reset_index()
-
-jurisdiction_mapviews = jurisdiction_mapviews.sort_values(['year', 'month', 'pageviews'],ascending=[False, False, False])
-
 jurisdiction_mapviews = jurisdiction_mapviews.rename(columns={'pageviews': 'Open Maps Views'})
+jurisdiction_mapviews = jurisdiction_mapviews.groupby(['year', 'month', 'jurisdiction'])['Open Maps Views'].sum().reset_index()
+
+jurisdiction_mapviews = jurisdiction_mapviews.sort_values(['year', 'month', 'Open Maps Views'],
+                            ascending=[True, True, False])
+
+
 
 # Save DataFrames to individual CSV files without index
 jurisdiction_dl.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_dl.csv', index=False)
@@ -100,10 +101,55 @@ for jurisdiction in jurisdiction_data:
   mermaid_code += "[" + ", ".join(downloads_values[::-1]) + "]"
   
 
-mermaid_code
+# --- Add this after the downloads chart block ---
+# Prepare xychart for Visits by Jurisdiction
+mermaid_visits = """
+xychart-beta
+    title "Visits by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
+    x-axis """
+x_axis_labels_visits = []
+for year, month in jurisdiction_visits[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
+    x_axis_labels_visits.append(str(year) + '-' + str(month))
+mermaid_visits += "[" + ", ".join(x_axis_labels_visits[::-1]) + "]"
+mermaid_visits += """
+    y-axis "Visits" 0 --> """ + str(jurisdiction_visits['visits_visites'].max() + 10)
+for jurisdiction in jurisdiction_visits['jurisdiction'].unique():
+    jurisdiction_df = jurisdiction_visits[jurisdiction_visits['jurisdiction'] == jurisdiction]
+    visits_values = []
+    for year, month in jurisdiction_visits[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
+        visit_for_month = jurisdiction_df[(jurisdiction_df['year_annee'] == year) & (jurisdiction_df['month_mois'] == month)]['visits_visites'].sum()
+        visits_values.append(str(visit_for_month))
+    mermaid_visits += """
+    line [""" + ", ".join(visits_values[::-1]) + "]"
 
+# Prepare xychart for Open Maps Views by Jurisdiction
+mermaid_mapviews = """
+xychart-beta
+    title "Open Maps Views by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
+    x-axis """
+x_axis_labels_mapviews = []
+for year, month in jurisdiction_mapviews[['year', 'month']].drop_duplicates().sort_values(['year', 'month'], ascending=[False, False]).values.tolist()[:12]:
+    x_axis_labels_mapviews.append(str(year) + '-' + str(month))
+mermaid_mapviews += "[" + ", ".join(x_axis_labels_mapviews[::-1]) + "]"
+mermaid_mapviews += """
+    y-axis "Open Maps Views" 0 --> """ + str(jurisdiction_mapviews['Open Maps Views'].max() + 10)
+for jurisdiction in jurisdiction_mapviews['jurisdiction'].unique():
+    jurisdiction_df = jurisdiction_mapviews[jurisdiction_mapviews['jurisdiction'] == jurisdiction]
+    mapviews_values = []
+    for year, month in jurisdiction_mapviews[['year', 'month']].drop_duplicates().sort_values(['year', 'month'], ascending=[False, False]).values.tolist()[:12]:
+        mapview_for_month = jurisdiction_df[(jurisdiction_df['year'] == year) & (jurisdiction_df['month'] == month)]['Open Maps Views'].sum()
+        mapviews_values.append(str(mapview_for_month))
+    mermaid_mapviews += """
+    line [""" + ", ".join(mapviews_values[::-1]) + "]"
+
+# Write all three charts to README
 with open('JURISDICTION_ANALYTICS_REPORT/readme.md', 'w') as f:
-  f.write('\n## Downloads by Jurisdiction last 12 months\n\n')
-  f.write('```mermaid\n')
-  f.write(mermaid_code)
-  f.write('\n```\n')
+    f.write('\n## Downloads by Jurisdiction last 12 months\n\n```mermaid\n')
+    f.write(mermaid_code)
+    f.write('\n```\n')
+    f.write('\n## Visits by Jurisdiction last 12 months\n\n```mermaid\n')
+    f.write(mermaid_visits)
+    f.write('\n```\n')
+    f.write('\n## Open Maps Views by Jurisdiction last 12 months\n\n```mermaid\n')
+    f.write(mermaid_mapviews)
+    f.write('\n```\n')
