@@ -142,8 +142,10 @@ for jurisdiction in jurisdiction_mapviews['jurisdiction'].unique():
     mermaid_mapviews += """
     line [""" + ", ".join(mapviews_values[::-1]) + "]"
 
+with open('JURISDICTION_ANALYTICS_REPORT/static.md', 'r', encoding='utf-8') as source_file: content = source_file.read()
 # Write all three charts to README
 with open('JURISDICTION_ANALYTICS_REPORT/readme.md', 'w') as f:
+    f.write(content)
     f.write('\n## Downloads by Jurisdiction last 12 months\n\n```mermaid\n')
     f.write(mermaid_code)
     f.write('\n```\n')
