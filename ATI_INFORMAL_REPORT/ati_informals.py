@@ -104,4 +104,3 @@ with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
   f.write(orgtot_table + '\n\n')
   f.write('## Top 25 Most Requested\n\n')
   f.write(idtot_table + '\n\n')     
-
