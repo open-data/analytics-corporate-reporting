@@ -5,153 +5,102 @@ from ckanapi import RemoteCKAN
 ckan = RemoteCKAN('https://open.canada.ca/data')
 
 # Resource ID from the provided URL
-datasets_meta = '312a65c5-d0bc-4445-8a24-95b2690cc62b'
-dls = '4ebc050f-6c3c-4dfd-817e-875b2caf3ec6'
-visits = 'c14ba36b-0af5-4c59-a5fd-26ca6a1ef6db'
-maps_views = '15eeafa2-c331-44e7-b37f-d0d54a51d2eb'
+resource_id = 'e664cf3d-6cb7-4aaa-adfa-e459c2552e3e'
+
+# Get the resource information
+resource = ckan.action.resource_show(id=resource_id)
+
+# Download the resource data
+# Assuming the resource is a CSV file
+url = resource['url']
+df = pd.read_csv(url)
+
+#  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by Year and Month column, sorted by year and month desc
+
+yrmonth_df = df.groupby(['Year', 'Month'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
+yrmonth_df = yrmonth_df.sort_values(['Year', 'Month'], ascending=[False, False])
+yrmonth_df = yrmonth_df.rename(columns={'Unique Identifier': 'Unique Packages'})
+
+#  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by Year and Month and organization, sorted by year and month desc
+org_df = df.groupby(['Year', 'Month','Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
+org_df = org_df.sort_values(['Year', 'Month'], ascending=[False, False])
+org_df = org_df.rename(columns={'Unique Identifier': 'Unique Packages'})
+org_df['owner_org'] = 'https://open.canada.ca/data/organization/' + org_df['owner_org'].astype(str)
+
+#  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by organization, sorted by Number of Informal Requests desc
+orgtot_df = df.groupby(['Organization Name - EN','Organization Name - FR','owner_org'], as_index=False).agg({'Number of Informal Requests': 'sum', 'Unique Identifier': 'nunique'})
+orgtot_df = orgtot_df.sort_values(['Number of Informal Requests'], ascending=[False])
+orgtot_df = orgtot_df.rename(columns={'Unique Identifier': 'Unique Packages'})
+orgtot_df['owner_org'] = 'https://open.canada.ca/data/organization/' + orgtot_df['owner_org'].astype(str)
 
 
-resource_ids = [datasets_meta, dls, visits, maps_views]
-dfs = {}
+#  from the df create a new df that gets the top 100 most requested Informal Requests,
+idtot_df = df.groupby(['Unique Identifier', 'Request Number', 'Summary - EN','Summary - FR', 'owner_org', 'Organization Name - EN','Organization Name - FR'], as_index=False).agg({'Number of Informal Requests': 'sum'})
+idtot_df = idtot_df.sort_values(['Number of Informal Requests'], ascending=[False])
+idtot_df.head(100)
+idtot_md=idtot_df[['Unique Identifier', 'Request Number','owner_org', 'Organization Name - EN','Organization Name - FR','Number of Informal Requests']]
+idtot_md['Unique Identifier'] = '['+ idtot_df['Unique Identifier'] +']' + '('+'https://open.canada.ca/en/search/ati/reference/' + idtot_df['Unique Identifier'].astype(str) + ')'
+idtot_md['owner_org'] = '['+ idtot_df['owner_org'] +']' + '('+'https://open.canada.ca/data/organization/' + idtot_df['owner_org'].astype(str) + ')'
 
-for resource_id in resource_ids:
-  try:
-    resource = ckan.action.resource_show(id=resource_id)
-    url = resource['url']
-    df_name = resource['name']  # Use the resource name as the key for the dataframe
-    dfs[df_name] = pd.read_csv(url)
-    print(f"Successfully loaded {df_name} into a dataframe.")
-  except Exception as e:
-    print(f"Error loading resource {resource_id}: {e}")
+# in a new df get the sum of Number of Informal Requests for each unique idenifier, grouped by year and month and return the top 10 for each year and month from the dataframe called df
 
-# Now you have a dictionary 'dfs' containing the dataframes with resource names as keys
-# e.g., dfs['Datasets Metadata'] will contain the dataframe for Datasets Metadata
+top_10_df = df.groupby(['Year', 'Month', 'Unique Identifier','Request Number', 'Summary - EN','Summary - FR','owner_org', 'Organization Name - EN',
+       'Organization Name - FR'])['Number of Informal Requests'].sum().reset_index()
+top_10_df = top_10_df.groupby(['Year', 'Month']).apply(lambda x: x.nlargest(10, 'Number of Informal Requests')).reset_index(drop=True)
+top_10_df = top_10_df.sort_values(['Year', 'Month'], ascending=[False, False])
 
-#create a df 'jurisdiction_dl' that joins the jurisdiction column from dfs['datasets metadata'] on to dfs['Downloads per organization, last 12 months'] based on id, the aggregates the sum of the downloads_telechargements column by year_annee,month_mois,jurisdiction
-# then sort by year_annee,month_mois,downloads_telechargements desc
-
-jurisdiction_dl = pd.merge(dfs['Downloads per organization, last 12 months'],
-                             dfs['datasets metadata'][['id', 'jurisdiction']],
-                             on='id',
-                             how='left')
-
-jurisdiction_dl = jurisdiction_dl.groupby(['year_annee', 'month_mois', 'jurisdiction'])['downloads_telechargements'].sum().reset_index()
-
-jurisdiction_dl = jurisdiction_dl.sort_values(['year_annee', 'month_mois', 'downloads_telechargements'],
-                                           ascending=[False, False, False])
-
-jurisdiction_visits = pd.merge(dfs['dataset visits per department, last 12 months'],
-                             dfs['datasets metadata'][['id', 'jurisdiction']],
-                             on='id',
-                             how='left')
-
-jurisdiction_visits = jurisdiction_visits.groupby(['year_annee', 'month_mois', 'jurisdiction'])['visits_visites'].sum().reset_index()
-
-jurisdiction_visits = jurisdiction_visits.sort_values(['year_annee', 'month_mois', 'visits_visites'],
-                                           ascending=[False, False, False])
-
-jurisdiction_mapviews = pd.merge(dfs['Open Maps Views'],
-                             dfs['datasets metadata'][['id', 'jurisdiction']],
-                             on='id',
-                             how='left')
-jurisdiction_mapviews = jurisdiction_mapviews.rename(columns={'pageviews': 'Open Maps Views'})
-jurisdiction_mapviews = jurisdiction_mapviews.groupby(['year', 'month', 'jurisdiction'])['Open Maps Views'].sum().reset_index()
-
-jurisdiction_mapviews = jurisdiction_mapviews.sort_values(['year', 'month', 'Open Maps Views'],
-                            ascending=[True, True, False])
+# write top_10_df, org_df, idtot_df, yrmonth_df, and orgtot_df to csv files 
 
 
+top_10_df.to_csv('ATI_INFORMAL_REPORT/top_10_df.csv', index=False)
+org_df.to_csv('ATI_INFORMAL_REPORT/org_df.csv', index=False)
+idtot_df.head(100).to_csv('ATI_INFORMAL_REPORT/idtot_df.csv', index=False)
+yrmonth_df.to_csv('ATI_INFORMAL_REPORT/yrmonth_df.csv', index=False)
+orgtot_df.to_csv('ATI_INFORMAL_REPORT/orgtot_df.csv', index=False)
 
-# Save DataFrames to individual CSV files without index
-jurisdiction_dl.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_dl.csv', index=False)
-jurisdiction_visits.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_visits.csv', index=False)
-jurisdiction_mapviews.to_csv('JURISDICTION_ANALYTICS_REPORT/jurisdiction_mapviews.csv', index=False)
+# Generate Markdown table from DataFrame
+yrmonth_table = yrmonth_df.head(24).to_markdown(index=False)
+orgtot_table = orgtot_df.head(25).to_markdown(index=False)
+idtot_table = idtot_md.head(25).to_markdown(index=False)
 
-# Create a dictionary to store data for each jurisdiction
-jurisdiction_data = {}
-for jurisdiction in jurisdiction_dl['jurisdiction'].unique():
-    jurisdiction_df = jurisdiction_dl[jurisdiction_dl['jurisdiction'] == jurisdiction]
-    jurisdiction_data[jurisdiction] = jurisdiction_df
+ #generate a mermaid.js xychart for yrmonth_df.head(24)
 
-# Create the Mermaid code
 mermaid_code = """
 xychart-beta
-    title "Downloads by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
+    title "Monthly 🟩Num. Informal Requests and 🟦Num. Unique Packages Requested - Last 12 Months"
     x-axis """
 
 x_axis_labels = []
-# Assuming your data has 'year_annee' and 'month_mois' columns
-for year, month in jurisdiction_dl[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
-  x_axis_labels.append(str(year) + '-' + str(month))
+for index, row in yrmonth_df.head(12).iterrows():
+  x_axis_labels.append(str(row['Year']) + '-' + str(row['Month']))
 
 mermaid_code += "[" + ", ".join(x_axis_labels[::-1]) + "]"
+mermaid_code += """
+    y-axis "Unique Packages" 0 --> """ + str(yrmonth_df['Unique Packages'].max() + 10) + """
+    y-axis "Number of Informal Requests" 0 --> """ + str(yrmonth_df['Number of Informal Requests'].max() + 10) + """
+
+    line """
+
+unique_packages_values = yrmonth_df['Unique Packages'].head(12).tolist()[::-1]
+mermaid_code += "[" + ", ".join(map(str, unique_packages_values)) + "]"
 
 mermaid_code += """
-    y-axis "Downloads" 0 --> """ + str(jurisdiction_dl['downloads_telechargements'].max() + 10)
-
-for jurisdiction in jurisdiction_data:
-  jurisdiction_df = jurisdiction_data[jurisdiction]
-  downloads_values = []
-  for year, month in jurisdiction_dl[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
-      download_for_month = jurisdiction_df[(jurisdiction_df['year_annee'] == year) & (jurisdiction_df['month_mois'] == month)]['downloads_telechargements'].sum()
-      downloads_values.append(str(download_for_month))
-      
-  mermaid_code += """
     line """
-  mermaid_code += "[" + ", ".join(downloads_values[::-1]) + "]"
-  
 
-# --- Add this after the downloads chart block ---
-# Prepare xychart for Visits by Jurisdiction
-mermaid_visits = """
-xychart-beta
-    title "Visits by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
-    x-axis """
-x_axis_labels_visits = []
-for year, month in jurisdiction_visits[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
-    x_axis_labels_visits.append(str(year) + '-' + str(month))
-mermaid_visits += "[" + ", ".join(x_axis_labels_visits[::-1]) + "]"
-mermaid_visits += """
-    y-axis "Visits" 0 --> """ + str(jurisdiction_visits['visits_visites'].max() + 10)
-for jurisdiction in jurisdiction_visits['jurisdiction'].unique():
-    jurisdiction_df = jurisdiction_visits[jurisdiction_visits['jurisdiction'] == jurisdiction]
-    visits_values = []
-    for year, month in jurisdiction_visits[['year_annee', 'month_mois']].drop_duplicates().sort_values(['year_annee', 'month_mois'], ascending=[False, False]).values.tolist()[-12:]:
-        visit_for_month = jurisdiction_df[(jurisdiction_df['year_annee'] == year) & (jurisdiction_df['month_mois'] == month)]['visits_visites'].sum()
-        visits_values.append(str(visit_for_month))
-    mermaid_visits += """
-    line [""" + ", ".join(visits_values[::-1]) + "]"
+informal_requests_values = yrmonth_df['Number of Informal Requests'].head(12).tolist()[::-1]
+mermaid_code += "[" + ", ".join(map(str, informal_requests_values)) + "]"
 
-# Prepare xychart for Open Maps Views by Jurisdiction
-mermaid_mapviews = """
-xychart-beta
-    title "Open Maps Views by Jurisdiction 🟦Fed 🟩Prov 🟥Muni"
-    x-axis """
-x_axis_labels_mapviews = []
-for year, month in jurisdiction_mapviews[['year', 'month']].drop_duplicates().sort_values(['year', 'month'], ascending=[False, False]).values.tolist()[:12]:
-    x_axis_labels_mapviews.append(str(year) + '-' + str(month))
-mermaid_mapviews += "[" + ", ".join(x_axis_labels_mapviews[::-1]) + "]"
-mermaid_mapviews += """
-    y-axis "Open Maps Views" 0 --> """ + str(jurisdiction_mapviews['Open Maps Views'].max() + 10)
-for jurisdiction in jurisdiction_mapviews['jurisdiction'].unique():
-    jurisdiction_df = jurisdiction_mapviews[jurisdiction_mapviews['jurisdiction'] == jurisdiction]
-    mapviews_values = []
-    for year, month in jurisdiction_mapviews[['year', 'month']].drop_duplicates().sort_values(['year', 'month'], ascending=[False, False]).values.tolist()[:12]:
-        mapview_for_month = jurisdiction_df[(jurisdiction_df['year'] == year) & (jurisdiction_df['month'] == month)]['Open Maps Views'].sum()
-        mapviews_values.append(str(mapview_for_month))
-    mermaid_mapviews += """
-    line [""" + ", ".join(mapviews_values[::-1]) + "]"
+with open('ATI_INFORMAL_REPORT/static.md', 'r', encoding='utf-8') as source_file: content = source_file.read()
 
-with open('JURISDICTION_ANALYTICS_REPORT/static.md', 'r', encoding='utf-8') as source_file: content = source_file.read()
-# Write all three charts to README
-with open('JURISDICTION_ANALYTICS_REPORT/readme.md', 'w') as f:
-    f.write(content)
-    f.write('\n## Downloads by Jurisdiction last 12 months\n\n```mermaid\n')
-    f.write(mermaid_code)
-    f.write('\n```\n')
-    f.write('\n## Visits by Jurisdiction last 12 months\n\n```mermaid\n')
-    f.write(mermaid_visits)
-    f.write('\n```\n')
-    f.write('\n## Open Maps Views by Jurisdiction last 12 months\n\n```mermaid\n')
-    f.write(mermaid_mapviews)
-    f.write('\n```\n')
+with open('ATI_INFORMAL_REPORT/readme.md', 'w') as f:
+  f.write(content)     
+  f.write('\n## Requests and Unique Package Requests last 12 months\n\n')
+  f.write('```mermaid\n')
+  f.write(mermaid_code)
+  f.write('\n```\n')
+  f.write('## Number of Requests and Unique Package Requests last 24 Months\n\n')
+  f.write(yrmonth_table + '\n\n')
+  f.write('## Total Informal Requests Top 25 Organizations \n\n')
+  f.write(orgtot_table + '\n\n')
+  f.write('## Top 25 Most Requested\n\n')
+  f.write(idtot_table + '\n\n')     
