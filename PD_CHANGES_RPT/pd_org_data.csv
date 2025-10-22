@@ -1,7 +1,7 @@
 owner_org,title,ati_email,packages,created,faa_schedule,opengov_email
 aafc-aac,Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canada,ATIP-AIPRP@agr.gc.ca,387,2016-09-23,1,
 aandc-aadnc,Crown-Indigenous Relations and Northern Affairs Canada | Relations Couronne-Autochtones et Affaires du Nord Canada,aadnc.atiprequest-aiprpdemande.aandc@canada.ca,46,2016-09-23,1,
-acoa-apeca,Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,atip-aiprp@acoa-apeca.gc.ca,42,2016-09-23,1.1,
+acoa-apeca,Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,atip-aiprp@acoa-apeca.gc.ca,43,2016-09-23,1.1,
 aecl-eacl,"Atomic Energy of Canada Limited | Énergie atomique du Canada, Limitée",igaudreault@aecl.ca,0,2016-09-23,3,igaudreault@aecl.ca
 apa,Atlantic Pilotage Authority Canada | Administration de pilotage de l'Atlantique Canada,bbradley@atlanticpilotage.com,5,2016-09-23,3,
 apfc-fapc,Asia-Pacific Foundation of Canada | Fondation Asie Pacifique du Canada,atip.coordinator@asiapacific.ca,0,2016-09-23,NA,
@@ -71,7 +71,7 @@ cwa-aec,Canada Water Agency | Agence de l’eau du Canada,atip-aiprp@cwa-aec.gc.
 dcc-cdc,Defence Construction Canada | Construction de Défense Canada,ATIP-AIPRP@DCC-CDC.gc.ca,3,2016-09-23,NA,
 dfatd-maecd,Global Affairs Canada | Affaires mondiales Canada,dcp@international.gc.ca,1529,2016-09-23,1,
 dfi-ifd,Development Finance Institution - FinDev Canada | Institution de financement du développement - FinDev Canada,atipteam@edc.ca,2,2023-06-13,NA,
-dfo-mpo,Fisheries and Oceans Canada | Pêches et Océans Canada,atip-laiprp@dfo-mpo.gc.ca,814,2016-09-23,1,
+dfo-mpo,Fisheries and Oceans Canada | Pêches et Océans Canada,atip-laiprp@dfo-mpo.gc.ca,820,2016-09-23,1,
 dnd-mdn,National Defence | Défense nationale,ATIP-AIPRP@forces.gc.ca,161,2016-09-23,1,
 downsview,Downsview Metro Devco Inc. | Gestion Downsview Métro Devco,atip@northcrestdev.ca,0,2025-06-25,NA,
 ec,Environment and Climate Change Canada | Environnement et Changement climatique Canada,ecatip-ecaiprp@ec.gc.ca,1113,2016-09-23,NA,
@@ -97,7 +97,7 @@ glpa-apgl,Great Lakes Pilotage Authority Canada | Administration de pilotage des
 glwb-ogte,Gwich’in Land and Water Board | Office Gwich’in des terres et des eaux,l.debastien@glwb.com,0,2018-08-21,NA,
 halpa-aphal,Halifax Port Authority | Administration portuaire de Halifax,ATIP-AIPRP@porthalifax.ca,0,2018-07-27,NA,ATIP-AIPRP@porthalifax.ca
 hampa-apham,Hamilton-Oshawa  Port Authority | Administration portuaire de Hamilton-Oshawa,atip@hopaports.ca,0,2018-07-27,NA,
-hc-sc,Health Canada | Santé Canada,hc.atip-aiprp.sc@canada.ca,2962,2016-09-23,1,
+hc-sc,Health Canada | Santé Canada,hc.atip-aiprp.sc@canada.ca,2963,2016-09-23,1,
 hgr-tgf,VIA HFR - VIA TGF Inc. | VIA HFR - VIA TGF Inc.,atip-aiprp@hfr-tgf.ca,0,2023-12-01,NA,
 hsmbc-clmhc,Historic Sites and Monuments Board of Canada | Commission des lieux et monuments historiques du Canada,pc.clmhc-hsmbc.pc@canada.ca,0,2018-08-21,NA,
 iaac-aeic,Impact Assessment Agency of Canada | Agence d'évaluation d'impact du Canada,atip-aiprp@iaac-aeic.gc.ca,109,2016-09-23,1.1,
@@ -191,11 +191,11 @@ sopf-cidp,Office of the Administrator of the Ship-source Oil Pollution Fund; (op
 spa-aps,Saguenay Port Authority | Administration portuaire du Saguenay,apoudrier@portsaguenay.ca,0,2016-09-23,NA,
 ssc-spc,Shared Services Canada | Services partagés Canada,ATIP-AIPRP@ssc-spc.gc.ca,112,2016-09-23,1.1,
 sshrc-crsh,Social Sciences and Humanities Research Council of Canada | Conseil de recherches en sciences humaines du Canada,ATIP-AIPRP@sshrc-crsh.gc.ca,9,2016-09-23,2,
-statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9987,2016-09-23,1.1,
+statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,9992,2016-09-23,1.1,
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
-tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,291,2016-09-23,NA,
+tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,292,2016-09-23,NA,
 tc,Transport Canada | Transports Canada,ATIP/AIPRP@tc.gc.ca,58,2016-09-23,1,
 tf,Telefilm Canada | Téléfilm Canada,ATIP-AIPRP@telefilm.ca,4,2016-09-23,NA,
 tmc,Trans Mountain Corporation | Trans Mountain Corporation,atip-aiprp@cdev.gc.ca,0,2019-05-11,NA,
