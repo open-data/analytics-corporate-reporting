@@ -36,7 +36,7 @@ cgfimi-gafcc,Canada Growth Fund Investment Management Inc. | Gestion d’actifs 
 chhc-sgch,Canada Hibernia Holding Corporation | Société de gestion Canada Hibernia,atip-aiprp@cdev.ca,0,2018-07-27,NA,
 chrc-ccdp,Canadian Human Rights Commission | Commission canadienne des droits de la personne,atip.aiprp@chrc-ccdp.gc.ca,7,2016-09-23,1.1,
 cib-bic,Canada Infrastructure Bank | La Banque de l’infrastructure du Canada,atip-aiprp@cib-bic.ca,2,2018-04-24,3,
-cic,"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",ATIP-AIPRP@cic.gc.ca,61,2016-09-23,1,IRCC.Open-Ouvert.IRCC@cic.gc.ca
+cic,"Immigration, Refugees and Citizenship Canada | Immigration, Réfugiés et Citoyenneté Canada",ATIP-AIPRP@cic.gc.ca,62,2016-09-23,1,IRCC.Open-Ouvert.IRCC@cic.gc.ca
 cicc-ccic,College of Immigration and Citizenship Consultants | Collège des Consultants en Immigration et en Citoyenneté,atip-aiprp@college-ic.ca,0,2023-03-28,NA,
 ciccdev,Canada Innovation Corporation | La Corporation d’innovation du Canada,atip-aiprp@cdev.gc.ca,0,2024-08-17,3,
 cics-scic,Canadian Intergovernmental Conference Secretariat | Secrétariat des conférences intergouvernementales canadiennes,,1,2016-09-23,NA,
@@ -60,7 +60,7 @@ cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.
 crrf-fcrr,Canadian Race Relations Foundation | La Fondation Canadienne des relations raciales,atavassoli@crrf-fcrr.ca,0,2018-04-24,NA,
 crtc,Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,AIPRP-ATIP@crtc.gc.ca,75,2016-09-23,1.1,
 csa-asc,Canadian Space Agency | Agence spatiale canadienne,AIPRP-ATIP@asc-csa.gc.ca,133,2016-09-23,1.1,
-csc-scc,Correctional Service of Canada | Service correctionnel du Canada,CSC.ATIP-AIPRP.SCC@csc-scc.gc.ca,220,2016-09-23,1.1,
+csc-scc,Correctional Service of Canada | Service correctionnel du Canada,CSC.ATIP-AIPRP.SCC@csc-scc.gc.ca,231,2016-09-23,1.1,
 csec-cstc,Communications Security Establishment Canada | Centre de la sécurité des télécommunications Canada,atip-aiprp@cse-cst.gc.ca,278,2016-09-23,NA,
 csis-scrs,Canadian Security Intelligence Service | Service canadien du renseignement de sécurité,ATIP-AIPRP@smtp.gc.ca,19,2016-09-23,1.1,
 csps-efpc,Canada School of Public Service | École de la fonction publique du Canada,atipaiprp@csps-efpc.gc.ca,9,2016-09-23,2,
@@ -84,7 +84,7 @@ fbcl-spfl,Federal Bridge Corporation | Société des ponts fédéraux,info@feder
 fcac-acfc,Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,Nathalie.forester@fcac-acfc.gc.ca,33,2016-09-23,1.1,
 fcc-fac,Farm Credit Canada | Financement agricole Canada,ATIP_AIPRP@fcc-fac.ca,0,2016-09-23,3,
 feddevontario,Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,atip-aiprp@feddevontario.gc.ca,13,2016-09-23,1.1,im-it-gi-ti@feddevontario.gc.ca
-fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,21,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
+fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,22,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
 ffmc-ocped,Freshwater Fish Marketing Corporation | Office de commercialisation du poisson d'eau douce,ATIPcontrol@freshwaterfish.com,0,2016-09-23,3,
 fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,105,2016-09-23,1,
 fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,atip-aiprp@fintrac-canafe.gc.ca,26,2016-09-23,NA,
@@ -205,7 +205,7 @@ tsb-bst,Transportation Safety Board of Canada | Bureau de la sécurité des tran
 vac-acc,Veterans Affairs Canada | Anciens Combattants Canada,atip-aiprp@veterans.gc.ca,138,2016-09-23,1,
 vfpa-apvf,Vancouver Fraser Port Authority | Administration portuaire Vancouver Fraser,AccesstoInformation@portmetrovancouver.com,1,2016-09-23,NA,
 viarail,VIA Rail Canada Inc. | VIA Rail Canada Inc.,ATIP@viarail.ca,0,2016-09-23,3,
-vrab-tacra,Veterans Review and Appeal Board | Tribunal des anciens combattants (révision et appel),atip-aiprp@vrab-tacra.gc.ca,16,2016-09-23,1.1,
+vrab-tacra,Veterans Review and Appeal Board | Tribunal des anciens combattants (révision et appel),atip-aiprp@vrab-tacra.gc.ca,19,2016-09-23,1.1,
 wage,Women and Gender Equality Canada | Femmes et Égalité des genres Canada,FEGC.AIPRP-ATIP.WAGE@fegc-wage.gc.ca,24,2019-03-30,1,
 wd-deo,Western Economic Diversification Canada | Diversification de l'économie de l'Ouest Canada,atip-aiprp@prairiescan.gc.ca,18,2016-09-23,1,
 wdba-apwd,Windsor-Detroit Bridge Authority | Autorité du pont Windsor-Détroit,Heather.Grondin@wdbridge.com,2,2016-09-23,3,
