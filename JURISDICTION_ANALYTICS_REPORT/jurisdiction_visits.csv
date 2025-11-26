@@ -12,13 +12,13 @@ year_annee,month_mois,jurisdiction,visits_visites
 2025,7,federal,205060
 2025,7,provincial,62909
 2025,7,municipal,5298
-2025,6,federal,189616
+2025,6,federal,189614
 2025,6,provincial,62811
 2025,6,municipal,4797
 2025,5,federal,193521
 2025,5,provincial,63733
 2025,5,municipal,5126
-2025,4,federal,272192
+2025,4,federal,272191
 2025,4,provincial,81864
 2025,4,municipal,7800
 2025,3,federal,253208
@@ -27,7 +27,7 @@ year_annee,month_mois,jurisdiction,visits_visites
 2025,2,federal,223567
 2025,2,provincial,64172
 2025,2,municipal,6298
-2025,1,federal,241292
+2025,1,federal,241291
 2025,1,provincial,69106
 2025,1,municipal,6012
 2024,12,federal,184995
