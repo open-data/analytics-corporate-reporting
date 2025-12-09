@@ -2,7 +2,7 @@ name: Run open Portal Analytics tracked by Adobe Analytics
 
 on:
   schedule:
-    - cron: '0 7 * * *'  # everyday
+    - cron: '0 15 * * *'  # everyday
   workflow_dispatch:
 env:
   org_id: ${{secrets.ORG_ID}}
