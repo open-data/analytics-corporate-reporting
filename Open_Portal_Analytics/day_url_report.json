@@ -1,0 +1,67 @@
+{
+    "rsid": "canadalivemain",
+    "globalFilters": [
+        {
+            "type": "segment",
+            "segmentId": "s300000938_63f659c78a70b16c58c6adee"
+        },
+        {
+            "type": "dateRange",
+            "dateRange": "2025-11-01T00:00:00.000/2025-12-01T00:00:00.000",
+            "dateRangeId": "thisMonth"
+        }
+    ],
+    "metricContainer": {
+        "metrics": [
+            {
+                "columnId": "0",
+                "id": "metrics/visits",
+                "filters": [
+                    "0"
+                ]
+            }
+        ],
+        "metricFilters": [
+            {
+                "id": "0",
+                "type": "breakdown",
+                "dimension": "variables/daterangeday",
+                "itemId": "1251001"
+            }
+        ]
+    },
+    "dimension": "variables/evar12",
+    "settings": {
+        "countRepeatInstances": true,
+        "includeAnnotations": true,
+        "limit": 5,
+        "page": 0,
+        "nonesBehavior": "return-nones"
+    },
+    "statistics": {
+        "functions": [
+            "col-max",
+            "col-min"
+        ]
+    },
+    "capacityMetadata": {
+        "associations": [
+            {
+                "name": "applicationName",
+                "value": "Analysis Workspace UI"
+            },
+            {
+                "name": "projectId",
+                "value": "undefined"
+            },
+            {
+                "name": "projectName",
+                "value": "New project"
+            },
+            {
+                "name": "panelName",
+                "value": "Freeform table"
+            }
+        ]
+    }
+}
