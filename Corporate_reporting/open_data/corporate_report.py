@@ -12,6 +12,7 @@ from ckanapi import RemoteCKAN
 from dateutil import parser
 import openness_report
 
+
 class Corporate:
     def __init__(self):
         self.offset = "0"
@@ -43,7 +44,8 @@ class Corporate:
             traceback.print_exc()
             print('error reading downloaded file')
             sys.exit(0)
-     # Dataset generation
+
+    # Open Data and Info generation
 
     def datasets_generation(self):
         report = []
@@ -67,8 +69,8 @@ class Corporate:
                           'number of ressources', 'datastore_active', 'any_datastore_active', 'all_datastore_active', 'collection'])
         return df
 
-        
     # Downloads and calculates total visits and downloads within a fiscal year
+
     def get_fy_download(self):
         data = defaultdict()
         today = date.today()
@@ -76,18 +78,15 @@ class Corporate:
             url = "https://open.canada.ca/data/dataset/2916fad5-ebcc-4c86-b0f3-4f619b29f412/resource/02a92b0f-b26d-4fbd-9601-d27651703715/download/opendataportal.siteanalytics.totalmonthlyusage.bilingual.csv"
             r = requests.get(url, stream=True).content
             df_dow = pd.read_csv(io.StringIO(r.decode("UTF-8")))
-            #year_annee	month_mois	visits_visites	downloads_telechargements
-            # df_dow.rename(columns={'year / année': "year", 'month / mois': "month", 'visits / visites': "visits",
-            #                        'downloads / téléchargements': "downloads"}, inplace=True)
             if today.month < 4:
                 start_year = today.year - 1
             else:
                 start_year = today.year
-          # start_year = int(fiscal_year.split("-")[0])
             down_list = df_dow.query(
                 f'(year_annee == {start_year} & month_mois > 3) | (year_annee == {start_year + 1} & month_mois < 4)')
             data["visits_visites"] = sum(down_list['visits_visites'])
-            data["downloads_telechargements"] = sum(down_list['downloads_telechargements'])
+            data["downloads_telechargements"] = sum(
+                down_list['downloads_telechargements'])
             return data
 
         except Exception as e:
@@ -95,26 +94,27 @@ class Corporate:
 
     # Processes the full data and info to extract datasets created within a specific fiscal year.
     # It also generates Non geospatial dataset, Non geospatial and no federated dataset, datasets with at least one resource API enabled,
-    def corporate_report(self, csv_file):
+    def corporate_report(self):
         corporate_metrics = []
         today = date.today()
         if today.month > 3:
-            # fiscal_year = str(today.year) + '-'+str(today.year + 1)[-2:]
             start_date = parser.parse(str(today.year) + "-04-01")
             end_date = today
 
         else:
             start_date = parser.parse(str(today.year-1) + "-04-01")
             end_date = today
-            # fiscal_year = str(today.year - 1) + '-'+str(today.year)[-2:]
 
-        # df = pd.read_csv('open_data_&_info.csv')
         df = self.datasets_generation()
+        df.to_csv(os.path.join("Corporate_reporting", "open_data",
+                  "open_data_info.csv"), index=False, encoding="utf-8-sig")
         df_fiscal = df[(df['metadata_created'] >= str(start_date)) & (df['metadata_created'] <= str(
-            end_date)) & (df['type'] == "dataset")]  # & df["any_datastore_active"]==True
+            end_date)) & (df['type'] == "dataset")]
+        # Open datasets created within the fiscal year
         total = df_fiscal.shape[0]
-        # federated_dt = df_fiscal.query('collection == "federated" ')
-        df_openness = pd.read_csv(os.path.join("Corporate_reporting", "open_data", "openness_report.csv"), encoding="utf-8-sig")
+
+        df_openness = pd.read_csv(os.path.join(
+            "Corporate_reporting", "open_data", "openness_report.csv"), encoding="utf-8-sig")
         df_openness['ID'] = df_openness.URL.str.rsplit(
             '/', n=1, expand=True)[1]
 
@@ -129,22 +129,20 @@ class Corporate:
             columns={"Openness Rating | Cote d'ouverture": "Openness_Rating"})
         fiscal_openess_score.Openness_Rating = fiscal_openess_score.Openness_Rating.astype(
             int)
-        Non_geo = df_fiscal.query('collection != "fgp" & collection !="geogratis"')        
-        Non_geo_rating =fiscal_openess_score.query('collection != "fgp" & collection !="geogratis"')
-        Non_geo_good = Non_geo_rating.query('Openness_Rating >=3')
-
-        """ Non_geo = fiscal_openess_score.query(
+        Non_geo = df_fiscal.query(
             'collection != "fgp" & collection !="geogratis"')
-        Non_geo_good = Non_geo.query('Openness_Rating >=3') """
+        Non_geo_rating = fiscal_openess_score.query(
+            'collection != "fgp" & collection !="geogratis"')
+        Non_geo_good = Non_geo_rating.query('Openness_Rating >=3')
         API_enable = fiscal_openess_score.query('any_datastore_active == True')
         eligible_API = Non_geo.query('collection != "federated"')
-        data = self.get_fy_download()        
+        data = self.get_fy_download()
         try:
             corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], round(100*Non_geo_good.shape[0]/Non_geo.shape[0], 2), API_enable.shape[0],
-                                round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
+                                 round(100*API_enable.shape[0]/eligible_API.shape[0], 2), data['downloads_telechargements'], data['visits_visites']]
         except Exception:
-             corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], 0, API_enable.shape[0],
-                                0, data['downloads_telechargements'], data['visits_visites']]
+            corporate_metrics = [date.today().strftime('%Y-%m-%d'), start_date.strftime('%Y-%m-%d'), end_date, total, Non_geo.shape[0], 0, API_enable.shape[0],
+                                 0, data['downloads_telechargements'], data['visits_visites']]
 
         return corporate_metrics
 
@@ -173,8 +171,9 @@ def main():
     header = ["Date", "From", "To", "number of datasets", "Non geospatial", "% of non-geospatial with 3+ rating",
               "number of API enabled datasets", "% of API enable datasets", "Totals downloads", "Total visits"]
     cr.datasets_generation()
-    row = cr.corporate_report('open_data_&_info.csv')
-    cr.add_record(row, os.path.join("Corporate_reporting", "open_data", "corporate_report.csv"), header)
+    row = cr.corporate_report()
+    cr.add_record(row, os.path.join("Corporate_reporting",
+                  "open_data", "corporate_report.csv"), header)
 
 
 if __name__ == '__main__':
