@@ -125,6 +125,73 @@ def update_readme_resource_counts(readme_path, table_md):
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(content)
 
+def format_percent(value):
+    formatted = f"{value:.2f}".rstrip("0").rstrip(".")
+    return formatted if formatted else "0"
+
+def build_dictionary_radar_chart(df):
+    """
+    Build a mermaid radar chart showing dictionary edit coverage by type.
+    """
+    for col in ["ds_count", "ds_type_set", "ds_label_set", "ds_notes_set"]:
+        df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    def percent_counts(subset):
+        total_count = subset["ds_count"].sum()
+        if pd.isna(total_count) or total_count <= 0:
+            return 0.0, 0.0, 0.0
+        type_pct = 100 * subset["ds_type_set"].sum() / total_count
+        label_pct = 100 * subset["ds_label_set"].sum() / total_count
+        notes_pct = 100 * subset["ds_notes_set"].sum() / total_count
+        return type_pct, label_pct, notes_pct
+
+    upload_pct = percent_counts(df[df["type"] == "upload"])
+    remote_pct = percent_counts(df[df["type"] == "remote"])
+
+    return "\n".join([
+        "```mermaid",
+        "radar-beta",
+        "  axis T[\"Type\"], L[\"Label\"], N[\"Notes\"]",
+        f"  curve u[\"Upload\"]{{{format_percent(upload_pct[0])}, {format_percent(upload_pct[1])}, {format_percent(upload_pct[2])}}}",
+        f"  curve r[\"Remote\"]{{{format_percent(remote_pct[0])}, {format_percent(remote_pct[1])}, {format_percent(remote_pct[2])}}}",
+        "",
+        "  showLegend true",
+        "",
+        "  min 0",
+        "  graticule circle",
+        "  ticks 5",
+        "```",
+    ])
+
+def update_readme_dictionary_radar(readme_path, chart_md):
+    """
+    Replace the dictionary radar section in README.md.
+    """
+    header = "#### Dictionary edit radar (by type)"
+    start_marker = "<!-- DICT_RADAR_START -->"
+    end_marker = "<!-- DICT_RADAR_END -->"
+    section = f"{header}\n{start_marker}\n{chart_md}\n{end_marker}"
+
+    if os.path.exists(readme_path):
+        with open(readme_path, "r", encoding="utf-8") as f:
+            content = f.read()
+    else:
+        content = ""
+
+    if start_marker in content and end_marker in content:
+        prefix, rest = content.split(start_marker, 1)
+        _, suffix = rest.split(end_marker, 1)
+        content = f"{prefix}{start_marker}\n{chart_md}\n{end_marker}{suffix}"
+        if header not in prefix:
+            content = content.replace(start_marker, f"{header}\n{start_marker}", 1)
+    else:
+        if content and not content.endswith("\n"):
+            content += "\n"
+        content += f"\n{section}\n"
+
+    with open(readme_path, "w", encoding="utf-8") as f:
+        f.write(content)
+
 # ---------------------------------------------------------------------
 # 1. Download the compressed JSONL file
 # ---------------------------------------------------------------------
@@ -389,3 +456,9 @@ org_stats.to_csv("org_stats.csv", index=False)
 # ---------------------------------------------------------------------
 resource_counts_table = build_resource_counts_table(list_of_res)
 update_readme_resource_counts("README.md", resource_counts_table)
+
+# ---------------------------------------------------------------------
+# 15. update README with dictionary radar chart
+# ---------------------------------------------------------------------
+dictionary_radar_chart = build_dictionary_radar_chart(list_of_res)
+update_readme_dictionary_radar("README.md", dictionary_radar_chart)
