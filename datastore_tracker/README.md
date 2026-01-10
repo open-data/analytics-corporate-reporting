@@ -21,7 +21,7 @@
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 356 |
 | open.canada.ca | csa-asc | 3 |
-| open.canada.ca | csc-scc | 15 |
+| open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
 | open.canada.ca | csps-efpc | 1 |
 | open.canada.ca | dfatd-maecd | 43 |
@@ -63,7 +63,7 @@
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0, 0, 0}
+  curve u["Upload"]{0.00084, 0.00107, 0.00103}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
