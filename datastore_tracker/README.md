@@ -57,3 +57,19 @@
 | www.canada.ca | cra-arc | 58 |
 | www.canada.ca | tbs-sct | 14 |
 <!-- RESOURCE_COUNTS_END -->
+
+#### Dictionary edit radar (by type)
+<!-- DICT_RADAR_START -->
+```mermaid
+radar-beta
+  axis T["Type"], L["Label"], N["Notes"]
+  curve u["Upload"]{0, 0, 0}
+  curve r["Remote"]{0, 0, 0}
+
+  showLegend true
+
+  min 0
+  graticule circle
+  ticks 5
+```
+<!-- DICT_RADAR_END -->
