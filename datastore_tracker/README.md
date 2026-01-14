@@ -5,7 +5,8 @@
 |DS_num_tracker.csv |  [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/DS_num_tracker.csv) | 
 |----|----|
 |org_stats.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/org_stats.csv) | 
-|ds-resources.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=ddatastore_tracker/ds-resources.csv) |
+|ds-resources.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-resources.csv) |
+|ds-dictionary-use.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-dictionary-use.csv) |
 
 #### Resource counts by URL host and org
 <!-- RESOURCE_COUNTS_START -->
