@@ -64,7 +64,7 @@
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00084, 0.00107, 0.00103}
+  curve u["Upload"]{0.00084, 0.00108, 0.00103}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
