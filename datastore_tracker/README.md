@@ -2,13 +2,51 @@
 [![Update CKAN Datastore Stats](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/action_datastore_tracker.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/action_datastore_tracker.yml) ![GitHub last commit](https://img.shields.io/github/last-commit/open-data/analytics-corporate-reporting?path=datastore_tracker%2FREADME.md)
 #### The Datastore Tracker Report captures stats on the Open.Canada.ca CKAN Datastore. 
 
-|DS_num_tracker.csv |  [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/DS_num_tracker.csv) | 
-|----|----|
-|org_stats.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/org_stats.csv) | 
-|ds-resources.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-resources.csv) |
-|ds-dictionary-use.csv | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-dictionary-use.csv) |
 
-#### Resource counts by URL host and org
+
+| CSV | Description | Flatdata viewer |
+|---|---|---|
+| DS_num_tracker.csv | Daily datastore summary metrics (counts, sizes, uploaded/remote source). | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/DS_num_tracker.csv) |
+| org_stats.csv | Organization-level usage (size, counts). | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/org_stats.csv) |
+| ds-resources.csv | Resource list with datastore stats. | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-resources.csv) |
+| ds-dictionary-use.csv | Tracks if CKAN DS dictionary has been used. Count number of fields with data type, labels, and notes completed in each table  | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/ds-dictionary-use.csv) |
+| res_views.csv | Captures list of resource views available | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/res_views.csv) |
+| res_relations.csv | Resource relationship metadata. | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/res_relations.csv) |
+| res_validation_status.csv | Status of ckanext-validation checks on resources. | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/res_validation_status.csv) |
+
+#### Resource Validation Status
+<!-- VALIDATION_STATUS_CHART_START -->
+
+```mermaid
+---
+config:
+  theme: dark
+---
+pie showData title Resource Validation Status
+    "success": 3340
+    "failure": 3198
+```
+
+<!-- VALIDATION_STATUS_CHART_END -->
+
+#### Resource View Types
+<!-- RESOURCE_VIEW_TYPES_CHART_START -->
+
+```mermaid
+---
+config:
+  theme: dark
+---
+pie showData title Resource View Types
+    "datatables_view": 3010
+    "text_view": 205
+    "openapi_view": 4
+    "image_view": 4
+    "power_bi_view": 1
+```
+
+<!-- RESOURCE_VIEW_TYPES_CHART_END -->
+
 #### Resource counts by URL host and org
 <!-- RESOURCE_COUNTS_START -->
 | url_host | owner | resource_count |
@@ -60,7 +98,7 @@
 | www.canada.ca | tbs-sct | 14 |
 <!-- RESOURCE_COUNTS_END -->
 
-#### Dictionary edit radar (by type)
+
 #### Dictionary edit radar (by type)
 <!-- DICT_RADAR_START -->
 ```mermaid
@@ -77,23 +115,6 @@ radar-beta
 ```
 <!-- DICT_RADAR_END -->
 
-#### Resource View Types
-<!-- RESOURCE_VIEW_TYPES_CHART_START -->
-
-```mermaid
----
-config:
-  theme: dark
----
-pie showData title Resource View Types
-    "datatables_view": 3010
-    "text_view": 205
-    "openapi_view": 4
-    "image_view": 4
-    "power_bi_view": 1
-```
-
-<!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
 #### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
@@ -128,20 +149,7 @@ pie showData title Top 20 Orgs by View Count
 
 <!-- TOP_20_OWNERS_CHART_END -->
 
-#### Resource Validation Status
-<!-- VALIDATION_STATUS_CHART_START -->
 
-```mermaid
----
-config:
-  theme: dark
----
-pie showData title Resource Validation Status
-    "success": 3340
-    "failure": 3198
-```
-
-<!-- VALIDATION_STATUS_CHART_END -->
 
 #### Resource Relation Type
 <!-- RESOURCE_RELATION_TYPE_CHART_START -->
