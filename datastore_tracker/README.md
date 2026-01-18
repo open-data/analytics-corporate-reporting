@@ -15,6 +15,7 @@
 | res_validation_status.csv | Status of ckanext-validation checks on resources. | [![Static Badge](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=datastore_tracker/res_validation_status.csv) |
 
 #### Resource Validation Status
+#### Resource Validation Status
 <!-- VALIDATION_STATUS_CHART_START -->
 
 ```mermaid
@@ -29,6 +30,7 @@ pie showData title Resource Validation Status
 
 <!-- VALIDATION_STATUS_CHART_END -->
 
+#### Resource View Types
 #### Resource View Types
 <!-- RESOURCE_VIEW_TYPES_CHART_START -->
 
@@ -47,6 +49,7 @@ pie showData title Resource View Types
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
+#### Resource counts by URL host and org
 #### Resource counts by URL host and org
 <!-- RESOURCE_COUNTS_START -->
 | url_host | owner | resource_count |
@@ -100,11 +103,12 @@ pie showData title Resource View Types
 
 
 #### Dictionary edit radar (by type)
+#### Dictionary edit radar (by type)
 <!-- DICT_RADAR_START -->
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00085, 0.00111, 0.00107}
+  curve u["Upload"]{0.00086, 0.00112, 0.00108}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -116,6 +120,7 @@ radar-beta
 <!-- DICT_RADAR_END -->
 
 
+#### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
 
@@ -151,6 +156,7 @@ pie showData title Top 20 Orgs by View Count
 
 
 
+#### Resource Relation Type
 #### Resource Relation Type
 <!-- RESOURCE_RELATION_TYPE_CHART_START -->
 
