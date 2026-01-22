@@ -19,6 +19,7 @@
 #### Resource Validation Status
 #### Resource Validation Status
 #### Resource Validation Status
+#### Resource Validation Status
 <!-- VALIDATION_STATUS_CHART_START -->
 
 ```mermaid
@@ -27,12 +28,13 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3389
-    "failure": 3198
+    "success": 3390
+    "failure": 3199
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
 
+#### Resource View Types
 #### Resource View Types
 #### Resource View Types
 #### Resource View Types
@@ -48,13 +50,14 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3059
     "text_view": 205
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 1
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
+#### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
@@ -97,7 +100,7 @@ pie showData title Resource View Types
 | open.canada.ca | pc | 933 |
 | open.canada.ca | pch | 7 |
 | open.canada.ca | pco-bcp | 3 |
-| open.canada.ca | phac-aspc | 46 |
+| open.canada.ca | phac-aspc | 47 |
 | open.canada.ca | psc-cfp | 122 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
@@ -111,6 +114,7 @@ pie showData title Resource View Types
 <!-- RESOURCE_COUNTS_END -->
 
 
+#### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
@@ -137,6 +141,7 @@ radar-beta
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
+#### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
 
 ```mermaid
@@ -148,13 +153,13 @@ pie showData title Top 20 Orgs by View Count
     "pc": 944
     "esdc-edsc": 591
     "cra-arc": 447
-    "tbs-sct": 273
+    "tbs-sct": 272
     "psc-cfp": 147
     "hc-sc": 147
     "cfia-acia": 99
     "osfi-bsif": 74
     "nrcan-rncan": 59
-    "phac-aspc": 55
+    "phac-aspc": 56
     "dfatd-maecd": 43
     "ssc-spc": 41
     "tc": 38
@@ -164,13 +169,14 @@ pie showData title Top 20 Orgs by View Count
     "elections": 21
     "cic": 17
     "irb-cisr": 16
-    "csc-scc": 15
+    "fin": 15
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
 
 
 
+#### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
