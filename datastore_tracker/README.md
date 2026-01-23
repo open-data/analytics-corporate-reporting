@@ -20,6 +20,7 @@
 #### Resource Validation Status
 #### Resource Validation Status
 #### Resource Validation Status
+#### Resource Validation Status
 <!-- VALIDATION_STATUS_CHART_START -->
 
 ```mermaid
@@ -28,12 +29,13 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3390
-    "failure": 3199
+    "success": 3388
+    "failure": 3201
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
 
+#### Resource View Types
 #### Resource View Types
 #### Resource View Types
 #### Resource View Types
@@ -57,6 +59,7 @@ pie showData title Resource View Types
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
+#### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
@@ -120,6 +123,7 @@ pie showData title Resource View Types
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
+#### Dictionary edit radar (by type)
 <!-- DICT_RADAR_START -->
 ```mermaid
 radar-beta
@@ -142,6 +146,7 @@ radar-beta
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
+#### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
 
 ```mermaid
@@ -154,8 +159,8 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 591
     "cra-arc": 447
     "tbs-sct": 272
-    "psc-cfp": 147
     "hc-sc": 147
+    "psc-cfp": 147
     "cfia-acia": 99
     "osfi-bsif": 74
     "nrcan-rncan": 59
@@ -176,6 +181,7 @@ pie showData title Top 20 Orgs by View Count
 
 
 
+#### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
