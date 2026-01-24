@@ -21,6 +21,7 @@
 #### Resource Validation Status
 #### Resource Validation Status
 #### Resource Validation Status
+#### Resource Validation Status
 <!-- VALIDATION_STATUS_CHART_START -->
 
 ```mermaid
@@ -29,12 +30,13 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3388
-    "failure": 3201
+    "success": 3424
+    "failure": 3200
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
 
+#### Resource View Types
 #### Resource View Types
 #### Resource View Types
 #### Resource View Types
@@ -50,15 +52,16 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3059
+    "datatables_view": 3094
     "text_view": 205
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 1
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
+#### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
@@ -87,7 +90,7 @@ pie showData title Resource View Types
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 544 |
+| open.canada.ca | esdc-edsc | 581 |
 | open.canada.ca | fin | 14 |
 | open.canada.ca | hc-sc | 119 |
 | open.canada.ca | iaac-aeic | 2 |
@@ -124,11 +127,12 @@ pie showData title Resource View Types
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
+#### Dictionary edit radar (by type)
 <!-- DICT_RADAR_START -->
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00085, 0.00111, 0.00107}
+  curve u["Upload"]{0.00084, 0.00111, 0.00107}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -147,6 +151,7 @@ radar-beta
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
+#### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
 
 ```mermaid
@@ -156,7 +161,7 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 944
-    "esdc-edsc": 591
+    "esdc-edsc": 626
     "cra-arc": 447
     "tbs-sct": 272
     "hc-sc": 147
@@ -181,6 +186,7 @@ pie showData title Top 20 Orgs by View Count
 
 
 
+#### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
