@@ -9,8 +9,8 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 626
     "cra-arc": 447
     "tbs-sct": 272
-    "psc-cfp": 147
     "hc-sc": 147
+    "psc-cfp": 147
     "cfia-acia": 99
     "osfi-bsif": 74
     "nrcan-rncan": 59
