@@ -25,6 +25,7 @@
 #### Resource Validation Status
 #### Resource Validation Status
 #### Resource Validation Status
+#### Resource Validation Status
 <!-- VALIDATION_STATUS_CHART_START -->
 
 ```mermaid
@@ -33,12 +34,13 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3428
-    "failure": 3201
+    "success": 3431
+    "failure": 3200
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
 
+#### Resource View Types
 #### Resource View Types
 #### Resource View Types
 #### Resource View Types
@@ -58,15 +60,16 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3098
+    "datatables_view": 3100
     "text_view": 205
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 1
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
 
+#### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
 #### Resource counts by URL host and org
@@ -113,7 +116,7 @@ pie showData title Resource View Types
 | open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
 | open.canada.ca | pc | 937 |
-| open.canada.ca | pch | 7 |
+| open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 47 |
 | open.canada.ca | psc-cfp | 122 |
@@ -129,6 +132,7 @@ pie showData title Resource View Types
 <!-- RESOURCE_COUNTS_END -->
 
 
+#### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
 #### Dictionary edit radar (by type)
@@ -167,6 +171,7 @@ radar-beta
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
 #### Top 20 Orgs by View Count
+#### Top 20 Orgs by View Count
 <!-- TOP_20_OWNERS_CHART_START -->
 
 ```mermaid
@@ -179,8 +184,8 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 626
     "cra-arc": 447
     "tbs-sct": 272
-    "hc-sc": 147
     "psc-cfp": 147
+    "hc-sc": 147
     "cfia-acia": 99
     "osfi-bsif": 74
     "nrcan-rncan": 59
@@ -201,6 +206,7 @@ pie showData title Top 20 Orgs by View Count
 
 
 
+#### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
 #### Resource Relation Type
