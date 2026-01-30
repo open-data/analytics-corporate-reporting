@@ -99,9 +99,13 @@ def build_resource_counts_table(df):
 
 def update_readme_section(readme_path, section_content, header, start_marker, end_marker):
     """
-    Replaces a section in README.md identified by start and end markers with new content.
-    If markers are not found, appends the new section.
+    Replace a section in README.md identified by start/end markers with new content.
+
+    Fix: prevent duplicated headers on repeated runs by replacing the *entire* block
+    (including any repeated header lines immediately above the start marker).
     """
+    import re
+
     new_section = f"{header}\n{start_marker}\n{section_content}\n{end_marker}"
 
     if os.path.exists(readme_path):
@@ -110,17 +114,43 @@ def update_readme_section(readme_path, section_content, header, start_marker, en
     else:
         content = ""
 
+    # If the markers exist, replace the whole block (header + markers + content),
+    # tolerating multiple repeated header lines.
     if start_marker in content and end_marker in content:
-        prefix, rest = content.split(start_marker, 1)
-        _, suffix = rest.split(end_marker, 1)
-        if header not in prefix:
-            content = f"{prefix.strip()}\n\n{new_section}{suffix}"
+        # Match one or more copies of the header (possibly separated by blank lines)
+        # directly followed by the start marker, then anything up to end marker.
+        hdr = re.escape(header)
+        sm = re.escape(start_marker)
+        em = re.escape(end_marker)
+
+        block_re = re.compile(
+            rf"(?:^|\n)(?:{hdr}\s*\n)+\s*{sm}[\s\S]*?{em}",
+            re.MULTILINE
+        )
+
+        if block_re.search(content):
+            content = block_re.sub(lambda m: "\n" + new_section, content, count=1)
         else:
-            content = f"{prefix.strip()}\n{new_section}{suffix}"
+            # Fallback: replace only the marker-delimited content, and ensure header once.
+            content = re.sub(
+                rf"{sm}[\s\S]*?{em}",
+                f"{start_marker}\n{section_content}\n{end_marker}",
+                content,
+                count=1
+            )
+            # Ensure a single header line directly above the start marker
+            content = re.sub(
+                rf"(?:{hdr}\s*\n)+\s*{sm}",
+                f"{header}\n{start_marker}",
+                content
+            )
     else:
+        # Append if not present
         if content and not content.endswith("\n"):
             content += "\n"
-        content += f"\n{new_section}\n"
+        if content.strip():
+            content += "\n"
+        content += f"{new_section}\n"
 
     with open(readme_path, "w", encoding="utf-8") as f:
         f.write(content)
