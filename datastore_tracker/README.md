@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3101
+    "datatables_view": 3102
     "text_view": 205
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 1
 ```
 
@@ -82,7 +82,7 @@ pie showData title Resource View Types
 | open.canada.ca | nrcan-rncan | 53 |
 | open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
-| open.canada.ca | pc | 939 |
+| open.canada.ca | pc | 940 |
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 47 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.0011, 0.00105}
+  curve u["Upload"]{0.00079, 0.00105, 0.00101}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -125,7 +125,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 949
+    "pc": 950
     "esdc-edsc": 626
     "cra-arc": 447
     "tbs-sct": 272
