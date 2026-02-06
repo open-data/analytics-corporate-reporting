@@ -2115,10 +2115,10 @@ osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,69b6fcd5
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,cc2cae60-cdc4-4428-b64c-cdaa2eb0b700,LCQ - LICAT (Active),f3dde359-9150-42b8-9f69-0604b909340b,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,f3ddcfbc-a852-4dee-be3c-5b08864c9afe,LF1 - Life Core Financial Statement Return (Active) ,9b0a7e08-2bf5-4692-872f-17eed2850fbe,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,563aa4bf-dc3d-4ece-8669-dd68dd6c2fbf,LF2 - Life Supervisory Quarterly Return (Active),65c5bd12-92fd-45cf-aea7-653780cde0fc,datatables_view
-osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,c793a709-f547-463f-aa13-7f529e30c617,LF3 - LIFE Supervisory Annual Return (Active),64fa56a3-e8c3-4665-badf-b929c07b7189,datatables_view
+osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,c793a709-f547-463f-aa13-7f529e30c617,LF3 - Life Supervisory Annual Return (Active),64fa56a3-e8c3-4665-badf-b929c07b7189,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,d8042758-8d77-4d38-abf5-5bdb76c16faa,10 - Life 1 (Inactive Q3/2014),d1251e55-ba05-4109-99d4-7149a467fa21,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,14dd8023-a6de-49b8-832d-a41a6f773a51,10A - Life Annual Supplement (Inactive Q4/2023)​,7b3b98ef-b6b8-4674-97d3-94c7fc8ddeb4,datatables_view
-osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,023628c5-9596-400e-9187-721b849e58af,10Q - LIFE Quarterly (Inactive Q4/2023)​,ae08263f-ba5c-408e-8851-0bfbc439d469,datatables_view
+osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,023628c5-9596-400e-9187-721b849e58af,10Q - Life Quarterly (Inactive Q4/2023)​,ae08263f-ba5c-408e-8851-0bfbc439d469,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,1017a532-b70b-45a5-a2be-a75b4e5e3947,20 - Life 2 (Inactive Q3/2014),1e551ec7-ef59-4949-afee-89646e592a20,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,7ec500de-a5b8-481a-97a4-4500ec3efe6a,54 - Return 54 (Inactive Q3/2005),66e2f56b-fe33-4f89-aecf-2834767bd6b4,datatables_view
 osfi-bsif,1358284b-26e7-4c69-abd8-398d3da2c270,Life insurance companies,1dc23ffc-ae5a-46b0-8162-023c00d970f2,55 - Return 55-A (Inactive Q3/2005),eb409971-0150-4804-bd7a-d5ab3552e3f8,datatables_view
@@ -2892,8 +2892,8 @@ nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,026e45
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,0b0f5a42-b00b-4b6a-9185-4d4de1424801,Battery-electric vehicles 2012-2026 (2026-01-28),82433851-4b74-48cb-b127-b0c3031bd69f,datatables_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,8812228b-a6aa-4303-b3d0-66489225120d,Plug-in hybrid electric vehicles 2012-2026 (2026-01-13),240daf31-e4c1-4790-8210-f0b4fa1736a6,datatables_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,fcccabad-e478-45b0-8d34-a25b77028c1d,Plug-in hybrid electric vehicles 2012-2026 (2026-01-13),d48daa4d-7464-4980-8ccd-a0b82b61a8e0,datatables_view
-nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,b398f489-5052-4656-891c-5e68418d97a8,2026 Fuel Consumption Ratings (2026-02-02),f0d484a2-d6be-4bd0-8c96-983efc543832,datatables_view
-nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,c0c86630-0fca-453f-a840-d8d8020f22e0,2026 Fuel Consumption Ratings (2026-01-30),289bfe4f-da85-401f-8234-1246b21e3be7,datatables_view
+nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,b398f489-5052-4656-891c-5e68418d97a8,,f0d484a2-d6be-4bd0-8c96-983efc543832,datatables_view
+nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,c0c86630-0fca-453f-a840-d8d8020f22e0,,289bfe4f-da85-401f-8234-1246b21e3be7,datatables_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,d589f2bc-9a85-4f65-be2f-20f17debfcb1,2025 Fuel Consumption Ratings (2025-12-09),d2aff67f-a4f7-47ed-9b41-4e2d8eb0066c,datatables_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,2e1a460f-464d-44b7-b711-8870a6eef7b9,2025 Fuel Consumption Ratings (2025-12-09),84e8a1b6-5912-45f7-813f-04ec8fcd0e5c,datatables_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,e10efaa3-a8cc-4072-845a-13e03d996c30,2015-2024 Fuel Consumption Ratings (2025-07-24),45f1cb41-32ff-48c1-8564-f2a61180fde4,datatables_view
@@ -3143,10 +3143,10 @@ osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,8e52a
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,7dcb8a09-f089-4282-b2f9-3fbb42432684,LCQ - LICAT (Active),93cdb8a7-f410-4228-b475-6f2744c57608,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,1907c224-cef2-40c4-ba0f-4743ed42c904,LF1 - Life Core Financial Statement Return (Active) ,0e06ea60-a433-4e49-a3c4-78426b5d6550,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,5a730b28-ebaa-4d60-ad47-94f0f8a37688,LF2 - Life Supervisory Quarterly Return (Active),6cc2cc6b-7d82-45c0-beab-20d12b8a6fc6,datatables_view
-osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,7a576a78-62eb-4b1b-90e8-18b3f86db668,LF3 - LIFE Supervisory Annual Return (Active),4a70245a-45c7-4d3c-bc9e-f4e081509d32,datatables_view
+osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,7a576a78-62eb-4b1b-90e8-18b3f86db668,LF3 - Life Supervisory Annual Return (Active),4a70245a-45c7-4d3c-bc9e-f4e081509d32,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,1fd9fb51-099b-4e49-b8d8-78a5eb421eda,10 - Life 1 (Inactive Q3/2014),63541146-c6b0-4087-b499-9d2f85998441,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,b46acbcf-1abd-4358-9de9-3a191564def1,10A - Life Annual Supplement (Inactive Q4/2023),9066496c-73f5-431f-b50e-00466474efcc,datatables_view
-osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,0509d887-1822-402b-a436-ee1d9d85a7fa,10Q - LIFE Quarterly (Inactive Q4/2023),43b9bc6d-e428-4c65-b00d-1f9fbe30ce0e,datatables_view
+osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,0509d887-1822-402b-a436-ee1d9d85a7fa,10Q - Life Quarterly (Inactive Q4/2023),43b9bc6d-e428-4c65-b00d-1f9fbe30ce0e,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,b4703902-2524-427b-b90f-39b8ebab8fbf,20 - Life 2 (Inactive Q3/2014),0be20b3c-a99d-4319-8392-3e6f7e35bc26,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,a0e348aa-64b8-4d42-9a0e-594c70e2aaa5,56 - Return 56 (Inactive Q4/2010)​,8ef17074-9973-49c2-a5e9-28f470c46be1,datatables_view
 osfi-bsif,7ad44bfe-aa26-4b5b-930b-e7845023dd4c,Fraternal benefit societies,2f5924eb-50c2-441b-8d23-c72acf812563,77 - Return 77 (Inactive Q4/2010),49cfb7bc-6071-46ac-bc99-216969578612,datatables_view
