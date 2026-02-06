@@ -13,7 +13,7 @@ resource = ckan.action.resource_show(id=resource_id)
 
 url = resource['url']
 
-df = pd.read_csv(url, encoding="utf-8-sig"))
+df = pd.read_csv(url, encoding="utf-8-sig")
 
 #  from the df create a new df that gets the sum of Number of Informal Requests, and count of unique values of Unique Identifier, grouped by Year and Month column, sorted by year and month desc
 
