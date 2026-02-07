@@ -1,30 +1,50 @@
 name: Generate ATI INFORMAL Reports
+
 on:
-# push:   branches: [ main ]
- schedule:
- - cron: '30 11 * * *'  # everyday
- workflow_dispatch:
+  schedule:
+    - cron: '30 11 * * *'  # everyday
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
- generate-reports:
-   runs-on: ubuntu-latest
-   steps:
-     - name: Checkout Repository
-       uses: actions/checkout@v3
-     - name: Set Up Python
-       uses: actions/setup-python@v4
-       with:
-         python-version: '3.12'
-     - name: Install Dependencies
-       run: |
-         pip install pandas==2.3.3 ckanapi tabulate
-     - name: Run Report Generation
-       env:
-         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
-       run: python ATI_INFORMAL_REPORT/ati_informals.py
-     - name: commit files
-       run: |
+  generate-reports:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout (sparse)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          sparse-checkout: |
+            ATI_INFORMAL_REPORT
+          sparse-checkout-cone-mode: true
+
+      - name: Set Up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pandas==2.3.3 ckanapi tabulate
+
+      - name: Run Report Generation
+        run: python ATI_INFORMAL_REPORT/ati_informals.py
+
+      - name: Commit and push changes (if any)
+        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+
           git add -A
-          git commit -a -m "updates" --allow-empty
-          git push -f
+
+          # Don't create empty commits
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update ATI informal report outputs"
+          git push
