@@ -13,10 +13,10 @@ jobs:
      - name: Set Up Python
        uses: actions/setup-python@v4
        with:
-         python-version: '3.x'
+         python-version: '3.12'
      - name: Install Dependencies
        run: |
-         pip install pandas ckanapi tabulate
+         pip install pandas==2.3.3 ckanapi tabulate
      - name: Run Report Generation
        env:
          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Pass GitHub's built-in token
