@@ -24,7 +24,7 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 3437
-    "failure": 3163
+    "failure": 3164
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00082, 0.00108, 0.00104}
+  curve u["Upload"]{0.00081, 0.00108, 0.00103}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true

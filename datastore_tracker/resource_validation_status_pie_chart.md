@@ -6,5 +6,5 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 3437
-    "failure": 3163
+    "failure": 3164
 ```
