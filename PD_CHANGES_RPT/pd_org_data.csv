@@ -29,7 +29,7 @@ ced-dec,Canada Economic Development for Quebec Regions | Développement économi
 ceefc-cfuec,Canada Enterprise Emergency Funding Corporation | La Corporation de financement d’urgence d’entreprises du Canada,atip-aiprp@cdev.gc.ca,0,2021-01-09,NA,atip-aiprp@cdev.gc.ca
 celd,Canada Eldor Inc. | Canada Eldor Inc.,atip-aiprp@cdev.ca,0,2018-07-27,NA,
 cer-rec,Canada Energy Regulator | La Régie de l’énergie du Canada,ATIPOffice-BureauAIPRP@neb-one.gc.ca,79,2016-09-23,NA,
-cfia-acia,Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,ATIP-CFIA-AIPRP@inspection.gc.ca,237,2016-09-23,2,
+cfia-acia,Canadian Food Inspection Agency | Agence canadienne d'inspection des aliments,ATIP-CFIA-AIPRP@inspection.gc.ca,238,2016-09-23,2,
 cfmws-sbmfc,Canadian Forces Morale and Welfare Services | Services de bien-être et moral des Forces canadiennes,ATIP.AIPRP@cfmws.com,0,2019-07-13,NA,
 cgc-ccg,Canadian Grain Commission | Commission canadienne des grains,atip-aiprp@grainscanada.gc.ca,13,2016-09-23,1.1,
 cgf-fcc,Canada Growth Fund Inc. | Fonds de Croissance du Canada Inc.,atip-aiprp@cdev.gc.ca,0,2024-08-17,3,
@@ -99,7 +99,7 @@ glpa-apgl,Great Lakes Pilotage Authority Canada | Administration de pilotage des
 glwb-ogte,Gwich’in Land and Water Board | Office Gwich’in des terres et des eaux,l.debastien@glwb.com,0,2018-08-21,NA,
 halpa-aphal,Halifax Port Authority | Administration portuaire de Halifax,ATIP-AIPRP@porthalifax.ca,0,2018-07-27,NA,ATIP-AIPRP@porthalifax.ca
 hampa-apham,Hamilton-Oshawa  Port Authority | Administration portuaire de Hamilton-Oshawa,atip@hopaports.ca,0,2018-07-27,NA,
-hc-sc,Health Canada | Santé Canada,access.informal-demandes.informelles@hc-sc.gc.ca,2970,2016-09-23,1,
+hc-sc,Health Canada | Santé Canada,access.informal-demandes.informelles@hc-sc.gc.ca,2972,2016-09-23,1,
 hgr-tgf,VIA HFR - VIA TGF Inc. | VIA HFR - VIA TGF Inc.,atip-aiprp@hfr-tgf.ca,0,2023-12-01,NA,
 hsmbc-clmhc,Historic Sites and Monuments Board of Canada | Commission des lieux et monuments historiques du Canada,pc.clmhc-hsmbc.pc@canada.ca,0,2018-08-21,NA,
 iaac-aeic,Impact Assessment Agency of Canada | Agence d'évaluation d'impact du Canada,atip-aiprp@iaac-aeic.gc.ca,113,2016-09-23,1.1,
@@ -107,13 +107,13 @@ ic,"Innovation, Science and Economic Development Canada | Innovation, Sciences e
 idrc-crdi,International Development Research Centre | Centre de recherches pour le développement international,llahaie@idrc.ca,2,2016-09-23,NA,
 iic-iac,Invest in Canada | Investir Au Canada,atip-aiprp@invcanada.ca,18,2021-05-07,2,
 ijc-cmi,International Joint Commission | Commission mixte internationale,PortalSupport-Soutienportail@tbs-sct.gc.ca,0,2017-09-07,NA,
-infc,"Department of Housing, Infrastructure and Communities | Ministère du Logement, de l’Infrastructure et des Collectivités",atip-aiprp@infc.gc.ca,16,2016-09-23,1.1,
+infc,"Department of Housing, Infrastructure and Communities | Ministère du Logement, de l’Infrastructure et des Collectivités",atip-aiprp@infc.gc.ca,17,2016-09-23,1.1,
 innovation,Canada Foundation for Innovation | Fondation canadienne pour l’innovation,isabelle.henrie@innovation.ca,0,2016-09-23,NA,
 irb-cisr,Immigration and Refugee Board of Canada | Commission de l'immigration et du statut de réfugié du Canada,atip@irb-cisr.gc.ca,2,2016-09-23,1.1,
 isc-sac,Indigenous Services Canada | Services aux Autochtones Canada,aadnc.atiprequest-aiprpdemande.aandc@canada.ca,32,2018-02-01,1,
 jccbi-pjcci,Jacques Cartier and Champlain Bridges Incorporated | Ponts Jacques Cartier et Champlain Incorporée,atip-aiprp@pjcci.ca,1,2016-09-23,NA,
 jfpc-cfp,The Joint Federal/Provincial Commission into the April 2020 Nova Scotia Mass Casualty | Commission fédérale-provinciale sur les événements d’avril 2020 en Nouvelle Écosse,PortalSupport-Soutienportail@tbs-sct.gc.ca,0,2021-03-25,NA,
-jus,Department of Justice Canada | Ministère de la Justice Canada,ATIP-AIPRP-JusticeCanada@justice.gc.ca,511,2016-09-23,1,
+jus,Department of Justice Canada | Ministère de la Justice Canada,ATIP-AIPRP-JusticeCanada@justice.gc.ca,512,2016-09-23,1,
 lac-bac,Library and Archives Canada | Bibliothèque et Archives Canada,daiprp-atipd@bac-lac.gc.ca,60,2016-09-23,NA,
 lpa-apl,Laurentian Pilotage Authority Canada | Administration de pilotage des Laurentides Canada,Josee.Bonneville@apl.gc.ca,1,2016-09-23,NA,
 mai,Marine Atlantic Inc. | Marine Atlantique S.C.C.,atip-aiprp@ma.ca,0,2016-09-23,3,
@@ -193,11 +193,11 @@ sopf-cidp,Office of the Administrator of the Ship-source Oil Pollution Fund; (op
 spa-aps,Saguenay Port Authority | Administration portuaire du Saguenay,apoudrier@portsaguenay.ca,0,2016-09-23,NA,
 ssc-spc,Shared Services Canada | Services partagés Canada,ATIP-AIPRP@ssc-spc.gc.ca,114,2016-09-23,1.1,
 sshrc-crsh,Social Sciences and Humanities Research Council of Canada | Conseil de recherches en sciences humaines du Canada,ATIP-AIPRP@sshrc-crsh.gc.ca,10,2016-09-23,2,
-statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,10063,2016-09-23,1.1,
+statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,10067,2016-09-23,1.1,
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
-tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,297,2016-09-23,NA,open-ouvert@tbs-sct.gc.ca
+tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,298,2016-09-23,NA,open-ouvert@tbs-sct.gc.ca
 tc,Transport Canada | Transports Canada,ATIP/AIPRP@tc.gc.ca,58,2016-09-23,1,
 tf,Telefilm Canada | Téléfilm Canada,ATIP-AIPRP@telefilm.ca,7,2016-09-23,NA,
 tmc,Trans Mountain Corporation | Trans Mountain Corporation,atip-aiprp@cdev.gc.ca,0,2019-05-11,NA,
