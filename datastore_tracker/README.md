@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3437
-    "failure": 3164
+    "success": 3442
+    "failure": 3163
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 86 |
+| open.canada.ca | cfia-acia | 87 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 394 |
@@ -71,7 +71,7 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 582 |
 | open.canada.ca | fin | 14 |
-| open.canada.ca | hc-sc | 119 |
+| open.canada.ca | hc-sc | 123 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00081, 0.00107, 0.00103}
+  curve u["Upload"]{0.00082, 0.00105, 0.00101}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
