@@ -24,7 +24,7 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 3445
-    "failure": 3162
+    "failure": 3166
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -71,11 +71,11 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 582 |
 | open.canada.ca | fin | 14 |
-| open.canada.ca | hc-sc | 123 |
+| open.canada.ca | hc-sc | 125 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
-| open.canada.ca | irb-cisr | 16 |
+| open.canada.ca | irb-cisr | 17 |
 | open.canada.ca | isc-sac | 10 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
@@ -161,7 +161,7 @@ config:
 ---
 pie showData title Resource Relation Type
     "references": 6
-    "defined_by": 5
+    "defined_by": 6
     "referenced_by": 3
     "defines": 2
 ```
