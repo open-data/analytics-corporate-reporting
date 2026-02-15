@@ -24,7 +24,7 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 3451
-    "failure": 3166
+    "failure": 3165
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -90,7 +90,7 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 39 |
-| open.canada.ca | tbs-sct | 188 |
+| open.canada.ca | tbs-sct | 189 |
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
