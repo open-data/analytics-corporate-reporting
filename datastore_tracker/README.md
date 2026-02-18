@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3450
-    "failure": 3165
+    "success": 3469
+    "failure": 3169
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -59,7 +59,7 @@ pie showData title Resource View Types
 | open.canada.ca | cfia-acia | 96 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
-| open.canada.ca | cra-arc | 394 |
+| open.canada.ca | cra-arc | 397 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
@@ -90,11 +90,11 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 39 |
-| open.canada.ca | tbs-sct | 188 |
+| open.canada.ca | tbs-sct | 189 |
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
-| www.canada.ca | cra-arc | 58 |
+| www.canada.ca | cra-arc | 77 |
 | www.canada.ca | tbs-sct | 14 |
 <!-- RESOURCE_COUNTS_END -->
 
