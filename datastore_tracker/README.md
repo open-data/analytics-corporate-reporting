@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3471
-    "failure": 3165
+    "success": 3472
+    "failure": 3164
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,8 +38,8 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3102
-    "text_view": 205
+    "datatables_view": 3154
+    "text_view": 207
     "openapi_view": 4
     "image_view": 4
     "power_bi_view": 1
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 96 |
+| open.canada.ca | cfia-acia | 98 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 397 |
@@ -89,7 +89,7 @@ pie showData title Resource View Types
 | open.canada.ca | psc-cfp | 123 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
-| open.canada.ca | ssc-spc | 39 |
+| open.canada.ca | ssc-spc | 40 |
 | open.canada.ca | tbs-sct | 193 |
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00082, 0.00108, 0.00104}
+  curve u["Upload"]{0.00082, 0.00095, 0.00088}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -125,25 +125,25 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 950
-    "esdc-edsc": 626
-    "cra-arc": 447
-    "tbs-sct": 272
-    "hc-sc": 147
-    "psc-cfp": 147
-    "cfia-acia": 99
+    "pc": 953
+    "esdc-edsc": 627
+    "cra-arc": 469
+    "tbs-sct": 275
+    "hc-sc": 153
+    "psc-cfp": 149
+    "cfia-acia": 112
     "osfi-bsif": 74
     "nrcan-rncan": 59
     "phac-aspc": 56
     "dfatd-maecd": 43
-    "ssc-spc": 41
+    "ssc-spc": 42
     "tc": 38
     "cnsc-ccsn": 35
     "ic": 24
     "dnd-mdn": 23
     "elections": 21
+    "irb-cisr": 17
     "cic": 17
-    "irb-cisr": 16
     "fin": 15
 ```
 
