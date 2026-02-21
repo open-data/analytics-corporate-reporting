@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3472
+    "success": 3510
     "failure": 3164
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3154
+    "datatables_view": 3192
     "text_view": 207
     "openapi_view": 4
     "image_view": 4
@@ -56,10 +56,10 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 98 |
+| open.canada.ca | cfia-acia | 100 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
-| open.canada.ca | cra-arc | 397 |
+| open.canada.ca | cra-arc | 433 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00082, 0.00095, 0.00088}
+  curve u["Upload"]{0.00075, 0.00099, 0.00095}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -127,11 +127,11 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 953
     "esdc-edsc": 627
-    "cra-arc": 469
+    "cra-arc": 505
     "tbs-sct": 275
     "hc-sc": 153
     "psc-cfp": 149
-    "cfia-acia": 112
+    "cfia-acia": 114
     "osfi-bsif": 74
     "nrcan-rncan": 59
     "phac-aspc": 56
@@ -142,9 +142,9 @@ pie showData title Top 20 Orgs by View Count
     "ic": 24
     "dnd-mdn": 23
     "elections": 21
-    "irb-cisr": 17
     "cic": 17
-    "fin": 15
+    "irb-cisr": 17
+    "csc-scc": 15
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->

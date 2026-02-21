@@ -7,11 +7,11 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 953
     "esdc-edsc": 627
-    "cra-arc": 469
+    "cra-arc": 505
     "tbs-sct": 275
     "hc-sc": 153
     "psc-cfp": 149
-    "cfia-acia": 112
+    "cfia-acia": 114
     "osfi-bsif": 74
     "nrcan-rncan": 59
     "phac-aspc": 56
@@ -22,7 +22,7 @@ pie showData title Top 20 Orgs by View Count
     "ic": 24
     "dnd-mdn": 23
     "elections": 21
-    "irb-cisr": 17
     "cic": 17
-    "fin": 15
+    "irb-cisr": 17
+    "csc-scc": 15
 ```
