@@ -22,7 +22,7 @@ pie showData title Top 20 Orgs by View Count
     "ic": 24
     "dnd-mdn": 23
     "elections": 21
-    "cic": 17
     "irb-cisr": 17
+    "cic": 17
     "fin": 15
 ```
