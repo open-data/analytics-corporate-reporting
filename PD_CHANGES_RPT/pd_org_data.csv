@@ -60,7 +60,7 @@ cpc-cpp,Civilian Review and Complaints Commission for the RCMP | Commission civi
 cpc-scp,Canada Post | Postes Canada,ATIP_AIPRP@canadapost.postescanada.ca,0,2016-09-23,3,
 cra-arc,Canada Revenue Agency | Agence du revenu du Canada,INT-REC-G@cra-arc.gc.ca,345,2016-09-23,2,
 crrf-fcrr,Canadian Race Relations Foundation | La Fondation Canadienne des relations raciales,atavassoli@crrf-fcrr.ca,0,2018-04-24,NA,
-crtc,Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,AIPRP-ATIP@crtc.gc.ca,77,2016-09-23,1.1,
+crtc,Canadian Radio-television and Telecommunications Commission | Conseil de la radiodiffusion et des télécommunications canadiennes,AIPRP-ATIP@crtc.gc.ca,79,2016-09-23,1.1,
 csa-asc,Canadian Space Agency | Agence spatiale canadienne,AIPRP-ATIP@asc-csa.gc.ca,132,2016-09-23,1.1,
 csc-scc,Correctional Service of Canada | Service correctionnel du Canada,CSC.ATIP-AIPRP.SCC@csc-scc.gc.ca,237,2016-09-23,1.1,
 csec-cstc,Communications Security Establishment Canada | Centre de la sécurité des télécommunications Canada,atip-aiprp@cse-cst.gc.ca,291,2016-09-23,NA,
@@ -71,7 +71,7 @@ cta-otc,Canadian Transportation Agency | Office des transports du Canada,OTC.AIP
 ctc-cct,Destination Canada | Destination Canada,atip-aiprp@destinationcanada.com,0,2016-09-23,NA,
 cwa-aec,Canada Water Agency | Agence de l’eau du Canada,atip-aiprp@cwa-aec.gc.ca,4,2024-11-21,1,
 dcc-cdc,Defence Construction Canada | Construction de Défense Canada,ATIP-AIPRP@DCC-CDC.gc.ca,5,2016-09-23,NA,
-dfatd-maecd,Global Affairs Canada | Affaires mondiales Canada,dcp@international.gc.ca,1761,2016-09-23,1,
+dfatd-maecd,Global Affairs Canada | Affaires mondiales Canada,dcp@international.gc.ca,1767,2016-09-23,1,
 dfi-ifd,Development Finance Institution - FinDev Canada | Institution de financement du développement - FinDev Canada,atipteam@edc.ca,2,2023-06-13,NA,
 dfo-mpo,Fisheries and Oceans Canada | Pêches et Océans Canada,atip-laiprp@dfo-mpo.gc.ca,852,2016-09-23,1,
 dnd-mdn,National Defence | Défense nationale,ATIP-AIPRP@forces.gc.ca,164,2016-09-23,1,
@@ -80,7 +80,7 @@ ec,Environment and Climate Change Canada | Environnement et Changement climatiqu
 edc,Export Development Canada | Exportation et développement Canada,atipteam@edc.ca,11,2016-09-23,3,
 elections,Elections Canada | Élections Canada,aiprp-atip@elections.ca,49,2016-09-23,NA,
 erc-cee,RCMP External Review Committee | Comité externe d'examen de la GRC,corporateandhrservices-servicesgenerauxetrh@erc-cee.gc.ca,0,2016-09-23,NA,
-esdc-edsc,Employment and Social Development Canada | Emploi et Développement social Canada,NC-COMM-ATIP-AIPRP-GD@hrsdc-rhdcc.gc.ca,254,2016-09-23,NA,
+esdc-edsc,Employment and Social Development Canada | Emploi et Développement social Canada,NC-COMM-ATIP-AIPRP-GD@hrsdc-rhdcc.gc.ca,255,2016-09-23,NA,
 exi,Exinvest Inc. | Exinvest Inc.,ATIPteam@edc.ca,0,2018-07-27,NA,
 fbcl-spfl,Federal Bridge Corporation | Société des ponts fédéraux,info@federalbridge.ca,11,2016-09-23,3,
 fcac-acfc,Financial Consumer Agency of Canada | Agence de la consommation en matière financière du Canada,Nathalie.forester@fcac-acfc.gc.ca,34,2016-09-23,1.1,
@@ -88,7 +88,7 @@ fcc-fac,Farm Credit Canada | Financement agricole Canada,ATIP_AIPRP@fcc-fac.ca,0
 feddevontario,Federal Economic Development Agency for Southern Ontario | Agence fédérale de développement économique pour le Sud de l'Ontario,atip-aiprp@feddevontario.gc.ca,13,2016-09-23,1.1,im-it-gi-ti@feddevontario.gc.ca
 fednor,Federal Economic Development Agency for Northern Ontario | Agence fédérale de développement économique pour le Nord de l’Ontario,fednor-atipinbox@ised-isde.gc.ca,22,2021-12-23,1.1,fednor-atipinbox@ised-isde.gc.ca
 ffmc-ocped,Freshwater Fish Marketing Corporation | Office de commercialisation du poisson d'eau douce,ATIPcontrol@freshwaterfish.com,0,2016-09-23,3,
-fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,106,2016-09-23,1,
+fin,Department of Finance Canada | Ministère des Finances Canada,fin.atip-aiprp.fin@canada.ca,107,2016-09-23,1,
 fintrac-canafe,Financial Transactions and Reports Analysis Centre of Canada | Centre d'analyse des opérations et déclarations financières du Canada,atip-aiprp@fintrac-canafe.gc.ca,28,2016-09-23,NA,
 fja-cmf,Office of the Commissioner for Federal Judicial Affairs Canada | Commissariat à la magistrature fédérale Canada,,0,2016-09-23,NA,
 fnfmb-cgfpn,First Nations Financial Management Board | Conseil de gestion financière des premières nations,mail@fnfmb.com,0,2018-07-27,NA,
@@ -143,7 +143,7 @@ ocl-cal,Office of the Commissioner of Lobbying of Canada | Commissariat au lobby
 ocol-clo,Office of the Commissioner of Official Languages | Commissariat aux langues officielles,AIPRP-ATIP@clo-ocol.gc.ca,16,2016-09-23,1.1,
 ocsec-bccst,Office of the Intelligence Commissioner | Bureau du commissaire au renseignement,Info@ico-bcr.gc.ca,5,2016-09-23,1.1,
 oic-ci,Office of the Information Commissioner of Canada | Commissariat à l'information du Canada,ATIP-Services-AIPRP@oic-ci.gc.ca,4,2016-09-23,NA,
-opc-cpvp,Office of the Privacy Commissioner of Canada | Commissariat à la protection de la vie privée du Canada,atip-aiprp@priv.gc.ca,39,2016-09-23,1.1,
+opc-cpvp,Office of the Privacy Commissioner of Canada | Commissariat à la protection de la vie privée du Canada,atip-aiprp@priv.gc.ca,40,2016-09-23,1.1,
 opmc-svpm,Old Port of Montreal Corporation Inc. | Société du Vieux-Port de Montréal Inc.,atip-aiprp@clc-sic.ca,0,2018-07-27,NA,
 org231,Law Commission of Canada | Commission du droit du Canada,BMS-SGA@lcc-cdc.gc.ca,0,2016-09-23,2,
 osfi-bsif,Office of the Superintendent of Financial Institutions Canada | Bureau du surintendant des institutions financières Canada,atip-aiprp@osfi-bsif.gc.ca,36,2016-09-23,1.1,
@@ -197,7 +197,7 @@ statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,10081,20
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
-tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,298,2016-09-23,NA,open-ouvert@tbs-sct.gc.ca
+tbs-sct,Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada,atip.aiprp@tbs-sct.gc.ca,299,2016-09-23,NA,open-ouvert@tbs-sct.gc.ca
 tc,Transport Canada | Transports Canada,ATIP/AIPRP@tc.gc.ca,58,2016-09-23,1,
 tf,Telefilm Canada | Téléfilm Canada,ATIP-AIPRP@telefilm.ca,7,2016-09-23,NA,
 tmc,Trans Mountain Corporation | Trans Mountain Corporation,atip-aiprp@cdev.gc.ca,0,2019-05-11,NA,
