@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3590
-    "failure": 3161
+    "success": 3599
+    "failure": 3165
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3269
+    "datatables_view": 3272
     "text_view": 207
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 1
 ```
 
@@ -51,7 +51,7 @@ pie showData title Resource View Types
 <!-- RESOURCE_COUNTS_START -->
 | url_host | owner | resource_count |
 |---|---|---|
-| od-do.agr.gc.ca | aafc-aac | 24 |
+| od-do.agr.gc.ca | aafc-aac | 25 |
 | open.canada.ca | aafc-aac | 2 |
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
@@ -70,7 +70,7 @@ pie showData title Resource View Types
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 582 |
-| open.canada.ca | fin | 14 |
+| open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 125 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
@@ -142,9 +142,9 @@ pie showData title Top 20 Orgs by View Count
     "ic": 24
     "dnd-mdn": 23
     "elections": 21
+    "fin": 19
     "cic": 17
     "irb-cisr": 17
-    "fin": 15
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
