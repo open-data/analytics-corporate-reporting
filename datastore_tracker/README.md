@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3599
+    "success": 3601
     "failure": 3165
 ```
 
@@ -38,8 +38,8 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3272
-    "text_view": 207
+    "datatables_view": 3274
+    "text_view": 209
     "openapi_view": 4
     "image_view": 4
     "power_bi_view": 1
@@ -71,7 +71,7 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 582 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 125 |
+| open.canada.ca | hc-sc | 127 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
@@ -129,7 +129,7 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 627
     "cra-arc": 582
     "tbs-sct": 275
-    "hc-sc": 153
+    "hc-sc": 157
     "psc-cfp": 149
     "cfia-acia": 114
     "osfi-bsif": 74
