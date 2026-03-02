@@ -137,11 +137,14 @@ class Proactive_disclosure:
             Urls = [line.rstrip('\n') for line in f]
         f.close
         for url in Urls:
-            filename, len_df = self.filedow(url)
-            if filename != "adminaircraft":
-                pd_name.append(filename)
-            total += len_df
-            row.append(len_df)
+            try:
+                filename, len_df = self.filedow(url)
+                if filename != "adminaircraft":
+                    pd_name.append(filename)
+                total += len_df
+                row.append(len_df)
+            except Exception as e:
+                print(f'{url} failed to load with error : {e}')
         pd_name.sort()
         self.headers.append("total")
         row.append(total)
