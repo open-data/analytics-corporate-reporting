@@ -40,8 +40,8 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3274
     "text_view": 209
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 1
 ```
 
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.0007, 0.00093, 0.00089}
+  curve u["Upload"]{0.00066, 0.00089, 0.00085}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
