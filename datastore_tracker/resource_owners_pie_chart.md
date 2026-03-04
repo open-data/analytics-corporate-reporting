@@ -10,7 +10,7 @@ pie showData title Top 20 Orgs by View Count
     "cra-arc": 582
     "tbs-sct": 275
     "hc-sc": 157
-    "psc-cfp": 149
+    "psc-cfp": 151
     "cfia-acia": 114
     "osfi-bsif": 74
     "nrcan-rncan": 59
@@ -21,7 +21,7 @@ pie showData title Top 20 Orgs by View Count
     "cnsc-ccsn": 35
     "ic": 24
     "dnd-mdn": 23
-    "elections": 21
+    "elections": 22
     "fin": 19
     "cic": 17
     "irb-cisr": 17
