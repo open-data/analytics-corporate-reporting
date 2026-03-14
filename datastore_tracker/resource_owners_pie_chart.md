@@ -5,9 +5,9 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 953
-    "esdc-edsc": 627
-    "cra-arc": 601
+    "pc": 963
+    "cra-arc": 632
+    "esdc-edsc": 628
     "tbs-sct": 275
     "hc-sc": 157
     "psc-cfp": 151
@@ -23,6 +23,6 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "cic": 17
     "irb-cisr": 17
+    "cic": 17
 ```
