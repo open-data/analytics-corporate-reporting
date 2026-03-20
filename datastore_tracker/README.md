@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3633
+    "success": 3631
     "failure": 3149
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3340
+    "datatables_view": 3338
     "text_view": 209
     "image_view": 4
     "openapi_view": 4
@@ -65,7 +65,7 @@ pie showData title Resource View Types
 | open.canada.ca | csec-cstc | 14 |
 | open.canada.ca | csps-efpc | 1 |
 | open.canada.ca | dfatd-maecd | 43 |
-| open.canada.ca | dfo-mpo | 4 |
+| open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
