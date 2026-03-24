@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3632
-    "failure": 3149
+    "success": 3633
+    "failure": 3148
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -42,7 +42,7 @@ pie showData title Resource View Types
     "text_view": 209
     "image_view": 4
     "openapi_view": 4
-    "power_bi_view": 1
+    "power_bi_view": 2
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
@@ -133,7 +133,7 @@ pie showData title Top 20 Orgs by View Count
     "psc-cfp": 151
     "cfia-acia": 114
     "osfi-bsif": 74
-    "nrcan-rncan": 59
+    "nrcan-rncan": 60
     "phac-aspc": 56
     "dfatd-maecd": 43
     "ssc-spc": 42

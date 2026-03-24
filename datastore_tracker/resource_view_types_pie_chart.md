@@ -9,5 +9,5 @@ pie showData title Resource View Types
     "text_view": 209
     "image_view": 4
     "openapi_view": 4
-    "power_bi_view": 1
+    "power_bi_view": 2
 ```
