@@ -13,7 +13,7 @@ pie showData title Top 20 Orgs by View Count
     "psc-cfp": 151
     "cfia-acia": 114
     "osfi-bsif": 74
-    "nrcan-rncan": 60
+    "nrcan-rncan": 61
     "phac-aspc": 56
     "dfatd-maecd": 43
     "ssc-spc": 42
@@ -23,6 +23,6 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "irb-cisr": 17
     "cic": 17
+    "irb-cisr": 17
 ```
