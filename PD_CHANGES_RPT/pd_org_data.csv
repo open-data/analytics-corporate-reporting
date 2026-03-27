@@ -4,7 +4,7 @@ aafc-aac,Agriculture and Agri-Food Canada | Agriculture et Agroalimentaire Canad
 aandc-aadnc,Crown-Indigenous Relations and Northern Affairs Canada | Relations Couronne-Autochtones et Affaires du Nord Canada,aadnc.atiprequest-aiprpdemande.aandc@canada.ca,46,2016-09-23,1,
 acoa-apeca,Atlantic Canada Opportunities Agency | Agence de promotion économique du Canada atlantique,atip-aiprp@acoa-apeca.gc.ca,50,2016-09-23,1.1,
 aecl-eacl,"Atomic Energy of Canada Limited | Énergie atomique du Canada, Limitée",igaudreault@aecl.ca,0,2016-09-23,3,igaudreault@aecl.ca
-apa,Atlantic Pilotage Authority Canada | Administration de pilotage de l'Atlantique Canada,bbradley@atlanticpilotage.com,8,2016-09-23,3,
+apa,Atlantic Pilotage Authority Canada | Administration de pilotage de l'Atlantique Canada,bbradley@atlanticpilotage.com,9,2016-09-23,3,
 apfc-fapc,Asia-Pacific Foundation of Canada | Fondation Asie Pacifique du Canada,atip.coordinator@asiapacific.ca,0,2016-09-23,NA,
 atssc-scdata,Administrative Tribunals Support Service of Canada | Service canadien d'appui aux tribunaux administratifs,ATIP-AIPRP@tribunal.gc.ca,55,2016-09-23,1.1,
 bc,Bank of Canada | Banque du Canada,ATIP-AIPRP@bankofcanada.ca,0,2016-09-23,NA,
@@ -99,7 +99,7 @@ glpa-apgl,Great Lakes Pilotage Authority Canada | Administration de pilotage des
 glwb-ogte,Gwich’in Land and Water Board | Office Gwich’in des terres et des eaux,l.debastien@glwb.com,0,2018-08-21,NA,
 halpa-aphal,Halifax Port Authority | Administration portuaire de Halifax,ATIP-AIPRP@porthalifax.ca,0,2018-07-27,NA,ATIP-AIPRP@porthalifax.ca
 hampa-apham,Hamilton-Oshawa  Port Authority | Administration portuaire de Hamilton-Oshawa,atip@hopaports.ca,0,2018-07-27,NA,
-hc-sc,Health Canada | Santé Canada,access.informal-demandes.informelles@hc-sc.gc.ca,2970,2016-09-23,1,
+hc-sc,Health Canada | Santé Canada,access.informal-demandes.informelles@hc-sc.gc.ca,2969,2016-09-23,1,
 hgr-tgf,VIA HFR - VIA TGF Inc. | VIA HFR - VIA TGF Inc.,atip-aiprp@hfr-tgf.ca,0,2023-12-01,NA,
 hsmbc-clmhc,Historic Sites and Monuments Board of Canada | Commission des lieux et monuments historiques du Canada,pc.clmhc-hsmbc.pc@canada.ca,0,2018-08-21,NA,
 iaac-aeic,Impact Assessment Agency of Canada | Agence d'évaluation d'impact du Canada,atip-aiprp@iaac-aeic.gc.ca,113,2016-09-23,1.1,
@@ -159,7 +159,7 @@ pch,Canadian Heritage | Patrimoine canadien,aiprp-atip@pch.gc.ca,130,2016-09-23,
 pco-bcp,Privy Council Office | Bureau du Conseil privé,ATIP-AIPRP@pco-bcp.gc.ca,5,2016-09-23,1.1,
 pdp,Parc Downsview Park Inc. | Parc Downsview Park Inc,atip-aiprp@clc-sic.ca,0,2018-07-27,NA,
 petf-fpet,Pierre Elliott Trudeau Foundation | Fondation Pierre Elliott Trudeau,communications@FondationTrudeau.ca,0,2016-09-23,NA,
-phac-aspc,Public Health Agency of Canada | Agence de la santé publique du Canada,access.informal-demandes.informelles@phac-aspc.gc.ca,755,2016-09-23,1.1,
+phac-aspc,Public Health Agency of Canada | Agence de la santé publique du Canada,access.informal-demandes.informelles@phac-aspc.gc.ca,756,2016-09-23,1.1,
 pkcc-pcprc,President of the King’s Privy Council for Canada | Président du Conseil privé du Roi pour le Canada,ATIP-AIPRP@pco-bcp.gc.ca,0,2020-01-31,NA,
 pmprb-cepmb,Patented Medicine Prices Review Board Canada | Conseil d'examen du prix des médicaments brevetés Canada,pmprb.atip-aiprb.cepmb@pmprb-cepmb.gc.ca,3,2016-09-23,1.1,Johanne.gamache@pmprb-cepmb.gc.ca
 polar-polaire,Polar Knowledge Canada | Savoir polaire Canada,Brodie.larocque@polar-polaire.gc.ca,3,2016-09-23,2,
@@ -193,7 +193,7 @@ sopf-cidp,Office of the Administrator of the Ship-source Oil Pollution Fund; (op
 spa-aps,Saguenay Port Authority | Administration portuaire du Saguenay,apoudrier@portsaguenay.ca,0,2016-09-23,NA,
 ssc-spc,Shared Services Canada | Services partagés Canada,ATIP-AIPRP@ssc-spc.gc.ca,115,2016-09-23,1.1,
 sshrc-crsh,Social Sciences and Humanities Research Council of Canada | Conseil de recherches en sciences humaines du Canada,ATIP-AIPRP@sshrc-crsh.gc.ca,10,2016-09-23,2,
-statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,10146,2016-09-23,1.1,
+statcan,Statistics Canada | Statistique Canada,ATIP-AIPRP@statcan.gc.ca,10150,2016-09-23,1.1,
 stjpa-apstj,Saint John Port Authority | Administration portuaire de Saint John,pcopeland@sjport.com,0,2018-07-27,NA,
 swc-cfc,Status of Women Canada | Condition féminine Canada,anick.perreault@swc-cfc.gc.ca,0,2016-09-23,NA,tina.sparrow@swc-cfc.gc.ca
 tbpa-aptb,Thunder Bay Port Authority | Administration portuaire de Thunder Bay,tbport@tbaytel.net,0,2018-07-27,NA,
