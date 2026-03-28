@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3637
-    "failure": 3151
+    "success": 3644
+    "failure": 3149
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3344
+    "datatables_view": 3353
     "text_view": 209
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 2
 ```
 
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 100 |
+| open.canada.ca | cfia-acia | 106 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 517 |
@@ -71,7 +71,7 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 583 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 127 |
+| open.canada.ca | hc-sc | 126 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
@@ -82,10 +82,10 @@ pie showData title Resource View Types
 | open.canada.ca | nrcan-rncan | 54 |
 | open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
-| open.canada.ca | pc | 954 |
+| open.canada.ca | pc | 956 |
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
-| open.canada.ca | phac-aspc | 47 |
+| open.canada.ca | phac-aspc | 48 |
 | open.canada.ca | psc-cfp | 124 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
@@ -125,16 +125,16 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 964
+    "pc": 967
     "cra-arc": 632
     "esdc-edsc": 628
     "tbs-sct": 275
-    "hc-sc": 157
+    "hc-sc": 156
     "psc-cfp": 151
-    "cfia-acia": 114
+    "cfia-acia": 120
     "osfi-bsif": 74
     "nrcan-rncan": 61
-    "phac-aspc": 56
+    "phac-aspc": 57
     "dfatd-maecd": 43
     "ssc-spc": 42
     "tc": 38
@@ -143,8 +143,8 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "cic": 17
     "irb-cisr": 17
+    "cic": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
