@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3644
-    "failure": 3149
+    "success": 3674
+    "failure": 3119
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -39,7 +39,7 @@ config:
 ---
 pie showData title Resource View Types
     "datatables_view": 3353
-    "text_view": 209
+    "text_view": 210
     "openapi_view": 4
     "image_view": 4
     "power_bi_view": 2
@@ -143,8 +143,8 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "irb-cisr": 17
     "cic": 17
+    "irb-cisr": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
