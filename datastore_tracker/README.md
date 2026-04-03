@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3696
-    "failure": 3111
+    "success": 3685
+    "failure": 3120
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -89,7 +89,7 @@ pie showData title Resource View Types
 | open.canada.ca | psc-cfp | 125 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
-| open.canada.ca | ssc-spc | 40 |
+| open.canada.ca | ssc-spc | 38 |
 | open.canada.ca | tbs-sct | 194 |
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
@@ -143,8 +143,8 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "irb-cisr": 17
     "cic": 17
+    "irb-cisr": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
