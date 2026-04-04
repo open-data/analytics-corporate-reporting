@@ -40,9 +40,9 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3432
     "text_view": 210
-    "image_view": 4
     "openapi_view": 4
-    "power_bi_view": 2
+    "image_view": 4
+    "power_bi_view": 3
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
@@ -128,7 +128,7 @@ pie showData title Top 20 Orgs by View Count
     "pc": 967
     "cra-arc": 652
     "esdc-edsc": 629
-    "tbs-sct": 275
+    "tbs-sct": 276
     "cfia-acia": 176
     "hc-sc": 156
     "psc-cfp": 153
