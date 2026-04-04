@@ -1,3 +1,5 @@
+![GitHub repo size](https://img.shields.io/github/repo-size/open-data/analytics-corporate-reporting)
+
 > # **La version française suit**
 
 # **analytics-corporate-reporting**
