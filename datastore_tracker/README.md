@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3685
-    "failure": 3120
+    "success": 3688
+    "failure": 3118
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -40,8 +40,8 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3432
     "text_view": 210
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 3
 ```
 
