@@ -1,0 +1,204 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.7.0/schema.json",
+  "name": "2585ddc536f2928192ec",
+  "position": {
+    "x": 569.51541850220269,
+    "y": 153.37444933920705,
+    "z": 5000,
+    "height": 231.18942731277534,
+    "width": 683.41850220264314,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "travelq"
+                    }
+                  },
+                  "Property": "disclosure_group"
+                }
+              },
+              "queryRef": "travelq.disclosure_group",
+              "nativeQueryRef": "Disclosure Group",
+              "active": true,
+              "displayName": "Disclosure Group"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "travelq"
+                    }
+                  },
+                  "Property": "Total expenses"
+                }
+              },
+              "queryRef": "travelq.Total expenses",
+              "nativeQueryRef": "Total Expenses",
+              "displayName": "Total Expenses"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "travelq"
+                  }
+                },
+                "Property": "Total expenses"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#335075'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "travelq"
+                          }
+                        },
+                        "Property": "disclosure_group"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'SLE'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#337550'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "travelq"
+                          }
+                        },
+                        "Property": "disclosure_group"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'MPSES'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#EEC80B'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "travelq"
+                          }
+                        },
+                        "Property": "disclosure_group"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Undefined'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

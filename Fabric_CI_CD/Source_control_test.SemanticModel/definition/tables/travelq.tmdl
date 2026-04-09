@@ -1,0 +1,199 @@
+table travelq
+	lineageTag: 0463e536-86e1-42a1-afc4-28900be0cdad
+
+	measure 'Total expenses' = sum(travelq[Value])
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		lineageTag: 781c7cb7-f1fa-4a4a-bffd-cf167e413c76
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Number of Trips' = count(travelq[ref_number])
+		formatString: #,0
+		lineageTag: b46bd653-936b-42b5-816b-57c8e88d6072
+
+	column ref_number
+		dataType: string
+		lineageTag: fd0eea94-741c-4197-ab57-50165f2a2d6b
+		summarizeBy: none
+		sourceColumn: ref_number
+
+		annotation SummarizationSetBy = Automatic
+
+	column disclosure_group
+		dataType: string
+		lineageTag: 2642dcfd-24bc-4902-9422-95e998caa7b4
+		summarizeBy: none
+		sourceColumn: disclosure_group
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_en
+		dataType: string
+		lineageTag: bea6401d-1fbd-491c-a0c0-a85d8c278484
+		summarizeBy: none
+		sourceColumn: title_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column title_fr
+		dataType: string
+		lineageTag: 8ebbda68-72dc-427a-8311-2cab835dfa3d
+		summarizeBy: none
+		sourceColumn: title_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		lineageTag: c2efab24-adc9-429c-be56-b45bea7caf2f
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column purpose_en
+		dataType: string
+		lineageTag: 8a010826-d1d0-4c14-a9bb-ba1547d2c98b
+		summarizeBy: none
+		sourceColumn: purpose_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column purpose_fr
+		dataType: string
+		lineageTag: 4b2c28e3-8e52-47cd-be50-57cd0e4fc920
+		summarizeBy: none
+		sourceColumn: purpose_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column start_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 8fe8b94e-586c-46b4-9c48-186421e81a54
+		summarizeBy: none
+		sourceColumn: start_date
+
+		variation Variation
+			isDefault
+			relationship: f1bf43c1-efcc-4cd0-931a-2a148da78992
+			defaultHierarchy: LocalDateTable_fc5828a0-7647-4b02-b897-191c1e886f4c.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column end_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 5e671b62-1265-4399-a4a2-c1e51c843443
+		summarizeBy: none
+		sourceColumn: end_date
+
+		variation Variation
+			isDefault
+			relationship: 6a3ac22a-47a3-4176-8b65-85206304a143
+			defaultHierarchy: LocalDateTable_2cac379a-b834-42cc-90bf-25945be4e78e.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column destination_en
+		dataType: string
+		lineageTag: e9ec9309-468e-4f91-a762-e8cedb10d39f
+		summarizeBy: none
+		sourceColumn: destination_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column destination_fr
+		dataType: string
+		lineageTag: 7e060268-79cd-41cd-a795-abad4284b68b
+		summarizeBy: none
+		sourceColumn: destination_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column additional_comments_en
+		dataType: string
+		lineageTag: bb87589e-f58e-46db-932b-476859bb18ee
+		summarizeBy: none
+		sourceColumn: additional_comments_en
+
+		annotation SummarizationSetBy = Automatic
+
+	column additional_comments_fr
+		dataType: string
+		lineageTag: 5e2eae35-1fd4-4d66-8779-3008926b6f93
+		summarizeBy: none
+		sourceColumn: additional_comments_fr
+
+		annotation SummarizationSetBy = Automatic
+
+	column owner_org
+		dataType: string
+		lineageTag: 19c096a2-55fd-4642-b13a-1d65f71060a2
+		summarizeBy: none
+		sourceColumn: owner_org
+
+		annotation SummarizationSetBy = Automatic
+
+	column Expenses_type
+		dataType: string
+		lineageTag: 971eed99-0c2f-4fc5-be43-203351e2b72d
+		summarizeBy: none
+		sourceColumn: Expenses_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Value
+		dataType: double
+		lineageTag: 26c6b33e-bdd2-4aaf-914b-d61b9b275c51
+		summarizeBy: sum
+		sourceColumn: Value
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Institution_EN
+		dataType: string
+		lineageTag: 5ac11196-ad1a-4da1-aa96-35b8782ad8d5
+		summarizeBy: none
+		sourceColumn: Institution_EN
+
+		annotation SummarizationSetBy = Automatic
+
+	column Institution_FR
+		dataType: string
+		lineageTag: 5715e1a5-0b56-47ca-9fc7-c794d1a0a833
+		summarizeBy: none
+		sourceColumn: Institution_FR
+
+		annotation SummarizationSetBy = Automatic
+
+	partition travelq = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(Web.Contents("https://open.canada.ca/data/dataset/009f9a49-c2d9-4d29-a6d4-1a228da335ce/resource/8282db2a-878f-475c-af10-ad56aa8fa72c/download/travelq.csv"),[Delimiter=",", Columns=25, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ref_number", type text}, {"disclosure_group", type text}, {"title_en", type text}, {"title_fr", type text}, {"name", type text}, {"purpose_en", type text}, {"purpose_fr", type text}, {"start_date", type date}, {"end_date", type date}, {"destination_en", type text}, {"destination_fr", type text}, {"destination_2_en", type text}, {"destination_2_fr", type text}, {"destination_other_en", type text}, {"destination_other_fr", type text}, {"airfare", type number}, {"other_transport", type number}, {"lodging", type number}, {"meals", type number}, {"other_expenses", type number}, {"total", type number}, {"additional_comments_en", type text}, {"additional_comments_fr", type text}, {"owner_org", type text}, {"owner_org_title", type text}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"total"}),
+				    #"Unpivoted Columns" = Table.UnpivotOtherColumns(#"Removed Columns", {"ref_number", "disclosure_group", "title_en", "title_fr", "name", "purpose_en", "purpose_fr", "start_date", "end_date", "destination_en", "destination_fr", "destination_2_en", "destination_2_fr", "destination_other_en", "destination_other_fr", "additional_comments_en", "additional_comments_fr", "owner_org", "owner_org_title"}, "Attribute", "Value"),
+				    #"Renamed Columns" = Table.RenameColumns(#"Unpivoted Columns",{{"Attribute", "Expenses_type"}}),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Renamed Columns",{"destination_2_en", "destination_2_fr", "destination_other_en", "destination_other_fr"}),
+				    #"Split Column by Delimiter" = Table.SplitColumn(#"Removed Columns1", "owner_org_title", Splitter.SplitTextByDelimiter("|", QuoteStyle.Csv), {"owner_org_title.1", "owner_org_title.2"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Split Column by Delimiter",{{"owner_org_title.1", type text}, {"owner_org_title.2", type text}}),
+				    #"Trimmed Text" = Table.TransformColumns(#"Changed Type1",{{"owner_org_title.1", Text.Trim, type text}, {"owner_org_title.2", Text.Trim, type text}}),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Trimmed Text",{{"owner_org_title.1", "Institution_EN"}, {"owner_org_title.2", "Institution_FR"}}),
+				    #"Filtered Rows" = Table.SelectRows(#"Renamed Columns1", each [start_date] >= #date(2020, 1, 1)),
+				    #"Replaced Value" = Table.ReplaceValue(#"Filtered Rows","","Undefined",Replacer.ReplaceValue,{"disclosure_group"})
+				in
+				    #"Replaced Value"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
