@@ -1,0 +1,6 @@
+createOrReplace
+
+	relationship f3b09ba0-a94f-4b8a-07a2-2983e9efa15a
+		fromColumn: travelq.Expenses_type
+		toColumn: Expense_type.travel_type
+

@@ -1,0 +1,33 @@
+table Expense_type
+	lineageTag: 8f890f9b-e8c3-4f45-a500-e371ab7b549b
+
+	column Expense_type
+		dataType: string
+		lineageTag: 90c113c5-8ce6-4e87-a09c-1c77432d015d
+		summarizeBy: none
+		sourceColumn: Expense_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column travel_type
+		dataType: string
+		lineageTag: bc99f163-33da-4a5a-a648-480a2b7e7751
+		summarizeBy: none
+		sourceColumn: travel_type
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Expense_type = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WcswsSkssSlXSUUqEsmJ1opV88lPSM/PSgaI5UBZI1Dc1MacYKJYLpkEi/iUZqUUKIUWJecUF+UUlQLl8kEh8CVwEocq1oiA1rzi1GK4oFSYQGwsA", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Expense_type = _t, Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Expense_type", type text}, {"Column1", type text}}),
+				    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"Column1", "travel_type"}})
+				in
+				    #"Renamed Columns"
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+
