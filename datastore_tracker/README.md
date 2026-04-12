@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3685
-    "failure": 3121
+    "success": 3687
+    "failure": 3120
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3446
+    "datatables_view": 3454
     "text_view": 210
     "openapi_view": 4
     "image_view": 4
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 173 |
+| open.canada.ca | cfia-acia | 174 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 521 |
@@ -69,7 +69,7 @@ pie showData title Resource View Types
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 584 |
+| open.canada.ca | esdc-edsc | 591 |
 | open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 127 |
 | open.canada.ca | iaac-aeic | 2 |
@@ -127,9 +127,9 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 967
     "cra-arc": 652
-    "esdc-edsc": 629
+    "esdc-edsc": 636
     "tbs-sct": 276
-    "cfia-acia": 189
+    "cfia-acia": 190
     "hc-sc": 157
     "psc-cfp": 153
     "osfi-bsif": 74
