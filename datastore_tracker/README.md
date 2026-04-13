@@ -40,8 +40,8 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3454
     "text_view": 210
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 3
 ```
 
@@ -143,8 +143,8 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "cic": 17
     "irb-cisr": 17
+    "cic": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
