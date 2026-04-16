@@ -5,11 +5,11 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 967
+    "pc": 968
     "cra-arc": 660
     "esdc-edsc": 636
     "tbs-sct": 276
-    "cfia-acia": 190
+    "cfia-acia": 192
     "psc-cfp": 178
     "hc-sc": 157
     "osfi-bsif": 74
