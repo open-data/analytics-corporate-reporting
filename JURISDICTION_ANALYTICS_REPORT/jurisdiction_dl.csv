@@ -1,6 +1,6 @@
 year_annee,month_mois,jurisdiction,downloads_telechargements
 2026,3,federal,60251
-2026,3,provincial,11603
+2026,3,provincial,11601
 2026,3,municipal,269
 2026,3,user,12
 2026,2,federal,55857
@@ -12,11 +12,11 @@ year_annee,month_mois,jurisdiction,downloads_telechargements
 2026,1,municipal,270
 2026,1,user,6
 2025,12,federal,49516
-2025,12,provincial,9459
+2025,12,provincial,9458
 2025,12,municipal,224
 2025,12,user,17
 2025,11,federal,71077
-2025,11,provincial,13435
+2025,11,provincial,13434
 2025,11,municipal,420
 2025,11,user,2
 2025,10,federal,69838
@@ -27,10 +27,10 @@ year_annee,month_mois,jurisdiction,downloads_telechargements
 2025,9,provincial,11885
 2025,9,municipal,305
 2025,8,federal,46540
-2025,8,provincial,7546
+2025,8,provincial,7545
 2025,8,municipal,234
 2025,7,federal,57090
-2025,7,provincial,9966
+2025,7,provincial,9965
 2025,7,municipal,279
 2025,6,federal,51590
 2025,6,provincial,11459
