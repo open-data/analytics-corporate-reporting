@@ -15,12 +15,12 @@ jobs:
     steps:
 
       - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner
+        uses: actions/checkout@v6 # checkout the repository content to github runner
 
       - name: setup python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.x' # install the python version needed
+          python-version: '3.12' # install the python version needed
           
       - name: install python packages
         run: |
