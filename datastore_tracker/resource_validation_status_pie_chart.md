@@ -5,6 +5,6 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3721
-    "failure": 3007
+    "success": 3720
+    "failure": 3001
 ```
