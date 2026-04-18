@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3720
-    "failure": 3001
+    "success": 3734
+    "failure": 2991
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3485
+    "datatables_view": 3492
     "text_view": 210
     "openapi_view": 4
     "image_view": 4
@@ -59,7 +59,7 @@ pie showData title Resource View Types
 | open.canada.ca | cfia-acia | 176 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
-| open.canada.ca | cra-arc | 519 |
+| open.canada.ca | cra-arc | 526 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.0007, 0.00087, 0.00084}
+  curve u["Upload"]{0.00068, 0.00085, 0.00082}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -126,7 +126,7 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 968
-    "cra-arc": 655
+    "cra-arc": 662
     "esdc-edsc": 636
     "tbs-sct": 276
     "cfia-acia": 192
