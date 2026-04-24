@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3768
-    "failure": 2958
+    "success": 3769
+    "failure": 2957
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -59,7 +59,7 @@ pie showData title Resource View Types
 | open.canada.ca | cfia-acia | 176 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
-| open.canada.ca | cra-arc | 557 |
+| open.canada.ca | cra-arc | 558 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
