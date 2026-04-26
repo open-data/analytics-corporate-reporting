@@ -14,9 +14,9 @@ pie showData title Top 20 Orgs by View Count
     "hc-sc": 154
     "osfi-bsif": 74
     "nrcan-rncan": 61
-    "phac-aspc": 57
     "dfatd-maecd": 43
     "ssc-spc": 42
+    "phac-aspc": 39
     "tc": 38
     "cnsc-ccsn": 35
     "ic": 24
