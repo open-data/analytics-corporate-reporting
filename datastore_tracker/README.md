@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3752
+    "success": 3753
     "failure": 2957
 ```
 
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3508
+    "datatables_view": 3509
     "text_view": 204
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 3
 ```
 
@@ -85,7 +85,7 @@ pie showData title Resource View Types
 | open.canada.ca | pc | 957 |
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
-| open.canada.ca | phac-aspc | 31 |
+| open.canada.ca | phac-aspc | 32 |
 | open.canada.ca | psc-cfp | 150 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
@@ -136,7 +136,7 @@ pie showData title Top 20 Orgs by View Count
     "nrcan-rncan": 61
     "dfatd-maecd": 43
     "ssc-spc": 42
-    "phac-aspc": 40
+    "phac-aspc": 41
     "tc": 38
     "cnsc-ccsn": 35
     "ic": 24
