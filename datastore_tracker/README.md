@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3756
-    "failure": 2957
+    "success": 3757
+    "failure": 2959
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3512
+    "datatables_view": 3513
     "text_view": 206
-    "image_view": 4
     "openapi_view": 4
+    "image_view": 4
     "power_bi_view": 3
 ```
 
@@ -64,7 +64,7 @@ pie showData title Resource View Types
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
 | open.canada.ca | csps-efpc | 1 |
-| open.canada.ca | dfatd-maecd | 43 |
+| open.canada.ca | dfatd-maecd | 44 |
 | open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00066, 0.00083, 0.00079}
+  curve u["Upload"]{0.00066, 0.00083, 0.0008}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -134,7 +134,7 @@ pie showData title Top 20 Orgs by View Count
     "hc-sc": 154
     "osfi-bsif": 74
     "nrcan-rncan": 61
-    "dfatd-maecd": 43
+    "dfatd-maecd": 44
     "ssc-spc": 42
     "phac-aspc": 41
     "tc": 38
