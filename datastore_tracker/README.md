@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3757
-    "failure": 2959
+    "success": 3758
+    "failure": 2960
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3513
+    "datatables_view": 3514
     "text_view": 206
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 3
 ```
 
@@ -86,7 +86,7 @@ pie showData title Resource View Types
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 32 |
-| open.canada.ca | psc-cfp | 150 |
+| open.canada.ca | psc-cfp | 151 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 38 |
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00066, 0.00083, 0.0008}
+  curve u["Upload"]{0.00066, 0.00083, 0.00079}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -130,7 +130,7 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 636
     "tbs-sct": 276
     "cfia-acia": 192
-    "psc-cfp": 178
+    "psc-cfp": 179
     "hc-sc": 154
     "osfi-bsif": 74
     "nrcan-rncan": 61
