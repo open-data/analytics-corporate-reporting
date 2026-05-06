@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3758
-    "failure": 2960
+    "success": 3763
+    "failure": 2955
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3515
+    "datatables_view": 3516
     "text_view": 206
     "image_view": 4
     "openapi_view": 4
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00066, 0.00083, 0.00079}
+  curve u["Upload"]{0.00065, 0.00082, 0.00079}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -126,7 +126,7 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 972
-    "cra-arc": 694
+    "cra-arc": 695
     "esdc-edsc": 636
     "tbs-sct": 276
     "cfia-acia": 192
