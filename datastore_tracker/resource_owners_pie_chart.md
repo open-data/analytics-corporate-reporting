@@ -5,7 +5,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 972
+    "pc": 982
     "cra-arc": 695
     "esdc-edsc": 636
     "tbs-sct": 276
