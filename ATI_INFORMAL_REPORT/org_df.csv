@@ -1,4 +1,112 @@
 Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Informal Requests,Unique Packages
+2026,4,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,https://open.canada.ca/data/organization/atssc-scdata,6,5
+2026,4,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,https://open.canada.ca/data/organization/aafc-aac,20,18
+2026,4,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,https://open.canada.ca/data/organization/acoa-apeca,7,7
+2026,4,Atomic Energy of Canada Limited,"Énergie atomique du Canada, Limitée",https://open.canada.ca/data/organization/aecl-eacl,1,1
+2026,4,Business Development Bank of Canada,Banque de développement du Canada,https://open.canada.ca/data/organization/bdc,5,5
+2026,4,Canada Border Services Agency,Agence des services frontaliers du Canada,https://open.canada.ca/data/organization/cbsa-asfc,72,59
+2026,4,Canada Deposit Insurance Corporation,Société d'assurance-dépôts du Canada,https://open.canada.ca/data/organization/cdic-sadc,4,4
+2026,4,Canada Economic Development for Quebec Regions,Développement économique Canada pour les régions du Québec,https://open.canada.ca/data/organization/ced-dec,1,1
+2026,4,Canada Energy Regulator,La Régie de l’énergie du Canada,https://open.canada.ca/data/organization/cer-rec,13,8
+2026,4,Canada Foundation for Innovation,Fondation canadienne pour l’innovation,https://open.canada.ca/data/organization/innovation,2,2
+2026,4,Canada Infrastructure Bank,La Banque de l’infrastructure du Canada,https://open.canada.ca/data/organization/cib-bic,2,2
+2026,4,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,https://open.canada.ca/data/organization/cmhc-schl,25,24
+2026,4,Canada Post,Postes Canada,https://open.canada.ca/data/organization/cpc-scp,5,5
+2026,4,Canada Revenue Agency,Agence du revenu du Canada,https://open.canada.ca/data/organization/cra-arc,109,86
+2026,4,Canada School of Public Service,École de la fonction publique du Canada,https://open.canada.ca/data/organization/csps-efpc,4,3
+2026,4,Canada Water Agency,Agence de l’eau du Canada,https://open.canada.ca/data/organization/cwa-aec,3,3
+2026,4,Canadian Air Transport Security Authority,Administration canadienne de la sûreté du transport aérien,https://open.canada.ca/data/organization/catsa-acsta,2,2
+2026,4,Canadian Centre for Occupational Health and Safety,Centre canadien d'hygiène et de sécurité au travail,https://open.canada.ca/data/organization/ccohs-cchst,1,1
+2026,4,Canadian Commercial Corporation,Corporation commerciale canadienne,https://open.canada.ca/data/organization/ccc,3,3
+2026,4,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,https://open.canada.ca/data/organization/cfia-acia,31,28
+2026,4,Canadian Grain Commission,Commission canadienne des grains,https://open.canada.ca/data/organization/cgc-ccg,2,2
+2026,4,Canadian Heritage,Patrimoine canadien,https://open.canada.ca/data/organization/pch,32,25
+2026,4,Canadian Human Rights Commission,Commission canadienne des droits de la personne,https://open.canada.ca/data/organization/chrc-ccdp,10,9
+2026,4,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,https://open.canada.ca/data/organization/cihr-irsc,8,8
+2026,4,Canadian Museum for Human Rights,Musée canadien pour les droits de la personne,https://open.canada.ca/data/organization/cmhr-mcdp,1,1
+2026,4,Canadian Museum of History,Musée canadien de l'histoire,https://open.canada.ca/data/organization/cmc-mcc,4,3
+2026,4,Canadian Museum of Immigration at Pier 21,Musée canadien de l'immigration du Quai 21,https://open.canada.ca/data/organization/cmip-mciq,1,1
+2026,4,Canadian Nuclear Safety Commission,Commission canadienne de sûreté nucléaire,https://open.canada.ca/data/organization/cnsc-ccsn,32,29
+2026,4,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,https://open.canada.ca/data/organization/crtc,17,17
+2026,4,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,https://open.canada.ca/data/organization/csis-scrs,55,47
+2026,4,Canadian Space Agency,Agence spatiale canadienne,https://open.canada.ca/data/organization/csa-asc,1,1
+2026,4,Canadian Transportation Agency,Office des transports du Canada,https://open.canada.ca/data/organization/cta-otc,4,2
+2026,4,Civilian Review and Complaints Commission for the RCMP,Commission civile d'examen et de traitement des plaintes relatives à la Gendarmerie royale du Canada,https://open.canada.ca/data/organization/cpc-cpp,2,2
+2026,4,College of Immigration and Citizenship Consultants,Collège des Consultants en Immigration et en Citoyenneté,https://open.canada.ca/data/organization/cicc-ccic,3,2
+2026,4,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,https://open.canada.ca/data/organization/csec-cstc,35,32
+2026,4,Copyright Board Canada,Commission du droit d'auteur du Canada,https://open.canada.ca/data/organization/cb-cda,2,2
+2026,4,Correctional Service of Canada,Service correctionnel du Canada,https://open.canada.ca/data/organization/csc-scc,80,66
+2026,4,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,https://open.canada.ca/data/organization/aandc-aadnc,17,17
+2026,4,Defence Construction Canada,Construction de Défense Canada,https://open.canada.ca/data/organization/dcc-cdc,6,5
+2026,4,Department of Finance Canada,Ministère des Finances Canada,https://open.canada.ca/data/organization/fin,138,121
+2026,4,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l’Infrastructure et des Collectivités",https://open.canada.ca/data/organization/infc,113,91
+2026,4,Department of Justice Canada,Ministère de la Justice Canada,https://open.canada.ca/data/organization/jus,67,54
+2026,4,Destination Canada,Destination Canada,https://open.canada.ca/data/organization/ctc-cct,2,1
+2026,4,Elections Canada,Élections Canada,https://open.canada.ca/data/organization/elections,12,12
+2026,4,Employment and Social Development Canada,Emploi et Développement social Canada,https://open.canada.ca/data/organization/esdc-edsc,167,114
+2026,4,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,39,29
+2026,4,Export Development Canada,Exportation et développement Canada,https://open.canada.ca/data/organization/edc,2,2
+2026,4,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,3,1
+2026,4,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,1,1
+2026,4,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,72,67
+2026,4,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,135,123
+2026,4,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,261,236
+2026,4,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,29,26
+2026,4,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",https://open.canada.ca/data/organization/cic,465,308
+2026,4,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,https://open.canada.ca/data/organization/iaac-aeic,2,2
+2026,4,Indigenous Services Canada,Services aux Autochtones Canada,https://open.canada.ca/data/organization/isc-sac,42,36
+2026,4,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,215,183
+2026,4,International Development Research Centre,Centre de recherches pour le développement international,https://open.canada.ca/data/organization/idrc-crdi,1,1
+2026,4,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,2
+2026,4,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
+2026,4,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,244,230
+2026,4,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,2,2
+2026,4,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,2,2
+2026,4,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
+2026,4,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,1,1
+2026,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,27,22
+2026,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,268,217
+2026,4,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,4,4
+2026,4,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
+2026,4,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,6
+2026,4,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,16,11
+2026,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,19,16
+2026,4,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,8,7
+2026,4,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,1
+2026,4,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,5,4
+2026,4,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,11,10
+2026,4,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,https://open.canada.ca/data/organization/osfi-bsif,4,4
+2026,4,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,https://open.canada.ca/data/organization/pacifican,6,4
+2026,4,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,19,16
+2026,4,Parole Board of Canada,Commission des libérations conditionnelles du Canada,https://open.canada.ca/data/organization/pbc-clcc,4,3
+2026,4,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,https://open.canada.ca/data/organization/pmprb-cepmb,4,4
+2026,4,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,https://open.canada.ca/data/organization/prairiescan,3,2
+2026,4,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,139,122
+2026,4,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,62,56
+2026,4,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,11,8
+2026,4,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,88,68
+2026,4,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,4,4
+2026,4,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,5,5
+2026,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,48,38
+2026,4,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,5,2
+2026,4,RCMP External Review Committee,Comité externe d'examen de la GRC,https://open.canada.ca/data/organization/erc-cee,3,2
+2026,4,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,3,2
+2026,4,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,190,127
+2026,4,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,https://open.canada.ca/data/organization/snsicp-scpssnr,1,1
+2026,4,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,27,22
+2026,4,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,3,3
+2026,4,Telefilm Canada,Téléfilm Canada,https://open.canada.ca/data/organization/tf,1,1
+2026,4,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,https://open.canada.ca/data/organization/oci-bec,2,2
+2026,4,The Seaway International Bridge Corporation,"Corporation du pont international de la voie maritime, Ltée",https://open.canada.ca/data/organization/sibc-cpivml,2,2
+2026,4,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,44,38
+2026,4,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,https://open.canada.ca/data/organization/tsb-bst,5,5
+2026,4,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,https://open.canada.ca/data/organization/tbs-sct,20,14
+2026,4,VIA HFR - VIA TGF Inc.,VIA HFR - VIA TGF Inc.,https://open.canada.ca/data/organization/hgr-tgf,5,4
+2026,4,Vancouver Fraser Port Authority,Administration portuaire Vancouver Fraser,https://open.canada.ca/data/organization/vfpa-apvf,2,2
+2026,4,Veterans Affairs Canada,Anciens Combattants Canada,https://open.canada.ca/data/organization/vac-acc,33,25
+2026,4,Veterans Review and Appeal Board,Tribunal des anciens combattants (révision et appel),https://open.canada.ca/data/organization/vrab-tacra,1,1
+2026,4,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,https://open.canada.ca/data/organization/wdba-apwd,2,2
+2026,4,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,https://open.canada.ca/data/organization/wage,2,2
 2026,3,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,https://open.canada.ca/data/organization/atssc-scdata,2,2
 2026,3,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,https://open.canada.ca/data/organization/acoa-apeca,3,3
 2026,3,Atlantic Pilotage Authority Canada,Administration de pilotage de l'Atlantique Canada,https://open.canada.ca/data/organization/apa,1,1
@@ -42,7 +150,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,3,International Development Research Centre,Centre de recherches pour le développement international,https://open.canada.ca/data/organization/idrc-crdi,2,2
 2026,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,16,15
 2026,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,7
-2026,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,54,44
+2026,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,52,42
 2026,3,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,4
 2026,3,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,13,13
 2026,3,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -122,7 +230,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,10,10
 2026,2,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,1,1
 2026,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,8
-2026,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,66,61
+2026,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,53,48
 2026,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,3
 2026,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2026,2,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,21,19
@@ -198,7 +306,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,1,International Development Research Centre,Centre de recherches pour le développement international,https://open.canada.ca/data/organization/idrc-crdi,2,1
 2026,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,13,13
 2026,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,4
-2026,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,154,133
+2026,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,133,112
 2026,1,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2026,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,5
 2026,1,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,4,3
@@ -216,7 +324,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,1,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2026,1,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,52,38
 2026,1,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2026,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,17,15
+2026,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,15
 2026,1,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,75,65
 2026,1,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,7,6
 2026,1,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,23,23
@@ -267,7 +375,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,12,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2025,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,5
 2025,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2025,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,87,76
+2025,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,72,61
 2025,12,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
 2025,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,12
 2025,12,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -282,7 +390,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,12,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2025,12,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,22,19
 2025,12,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2025,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,22,18
+2025,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,21,18
 2025,12,RCMP External Review Committee,Comité externe d'examen de la GRC,https://open.canada.ca/data/organization/erc-cee,3,2
 2025,12,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,60,58
 2025,12,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,5,5
@@ -345,7 +453,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,11,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,1
 2025,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,4
 2025,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,12,9
-2025,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,54,51
+2025,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,47,43
 2025,11,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,11,10
 2025,11,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,3
 2025,11,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
@@ -363,7 +471,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,11,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2025,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,10,10
 2025,11,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2025,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,25,19
+2025,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,24,19
 2025,11,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,2
 2025,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,23,23
 2025,11,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,13,13
@@ -420,7 +528,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,10,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,4,3
 2025,10,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,23,22
 2025,10,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,7,3
-2025,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,75,68
+2025,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,53,46
 2025,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,7,6
 2025,10,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,34,32
@@ -497,7 +605,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,25,24
 2025,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,4,4
 2025,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,71,64
+2025,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,62,55
 2025,9,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2025,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,3
 2025,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,9
@@ -514,7 +622,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,9,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2025,9,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,28,27
 2025,9,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,9,3
-2025,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,17,15
+2025,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,15
 2025,9,RCMP External Review Committee,Comité externe d'examen de la GRC,https://open.canada.ca/data/organization/erc-cee,1,1
 2025,9,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,74,65
 2025,9,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,9,8
@@ -568,7 +676,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,5
 2025,8,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,1
 2025,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,72,66
+2025,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,67,61
 2025,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2025,8,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,18,12
 2025,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,40,34
@@ -634,7 +742,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,21,20
 2025,7,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,5,1
 2025,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,57,49
+2025,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,41,33
 2025,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,7,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,3,3
 2025,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,20,18
@@ -705,7 +813,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,6,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,5,3
 2025,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,27,26
 2025,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,8
-2025,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,77,68
+2025,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,47,39
 2025,6,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,4
 2025,6,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,27,27
 2025,6,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -721,7 +829,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,30,28
 2025,6,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2025,6,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,5,5
-2025,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,24,20
+2025,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,23,20
 2025,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,62,60
 2025,6,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,9,8
 2025,6,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,1,1
@@ -776,7 +884,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,5,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,1
 2025,5,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,1,1
 2025,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2025,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,62,56
+2025,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,43,37
 2025,5,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2025,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,5,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,4,4
@@ -790,7 +898,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,5,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,8,7
 2025,5,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,20,20
 2025,5,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2025,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,36,24
+2025,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,35,24
 2025,5,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,73,66
 2025,5,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,13,11
 2025,5,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -854,7 +962,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,4,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,2
 2025,4,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,68,3
 2025,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2025,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,103,94
+2025,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,68,59
 2025,4,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,2
 2025,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,62,35
 2025,4,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,1
@@ -937,7 +1045,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,3,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,2,1
 2025,3,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,64,2
 2025,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2025,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,215,189
+2025,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,192,167
 2025,3,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2025,3,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,3,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,20,11
@@ -956,7 +1064,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,3,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2025,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,70,60
 2025,3,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,5,4
-2025,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,68,53
+2025,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,63,53
 2025,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,89,84
 2025,3,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,19,11
 2025,3,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -1027,7 +1135,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,2,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2025,2,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,34,2
 2025,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,5
-2025,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,142,122
+2025,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,108,90
 2025,2,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2025,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
@@ -1113,7 +1221,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,1,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,2
 2025,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,101,86
 2025,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,9
-2025,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,98,88
+2025,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,69,61
 2025,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,10,7
 2025,1,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,10,7
 2025,1,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,71,71
@@ -1194,7 +1302,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,12,Mackenzie Valley Land and Water Board,Office des terres et des eaux de la vallée du Mackenzie Valley,https://open.canada.ca/data/organization/mlvwb-otevm,1,1
 2024,12,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,3,3
 2024,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2024,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,245,193
+2024,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,220,169
 2024,12,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,12,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2024,12,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,3,2
@@ -1277,7 +1385,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,383,339
 2024,11,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,2
 2024,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,5
-2024,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,82,76
+2024,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,43,39
 2024,11,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2024,11,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,11,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,4
@@ -1295,7 +1403,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,73,67
 2024,11,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,5,5
 2024,11,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,3,2
-2024,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,102,81
+2024,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,90,81
 2024,11,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,3,3
 2024,11,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,1
 2024,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,179,150
@@ -1367,7 +1475,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,10,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,2
 2024,10,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,21,4
 2024,10,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,9
-2024,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,190,180
+2024,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,111,105
 2024,10,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,5,4
 2024,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,6
 2024,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,7,6
@@ -1385,7 +1493,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,10,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2024,10,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,63,58
 2024,10,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,11,11
-2024,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,34,28
+2024,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,33,28
 2024,10,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2024,10,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,174,159
 2024,10,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,16,15
@@ -1457,7 +1565,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,181,177
 2024,9,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2024,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,20,14
-2024,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,186,173
+2024,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,167,154
 2024,9,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,2,2
 2024,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,1
 2024,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,76,73
@@ -1478,7 +1586,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,9,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,59,50
 2024,9,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2024,9,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2024,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,56,51
+2024,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,55,51
 2024,9,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,177,162
 2024,9,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,79,53
 2024,9,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -1545,7 +1653,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,8,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,3,3
 2024,8,Nanaimo Port Authority,Administration portuaire de Nanaïmo,https://open.canada.ca/data/organization/nnpa-apn,1,1
 2024,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2024,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,174,139
+2024,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,120,88
 2024,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,4
 2024,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,132,126
 2024,8,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -1657,7 +1765,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,7,Nanaimo Port Authority,Administration portuaire de Nanaïmo,https://open.canada.ca/data/organization/nnpa-apn,1,1
 2024,7,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,3,2
 2024,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,60,44
-2024,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,754,562
+2024,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,237,139
 2024,7,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,7,5
 2024,7,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,6,5
 2024,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,55,42
@@ -1689,7 +1797,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,7,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,296,221
 2024,7,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,20,16
 2024,7,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,30,24
-2024,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,344,278
+2024,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,340,278
 2024,7,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,5,5
 2024,7,Revera Inc.,Revera Inc.,https://open.canada.ca/data/organization/ri,3,2
 2024,7,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,14,11
@@ -1788,7 +1896,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,6,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,10,8
 2024,6,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,4,2
 2024,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,17,10
-2024,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,408,403
+2024,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,3,3
 2024,6,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,20,19
 2024,6,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,6,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,42,40
@@ -1814,7 +1922,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,148,139
 2024,6,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,6,3
 2024,6,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,20,19
-2024,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,129,115
+2024,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,128,115
 2024,6,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,11,11
 2024,6,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,18,18
 2024,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,382,362
@@ -1893,7 +2001,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,5,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,3,3
 2024,5,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,4,4
 2024,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,3
-2024,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,699,675
+2024,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,5,5
 2024,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,8,8
 2024,5,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,6,6
 2024,5,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,374,368
@@ -1916,7 +2024,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,5,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,53,52
 2024,5,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2024,5,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,17,17
-2024,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,532,505
+2024,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,519,505
 2024,5,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,18,18
 2024,5,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,347,323
 2024,5,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,175,166
@@ -1997,7 +2105,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,4,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,17,17
 2024,4,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2024,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,5,5
-2024,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,289,266
 2024,4,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,18,18
 2024,4,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2024,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,158,158
@@ -2020,7 +2127,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,4,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,54,52
 2024,4,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2024,4,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,12,12
-2024,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,147,105
+2024,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,111,105
 2024,4,RCMP External Review Committee,Comité externe d'examen de la GRC,https://open.canada.ca/data/organization/erc-cee,1,1
 2024,4,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,7,6
 2024,4,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,212,208
@@ -2083,7 +2190,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,53,47
 2024,3,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2024,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2024,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,93,82
 2024,3,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,3,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2024,3,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,10,10
@@ -2100,7 +2206,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,51,45
 2024,3,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,2
 2024,3,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,9,8
-2024,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,37,26
+2024,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,35,26
 2024,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,61,57
 2024,3,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,11,10
 2024,3,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -2155,7 +2261,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,2,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,1,1
 2024,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,96,75
 2024,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,5,4
-2024,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,91,69
 2024,2,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2024,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,11,11
 2024,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,5
@@ -2173,7 +2278,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,2,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,4,3
 2024,2,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,43,40
 2024,2,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,14,4
-2024,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,25,19
+2024,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,22,19
 2024,2,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,87,78
 2024,2,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,4
 2024,2,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -2238,7 +2343,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,1,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2024,1,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,1,1
 2024,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,22,21
-2024,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,87,76
 2024,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,1
 2024,1,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,18,18
 2024,1,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -2311,7 +2415,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,12,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,33,30
 2023,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,18,18
 2023,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,11,11
-2023,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,53,46
 2023,12,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2023,12,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,2
 2023,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,23,22
@@ -2330,7 +2433,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,12,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,26,25
 2023,12,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,11,11
 2023,12,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2023,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,20,16
+2023,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,18,16
 2023,12,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,134,112
 2023,12,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,4
 2023,12,Standards Council of Canada,Conseil canadien des normes,https://open.canada.ca/data/organization/scc-ccn,1,1
@@ -2393,7 +2496,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,11,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,47,39
 2023,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,54,50
 2023,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,3
-2023,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,66,57
 2023,11,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2023,11,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,8,8
 2023,11,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,35,32
@@ -2410,7 +2512,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,11,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2023,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,95,69
 2023,11,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,10,8
-2023,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,14
+2023,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,15,14
 2023,11,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,1,1
 2023,11,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,4,4
 2023,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,148,124
@@ -2469,7 +2571,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,10,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,3,3
 2023,10,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2023,10,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,13,11
-2023,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,62,60
 2023,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2023,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2023,10,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,24,23
@@ -2487,7 +2588,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,10,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2023,10,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,64,51
 2023,10,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2023,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,20,14
+2023,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,19,14
 2023,10,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,2,1
 2023,10,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,111,94
 2023,10,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,17,15
@@ -2546,7 +2647,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,17,15
 2023,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,116,101
 2023,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2023,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,74,68
 2023,9,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2023,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2023,9,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
@@ -2618,7 +2718,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,8,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,53,44
 2023,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,31,29
 2023,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,10,9
-2023,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,56,53
 2023,8,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2023,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,5
 2023,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,37,36
@@ -2635,7 +2734,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,8,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,63,50
 2023,8,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2023,8,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2023,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,20,14
+2023,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,15,14
 2023,8,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,156,128
 2023,8,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,17,15
 2023,8,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,1,1
@@ -2689,7 +2788,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,7,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,31,26
 2023,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,25,21
 2023,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,11,9
-2023,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,95,74
 2023,7,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2023,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,3
 2023,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,21,20
@@ -2763,7 +2861,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,6,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,35,33
 2023,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,22,22
 2023,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,13,12
-2023,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,86,76
 2023,6,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,2,2
 2023,6,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2023,6,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,39,33
@@ -2780,7 +2877,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,6,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2023,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,48,40
 2023,6,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2023,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,49,40
+2023,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,48,40
 2023,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,120,97
 2023,6,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,5,5
 2023,6,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,1,1
@@ -2830,7 +2927,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,5,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,21,21
 2023,5,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,188,184
 2023,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,26,7
-2023,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,52,46
 2023,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,4
 2023,5,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,32,25
 2023,5,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,2
@@ -2846,7 +2942,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,5,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,69,45
 2023,5,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,3,3
 2023,5,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2023,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,12,10
+2023,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,10,10
 2023,5,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,57,45
 2023,5,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,13,13
 2023,5,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,2,2
@@ -2894,7 +2990,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,4,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,23,22
 2023,4,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,28,24
 2023,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,18,7
-2023,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,30,30
 2023,4,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,3,2
 2023,4,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,3
 2023,4,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
@@ -2908,7 +3003,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,4,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2023,4,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,18,17
 2023,4,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,6,5
-2023,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,6,5
+2023,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,5,5
 2023,4,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,87,67
 2023,4,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,4
 2023,4,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,1,1
@@ -2962,7 +3057,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,14,14
 2023,3,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2023,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,7
-2023,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,93,76
 2023,3,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,29,26
 2023,3,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
 2023,3,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,2,2
@@ -2974,7 +3068,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,3,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2023,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,43,38
 2023,3,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2023,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,6,4
+2023,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,4,4
 2023,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,120,81
 2023,3,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,6,6
 2023,3,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,15,13
@@ -3027,7 +3121,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,2,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,11,11
 2023,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,24,14
 2023,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2023,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,87,70
 2023,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,4
 2023,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2023,2,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,36,31
@@ -3044,7 +3137,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,2,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,5,4
 2023,2,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,31,28
 2023,2,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2023,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,31,20
+2023,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,22,20
 2023,2,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2023,2,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,60,50
 2023,2,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,15,14
@@ -3091,7 +3184,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,1,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,13,13
 2023,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,21,20
 2023,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,7,2
-2023,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,35,34
 2023,1,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,4,2
 2023,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,2
 2023,1,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,20,16
@@ -3151,7 +3243,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,12,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,15,13
 2022,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,9,9
 2022,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2022,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,41,39
 2022,12,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2022,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,32,30
 2022,12,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -3216,7 +3307,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,11,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,18,15
 2022,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,4
 2022,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2022,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,48,46
 2022,11,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2022,11,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,4
 2022,11,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
@@ -3231,7 +3321,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,11,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2022,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,31,25
 2022,11,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2022,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,18,17
+2022,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,17,17
 2022,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,47,41
 2022,11,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,3,3
 2022,11,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,2,2
@@ -3285,7 +3375,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,10,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,83,58
 2022,10,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,18,12
 2022,10,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,5,5
-2022,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,84,73
 2022,10,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,2,2
 2022,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,5
 2022,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
@@ -3351,7 +3440,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,31,29
 2022,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,24,24
 2022,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,11,7
-2022,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,23,23
 2022,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2022,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,29,27
 2022,9,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,5,2
@@ -3366,7 +3454,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,9,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2022,9,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,30,21
 2022,9,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,1
-2022,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,8,7
+2022,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,7,7
 2022,9,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,38,33
 2022,9,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,21,20
 2022,9,Standards Council of Canada,Conseil canadien des normes,https://open.canada.ca/data/organization/scc-ccn,1,1
@@ -3423,7 +3511,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,8,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,14,12
 2022,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,1,1
 2022,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,6
-2022,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,28,25
 2022,8,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,5,2
 2022,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,8,5
 2022,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,9,9
@@ -3437,7 +3524,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,8,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,6,6
 2022,8,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,30,30
 2022,8,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2022,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,11,10
+2022,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,10,10
 2022,8,Revera Inc.,Revera Inc.,https://open.canada.ca/data/organization/ri,1,1
 2022,8,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2022,8,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,24,20
@@ -3491,7 +3578,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,7,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,33,32
 2022,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,2,2
 2022,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,4
-2022,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,30,27
 2022,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,2
 2022,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,29,29
 2022,7,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,2
@@ -3503,7 +3589,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,7,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,16,13
 2022,7,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2022,7,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,18,15
-2022,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,9,6
+2022,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,6,6
 2022,7,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2022,7,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,67,59
 2022,7,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,3,3
@@ -3559,7 +3645,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,5
 2022,6,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2022,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,2
-2022,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,72,67
 2022,6,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2022,6,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,26,23
 2022,6,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,8,5
@@ -3574,7 +3659,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,39,34
 2022,6,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,5,4
 2022,6,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2022,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,18,12
+2022,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,14,12
 2022,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,40,32
 2022,6,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,27,24
 2022,6,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,1,1
@@ -3623,7 +3708,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,5,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,82,58
 2022,5,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,6
 2022,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,10,7
-2022,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,29,24
 2022,5,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,2,2
 2022,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,1
 2022,5,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
@@ -3689,7 +3773,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,4,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,34,30
 2022,4,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,10,10
 2022,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,12,3
-2022,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,38,31
 2022,4,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,3
 2022,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,35,27
 2022,4,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,2
@@ -3700,7 +3783,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,4,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,32,28
 2022,4,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,38,34
 2022,4,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,21,20
-2022,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,18,15
+2022,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,15,15
 2022,4,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,152,127
 2022,4,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,2,1
 2022,4,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -3746,7 +3829,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,3,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,31,23
 2022,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,3,2
 2022,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,13,9
-2022,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,27,26
 2022,3,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,4
 2022,3,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,16,12
 2022,3,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,2,2
@@ -3758,7 +3840,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,3,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2022,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,27,19
 2022,3,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2022,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,13,9
+2022,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,11,9
 2022,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,51,43
 2022,3,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,4
 2022,3,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,https://open.canada.ca/data/organization/oci-bec,2,1
@@ -3808,7 +3890,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,32,29
 2022,2,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2022,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2022,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,32,32
 2022,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,1
 2022,2,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,15,14
 2022,2,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,3,2
@@ -3819,7 +3900,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,2,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,25,18
 2022,2,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,42,37
 2022,2,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2022,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,29,16
+2022,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,26,16
 2022,2,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,81,74
 2022,2,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,2,2
 2022,2,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -3871,7 +3952,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,1,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,107,86
 2022,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,4
 2022,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,10,9
-2022,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,27,23
 2022,1,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,2,1
 2022,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2022,1,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,3
@@ -3887,7 +3967,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,1,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,3,3
 2022,1,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,47,39
 2022,1,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2022,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,48,37
+2022,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,46,37
 2022,1,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2022,1,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,109,96
 2022,1,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,17,16
@@ -3933,7 +4013,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,12,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,22,19
 2021,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,3,3
 2021,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2021,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,75,62
 2021,12,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2021,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,27,23
 2021,12,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,https://open.canada.ca/data/organization/ocl-cal,1,1
@@ -3945,7 +4024,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,12,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2021,12,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,42,35
 2021,12,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2021,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,52,27
+2021,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,49,27
 2021,12,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,108,94
 2021,12,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,3,2
 2021,12,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,2,2
@@ -3991,7 +4070,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,11,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,25,24
 2021,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,8,8
 2021,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2021,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,56,49
 2021,11,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,38,36
 2021,11,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,1,1
 2021,11,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,3,3
@@ -4003,7 +4081,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,26,24
 2021,11,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2021,11,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,5,5
-2021,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,182,154
+2021,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,180,154
 2021,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,37,34
 2021,11,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,5,5
 2021,11,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,1,1
@@ -4049,7 +4127,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,10,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,23,21
 2021,10,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,3,3
 2021,10,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2021,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,83,71
 2021,10,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2021,10,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,20,20
 2021,10,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,10,9
@@ -4061,7 +4138,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,10,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2021,10,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,48,35
 2021,10,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2021,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,35,23
+2021,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,34,23
 2021,10,Revera Inc.,Revera Inc.,https://open.canada.ca/data/organization/ri,1,1
 2021,10,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,28,25
 2021,10,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,14,11
@@ -4113,7 +4190,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,9,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2021,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,10,8
 2021,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2021,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,78,64
 2021,9,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,2,2
 2021,9,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2021,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,9
@@ -4121,7 +4197,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,9,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,24,20
 2021,9,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,15,8
 2021,9,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,37,24
-2021,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,14,12
+2021,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,12,12
 2021,9,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,24,20
 2021,9,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,27,13
 2021,9,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,6,6
@@ -4168,7 +4244,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,8,Indigenous Services Canada,Services aux Autochtones Canada,https://open.canada.ca/data/organization/isc-sac,2,2
 2021,8,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,18,16
 2021,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2021,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,30,26
 2021,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,22,18
 2021,8,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,1,1
 2021,8,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,8,5
@@ -4177,7 +4252,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,8,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,6,6
 2021,8,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2021,8,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,22,18
-2021,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,3,2
+2021,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,2,2
 2021,8,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,2
 2021,8,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,18,17
 2021,8,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,24,20
@@ -4229,7 +4304,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,7,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,31,26
 2021,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,14,10
 2021,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2021,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,19,18
 2021,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,4,3
 2021,7,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,4,4
 2021,7,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,13,12
@@ -4237,7 +4311,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,7,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2021,7,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,12,11
 2021,7,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2021,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,17,15
+2021,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,15,15
 2021,7,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,5,5
 2021,7,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,4
 2021,7,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,10,10
@@ -4284,7 +4358,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,6,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,48,41
 2021,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,14,12
 2021,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,5,5
-2021,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,46,36
 2021,6,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,18,18
 2021,6,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,2
 2021,6,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,2,2
@@ -4295,7 +4368,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,6,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2021,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,14,10
 2021,6,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,1,1
-2021,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,31,26
+2021,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,30,26
 2021,6,Revera Inc.,Revera Inc.,https://open.canada.ca/data/organization/ri,2,1
 2021,6,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,2
 2021,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,4,3
@@ -4349,7 +4422,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,5,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,21,18
 2021,5,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,5
 2021,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,1
-2021,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,23,18
 2021,5,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,24,18
 2021,5,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,4,2
 2021,5,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,7,3
@@ -4359,7 +4431,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,5,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,13,12
 2021,5,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
 2021,5,Public Service Commission of Canada,Commission de la fonction publique du Canada,https://open.canada.ca/data/organization/psc-cfp,2,2
-2021,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,32,29
+2021,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,29,29
 2021,5,Revera Inc.,Revera Inc.,https://open.canada.ca/data/organization/ri,1,1
 2021,5,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,4,4
 2021,5,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,8,7
@@ -4405,7 +4477,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,4,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,28,23
 2021,4,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,2,2
 2021,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2021,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,28,24
 2021,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,9,9
 2021,4,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,1,1
 2021,4,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,15,13
@@ -4460,7 +4531,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,4
 2021,3,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,1
 2021,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2021,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,18,15
 2021,3,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,4,4
 2021,3,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,2,2
 2021,3,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,1,1
@@ -4470,7 +4540,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,3,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2021,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,15,12
 2021,3,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2021,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,19,11
+2021,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,11,11
 2021,3,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,2
 2021,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,2,2
 2021,3,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,8,7
@@ -4515,7 +4585,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,2,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,5,5
 2021,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,2,2
 2021,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,7,6
-2021,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,22,20
 2021,2,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2021,2,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,13,11
 2021,2,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,1,1
@@ -4527,7 +4596,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,2,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,7,7
 2021,2,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,2,2
 2021,2,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,22,16
-2021,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,24,12
+2021,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,12
 2021,2,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,1,1
 2021,2,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,2,2
 2021,2,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,https://open.canada.ca/data/organization/oci-bec,3,2
@@ -4569,7 +4638,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,1,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,14,12
 2021,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,15,13
 2021,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2021,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,43,35
 2021,1,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,2,2
 2021,1,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,8,8
 2021,1,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,2,1
@@ -4578,7 +4646,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2021,1,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2021,1,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,16,14
 2021,1,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2021,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,12
+2021,1,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,12,12
 2021,1,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,7,7
 2021,1,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,9,8
 2021,1,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,2,2
@@ -4621,14 +4689,13 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,12,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2020,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,14,13
 2020,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,1,1
-2020,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,29,25
 2020,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,10
 2020,12,Parole Board of Canada,Commission des libérations conditionnelles du Canada,https://open.canada.ca/data/organization/pbc-clcc,2,2
 2020,12,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,4,4
 2020,12,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,1,1
 2020,12,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,7,6
 2020,12,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,2
-2020,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,32,21
+2020,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,24,21
 2020,12,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,4,3
 2020,12,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,5,5
 2020,12,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,2,2
@@ -4670,14 +4737,13 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,11,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",https://open.canada.ca/data/organization/cic,29,24
 2020,11,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,25,16
 2020,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,4
-2020,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,56,43
 2020,11,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,5,5
 2020,11,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,1,1
 2020,11,Parole Board of Canada,Commission des libérations conditionnelles du Canada,https://open.canada.ca/data/organization/pbc-clcc,1,1
 2020,11,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,4,4
 2020,11,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,3,2
 2020,11,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,12,10
-2020,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,72,37
+2020,11,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,40,37
 2020,11,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,5,4
 2020,11,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,3,3
 2020,11,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,4,4
@@ -4724,14 +4790,13 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,10,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,https://open.canada.ca/data/organization/iaac-aeic,2,2
 2020,10,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,32,30
 2020,10,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,11,11
-2020,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,7,7
 2020,10,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2020,10,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,2,2
 2020,10,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,27,21
 2020,10,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,6,5
 2020,10,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,26,22
 2020,10,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,1
-2020,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,30,18
+2020,10,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,26,18
 2020,10,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,1,1
 2020,10,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,12,9
 2020,10,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,2,1
@@ -4775,7 +4840,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,9,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,https://open.canada.ca/data/organization/iaac-aeic,1,1
 2020,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,46,35
 2020,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,1,1
-2020,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,37,32
 2020,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,16,14
 2020,9,Office of the Commissioner of Lobbying of Canada,Commissariat au lobbying du Canada,https://open.canada.ca/data/organization/ocl-cal,1,1
 2020,9,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,1,1
@@ -4784,7 +4848,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,9,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2020,9,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,22,17
 2020,9,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,1
-2020,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,162,74
+2020,9,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,81,74
 2020,9,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,1,1
 2020,9,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,4,3
 2020,9,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,2,2
@@ -4821,13 +4885,12 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,8,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,7,7
 2020,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,2,2
 2020,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2020,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,31,28
 2020,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,2,2
 2020,8,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,9,8
 2020,8,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,1,1
 2020,8,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2020,8,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,6,5
-2020,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,6,3
+2020,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,3,3
 2020,8,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,2,1
 2020,8,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,3,3
 2020,8,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,https://open.canada.ca/data/organization/tbs-sct,4,4
@@ -4866,7 +4929,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,7,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,3,2
 2020,7,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,10,8
 2020,7,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2020,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,6,3
+2020,7,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,3,3
 2020,7,Royal Canadian Mint,Monnaie royale canadienne,https://open.canada.ca/data/organization/mint-monnaie,1,1
 2020,7,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,5,3
 2020,7,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,6,5
@@ -4910,7 +4973,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,6,Parole Board of Canada,Commission des libérations conditionnelles du Canada,https://open.canada.ca/data/organization/pbc-clcc,5,1
 2020,6,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,4,4
 2020,6,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,24,16
-2020,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,2,1
+2020,6,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,1,1
 2020,6,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,6,5
 2020,6,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,5,5
 2020,6,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,https://open.canada.ca/data/organization/tsb-bst,1,1
@@ -4949,7 +5012,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,5,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,10,8
 2020,5,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,17,9
 2020,5,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,1,1
-2020,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,2,1
+2020,5,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,1,1
 2020,5,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,8,7
 2020,5,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,24,16
 2020,5,Sustainable Development Technology Canada,Technologies du développement durable Canada,https://open.canada.ca/data/organization/sdtc-tddc,1,1
@@ -4977,7 +5040,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,4,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,7,7
 2020,4,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,21,20
 2020,4,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,2,1
-2020,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,32,13
+2020,4,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,16,13
 2020,4,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,1,1
 2020,4,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,11,7
 2020,4,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,https://open.canada.ca/data/organization/oci-bec,1,1
@@ -5011,7 +5074,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,3,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,25,18
 2020,3,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
 2020,3,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,10,9
-2020,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,8,2
+2020,3,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,4,2
 2020,3,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,15,15
 2020,3,Sustainable Development Technology Canada,Technologies du développement durable Canada,https://open.canada.ca/data/organization/sdtc-tddc,1,1
 2020,3,Transportation Safety Board of Canada,Bureau de la sécurité des transports du Canada,https://open.canada.ca/data/organization/tsb-bst,1,1
@@ -5034,8 +5097,8 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2020,2,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",https://open.canada.ca/data/organization/cic,8,6
 2020,2,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,9,9
 2020,2,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,1,1
-2020,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,4,2
+2020,2,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,2,2
 2020,2,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,30,21
 2020,2,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,6,5
-2019,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,2,1
+2019,12,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,1,1
 2019,9,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
