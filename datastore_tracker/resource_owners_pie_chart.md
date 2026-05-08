@@ -11,7 +11,7 @@ pie showData title Top 20 Orgs by View Count
     "tbs-sct": 276
     "cfia-acia": 192
     "psc-cfp": 179
-    "hc-sc": 154
+    "hc-sc": 156
     "osfi-bsif": 74
     "nrcan-rncan": 61
     "dfatd-maecd": 44

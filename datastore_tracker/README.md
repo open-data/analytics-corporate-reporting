@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3773
+    "success": 3777
     "failure": 2955
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3526
+    "datatables_view": 3528
     "text_view": 206
     "image_view": 4
     "openapi_view": 4
@@ -71,7 +71,7 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 591 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 130 |
+| open.canada.ca | hc-sc | 132 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
@@ -89,7 +89,7 @@ pie showData title Resource View Types
 | open.canada.ca | psc-cfp | 151 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
-| open.canada.ca | ssc-spc | 38 |
+| open.canada.ca | ssc-spc | 40 |
 | open.canada.ca | tbs-sct | 194 |
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
@@ -131,7 +131,7 @@ pie showData title Top 20 Orgs by View Count
     "tbs-sct": 276
     "cfia-acia": 192
     "psc-cfp": 179
-    "hc-sc": 154
+    "hc-sc": 156
     "osfi-bsif": 74
     "nrcan-rncan": 61
     "dfatd-maecd": 44
