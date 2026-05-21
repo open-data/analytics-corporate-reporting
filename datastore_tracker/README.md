@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3782
-    "failure": 2957
+    "success": 3872
+    "failure": 2956
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3533
+    "datatables_view": 3623
     "text_view": 206
     "image_view": 4
     "openapi_view": 4
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 176 |
+| open.canada.ca | cfia-acia | 177 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 559 |
@@ -64,14 +64,14 @@ pie showData title Resource View Types
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
 | open.canada.ca | csps-efpc | 1 |
-| open.canada.ca | dfatd-maecd | 49 |
+| open.canada.ca | dfatd-maecd | 50 |
 | open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 591 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 132 |
+| open.canada.ca | hc-sc | 141 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
@@ -86,7 +86,7 @@ pie showData title Resource View Types
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 32 |
-| open.canada.ca | psc-cfp | 151 |
+| open.canada.ca | psc-cfp | 152 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 40 |
@@ -94,7 +94,7 @@ pie showData title Resource View Types
 | open.canada.ca | tc | 39 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
-| www.canada.ca | cra-arc | 139 |
+| www.canada.ca | cra-arc | 217 |
 | www.canada.ca | tbs-sct | 14 |
 <!-- RESOURCE_COUNTS_END -->
 
@@ -104,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00066, 0.00082, 0.00079}
+  curve u["Upload"]{0.00066, 0.00082, 0.00078}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -126,15 +126,15 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 982
-    "cra-arc": 695
+    "cra-arc": 773
     "esdc-edsc": 636
     "tbs-sct": 276
-    "cfia-acia": 192
-    "psc-cfp": 179
-    "hc-sc": 156
+    "cfia-acia": 193
+    "psc-cfp": 180
+    "hc-sc": 165
     "osfi-bsif": 74
     "nrcan-rncan": 61
-    "dfatd-maecd": 49
+    "dfatd-maecd": 50
     "ssc-spc": 42
     "phac-aspc": 41
     "tc": 38
