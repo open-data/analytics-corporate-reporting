@@ -38,8 +38,8 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3625
-    "text_view": 206
+    "datatables_view": 3626
+    "text_view": 207
     "image_view": 4
     "openapi_view": 4
     "power_bi_view": 3
@@ -82,7 +82,7 @@ pie showData title Resource View Types
 | open.canada.ca | nrcan-rncan | 54 |
 | open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
-| open.canada.ca | pc | 969 |
+| open.canada.ca | pc | 970 |
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 32 |
@@ -125,7 +125,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 982
+    "pc": 983
     "cra-arc": 773
     "esdc-edsc": 636
     "tbs-sct": 276
@@ -139,7 +139,7 @@ pie showData title Top 20 Orgs by View Count
     "phac-aspc": 41
     "tc": 38
     "cnsc-ccsn": 35
-    "ic": 24
+    "ic": 25
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
