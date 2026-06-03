@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3895
-    "failure": 2956
+    "success": 3872
+    "failure": 2918
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,10 +38,10 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3646
+    "datatables_view": 3642
     "text_view": 207
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 3
 ```
 
@@ -75,18 +75,18 @@ pie showData title Resource View Types
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 2 |
-| open.canada.ca | irb-cisr | 18 |
+| open.canada.ca | irb-cisr | 8 |
 | open.canada.ca | isc-sac | 13 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
 | open.canada.ca | nrcan-rncan | 54 |
 | open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
-| open.canada.ca | pc | 970 |
+| open.canada.ca | pc | 966 |
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 32 |
-| open.canada.ca | psc-cfp | 152 |
+| open.canada.ca | psc-cfp | 153 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 40 |
@@ -125,7 +125,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 983
+    "pc": 979
     "cra-arc": 775
     "esdc-edsc": 636
     "tbs-sct": 292
