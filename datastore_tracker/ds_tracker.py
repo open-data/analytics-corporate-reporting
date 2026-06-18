@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 
 import requests
@@ -81,10 +80,10 @@ def build_resource_counts_table(df):
     counts = (
         df.assign(url_host=url_hosts)
         .query("url_host != ''")
-        .groupby(["url_host", "owner"])
+        .groupby(["url_host", "owner"]) 
         .size()
         .reset_index(name="resource_count")
-        .sort_values(["url_host", "owner"])
+        .sort_values(["url_host", "owner"]) 
     )
 
     headers = ["url_host", "owner", "resource_count"]
@@ -353,17 +352,34 @@ df_resource_views = pd.read_csv(StringIO(response.text))
 
 list_of_res_subset = list_of_res[["resource_id", "owner", "dataset_name", "resource_name"]].copy()
 
-# Ensure resource_id columns have the same data type before merging
-df_resource_views["resource_id"] = df_resource_views["resource_id"].astype(str)
-list_of_res_subset["resource_id"] = list_of_res_subset["resource_id"].astype(str)
+# Use concat instead of merge to avoid dtype mismatch errors between float64 and str
+# Ensure resource_id columns are strings (empty where missing) before joining
+if "resource_id" in df_resource_views.columns:
+    df_resource_views["resource_id"] = df_resource_views["resource_id"].astype(object).where(df_resource_views["resource_id"].notna(), "")
+else:
+    df_resource_views["resource_id"] = ""
 
-df_resource_views = pd.merge(
-    df_resource_views,
-    list_of_res_subset,
-    on="resource_id",
-    how="left"
-)
+if "resource_id" in list_of_res_subset.columns:
+    list_of_res_subset["resource_id"] = list_of_res_subset["resource_id"].astype(object).where(list_of_res_subset["resource_id"].notna(), "")
+else:
+    list_of_res_subset["resource_id"] = ""
 
+# Set resource_id as index and concat on index to align rows safely.
+# This follows pandas' suggestion to use concat when dtypes differ on the join key.
+df_resource_views_indexed = df_resource_views.set_index("resource_id")
+list_of_res_indexed = list_of_res_subset.set_index("resource_id")
+
+# When concatenating, only bring the columns we need from the resource list.
+cols_from_res = [c for c in ["owner", "dataset_name", "resource_name"] if c in list_of_res_indexed.columns]
+if cols_from_res:
+    df_resource_views = (
+        pd.concat([df_resource_views_indexed, list_of_res_indexed[cols_from_res]], axis=1)
+        .reset_index()
+    )
+else:
+    df_resource_views = df_resource_views_indexed.reset_index()
+
+# Ensure view_type exists
 default_view_type = "Unknown"
 df_resource_views["view_type"] = df_resource_views.get("view_type", pd.Series(dtype="object")).fillna(default_view_type)
 
@@ -376,13 +392,15 @@ columns_to_keep_and_order_views = [
     "id",
     "view_type",
 ]
+# Keep only columns that actually exist to avoid KeyError if some are missing
+columns_to_keep_and_order_views = [c for c in columns_to_keep_and_order_views if c in df_resource_views.columns]
 df_resource_views = df_resource_views[columns_to_keep_and_order_views]
 
 package_details_cache_local = {}
 for idx, row in df_resource_views.iterrows():
-    if pd.isna(row["owner"]) or pd.isna(row["dataset_name"]) or pd.isna(row["resource_name"]):
-        package_id = row["package_id"]
-        resource_id = row["resource_id"]
+    if pd.isna(row.get("owner")) or pd.isna(row.get("dataset_name")) or pd.isna(row.get("resource_name")):
+        package_id = row.get("package_id")
+        resource_id = row.get("resource_id")
 
         if package_id not in package_details_cache_local:
             package_details = package_lookup.get(package_id, {})
@@ -397,16 +415,18 @@ for idx, row in df_resource_views.iterrows():
         else:
             owner_from_lookup, dataset_name_from_lookup, resource_names_from_lookup_dict = package_details_cache_local[package_id]
 
-        if pd.isna(row["owner"]) and owner_from_lookup is not None:
+        if pd.isna(row.get("owner")) and owner_from_lookup is not None:
             df_resource_views.at[idx, "owner"] = owner_from_lookup
 
-        if pd.isna(row["dataset_name"]) and dataset_name_from_lookup is not None:
+        if pd.isna(row.get("dataset_name")) and dataset_name_from_lookup is not None:
             df_resource_views.at[idx, "dataset_name"] = dataset_name_from_lookup
 
-        if pd.isna(row["resource_name"]) and resource_id in resource_names_from_lookup_dict:
+        if pd.isna(row.get("resource_name")) and resource_id in resource_names_from_lookup_dict:
             df_resource_views.at[idx, "resource_name"] = resource_names_from_lookup_dict[resource_id]
 
-df_resource_views.to_csv("res_views.csv", index=False)
+# Save out the intermediate CSV
+if df_resource_views.shape[0] > 0:
+    df_resource_views.to_csv("res_views.csv", index=False)
 print("df_resource_views processed and saved.")
 
 # ---------------------------------------------------------------------
@@ -434,6 +454,8 @@ columns_to_keep_relations = [
     "related_url_en",
     "related_url_fr",
 ]
+# Keep only existing columns
+columns_to_keep_relations = [c for c in columns_to_keep_relations if c in df_relations_values.columns]
 df_relations_values = df_relations_values[columns_to_keep_relations]
 df_relations_values.to_csv("res_relations.csv", index=False)
 print("df_relations_values processed and saved.")
@@ -450,8 +472,11 @@ columns_to_keep_validation = [
     "id",
     "package_id",
 ]
+columns_to_keep_validation = [c for c in columns_to_keep_validation if c in df_validation_values.columns]
 df_validation_values = df_validation_values[columns_to_keep_validation]
-df_validation_values = df_validation_values[df_validation_values["validation_status"].isin(["success", "failure"])]
+if "validation_status" in df_validation_values.columns:
+    df_validation_values = df_validation_values[df_validation_values["validation_status"].isin(["success", "failure"]) ]
+
 df_validation_values.to_csv("res_validation_status.csv", index=False)
 print("df_validation_values processed and saved.")
 
@@ -461,8 +486,8 @@ print("df_validation_values processed and saved.")
 print("Generating Mermaid.js charts...")
 readme_path = "README.md"
 
-view_type_counts = df_resource_views["view_type"].fillna("Unknown").value_counts()
-pie_chart_data_view_type = [f"    \"{index}\": {value}" for index, value in view_type_counts.items()]
+view_type_counts = df_resource_views["view_type"].fillna("Unknown").value_counts() if "view_type" in df_resource_views.columns else pd.Series(dtype=int)
+pie_chart_data_view_type = [f"    \\"{index}\\": {value}" for index, value in view_type_counts.items()]
 pie_chart_mermaid_view_type = f"""
 ```mermaid
 ---
@@ -470,7 +495,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-{'\n'.join(pie_chart_data_view_type)}
+{('\n'.join(pie_chart_data_view_type))}
 ```
 """
 with open("resource_view_types_pie_chart.md", "w", encoding="utf-8") as f:
@@ -485,9 +510,9 @@ update_readme_section(
 )
 print("README.md updated with 'Resource View Types' chart.")
 
-owner_counts = df_resource_views["owner"].fillna("Unknown").value_counts()
+owner_counts = df_resource_views["owner"].fillna("Unknown").value_counts() if "owner" in df_resource_views.columns else pd.Series(dtype=int)
 top_20_owners = owner_counts.head(20)
-pie_chart_data_owner = [f"    \"{index}\": {value}" for index, value in top_20_owners.items()]
+pie_chart_data_owner = [f"    \\"{index}\\": {value}" for index, value in top_20_owners.items()]
 pie_chart_mermaid_owner = f"""
 ```mermaid
 ---
@@ -495,7 +520,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-{'\n'.join(pie_chart_data_owner)}
+{('\n'.join(pie_chart_data_owner))}
 ```
 """
 with open("resource_owners_pie_chart.md", "w", encoding="utf-8") as f:
@@ -510,8 +535,8 @@ update_readme_section(
 )
 print("README.md updated with 'Top 20 Orgs by View Count' chart.")
 
-validation_status_counts = df_validation_values["validation_status"].value_counts()
-pie_chart_data_validation_status = [f"    \"{index}\": {value}" for index, value in validation_status_counts.items()]
+validation_status_counts = df_validation_values["validation_status"].value_counts() if "validation_status" in df_validation_values.columns else pd.Series(dtype=int)
+pie_chart_data_validation_status = [f"    \\"{index}\\": {value}" for index, value in validation_status_counts.items()]
 pie_chart_mermaid_validation_status = f"""
 ```mermaid
 ---
@@ -519,7 +544,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-{'\n'.join(pie_chart_data_validation_status)}
+{('\n'.join(pie_chart_data_validation_status))}
 ```
 """
 with open("resource_validation_status_pie_chart.md", "w", encoding="utf-8") as f:
@@ -534,8 +559,8 @@ update_readme_section(
 )
 print("README.md updated with 'Resource Validation Status' chart.")
 
-relations_type_counts = df_relations_values["related_relationship"].value_counts()
-pie_chart_data_relations_counts = [f"    \"{index}\": {value}" for index, value in relations_type_counts.items()]
+relations_type_counts = df_relations_values["related_relationship"].value_counts() if "related_relationship" in df_relations_values.columns else pd.Series(dtype=int)
+pie_chart_data_relations_counts = [f"    \\"{index}\\": {value}" for index, value in relations_type_counts.items()]
 pie_chart_mermaid_relations = f"""
 ```mermaid
 ---
@@ -543,7 +568,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Relation Type
-{'\n'.join(pie_chart_data_relations_counts)}
+{('\n'.join(pie_chart_data_relations_counts))}
 ```
 """
 with open("resource_relation_type_pie_chart.md", "w", encoding="utf-8") as f:
@@ -562,11 +587,11 @@ print("README.md updated with 'Resource Relation Type' chart.")
 # 8. Summaries (unique counts, date/time, etc.)
 # ---------------------------------------------------------------------
 date_str = datetime.now().strftime('%Y-%m-%d')
-num_dept = list_of_res["owner"].nunique()
-num_datasets = list_of_res["package_id"].nunique()
-num_res = list_of_res["resource_id"].nunique()
-count_open_canada = (list_of_res["type"] == "upload").sum()
-count_remote_xload = (list_of_res["type"] == "remote").sum()
+num_dept = list_of_res["owner"].nunique() if "owner" in list_of_res.columns else 0
+num_datasets = list_of_res["package_id"].nunique() if "package_id" in list_of_res.columns else 0
+num_res = list_of_res["resource_id"].nunique() if "resource_id" in list_of_res.columns else 0
+count_open_canada = (list_of_res["type"] == "upload").sum() if "type" in list_of_res.columns else 0
+count_remote_xload = (list_of_res["type"] == "remote").sum() if "type" in list_of_res.columns else 0
 
 # ---------------------------------------------------------------------
 # 9. Fetch datastore size from CKAN API (database-level info)
@@ -695,6 +720,8 @@ resource_cols = [
     "ds_fields",
     "ds_size",
 ]
+# Keep only columns that exist
+resource_cols = [c for c in resource_cols if c in list_of_res.columns]
 list_of_res[resource_cols].to_csv("ds-resources.csv", index=False)
 
 # ---------------------------------------------------------------------
@@ -715,6 +742,8 @@ dictionary_cols = [
     "ds_label_set",
     "ds_notes_set",
 ]
+# Keep only columns that exist
+dictionary_cols = [c for c in dictionary_cols if c in list_of_res.columns]
 list_of_res[dictionary_cols].to_csv("ds-dictionary-use.csv", index=False)
 
 # ---------------------------------------------------------------------
@@ -729,35 +758,43 @@ print("\nCSV appended (or created) successfully.")
 # 16. create org stats
 # ---------------------------------------------------------------------
 # Convert relevant columns to numeric
-list_of_res['size'] = pd.to_numeric(list_of_res['size'], errors='coerce')
-list_of_res['ds_fields'] = pd.to_numeric(list_of_res['ds_fields'], errors='coerce')
-list_of_res['ds_count'] = pd.to_numeric(list_of_res['ds_count'], errors='coerce')
+if 'size' in list_of_res.columns:
+    list_of_res['size'] = pd.to_numeric(list_of_res['size'], errors='coerce')
+if 'ds_fields' in list_of_res.columns:
+    list_of_res['ds_fields'] = pd.to_numeric(list_of_res['ds_fields'], errors='coerce')
+if 'ds_count' in list_of_res.columns:
+    list_of_res['ds_count'] = pd.to_numeric(list_of_res['ds_count'], errors='coerce')
 
 # Group by 'owner' and aggregate
-org_stats = (
-    list_of_res
-    .groupby('owner')
-    .agg(
-        sum_size=('size', 'sum'),
-        unique_packages=('package_id', 'nunique'),
-        unique_resources=('resource_id', 'nunique'),
-        sum_ds_fields=('ds_fields', 'sum'),
-        sum_ds_n_rows=('ds_count', 'sum')
+group_cols = ['owner'] if 'owner' in list_of_res.columns else []
+if group_cols:
+    org_stats = (
+        list_of_res
+        .groupby('owner')
+        .agg(
+            sum_size=('size', 'sum'),
+            unique_packages=('package_id', 'nunique'),
+            unique_resources=('resource_id', 'nunique'),
+            sum_ds_fields=('ds_fields', 'sum'),
+            sum_ds_n_rows=('ds_count', 'sum')
+        )
+        .reset_index()
     )
-    .reset_index()
-)
 
-# Convert the summed size to a human-readable format
-org_stats['sum_size'] = org_stats['sum_size'].apply(pretty_bytes)
+    # Convert the summed size to a human-readable format
+    org_stats['sum_size'] = org_stats['sum_size'].apply(pretty_bytes)
 
-# Write the DataFrame to a CSV file
-org_stats.to_csv("org_stats.csv", index=False)
+    # Write the DataFrame to a CSV file
+    org_stats.to_csv("org_stats.csv", index=False)
+else:
+    org_stats = pd.DataFrame()
 
 # ---------------------------------------------------------------------
 # 17. update README with resource counts
 # ---------------------------------------------------------------------
-resource_counts_table = build_resource_counts_table(list_of_res)
-update_readme_resource_counts(readme_path, resource_counts_table)
+resource_counts_table = build_resource_counts_table(list_of_res) if not list_of_res.empty else ""
+if resource_counts_table:
+    update_readme_resource_counts(readme_path, resource_counts_table)
 
 # ---------------------------------------------------------------------
 # 18. update README with dictionary radar chart
@@ -770,10 +807,10 @@ update_readme_dictionary_radar(readme_path, dictionary_radar_chart)
 # ---------------------------------------------------------------------
 print("\n--- Final DataFrames Head ---")
 print("\ndf_resource_views.head():")
-print(df_resource_views.head().to_string(index=False))
+print(df_resource_views.head().to_string(index=False) if hasattr(df_resource_views, 'head') else '')
 print("\ndf_relations_values.head():")
-print(df_relations_values.head().to_string(index=False))
+print(df_relations_values.head().to_string(index=False) if hasattr(df_relations_values, 'head') else '')
 print("\ndf_validation_values.head():")
-print(df_validation_values.head().to_string(index=False))
+print(df_validation_values.head().to_string(index=False) if hasattr(df_validation_values, 'head') else '')
 print("\norg_stats.head():")
-print(org_stats.head().to_string(index=False))
+print(org_stats.head().to_string(index=False) if not org_stats.empty else '')
