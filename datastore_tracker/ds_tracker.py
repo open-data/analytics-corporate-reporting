@@ -487,7 +487,7 @@ print("Generating Mermaid.js charts...")
 readme_path = "README.md"
 
 view_type_counts = df_resource_views["view_type"].fillna("Unknown").value_counts() if "view_type" in df_resource_views.columns else pd.Series(dtype=int)
-pie_chart_data_view_type = [f"    \\"{index}\\": {value}" for index, value in view_type_counts.items()]
+pie_chart_data_view_type = [f'    "{index}": {value}' for index, value in view_type_counts.items()]
 pie_chart_mermaid_view_type = f"""
 ```mermaid
 ---
@@ -495,7 +495,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-{('\n'.join(pie_chart_data_view_type))}
+{chr(10).join(pie_chart_data_view_type)}
 ```
 """
 with open("resource_view_types_pie_chart.md", "w", encoding="utf-8") as f:
@@ -512,7 +512,7 @@ print("README.md updated with 'Resource View Types' chart.")
 
 owner_counts = df_resource_views["owner"].fillna("Unknown").value_counts() if "owner" in df_resource_views.columns else pd.Series(dtype=int)
 top_20_owners = owner_counts.head(20)
-pie_chart_data_owner = [f"    \\"{index}\\": {value}" for index, value in top_20_owners.items()]
+pie_chart_data_owner = [f'    "{index}": {value}' for index, value in top_20_owners.items()]
 pie_chart_mermaid_owner = f"""
 ```mermaid
 ---
@@ -520,7 +520,7 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-{('\n'.join(pie_chart_data_owner))}
+{chr(10).join(pie_chart_data_owner)}
 ```
 """
 with open("resource_owners_pie_chart.md", "w", encoding="utf-8") as f:
@@ -536,7 +536,7 @@ update_readme_section(
 print("README.md updated with 'Top 20 Orgs by View Count' chart.")
 
 validation_status_counts = df_validation_values["validation_status"].value_counts() if "validation_status" in df_validation_values.columns else pd.Series(dtype=int)
-pie_chart_data_validation_status = [f"    \\"{index}\\": {value}" for index, value in validation_status_counts.items()]
+pie_chart_data_validation_status = [f'    "{index}": {value}' for index, value in validation_status_counts.items()]
 pie_chart_mermaid_validation_status = f"""
 ```mermaid
 ---
@@ -544,7 +544,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-{('\n'.join(pie_chart_data_validation_status))}
+{chr(10).join(pie_chart_data_validation_status)}
 ```
 """
 with open("resource_validation_status_pie_chart.md", "w", encoding="utf-8") as f:
@@ -560,7 +560,7 @@ update_readme_section(
 print("README.md updated with 'Resource Validation Status' chart.")
 
 relations_type_counts = df_relations_values["related_relationship"].value_counts() if "related_relationship" in df_relations_values.columns else pd.Series(dtype=int)
-pie_chart_data_relations_counts = [f"    \\"{index}\\": {value}" for index, value in relations_type_counts.items()]
+pie_chart_data_relations_counts = [f'    "{index}": {value}' for index, value in relations_type_counts.items()]
 pie_chart_mermaid_relations = f"""
 ```mermaid
 ---
@@ -568,7 +568,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Relation Type
-{('\n'.join(pie_chart_data_relations_counts))}
+{chr(10).join(pie_chart_data_relations_counts)}
 ```
 """
 with open("resource_relation_type_pie_chart.md", "w", encoding="utf-8") as f:
