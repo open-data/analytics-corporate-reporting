@@ -353,6 +353,10 @@ df_resource_views = pd.read_csv(StringIO(response.text))
 
 list_of_res_subset = list_of_res[["resource_id", "owner", "dataset_name", "resource_name"]].copy()
 
+# Ensure resource_id columns have the same data type before merging
+df_resource_views["resource_id"] = df_resource_views["resource_id"].astype(str)
+list_of_res_subset["resource_id"] = list_of_res_subset["resource_id"].astype(str)
+
 df_resource_views = pd.merge(
     df_resource_views,
     list_of_res_subset,
