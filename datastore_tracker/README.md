@@ -40,8 +40,8 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3665
     "text_view": 207
-    "openapi_view": 4
     "image_view": 4
+    "openapi_view": 4
     "power_bi_view": 3
 ```
 
@@ -125,7 +125,26 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "Unknown": 3883
+    "pc": 981
+    "cra-arc": 775
+    "esdc-edsc": 638
+    "tbs-sct": 293
+    "cfia-acia": 200
+    "psc-cfp": 182
+    "hc-sc": 166
+    "osfi-bsif": 74
+    "dfatd-maecd": 67
+    "nrcan-rncan": 61
+    "phac-aspc": 43
+    "ssc-spc": 42
+    "tc": 40
+    "cnsc-ccsn": 35
+    "ic": 25
+    "dnd-mdn": 23
+    "elections": 22
+    "fin": 19
+    "cic": 17
+    "csc-scc": 15
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
@@ -141,8 +160,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Relation Type
-    "references": 6
     "defined_by": 6
+    "references": 6
     "referenced_by": 3
     "defines": 2
 ```
