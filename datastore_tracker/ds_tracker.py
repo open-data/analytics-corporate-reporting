@@ -9,13 +9,23 @@ from datetime import datetime
 from io import StringIO
 from urllib.parse import urlparse
 import concurrent.futures  # for parallelization
-from tqdm import tqdm      # for progress bar
+
+try:
+    from tqdm import tqdm  # for progress bar
+    HAS_TQDM = True
+except ImportError:
+    HAS_TQDM = False
+    def tqdm(iterable, **kwargs):
+        return iterable
 
 # Optional faster JSON parsing
 try:
     import ujson as json
 except ImportError:
     import json
+
+REQUEST_TIMEOUT_SECONDS = int(os.environ.get("REQUEST_TIMEOUT_SECONDS", "30"))
+REQUEST_RETRIES = int(os.environ.get("REQUEST_RETRIES", "2"))
 
 def pretty_bytes(num_bytes):
     """
@@ -27,6 +37,69 @@ def pretty_bytes(num_bytes):
             return f"{num_bytes:3.1f}{unit}"
         num_bytes /= 1024.0
     return f"{num_bytes:.1f}YB"
+
+def clean_join_key(series):
+    """
+    Normalize CSV/JSON id columns before joins so blanks, NaN values, and floats
+    from pandas inference do not prevent matches.
+    """
+    return (
+        series
+        .fillna("")
+        .astype(str)
+        .str.strip()
+        .str.replace(r"\.0$", "", regex=True)
+    )
+
+def sort_by_existing_columns(df, columns, ascending=True):
+    """
+    Sort a DataFrame with deterministic tie-breakers, ignoring missing columns.
+    """
+    sort_columns = [col for col in columns if col in df.columns]
+    if not sort_columns:
+        return df.reset_index(drop=True)
+
+    if isinstance(ascending, list):
+        sort_ascending = ascending[:len(sort_columns)]
+    else:
+        sort_ascending = [ascending] * len(sort_columns)
+
+    return (
+        df.sort_values(
+            by=sort_columns,
+            ascending=sort_ascending,
+            kind="mergesort",
+            na_position="last",
+        )
+        .reset_index(drop=True)
+    )
+
+def stable_value_counts(series):
+    """
+    Count values with stable ordering: largest count first, then label ascending.
+    This prevents equal-count slices from flipping order between runs.
+    """
+    if series is None:
+        return pd.DataFrame(columns=["label", "count"])
+
+    counts = (
+        series.fillna("Unknown")
+        .astype(str)
+        .value_counts(dropna=False)
+        .rename_axis("label")
+        .reset_index(name="count")
+    )
+    return sort_by_existing_columns(counts, ["count", "label"], ascending=[False, True])
+
+def mermaid_pie_rows(counts_df, limit=None):
+    if limit is not None:
+        counts_df = counts_df.head(limit)
+
+    rows = []
+    for _, row in counts_df.iterrows():
+        label = str(row["label"]).replace('"', r'\"')
+        rows.append(f'    "{label}": {int(row["count"])}')
+    return rows
 
 def is_nonempty_text(value):
     if value is None:
@@ -43,34 +116,84 @@ def get_datastore_info(resource_id):
     returns (None, None, None, None, None, None).
     """
     ds_info_url = f"https://open.canada.ca/data/en/api/3/action/datastore_info?id={resource_id}"
-    try:
-        resp = requests.get(ds_info_url)
-        data = resp.json()
-        if data.get("success") and "result" in data:
-            meta = data["result"].get("meta", {})
-            fields = data["result"].get("fields", [])
-            ds_count = meta.get("count", None)
-            ds_fields = len(fields)
-            ds_size = meta.get("size", None)
-            ds_type_set = 0
-            ds_label_set = 0
-            ds_notes_set = 0
-            for field in fields:
-                info = field.get("info", {})
-                if not isinstance(info, dict):
-                    info = {}
+    for attempt in range(REQUEST_RETRIES + 1):
+        try:
+            resp = requests.get(ds_info_url, timeout=REQUEST_TIMEOUT_SECONDS)
+            resp.raise_for_status()
+            data = resp.json()
+            if data.get("success") and "result" in data:
+                meta = data["result"].get("meta", {})
+                fields = data["result"].get("fields", [])
+                ds_count = meta.get("count", None)
+                ds_fields = len(fields)
+                ds_size = meta.get("size", None)
+                ds_type_set = 0
+                ds_label_set = 0
+                ds_notes_set = 0
+                for field in fields:
+                    info = field.get("info", {})
+                    if not isinstance(info, dict):
+                        info = {}
 
-                if is_nonempty_text(info.get("type_override", "")):
-                    ds_type_set += 1
-                if is_nonempty_text(info.get("label_en", "")) or is_nonempty_text(info.get("label_fr", "")):
-                    ds_label_set += 1
-                if is_nonempty_text(info.get("notes_en", "")) or is_nonempty_text(info.get("notes_fr", "")):
-                    ds_notes_set += 1
+                    if is_nonempty_text(info.get("type_override", "")):
+                        ds_type_set += 1
+                    if is_nonempty_text(info.get("label_en", "")) or is_nonempty_text(info.get("label_fr", "")):
+                        ds_label_set += 1
+                    if is_nonempty_text(info.get("notes_en", "")) or is_nonempty_text(info.get("notes_fr", "")):
+                        ds_notes_set += 1
 
-            return ds_count, ds_fields, ds_size, ds_type_set, ds_label_set, ds_notes_set
-    except Exception:
-        pass
+                return ds_count, ds_fields, ds_size, ds_type_set, ds_label_set, ds_notes_set
+        except Exception:
+            if attempt < REQUEST_RETRIES:
+                time.sleep(0.5 * (attempt + 1))
     return None, None, None, None, None, None
+
+def load_previous_datastore_stats():
+    """
+    Load the prior generated datastore values so transient CKAN API failures do
+    not erase stable metrics for unchanged resources.
+    """
+    stats = {}
+    sources = [
+        ("ds-resources.csv", ["ds_count", "ds_fields", "ds_size"]),
+        ("ds-dictionary-use.csv", ["ds_type_set", "ds_label_set", "ds_notes_set"]),
+    ]
+
+    for path, value_columns in sources:
+        if not os.path.exists(path):
+            continue
+
+        try:
+            previous_df = pd.read_csv(path)
+        except Exception:
+            continue
+
+        if "resource_id" not in previous_df.columns:
+            continue
+
+        previous_df["resource_id"] = clean_join_key(previous_df["resource_id"])
+        for _, row in previous_df.iterrows():
+            resource_id = row.get("resource_id")
+            if not resource_id:
+                continue
+
+            resource_stats = stats.setdefault(resource_id, {})
+            for col in value_columns:
+                if col in previous_df.columns and pd.notna(row.get(col)):
+                    resource_stats[col] = row.get(col)
+
+    return stats
+
+def fallback_datastore_info(resource_id, previous_datastore_stats):
+    stats = previous_datastore_stats.get(str(resource_id), {})
+    return (
+        stats.get("ds_count"),
+        stats.get("ds_fields"),
+        stats.get("ds_size"),
+        stats.get("ds_type_set"),
+        stats.get("ds_label_set"),
+        stats.get("ds_notes_set"),
+    )
 
 def build_resource_counts_table(df):
     """
@@ -257,7 +380,7 @@ max_retries = 5
 for attempt in range(max_retries):
     try:
         print(f"Downloading file (Attempt {attempt + 1}/{max_retries})...")
-        r = requests.get(url_jsonl_gz, stream=True, timeout=30)
+        r = requests.get(url_jsonl_gz, stream=True, timeout=REQUEST_TIMEOUT_SECONDS)
         r.raise_for_status()
         with open(file_gz, "wb") as f:
             for chunk in r.iter_content(chunk_size=8192):
@@ -332,6 +455,7 @@ with open(file_jsonl, "r", encoding="utf-8") as f:
                 "resource_names": resource_names_dict_jsonl,
             }
 print("JSONL parsing complete.")
+os.remove(file_jsonl)
 
 # ---------------------------------------------------------------------
 # 3. Create initial DataFrames
@@ -346,38 +470,47 @@ df_validation_values = pd.DataFrame(resource_validation_list)
 # ---------------------------------------------------------------------
 print("Processing df_resource_views...")
 url_resource_views_csv = "https://open.canada.ca/data/dataset/c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7/resource/a79f7297-9b20-427a-be79-d286daa92412/download/resources_resource_views.csv"
-response = requests.get(url_resource_views_csv)
+response = requests.get(url_resource_views_csv, timeout=REQUEST_TIMEOUT_SECONDS)
 response.raise_for_status()
 df_resource_views = pd.read_csv(StringIO(response.text))
 
 list_of_res_subset = list_of_res[["resource_id", "owner", "dataset_name", "resource_name"]].copy()
 
-# Use concat instead of merge to avoid dtype mismatch errors between float64 and str
-# Ensure resource_id columns are strings (empty where missing) before joining
-if "resource_id" in df_resource_views.columns:
-    df_resource_views["resource_id"] = df_resource_views["resource_id"].astype(object).where(df_resource_views["resource_id"].notna(), "")
-else:
+if "resource_id" not in df_resource_views.columns:
     df_resource_views["resource_id"] = ""
+if "package_id" not in df_resource_views.columns:
+    df_resource_views["package_id"] = ""
 
-if "resource_id" in list_of_res_subset.columns:
-    list_of_res_subset["resource_id"] = list_of_res_subset["resource_id"].astype(object).where(list_of_res_subset["resource_id"].notna(), "")
-else:
-    list_of_res_subset["resource_id"] = ""
+df_resource_views["resource_id"] = clean_join_key(df_resource_views["resource_id"])
+df_resource_views["package_id"] = clean_join_key(df_resource_views["package_id"])
 
-# Set resource_id as index and concat on index to align rows safely.
-# This follows pandas' suggestion to use concat when dtypes differ on the join key.
-df_resource_views_indexed = df_resource_views.set_index("resource_id")
-list_of_res_indexed = list_of_res_subset.set_index("resource_id")
-
-# When concatenating, only bring the columns we need from the resource list.
-cols_from_res = [c for c in ["owner", "dataset_name", "resource_name"] if c in list_of_res_indexed.columns]
-if cols_from_res:
-    df_resource_views = (
-        pd.concat([df_resource_views_indexed, list_of_res_indexed[cols_from_res]], axis=1)
-        .reset_index()
+# The upstream flattened resource-view CSV currently carries package/resource ids
+# in main_id/resources_id, while package_id/resource_id may be empty.
+if "resources_id" in df_resource_views.columns:
+    resources_id = clean_join_key(df_resource_views["resources_id"])
+    df_resource_views["resource_id"] = df_resource_views["resource_id"].where(
+        df_resource_views["resource_id"] != "",
+        resources_id,
     )
-else:
-    df_resource_views = df_resource_views_indexed.reset_index()
+if "main_id" in df_resource_views.columns:
+    main_id = clean_join_key(df_resource_views["main_id"])
+    df_resource_views["package_id"] = df_resource_views["package_id"].where(
+        df_resource_views["package_id"] != "",
+        main_id,
+    )
+
+list_of_res_subset["resource_id"] = clean_join_key(list_of_res_subset["resource_id"])
+list_of_res_subset = (
+    list_of_res_subset[list_of_res_subset["resource_id"] != ""]
+    .drop_duplicates(subset=["resource_id"], keep="first")
+)
+
+df_resource_views = df_resource_views.merge(
+    list_of_res_subset,
+    on="resource_id",
+    how="left",
+    validate="many_to_one",
+)
 
 # Ensure view_type exists
 default_view_type = "Unknown"
@@ -426,6 +559,10 @@ for idx, row in df_resource_views.iterrows():
 
 # Save out the intermediate CSV
 if df_resource_views.shape[0] > 0:
+    df_resource_views = sort_by_existing_columns(
+        df_resource_views,
+        ["owner", "package_id", "dataset_name", "resource_id", "id", "view_type"],
+    )
     df_resource_views.to_csv("res_views.csv", index=False)
 print("df_resource_views processed and saved.")
 
@@ -457,6 +594,10 @@ columns_to_keep_relations = [
 # Keep only existing columns
 columns_to_keep_relations = [c for c in columns_to_keep_relations if c in df_relations_values.columns]
 df_relations_values = df_relations_values[columns_to_keep_relations]
+df_relations_values = sort_by_existing_columns(
+    df_relations_values,
+    ["package_id", "id", "related_relationship", "related_url_en", "related_url_fr"],
+)
 df_relations_values.to_csv("res_relations.csv", index=False)
 print("df_relations_values processed and saved.")
 
@@ -477,6 +618,10 @@ df_validation_values = df_validation_values[columns_to_keep_validation]
 if "validation_status" in df_validation_values.columns:
     df_validation_values = df_validation_values[df_validation_values["validation_status"].isin(["success", "failure"]) ]
 
+df_validation_values = sort_by_existing_columns(
+    df_validation_values,
+    ["package_id", "id", "validation_status", "validation_timestamp", "format", "resource_type"],
+)
 df_validation_values.to_csv("res_validation_status.csv", index=False)
 print("df_validation_values processed and saved.")
 
@@ -486,8 +631,8 @@ print("df_validation_values processed and saved.")
 print("Generating Mermaid.js charts...")
 readme_path = "README.md"
 
-view_type_counts = df_resource_views["view_type"].fillna("Unknown").value_counts() if "view_type" in df_resource_views.columns else pd.Series(dtype=int)
-pie_chart_data_view_type = [f'    "{index}": {value}' for index, value in view_type_counts.items()]
+view_type_counts = stable_value_counts(df_resource_views["view_type"] if "view_type" in df_resource_views.columns else None)
+pie_chart_data_view_type = mermaid_pie_rows(view_type_counts)
 pie_chart_mermaid_view_type = f"""
 ```mermaid
 ---
@@ -510,9 +655,8 @@ update_readme_section(
 )
 print("README.md updated with 'Resource View Types' chart.")
 
-owner_counts = df_resource_views["owner"].fillna("Unknown").value_counts() if "owner" in df_resource_views.columns else pd.Series(dtype=int)
-top_20_owners = owner_counts.head(20)
-pie_chart_data_owner = [f'    "{index}": {value}' for index, value in top_20_owners.items()]
+owner_counts = stable_value_counts(df_resource_views["owner"] if "owner" in df_resource_views.columns else None)
+pie_chart_data_owner = mermaid_pie_rows(owner_counts, limit=20)
 pie_chart_mermaid_owner = f"""
 ```mermaid
 ---
@@ -535,8 +679,8 @@ update_readme_section(
 )
 print("README.md updated with 'Top 20 Orgs by View Count' chart.")
 
-validation_status_counts = df_validation_values["validation_status"].value_counts() if "validation_status" in df_validation_values.columns else pd.Series(dtype=int)
-pie_chart_data_validation_status = [f'    "{index}": {value}' for index, value in validation_status_counts.items()]
+validation_status_counts = stable_value_counts(df_validation_values["validation_status"] if "validation_status" in df_validation_values.columns else None)
+pie_chart_data_validation_status = mermaid_pie_rows(validation_status_counts)
 pie_chart_mermaid_validation_status = f"""
 ```mermaid
 ---
@@ -559,8 +703,8 @@ update_readme_section(
 )
 print("README.md updated with 'Resource Validation Status' chart.")
 
-relations_type_counts = df_relations_values["related_relationship"].value_counts() if "related_relationship" in df_relations_values.columns else pd.Series(dtype=int)
-pie_chart_data_relations_counts = [f'    "{index}": {value}' for index, value in relations_type_counts.items()]
+relations_type_counts = stable_value_counts(df_relations_values["related_relationship"] if "related_relationship" in df_relations_values.columns else None)
+pie_chart_data_relations_counts = mermaid_pie_rows(relations_type_counts)
 pie_chart_mermaid_relations = f"""
 ```mermaid
 ---
@@ -597,7 +741,7 @@ count_remote_xload = (list_of_res["type"] == "remote").sum() if "type" in list_o
 # 9. Fetch datastore size from CKAN API (database-level info)
 # ---------------------------------------------------------------------
 ds_url = "https://open.canada.ca/data/en/api/3/action/datastore_info?id=3c911562-c541-463f-8cd4-490182cd57f9"
-ds_resp = requests.get(ds_url)
+ds_resp = requests.get(ds_url, timeout=REQUEST_TIMEOUT_SECONDS)
 ds_data = ds_resp.json()
 ds_size_bytes = ds_data["result"]["meta"]["db_size"]
 ds_size_readable = pretty_bytes(ds_size_bytes)
@@ -607,6 +751,9 @@ print("Setup steps complete. Ready to fetch datastore_info in parallel.")
 # 10. (Parallel) Fetch datastore info for each resource (with progress bar)
 # ---------------------------------------------------------------------
 print("Fetching datastore info for each resource in parallel (20 at a time). This may take a while...")
+previous_datastore_stats = load_previous_datastore_stats()
+if previous_datastore_stats:
+    print(f"Loaded previous datastore stats for {len(previous_datastore_stats)} resources.")
 
 # Create new columns to store datastore info
 list_of_res["ds_count"] = None
@@ -626,14 +773,25 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
         futures_map[future] = idx
 
     # Wrap as_completed() with tqdm so we have a progress bar
+    total_futures = len(futures_map)
+    completed_futures = 0
     for future in tqdm(
         concurrent.futures.as_completed(futures_map),
-        total=len(futures_map),
+        total=total_futures,
         desc="Fetching datastore_info"
     ):
+        completed_futures += 1
+        if not HAS_TQDM and (completed_futures == 1 or completed_futures % 100 == 0 or completed_futures == total_futures):
+            print(f"Fetched datastore_info for {completed_futures}/{total_futures} resources...", flush=True)
+
         idx = futures_map[future]
         try:
             ds_count, ds_fields, ds_size, ds_type_set, ds_label_set, ds_notes_set = future.result()
+            if ds_count is None and ds_fields is None and ds_size is None:
+                ds_count, ds_fields, ds_size, ds_type_set, ds_label_set, ds_notes_set = fallback_datastore_info(
+                    list_of_res.at[idx, "resource_id"],
+                    previous_datastore_stats,
+                )
             list_of_res.at[idx, "ds_count"] = ds_count
             list_of_res.at[idx, "ds_fields"] = ds_fields
             list_of_res.at[idx, "ds_size"] = ds_size
@@ -641,8 +799,16 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=20) as executor:
             list_of_res.at[idx, "ds_label_set"] = ds_label_set
             list_of_res.at[idx, "ds_notes_set"] = ds_notes_set
         except Exception:
-            # If something fails, just leave columns as None
-            pass
+            ds_count, ds_fields, ds_size, ds_type_set, ds_label_set, ds_notes_set = fallback_datastore_info(
+                list_of_res.at[idx, "resource_id"],
+                previous_datastore_stats,
+            )
+            list_of_res.at[idx, "ds_count"] = ds_count
+            list_of_res.at[idx, "ds_fields"] = ds_fields
+            list_of_res.at[idx, "ds_size"] = ds_size
+            list_of_res.at[idx, "ds_type_set"] = ds_type_set
+            list_of_res.at[idx, "ds_label_set"] = ds_label_set
+            list_of_res.at[idx, "ds_notes_set"] = ds_notes_set
 
 print("Parallel fetch complete.")
 
@@ -697,7 +863,8 @@ if os.path.exists(csv_path):
     combined_df = pd.concat([DS_num_tracker_df, old_df], ignore_index=True)
     # Convert 'date' column to datetime so we can sort properly
     combined_df["date"] = pd.to_datetime(combined_df["date"], format="%Y-%m-%d", errors="coerce")
-    combined_df.sort_values(by="date", ascending=False, inplace=True)
+    combined_df = combined_df.drop_duplicates(subset=["date"], keep="first")
+    combined_df.sort_values(by="date", ascending=False, inplace=True, kind="mergesort", na_position="last")
     combined_df["date"] = combined_df["date"].dt.strftime("%Y-%m-%d")
     combined_df.to_csv(csv_path, index=False)
 else:
@@ -722,7 +889,11 @@ resource_cols = [
 ]
 # Keep only columns that exist
 resource_cols = [c for c in resource_cols if c in list_of_res.columns]
-list_of_res[resource_cols].to_csv("ds-resources.csv", index=False)
+resource_rows = sort_by_existing_columns(
+    list_of_res[resource_cols],
+    ["owner", "package_id", "dataset_name", "resource_id", "resource_name", "metadata_modified"],
+)
+resource_rows.to_csv("ds-resources.csv", index=False)
 
 # ---------------------------------------------------------------------
 # 14. Save dictionary edit stats to CSV
@@ -744,7 +915,11 @@ dictionary_cols = [
 ]
 # Keep only columns that exist
 dictionary_cols = [c for c in dictionary_cols if c in list_of_res.columns]
-list_of_res[dictionary_cols].to_csv("ds-dictionary-use.csv", index=False)
+dictionary_rows = sort_by_existing_columns(
+    list_of_res[dictionary_cols],
+    ["owner", "package_id", "dataset_name", "resource_id", "resource_name", "metadata_modified"],
+)
+dictionary_rows.to_csv("ds-dictionary-use.csv", index=False)
 
 # ---------------------------------------------------------------------
 # 15. Print output (useful for debugging or GH Action logs)
@@ -783,6 +958,7 @@ if group_cols:
 
     # Convert the summed size to a human-readable format
     org_stats['sum_size'] = org_stats['sum_size'].apply(pretty_bytes)
+    org_stats = sort_by_existing_columns(org_stats, ["owner"])
 
     # Write the DataFrame to a CSV file
     org_stats.to_csv("org_stats.csv", index=False)
