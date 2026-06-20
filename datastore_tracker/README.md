@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3905
+    "success": 3907
     "failure": 2917
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3665
+    "datatables_view": 3668
     "text_view": 207
     "image_view": 4
     "openapi_view": 4
@@ -64,7 +64,7 @@ pie showData title Resource View Types
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 14 |
 | open.canada.ca | csps-efpc | 1 |
-| open.canada.ca | dfatd-maecd | 67 |
+| open.canada.ca | dfatd-maecd | 69 |
 | open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
@@ -90,7 +90,7 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 40 |
-| open.canada.ca | tbs-sct | 195 |
+| open.canada.ca | tbs-sct | 196 |
 | open.canada.ca | tc | 41 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
@@ -128,12 +128,12 @@ pie showData title Top 20 Orgs by View Count
     "pc": 981
     "cra-arc": 775
     "esdc-edsc": 638
-    "tbs-sct": 293
+    "tbs-sct": 294
     "cfia-acia": 200
     "psc-cfp": 182
     "hc-sc": 166
     "osfi-bsif": 74
-    "dfatd-maecd": 67
+    "dfatd-maecd": 69
     "nrcan-rncan": 61
     "phac-aspc": 43
     "ssc-spc": 42
