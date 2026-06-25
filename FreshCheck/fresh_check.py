@@ -17,12 +17,30 @@ from pathlib import Path
 
 DEFAULT_JSONL_GZ_URL = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
 SCRIPT_DIR = Path(__file__).resolve().parent
-DEFAULT_OUTPUT_JSON = SCRIPT_DIR / "freshness_tree.json"
+DEFAULT_OUTPUT_DIR = SCRIPT_DIR
 DEFAULT_README = SCRIPT_DIR / "README.md"
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("REQUEST_TIMEOUT_SECONDS", "60"))
 
 GENERATED_START = "<!-- FRESHCHECK_REPORT_START -->"
 GENERATED_END = "<!-- FRESHCHECK_REPORT_END -->"
+
+OUTPUT_GROUPS = {
+    "federal": {
+        "filename": "freshness_tree_federal.json",
+        "jurisdictions": {"federal"},
+        "title": "Federal",
+    },
+    "provincial": {
+        "filename": "freshness_tree_provincial.json",
+        "jurisdictions": {"provincial"},
+        "title": "Provincial",
+    },
+    "municipal_user": {
+        "filename": "freshness_tree_municipal_user.json",
+        "jurisdictions": {"municipal", "user"},
+        "title": "Municipal and user",
+    },
+}
 
 
 def parse_args():
@@ -35,9 +53,9 @@ def parse_args():
         help="Source JSONL or JSONL.GZ path/URL. Defaults to the Open Canada metadata feed.",
     )
     parser.add_argument(
-        "--output-json",
-        default=DEFAULT_OUTPUT_JSON,
-        help="Path for the hierarchical freshness JSON output. Must be inside the FreshCheck directory.",
+        "--output-dir",
+        default=DEFAULT_OUTPUT_DIR,
+        help="Directory for split hierarchical freshness JSON outputs. Must be inside the FreshCheck directory.",
     )
     parser.add_argument(
         "--readme",
@@ -121,7 +139,7 @@ def parse_iso8601_duration(value):
     """
     Parse the date component of CKAN ISO 8601 frequency values.
 
-    Supported examples: P1D, P1W, P1M, P3M, P6M, P1Y. Time components are not
+    Supported examples: P1D, P1W, P1M, P3M, P6M, and P1Y. Time components are not
     expected in the feed and are intentionally ignored if present.
     """
     if not value:
@@ -196,8 +214,7 @@ def open_jsonl_source(source):
 
     if source.endswith(".gz"):
         return gzip.open(source, mode="rt", encoding="utf-8")
-    else:
-        return open(source, mode="rt", encoding="utf-8")
+    return open(source, mode="rt", encoding="utf-8")
 
 
 def owner_name(package):
@@ -208,6 +225,15 @@ def owner_name(package):
 def owner_title(package):
     organization = package.get("organization") or {}
     return organization.get("title")
+
+
+def package_jurisdiction(package):
+    value = package.get("jurisdiction")
+    if value is None:
+        return "unknown"
+
+    jurisdiction = str(value).strip().lower()
+    return jurisdiction or "unknown"
 
 
 def resource_modified(resource):
@@ -233,6 +259,7 @@ def build_package(package, today):
     package_record = {
         "name": owner_name(package),
         "organization_title": owner_title(package),
+        "jurisdiction": package_jurisdiction(package),
         "id": package.get("id"),
         "package_name": package.get("name"),
         "title": package.get("title"),
@@ -249,7 +276,9 @@ def build_package(package, today):
         key=lambda item: (
             item.get("freshness_status") or "",
             item.get("days_until_expected_update") is None,
-            item.get("days_until_expected_update") if item.get("days_until_expected_update") is not None else 0,
+            item.get("days_until_expected_update")
+            if item.get("days_until_expected_update") is not None
+            else 0,
             item.get("id") or "",
         ),
     )
@@ -268,10 +297,11 @@ def iter_packages(source, limit=None):
                 return
 
 
-def build_tree(source, today, limit=None):
+def build_full_tree(source, today, limit=None):
     packages = [build_package(package, today) for package in iter_packages(source, limit=limit)]
     packages.sort(
         key=lambda item: (
+            item.get("jurisdiction") or "",
             item.get("name") or "",
             item.get("id") or "",
         )
@@ -282,6 +312,54 @@ def build_tree(source, today, limit=None):
         "source": source,
         "packages": packages,
     }
+
+
+def tree_with_packages(base_tree, packages, group_key=None, group_title=None, jurisdictions=None):
+    return {
+        "generated_at": base_tree["generated_at"],
+        "as_of_date": base_tree["as_of_date"],
+        "source": base_tree["source"],
+        "group": group_key,
+        "group_title": group_title,
+        "jurisdictions": sorted(jurisdictions or []),
+        "packages": packages,
+    }
+
+
+def split_tree_by_jurisdiction(tree):
+    grouped = {}
+
+    for group_key, config in OUTPUT_GROUPS.items():
+        jurisdictions = config["jurisdictions"]
+        packages = [
+            package
+            for package in tree["packages"]
+            if package.get("jurisdiction") in jurisdictions
+        ]
+        packages.sort(
+            key=lambda item: (
+                item.get("name") or "",
+                item.get("id") or "",
+            )
+        )
+        grouped[group_key] = tree_with_packages(
+            tree,
+            packages,
+            group_key=group_key,
+            group_title=config["title"],
+            jurisdictions=jurisdictions,
+        )
+
+    included_jurisdictions = set().union(
+        *(config["jurisdictions"] for config in OUTPUT_GROUPS.values())
+    )
+    skipped = Counter(
+        package.get("jurisdiction") or "unknown"
+        for package in tree["packages"]
+        if package.get("jurisdiction") not in included_jurisdictions
+    )
+
+    return grouped, skipped
 
 
 def package_days(package):
@@ -318,14 +396,14 @@ def sort_counter_items(counter, order=None):
 def mermaid_pie(title, items):
     rows = ["```mermaid", f"pie showData title {title}"]
     for label, count in items:
-        escaped = str(label).replace('"', r'\"')
+        escaped = str(label).replace('"', r"\"")
         rows.append(f'    "{escaped}": {int(count)}')
     rows.append("```")
     return "\n".join(rows)
 
 
 def mermaid_bar(title, x_labels, values, y_axis):
-    safe_labels = [str(label).replace('"', r'\"') for label in x_labels]
+    safe_labels = [str(label).replace('"', r"\"") for label in x_labels]
     safe_values = [str(int(round(value))) for value in values]
     return "\n".join(
         [
@@ -347,6 +425,7 @@ def report_summary(tree):
     package_statuses = Counter(package.get("freshness_status", "unknown") for package in packages)
     resource_statuses = Counter(resource.get("freshness_status", "unknown") for resource in resources)
     buckets = Counter(status_bucket(package_days(package)) for package in packages)
+    jurisdictions = Counter(package.get("jurisdiction", "unknown") for package in packages)
 
     org_stats = defaultdict(lambda: {"total": 0, "current": 0, "late": 0, "days_sum": 0, "days_count": 0})
     for package in packages:
@@ -385,11 +464,43 @@ def report_summary(tree):
         "package_statuses": package_statuses,
         "resource_statuses": resource_statuses,
         "buckets": buckets,
+        "jurisdictions": jurisdictions,
         "top_current_orgs": org_rows[:15],
     }
 
 
-def markdown_report(tree):
+def markdown_table(headers, rows):
+    lines = [
+        "| " + " | ".join(headers) + " |",
+        "| " + " | ".join("---" for _ in headers) + " |",
+    ]
+    for row in rows:
+        lines.append("| " + " | ".join(str(value) for value in row) + " |")
+    return "\n".join(lines)
+
+
+def output_file_table(split_trees):
+    rows = []
+    for group_key, config in OUTPUT_GROUPS.items():
+        tree = split_trees[group_key]
+        summary = report_summary(tree)
+        rows.append(
+            [
+                config["filename"],
+                config["title"],
+                ", ".join(sorted(config["jurisdictions"])),
+                summary["package_count"],
+                summary["resource_count"],
+            ]
+        )
+
+    return markdown_table(
+        ["File", "Group", "Jurisdiction values", "Packages", "Resources"],
+        rows,
+    )
+
+
+def markdown_report(tree, split_trees, skipped_jurisdictions=None):
     summary = report_summary(tree)
     bucket_order = [
         "Late > 1 year",
@@ -413,11 +524,25 @@ def markdown_report(tree):
             "Current packages (%)",
         )
 
+    skipped_jurisdictions = skipped_jurisdictions or Counter()
+    skipped_text = "None."
+    if skipped_jurisdictions:
+        skipped_text = markdown_table(
+            ["Jurisdiction", "Package count"],
+            sort_counter_items(skipped_jurisdictions),
+        )
+
     lines = [
         f"Generated at: `{tree['generated_at']}`",
         f"As of date: `{tree['as_of_date']}`",
         f"Packages assessed: `{summary['package_count']}`",
         f"Resources assessed: `{summary['resource_count']}`",
+        "",
+        "### Split JSON Outputs",
+        output_file_table(split_trees),
+        "",
+        "### Package Jurisdictions",
+        mermaid_pie("Package jurisdiction", sort_counter_items(summary["jurisdictions"])),
         "",
         "### Package Freshness Status",
         mermaid_pie("Package freshness status", sort_counter_items(summary["package_statuses"])),
@@ -430,6 +555,9 @@ def markdown_report(tree):
         "",
         "### Departments Keeping Data Current",
         org_chart,
+        "",
+        "### Skipped Jurisdictions",
+        skipped_text,
     ]
     return "\n".join(lines)
 
@@ -467,19 +595,33 @@ def atomic_write_json(path, data):
     tmp_path.replace(output_path)
 
 
+def write_split_outputs(output_dir, split_trees):
+    written = []
+    for group_key, config in OUTPUT_GROUPS.items():
+        output_path = output_dir / config["filename"]
+        atomic_write_json(output_path, split_trees[group_key])
+        written.append(output_path)
+    return written
+
+
 def main():
     args = parse_args()
     today = date.fromisoformat(args.today) if args.today else date.today()
-    output_json = resolve_freshcheck_output_path(args.output_json)
+    output_dir = resolve_freshcheck_output_path(args.output_dir)
     readme = resolve_freshcheck_output_path(args.readme)
 
-    tree = build_tree(args.source, today, limit=args.limit)
-    atomic_write_json(output_json, tree)
+    tree = build_full_tree(args.source, today, limit=args.limit)
+    split_trees, skipped_jurisdictions = split_tree_by_jurisdiction(tree)
+    written_paths = write_split_outputs(output_dir, split_trees)
 
     if not args.skip_readme:
-        replace_generated_section(readme, markdown_report(tree))
+        replace_generated_section(readme, markdown_report(tree, split_trees, skipped_jurisdictions))
 
-    print(f"Wrote {output_json}")
+    for path in written_paths:
+        print(f"Wrote {path}")
+    if skipped_jurisdictions:
+        skipped = ", ".join(f"{jurisdiction}={count}" for jurisdiction, count in sort_counter_items(skipped_jurisdictions))
+        print(f"Skipped packages with unsupported jurisdictions: {skipped}")
     if not args.skip_readme:
         print(f"Updated {readme}")
 
