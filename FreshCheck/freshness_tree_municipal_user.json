@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T05:45:26+00:00",
+  "generated_at": "2026-06-25T14:56:10+00:00",
   "as_of_date": "2026-06-25",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "municipal_user",
@@ -10612,38 +10612,38 @@
       "package_name": "5b5356e9-21fe-437a-ac74-995b09dc67c6",
       "title": "Residual materials - mass balance",
       "metadata_created": "2020-09-11T14:53:44.389940",
-      "metadata_modified": "2026-05-27T16:06:16.172658",
+      "metadata_modified": "2026-06-24T16:00:45.463508",
       "frequency": "irregular",
       "resources": [
         {
-          "id": "17d15b30-511c-419f-8e6d-283925535ed1",
-          "name": "Original metadata (https://www.donneesquebec.ca)",
-          "format": "HTML",
-          "metadata_modified": "2026-05-27T16:06:16.168723",
-          "last_modified": null,
-          "created": "2026-05-27T16:06:16.217359",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "66f3a1db-68f2-44fb-b0e2-f2b5fbeac449",
+          "id": "2ec52e55-c723-43c4-90be-3cb4ce0a1f30",
           "name": "Residual materials - mass balance",
           "format": "CSV",
-          "metadata_modified": "2026-05-27T16:06:16.168523",
+          "metadata_modified": "2026-06-24T16:00:45.459217",
           "last_modified": null,
-          "created": "2026-05-27T16:06:16.217352",
+          "created": "2026-06-24T16:00:45.496199",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "dde16bc8-4930-4dcc-8e1b-784b8f3e23fc",
+          "id": "44858915-dac9-4e32-901a-6338b819ef4f",
+          "name": "Original metadata (https://www.donneesquebec.ca)",
+          "format": "HTML",
+          "metadata_modified": "2026-06-24T16:00:45.459480",
+          "last_modified": null,
+          "created": "2026-06-24T16:00:45.496209",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "6120ed30-5b0f-4c91-8214-6135a47b11ff",
           "name": "Residual materials - definitions of material categories",
           "format": "PDF",
-          "metadata_modified": "2026-05-27T16:06:16.168637",
+          "metadata_modified": "2026-06-24T16:00:45.459365",
           "last_modified": null,
-          "created": "2026-05-27T16:06:16.217357",
+          "created": "2026-06-24T16:00:45.496206",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
