@@ -41,12 +41,20 @@ jobs:
       - name: Run FreshCheck
         run: python FreshCheck/fresh_check.py
 
-      - name: Write smoke test summary
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
+      - name: Add FreshCheck README and output sizes to summary
         shell: bash
         run: |
           {
-            echo "### FreshCheck smoke test :rocket:"
+            echo "### FreshCheck generated output sizes"
+            echo
+            echo '```text'
+            ls -lath \
+              FreshCheck/README.md \
+              FreshCheck/freshness_tree_*.json \
+              2>/dev/null || true
+            echo '```'
+            echo
+            echo "### FreshCheck README"
             echo
             cat FreshCheck/README.md
           } >> "$GITHUB_STEP_SUMMARY"
