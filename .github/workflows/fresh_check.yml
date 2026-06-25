@@ -55,9 +55,13 @@ jobs:
         if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.smoke_test) }}
         shell: bash
         run: |
-          git add \
-            FreshCheck/README.md \
-            FreshCheck/freshness_tree.json
+         git add \
+          FreshCheck/README.md \
+          FreshCheck/freshness_tree_federal.json \
+          FreshCheck/freshness_tree_provincial.json \
+          FreshCheck/freshness_tree_municipal_user.json
+
+          git rm -f FreshCheck/freshness_tree.json || true
 
           if git diff --cached --quiet; then
             echo "No FreshCheck changes to commit."
