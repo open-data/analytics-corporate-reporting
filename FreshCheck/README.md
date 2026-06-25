@@ -4,9 +4,18 @@ FreshCheck measures whether Open Canada packages and their resources appear curr
 against the package frequency metadata in the JSONL metadata feed.
 
 The generator reads `https://open.canada.ca/static/od-do-canada.jsonl.gz`, builds
-a hierarchical package tree, and writes `freshness_tree.json`. Each package record
-contains the organization name, package id, metadata dates, frequency, and nested
-resource records. Each package and resource also receives:
+hierarchical package trees, and writes three JSON files grouped by package
+`jurisdiction`:
+
+| Output file | Jurisdiction values |
+|---|---|
+| `freshness_tree_federal.json` | `federal` |
+| `freshness_tree_provincial.json` | `provincial` |
+| `freshness_tree_municipal_user.json` | `municipal`, `user` |
+
+Each package record contains the organization name, package id, metadata dates,
+frequency, jurisdiction, and nested resource records. Each package and resource
+also receives:
 
 | Field | Meaning |
 |---|---|
@@ -24,14 +33,14 @@ Run locally:
 python3 FreshCheck/fresh_check.py
 ```
 
-Smoke test without keeping generated outputs:
+Smoke test without committing generated outputs:
 
 ```bash
-tmp_dir="$(mktemp -d)"
 python3 FreshCheck/fresh_check.py \
   --limit 25 \
-  --output-json "$tmp_dir/freshness_tree.json" \
-  --readme "$tmp_dir/README.md"
+  --output-dir FreshCheck/smoke_output \
+  --readme FreshCheck/smoke_README.md
+rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
