@@ -16,8 +16,9 @@ from pathlib import Path
 
 
 DEFAULT_JSONL_GZ_URL = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
-DEFAULT_OUTPUT_JSON = "FreshCheck/freshness_tree.json"
-DEFAULT_README = "FreshCheck/README.md"
+SCRIPT_DIR = Path(__file__).resolve().parent
+DEFAULT_OUTPUT_JSON = SCRIPT_DIR / "freshness_tree.json"
+DEFAULT_README = SCRIPT_DIR / "README.md"
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("REQUEST_TIMEOUT_SECONDS", "60"))
 
 GENERATED_START = "<!-- FRESHCHECK_REPORT_START -->"
@@ -36,12 +37,12 @@ def parse_args():
     parser.add_argument(
         "--output-json",
         default=DEFAULT_OUTPUT_JSON,
-        help="Path for the hierarchical freshness JSON output.",
+        help="Path for the hierarchical freshness JSON output. Must be inside the FreshCheck directory.",
     )
     parser.add_argument(
         "--readme",
         default=DEFAULT_README,
-        help="README path to update between FreshCheck report markers.",
+        help="README path to update between FreshCheck report markers. Must be inside the FreshCheck directory.",
     )
     parser.add_argument(
         "--today",
@@ -60,6 +61,23 @@ def parse_args():
         help="Write JSON only and do not update the README.",
     )
     return parser.parse_args()
+
+
+def resolve_freshcheck_output_path(path):
+    """Resolve an output path and ensure it stays inside this FreshCheck directory."""
+    candidate = Path(path).expanduser()
+    if not candidate.is_absolute():
+        parts = candidate.parts
+        if parts and parts[0] == SCRIPT_DIR.name:
+            candidate = Path(*parts[1:]) if len(parts) > 1 else Path(".")
+        candidate = SCRIPT_DIR / candidate
+
+    resolved = candidate.resolve()
+    try:
+        resolved.relative_to(SCRIPT_DIR)
+    except ValueError as exc:
+        raise ValueError(f"Output path must be inside {SCRIPT_DIR}: {path}") from exc
+    return resolved
 
 
 def parse_datetime(value):
@@ -452,15 +470,18 @@ def atomic_write_json(path, data):
 def main():
     args = parse_args()
     today = date.fromisoformat(args.today) if args.today else date.today()
+    output_json = resolve_freshcheck_output_path(args.output_json)
+    readme = resolve_freshcheck_output_path(args.readme)
+
     tree = build_tree(args.source, today, limit=args.limit)
-    atomic_write_json(args.output_json, tree)
+    atomic_write_json(output_json, tree)
 
     if not args.skip_readme:
-        replace_generated_section(args.readme, markdown_report(tree))
+        replace_generated_section(readme, markdown_report(tree))
 
-    print(f"Wrote {args.output_json}")
+    print(f"Wrote {output_json}")
     if not args.skip_readme:
-        print(f"Updated {args.readme}")
+        print(f"Updated {readme}")
 
 
 if __name__ == "__main__":

@@ -2,11 +2,19 @@ name: FreshCheck
 
 on:
   workflow_dispatch:
+    inputs:
+      branch:
+        description: "Repo branch to run against"
+        required: false
+        default: "main"
+        type: string
+      smoke_test:
+        description: "Run without committing and write the FreshCheck README to the step summary"
+        required: false
+        default: false
+        type: boolean
   schedule:
-    # GitHub cron is UTC. These pairs cover 12:15 AM/PM in America/Toronto
-    # during both EST and EDT; the first step below keeps only the matching
-    # local-time run.
-    - cron: "15 4,5,16,17 * * *"
+    - cron: "15 0,12 * * *"
 
 permissions:
   contents: write
@@ -20,75 +28,47 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check local schedule window
-        id: schedule
-        shell: bash
-        run: |
-          if [ "${{ github.event_name }}" != "schedule" ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-
-          local_hour="$(TZ=America/Toronto date +%H)"
-          local_minute="$(TZ=America/Toronto date +%M)"
-
-          if { [ "$local_hour" = "00" ] || [ "$local_hour" = "12" ]; } \
-            && [ "$local_minute" -ge 15 ] \
-            && [ "$local_minute" -le 59 ]; then
-            echo "run=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "run=false" >> "$GITHUB_OUTPUT"
-          fi
-
       - name: Checkout
-        if: steps.schedule.outputs.run == 'true'
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
 
       - name: Set up Python
-        if: steps.schedule.outputs.run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
-        if: steps.schedule.outputs.run == 'true'
-        run: |
-          python -m pip install --upgrade pip
-          python -m pip install pandas requests tqdm
-
-      - name: Run datastore tracker
-        if: steps.schedule.outputs.run == 'true'
-        run: python datastore_tracker/ds_tracker.py
-
       - name: Run FreshCheck
-        if: steps.schedule.outputs.run == 'true'
         run: python FreshCheck/fresh_check.py
 
-      - name: Commit generated outputs
-        if: steps.schedule.outputs.run == 'true'
+      - name: Write smoke test summary
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.smoke_test }}
         shell: bash
         run: |
-          git add \
-            DS_num_tracker.csv \
-            ds-dictionary-use.csv \
-            ds-resources.csv \
-            org_stats.csv \
-            res_relations.csv \
-            res_validation_status.csv \
-            res_views.csv \
-            resource_owners_pie_chart.md \
-            resource_relation_type_pie_chart.md \
-            resource_validation_status_pie_chart.md \
-            resource_view_types_pie_chart.md \
-            FreshCheck/README.md \
-            FreshCheck/freshness_tree.json
+          {
+            echo "### FreshCheck smoke test :rocket:"
+            echo
+            cat FreshCheck/README.md
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit generated FreshCheck outputs
+        if: ${{ !(github.event_name == 'workflow_dispatch' && inputs.smoke_test) }}
+        shell: bash
+        run: |
+         git add \
+          FreshCheck/README.md \
+          FreshCheck/freshness_tree_federal.json \
+          FreshCheck/freshness_tree_provincial.json \
+          FreshCheck/freshness_tree_municipal_user.json
+
+          git rm -f FreshCheck/freshness_tree.json || true
 
           if git diff --cached --quiet; then
-            echo "No generated changes to commit."
+            echo "No FreshCheck changes to commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Update datastore tracker and FreshCheck outputs"
-          git push
+          git commit -m "Update FreshCheck outputs"
+          git push origin HEAD:${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
