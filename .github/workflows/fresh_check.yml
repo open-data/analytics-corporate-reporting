@@ -31,7 +31,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || 'main' }}
+          ref: ${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -67,4 +67,4 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Update FreshCheck outputs"
-          git push
+          git push origin HEAD:${{ github.event_name == 'workflow_dispatch' && inputs.branch || github.ref_name }}
