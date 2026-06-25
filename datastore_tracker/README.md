@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3945
+    "success": 3956
     "failure": 2917
 ```
 
@@ -38,8 +38,8 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3706
-    "text_view": 207
+    "datatables_view": 3717
+    "text_view": 209
     "image_view": 4
     "openapi_view": 4
     "power_bi_view": 3
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 184 |
+| open.canada.ca | cfia-acia | 195 |
 | open.canada.ca | cic | 2 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 561 |
@@ -129,12 +129,12 @@ pie showData title Top 20 Orgs by View Count
     "cra-arc": 813
     "esdc-edsc": 638
     "tbs-sct": 294
-    "cfia-acia": 200
+    "cfia-acia": 211
     "psc-cfp": 182
     "hc-sc": 166
     "osfi-bsif": 74
     "dfatd-maecd": 69
-    "nrcan-rncan": 61
+    "nrcan-rncan": 63
     "phac-aspc": 43
     "ssc-spc": 42
     "tc": 40
@@ -162,8 +162,8 @@ config:
 pie showData title Resource Relation Type
     "defined_by": 6
     "references": 6
+    "defines": 3
     "referenced_by": 3
-    "defines": 2
 ```
 
 <!-- RESOURCE_RELATION_TYPE_CHART_END -->
