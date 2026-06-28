@@ -24,7 +24,7 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 3955
-    "failure": 2917
+    "failure": 2871
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
