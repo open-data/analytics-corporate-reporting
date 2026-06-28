@@ -44,7 +44,7 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-06-28T04:49:32+00:00`
+Generated at: `2026-06-28T14:14:25+00:00`
 As of date: `2026-06-28`
 Packages assessed: `47461`
 Resources assessed: `243987`
