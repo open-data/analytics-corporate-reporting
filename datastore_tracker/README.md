@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3961
+    "success": 3967
     "failure": 2872
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3724
+    "datatables_view": 3730
     "text_view": 208
     "image_view": 4
     "openapi_view": 4
@@ -94,7 +94,7 @@ pie showData title Resource View Types
 | open.canada.ca | tc | 41 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
-| www.canada.ca | cra-arc | 255 |
+| www.canada.ca | cra-arc | 261 |
 | www.canada.ca | tbs-sct | 30 |
 <!-- RESOURCE_COUNTS_END -->
 
@@ -126,7 +126,7 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 981
-    "cra-arc": 813
+    "cra-arc": 819
     "esdc-edsc": 638
     "tbs-sct": 294
     "cfia-acia": 211
