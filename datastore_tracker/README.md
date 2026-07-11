@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3967
+    "success": 3969
     "failure": 2872
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3730
+    "datatables_view": 3731
     "text_view": 208
     "image_view": 4
     "openapi_view": 4
@@ -69,7 +69,7 @@ pie showData title Resource View Types
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 2 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 592 |
+| open.canada.ca | esdc-edsc | 593 |
 | open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 143 |
 | open.canada.ca | iaac-aeic | 2 |
@@ -127,7 +127,7 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 981
     "cra-arc": 819
-    "esdc-edsc": 638
+    "esdc-edsc": 639
     "tbs-sct": 294
     "cfia-acia": 211
     "psc-cfp": 184
