@@ -1,0 +1,85 @@
+name: Data Relationships Network Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub cron is UTC. These cover 12:45 AM/PM in America/Toronto across
+    # EST and EDT; the guard step keeps only the matching local-time run.
+    - cron: "45 4,5,16,17 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-rels-network-rpt
+  cancel-in-progress: false
+
+jobs:
+  data-rels-network-rpt:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check local schedule window
+        id: schedule
+        shell: bash
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          local_hour="$(TZ=America/Toronto date +%H)"
+          local_minute="$(TZ=America/Toronto date +%M)"
+
+          if { [ "$local_hour" = "00" ] || [ "$local_hour" = "12" ]; } \
+            && [ "$local_minute" -ge 45 ] \
+            && [ "$local_minute" -le 59 ]; then
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        if: steps.schedule.outputs.run == 'true'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        if: steps.schedule.outputs.run == 'true'
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas requests tqdm
+
+      - name: Run datastore tracker
+        if: steps.schedule.outputs.run == 'true'
+        working-directory: datastore_tracker
+        run: python ds_tracker.py
+
+      - name: Run relationship network report
+        if: steps.schedule.outputs.run == 'true'
+        run: python DATA_RELS_NETWORK_RPT/relationship_network.py
+
+      - name: Commit generated outputs
+        if: steps.schedule.outputs.run == 'true'
+        shell: bash
+        run: |
+          git add \
+            datastore_tracker/*.csv \
+            datastore_tracker/*.md \
+            DATA_RELS_NETWORK_RPT/charts \
+            DATA_RELS_NETWORK_RPT/relationship_network_stats.csv
+
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update relationship network report"
+          git push

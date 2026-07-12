@@ -1,0 +1,16 @@
+date,department,source_relation_edges,expanded_relation_edges,package_relation_edges,resource_relation_edges,total_nodes,package_nodes,resource_nodes,url_nodes,connected_departments_count,connected_departments,internal_open_canada_edges,external_url_edges,cross_department_edges,relation_types,chart_changed
+2026-07-12,acoa-apeca,1,1,1,0,2,1,0,1,1,acoa-apeca,0,1,0,"{""formed_by_the_union_of"":1}",N
+2026-07-12,cmc-mcc,2,2,2,0,3,2,0,1,1,cmc-mcc,0,2,0,"{""continues"":2}",N
+2026-07-12,cra-arc,2,2,0,2,4,1,2,1,1,cra-arc,0,2,0,"{""defined_by"":1,""defines"":1}",N
+2026-07-12,csc-scc,1,1,1,0,2,2,0,0,1,csc-scc,1,0,0,"{""continues"":1}",N
+2026-07-12,dfatd-maecd,1,1,1,0,2,1,0,1,1,dfatd-maecd,0,1,0,"{""continues_in_part"":1}",N
+2026-07-12,ec,16,16,16,0,10,10,0,0,1,ec,16,0,0,"{""continued_in_part_by"":8,""continues_in_part"":8}",N
+2026-07-12,esdc-edsc,4,4,0,4,6,2,4,0,2,esdc-edsc;tbs-sct,4,0,4,"{""defined_by"":4}",N
+2026-07-12,isc-sac,7,7,7,0,5,5,0,0,1,isc-sac,7,0,0,"{""continued_by"":4,""continues"":3}",N
+2026-07-12,osfi-bsif,4,4,0,4,7,1,6,0,1,osfi-bsif,4,0,0,"{""references"":4}",N
+2026-07-12,pco-bcp,1,1,0,1,3,1,2,0,1,pco-bcp,1,0,0,"{""defines"":1}",N
+2026-07-12,pwgsc-tpsgc,4,4,4,0,3,3,0,0,1,pwgsc-tpsgc,4,0,0,"{""continued_in_part_by"":1,""continues"":2,""continues_in_part"":1}",N
+2026-07-12,ssc-spc,1,1,1,0,2,1,0,1,1,ssc-spc,0,1,0,"{""continues"":1}",N
+2026-07-12,tbs-sct,3,3,0,3,9,4,5,0,1,tbs-sct,3,0,0,"{""defined_by"":1,""references"":2}",N
+2026-07-12,tc,2,2,0,2,4,1,3,0,1,tc,2,0,0,"{""referenced_by"":2}",N
+2026-07-12,vac-acc,2,2,0,2,3,1,2,0,1,vac-acc,2,0,0,"{""defines"":1,""referenced_by"":1}",N
