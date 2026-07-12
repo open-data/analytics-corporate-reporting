@@ -19,7 +19,11 @@ from urllib.parse import urlparse
 DEFAULT_SOURCE = "https://open.canada.ca/static/od-do-canada.jsonl.gz"
 DEFAULT_CHART_DIR = "DATA_RELS_NETWORK_RPT/charts"
 DEFAULT_STATS_CSV = "DATA_RELS_NETWORK_RPT/relationship_network_stats.csv"
+DEFAULT_OVERVIEW_PNG = "DATA_RELS_NETWORK_RPT/network_overview.png"
+DEFAULT_README = "DATA_RELS_NETWORK_RPT/README.md"
 REQUEST_TIMEOUT_SECONDS = int(os.environ.get("REQUEST_TIMEOUT_SECONDS", "90"))
+README_REPORT_START = "<!-- RELATIONSHIP_NETWORK_REPORT_START -->"
+README_REPORT_END = "<!-- RELATIONSHIP_NETWORK_REPORT_END -->"
 
 OPEN_CANADA_ID_RE = re.compile(
     r"/(?:dataset|info)/([0-9a-fA-F-]{36})(?:/resource/([0-9a-fA-F-]{36}))?"
@@ -33,8 +37,20 @@ def parse_args():
     parser.add_argument("--source", default=DEFAULT_SOURCE, help="JSONL or JSONL.GZ source path/URL.")
     parser.add_argument("--chart-dir", default=DEFAULT_CHART_DIR, help="Directory for department chart markdown files.")
     parser.add_argument("--stats-csv", default=DEFAULT_STATS_CSV, help="Daily department metrics CSV path.")
+    parser.add_argument("--overview-png", default=DEFAULT_OVERVIEW_PNG, help="Path for the overall network PNG.")
+    parser.add_argument("--readme", default=DEFAULT_README, help="README path to update with generated report summary.")
     parser.add_argument("--date", default=None, help="Override run date in YYYY-MM-DD format.")
     parser.add_argument("--limit", type=int, default=None, help="Optional package limit for smoke tests.")
+    parser.add_argument(
+        "--skip-overview-image",
+        action="store_true",
+        help="Do not generate the overall network PNG.",
+    )
+    parser.add_argument(
+        "--skip-readme",
+        action="store_true",
+        help="Do not update the generated README summary.",
+    )
     parser.add_argument(
         "--no-stats",
         action="store_true",
@@ -332,9 +348,210 @@ def write_if_changed(path, content):
     return True
 
 
+def write_bytes_if_changed(path, content):
+    target = Path(path)
+    target.parent.mkdir(parents=True, exist_ok=True)
+    if target.exists() and target.read_bytes() == content:
+        return False
+
+    with tempfile.NamedTemporaryFile("wb", dir=target.parent, delete=False) as tmp:
+        tmp.write(content)
+        tmp_path = Path(tmp.name)
+    tmp_path.replace(target)
+    return True
+
+
 def relation_type_counts(edges):
     counts = Counter(edge["relation_type"] for edge in edges)
     return json.dumps(dict(sorted(counts.items())), ensure_ascii=False, separators=(",", ":"))
+
+
+def node_short_id(node):
+    return node[2:10] if node.startswith(("p:", "r:")) else "url"
+
+
+def overview_node_label(node, graph):
+    department = node_department(node, graph)
+    if node.startswith("p:"):
+        return f"{department or '?'}\npackage\n{node_short_id(node)}"
+    if node.startswith("r:"):
+        resource = graph["resources"].get(node[2:], {})
+        resource_format = resource.get("format") or "resource"
+        return f"{department or '?'}\n{resource_format}\n{node_short_id(node)}"
+    url = node[2:] if node.startswith("u:") else node
+    host = urlparse(url).netloc or "URL"
+    return f"external\n{host[:18]}"
+
+
+def overview_graph_parts(graph):
+    nodes = set()
+    relation_edges = []
+    containment_edges = []
+
+    for edge in graph["edges"]:
+        nodes.add(edge["source"])
+        nodes.add(edge["target"])
+        relation_edges.append((edge["source"], edge["target"], edge["relation_type"]))
+
+    for node in list(nodes):
+        if not node.startswith("r:"):
+            continue
+        resource = graph["resources"].get(node[2:])
+        if not resource:
+            continue
+        package_node = f"p:{resource['package_id']}"
+        nodes.add(package_node)
+        containment_edges.append((package_node, node, "contains"))
+
+    return sorted(nodes), relation_edges, containment_edges
+
+
+def generate_overview_png(graph, path):
+    try:
+        import matplotlib.pyplot as plt
+        import networkx as nx
+    except ImportError as exc:
+        raise RuntimeError(
+            "network overview image generation requires matplotlib and networkx"
+        ) from exc
+
+    nodes, relation_edges, containment_edges = overview_graph_parts(graph)
+    network = nx.MultiDiGraph()
+    network.add_nodes_from(nodes)
+    for source, target, relation_type in relation_edges:
+        network.add_edge(source, target, relation_type=relation_type, edge_kind="relation")
+    for source, target, relation_type in containment_edges:
+        network.add_edge(source, target, relation_type=relation_type, edge_kind="contains")
+
+    plt.switch_backend("Agg")
+    figure, axis = plt.subplots(figsize=(18, 12), dpi=180)
+    axis.set_title("Open Canada package and resource relationship network", fontsize=18, pad=18)
+    axis.axis("off")
+
+    positions = nx.spring_layout(network, seed=42, k=1.2, iterations=250)
+    relation_types = sorted({data["relation_type"] for _, _, data in network.edges(data=True)})
+    relation_palette = {
+        relation_type: plt.cm.tab20(index % 20)
+        for index, relation_type in enumerate(relation_types)
+    }
+
+    package_nodes = [node for node in nodes if node.startswith("p:")]
+    resource_nodes = [node for node in nodes if node.startswith("r:")]
+    url_nodes = [node for node in nodes if node.startswith("u:")]
+
+    nx.draw_networkx_nodes(
+        network,
+        positions,
+        nodelist=package_nodes,
+        node_shape="o",
+        node_color="#dbeafe",
+        edgecolors="#1d4ed8",
+        linewidths=1.4,
+        node_size=1700,
+        ax=axis,
+    )
+    nx.draw_networkx_nodes(
+        network,
+        positions,
+        nodelist=resource_nodes,
+        node_shape="s",
+        node_color="#dcfce7",
+        edgecolors="#15803d",
+        linewidths=1.2,
+        node_size=1450,
+        ax=axis,
+    )
+    nx.draw_networkx_nodes(
+        network,
+        positions,
+        nodelist=url_nodes,
+        node_shape="D",
+        node_color="#f3f4f6",
+        edgecolors="#6b7280",
+        linewidths=1.0,
+        node_size=1200,
+        ax=axis,
+    )
+
+    relation_only_edges = [
+        (source, target, key)
+        for source, target, key, data in network.edges(keys=True, data=True)
+        if data["edge_kind"] == "relation"
+    ]
+    relation_edge_colors = [
+        relation_palette[network.get_edge_data(source, target, key)["relation_type"]]
+        for source, target, key in relation_only_edges
+    ]
+    containment_only_edges = [
+        (source, target, key)
+        for source, target, key, data in network.edges(keys=True, data=True)
+        if data["edge_kind"] == "contains"
+    ]
+
+    nx.draw_networkx_edges(
+        network,
+        positions,
+        edgelist=relation_only_edges,
+        edge_color=relation_edge_colors,
+        arrows=True,
+        arrowsize=14,
+        width=1.7,
+        alpha=0.82,
+        connectionstyle="arc3,rad=0.08",
+        ax=axis,
+    )
+    nx.draw_networkx_edges(
+        network,
+        positions,
+        edgelist=containment_only_edges,
+        edge_color="#9ca3af",
+        arrows=False,
+        width=1.0,
+        alpha=0.45,
+        style="dashed",
+        ax=axis,
+    )
+    nx.draw_networkx_labels(
+        network,
+        positions,
+        labels={node: overview_node_label(node, graph) for node in nodes},
+        font_size=6.8,
+        font_color="#111827",
+        ax=axis,
+    )
+
+    legend_handles = [
+        plt.Line2D([0], [0], marker="o", color="w", label="Package", markerfacecolor="#dbeafe", markeredgecolor="#1d4ed8", markersize=10),
+        plt.Line2D([0], [0], marker="s", color="w", label="Resource", markerfacecolor="#dcfce7", markeredgecolor="#15803d", markersize=10),
+        plt.Line2D([0], [0], marker="D", color="w", label="External URL", markerfacecolor="#f3f4f6", markeredgecolor="#6b7280", markersize=9),
+        plt.Line2D([0], [0], color="#9ca3af", linestyle="--", label="Package contains resource"),
+    ]
+    for relation_type in relation_types:
+        if relation_type == "contains":
+            continue
+        legend_handles.append(
+            plt.Line2D([0], [0], color=relation_palette[relation_type], label=relation_type)
+        )
+    axis.legend(
+        handles=legend_handles,
+        loc="lower center",
+        bbox_to_anchor=(0.5, -0.08),
+        ncol=4,
+        fontsize=8,
+        frameon=False,
+    )
+    figure.tight_layout()
+
+    with tempfile.NamedTemporaryFile(suffix=".png", delete=False) as tmp:
+        tmp_path = Path(tmp.name)
+    try:
+        figure.savefig(tmp_path, format="png", bbox_inches="tight", facecolor="white")
+        image_bytes = tmp_path.read_bytes()
+    finally:
+        plt.close(figure)
+        tmp_path.unlink(missing_ok=True)
+
+    return write_bytes_if_changed(path, image_bytes)
 
 
 def network_departments(network, graph):
@@ -384,6 +601,93 @@ def network_metrics(network, graph, run_date, chart_changed):
         "relation_types": relation_type_counts(seed_edges),
         "chart_changed": "Y" if chart_changed else "N",
     }
+
+
+def int_metric(row, key):
+    return int(row.get(key) or 0)
+
+
+def generated_readme_section(metrics, run_date, overview_png):
+    if not metrics:
+        return "No relationship networks were found in the metadata feed."
+
+    total_departments = len(metrics)
+    source_edges = sum(int_metric(row, "source_relation_edges") for row in metrics)
+    expanded_edges = sum(int_metric(row, "expanded_relation_edges") for row in metrics)
+    total_nodes = sum(int_metric(row, "total_nodes") for row in metrics)
+    package_nodes = sum(int_metric(row, "package_nodes") for row in metrics)
+    resource_nodes = sum(int_metric(row, "resource_nodes") for row in metrics)
+    url_nodes = sum(int_metric(row, "url_nodes") for row in metrics)
+    cross_department_edges = sum(int_metric(row, "cross_department_edges") for row in metrics)
+    changed_charts = sum(1 for row in metrics if row.get("chart_changed") == "Y")
+
+    top_rows = sorted(
+        metrics,
+        key=lambda row: (-int_metric(row, "total_nodes"), row["department"]),
+    )[:10]
+    top_table = [
+        "| Department | Nodes | Source edges | Expanded edges | Connected departments |",
+        "|---|---:|---:|---:|---|",
+    ]
+    for row in top_rows:
+        top_table.append(
+            "| {department} | {total_nodes} | {source_relation_edges} | "
+            "{expanded_relation_edges} | {connected_departments} |".format(**row)
+        )
+
+    escaped_date = run_date.replace("-", "--")
+    overview_path = Path(overview_png).name
+    return "\n".join(
+        [
+            "[![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)",
+            f"![Last updated](https://img.shields.io/badge/last%20updated-{escaped_date}-2f855a)",
+            "",
+            "[Open relationship stats in FlatGitHub](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)",
+            "",
+            f"![Overall relationship network]({overview_path})",
+            "",
+            "## Current Summary",
+            "",
+            f"- Last updated: `{run_date}`",
+            f"- Departments with relationships: `{total_departments}`",
+            f"- Source relationship edges: `{source_edges}`",
+            f"- Expanded relationship edges: `{expanded_edges}`",
+            f"- Rendered nodes across department charts: `{total_nodes}`",
+            f"- Package nodes: `{package_nodes}`",
+            f"- Resource nodes: `{resource_nodes}`",
+            f"- External URL nodes: `{url_nodes}`",
+            f"- Cross-department resolved edges: `{cross_department_edges}`",
+            f"- Department chart files changed on this run: `{changed_charts}`",
+            "",
+            "## Largest Department Networks",
+            "",
+            "\n".join(top_table),
+        ]
+    )
+
+
+def update_readme(path, report_markdown):
+    target = Path(path)
+    if target.exists():
+        content = target.read_text(encoding="utf-8")
+    else:
+        content = "# Relationship Networks\n\n"
+
+    block = f"{README_REPORT_START}\n{report_markdown}\n{README_REPORT_END}"
+    if README_REPORT_START in content and README_REPORT_END in content:
+        pattern = re.compile(
+            rf"{re.escape(README_REPORT_START)}[\s\S]*?{re.escape(README_REPORT_END)}",
+            re.MULTILINE,
+        )
+        content = pattern.sub(block, content, count=1)
+    else:
+        lines = content.splitlines()
+        if lines and lines[0].startswith("# "):
+            content = "\n".join([lines[0], "", block, "", *lines[1:]])
+        else:
+            content = f"{block}\n\n{content}"
+
+    return write_if_changed(target, content if content.endswith("\n") else content + "\n")
 
 
 def update_stats_csv(path, rows):
@@ -447,11 +751,26 @@ def main():
         changed_count += 1 if changed else 0
         metrics.append(network_metrics(network, graph, run_date, changed))
 
+    overview_changed = False
+    if not args.skip_overview_image:
+        overview_changed = generate_overview_png(graph, args.overview_png)
+
+    readme_changed = False
+    if not args.skip_readme:
+        readme_changed = update_readme(
+            args.readme,
+            generated_readme_section(metrics, run_date, args.overview_png),
+        )
+
     if not args.no_stats:
         update_stats_csv(args.stats_csv, metrics)
 
     print(f"Scanned {graph['package_count']} packages and {graph['resource_count']} resources.")
     print(f"Generated {len(departments)} department networks; {changed_count} chart files changed.")
+    if not args.skip_overview_image:
+        print(f"Updated {args.overview_png}: {'changed' if overview_changed else 'unchanged'}.")
+    if not args.skip_readme:
+        print(f"Updated {args.readme}: {'changed' if readme_changed else 'unchanged'}.")
     if not args.no_stats:
         print(f"Updated {args.stats_csv}.")
 

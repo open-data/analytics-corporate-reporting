@@ -1,5 +1,43 @@
 # Relationship Networks
 
+<!-- RELATIONSHIP_NETWORK_REPORT_START -->
+[![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--07--12-2f855a)
+
+[Open relationship stats in FlatGitHub](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)
+
+![Overall relationship network](network_overview.png)
+
+## Current Summary
+
+- Last updated: `2026-07-12`
+- Departments with relationships: `15`
+- Source relationship edges: `51`
+- Expanded relationship edges: `51`
+- Rendered nodes across department charts: `65`
+- Package nodes: `36`
+- Resource nodes: `24`
+- External URL nodes: `5`
+- Cross-department resolved edges: `4`
+- Department chart files changed on this run: `0`
+
+## Largest Department Networks
+
+| Department | Nodes | Source edges | Expanded edges | Connected departments |
+|---|---:|---:|---:|---|
+| ec | 10 | 16 | 16 | ec |
+| tbs-sct | 9 | 3 | 3 | tbs-sct |
+| osfi-bsif | 7 | 4 | 4 | osfi-bsif |
+| esdc-edsc | 6 | 4 | 4 | esdc-edsc;tbs-sct |
+| isc-sac | 5 | 7 | 7 | isc-sac |
+| cra-arc | 4 | 2 | 2 | cra-arc |
+| tc | 4 | 2 | 2 | tc |
+| cmc-mcc | 3 | 2 | 2 | cmc-mcc |
+| pco-bcp | 3 | 1 | 1 | pco-bcp |
+| pwgsc-tpsgc | 3 | 4 | 4 | pwgsc-tpsgc |
+<!-- RELATIONSHIP_NETWORK_REPORT_END -->
+
+
 This report scans the Open Canada metadata JSONL feed and builds one Mermaid
 network chart for each department that has package-level or resource-level
 relationships.

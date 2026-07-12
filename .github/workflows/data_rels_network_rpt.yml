@@ -53,7 +53,7 @@ jobs:
         if: steps.schedule.outputs.run == 'true'
         run: |
           python -m pip install --upgrade pip
-          python -m pip install pandas requests tqdm
+          python -m pip install pandas requests tqdm matplotlib networkx
 
       - name: Run datastore tracker
         if: steps.schedule.outputs.run == 'true'
@@ -71,7 +71,9 @@ jobs:
           git add \
             datastore_tracker/*.csv \
             datastore_tracker/*.md \
+            DATA_RELS_NETWORK_RPT/README.md \
             DATA_RELS_NETWORK_RPT/charts \
+            DATA_RELS_NETWORK_RPT/network_overview.png \
             DATA_RELS_NETWORK_RPT/relationship_network_stats.csv
 
           if git diff --cached --quiet; then
