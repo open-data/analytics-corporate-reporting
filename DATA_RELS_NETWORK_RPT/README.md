@@ -37,6 +37,7 @@
 | pwgsc-tpsgc | 3 | 4 | 4 | pwgsc-tpsgc |
 <!-- RELATIONSHIP_NETWORK_REPORT_END -->
 
+## REPORT INFO
 
 This report scans the Open Canada metadata JSONL feed and builds one Mermaid
 network chart for each department that has package-level or resource-level
