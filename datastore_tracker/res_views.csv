@@ -2168,6 +2168,7 @@ nrc-cnrc,46c213f2-863f-4fa2-9a14-467f8a75c8e1,National Research Council Canada P
 nrc-cnrc,ff0c2020-85e2-4515-8733-3cb8cb60cf2d,"National Research Council Canada Peer-reviewed Publications, 2018",23608684-4455-4da2-9ebf-594eb25ebb2b,"National Research Council Canada Peer-reviewed Publications, 2018",1befe542-80a2-4c3d-b12b-7c61706908dd,text_view
 nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0349dd80-0287-4afa-9416-1dd7444b60c6,2015,bc159949-6944-42fb-b977-6d4c6700f3e1,datatables_view
 nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0a1a6e53-2a88-45b1-81d9-600a5d458840,2019,0e0fbc2d-6611-4bfa-a9e4-5d8844e1dc21,datatables_view
+nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,15b6e00f-862b-4bbf-9b28-04b81a4eb87f,2026,ca836093-4503-414d-8c39-c1a8c5f4b68b,datatables_view
 nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,168116ce-b212-42ff-b4c0-3ffff23c45ec,2013,35887e44-0634-45a6-b9d4-38d62a2edcb9,datatables_view
 nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,258b26d9-df6d-4a24-8327-f0356df68b96,2023,792e92e9-0713-431c-a728-63bc8662c025,datatables_view
 nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,301b777b-d0a0-4245-8bd4-9591b69ed4fb,2007,f480aa99-ac6e-431f-887f-66112f32aff9,datatables_view
@@ -2192,6 +2193,9 @@ nrcan-rncan,0f3008be-d40e-4179-a2cc-cfaccf3720a1,"Growth of jack pine and black 
 nrcan-rncan,1effc7fc-301b-46d1-9fe0-e629f1106631,TOPIC Alberta - Traits of understory vegetation in Alberta - Specific Leaf Area,4383bc5a-e829-4271-9080-9fb261105a0d,Traits data,5ef8587c-7d2d-4585-a79d-477dfb3b606b,datatables_view
 nrcan-rncan,1effc7fc-301b-46d1-9fe0-e629f1106631,TOPIC Alberta - Traits of understory vegetation in Alberta - Specific Leaf Area,e00312d6-3191-4cda-a58e-ee347ee8663a,Data dictionary,c41e18e5-207b-447c-a1de-1339ae2cde0d,datatables_view
 nrcan-rncan,1effc7fc-301b-46d1-9fe0-e629f1106631,TOPIC Alberta - Traits of understory vegetation in Alberta - Specific Leaf Area,e7cdad96-569f-4d9b-8de9-4356c741a038,Traits description,2b56d253-8436-416a-bc7b-12e53f03def8,datatables_view
+nrcan-rncan,2c34b3ad-c760-49a7-a30d-f5b4927f098d,Butternut Inventory 2006-2012,72cf39a6-3ea2-4be9-b6b4-98f3256e1bff,Butternut Inventory 2006-2012,6d36270b-6d54-4555-bab4-4757dfd20938,datatables_view
+nrcan-rncan,2c34b3ad-c760-49a7-a30d-f5b4927f098d,Butternut Inventory 2006-2012,b77af539-7780-4d85-b96f-55d2305f1d75,Butternut Inventory 2006-2012,74ab1dc9-4027-43b0-977e-863b2236f713,text_view
+nrcan-rncan,2c34b3ad-c760-49a7-a30d-f5b4927f098d,Butternut Inventory 2006-2012,daa0b8c7-2143-44c1-b3b7-fe2d1c3e8d90,Butternut Inventory 2006-2012,a5d996c6-57fe-4cdf-bfb5-e1a9a321a678,text_view
 nrcan-rncan,5c598f1f-ec76-4de4-8fe4-82e05165fc49,TOPIC Open - Literature Review Module,1aaad66a-3af1-4699-9523-5d7d89971016,List of scientific references used,4fcb4b45-429c-444d-a0c9-6a2d26dae4df,datatables_view
 nrcan-rncan,5c598f1f-ec76-4de4-8fe4-82e05165fc49,TOPIC Open - Literature Review Module,de87ee25-b0f2-482b-9c69-3eb8ba82063d,Trait data,d8228d4a-765a-4606-bac8-f060140722d4,datatables_view
 nrcan-rncan,5f0e4a20-f6b5-4549-b34a-46cf72c103fd,TOPIC Sudbury - Leaf traits,2a57a675-f619-4420-b5a9-39d2e9deb193,Traits data,e7d0b792-8571-46eb-9ba8-fdd86d028492,datatables_view
@@ -2202,6 +2206,9 @@ nrcan-rncan,611911cf-e58a-4efa-9acf-c19bd0767e10,Soil organic carbon bioreactivi
 nrcan-rncan,6c1f77a5-117b-49bf-82d7-c2c0fc020819,TOPIC CoVitas - Aboveground and belowground plant traits,9b81f96c-8b84-426d-ab63-f3dfceb0c7ef,Traits description,cf90f75e-b933-4d4d-a3b1-de3e2f3910e4,datatables_view
 nrcan-rncan,6c1f77a5-117b-49bf-82d7-c2c0fc020819,TOPIC CoVitas - Aboveground and belowground plant traits,b15b00e3-9a79-4030-9b63-9977f418c3b0,Data traits,eafcb0cc-9315-4026-96e8-a816edf55602,datatables_view
 nrcan-rncan,6c1f77a5-117b-49bf-82d7-c2c0fc020819,TOPIC CoVitas - Aboveground and belowground plant traits,ede094f4-250c-46f3-a072-d215cec6f721,Data dictionary,7509d0df-5e4f-4332-8976-688f7454ae43,datatables_view
+nrcan-rncan,78a497c4-cc30-4ca6-8178-6b2b8c73fe2d,Butternut tree release experiment,1e2c53e5-1989-46fa-a4c5-36c38dba26eb,Butternut tree release experiment,008dca55-1d29-41f8-8d67-3aa8ba30e49e,datatables_view
+nrcan-rncan,78a497c4-cc30-4ca6-8178-6b2b8c73fe2d,Butternut tree release experiment,3878242a-2107-46cb-9847-2b9ea5a4b7ee,Butternut tree release experiment,1e365584-4e27-47d1-84c7-3555e38c182f,text_view
+nrcan-rncan,78a497c4-cc30-4ca6-8178-6b2b8c73fe2d,Butternut tree release experiment,77dead71-14f6-4bd2-b6ab-26102440b4a9,Butternut tree release experiment,4b894e80-56c2-4cf1-af80-43b970be3ca7,text_view
 nrcan-rncan,8faaebad-c5a6-4189-93eb-843d229ff942,Canada’s Forest Soil Database Schema and Structure (No Data Included),a84be78d-6b3c-40ab-9adf-3b5488267174,Data Dictionary of the Canada’s Forest Soil Database (French Version),eb628b56-1d56-44d3-b80b-b5f45cda0830,text_view
 nrcan-rncan,8faaebad-c5a6-4189-93eb-843d229ff942,Canada’s Forest Soil Database Schema and Structure (No Data Included),eb7fdb3e-bf4b-47d1-8956-ea5d862d4258,Data Dictionary of the Canada’s Forest Soil Database (English Version),6ee05b90-bada-49db-ad4c-a43c47c79bfa,text_view
 nrcan-rncan,98f1a129-f628-4ce4-b24d-6f16bf24dd64,Fuel consumption ratings,026e45b4-eb63-451f-b34f-d9308ea3a3d9,Battery-electric vehicles 2012-2026 (2026-05-14),71652394-cb87-4667-b84a-ebf2a54ed416,datatables_view
