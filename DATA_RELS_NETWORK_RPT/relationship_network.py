@@ -642,7 +642,7 @@ def generated_readme_section(metrics, run_date, overview_png):
             "[![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)",
             f"![Last updated](https://img.shields.io/badge/last%20updated-{escaped_date}-2f855a)",
             "",
-            "[Open relationship stats in FlatGitHub](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)",
+            "[![Open in Flatdata Viewer](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)",
             "",
             f"![Overall relationship network]({overview_path})",
             "",
