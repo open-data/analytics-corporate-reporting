@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 3972
+    "success": 3974
     "failure": 2872
 ```
 
@@ -86,6 +86,7 @@ pie showData title Resource View Types
 | open.canada.ca | pch | 9 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 34 |
+| open.canada.ca | ps-sp | 2 |
 | open.canada.ca | psc-cfp | 154 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
@@ -104,7 +105,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00065, 0.00083, 0.00079}
+  curve u["Upload"]{0.00067, 0.00085, 0.00081}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
