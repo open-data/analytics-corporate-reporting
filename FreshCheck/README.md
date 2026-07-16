@@ -44,23 +44,23 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-07-15T14:08:29+00:00`
-As of date: `2026-07-15`
-Packages assessed: `47569`
-Resources assessed: `244530`
+Generated at: `2026-07-16T03:34:27+00:00`
+As of date: `2026-07-16`
+Packages assessed: `47587`
+Resources assessed: `244614`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 35641 | 165260 |
-| freshness_tree_provincial.json | Provincial | provincial | 11642 | 77604 |
+| freshness_tree_federal.json | Federal | federal | 35654 | 165297 |
+| freshness_tree_provincial.json | Provincial | provincial | 11647 | 77651 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1666 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 35641
-    "provincial": 11642
+    "federal": 35654
+    "provincial": 11647
     "municipal": 285
     "user": 1
 ```
@@ -68,19 +68,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 37573
-    "late": 4863
-    "current": 4827
-    "due_soon": 306
+    "unknown": 37591
+    "late": 4875
+    "current": 4841
+    "due_soon": 280
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172969
-    "late": 40449
-    "current": 29224
-    "due_soon": 1888
+    "unknown": 173047
+    "late": 40506
+    "current": 29145
+    "due_soon": 1916
 ```
 
 ### Package Update Timing
@@ -88,13 +88,13 @@ pie showData title Resource freshness status
 pie showData title Package timing against expected update date
     "Late > 1 year": 3377
     "Late 91-365 days": 853
-    "Late 31-90 days": 281
-    "Late 8-30 days": 268
-    "Late 1-7 days": 84
-    "Due in 0-7 days": 306
-    "Due in 8-30 days": 316
-    "Current > 30 days": 4511
-    "Unknown": 37573
+    "Late 31-90 days": 277
+    "Late 8-30 days": 271
+    "Late 1-7 days": 97
+    "Due in 0-7 days": 280
+    "Due in 8-30 days": 327
+    "Current > 30 days": 4514
+    "Unknown": 37591
 ```
 
 ### Departments Keeping Data Current
@@ -103,7 +103,7 @@ xychart-beta
     title "Departments with highest current package share"
     x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "ns-ne", "tf", "on", "ccohs-cchst", "cmc-mcc", "bc-cb", "cer-rec", "ab", "cstm-mstc"]
     y-axis "Current packages (%)" 0 --> 100
-    bar [77, 67, 61, 60, 57, 56, 44, 43, 42, 40, 40, 35, 33, 27, 26]
+    bar [77, 67, 61, 60, 57, 56, 44, 43, 43, 40, 40, 35, 33, 28, 26]
 ```
 
 ### Skipped Jurisdictions
