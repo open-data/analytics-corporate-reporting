@@ -1963,6 +1963,15 @@ hc-sc,1f8d838e-f738-4549-8019-edfc0d931cd7,Cannabis Market Data,27919321-673d-42
 hc-sc,1f8d838e-f738-4549-8019-edfc0d931cd7,Cannabis Market Data,2f960711-2447-472d-81b0-731fdfbf59a1,Cannabis market data - Inventory and Sales,87ffb501-4724-4325-8d72-9bfea8eef1d2,datatables_view
 hc-sc,1f8d838e-f738-4549-8019-edfc0d931cd7,Cannabis Market Data,caf0972d-602f-4365-bcfb-46c315989f19,Cannabis market data - Licensed area and cannabis employment,0de9f5df-5309-4355-9a01-3cdaf4034b87,datatables_view
 hc-sc,1f8d838e-f738-4549-8019-edfc0d931cd7,Cannabis Market Data,f34a50c5-bbb5-40a1-ae40-bf2a94b338bc,Cannabis market data - Licensed area and cannabis employment,421c922d-c785-4cb4-b097-5474d6bc4f24,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,0b81c073-b3a8-4a16-9ec4-c4b703b5ca2f,ICEARENA PHASE2 FUEL COTEMP,518c3fa3-99a4-4818-a8db-f413cfd04822,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,0f218869-8b9c-4015-a382-598d560bfadc,ICEARENA PHASE2 VENT COTEMP,72073559-b1c5-4f07-9411-0f2f286848d0,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,13fd1031-7dc6-463e-8948-4484334a4ac4,ICEARENA PHASE1 CO,43998cd7-535f-4c8d-928b-5d827e987018,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,520a72cf-5cfb-4cd3-aa96-1eedb3ea1561,ICEARENA PHASE2 VENT NO2,89615b7c-30f6-447c-8cbd-15cb2a52d1df,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,700eb7b5-2187-4321-ae92-3c9baf5b9992,ICEARENA PHASE1 TEMPRH,2b254231-3d2e-49aa-a038-a5c916cd08d6,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,a37e36b9-4d14-4b4c-9c52-0665d7d328e9,ICEARENA PHASE1 OGAWA,6021b1d9-7908-4ab7-b5de-431912a2c0b4,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,a7f54d75-c224-491c-a971-a3aa6b7c7ca8,ICEARENA PHASE2 FUEL NO2,62bd811f-2cf4-4478-af04-658af28c4f3d,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,bb3c78f0-53d0-4ecf-babc-f5b0f8c99ed3,ICEARENA PHASE1 NO2,0f3278a0-0eb8-4354-8c0f-95879b749a73,datatables_view
+hc-sc,262adfea-85b3-4697-bd30-e1253a28edfc,Ice arena air quality study datasets,d252dffa-21e8-4355-a4c7-4514ac9116ea,ICEARENA PHASE1 UFP,c13a2ddb-577c-46fe-a7b9-a3a019777847,datatables_view
 hc-sc,29892c85-2ff5-484c-873c-f494ffba6e1b,The Healthy Eating Food Index 2019 ,1254dc71-aa26-4143-93e7-9343d14f79d0,Recipe Breakdown,5c6ccc8c-758c-44ce-a76d-f26bc2f80501,datatables_view
 hc-sc,29892c85-2ff5-484c-873c-f494ffba6e1b,The Healthy Eating Food Index 2019 ,181a8688-fd03-4fc1-bed3-da921434e8ae,ASA24 Food HEFI,623300d1-e1a0-42c3-b5c9-93b10ea79564,datatables_view
 hc-sc,29892c85-2ff5-484c-873c-f494ffba6e1b,The Healthy Eating Food Index 2019 ,192fa2e2-7401-4b20-8b94-be9c21c6a7ee,ASA24 2018 Complete Database,8cf80e15-b8b5-4268-a22d-62b734dd5475,datatables_view
@@ -3315,7 +3324,7 @@ pch,92984c11-6fd4-40c4-b23c-e8832e1f4cd5,"Data on funding provided in 2016-2017 
 pch,a01d8483-04d4-4428-8ad4-16949f91fe75,Landscape of museum collections online,04e5e3f9-8973-4c68-a068-0fc10ec42e9f,LanscapeMuseumCollectionsOnline_Dataset_EN,719470fe-594d-41e7-8263-460a62e48613,datatables_view
 pch,a01d8483-04d4-4428-8ad4-16949f91fe75,Landscape of museum collections online,7fd6141b-8eb9-4cd7-a356-f30ef8303d05,Documentation Technique_FR,b3fd13a4-61f3-4118-8c21-bd5bea22d55c,text_view
 pch,a01d8483-04d4-4428-8ad4-16949f91fe75,Landscape of museum collections online,bf07dd4d-8497-4387-a5d5-2b498a767c32,Technical Documentation_EN,a7ad254c-53c7-42ea-943f-bf351abb2ce8,text_view
-pch,a01d8483-04d4-4428-8ad4-16949f91fe75,Landscape of museum collections online,df9bb3c8-6c6c-4d57-a269-ebd4125c1b49,PanoramaCollectionsMusealesEnLigne_JeuxDonnée_FR,cd6cb29a-6964-444e-8971-ad1a49609323,datatables_view
+pch,a01d8483-04d4-4428-8ad4-16949f91fe75,Landscape of museum collections online,df9bb3c8-6c6c-4d57-a269-ebd4125c1b49,PanoramaCollectionsMusealesEnLigne_EnsembleDeDonnées_FR,cd6cb29a-6964-444e-8971-ad1a49609323,datatables_view
 pch,a8378e1a-47fa-4fea-b87c-d692ad406d9e,Number of visitors to travelling exhibitions supported by the Canada Travelling Exhibition Indemnification Program or the Museums Assistance Program,81d3de57-4a0a-43cb-99e9-ee9cfdee84d6,Heritage Access_EN,498585b9-8c67-4fe4-bc08-be5eb4fa3a05,datatables_view
 pch,b4bbd466-2b4d-4150-a1e7-46b555ef9f25,Composite indicators,aa429796-75c5-4ef2-a597-754c20c3a241,Composite indicators opengov part2,e3192174-23e7-4acb-8248-447bd1548ca1,datatables_view
 pch,b4bbd466-2b4d-4150-a1e7-46b555ef9f25,Composite indicators,ad9ae6ca-3b37-4001-89eb-28760cf017d1,Composite indicators opengov part1,4d049b3e-c5ee-4333-bb08-9946aea9e872,datatables_view
