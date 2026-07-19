@@ -2,7 +2,7 @@
 
 <!-- RELATIONSHIP_NETWORK_REPORT_START -->
 [![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)
-![Last updated](https://img.shields.io/badge/last%20updated-2026--07--18-2f855a)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--07--19-2f855a)
 
 [![Open in Flatdata Viewer](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)
 
@@ -10,7 +10,7 @@
 
 ## Current Summary
 
-- Last updated: `2026-07-18`
+- Last updated: `2026-07-19`
 - Departments with relationships: `15`
 - Source relationship edges: `54`
 - Expanded relationship edges: `54`
@@ -19,7 +19,7 @@
 - Resource nodes: `28`
 - External URL nodes: `5`
 - Cross-department resolved edges: `4`
-- Department chart files changed on this run: `1`
+- Department chart files changed on this run: `0`
 
 ## Largest Department Networks
 
