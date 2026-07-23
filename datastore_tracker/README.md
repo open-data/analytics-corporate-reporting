@@ -57,7 +57,7 @@ pie showData title Resource View Types
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
 | open.canada.ca | cfia-acia | 195 |
-| open.canada.ca | cic | 2 |
+| open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 561 |
 | open.canada.ca | csa-asc | 3 |
@@ -97,6 +97,7 @@ pie showData title Resource View Types
 | open.canada.ca | wd-deo | 10 |
 | www.canada.ca | cra-arc | 261 |
 | www.canada.ca | tbs-sct | 30 |
+| www.ircc.canada.ca | cic | 1 |
 <!-- RESOURCE_COUNTS_END -->
 
 
