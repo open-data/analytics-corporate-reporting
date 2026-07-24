@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4008
-    "failure": 2875
+    "success": 4013
+    "failure": 2879
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3771
+    "datatables_view": 3776
     "text_view": 212
     "image_view": 4
     "openapi_view": 4
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 195 |
+| open.canada.ca | cfia-acia | 200 |
 | open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 561 |
@@ -131,7 +131,7 @@ pie showData title Top 20 Orgs by View Count
     "cra-arc": 819
     "esdc-edsc": 639
     "tbs-sct": 311
-    "cfia-acia": 211
+    "cfia-acia": 216
     "psc-cfp": 184
     "hc-sc": 175
     "nrcan-rncan": 76
