@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4013
+    "success": 4017
     "failure": 2879
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3776
+    "datatables_view": 3780
     "text_view": 212
     "image_view": 4
     "openapi_view": 4
@@ -74,7 +74,7 @@ pie showData title Resource View Types
 | open.canada.ca | hc-sc | 152 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
-| open.canada.ca | infc | 2 |
+| open.canada.ca | infc | 6 |
 | open.canada.ca | irb-cisr | 8 |
 | open.canada.ca | isc-sac | 13 |
 | open.canada.ca | lac-bac | 8 |
