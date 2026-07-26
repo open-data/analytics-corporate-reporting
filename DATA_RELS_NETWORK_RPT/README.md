@@ -2,7 +2,7 @@
 
 <!-- RELATIONSHIP_NETWORK_REPORT_START -->
 [![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)
-![Last updated](https://img.shields.io/badge/last%20updated-2026--07--25-2f855a)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--07--26-2f855a)
 
 [![Open in Flatdata Viewer](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)
 
@@ -10,16 +10,16 @@
 
 ## Current Summary
 
-- Last updated: `2026-07-25`
-- Departments with relationships: `15`
-- Source relationship edges: `54`
-- Expanded relationship edges: `54`
-- Rendered nodes across department charts: `69`
-- Package nodes: `36`
-- Resource nodes: `28`
-- External URL nodes: `5`
+- Last updated: `2026-07-26`
+- Departments with relationships: `16`
+- Source relationship edges: `55`
+- Expanded relationship edges: `55`
+- Rendered nodes across department charts: `72`
+- Package nodes: `37`
+- Resource nodes: `29`
+- External URL nodes: `6`
 - Cross-department resolved edges: `4`
-- Department chart files changed on this run: `0`
+- Department chart files changed on this run: `1`
 
 ## Largest Department Networks
 
@@ -33,8 +33,8 @@
 | cra-arc | 4 | 2 | 2 | cra-arc |
 | tc | 4 | 2 | 2 | tc |
 | cmc-mcc | 3 | 2 | 2 | cmc-mcc |
+| pch | 3 | 1 | 1 | pch |
 | pco-bcp | 3 | 1 | 1 | pco-bcp |
-| pwgsc-tpsgc | 3 | 4 | 4 | pwgsc-tpsgc |
 <!-- RELATIONSHIP_NETWORK_REPORT_END -->
 
 ## REPORT INFO
