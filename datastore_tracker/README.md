@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4019
+    "success": 4021
     "failure": 2877
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3781
+    "datatables_view": 3783
     "text_view": 212
     "image_view": 4
     "openapi_view": 4
@@ -62,7 +62,7 @@ pie showData title Resource View Types
 | open.canada.ca | cra-arc | 561 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
-| open.canada.ca | csec-cstc | 14 |
+| open.canada.ca | csec-cstc | 16 |
 | open.canada.ca | csps-efpc | 1 |
 | open.canada.ca | dfatd-maecd | 68 |
 | open.canada.ca | dfo-mpo | 2 |
@@ -146,7 +146,7 @@ pie showData title Top 20 Orgs by View Count
     "elections": 22
     "fin": 19
     "cic": 17
-    "csc-scc": 15
+    "csec-cstc": 16
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
