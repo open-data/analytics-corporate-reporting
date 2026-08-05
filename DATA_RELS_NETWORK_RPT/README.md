@@ -2,7 +2,7 @@
 
 <!-- RELATIONSHIP_NETWORK_REPORT_START -->
 [![Data Relationships Network Report](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml/badge.svg)](https://github.com/open-data/analytics-corporate-reporting/actions/workflows/data_rels_network_rpt.yml)
-![Last updated](https://img.shields.io/badge/last%20updated-2026--08--04-2f855a)
+![Last updated](https://img.shields.io/badge/last%20updated-2026--08--05-2f855a)
 
 [![Open in Flatdata Viewer](https://img.shields.io/badge/Open%20in%20Flatdata%20Viewer-FF00E8?style=for-the-badge&logo=github&logoColor=black)](https://flatgithub.com/open-data/analytics-corporate-reporting?filename=DATA_RELS_NETWORK_RPT/relationship_network_stats.csv)
 
@@ -10,23 +10,23 @@
 
 ## Current Summary
 
-- Last updated: `2026-08-04`
+- Last updated: `2026-08-05`
 - Departments with relationships: `16`
-- Source relationship edges: `55`
-- Expanded relationship edges: `55`
-- Rendered nodes across department charts: `72`
-- Package nodes: `37`
+- Source relationship edges: `66`
+- Expanded relationship edges: `66`
+- Rendered nodes across department charts: `83`
+- Package nodes: `48`
 - Resource nodes: `29`
 - External URL nodes: `6`
 - Cross-department resolved edges: `4`
-- Department chart files changed on this run: `0`
+- Department chart files changed on this run: `1`
 
 ## Largest Department Networks
 
 | Department | Nodes | Source edges | Expanded edges | Connected departments |
 |---|---:|---:|---:|---|
+| ec | 21 | 27 | 27 | ec |
 | tbs-sct | 13 | 6 | 6 | tbs-sct |
-| ec | 10 | 16 | 16 | ec |
 | osfi-bsif | 7 | 4 | 4 | osfi-bsif |
 | esdc-edsc | 6 | 4 | 4 | esdc-edsc;tbs-sct |
 | isc-sac | 5 | 7 | 7 | isc-sac |
