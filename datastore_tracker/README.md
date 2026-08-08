@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4026
-    "failure": 2877
+    "success": 4030
+    "failure": 2879
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,8 +38,8 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3788
-    "text_view": 214
+    "datatables_view": 3792
+    "text_view": 215
     "image_view": 4
     "openapi_view": 4
     "power_bi_view": 3
@@ -80,7 +80,7 @@ pie showData title Resource View Types
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
 | open.canada.ca | nrcan-rncan | 63 |
-| open.canada.ca | opc-cpvp | 13 |
+| open.canada.ca | opc-cpvp | 17 |
 | open.canada.ca | osfi-bsif | 74 |
 | open.canada.ca | pc | 969 |
 | open.canada.ca | pch | 10 |
