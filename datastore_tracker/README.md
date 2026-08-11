@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4030
+    "success": 4031
     "failure": 2879
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3792
+    "datatables_view": 3793
     "text_view": 215
     "image_view": 4
     "openapi_view": 4
@@ -76,7 +76,7 @@ pie showData title Resource View Types
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 6 |
 | open.canada.ca | irb-cisr | 8 |
-| open.canada.ca | isc-sac | 13 |
+| open.canada.ca | isc-sac | 14 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
 | open.canada.ca | nrcan-rncan | 63 |
@@ -106,7 +106,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00072, 0.0009, 0.00085}
+  curve u["Upload"]{0.00073, 0.0009, 0.00086}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
