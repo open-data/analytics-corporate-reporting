@@ -15,50 +15,53 @@ flowchart LR
   N11(["📦 ec package<br/>Labrador DND Waterfowl Survey 1994-2004<br/><code>4fc3d289-e8eb-4932-ad59-af7db93c8d45</code>"])
   N12(["📦 ec package<br/>Canadian Homogenized Surface Air Temperature (CanHomT V…<br/><code>542b90f7-ab39-452c-be5c-2afebdc4724c</code>"])
   N13(["📦 ec package<br/>Atlantic Agricultural Waterfowl Survey 2008-2013<br/><code>60c0041b-aa4a-4d9d-a219-a5129343de60</code>"])
-  N14(["📦 ec package<br/>Québec Boréale Waterfowl Survey 1985-1989<br/><code>6a8be4e5-10c6-47ef-bc00-ac438a9f852f</code>"])
-  N15(["📦 ec package<br/>Metal and Diamond Mining Effluent Regulations complianc…<br/><code>6ceba940-efaa-4994-bee7-3ea1930bedad</code>"])
-  N16(["📦 ec package<br/>Northern Ontario Waterfowl Survey 1980-2008<br/><code>7ec5b7e7-9fcc-42c3-a748-8cda0c40aa35</code>"])
-  N17(["📦 ec package<br/>Prince Edward Island Waterfowl Survey 2016<br/><code>92947134-b3d7-4759-9f26-9819a42813e5</code>"])
-  N18(["📦 ec package<br/>Adjusted and Homogenized Canadian Climate Data (AHCCD)<br/><code>9c4ebc00-3ea4-4fe0-8bf2-66cfe1cddd1d</code>"])
-  N19(["📦 ec package<br/>Environmental Effects Monitoring (EEM) - Metal and Diam…<br/><code>9d1de4c5-7e6c-45f7-b71b-aee314cc79ea</code>"])
-  N20(["📦 ec package<br/>Environmental Effects Monitoring (EEM) - Metal and Diam…<br/><code>ab776510-8a9c-4607-bd90-2d4733a6a78c</code>"])
-  N21(["📦 ec package<br/>Eastern Waterfowl Survey (EWS25)<br/><code>b8c79d2f-3bd7-4f26-8102-be268be1582b</code>"])
-  N22(["📦 ec package<br/>Québec BCR7 Scoter and Late Nester Survey 2014<br/><code>bc48db37-f63b-41c7-95b6-ef81d3a0ea88</code>"])
-  N23(["📦 ec package<br/>Northern Canada Scoter Survey 2017-2019<br/><code>d47c0884-d331-4c55-8b9d-a23fe0d3a965</code>"])
-  N24(["📦 ec package<br/>Adjusted and Homogenized Canadian Climate Data – Daily …<br/><code>d6813de6-b20a-46cc-8990-01862ae15c5f</code>"])
-  N25(["📦 ec package<br/>Adjusted daily rainfall and snowfall dataset for Canada<br/><code>d8616c52-a812-44ad-8754-7bcc0d8de305</code>"])
-  N26(["📦 ec package<br/>Regional-Scale Dispersion Modeling of Emissions, Concen…<br/><code>f12e387b-5c72-4358-9dc1-c58a1121ebd5</code>"])
+  N14(["📦 ec package<br/>Special Studies of Atmospheric Gases, Particles and Pre…<br/><code>611c4e66-aee7-4124-86d5-460db518fff3</code>"])
+  N15(["📦 ec package<br/>Québec Boréale Waterfowl Survey 1985-1989<br/><code>6a8be4e5-10c6-47ef-bc00-ac438a9f852f</code>"])
+  N16(["📦 ec package<br/>Metal and Diamond Mining Effluent Regulations complianc…<br/><code>6ceba940-efaa-4994-bee7-3ea1930bedad</code>"])
+  N17(["📦 ec package<br/>Northern Ontario Waterfowl Survey 1980-2008<br/><code>7ec5b7e7-9fcc-42c3-a748-8cda0c40aa35</code>"])
+  N18(["📦 ec package<br/>Prince Edward Island Waterfowl Survey 2016<br/><code>92947134-b3d7-4759-9f26-9819a42813e5</code>"])
+  N19(["📦 ec package<br/>Adjusted and Homogenized Canadian Climate Data (AHCCD)<br/><code>9c4ebc00-3ea4-4fe0-8bf2-66cfe1cddd1d</code>"])
+  N20(["📦 ec package<br/>Environmental Effects Monitoring (EEM) - Metal and Diam…<br/><code>9d1de4c5-7e6c-45f7-b71b-aee314cc79ea</code>"])
+  N21(["📦 ec package<br/>Ground-based measurements of pollutant and meteorology …<br/><code>9ddd764e-5b34-4a0b-9647-7c402edc3919</code>"])
+  N22(["📦 ec package<br/>Environmental Effects Monitoring (EEM) - Metal and Diam…<br/><code>ab776510-8a9c-4607-bd90-2d4733a6a78c</code>"])
+  N23(["📦 ec package<br/>Eastern Waterfowl Survey (EWS25)<br/><code>b8c79d2f-3bd7-4f26-8102-be268be1582b</code>"])
+  N24(["📦 ec package<br/>Québec BCR7 Scoter and Late Nester Survey 2014<br/><code>bc48db37-f63b-41c7-95b6-ef81d3a0ea88</code>"])
+  N25(["📦 ec package<br/>Northern Canada Scoter Survey 2017-2019<br/><code>d47c0884-d331-4c55-8b9d-a23fe0d3a965</code>"])
+  N26(["📦 ec package<br/>Adjusted and Homogenized Canadian Climate Data – Daily …<br/><code>d6813de6-b20a-46cc-8990-01862ae15c5f</code>"])
+  N27(["📦 ec package<br/>Adjusted daily rainfall and snowfall dataset for Canada<br/><code>d8616c52-a812-44ad-8754-7bcc0d8de305</code>"])
+  N28(["📦 ec package<br/>Regional-Scale Dispersion Modeling of Emissions, Concen…<br/><code>f12e387b-5c72-4358-9dc1-c58a1121ebd5</code>"])
   N1 -- "continued_in_part_by" --> N2
   N1 -- "continued_in_part_by" --> N9
   N1 -- "continued_in_part_by" --> N11
   N1 -- "continued_in_part_by" --> N13
-  N1 -- "continued_in_part_by" --> N14
-  N1 -- "continued_in_part_by" --> N16
+  N1 -- "continued_in_part_by" --> N15
   N1 -- "continued_in_part_by" --> N17
-  N1 -- "continued_in_part_by" --> N21
-  N1 -- "continued_in_part_by" --> N22
+  N1 -- "continued_in_part_by" --> N18
   N1 -- "continued_in_part_by" --> N23
-  N3 -- "continues_in_part" --> N18
+  N1 -- "continued_in_part_by" --> N24
+  N1 -- "continued_in_part_by" --> N25
+  N3 -- "continues_in_part" --> N19
   N4 -- "continues_in_part" --> N5
   N4 -- "continues_in_part" --> N7
   N4 -- "continues_in_part" --> N8
-  N4 -- "continues_in_part" --> N15
-  N4 -- "continues_in_part" --> N19
+  N4 -- "continues_in_part" --> N16
   N4 -- "continues_in_part" --> N20
+  N4 -- "continues_in_part" --> N22
   N5 -- "continued_in_part_by" --> N4
-  N6 -- "continued_in_part_by" --> N26
+  N6 -- "continued_in_part_by" --> N28
   N7 -- "continued_in_part_by" --> N4
   N8 -- "continued_in_part_by" --> N4
-  N10 -- "continued_in_part_by" --> N26
-  N12 -- "continues_in_part" --> N18
-  N15 -- "continued_in_part_by" --> N4
-  N19 -- "continued_in_part_by" --> N4
+  N10 -- "continued_in_part_by" --> N28
+  N12 -- "continues_in_part" --> N19
+  N14 -- "continued_in_part_by" --> N21
+  N16 -- "continued_in_part_by" --> N4
   N20 -- "continued_in_part_by" --> N4
-  N21 -- "continues_in_part" --> N1
-  N24 -- "continues_in_part" --> N18
-  N25 -- "continues_in_part" --> N18
-  N26 -- "continues_in_part" --> N6
-  N26 -- "continues_in_part" --> N10
+  N22 -- "continued_in_part_by" --> N4
+  N23 -- "continues_in_part" --> N1
+  N26 -- "continues_in_part" --> N19
+  N27 -- "continues_in_part" --> N19
+  N28 -- "continues_in_part" --> N6
+  N28 -- "continues_in_part" --> N10
   class N1 seed
   class N2 seed
   class N3 seed
@@ -85,6 +88,8 @@ flowchart LR
   class N24 seed
   class N25 seed
   class N26 seed
+  class N27 seed
+  class N28 seed
   classDef seed fill:#dbeafe,stroke:#1d4ed8,stroke-width:2px,color:#111827
   classDef other fill:#ecfccb,stroke:#4d7c0f,stroke-width:1px,color:#111827
   classDef url fill:#f3f4f6,stroke:#6b7280,stroke-dasharray: 4 3,color:#111827
