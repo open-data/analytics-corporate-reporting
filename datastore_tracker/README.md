@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4032
+    "success": 4034
     "failure": 2881
 ```
 
@@ -85,7 +85,7 @@ pie showData title Resource View Types
 | open.canada.ca | pc | 969 |
 | open.canada.ca | pch | 10 |
 | open.canada.ca | pco-bcp | 3 |
-| open.canada.ca | phac-aspc | 42 |
+| open.canada.ca | phac-aspc | 44 |
 | open.canada.ca | ps-sp | 2 |
 | open.canada.ca | psc-cfp | 156 |
 | open.canada.ca | pwgsc-tpsgc | 1 |
