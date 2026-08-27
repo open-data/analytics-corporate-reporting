@@ -67,7 +67,7 @@ pie showData title Resource View Types
 | open.canada.ca | dfatd-maecd | 68 |
 | open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
-| open.canada.ca | ec | 2 |
+| open.canada.ca | ec | 23 |
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 593 |
 | open.canada.ca | fin | 18 |
@@ -79,7 +79,7 @@ pie showData title Resource View Types
 | open.canada.ca | isc-sac | 14 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
-| open.canada.ca | nrcan-rncan | 63 |
+| open.canada.ca | nrcan-rncan | 42 |
 | open.canada.ca | opc-cpvp | 17 |
 | open.canada.ca | osfi-bsif | 74 |
 | open.canada.ca | pc | 969 |
@@ -134,19 +134,19 @@ pie showData title Top 20 Orgs by View Count
     "cfia-acia": 216
     "psc-cfp": 188
     "hc-sc": 175
-    "nrcan-rncan": 76
     "osfi-bsif": 74
     "dfatd-maecd": 68
+    "nrcan-rncan": 54
     "phac-aspc": 53
     "ssc-spc": 43
     "tc": 40
     "cnsc-ccsn": 35
+    "ec": 24
     "ic": 24
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
     "cic": 17
-    "csec-cstc": 16
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->

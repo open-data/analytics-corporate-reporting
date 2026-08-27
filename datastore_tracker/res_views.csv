@@ -1292,6 +1292,28 @@ dnd-mdn,b4687b77-7536-4ab1-b732-d8df2a361410,Percentage of civilian employees wh
 dnd-mdn,c19f1fbb-b74d-4902-831d-40cd00b0003d,Crude Canadian Armed Forces (CAF) Regular Force Male Suicide Rates,82046008-578f-4604-9cb9-7b68d5540aed,Crude Canadian Armed Forces (CAF) Regular Force Male Suicide Rates,bdf1514c-c5ca-4da3-9d40-0497ed496441,datatables_view
 dnd-mdn,f763577c-b501-460c-935d-85135f41a30c,National Defence Program Inventory (PI),b9483810-e9a2-4553-a8c2-1b03f2374324,National Defence Program Inventory (PI),ba9d7cea-ac7c-499d-aa2d-a114355dad7e,datatables_view
 dnd-mdn,fb739176-4bca-4a24-9046-5bb164041e15,Standardized Mortality Ratios for Suicide in the CAF Regular Force Male Population by History of Deployment,57b041d4-5183-4263-abe8-696f35bb0c59,Standardized Mortality Ratios for Suicide in the CAF Regular Force Male Population by History of Deployment: 1995-2012,5c7c2b0d-9763-4822-8e9c-fd3a492648a9,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0349dd80-0287-4afa-9416-1dd7444b60c6,2015,bc159949-6944-42fb-b977-6d4c6700f3e1,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0a1a6e53-2a88-45b1-81d9-600a5d458840,2019,0e0fbc2d-6611-4bfa-a9e4-5d8844e1dc21,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,15b6e00f-862b-4bbf-9b28-04b81a4eb87f,2026,ca836093-4503-414d-8c39-c1a8c5f4b68b,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,168116ce-b212-42ff-b4c0-3ffff23c45ec,2013,35887e44-0634-45a6-b9d4-38d62a2edcb9,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,258b26d9-df6d-4a24-8327-f0356df68b96,2023,792e92e9-0713-431c-a728-63bc8662c025,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,301b777b-d0a0-4245-8bd4-9591b69ed4fb,2007,f480aa99-ac6e-431f-887f-66112f32aff9,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,30482384-4fde-49f9-a375-862d15c2e894,EnerGuide Rating System Dashboard,2eff9931-659b-41ba-aa67-3787ab3f52bf,power_bi_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,35aeeb59-b793-4396-8833-7d605823a82f,2024,84ea3b29-e6ff-4a64-b385-fbbf9c378945,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,3f801628-a0fe-4b36-9479-554aa53cd3dc,2017,9d1e4f20-ae6a-49a8-9647-bec498b3477e,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,43fde3b9-6beb-49dd-a951-619640d73fdd,2020,0f87d8d1-6df5-4034-a26f-b20117a3496b,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,5054a487-8472-4905-9eec-712805a69c3c,2011,c3cf7447-e7d1-471c-a476-cb21442296f8,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,54a134b7-92a6-483f-bf5d-db1e3900759f,2016,fe78217f-2ade-4309-99ad-708a1be02bb7,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,6d94f9f1-3e46-484d-9135-290baeba2e5e,2009,8616ffeb-b09f-4f56-8bc4-6e7a81817949,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,772ab68a-f33d-44d7-a6e4-498704926d63,2014,fc29ac1c-a12d-40c8-a11e-c48adbc0e7df,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,7ba57b86-2c58-4437-a49e-5f6f4af17666,2025,2547d101-052b-4bdc-bba1-5f1e2c6aba56,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,949c2b2c-7ade-4135-9426-aa814e14ff6a,2004-2006,ea01eb18-c971-4e89-a0f2-324ed110cb10,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,aebe8f8a-d07c-4822-bba7-b693079e5052,2012,ae690df8-a78c-4f69-8891-f38572f91973,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,c6a393ae-8138-4334-8d04-a3cd75c88935,2021,22c3adc7-033b-4855-b849-4f384d572900,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,dd6dde40-7721-45d2-8c5b-362276061339,2010,25666a43-91c6-44c3-b875-7747f436e4c2,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,de29eb95-a859-4efa-918e-a647c3310f95,2018,4f2efdf4-e05f-44cd-8686-4780f9011bda,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,e96132c5-173b-423b-8d25-22b533c1e50f,2022,a091bd8f-04dd-471c-a84c-e8b3fe217795,datatables_view
+ec,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,faf4349b-d2b8-4d20-9f0e-506a635b6806,2008,3e8ac763-da09-40c1-9c79-dcff517fa48b,datatables_view
 ec,dbce7b33-be2a-4cec-a3be-96bc59887441,Federal Sustainable Development Strategy 2022-2026 data,179c03f7-105a-4e0e-9249-286dda895137,Federal Sustainable Development Strategy 2022-2026 data,63a12eb7-fa77-4e70-acae-89563f8ef422,datatables_view
 ec,dbce7b33-be2a-4cec-a3be-96bc59887441,Federal Sustainable Development Strategy 2022-2026 data,ce5107a1-2296-4bf2-a79a-2b3d93c8f40b,Federal Sustainable Development Strategy 2022-2026 data,fe407119-d405-4a47-af2d-259a55800201,datatables_view
 elections,065439a9-c194-4259-9c95-245a852be4a1,44th General Election: Official Voting Results,078f13c5-fdc6-4b12-ac88-e46f3f4c8a82,Table 13: List of returning officers,894872f1-9694-4085-95f1-e455941ad698,datatables_view
@@ -2218,28 +2240,6 @@ lac-bac,7642381d-8008-40a4-82f4-9a71bea3ae6b,Cost per attendant at events on man
 lac-bac,805cafc6-3e3f-4edb-80cd-0dc2584d940b,At-risk audio-visual material migrated from an obsolete to a current digital file format,2391db83-21b6-45af-80b4-a1c8cdf0b457,At-risk audio-visual material migrated from an obsolete to a current digital file format,84897d49-6a00-4acf-bd76-1ff3448d48fa,datatables_view
 nrc-cnrc,46c213f2-863f-4fa2-9a14-467f8a75c8e1,National Research Council Canada Publications 2019-2021,250ea304-fbc3-4291-a40a-9e90877ece1b,NRC Publications 2019-2021,17fe3123-ca43-4a85-96e7-0a7b68cc2f21,datatables_view
 nrc-cnrc,ff0c2020-85e2-4515-8733-3cb8cb60cf2d,"National Research Council Canada Peer-reviewed Publications, 2018",23608684-4455-4da2-9ebf-594eb25ebb2b,"National Research Council Canada Peer-reviewed Publications, 2018",1befe542-80a2-4c3d-b12b-7c61706908dd,text_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0349dd80-0287-4afa-9416-1dd7444b60c6,2015,bc159949-6944-42fb-b977-6d4c6700f3e1,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,0a1a6e53-2a88-45b1-81d9-600a5d458840,2019,0e0fbc2d-6611-4bfa-a9e4-5d8844e1dc21,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,15b6e00f-862b-4bbf-9b28-04b81a4eb87f,2026,ca836093-4503-414d-8c39-c1a8c5f4b68b,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,168116ce-b212-42ff-b4c0-3ffff23c45ec,2013,35887e44-0634-45a6-b9d4-38d62a2edcb9,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,258b26d9-df6d-4a24-8327-f0356df68b96,2023,792e92e9-0713-431c-a728-63bc8662c025,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,301b777b-d0a0-4245-8bd4-9591b69ed4fb,2007,f480aa99-ac6e-431f-887f-66112f32aff9,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,30482384-4fde-49f9-a375-862d15c2e894,EnerGuide Rating System Dashboard,2eff9931-659b-41ba-aa67-3787ab3f52bf,power_bi_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,35aeeb59-b793-4396-8833-7d605823a82f,2024,84ea3b29-e6ff-4a64-b385-fbbf9c378945,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,3f801628-a0fe-4b36-9479-554aa53cd3dc,2017,9d1e4f20-ae6a-49a8-9647-bec498b3477e,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,43fde3b9-6beb-49dd-a951-619640d73fdd,2020,0f87d8d1-6df5-4034-a26f-b20117a3496b,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,5054a487-8472-4905-9eec-712805a69c3c,2011,c3cf7447-e7d1-471c-a476-cb21442296f8,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,54a134b7-92a6-483f-bf5d-db1e3900759f,2016,fe78217f-2ade-4309-99ad-708a1be02bb7,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,6d94f9f1-3e46-484d-9135-290baeba2e5e,2009,8616ffeb-b09f-4f56-8bc4-6e7a81817949,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,772ab68a-f33d-44d7-a6e4-498704926d63,2014,fc29ac1c-a12d-40c8-a11e-c48adbc0e7df,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,7ba57b86-2c58-4437-a49e-5f6f4af17666,2025,2547d101-052b-4bdc-bba1-5f1e2c6aba56,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,949c2b2c-7ade-4135-9426-aa814e14ff6a,2004-2006,ea01eb18-c971-4e89-a0f2-324ed110cb10,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,aebe8f8a-d07c-4822-bba7-b693079e5052,2012,ae690df8-a78c-4f69-8891-f38572f91973,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,c6a393ae-8138-4334-8d04-a3cd75c88935,2021,22c3adc7-033b-4855-b849-4f384d572900,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,dd6dde40-7721-45d2-8c5b-362276061339,2010,25666a43-91c6-44c3-b875-7747f436e4c2,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,de29eb95-a859-4efa-918e-a647c3310f95,2018,4f2efdf4-e05f-44cd-8686-4780f9011bda,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,e96132c5-173b-423b-8d25-22b533c1e50f,2022,a091bd8f-04dd-471c-a84c-e8b3fe217795,datatables_view
-nrcan-rncan,0a7619fd-2ffe-44b5-9027-3dfcec0866fd,EnerGuide Rating System Open Data,faf4349b-d2b8-4d20-9f0e-506a635b6806,2008,3e8ac763-da09-40c1-9c79-dcff517fa48b,datatables_view
 nrcan-rncan,0f3008be-d40e-4179-a2cc-cfaccf3720a1,"Growth of jack pine and black spruce in response to leachates from lichen, Sphagnum spp. and feather mosses",1ef0b0a1-580a-4591-9098-94b5c2cb4541,"Growth of jack pine and black spruce in response to leachates from lichen, Sphagnum spp. and feather mosses - Metadata",5a66f6eb-4d5b-4952-9bc2-db7e2cdecd26,text_view
 nrcan-rncan,0f3008be-d40e-4179-a2cc-cfaccf3720a1,"Growth of jack pine and black spruce in response to leachates from lichen, Sphagnum spp. and feather mosses",49902e42-0e7a-44ea-8115-b26338f754a2,"Growth of jack pine and black spruce in response to leachates from lichen, Sphagnum spp. and feather mosses - Metadata",566ef3ea-0521-489a-8d23-e6f7ba418e08,text_view
 nrcan-rncan,1effc7fc-301b-46d1-9fe0-e629f1106631,TOPIC Alberta - Traits of understory vegetation in Alberta - Specific Leaf Area,4383bc5a-e829-4271-9080-9fb261105a0d,Traits data,5ef8587c-7d2d-4585-a79d-477dfb3b606b,datatables_view
