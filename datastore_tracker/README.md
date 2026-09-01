@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4069
+    "success": 4070
     "failure": 2882
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3831
+    "datatables_view": 3832
     "text_view": 215
     "image_view": 4
     "openapi_view": 4
@@ -83,7 +83,7 @@ pie showData title Resource View Types
 | open.canada.ca | opc-cpvp | 17 |
 | open.canada.ca | osfi-bsif | 74 |
 | open.canada.ca | pc | 969 |
-| open.canada.ca | pch | 10 |
+| open.canada.ca | pch | 11 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 44 |
 | open.canada.ca | ps-sp | 2 |
@@ -106,7 +106,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00073, 0.0009, 0.00086}
+  curve u["Upload"]{0.00074, 0.00088, 0.00084}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
