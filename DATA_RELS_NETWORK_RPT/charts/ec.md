@@ -48,10 +48,8 @@ flowchart LR
   N4 -- "continues_in_part" --> N20
   N4 -- "continues_in_part" --> N22
   N5 -- "continued_in_part_by" --> N4
-  N6 -- "continued_in_part_by" --> N28
   N7 -- "continued_in_part_by" --> N4
   N8 -- "continued_in_part_by" --> N4
-  N10 -- "continued_in_part_by" --> N28
   N12 -- "continues_in_part" --> N19
   N14 -- "continued_in_part_by" --> N21
   N16 -- "continued_in_part_by" --> N4
