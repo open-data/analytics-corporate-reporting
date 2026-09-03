@@ -44,8 +44,8 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-09-02T16:34:22+00:00`
-As of date: `2026-09-02`
+Generated at: `2026-09-03T04:21:28+00:00`
+As of date: `2026-09-03`
 Packages assessed: `47858`
 Resources assessed: `241549`
 
@@ -68,31 +68,31 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 37867
-    "current": 4957
-    "late": 4955
-    "due_soon": 79
+    "late": 4974
+    "current": 4931
+    "due_soon": 86
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
     "unknown": 171655
-    "late": 38525
-    "current": 30959
-    "due_soon": 410
+    "late": 38641
+    "current": 30840
+    "due_soon": 413
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
     "Late > 1 year": 3370
-    "Late 91-365 days": 1017
-    "Late 31-90 days": 384
+    "Late 91-365 days": 1019
+    "Late 31-90 days": 383
     "Late 8-30 days": 92
-    "Late 1-7 days": 92
-    "Due in 0-7 days": 79
-    "Due in 8-30 days": 601
-    "Current > 30 days": 4356
+    "Late 1-7 days": 110
+    "Due in 0-7 days": 86
+    "Due in 8-30 days": 576
+    "Current > 30 days": 4355
     "Unknown": 37867
 ```
 
@@ -100,9 +100,9 @@ pie showData title Package timing against expected update date
 ```mermaid
 xychart-beta
     title "Departments with highest current package share"
-    x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "ns-ne", "on", "tf", "ccohs-cchst", "cwa-aec", "bc-cb", "cmc-mcc", "ab", "ic"]
+    x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "ns-ne", "tf", "on", "ccohs-cchst", "cwa-aec", "bc-cb", "cmc-mcc", "ab", "cstm-mstc"]
     y-axis "Current packages (%)" 0 --> 100
-    bar [77, 67, 61, 60, 57, 55, 43, 43, 43, 40, 40, 35, 30, 28, 28]
+    bar [77, 67, 61, 60, 57, 55, 43, 43, 43, 40, 40, 35, 30, 28, 26]
 ```
 
 ### Skipped Jurisdictions
