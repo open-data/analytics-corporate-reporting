@@ -1,4 +1,100 @@
 Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Informal Requests,Unique Packages
+2026,8,Accessibility Standards Canada,Normes d’accessibilité Canada,https://open.canada.ca/data/organization/casdo-ocena,1,1
+2026,8,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,https://open.canada.ca/data/organization/aafc-aac,8,6
+2026,8,Asia-Pacific Foundation of Canada,Fondation Asie Pacifique du Canada,https://open.canada.ca/data/organization/apfc-fapc,1,1
+2026,8,Business Development Bank of Canada,Banque de développement du Canada,https://open.canada.ca/data/organization/bdc,10,9
+2026,8,Canada Border Services Agency,Agence des services frontaliers du Canada,https://open.canada.ca/data/organization/cbsa-asfc,38,31
+2026,8,Canada Energy Regulator,La Régie de l’énergie du Canada,https://open.canada.ca/data/organization/cer-rec,5,4
+2026,8,Canada Mortgage and Housing Corporation,Société canadienne d'hypothèques et de logement,https://open.canada.ca/data/organization/cmhc-schl,20,18
+2026,8,Canada Revenue Agency,Agence du revenu du Canada,https://open.canada.ca/data/organization/cra-arc,58,53
+2026,8,Canada-Newfoundland and Labrador Offshore Petroleum Board,Office Canada–Terre-Neuve-et Labrador des hydrocarbures extracôtiers,https://open.canada.ca/data/organization/cnlopb,3,3
+2026,8,Canada-Nova Scotia Offshore Energy Regulator ,Régie Canada-Nouvelle-Écosse de l’énergie extracôtière ,https://open.canada.ca/data/organization/cnsopb,2,2
+2026,8,Canadian Food Inspection Agency,Agence canadienne d'inspection des aliments,https://open.canada.ca/data/organization/cfia-acia,11,11
+2026,8,Canadian Forces Morale and Welfare Services,Services de bien-être et moral des Forces canadiennes,https://open.canada.ca/data/organization/cfmws-sbmfc,3,3
+2026,8,Canadian Heritage,Patrimoine canadien,https://open.canada.ca/data/organization/pch,51,40
+2026,8,Canadian Human Rights Commission,Commission canadienne des droits de la personne,https://open.canada.ca/data/organization/chrc-ccdp,1,1
+2026,8,Canadian Institutes of Health Research,Instituts de recherche en santé du Canada,https://open.canada.ca/data/organization/cihr-irsc,5,4
+2026,8,Canadian Museum for Human Rights,Musée canadien pour les droits de la personne,https://open.canada.ca/data/organization/cmhr-mcdp,1,1
+2026,8,Canadian Museum of History,Musée canadien de l'histoire,https://open.canada.ca/data/organization/cmc-mcc,2,2
+2026,8,Canadian Northern Economic Development Agency,Agence canadienne de développement économique du Nord,https://open.canada.ca/data/organization/cannor,8,8
+2026,8,Canadian Race Relations Foundation,La Fondation Canadienne des relations raciales,https://open.canada.ca/data/organization/crrf-fcrr,2,2
+2026,8,Canadian Radio-television and Telecommunications Commission,Conseil de la radiodiffusion et des télécommunications canadiennes,https://open.canada.ca/data/organization/crtc,2,2
+2026,8,Canadian Security Intelligence Service,Service canadien du renseignement de sécurité,https://open.canada.ca/data/organization/csis-scrs,54,35
+2026,8,Canadian Space Agency,Agence spatiale canadienne,https://open.canada.ca/data/organization/csa-asc,6,5
+2026,8,College of Immigration and Citizenship Consultants,Collège des Consultants en Immigration et en Citoyenneté,https://open.canada.ca/data/organization/cicc-ccic,8,8
+2026,8,Communications Security Establishment Canada,Centre de la sécurité des télécommunications Canada,https://open.canada.ca/data/organization/csec-cstc,14,13
+2026,8,Correctional Service of Canada,Service correctionnel du Canada,https://open.canada.ca/data/organization/csc-scc,12,12
+2026,8,Crown-Indigenous Relations and Northern Affairs Canada,Relations Couronne-Autochtones et Affaires du Nord Canada,https://open.canada.ca/data/organization/aandc-aadnc,7,7
+2026,8,Defence Construction Canada,Construction de Défense Canada,https://open.canada.ca/data/organization/dcc-cdc,6,6
+2026,8,Department of Finance Canada,Ministère des Finances Canada,https://open.canada.ca/data/organization/fin,102,81
+2026,8,"Department of Housing, Infrastructure and Communities","Ministère du Logement, de l’Infrastructure et des Collectivités",https://open.canada.ca/data/organization/infc,134,129
+2026,8,Department of Justice Canada,Ministère de la Justice Canada,https://open.canada.ca/data/organization/jus,49,46
+2026,8,Elections Canada,Élections Canada,https://open.canada.ca/data/organization/elections,2,2
+2026,8,Employment and Social Development Canada,Emploi et Développement social Canada,https://open.canada.ca/data/organization/esdc-edsc,140,128
+2026,8,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,37,31
+2026,8,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,2,2
+2026,8,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,16,10
+2026,8,First Nations Financial Management Board,Conseil de gestion financière des premières nations,https://open.canada.ca/data/organization/fnfmb-cgfpn,2,2
+2026,8,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,29,28
+2026,8,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,44,42
+2026,8,Great Lakes Pilotage Authority Canada,Administration de pilotage des Grands Lacs Canada,https://open.canada.ca/data/organization/glpa-apgl,1,1
+2026,8,Halifax Port Authority,Administration portuaire de Halifax,https://open.canada.ca/data/organization/halpa-aphal,1,1
+2026,8,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,48,40
+2026,8,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,11,10
+2026,8,"Immigration, Refugees and Citizenship Canada","Immigration, Réfugiés et Citoyenneté Canada",https://open.canada.ca/data/organization/cic,397,220
+2026,8,Impact Assessment Agency of Canada,Agence d'évaluation d'impact du Canada,https://open.canada.ca/data/organization/iaac-aeic,1,1
+2026,8,Indigenous Services Canada,Services aux Autochtones Canada,https://open.canada.ca/data/organization/isc-sac,20,19
+2026,8,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,66,58
+2026,8,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,13,9
+2026,8,Laurentian Pilotage Authority ,Administration de pilotage des Laurentides ,https://open.canada.ca/data/organization/slp-psl,1,1
+2026,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,14,14
+2026,8,Mackenzie Valley Land and Water Board,Office des terres et des eaux de la vallée du Mackenzie Valley,https://open.canada.ca/data/organization/mlvwb-otevm,1,1
+2026,8,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,1,1
+2026,8,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,2,2
+2026,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,9
+2026,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,82,78
+2026,8,National Defence and Canadian Forces Ombudsman,Ombudsman de la Défense nationale et des Forces canadiennes,https://open.canada.ca/data/organization/ndcfo-odnfc,1,1
+2026,8,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,3,3
+2026,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,3
+2026,8,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,7,3
+2026,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,116,107
+2026,8,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
+2026,8,Office of the Administrator of the Fund for Railway Accidents Involving Designated Goods; (operating under the name) Ship and Rail Compensation Canada,Bureau de l’administrateur de la Caisse d’indemnisation pour les accidents ferroviaires impliquant des marchandises désignées; (qui mène ses activités sous le nom de) Indemnisation Navire et Rail Canada,https://open.canada.ca/data/organization/fraidg-ciafimd,1,1
+2026,8,Office of the Administrator of the Ship-source Oil Pollution Fund; (operating under the name) Ship and Rail Compensation Canada,Bureau de l’administrateur de la Caisse d’indemnisation des dommages dus à la pollution par les hydrocarbures causée par les navires; (qui mène ses activités sous le nom de) Indemnisation Navire et Rail Canada,https://open.canada.ca/data/organization/sopf-cidp,1,1
+2026,8,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,https://open.canada.ca/data/organization/oag-bvg,2,2
+2026,8,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,1,1
+2026,8,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,2,2
+2026,8,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,https://open.canada.ca/data/organization/osfi-bsif,2,2
+2026,8,Pacific Economic Development Canada,Développement économique Canada pour le Pacifique,https://open.canada.ca/data/organization/pacifican,2,2
+2026,8,Parks Canada,Parcs Canada,https://open.canada.ca/data/organization/pc,33,20
+2026,8,Parole Board of Canada,Commission des libérations conditionnelles du Canada,https://open.canada.ca/data/organization/pbc-clcc,2,2
+2026,8,Patented Medicine Prices Review Board Canada,Conseil d'examen du prix des médicaments brevetés Canada,https://open.canada.ca/data/organization/pmprb-cepmb,2,2
+2026,8,Pierre Elliott Trudeau Foundation,Fondation Pierre Elliott Trudeau,https://open.canada.ca/data/organization/petf-fpet,1,1
+2026,8,Prairies Economic Development Canada,Développement économique Canada pour les Prairies,https://open.canada.ca/data/organization/prairiescan,1,1
+2026,8,Privy Council Office,Bureau du Conseil privé,https://open.canada.ca/data/organization/pco-bcp,117,76
+2026,8,Public Health Agency of Canada,Agence de la santé publique du Canada,https://open.canada.ca/data/organization/phac-aspc,17,16
+2026,8,Public Prosecution Service of Canada,Service des poursuites pénales du Canada,https://open.canada.ca/data/organization/ppsc-sppc,5,5
+2026,8,Public Safety Canada,Sécurité publique Canada,https://open.canada.ca/data/organization/ps-sp,23,20
+2026,8,Public Sector Pension Investment Board,Office d’investissement des régimes de pensions du secteur public,https://open.canada.ca/data/organization/pspib-oirpsp,4,4
+2026,8,Public Services and Procurement Canada,Services publics et Approvisionnement Canada,https://open.canada.ca/data/organization/pwgsc-tpsgc,46,41
+2026,8,Quebec Port Authority,Administration portuaire de Québec,https://open.canada.ca/data/organization/qpa-apq,3,2
+2026,8,Royal Canadian Mounted Police,Gendarmerie royale du Canada,https://open.canada.ca/data/organization/rcmp-grc,23,22
+2026,8,Secretariat of the National Security and Intelligence Committee of Parliamentarians,Secrétariat du Comité des parlementaires sur la sécurité nationale et le renseignement,https://open.canada.ca/data/organization/snsicp-scpssnr,4,2
+2026,8,Shared Services Canada,Services partagés Canada,https://open.canada.ca/data/organization/ssc-spc,24,20
+2026,8,Social Sciences and Humanities Research Council of Canada,Conseil de recherches en sciences humaines du Canada,https://open.canada.ca/data/organization/sshrc-crsh,3,3
+2026,8,Statistics Canada,Statistique Canada,https://open.canada.ca/data/organization/statcan,9,9
+2026,8,Telefilm Canada,Téléfilm Canada,https://open.canada.ca/data/organization/tf,1,1
+2026,8,The Correctional Investigator Canada,L'Enquêteur correctionnel Canada,https://open.canada.ca/data/organization/oci-bec,1,1
+2026,8,The National Battlefields Commission,Commission des champs de bataille nationaux,https://open.canada.ca/data/organization/nbc-ccbn,1,1
+2026,8,Toronto Port Authority,Administration portuaire de Toronto,https://open.canada.ca/data/organization/tpa-apt,1,1
+2026,8,Transport Canada,Transports Canada,https://open.canada.ca/data/organization/tc,28,25
+2026,8,Treasury Board of Canada Secretariat,Secrétariat du Conseil du Trésor du Canada,https://open.canada.ca/data/organization/tbs-sct,21,21
+2026,8,VIA HFR - VIA TGF Inc.,VIA HFR - VIA TGF Inc.,https://open.canada.ca/data/organization/hgr-tgf,23,18
+2026,8,VIA Rail Canada Inc.,VIA Rail Canada Inc.,https://open.canada.ca/data/organization/viarail,6,6
+2026,8,Veterans Affairs Canada,Anciens Combattants Canada,https://open.canada.ca/data/organization/vac-acc,4,4
+2026,8,Windsor-Detroit Bridge Authority,Autorité du pont Windsor-Détroit,https://open.canada.ca/data/organization/wdba-apwd,1,1
+2026,8,Women and Gender Equality Canada,Femmes et Égalité des genres Canada,https://open.canada.ca/data/organization/wage,22,21
+2026,8,Yukon Environmental and Socio-economic Assessment Board,Office d’évaluation environnementale et socio-économique du Yukon,https://open.canada.ca/data/organization/yesab-oeesy,1,1
 2026,7,Administrative Tribunals Support Service of Canada,Service canadien d'appui aux tribunaux administratifs,https://open.canada.ca/data/organization/atssc-scdata,1,1
 2026,7,Agriculture and Agri-Food Canada,Agriculture et Agroalimentaire Canada,https://open.canada.ca/data/organization/aafc-aac,31,29
 2026,7,Atlantic Canada Opportunities Agency,Agence de promotion économique du Canada atlantique,https://open.canada.ca/data/organization/acoa-apeca,5,4
@@ -60,14 +156,14 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,7,Nanaimo Port Authority,Administration portuaire de Nanaïmo,https://open.canada.ca/data/organization/nnpa-apn,1,1
 2026,7,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,2,2
 2026,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,41,32
-2026,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,431,403
+2026,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,430,402
 2026,7,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,3,2
 2026,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,16,13
 2026,7,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,37,34
 2026,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,122,116
 2026,7,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
 2026,7,Northern Pipeline Agency Canada,Administration du pipe-line du Nord Canada,https://open.canada.ca/data/organization/npa-apn,2,2
-2026,7,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,https://open.canada.ca/data/organization/oag-bvg,3,3
+2026,7,Office of the Auditor General of Canada,Bureau du vérificateur général du Canada,https://open.canada.ca/data/organization/oag-bvg,2,2
 2026,7,Office of the Information Commissioner of Canada,Commissariat à l'information du Canada,https://open.canada.ca/data/organization/oic-ci,2,2
 2026,7,Office of the Privacy Commissioner of Canada,Commissariat à la protection de la vie privée du Canada,https://open.canada.ca/data/organization/opc-cpvp,21,20
 2026,7,Office of the Superintendent of Financial Institutions Canada,Bureau du surintendant des institutions financières Canada,https://open.canada.ca/data/organization/osfi-bsif,3,3
@@ -165,10 +261,9 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,6,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2026,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,231,219
 2026,6,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,1,1
-2026,6,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,3,3
 2026,6,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,2
 2026,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,21,18
-2026,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,329,304
+2026,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,328,303
 2026,6,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,4,4
 2026,6,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,6
 2026,6,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,8,8
@@ -274,7 +369,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,5,International Development Research Centre,Centre de recherches pour le développement international,https://open.canada.ca/data/organization/idrc-crdi,2,1
 2026,5,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,235,221
 2026,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,14,14
-2026,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,353,310
+2026,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,348,305
 2026,5,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2026,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,11,10
 2026,5,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,21,20
@@ -381,11 +476,10 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,4,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2026,4,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,244,230
 2026,4,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,2,2
-2026,4,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,2,2
 2026,4,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2026,4,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,1,1
 2026,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,27,22
-2026,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,267,216
+2026,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,264,214
 2026,4,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,4,4
 2026,4,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2026,4,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,6
@@ -550,7 +644,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,10,10
 2026,2,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,1,1
 2026,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,8
-2026,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,51,46
+2026,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,50,45
 2026,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,3,3
 2026,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
 2026,2,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,21,19
@@ -626,7 +720,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2026,1,International Development Research Centre,Centre de recherches pour le développement international,https://open.canada.ca/data/organization/idrc-crdi,2,1
 2026,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,13,13
 2026,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,4
-2026,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,129,109
+2026,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,127,107
 2026,1,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2026,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,5
 2026,1,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,4,3
@@ -695,7 +789,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,12,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2025,12,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,5
 2025,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2025,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,70,59
+2025,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,69,58
 2025,12,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
 2025,12,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,12
 2025,12,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -773,7 +867,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,11,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,1
 2025,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,4
 2025,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,12,9
-2025,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,47,43
+2025,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,45,41
 2025,11,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,11,10
 2025,11,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,3
 2025,11,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,1,1
@@ -848,7 +942,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,10,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,4,3
 2025,10,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,23,22
 2025,10,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,7,3
-2025,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,51,44
+2025,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,49,42
 2025,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,7,6
 2025,10,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,34,32
@@ -925,7 +1019,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,25,24
 2025,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,4,4
 2025,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,61,54
+2025,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,59,52
 2025,9,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2025,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,3
 2025,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,12,9
@@ -996,7 +1090,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,6,5
 2025,8,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,1
 2025,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,66,60
+2025,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,62,56
 2025,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2025,8,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,18,12
 2025,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,40,34
@@ -1062,7 +1156,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,21,20
 2025,7,National Arts Centre,Centre national des Arts,https://open.canada.ca/data/organization/nac-cna,5,1
 2025,7,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,4,4
-2025,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,39,31
+2025,7,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,32,27
 2025,7,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,7,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,3,3
 2025,7,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,20,18
@@ -1133,7 +1227,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,6,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,5,3
 2025,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,27,26
 2025,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,8,8
-2025,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,46,38
+2025,6,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,45,37
 2025,6,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,4
 2025,6,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,27,27
 2025,6,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -1200,11 +1294,10 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,5,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,17,5
 2025,5,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,5,5
 2025,5,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,1,1
-2025,5,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2025,5,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,1
 2025,5,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,1,1
 2025,5,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2025,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,39,34
+2025,5,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,38,33
 2025,5,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2025,5,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,5,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,4,4
@@ -1268,7 +1361,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,4,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,1,1
 2025,4,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,2,2
 2025,4,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,5,2
-2025,4,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,63,54
+2025,4,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,62,53
 2025,4,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,128,115
 2025,4,Halifax Port Authority,Administration portuaire de Halifax,https://open.canada.ca/data/organization/halpa-aphal,1,1
 2025,4,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,150,150
@@ -1282,7 +1375,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,4,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,2
 2025,4,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,68,3
 2025,4,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2025,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,65,56
+2025,4,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,61,52
 2025,4,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,5,2
 2025,4,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,62,35
 2025,4,Office of the Commissioner of Official Languages,Commissariat aux langues officielles,https://open.canada.ca/data/organization/ocol-clo,2,1
@@ -1362,10 +1455,9 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,3,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2025,3,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,134,134
 2025,3,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,1,1
-2025,3,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,2,1
 2025,3,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,64,2
 2025,3,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2025,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,192,167
+2025,3,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,191,166
 2025,3,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2025,3,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,3,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,20,11
@@ -1451,11 +1543,10 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,2,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,51,51
 2025,2,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,2
 2025,2,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,149,145
-2025,2,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,2,2
 2025,2,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2025,2,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,34,2
 2025,2,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,5
-2025,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,106,88
+2025,2,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,102,84
 2025,2,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2025,2,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,1,1
 2025,2,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,2,2
@@ -1541,7 +1632,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2025,1,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,2
 2025,1,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,101,86
 2025,1,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,9
-2025,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,66,58
+2025,1,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,63,55
 2025,1,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,10,7
 2025,1,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,10,7
 2025,1,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,71,71
@@ -1611,7 +1702,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,12,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,32,21
 2024,12,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,1,1
 2024,12,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,3,3
-2024,12,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,82,81
+2024,12,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,81,80
 2024,12,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,172,145
 2024,12,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,174,160
 2024,12,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,22,18
@@ -1622,7 +1713,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,12,Mackenzie Valley Land and Water Board,Office des terres et des eaux de la vallée du Mackenzie Valley,https://open.canada.ca/data/organization/mlvwb-otevm,1,1
 2024,12,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,3,3
 2024,12,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,2,2
-2024,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,212,162
+2024,12,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,205,155
 2024,12,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,12,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,2,2
 2024,12,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,3,2
@@ -1704,7 +1795,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,11,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,383,339
 2024,11,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,2
 2024,11,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,6,5
-2024,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,38,34
+2024,11,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,32,29
 2024,11,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,1,1
 2024,11,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,1,1
 2024,11,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,4
@@ -1779,7 +1870,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,10,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,1,1
 2024,10,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,5,4
 2024,10,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,3,3
-2024,10,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,104,97
+2024,10,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,101,94
 2024,10,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,139,97
 2024,10,Halifax Port Authority,Administration portuaire de Halifax,https://open.canada.ca/data/organization/halpa-aphal,1,1
 2024,10,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,160,152
@@ -1794,7 +1885,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,10,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,2,2
 2024,10,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,21,4
 2024,10,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,9,9
-2024,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,102,99
+2024,10,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,93,90
 2024,10,National Gallery of Canada,Musée des beaux-arts du Canada,https://open.canada.ca/data/organization/ngc-mbac,5,4
 2024,10,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,6,6
 2024,10,National Security and Intelligence Review Agency,Office de surveillance des activités en matière de sécurité nationale et de renseignement,https://open.canada.ca/data/organization/nsira-ossnr,7,6
@@ -1882,9 +1973,8 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,9,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,80,73
 2024,9,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,5,5
 2024,9,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,181,177
-2024,9,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2024,9,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,20,14
-2024,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,164,151
+2024,9,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,83,79
 2024,9,National Film Board,Office national du film,https://open.canada.ca/data/organization/nfb-onf,2,2
 2024,9,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,4,1
 2024,9,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,76,73
@@ -1967,12 +2057,10 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,8,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,1,1
 2024,8,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,242,224
 2024,8,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,2,1
-2024,8,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2024,8,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,1,1
 2024,8,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,3,3
 2024,8,Nanaimo Port Authority,Administration portuaire de Nanaïmo,https://open.canada.ca/data/organization/nnpa-apn,1,1
 2024,8,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,3,3
-2024,8,National Defence,Défense nationale,https://open.canada.ca/data/organization/dnd-mdn,112,80
 2024,8,National Research Council Canada,Conseil national de recherches Canada,https://open.canada.ca/data/organization/nrc-cnrc,5,4
 2024,8,Natural Resources Canada,Ressources naturelles Canada,https://open.canada.ca/data/organization/nrcan-rncan,132,126
 2024,8,Natural Sciences and Engineering Research Council of Canada,Conseil de recherches en sciences naturelles et en génie du Canada,https://open.canada.ca/data/organization/nserc-crsng,1,1
@@ -2062,7 +2150,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,7,Federal Public Service Health Care Plan Administration Authority,Administration du Régime de soins de santé de la fonction publique fédérale,https://open.canada.ca/data/organization/pshcp-rssfp,7,4
 2024,7,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,12,9
 2024,7,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,40,30
-2024,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,426,342
+2024,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,420,338
 2024,7,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,611,452
 2024,7,Great Lakes Pilotage Authority Canada,Administration de pilotage des Grands Lacs Canada,https://open.canada.ca/data/organization/glpa-apgl,1,1
 2024,7,Hamilton-Oshawa  Port Authority,Administration portuaire de Hamilton-Oshawa,https://open.canada.ca/data/organization/hampa-apham,2,2
@@ -2077,7 +2165,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,7,Jacques Cartier and Champlain Bridges Incorporated,Ponts Jacques Cartier et Champlain Incorporée,https://open.canada.ca/data/organization/jccbi-pjcci,1,1
 2024,7,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,572,363
 2024,7,Marine Atlantic Inc.,Marine Atlantique S.C.C.,https://open.canada.ca/data/organization/mai,1,1
-2024,7,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,4,3
+2024,7,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,1,1
 2024,7,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,9,7
 2024,7,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,2,2
 2024,7,Nanaimo Port Authority,Administration portuaire de Nanaïmo,https://open.canada.ca/data/organization/nnpa-apn,1,1
@@ -2209,7 +2297,6 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,6,"Innovation, Science and Economic Development Canada","Innovation, Sciences et Développement économique Canada",https://open.canada.ca/data/organization/ic,393,387
 2024,6,Invest in Canada,Investir Au Canada,https://open.canada.ca/data/organization/iic-iac,2,2
 2024,6,Library and Archives Canada,Bibliothèque et Archives Canada,https://open.canada.ca/data/organization/lac-bac,347,343
-2024,6,Military Grievances External Review Committee,Comité externe d’examen des griefs militaires,https://open.canada.ca/data/organization/mgerc-ceegm,6,6
 2024,6,Military Police Complaints Commission of Canada,Commission d'examen des plaintes concernant la police militaire du Canada,https://open.canada.ca/data/organization/mpcc-cppm,10,8
 2024,6,Montreal Port Authority,Administration portuaire de Montréal,https://open.canada.ca/data/organization/mpa-apm,4,2
 2024,6,National Capital Commission,Commission de la capitale nationale,https://open.canada.ca/data/organization/ncc-ccn,17,10
@@ -2303,7 +2390,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2024,5,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,16,16
 2024,5,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,6,5
 2024,5,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,29,28
-2024,5,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,423,418
+2024,5,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,422,417
 2024,5,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,412,405
 2024,5,Hamilton-Oshawa  Port Authority,Administration portuaire de Hamilton-Oshawa,https://open.canada.ca/data/organization/hampa-apham,1,1
 2024,5,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,1263,1251
@@ -2953,7 +3040,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,9,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,16,13
 2023,9,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,2,2
 2023,9,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,3,3
-2023,9,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,12,10
+2023,9,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,11,9
 2023,9,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,62,59
 2023,9,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,40,32
 2023,9,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,4,4
@@ -3093,7 +3180,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,7,Employment and Social Development Canada,Emploi et Développement social Canada,https://open.canada.ca/data/organization/esdc-edsc,29,21
 2023,7,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,22,20
 2023,7,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,3,3
-2023,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,48,46
+2023,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,47,45
 2023,7,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,80,72
 2023,7,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,41,38
 2023,7,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,8,8
@@ -3360,7 +3447,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2023,3,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,1,1
 2023,3,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,4,4
 2023,3,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,1,1
-2023,3,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,15,11
+2023,3,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,13,10
 2023,3,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,49,44
 2023,3,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,11,10
 2023,3,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,1,1
@@ -3744,7 +3831,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,9,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,16,12
 2022,9,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,1,1
 2022,9,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,12,10
-2022,9,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,26,23
+2022,9,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,25,22
 2022,9,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,93,82
 2022,9,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,22,22
 2022,9,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,3,3
@@ -3815,7 +3902,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,8,Employment and Social Development Canada,Emploi et Développement social Canada,https://open.canada.ca/data/organization/esdc-edsc,28,26
 2022,8,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,15,15
 2022,8,Federal Bridge Corporation,Société des ponts fédéraux,https://open.canada.ca/data/organization/fbcl-spfl,1,1
-2022,8,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,16,13
+2022,8,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,14,12
 2022,8,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,79,65
 2022,8,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,25,21
 2022,8,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,5,4
@@ -3881,7 +3968,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,7,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,18,12
 2022,7,Financial Consumer Agency of Canada,Agence de la consommation en matière financière du Canada,https://open.canada.ca/data/organization/fcac-acfc,1,1
 2022,7,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,2,1
-2022,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,19,18
+2022,7,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,18,17
 2022,7,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,51,50
 2022,7,Great Lakes Pilotage Authority Canada,Administration de pilotage des Grands Lacs Canada,https://open.canada.ca/data/organization/glpa-apgl,1,1
 2022,7,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,19,18
@@ -3948,7 +4035,7 @@ Year,Month,Organization Name - EN,Organization Name - FR,owner_org,Number of Inf
 2022,6,Environment and Climate Change Canada,Environnement et Changement climatique Canada,https://open.canada.ca/data/organization/ec,18,13
 2022,6,Federal Economic Development Agency for Southern Ontario,Agence fédérale de développement économique pour le Sud de l'Ontario,https://open.canada.ca/data/organization/feddevontario,4,4
 2022,6,Financial Transactions and Reports Analysis Centre of Canada,Centre d'analyse des opérations et déclarations financières du Canada,https://open.canada.ca/data/organization/fintrac-canafe,5,5
-2022,6,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,33,26
+2022,6,Fisheries and Oceans Canada,Pêches et Océans Canada,https://open.canada.ca/data/organization/dfo-mpo,30,23
 2022,6,Global Affairs Canada,Affaires mondiales Canada,https://open.canada.ca/data/organization/dfatd-maecd,108,100
 2022,6,Health Canada,Santé Canada,https://open.canada.ca/data/organization/hc-sc,19,18
 2022,6,Immigration and Refugee Board of Canada,Commission de l'immigration et du statut de réfugié du Canada,https://open.canada.ca/data/organization/irb-cisr,5,5
