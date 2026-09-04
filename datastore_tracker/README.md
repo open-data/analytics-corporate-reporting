@@ -24,7 +24,7 @@ config:
 ---
 pie showData title Resource Validation Status
     "success": 4070
-    "failure": 2882
+    "failure": 2881
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -40,9 +40,9 @@ config:
 pie showData title Resource View Types
     "datatables_view": 3832
     "text_view": 215
-    "image_view": 4
     "openapi_view": 4
     "power_bi_view": 4
+    "image_view": 3
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
@@ -56,7 +56,7 @@ pie showData title Resource View Types
 | open.canada.ca | atssc-scdata | 4 |
 | open.canada.ca | cbsa-asfc | 6 |
 | open.canada.ca | cer-rec | 1 |
-| open.canada.ca | cfia-acia | 201 |
+| open.canada.ca | cfia-acia | 200 |
 | open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 31 |
 | open.canada.ca | cra-arc | 561 |
@@ -69,7 +69,7 @@ pie showData title Resource View Types
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 23 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 593 |
+| open.canada.ca | esdc-edsc | 594 |
 | open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 152 |
 | open.canada.ca | iaac-aeic | 2 |
@@ -106,7 +106,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00073, 0.0009, 0.00086}
+  curve u["Upload"]{0.00082, 0.00095, 0.00088}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -129,9 +129,9 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 982
     "cra-arc": 849
-    "esdc-edsc": 639
-    "tbs-sct": 316
-    "cfia-acia": 217
+    "esdc-edsc": 640
+    "tbs-sct": 315
+    "cfia-acia": 216
     "psc-cfp": 188
     "hc-sc": 175
     "osfi-bsif": 74
