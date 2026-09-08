@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-09-08T04:30:30+00:00`
+Generated at: `2026-09-08T16:36:51+00:00`
 As of date: `2026-09-08`
-Packages assessed: `47878`
-Resources assessed: `241634`
+Packages assessed: `47884`
+Resources assessed: `241682`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 35931 | 164872 |
+| freshness_tree_federal.json | Federal | federal | 35937 | 164920 |
 | freshness_tree_provincial.json | Provincial | provincial | 11662 | 75112 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 285 | 1650 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 35931
+    "federal": 35937
     "provincial": 11662
     "municipal": 285
 ```
@@ -67,19 +67,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 37884
-    "late": 4959
-    "current": 4890
-    "due_soon": 145
+    "unknown": 37888
+    "late": 4955
+    "current": 4906
+    "due_soon": 135
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 171720
-    "late": 38478
-    "current": 30521
-    "due_soon": 915
+    "unknown": 171760
+    "late": 38375
+    "current": 30680
+    "due_soon": 867
 ```
 
 ### Package Update Timing
@@ -89,11 +89,11 @@ pie showData title Package timing against expected update date
     "Late 91-365 days": 1017
     "Late 31-90 days": 372
     "Late 8-30 days": 141
-    "Late 1-7 days": 56
-    "Due in 0-7 days": 145
-    "Due in 8-30 days": 581
-    "Current > 30 days": 4309
-    "Unknown": 37884
+    "Late 1-7 days": 52
+    "Due in 0-7 days": 135
+    "Due in 8-30 days": 584
+    "Current > 30 days": 4322
+    "Unknown": 37888
 ```
 
 ### Departments Keeping Data Current
