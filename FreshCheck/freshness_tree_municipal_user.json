@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T04:37:28+00:00",
+  "generated_at": "2026-09-10T16:23:58+00:00",
   "as_of_date": "2026-09-10",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "municipal_user",
@@ -17482,46 +17482,46 @@
       "package_name": "b6f070c5-2d72-4bc3-8e37-e871b40aad31",
       "title": "Parking stickers",
       "metadata_created": "2020-09-11T15:17:22.982111",
-      "metadata_modified": "2026-09-02T16:01:14.571533",
+      "metadata_modified": "2026-09-09T16:00:56.994527",
       "frequency": "P1W",
       "resources": [
         {
-          "id": "6a17ad3b-bab7-42f5-a94a-96adf2aaa92c",
+          "id": "8153cd61-4a33-4387-9f29-ea3a4ea0c284",
           "name": "Data visualization",
           "format": "HTML",
-          "metadata_modified": "2026-09-02T16:01:14.565381",
+          "metadata_modified": "2026-09-09T16:00:56.990799",
           "last_modified": null,
-          "created": "2026-09-02T16:01:14.614456",
-          "expected_update_date": "2026-09-09",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-09-09T16:00:57.024689",
+          "expected_update_date": "2026-09-16",
+          "days_until_expected_update": 6,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "afa14579-40b0-410a-8460-e572e04c6029",
+          "id": "e2345531-d3ea-43ed-9d7b-272a4ae64017",
           "name": "Original metadata (https://www.donneesquebec.ca)",
           "format": "HTML",
-          "metadata_modified": "2026-09-02T16:01:14.565727",
+          "metadata_modified": "2026-09-09T16:00:56.990975",
           "last_modified": null,
-          "created": "2026-09-02T16:01:14.614462",
-          "expected_update_date": "2026-09-09",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-09-09T16:00:57.024694",
+          "expected_update_date": "2026-09-16",
+          "days_until_expected_update": 6,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "dbd46b3e-290d-4ae3-b5bd-44eb0c7d126e",
+          "id": "fbe74035-5faf-4f17-b0c4-30bbdcc204c6",
           "name": "Parking stickers",
           "format": "CSV",
-          "metadata_modified": "2026-09-02T16:01:14.565582",
+          "metadata_modified": "2026-09-09T16:00:56.990892",
           "last_modified": null,
-          "created": "2026-09-02T16:01:14.614461",
-          "expected_update_date": "2026-09-09",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-09-09T16:00:57.024693",
+          "expected_update_date": "2026-09-16",
+          "days_until_expected_update": 6,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-09-09",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-09-16",
+      "days_until_expected_update": 6,
+      "freshness_status": "due_soon"
     },
     {
       "name": "qc",
