@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3840
+    "datatables_view": 3862
     "text_view": 214
     "openapi_view": 4
     "power_bi_view": 4
@@ -128,12 +128,12 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 982
-    "cra-arc": 849
+    "cra-arc": 859
     "esdc-edsc": 641
     "tbs-sct": 322
     "cfia-acia": 216
     "psc-cfp": 188
-    "hc-sc": 175
+    "hc-sc": 187
     "osfi-bsif": 74
     "dfatd-maecd": 68
     "nrcan-rncan": 54
