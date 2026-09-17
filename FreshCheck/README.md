@@ -44,8 +44,8 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-09-16T16:53:03+00:00`
-As of date: `2026-09-16`
+Generated at: `2026-09-17T04:50:48+00:00`
+As of date: `2026-09-17`
 Packages assessed: `47921`
 Resources assessed: `241854`
 
@@ -68,31 +68,31 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 37936
-    "late": 4938
-    "current": 4831
-    "due_soon": 216
+    "late": 4958
+    "current": 4789
+    "due_soon": 238
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
     "unknown": 172020
-    "late": 37964
-    "current": 29947
-    "due_soon": 1923
+    "late": 38086
+    "current": 29616
+    "due_soon": 2132
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
-    "Late > 1 year": 3380
-    "Late 91-365 days": 1090
+    "Late > 1 year": 3381
+    "Late 91-365 days": 1091
     "Late 31-90 days": 278
-    "Late 8-30 days": 131
-    "Late 1-7 days": 59
-    "Due in 0-7 days": 216
-    "Due in 8-30 days": 472
-    "Current > 30 days": 4359
+    "Late 8-30 days": 130
+    "Late 1-7 days": 78
+    "Due in 0-7 days": 238
+    "Due in 8-30 days": 479
+    "Current > 30 days": 4310
     "Unknown": 37936
 ```
 
@@ -102,7 +102,7 @@ xychart-beta
     title "Departments with highest current package share"
     x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "tf", "on", "ns-ne", "ccohs-cchst", "ic", "bc-cb", "cwa-aec", "cmc-mcc", "cer-rec"]
     y-axis "Current packages (%)" 0 --> 100
-    bar [77, 67, 61, 60, 58, 55, 43, 42, 42, 40, 39, 35, 33, 30, 29]
+    bar [77, 67, 61, 60, 58, 55, 43, 42, 40, 40, 39, 35, 33, 30, 29]
 ```
 
 ### Skipped Jurisdictions
