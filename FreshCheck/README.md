@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-09-18T04:40:01+00:00`
+Generated at: `2026-09-18T16:22:54+00:00`
 As of date: `2026-09-18`
-Packages assessed: `47919`
-Resources assessed: `241850`
+Packages assessed: `47921`
+Resources assessed: `241848`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 35974 | 165022 |
+| freshness_tree_federal.json | Federal | federal | 35976 | 165020 |
 | freshness_tree_provincial.json | Provincial | provincial | 11660 | 75178 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 285 | 1650 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 35974
+    "federal": 35976
     "provincial": 11660
     "municipal": 285
 ```
@@ -67,33 +67,33 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 37936
-    "late": 4935
-    "current": 4868
-    "due_soon": 180
+    "unknown": 37937
+    "late": 4923
+    "current": 4884
+    "due_soon": 177
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172019
-    "late": 37900
-    "current": 30569
-    "due_soon": 1362
+    "unknown": 172013
+    "late": 37837
+    "current": 30648
+    "due_soon": 1350
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
     "Late > 1 year": 3353
-    "Late 91-365 days": 1091
+    "Late 91-365 days": 1081
     "Late 31-90 days": 277
     "Late 8-30 days": 138
-    "Late 1-7 days": 76
-    "Due in 0-7 days": 180
-    "Due in 8-30 days": 549
-    "Current > 30 days": 4319
-    "Unknown": 37936
+    "Late 1-7 days": 74
+    "Due in 0-7 days": 177
+    "Due in 8-30 days": 554
+    "Current > 30 days": 4330
+    "Unknown": 37937
 ```
 
 ### Departments Keeping Data Current
