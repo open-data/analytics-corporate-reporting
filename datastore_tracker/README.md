@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4100
-    "failure": 2879
+    "success": 4102
+    "failure": 2877
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -69,7 +69,7 @@ pie showData title Resource View Types
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 23 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 595 |
+| open.canada.ca | esdc-edsc | 597 |
 | open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 164 |
 | open.canada.ca | iaac-aeic | 2 |
@@ -106,7 +106,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.001, 0.00093}
+  curve u["Upload"]{0.00084, 0.00098, 0.0009}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
