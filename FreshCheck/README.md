@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-03T05:14:33+00:00`
+Generated at: `2026-10-03T16:15:08+00:00`
 As of date: `2026-10-03`
-Packages assessed: `47955`
-Resources assessed: `242095`
+Packages assessed: `47964`
+Resources assessed: `242142`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36006 | 165193 |
-| freshness_tree_provincial.json | Provincial | provincial | 11664 | 75250 |
+| freshness_tree_federal.json | Federal | federal | 36015 | 165234 |
+| freshness_tree_provincial.json | Provincial | provincial | 11664 | 75256 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 285 | 1652 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36006
+    "federal": 36015
     "provincial": 11664
     "municipal": 285
 ```
@@ -67,33 +67,33 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 37967
-    "late": 5002
-    "current": 4784
-    "due_soon": 202
+    "unknown": 37976
+    "late": 4998
+    "current": 4786
+    "due_soon": 204
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172180
-    "late": 38684
-    "current": 29857
-    "due_soon": 1374
+    "unknown": 172223
+    "late": 38647
+    "current": 29884
+    "due_soon": 1388
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
     "Late > 1 year": 3351
-    "Late 91-365 days": 1158
+    "Late 91-365 days": 1157
     "Late 31-90 days": 270
-    "Late 8-30 days": 136
-    "Late 1-7 days": 87
-    "Due in 0-7 days": 202
-    "Due in 8-30 days": 435
-    "Current > 30 days": 4349
-    "Unknown": 37967
+    "Late 8-30 days": 135
+    "Late 1-7 days": 85
+    "Due in 0-7 days": 204
+    "Due in 8-30 days": 413
+    "Current > 30 days": 4373
+    "Unknown": 37976
 ```
 
 ### Departments Keeping Data Current
