@@ -31,7 +31,6 @@ flowchart LR
   N6 -- "continued_in_part_by" --> N2
   N8 -- "continues_in_part" --> N11
   N9 -- "continued_in_part_by" --> N13
-  N10 -- "continued_in_part_by" --> N2
   N12 -- "continued_in_part_by" --> N2
   N14 -- "continued_in_part_by" --> N2
   N15 -- "continues_in_part" --> N11
