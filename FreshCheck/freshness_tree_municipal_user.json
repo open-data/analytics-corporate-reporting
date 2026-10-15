@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T04:32:27+00:00",
+  "generated_at": "2026-10-15T16:56:16+00:00",
   "as_of_date": "2026-10-15",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "municipal_user",
@@ -21227,35 +21227,35 @@
       "package_name": "e9874b82-d615-4870-995d-32c0f267e9ef",
       "title": "Appointment by the central political authorities",
       "metadata_created": "2020-09-11T15:30:15.187064",
-      "metadata_modified": "2026-05-27T16:13:36.032370",
+      "metadata_modified": "2026-10-14T16:01:26.660493",
       "frequency": "P3M",
       "resources": [
         {
-          "id": "0846f46b-0945-4ec7-9b59-e8e3970073dd",
-          "name": "Nominations by central political bodies",
-          "format": "CSV",
-          "metadata_modified": "2026-05-27T16:13:36.028217",
-          "last_modified": null,
-          "created": "2026-05-27T16:13:36.071915",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -49,
-          "freshness_status": "late"
-        },
-        {
-          "id": "25ddb0a3-f6f7-4cf4-9427-616660a27b4d",
+          "id": "492f201e-8633-436c-a4dc-f4790c1b1bc6",
           "name": "Original metadata (https://www.donneesquebec.ca)",
           "format": "HTML",
-          "metadata_modified": "2026-05-27T16:13:36.028384",
+          "metadata_modified": "2026-10-14T16:01:26.656632",
           "last_modified": null,
-          "created": "2026-05-27T16:13:36.071922",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -49,
-          "freshness_status": "late"
+          "created": "2026-10-14T16:01:26.690755",
+          "expected_update_date": "2027-01-14",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
+        },
+        {
+          "id": "e556194d-6265-4a86-bacc-2171bdeec2e2",
+          "name": "Nominations by central political bodies",
+          "format": "CSV",
+          "metadata_modified": "2026-10-14T16:01:26.656545",
+          "last_modified": null,
+          "created": "2026-10-14T16:01:26.690749",
+          "expected_update_date": "2027-01-14",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-08-27",
-      "days_until_expected_update": -49,
-      "freshness_status": "late"
+      "expected_update_date": "2027-01-14",
+      "days_until_expected_update": 91,
+      "freshness_status": "current"
     },
     {
       "name": "qc",
