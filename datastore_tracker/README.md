@@ -58,7 +58,7 @@ pie showData title Resource View Types
 | open.canada.ca | cer-rec | 3 |
 | open.canada.ca | cfia-acia | 214 |
 | open.canada.ca | cic | 1 |
-| open.canada.ca | cnsc-ccsn | 31 |
+| open.canada.ca | cnsc-ccsn | 30 |
 | open.canada.ca | cra-arc | 560 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
@@ -106,7 +106,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.00102, 0.00094}
+  curve u["Upload"]{0.00085, 0.00099, 0.00091}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
