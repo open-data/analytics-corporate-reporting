@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-17T04:21:00+00:00`
+Generated at: `2026-10-17T15:30:30+00:00`
 As of date: `2026-10-17`
-Packages assessed: `48126`
-Resources assessed: `242965`
+Packages assessed: `48135`
+Resources assessed: `243075`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36095 | 165620 |
+| freshness_tree_federal.json | Federal | federal | 36104 | 165730 |
 | freshness_tree_provincial.json | Provincial | provincial | 11745 | 75690 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1655 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36095
+    "federal": 36104
     "provincial": 11745
     "municipal": 286
 ```
@@ -67,19 +67,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 38126
-    "late": 4994
-    "current": 4803
-    "due_soon": 203
+    "unknown": 38130
+    "late": 4993
+    "current": 4808
+    "due_soon": 204
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172870
-    "late": 38352
-    "current": 30690
-    "due_soon": 1053
+    "unknown": 172888
+    "late": 38344
+    "current": 30782
+    "due_soon": 1061
 ```
 
 ### Package Update Timing
@@ -89,11 +89,11 @@ pie showData title Package timing against expected update date
     "Late 91-365 days": 1232
     "Late 31-90 days": 161
     "Late 8-30 days": 147
-    "Late 1-7 days": 104
-    "Due in 0-7 days": 203
-    "Due in 8-30 days": 423
-    "Current > 30 days": 4380
-    "Unknown": 38126
+    "Late 1-7 days": 103
+    "Due in 0-7 days": 204
+    "Due in 8-30 days": 414
+    "Current > 30 days": 4394
+    "Unknown": 38130
 ```
 
 ### Departments Keeping Data Current
