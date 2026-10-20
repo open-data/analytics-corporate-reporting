@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-20T04:44:07+00:00`
+Generated at: `2026-10-20T16:58:31+00:00`
 As of date: `2026-10-20`
-Packages assessed: `48140`
-Resources assessed: `243115`
+Packages assessed: `48147`
+Resources assessed: `243240`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36109 | 165770 |
+| freshness_tree_federal.json | Federal | federal | 36116 | 165895 |
 | freshness_tree_provincial.json | Provincial | provincial | 11745 | 75690 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1655 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36109
+    "federal": 36116
     "provincial": 11745
     "municipal": 286
 ```
@@ -67,19 +67,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 38133
-    "late": 5058
-    "current": 4837
-    "due_soon": 112
+    "unknown": 38139
+    "late": 5043
+    "current": 4861
+    "due_soon": 104
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172918
-    "late": 38674
-    "current": 30939
-    "due_soon": 584
+    "unknown": 172943
+    "late": 38630
+    "current": 31115
+    "due_soon": 552
 ```
 
 ### Package Update Timing
@@ -87,13 +87,13 @@ pie showData title Resource freshness status
 pie showData title Package timing against expected update date
     "Late > 1 year": 3355
     "Late 91-365 days": 1230
-    "Late 31-90 days": 178
+    "Late 31-90 days": 176
     "Late 8-30 days": 128
-    "Late 1-7 days": 167
-    "Due in 0-7 days": 112
-    "Due in 8-30 days": 465
-    "Current > 30 days": 4372
-    "Unknown": 38133
+    "Late 1-7 days": 154
+    "Due in 0-7 days": 104
+    "Due in 8-30 days": 459
+    "Current > 30 days": 4402
+    "Unknown": 38139
 ```
 
 ### Departments Keeping Data Current
