@@ -10,7 +10,7 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 653
     "tbs-sct": 330
     "cfia-acia": 230
-    "hc-sc": 213
+    "hc-sc": 211
     "psc-cfp": 158
     "osfi-bsif": 74
     "dfatd-maecd": 68
