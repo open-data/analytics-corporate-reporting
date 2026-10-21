@@ -44,56 +44,56 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-21T04:39:53+00:00`
+Generated at: `2026-10-21T17:10:09+00:00`
 As of date: `2026-10-21`
 Packages assessed: `48147`
-Resources assessed: `243240`
+Resources assessed: `243386`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36116 | 165895 |
-| freshness_tree_provincial.json | Provincial | provincial | 11745 | 75690 |
+| freshness_tree_federal.json | Federal | federal | 36117 | 165900 |
+| freshness_tree_provincial.json | Provincial | provincial | 11744 | 75831 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1655 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36116
-    "provincial": 11745
+    "federal": 36117
+    "provincial": 11744
     "municipal": 286
 ```
 
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 38139
-    "late": 5048
-    "current": 4834
-    "due_soon": 126
+    "unknown": 38138
+    "late": 5039
+    "current": 4848
+    "due_soon": 122
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172943
-    "late": 38654
-    "current": 30983
-    "due_soon": 660
+    "unknown": 172922
+    "late": 38587
+    "current": 31237
+    "due_soon": 640
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
     "Late > 1 year": 3355
-    "Late 91-365 days": 1231
+    "Late 91-365 days": 1228
     "Late 31-90 days": 176
     "Late 8-30 days": 128
-    "Late 1-7 days": 158
-    "Due in 0-7 days": 126
-    "Due in 8-30 days": 465
-    "Current > 30 days": 4369
-    "Unknown": 38139
+    "Late 1-7 days": 152
+    "Due in 0-7 days": 122
+    "Due in 8-30 days": 461
+    "Current > 30 days": 4387
+    "Unknown": 38138
 ```
 
 ### Departments Keeping Data Current
