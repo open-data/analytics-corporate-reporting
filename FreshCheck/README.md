@@ -44,8 +44,8 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-21T17:10:09+00:00`
-As of date: `2026-10-21`
+Generated at: `2026-10-22T04:38:11+00:00`
+As of date: `2026-10-22`
 Packages assessed: `48147`
 Resources assessed: `243386`
 
@@ -68,18 +68,18 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 38138
-    "late": 5039
-    "current": 4848
-    "due_soon": 122
+    "late": 5057
+    "current": 4813
+    "due_soon": 139
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
     "unknown": 172922
-    "late": 38587
-    "current": 31237
-    "due_soon": 640
+    "late": 38707
+    "current": 31067
+    "due_soon": 690
 ```
 
 ### Package Update Timing
@@ -88,11 +88,11 @@ pie showData title Package timing against expected update date
     "Late > 1 year": 3355
     "Late 91-365 days": 1228
     "Late 31-90 days": 176
-    "Late 8-30 days": 128
-    "Late 1-7 days": 152
-    "Due in 0-7 days": 122
-    "Due in 8-30 days": 461
-    "Current > 30 days": 4387
+    "Late 8-30 days": 139
+    "Late 1-7 days": 159
+    "Due in 0-7 days": 139
+    "Due in 8-30 days": 442
+    "Current > 30 days": 4371
     "Unknown": 38138
 ```
 
@@ -100,9 +100,9 @@ pie showData title Package timing against expected update date
 ```mermaid
 xychart-beta
     title "Departments with highest current package share"
-    x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "ns-ne", "on", "ccohs-cchst", "ic", "bc-cb", "cwa-aec", "cmc-mcc", "tf", "cmhc-schl"]
+    x-axis ["chrc-ccdp", "csps-efpc", "fintrac-canafe", "apa", "pei-ipe", "pwgsc-tpsgc", "ns-ne", "on", "ccohs-cchst", "ic", "bc-cb", "cmc-mcc", "tf", "cmhc-schl", "ab"]
     y-axis "Current packages (%)" 0 --> 100
-    bar [77, 67, 61, 60, 58, 53, 44, 42, 40, 40, 35, 33, 30, 29, 27]
+    bar [77, 67, 61, 60, 58, 53, 44, 41, 40, 40, 35, 30, 29, 27, 27]
 ```
 
 ### Skipped Jurisdictions
