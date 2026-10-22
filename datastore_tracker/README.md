@@ -105,7 +105,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00084, 0.00099, 0.00091}
+  curve u["Upload"]{0.00085, 0.00096, 0.00088}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
