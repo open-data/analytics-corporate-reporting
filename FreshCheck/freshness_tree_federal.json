@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-25T04:35:34+00:00",
+  "generated_at": "2026-10-25T16:10:41+00:00",
   "as_of_date": "2026-10-25",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "federal",
@@ -104353,101 +104353,101 @@
       "package_name": "6d1e869d-8c98-4c23-a638-f6ad471cb7dc",
       "title": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites ",
       "metadata_created": "2024-10-11T18:10:32.549195",
-      "metadata_modified": "2025-05-01T17:20:55.387598",
+      "metadata_modified": "2026-10-23T18:23:01.339228",
       "frequency": "P1Y",
       "resources": [
         {
-          "id": "580cefcd-d968-4d2a-8696-aa3b9f479439",
-          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2022 (French)",
+          "id": "263f7a14-8ac7-400a-8891-1dc0bca61a0c",
+          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2023",
           "format": "PDF",
-          "metadata_modified": "2024-11-20T21:34:33.942783",
-          "last_modified": "2024-10-11T15:34:34.784597",
-          "created": "2024-10-11T18:10:32.555875",
-          "expected_update_date": "2025-11-20",
-          "days_until_expected_update": -339,
-          "freshness_status": "late"
+          "metadata_modified": "2026-10-23T18:01:45.593036",
+          "last_modified": "2025-05-01T17:14:26.872438",
+          "created": "2025-05-01T17:20:53.823270",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         },
         {
-          "id": "afb848b7-c15a-4a6b-9a7e-c66af1e13568",
-          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2022 (English)",
+          "id": "580cefcd-d968-4d2a-8696-aa3b9f479439",
+          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2022",
           "format": "PDF",
-          "metadata_modified": "2024-11-20T21:34:33.942666",
-          "last_modified": "2024-10-11T15:34:12.032687",
-          "created": "2024-10-11T18:10:32.555871",
-          "expected_update_date": "2025-11-20",
-          "days_until_expected_update": -339,
-          "freshness_status": "late"
+          "metadata_modified": "2026-10-23T18:01:45.593272",
+          "last_modified": "2024-10-11T15:34:34.784597",
+          "created": "2024-10-11T18:10:32.555875",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         },
         {
           "id": "7ff44d7a-87a5-4436-9fd2-1ec08911b84b",
           "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2020",
           "format": "PDF",
-          "metadata_modified": "2024-12-19T20:10:29.539270",
+          "metadata_modified": "2026-10-23T18:01:45.593659",
           "last_modified": "2024-12-19T20:06:02.892934",
           "created": "2024-12-19T20:10:29.544836",
-          "expected_update_date": "2025-12-19",
-          "days_until_expected_update": -310,
-          "freshness_status": "late"
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         },
         {
           "id": "ae4cd065-02cc-4a75-b0f9-0718ecfe51a4",
           "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2020",
           "format": "PDF",
-          "metadata_modified": "2024-12-19T20:10:29.538222",
+          "metadata_modified": "2026-10-23T18:01:45.593607",
           "last_modified": "2024-12-19T20:04:39.341009",
           "created": "2024-12-19T20:10:29.544834",
-          "expected_update_date": "2025-12-19",
-          "days_until_expected_update": -310,
-          "freshness_status": "late"
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
+        },
+        {
+          "id": "afb848b7-c15a-4a6b-9a7e-c66af1e13568",
+          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2022",
+          "format": "PDF",
+          "metadata_modified": "2026-10-23T18:01:45.593215",
+          "last_modified": "2024-10-11T15:34:12.032687",
+          "created": "2024-10-11T18:10:32.555871",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         },
         {
           "id": "dc7e4c99-50a9-4299-9173-201bdbd2bb93",
           "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2021",
           "format": "PDF",
-          "metadata_modified": "2024-12-19T20:10:29.535852",
+          "metadata_modified": "2026-10-23T18:01:45.593324",
           "last_modified": "2024-12-19T20:02:03.832417",
           "created": "2024-12-19T20:10:29.544829",
-          "expected_update_date": "2025-12-19",
-          "days_until_expected_update": -310,
-          "freshness_status": "late"
-        },
-        {
-          "id": "f149b817-7a37-476c-86f1-606b62fec67e",
-          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2021",
-          "format": "PDF",
-          "metadata_modified": "2024-12-19T20:10:29.537195",
-          "last_modified": "2024-12-19T20:03:00.356419",
-          "created": "2024-12-19T20:10:29.544833",
-          "expected_update_date": "2025-12-19",
-          "days_until_expected_update": -310,
-          "freshness_status": "late"
-        },
-        {
-          "id": "263f7a14-8ac7-400a-8891-1dc0bca61a0c",
-          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2023",
-          "format": "PDF",
-          "metadata_modified": "2025-05-01T17:20:53.818292",
-          "last_modified": "2025-05-01T17:14:26.872438",
-          "created": "2025-05-01T17:20:53.823270",
-          "expected_update_date": "2026-05-01",
-          "days_until_expected_update": -177,
-          "freshness_status": "late"
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         },
         {
           "id": "eb2071af-bda3-47ef-9e25-e15b087ebe94",
           "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2023",
           "format": "PDF",
-          "metadata_modified": "2025-05-01T17:20:53.819327",
+          "metadata_modified": "2026-10-23T18:01:45.593147",
           "last_modified": "2025-05-01T17:15:13.777303",
           "created": "2025-05-01T17:20:53.823274",
-          "expected_update_date": "2026-05-01",
-          "days_until_expected_update": -177,
-          "freshness_status": "late"
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
+        },
+        {
+          "id": "f149b817-7a37-476c-86f1-606b62fec67e",
+          "name": "Regulatory Oversight Report for Canadian Nuclear Power Generating Sites for 2021",
+          "format": "PDF",
+          "metadata_modified": "2026-10-23T18:01:45.593506",
+          "last_modified": "2024-12-19T20:03:00.356419",
+          "created": "2024-12-19T20:10:29.544833",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-05-01",
-      "days_until_expected_update": -177,
-      "freshness_status": "late"
+      "expected_update_date": "2027-10-23",
+      "days_until_expected_update": 363,
+      "freshness_status": "current"
     },
     {
       "name": "cnsc-ccsn",
@@ -106993,7 +106993,7 @@
       "package_name": "b97a80c8-3081-4a3f-a45d-efc7ae06f543",
       "title": "Regulatory Oversight Report on the Use of Nuclear Substances in Canada",
       "metadata_created": "2024-11-27T21:40:38.159344",
-      "metadata_modified": "2026-10-04T06:45:37.534076",
+      "metadata_modified": "2026-10-25T14:40:39.990320",
       "frequency": "P1Y",
       "resources": [
         {
@@ -107083,10 +107083,32 @@
           "expected_update_date": "2027-10-02",
           "days_until_expected_update": 342,
           "freshness_status": "current"
+        },
+        {
+          "id": "1214bc41-bd37-4cc7-bbdc-937d80da0531",
+          "name": "Regulatory Oversight Report on the Use of Nuclear Substances in Canada: 2025 - List of Inspections",
+          "format": "XLSX",
+          "metadata_modified": "2026-10-23T17:51:46.072462",
+          "last_modified": "2026-10-23T17:50:33.092593",
+          "created": "2026-10-23T17:51:46.113208",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
+        },
+        {
+          "id": "3d457aec-6112-4137-b89e-a71e9c359e02",
+          "name": "Regulatory Oversight Report on the Use of Nuclear Substances in Canada: 2025 - List of Inspections ",
+          "format": "XLSX",
+          "metadata_modified": "2026-10-23T17:51:46.084418",
+          "last_modified": "2026-10-23T17:51:06.669550",
+          "created": "2026-10-23T17:51:46.113215",
+          "expected_update_date": "2027-10-23",
+          "days_until_expected_update": 363,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-10-04",
-      "days_until_expected_update": 344,
+      "expected_update_date": "2027-10-25",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -160349,7 +160371,7 @@
       "package_name": "6d18e669-2df3-4a11-a818-d0a8f0e05b36",
       "title": "First Home Savings Account Statistics (2023 tax year)",
       "metadata_created": "2026-10-21T18:53:43.332470",
-      "metadata_modified": "2026-10-23T14:20:45.261502",
+      "metadata_modified": "2026-10-23T18:40:47.323748",
       "frequency": "P1Y",
       "resources": [
         {
@@ -175616,7 +175638,7 @@
       "package_name": "978d8d2c-d1a1-4c11-af39-323ee48a8967",
       "title": "First Home Savings Account Statistics (2024 tax year)",
       "metadata_created": "2026-10-21T18:52:17.223826",
-      "metadata_modified": "2026-10-23T14:40:42.999252",
+      "metadata_modified": "2026-10-23T18:40:44.200415",
       "frequency": "P1Y",
       "resources": [
         {
@@ -271891,7 +271913,7 @@
       "package_name": "6ec38f31-e268-450c-9b08-03e0a1292f21",
       "title": "Annual Report - Ingenium",
       "metadata_created": "2025-02-21T16:50:53.185051",
-      "metadata_modified": "2026-10-22T19:17:58.978800",
+      "metadata_modified": "2026-10-23T18:01:44.731667",
       "frequency": "P1Y",
       "resources": [
         {
@@ -272159,8 +272181,8 @@
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-10-22",
-      "days_until_expected_update": 362,
+      "expected_update_date": "2027-10-23",
+      "days_until_expected_update": 363,
       "freshness_status": "current"
     },
     {
@@ -822309,9 +822331,97 @@
       "package_name": "0032ce54-c5dd-4b66-99a0-320a7b5e99f2",
       "title": "Federal Corporations",
       "metadata_created": "2016-09-23T23:24:00.007677",
-      "metadata_modified": "2026-10-23T14:01:56.103266",
+      "metadata_modified": "2026-10-25T14:01:23.252617",
       "frequency": "P1D",
       "resources": [
+        {
+          "id": "7801dcbb-c2d1-4928-b78d-fd32c32d90c3",
+          "name": "Other active corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384744",
+          "last_modified": "2026-10-25T11:06:46.324641",
+          "created": "2026-05-07T20:52:03.822026",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "7b6dd154-aa04-46ce-8880-ce4a5fa0a680",
+          "name": "Active business corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384562",
+          "last_modified": "2026-10-25T11:06:31.187602",
+          "created": "2026-05-07T20:41:49.953029",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "95b36c01-e21b-4a8a-8bdf-0c128928dc27",
+          "name": "Inactive business corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384793",
+          "last_modified": "2026-10-25T11:06:38.738775",
+          "created": "2026-05-07T20:52:04.682938",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "96b12d9e-f562-4fbd-bf42-d200e496e3d7",
+          "name": "Other inactive corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384941",
+          "last_modified": "2026-10-25T11:06:53.397418",
+          "created": "2026-05-07T21:01:49.565289",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "a1cbafa3-df2b-44c9-8488-833b31b76e01",
+          "name": "Active business corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384636",
+          "last_modified": "2026-10-25T11:06:44.145817",
+          "created": "2026-05-07T20:41:49.953032",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b84ce3e2-8c56-4736-bb4b-06ca5042a598",
+          "name": "Inactive business corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384842",
+          "last_modified": "2026-10-25T11:06:52.012297",
+          "created": "2026-05-07T21:01:49.565283",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "e9f89fec-428d-4a30-a9e8-fc8e42d91bf6",
+          "name": "Other inactive corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384893",
+          "last_modified": "2026-10-25T11:06:40.623061",
+          "created": "2026-05-07T21:01:49.565287",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "eb1a8f01-b85b-4190-9aa7-65dde7c623b9",
+          "name": "Other active corporations",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T11:11:21.384692",
+          "last_modified": "2026-10-25T11:06:33.425822",
+          "created": "2026-05-07T20:52:03.822021",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
         {
           "id": "582644d6-e3a2-4fc6-a647-a07d81cc8104",
           "name": "Federal Corporation API – Documentation",
@@ -822333,99 +822443,11 @@
           "expected_update_date": "2026-08-08",
           "days_until_expected_update": -78,
           "freshness_status": "late"
-        },
-        {
-          "id": "7801dcbb-c2d1-4928-b78d-fd32c32d90c3",
-          "name": "Other active corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310170",
-          "last_modified": "2026-10-23T11:06:06.253660",
-          "created": "2026-05-07T20:52:03.822026",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "7b6dd154-aa04-46ce-8880-ce4a5fa0a680",
-          "name": "Active business corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.309979",
-          "last_modified": "2026-10-23T11:05:51.091516",
-          "created": "2026-05-07T20:41:49.953029",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "95b36c01-e21b-4a8a-8bdf-0c128928dc27",
-          "name": "Inactive business corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310222",
-          "last_modified": "2026-10-23T11:05:57.158589",
-          "created": "2026-05-07T20:52:04.682938",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "96b12d9e-f562-4fbd-bf42-d200e496e3d7",
-          "name": "Other inactive corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310375",
-          "last_modified": "2026-10-23T11:06:12.280318",
-          "created": "2026-05-07T21:01:49.565289",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "a1cbafa3-df2b-44c9-8488-833b31b76e01",
-          "name": "Active business corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310059",
-          "last_modified": "2026-10-23T11:06:02.103385",
-          "created": "2026-05-07T20:41:49.953032",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "b84ce3e2-8c56-4736-bb4b-06ca5042a598",
-          "name": "Inactive business corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310273",
-          "last_modified": "2026-10-23T11:06:10.924992",
-          "created": "2026-05-07T21:01:49.565283",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "e9f89fec-428d-4a30-a9e8-fc8e42d91bf6",
-          "name": "Other inactive corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310324",
-          "last_modified": "2026-10-23T11:05:58.622635",
-          "created": "2026-05-07T21:01:49.565287",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "eb1a8f01-b85b-4190-9aa7-65dde7c623b9",
-          "name": "Other active corporations",
-          "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:39.310117",
-          "last_modified": "2026-10-23T11:05:52.726563",
-          "created": "2026-05-07T20:52:03.822021",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-24",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-26",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "ic",
@@ -1476773,7 +1476795,7 @@
       "package_name": "7c03f039-3753-4093-af60-74b0f7b2385d",
       "title": "Government of Canada - Consultations",
       "metadata_created": "2018-11-26T22:00:35.138219",
-      "metadata_modified": "2026-10-23T14:31:38.873132",
+      "metadata_modified": "2026-10-25T14:30:58.799044",
       "frequency": "continual",
       "resources": [
         {
@@ -1476802,8 +1476824,8 @@
           "id": "92bec4b7-6feb-4215-a5f7-61da342b2354",
           "name": "Consultations - All ",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T14:01:57.050911",
-          "last_modified": "2026-10-23T13:43:08.946695",
+          "metadata_modified": "2026-10-25T06:52:19.617484",
+          "last_modified": "2026-10-25T06:51:50.342360",
           "created": "2019-02-05T15:21:04.591199",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -1476813,8 +1476835,8 @@
           "id": "aa606d25-4387-4bc6-89eb-12d66f5e9044",
           "name": "Consultations - Last two years",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T14:01:57.051089",
-          "last_modified": "2026-10-23T13:42:01",
+          "metadata_modified": "2026-10-25T06:52:17.551417",
+          "last_modified": "2026-10-25T06:08:11",
           "created": "2019-03-01T16:33:04.753752",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -1580666,9 +1580688,20 @@
       "package_name": "4fe645a1-ffcd-40c1-9385-2c771be956a4",
       "title": "CanadaBuys contract history ",
       "metadata_created": "2023-06-02T12:36:26.585562",
-      "metadata_modified": "2026-09-30T05:12:31.253385",
+      "metadata_modified": "2026-10-24T05:14:52.244178",
       "frequency": "P1M",
       "resources": [
+        {
+          "id": "99833375-1d5a-401f-beaf-2cb76019e19d",
+          "name": "Contact History, 2025-2026",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T05:14:52.232680",
+          "last_modified": "2026-10-22T00:00:00",
+          "created": "2025-04-02T14:30:56.777580",
+          "expected_update_date": "2026-11-24",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
+        },
         {
           "id": "17eb0535-37dd-4a87-ae1b-947ef124a0a6",
           "name": "Contract history, 2015-2016",
@@ -1580802,17 +1580835,6 @@
           "freshness_status": "due_soon"
         },
         {
-          "id": "99833375-1d5a-401f-beaf-2cb76019e19d",
-          "name": "Contact History, 2025-2026",
-          "format": "CSV",
-          "metadata_modified": "2026-09-30T05:12:31.242055",
-          "last_modified": "2026-09-28T00:00:00",
-          "created": "2025-04-02T14:30:56.777580",
-          "expected_update_date": "2026-10-30",
-          "days_until_expected_update": 5,
-          "freshness_status": "due_soon"
-        },
-        {
           "id": "9c6a767f-80a4-4f16-a32f-233f60f1d373",
           "name": "Contract history, 2019-2020",
           "format": "CSV",
@@ -1580934,9 +1580956,9 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-30",
-      "days_until_expected_update": 5,
-      "freshness_status": "due_soon"
+      "expected_update_date": "2026-11-24",
+      "days_until_expected_update": 30,
+      "freshness_status": "current"
     },
     {
       "name": "pwgsc-tpsgc",
@@ -1584789,9 +1584811,53 @@
       "package_name": "6abd20d4-7a1c-4b38-baa2-9525d0bb2fd2",
       "title": "CanadaBuys tender notices",
       "metadata_created": "2023-04-27T13:49:58.155363",
-      "metadata_modified": "2026-10-22T05:11:55.587032",
+      "metadata_modified": "2026-10-25T05:13:09.870691",
       "frequency": "P1D",
       "resources": [
+        {
+          "id": "05b804dd-11ec-4271-8d69-d6044e1a5481",
+          "name": "New tender notices",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:09.861019",
+          "last_modified": "2026-10-25T00:00:00",
+          "created": "2023-04-27T13:49:58.283352",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "5870de7c-86fe-4d05-8d73-cd412e12fdeb",
+          "name": "Open tender notices",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:09.861072",
+          "last_modified": "2026-10-24T00:00:00",
+          "created": "2023-04-27T13:49:58.283355",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "5f1d6ffe-c038-407e-afbf-94b920286b40",
+          "name": "All CanadaBuys tender notices, 2022-08-08 onwards",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:09.861349",
+          "last_modified": "2026-10-24T00:00:00",
+          "created": "2023-04-27T13:49:58.283358",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "fa0e6965-4339-4694-9f91-7b84e7216c72",
+          "name": "Tender notices, 2026-2027",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:09.861123",
+          "last_modified": "2026-10-24T00:00:00",
+          "created": "2026-04-01T10:18:56.162038",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
         {
           "id": "c971655b-a36f-4e49-ab39-79c02e6e0b7e",
           "name": "Supporting Documentation (French)",
@@ -1584879,55 +1584945,11 @@
           "expected_update_date": "2026-10-01",
           "days_until_expected_update": -24,
           "freshness_status": "late"
-        },
-        {
-          "id": "05b804dd-11ec-4271-8d69-d6044e1a5481",
-          "name": "New tender notices",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:55.576846",
-          "last_modified": "2026-10-22T00:00:00",
-          "created": "2023-04-27T13:49:58.283352",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "5870de7c-86fe-4d05-8d73-cd412e12fdeb",
-          "name": "Open tender notices",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:55.576910",
-          "last_modified": "2026-10-21T00:00:00",
-          "created": "2023-04-27T13:49:58.283355",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "5f1d6ffe-c038-407e-afbf-94b920286b40",
-          "name": "All CanadaBuys tender notices, 2022-08-08 onwards",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:55.577195",
-          "last_modified": "2026-10-21T00:00:00",
-          "created": "2023-04-27T13:49:58.283358",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "fa0e6965-4339-4694-9f91-7b84e7216c72",
-          "name": "Tender notices, 2026-2027",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:55.576963",
-          "last_modified": "2026-10-21T00:00:00",
-          "created": "2026-04-01T10:18:56.162038",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-23",
-      "days_until_expected_update": -2,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-26",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "pwgsc-tpsgc",
@@ -1592031,9 +1592053,31 @@
       "package_name": "a1acb126-9ce8-40a9-b889-5da2b1dd20cb",
       "title": "CanadaBuys award notices",
       "metadata_created": "2023-04-27T13:49:54.523338",
-      "metadata_modified": "2026-10-22T05:11:56.492200",
+      "metadata_modified": "2026-10-25T05:13:10.748859",
       "frequency": "P1D",
       "resources": [
+        {
+          "id": "643c2420-0944-4a76-a455-e20da6493b4c",
+          "name": "Award notices, 2026-2027",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:10.738472",
+          "last_modified": "2026-10-24T00:00:00",
+          "created": "2026-04-01T10:18:56.984987",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "ff4414ba-7d0b-40a4-8bd0-d102e83d9f32",
+          "name": "All CanadaBuys award notices, 2022-08-08 onwards",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T05:13:10.738374",
+          "last_modified": "2026-10-24T00:00:00",
+          "created": "2023-04-27T13:49:54.827422",
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
         {
           "id": "31461f3a-aa1f-43b7-bd5e-a01c19aedd08",
           "name": "Implementation Notice: March 17, 2026 - April 10, 2026 (English)",
@@ -1592143,33 +1592187,11 @@
           "expected_update_date": "2026-10-01",
           "days_until_expected_update": -24,
           "freshness_status": "late"
-        },
-        {
-          "id": "643c2420-0944-4a76-a455-e20da6493b4c",
-          "name": "Award notices, 2026-2027",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:56.483340",
-          "last_modified": "2026-10-21T00:00:00",
-          "created": "2026-04-01T10:18:56.984987",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "ff4414ba-7d0b-40a4-8bd0-d102e83d9f32",
-          "name": "All CanadaBuys award notices, 2022-08-08 onwards",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:56.483188",
-          "last_modified": "2026-10-21T00:00:00",
-          "created": "2023-04-27T13:49:54.827422",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-23",
-      "days_until_expected_update": -2,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-26",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "pwgsc-tpsgc",
@@ -1604937,18 +1604959,18 @@
       "package_name": "f5c8a5a0-354d-455a-99ab-8276aa38032e",
       "title": "Standing Offers and Supply Arrangements",
       "metadata_created": "2016-09-26T17:54:34.763294",
-      "metadata_modified": "2026-10-22T05:11:54.761396",
+      "metadata_modified": "2026-10-25T05:13:09.112941",
       "frequency": "P1W",
       "resources": [
         {
           "id": "e5dcaf48-87d6-4ce1-b17a-35607916b640",
           "name": "Active Standing Offers and Supply Arrangements (SOSA)",
           "format": "CSV",
-          "metadata_modified": "2026-10-22T05:11:54.746272",
-          "last_modified": "2026-10-22T00:00:00",
+          "metadata_modified": "2026-10-25T05:13:09.102998",
+          "last_modified": "2026-10-25T00:00:00",
           "created": "2016-12-01T11:57:18.521126",
-          "expected_update_date": "2026-10-29",
-          "days_until_expected_update": 4,
+          "expected_update_date": "2026-11-01",
+          "days_until_expected_update": 7,
           "freshness_status": "due_soon"
         },
         {
@@ -1604963,8 +1604985,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-29",
-      "days_until_expected_update": 4,
+      "expected_update_date": "2026-11-01",
+      "days_until_expected_update": 7,
       "freshness_status": "due_soon"
     },
     {
@@ -2320864,29 +2320886,29 @@
       "package_name": "009f9a49-c2d9-4d29-a6d4-1a228da335ce",
       "title": "Proactive Disclosure - Travel Expenses",
       "metadata_created": "2017-02-20T20:30:25.376849",
-      "metadata_modified": "2026-10-23T14:01:42.983567",
+      "metadata_modified": "2026-10-25T14:01:08.378574",
       "frequency": "P1M",
       "resources": [
         {
           "id": "8282db2a-878f-475c-af10-ad56aa8fa72c",
           "name": "Proactive Disclosure - Travel Expenses",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:38:09.631245",
-          "last_modified": "2026-10-23T06:59:02.061034",
+          "metadata_modified": "2026-10-25T09:41:38.354402",
+          "last_modified": "2026-10-25T06:55:45.498267",
           "created": "2017-02-20T15:30:25.718137",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
           "id": "d3f883ce-4133-48da-bc76-c6b063d257a2",
           "name": "Proactive Disclosure - Travel Expenses Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:38:09.631316",
-          "last_modified": "2026-10-23T06:59:15.252575",
+          "metadata_modified": "2026-10-25T09:41:38.354476",
+          "last_modified": "2026-10-25T06:55:57.584977",
           "created": "2017-04-19T10:10:12.182040",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
@@ -2320967,8 +2320989,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-23",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-11-25",
+      "days_until_expected_update": 31,
       "freshness_status": "current"
     },
     {
@@ -2321411,7 +2321433,7 @@
       "package_name": "059f7416-cfb3-44e9-a6f8-4c5f74bd5b4f",
       "title": "6th National Action Plan on Open Government Reporting Data",
       "metadata_created": "2026-06-03T14:42:28.006577",
-      "metadata_modified": "2026-10-23T14:01:01.779716",
+      "metadata_modified": "2026-10-25T14:01:00.773675",
       "frequency": "P3M",
       "resources": [
         {
@@ -2321462,16 +2321484,16 @@
           "id": "c515847c-9209-4841-8207-1afc412b5791",
           "name": "NAP data",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:56:44.674616",
-          "last_modified": "2026-10-23T06:57:56.752154",
+          "metadata_modified": "2026-10-25T09:41:25.932925",
+          "last_modified": "2026-10-25T06:54:39.083091",
           "created": "2026-06-03T14:42:28.114119",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-01-23",
-      "days_until_expected_update": 90,
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2321976,29 +2321998,29 @@
       "package_name": "0797e893-751e-4695-8229-a5066e4fe43c",
       "title": "Completed Access to Information Request Summaries dataset",
       "metadata_created": "2016-09-24T01:10:49.951130",
-      "metadata_modified": "2026-10-23T14:00:53.130952",
+      "metadata_modified": "2026-10-25T14:00:43.214134",
       "frequency": "P1M",
       "resources": [
         {
           "id": "19383ca2-b01a-487d-88f7-e1ffbc7d39c2",
           "name": "Completed Access to Information Request Summaries dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:01:02.886462",
-          "last_modified": "2026-10-23T06:53:42.359487",
+          "metadata_modified": "2026-10-25T06:52:08.092117",
+          "last_modified": "2026-10-25T06:50:23.391540",
           "created": "2016-11-24T13:30:18.115239",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
           "id": "5a1386a5-ba69-4725-8338-2f26004d7382",
           "name": "Completed Access to Information Request Summaries dataset (Nothing to report)",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:01:02.886544",
-          "last_modified": "2026-10-23T06:53:57.479095",
+          "metadata_modified": "2026-10-25T06:52:08.092239",
+          "last_modified": "2026-10-25T06:50:40.320154",
           "created": "2016-11-24T13:30:18.115272",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
@@ -2322046,8 +2322068,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-23",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-11-25",
+      "days_until_expected_update": 31,
       "freshness_status": "current"
     },
     {
@@ -2326408,7 +2326430,7 @@
       "package_name": "2916fad5-ebcc-4c86-b0f3-4f619b29f412",
       "title": "Open Government Analytics",
       "metadata_created": "2016-09-24T06:31:44.896265",
-      "metadata_modified": "2026-10-23T14:01:50.454918",
+      "metadata_modified": "2026-10-25T14:11:21.068487",
       "frequency": "P1M",
       "resources": [
         {
@@ -2326569,11 +2326591,11 @@
           "id": "8353523a-8e4e-4cd0-a91e-b42abe2e6ee5",
           "name": "User Ratings",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T13:34:00.662678",
-          "last_modified": "2026-10-23T07:15:12.024082",
+          "metadata_modified": "2026-10-25T09:42:23.640227",
+          "last_modified": "2026-10-25T07:15:12.796351",
           "created": "2024-11-25T14:20:21.623815",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
@@ -2326632,8 +2326654,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-23",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-11-25",
+      "days_until_expected_update": 31,
       "freshness_status": "current"
     },
     {
@@ -2327645,7 +2327667,7 @@
       "package_name": "3282ea92-c145-4e3e-abb4-a5d1a46849fd",
       "title": "Levels of security screening",
       "metadata_created": "2024-06-02T19:50:35.225419",
-      "metadata_modified": "2026-10-23T14:00:49.099498",
+      "metadata_modified": "2026-10-24T18:20:38.837037",
       "frequency": "as_needed",
       "resources": [
         {
@@ -2328510,24 +2328532,24 @@
       "package_name": "39954bc7-ff7a-4180-8b6e-b02bee35078a",
       "title": "Experimentation Inventory",
       "metadata_created": "2021-05-07T19:31:30.375791",
-      "metadata_modified": "2026-10-23T14:00:58.892613",
+      "metadata_modified": "2026-10-25T14:10:53.441727",
       "frequency": "P1D",
       "resources": [
         {
           "id": "07151ad9-52e2-4f99-b4fd-7cd208816a64",
           "name": "Experimental Inventory",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:56:38.924518",
-          "last_modified": "2026-10-23T06:56:23.985022",
+          "metadata_modified": "2026-10-25T09:41:15.952413",
+          "last_modified": "2026-10-25T06:53:06.387710",
           "created": "2021-05-07T19:31:30.523045",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "expected_update_date": "2026-10-26",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-24",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-26",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "tbs-sct",
@@ -2328575,7 +2328597,7 @@
       "package_name": "3ac0d080-6149-499a-8b06-7ce5f00ec56c",
       "title": "GC Service Inventory",
       "metadata_created": "2018-08-03T15:21:05.279181",
-      "metadata_modified": "2026-10-23T14:01:40.522299",
+      "metadata_modified": "2026-10-25T14:11:06.781326",
       "frequency": "P1Y",
       "resources": [
         {
@@ -2328626,27 +2328648,27 @@
           "id": "8736cd7e-9bf9-4a45-9eee-a6cb3c43c07e",
           "name": "Service Standards & Performance Results (2024)",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:30:04.138124",
-          "last_modified": "2026-10-23T06:58:40.505503",
+          "metadata_modified": "2026-10-25T09:41:31.262108",
+          "last_modified": "2026-10-25T06:55:23.456086",
           "created": "2024-09-26T15:40:38.880795",
-          "expected_update_date": "2027-10-23",
-          "days_until_expected_update": 363,
+          "expected_update_date": "2027-10-25",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         },
         {
           "id": "c0cf9766-b85b-48c3-b295-34f72305aaf6",
           "name": "Service Identification Information & Metrics (2024)",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:30:04.138186",
-          "last_modified": "2026-10-23T06:58:29.557348",
+          "metadata_modified": "2026-10-25T09:41:31.262167",
+          "last_modified": "2026-10-25T06:55:12.185880",
           "created": "2024-09-26T15:40:38.880790",
-          "expected_update_date": "2027-10-23",
-          "days_until_expected_update": 363,
+          "expected_update_date": "2027-10-25",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-10-23",
-      "days_until_expected_update": 363,
+      "expected_update_date": "2027-10-25",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -2329429,6 +2329451,88 @@
       "name": "tbs-sct",
       "organization_title": "Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada",
       "jurisdiction": "federal",
+      "id": "432527ab-7aac-45b5-81d6-7597107a7013",
+      "package_name": "432527ab-7aac-45b5-81d6-7597107a7013",
+      "title": "Proactive Disclosure - Grants and Contributions",
+      "metadata_created": "2017-02-20T20:30:44.989526",
+      "metadata_modified": "2026-10-25T14:10:55.443203",
+      "frequency": "P3M",
+      "resources": [
+        {
+          "id": "7ad8fb26-e2e8-40f7-94a4-b1ab86feddc3",
+          "name": "Search Government Grants and Contributions (French)",
+          "format": "HTML",
+          "metadata_modified": "2026-08-08T09:43:01.000632",
+          "last_modified": null,
+          "created": "2017-02-20T15:30:45.414269",
+          "expected_update_date": "2026-11-08",
+          "days_until_expected_update": 14,
+          "freshness_status": "current"
+        },
+        {
+          "id": "87f0a925-216a-477d-b229-eada095f7b55",
+          "name": "Data Dictionary",
+          "format": "XLSX",
+          "metadata_modified": "2026-08-08T09:43:01.000533",
+          "last_modified": null,
+          "created": "2019-08-06T15:00:22.928667",
+          "expected_update_date": "2026-11-08",
+          "days_until_expected_update": 14,
+          "freshness_status": "current"
+        },
+        {
+          "id": "d9fee653-1090-444d-9854-b0b44d90a7c7",
+          "name": "Data Schema",
+          "format": "JSON",
+          "metadata_modified": "2026-08-08T09:43:01.000449",
+          "last_modified": null,
+          "created": "2019-08-06T15:00:22.928674",
+          "expected_update_date": "2026-11-08",
+          "days_until_expected_update": 14,
+          "freshness_status": "current"
+        },
+        {
+          "id": "ea968ebb-72a7-45c7-9666-fbac36fb5893",
+          "name": "Search Government Grants and Contributions (English)",
+          "format": "HTML",
+          "metadata_modified": "2026-08-08T09:43:01.000585",
+          "last_modified": null,
+          "created": "2017-02-20T15:30:45.414256",
+          "expected_update_date": "2026-11-08",
+          "days_until_expected_update": 14,
+          "freshness_status": "current"
+        },
+        {
+          "id": "1d15a62f-5656-49ad-8c88-f40ce689d831",
+          "name": "Proactive Disclosure - Grants and Contributions",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T09:41:18.310908",
+          "last_modified": "2026-10-25T06:53:17.499446",
+          "created": "2017-02-20T15:30:45.414189",
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        },
+        {
+          "id": "4e4db232-f5e8-43c7-b8b2-439eb7d55475",
+          "name": "Proactive Disclosure - Grants and Contributions Nothing to Report",
+          "format": "CSV",
+          "metadata_modified": "2026-10-25T09:41:18.310826",
+          "last_modified": "2026-10-25T06:53:55.698331",
+          "created": "2017-04-19T09:50:10.158312",
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        }
+      ],
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
+      "freshness_status": "current"
+    },
+    {
+      "name": "tbs-sct",
+      "organization_title": "Treasury Board of Canada Secretariat | Secrétariat du Conseil du Trésor du Canada",
+      "jurisdiction": "federal",
       "id": "43e5952e-29d2-43d9-817d-92cf87d44ce5",
       "package_name": "43e5952e-29d2-43d9-817d-92cf87d44ce5",
       "title": "Tabled Expenditure Authorities",
@@ -2329908,7 +2330012,7 @@
       "package_name": "4ae27978-0931-49ab-9c17-0b119c0ba92f",
       "title": "Proactive Disclosure - Annual Expenditures on Travel, Hospitality and Conferences",
       "metadata_created": "2017-01-18T15:20:15.908371",
-      "metadata_modified": "2026-10-23T14:21:04.070312",
+      "metadata_modified": "2026-10-25T14:11:09.156859",
       "frequency": "P1Y",
       "resources": [
         {
@@ -2329981,16 +2330085,16 @@
           "id": "a811cac0-2a2a-4440-8a81-2994fc753171",
           "name": "Annual Expenditures on Travel, Hospitality and Conferences",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:56:47.334919",
-          "last_modified": "2026-10-23T06:58:51.136464",
+          "metadata_modified": "2026-10-25T09:41:34.855180",
+          "last_modified": "2026-10-25T06:55:34.381597",
           "created": "2017-01-18T10:20:16.094124",
-          "expected_update_date": "2027-10-23",
-          "days_until_expected_update": 363,
+          "expected_update_date": "2027-10-25",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-10-23",
-      "days_until_expected_update": 363,
+      "expected_update_date": "2027-10-25",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -2333620,7 +2333724,7 @@
       "package_name": "6e75f19c-d19d-48aa-984e-609c8d9bc403",
       "title": "Proactive Disclosure - Acts of Founded Wrongdoing",
       "metadata_created": "2017-03-02T15:40:15.544182",
-      "metadata_modified": "2026-10-23T14:21:12.198645",
+      "metadata_modified": "2026-10-25T14:11:12.394181",
       "frequency": "as_needed",
       "resources": [
         {
@@ -2333660,8 +2333764,8 @@
           "id": "84a77a58-6bce-4bfb-ad67-bbe452523b14",
           "name": "Proactive Disclosure - Acts of Founded Wrongdoing",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:02:13.856775",
-          "last_modified": "2026-10-23T06:59:26.044696",
+          "metadata_modified": "2026-10-25T09:41:43.868205",
+          "last_modified": "2026-10-25T06:56:08.335433",
           "created": "2017-03-02T10:40:15.868348",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -2337699,7 +2337803,7 @@
       "package_name": "8634f1c9-597e-416d-91f2-df24d2ffbeea",
       "title": "Proactive Disclosure - Departmental Audit Committees",
       "metadata_created": "2018-10-17T18:50:18.542805",
-      "metadata_modified": "2026-10-23T14:31:08.136218",
+      "metadata_modified": "2026-10-25T14:31:11.775040",
       "frequency": "P3M",
       "resources": [
         {
@@ -2337739,16 +2337843,16 @@
           "id": "499383b6-cd2a-466a-9fcf-910d3e427700",
           "name": "Proactive Disclosure - Departmental Audit Committees (2018-2019-Q2 and later)",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:01:14.607189",
-          "last_modified": "2026-10-23T06:56:13.089198",
+          "metadata_modified": "2026-10-25T09:41:14.347046",
+          "last_modified": "2026-10-25T06:52:55.568271",
           "created": "2018-10-17T18:50:20.034972",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-01-23",
-      "days_until_expected_update": 90,
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2338899,24 +2339003,24 @@
       "package_name": "933c7f9d-deb0-4367-940d-06c38f494153",
       "title": "Open Government Portal Department List",
       "metadata_created": "2019-02-11T21:30:28.918018",
-      "metadata_modified": "2026-10-23T14:30:49.039165",
+      "metadata_modified": "2026-10-25T14:30:45.561367",
       "frequency": "P1D",
       "resources": [
         {
           "id": "04cbec5c-5a3d-4d34-927d-e41c9e6e3736",
           "name": "Government of Canada Department List",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T06:52:42.458803",
-          "last_modified": "2026-10-23T06:10:42.761395",
+          "metadata_modified": "2026-10-24T06:11:56.494800",
+          "last_modified": "2026-10-24T06:09:55.957223",
           "created": "2019-02-11T21:30:29.387875",
-          "expected_update_date": "2026-10-24",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-24",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-26",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "tbs-sct",
@@ -2339412,15 +2339516,15 @@
       "package_name": "98abeb62-7c76-4dfb-a134-1551f55ede55",
       "title": "Proactive Disclosure - Use of Administrative Aircraft ",
       "metadata_created": "2022-02-17T04:03:10.508785",
-      "metadata_modified": "2026-10-23T14:41:24.576464",
+      "metadata_modified": "2026-10-25T14:31:45.140560",
       "frequency": "continual",
       "resources": [
         {
           "id": "1495406e-338c-43ec-9995-ec8d8c90d17e",
           "name": "Use of Government Administrative Aircraft",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:02:16.399489",
-          "last_modified": "2026-10-23T06:59:36.804250",
+          "metadata_modified": "2026-10-25T09:41:45.708904",
+          "last_modified": "2026-10-25T06:56:19.376397",
           "created": "2022-02-17T04:03:10.800039",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -2344655,29 +2344759,29 @@
       "package_name": "b9f51ef4-4605-4ef2-8231-62a2edda1b54",
       "title": "Proactive Disclosure - Hospitality Expenses",
       "metadata_created": "2017-02-20T20:30:31.608730",
-      "metadata_modified": "2026-10-23T14:41:46.186117",
+      "metadata_modified": "2026-10-25T14:41:00.900883",
       "frequency": "P1M",
       "resources": [
         {
           "id": "36a3b6cc-4f45-4081-8dbd-2340ca487041",
           "name": "Proactive Disclosure - Hospitality Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:05:46.372540",
-          "last_modified": "2026-10-23T06:57:35.156563",
+          "metadata_modified": "2026-10-25T09:41:21.372644",
+          "last_modified": "2026-10-25T06:54:17.365135",
           "created": "2017-04-19T10:00:10.901883",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
           "id": "7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed",
           "name": "Proactive Disclosure - Hospitality Expenses",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:05:46.372449",
-          "last_modified": "2026-10-23T06:57:24.080692",
+          "metadata_modified": "2026-10-25T09:41:21.372549",
+          "last_modified": "2026-10-25T06:54:06.203134",
           "created": "2017-02-20T15:30:32.127768",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
@@ -2344747,8 +2344851,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-23",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-11-25",
+      "days_until_expected_update": 31,
       "freshness_status": "current"
     },
     {
@@ -2345783,9 +2345887,97 @@
       "package_name": "c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7",
       "title": "Open Data Portal Catalogue",
       "metadata_created": "2016-09-25T10:07:34.657467",
-      "metadata_modified": "2026-10-22T15:20:26.078423",
+      "metadata_modified": "2026-10-24T15:19:13.274818",
       "frequency": "P1D",
       "resources": [
+        {
+          "id": "09c51a72-e803-4050-8b8f-165809bccf05",
+          "name": "Data Package Fields ",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T15:13:42.273294",
+          "last_modified": "2026-10-24T15:13:42.246427",
+          "created": "2024-02-21T16:52:30.605586",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "312a65c5-d0bc-4445-8a24-95b2690cc62b",
+          "name": "datasets metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T15:16:16.836377",
+          "last_modified": "2026-10-24T15:16:16.796874",
+          "created": "2024-02-18T17:51:16.815935",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "3733106d-74f1-428e-beda-cad530b473cf",
+          "name": "datastore fields metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T15:13:41.196217",
+          "last_modified": "2026-10-24T15:13:41.168950",
+          "created": "2024-02-21T16:52:30.605581",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "3c911562-c541-463f-8cd4-490182cd57f9",
+          "name": "Resources Metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T15:19:07.459657",
+          "last_modified": "2026-10-24T15:19:07.423123",
+          "created": "2024-02-18T18:01:17.301996",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "a79f7297-9b20-427a-be79-d286daa92412",
+          "name": "resource views metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-10-24T15:19:13.245203",
+          "last_modified": "2026-10-24T15:19:13.205333",
+          "created": "2024-02-18T18:01:17.302001",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b7f0c11e-e81f-46e7-958d-0bbf878a3df6",
+          "name": "SQLite Database ",
+          "format": "SQLITE",
+          "metadata_modified": "2026-10-24T15:13:08.637196",
+          "last_modified": "2026-10-24T15:13:08.599579",
+          "created": "2024-02-21T16:52:30.605591",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b8931c16-0710-4c31-bbda-f60841e98cb4",
+          "name": "Catalogue",
+          "format": "XLSX",
+          "metadata_modified": "2026-10-24T15:06:31.042458",
+          "last_modified": "2026-10-24T15:06:31.009357",
+          "created": "2024-02-18T17:41:23.540448",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "f13ed9cc-e460-42ca-a526-56e02ecaefaa",
+          "name": "Data Package",
+          "format": "JSON",
+          "metadata_modified": "2026-10-24T15:13:16.416411",
+          "last_modified": "2026-10-24T15:13:16.385112",
+          "created": "2024-02-18T17:41:23.540456",
+          "expected_update_date": "2026-10-25",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
         {
           "id": "21ad0300-b9f5-444e-b43b-8bd164901b55",
           "name": "data package entity relation diagram",
@@ -2345807,99 +2345999,11 @@
           "expected_update_date": "2026-08-11",
           "days_until_expected_update": -75,
           "freshness_status": "late"
-        },
-        {
-          "id": "09c51a72-e803-4050-8b8f-165809bccf05",
-          "name": "Data Package Fields ",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T15:15:10.758714",
-          "last_modified": "2026-10-22T15:15:10.725820",
-          "created": "2024-02-21T16:52:30.605586",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "312a65c5-d0bc-4445-8a24-95b2690cc62b",
-          "name": "datasets metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T15:17:49.798571",
-          "last_modified": "2026-10-22T15:17:49.763996",
-          "created": "2024-02-18T17:51:16.815935",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "3733106d-74f1-428e-beda-cad530b473cf",
-          "name": "datastore fields metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T15:15:09.322930",
-          "last_modified": "2026-10-22T15:15:09.290738",
-          "created": "2024-02-21T16:52:30.605581",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "3c911562-c541-463f-8cd4-490182cd57f9",
-          "name": "Resources Metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T15:20:20.412438",
-          "last_modified": "2026-10-22T15:20:20.384487",
-          "created": "2024-02-18T18:01:17.301996",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "a79f7297-9b20-427a-be79-d286daa92412",
-          "name": "resource views metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-10-22T15:20:26.058698",
-          "last_modified": "2026-10-22T15:20:26.029246",
-          "created": "2024-02-18T18:01:17.302001",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "b7f0c11e-e81f-46e7-958d-0bbf878a3df6",
-          "name": "SQLite Database ",
-          "format": "SQLITE",
-          "metadata_modified": "2026-10-22T15:14:41.806387",
-          "last_modified": "2026-10-22T15:14:41.775118",
-          "created": "2024-02-21T16:52:30.605591",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "b8931c16-0710-4c31-bbda-f60841e98cb4",
-          "name": "Catalogue",
-          "format": "XLSX",
-          "metadata_modified": "2026-10-22T15:07:45.958290",
-          "last_modified": "2026-10-22T15:07:45.923660",
-          "created": "2024-02-18T17:41:23.540448",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
-        },
-        {
-          "id": "f13ed9cc-e460-42ca-a526-56e02ecaefaa",
-          "name": "Data Package",
-          "format": "JSON",
-          "metadata_modified": "2026-10-22T15:14:51.029436",
-          "last_modified": "2026-10-22T15:14:50.997394",
-          "created": "2024-02-18T17:41:23.540456",
-          "expected_update_date": "2026-10-23",
-          "days_until_expected_update": -2,
-          "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-10-23",
-      "days_until_expected_update": -2,
-      "freshness_status": "late"
+      "expected_update_date": "2026-10-25",
+      "days_until_expected_update": 0,
+      "freshness_status": "due_soon"
     },
     {
       "name": "tbs-sct",
@@ -2348864,7 +2348968,7 @@
       "package_name": "d8f85d91-7dec-4fd1-8055-483b77225d8b",
       "title": "Proactive Publication - Contracts",
       "metadata_created": "2016-09-25T14:06:36.757889",
-      "metadata_modified": "2026-10-23T14:51:03.442830",
+      "metadata_modified": "2026-10-25T14:50:50.768975",
       "frequency": "P3M",
       "resources": [
         {
@@ -2348959,38 +2349063,38 @@
           "id": "2e9a82e2-bb18-4bff-a61e-59af3b429672",
           "name": "Aggregated Total - Contracts $10K and under",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T10:45:54.763345",
-          "last_modified": "2026-10-23T06:56:02.264196",
+          "metadata_modified": "2026-10-25T09:41:10.188295",
+          "last_modified": "2026-10-25T06:52:44.674566",
           "created": "2018-03-07T16:00:39.376061",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "fa4ff6c4-e9af-4491-9d4e-2b468e415a68",
           "name": "Proactive Publication - Contracts Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T10:45:54.763262",
-          "last_modified": "2026-10-23T06:55:51.227549",
+          "metadata_modified": "2026-10-25T09:41:10.188242",
+          "last_modified": "2026-10-25T06:52:33.589627",
           "created": "2017-04-19T09:40:09.664069",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "fac950c0-00d5-4ec1-a4d3-9cbebf98a305",
           "name": "Contracts over $10,000",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T10:45:54.762983",
-          "last_modified": "2026-10-23T06:55:28.933740",
+          "metadata_modified": "2026-10-25T09:41:10.188179",
+          "last_modified": "2026-10-25T06:52:12.393448",
           "created": "2016-12-01T12:05:20.080904",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-01-23",
-      "days_until_expected_update": 90,
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2349438,7 +2349542,7 @@
       "package_name": "e0d1f0bf-699f-437e-805d-4aaa428f96b8",
       "title": "5th National Action Plan on Open Government Reporting Data",
       "metadata_created": "2022-09-22T13:58:17.461455",
-      "metadata_modified": "2026-10-23T14:50:58.193245",
+      "metadata_modified": "2026-10-25T14:50:59.507658",
       "frequency": "P3M",
       "resources": [
         {
@@ -2349489,16 +2349593,16 @@
           "id": "0305a157-9d10-4ec2-8ca4-e39ab2b34396",
           "name": "NAP data",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:56:42.309014",
-          "last_modified": "2026-10-23T06:57:45.904493",
+          "metadata_modified": "2026-10-25T09:41:24.760433",
+          "last_modified": "2026-10-25T06:54:28.218222",
           "created": "2022-09-22T13:58:17.799650",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-01-23",
-      "days_until_expected_update": 90,
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2350454,7 +2350558,7 @@
       "package_name": "ecd1a913-47da-47fc-8f96-2432be420986",
       "title": "Proactive Disclosure - Question Period notes",
       "metadata_created": "2020-01-12T15:00:55.460626",
-      "metadata_modified": "2026-10-23T14:50:53.291783",
+      "metadata_modified": "2026-10-25T14:50:46.773862",
       "frequency": "P6M",
       "resources": [
         {
@@ -2350505,27 +2350609,27 @@
           "id": "c55a2862-7ec4-462c-a844-22acab664812",
           "name": "Question Period Notes",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:38:12.486500",
-          "last_modified": "2026-10-23T06:54:31.978293",
+          "metadata_modified": "2026-10-25T06:52:15.412705",
+          "last_modified": "2026-10-25T06:51:14.917407",
           "created": "2020-01-12T15:01:01.768516",
-          "expected_update_date": "2027-04-23",
-          "days_until_expected_update": 180,
+          "expected_update_date": "2027-04-25",
+          "days_until_expected_update": 182,
           "freshness_status": "current"
         },
         {
           "id": "dba8cc4a-2a57-435c-a270-fa024474e609",
           "name": "Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:38:12.486441",
-          "last_modified": "2026-10-23T06:54:45.785594",
+          "metadata_modified": "2026-10-25T06:52:15.412587",
+          "last_modified": "2026-10-25T06:51:28.030138",
           "created": "2024-08-21T20:00:29.559846",
-          "expected_update_date": "2027-04-23",
-          "days_until_expected_update": 180,
+          "expected_update_date": "2027-04-25",
+          "days_until_expected_update": 182,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-04-23",
-      "days_until_expected_update": 180,
+      "expected_update_date": "2027-04-25",
+      "days_until_expected_update": 182,
       "freshness_status": "current"
     },
     {
@@ -2350536,29 +2350640,29 @@
       "package_name": "ee9bd7e8-90a5-45db-9287-85c8cf3589b6",
       "title": "Proactive Disclosure - Briefing Note Titles and Numbers",
       "metadata_created": "2019-06-24T13:40:25.697400",
-      "metadata_modified": "2026-10-23T14:50:55.649692",
+      "metadata_modified": "2026-10-25T14:50:44.858049",
       "frequency": "P1M",
       "resources": [
         {
           "id": "299a2e26-5103-4a49-ac3a-53db9fcc06c7",
           "name": "Proactive Disclosure - Briefing Note Titles and Numbers",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:38:19.045803",
-          "last_modified": "2026-10-23T06:54:08.160781",
+          "metadata_modified": "2026-10-25T06:52:12.414858",
+          "last_modified": "2026-10-25T06:50:51.915278",
           "created": "2019-06-24T13:40:29.606040",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
           "id": "5e28b544-720b-4745-9e55-3aac6464a4fb",
           "name": "Proactive Publication - Briefing Note Titles and Numbers Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T09:38:19.045865",
-          "last_modified": "2026-10-23T06:54:20.626834",
+          "metadata_modified": "2026-10-25T06:52:12.414916",
+          "last_modified": "2026-10-25T06:51:03.939925",
           "created": "2024-01-03T19:12:32.968075",
-          "expected_update_date": "2026-11-23",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-11-25",
+          "days_until_expected_update": 31,
           "freshness_status": "current"
         },
         {
@@ -2350606,8 +2350710,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-23",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-11-25",
+      "days_until_expected_update": 31,
       "freshness_status": "current"
     },
     {
@@ -2351062,7 +2351166,7 @@
       "package_name": "f132b8a6-abad-43d6-b6ad-2301e778b1b6",
       "title": "Proactive Disclosure - Position Reclassification",
       "metadata_created": "2017-03-02T14:50:15.659882",
-      "metadata_modified": "2026-10-23T14:51:31.996032",
+      "metadata_modified": "2026-10-25T14:51:02.217061",
       "frequency": "P3M",
       "resources": [
         {
@@ -2351113,27 +2351217,27 @@
           "id": "1e955e4d-df35-4441-bf38-b7086192ece2",
           "name": "Proactive Disclosure - Position Reclassification Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:19:09.921328",
-          "last_modified": "2026-10-23T06:58:18.715735",
+          "metadata_modified": "2026-10-25T09:41:28.121142",
+          "last_modified": "2026-10-25T06:55:01.397061",
           "created": "2017-04-19T10:00:11.758121",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "bdaa5515-3782-4e5c-9d44-c25e032addb7",
           "name": "Proactive Disclosure - Position Reclassification",
           "format": "CSV",
-          "metadata_modified": "2026-10-23T12:19:09.921254",
-          "last_modified": "2026-10-23T06:58:07.809079",
+          "metadata_modified": "2026-10-25T09:41:28.121019",
+          "last_modified": "2026-10-25T06:54:50.381179",
           "created": "2017-03-02T09:50:16.039430",
-          "expected_update_date": "2027-01-23",
-          "days_until_expected_update": 90,
+          "expected_update_date": "2027-01-25",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-01-23",
-      "days_until_expected_update": 90,
+      "expected_update_date": "2027-01-25",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
