@@ -3827,6 +3827,8 @@ tbs-sct,4301f4bb-1daa-4b50-afab-d1193b5d2284,2020 Public Service Employee Survey
 tbs-sct,4301f4bb-1daa-4b50-afab-d1193b5d2284,2020 Public Service Employee Survey,83b8d566-8199-40a3-9d87-6b99e9600c5b,Subset 1 - 2020 Public Service Employee Survey open dataset - with labels,ead30332-56b2-42a9-953e-39e9d9b63fb8,datatables_view
 tbs-sct,4301f4bb-1daa-4b50-afab-d1193b5d2284,2020 Public Service Employee Survey,8bf75d4b-a80d-4828-839a-bf8c0b76af51,2020 Public Service Employee Survey open dataset,cf60b97b-a0cd-4d41-812c-5bfb8f603863,datatables_view
 tbs-sct,4301f4bb-1daa-4b50-afab-d1193b5d2284,2020 Public Service Employee Survey,b9363aab-8906-45b3-91b5-c91cae5a9327,Subset 6 - 2020 Public Service Employee Survey open dataset - with labels,409e37d0-8ef8-4e8c-939d-a81d5b72edcf,datatables_view
+tbs-sct,432527ab-7aac-45b5-81d6-7597107a7013,Proactive Disclosure - Grants and Contributions,1d15a62f-5656-49ad-8c88-f40ce689d831,Proactive Disclosure - Grants and Contributions,d8a1304f-962b-4464-ae0f-850b6638281c,datatables_view
+tbs-sct,432527ab-7aac-45b5-81d6-7597107a7013,Proactive Disclosure - Grants and Contributions,4e4db232-f5e8-43c7-b8b2-439eb7d55475,Proactive Disclosure - Grants and Contributions Nothing to Report,2c9863d4-b408-46b2-b3db-cbbb28fd4bb1,datatables_view
 tbs-sct,4947d10c-31a8-442a-8b90-cd0ff74b5398,2025-26 Estimates,08b3c6dc-cb2d-4756-8c06-d25168cba134,Statutory Forecasts,4e3eaf8a-6f7e-49fb-aa92-96be23b598c5,datatables_view
 tbs-sct,4947d10c-31a8-442a-8b90-cd0ff74b5398,2025-26 Estimates,3bea8437-3bf0-4025-8443-0905a9a18b3e,Expenditures by Purpose,e3143825-7bb6-4ffe-a695-4e9dd7f35374,datatables_view
 tbs-sct,4947d10c-31a8-442a-8b90-cd0ff74b5398,2025-26 Estimates,756d66a6-ecf0-4f3d-abda-36875476ee83,Expenditures by Purpose,29b80e13-e057-40b7-bc41-28c18b20092e,datatables_view
@@ -4154,5 +4156,3 @@ wd-deo,80465a11-b974-45a5-a99a-a24a6cad078b,Amount leveraged per dollar by WD in
 wd-deo,9b9dbdd4-e788-4e72-aeed-8030b212fd12,Number of communities benefitting from Community Economic Growth projects,aede4602-3728-4722-bee6-98cf0c11ab46,CEG Projects_e.csv,c27a3d00-4ac5-4fce-bedd-02dfab77385e,datatables_view
 wd-deo,9c3f5337-04b7-4486-9420-7f2b93baf10f,Value of International Business Activity Facilitated by WD,50dac711-88d2-4d66-a1c8-f3c7ef6f80d9,IB Facilitated_e.csv,73584191-7493-410a-b573-607a387eff55,datatables_view
 wd-deo,9fbe6713-590d-4300-88ad-c2dc8b106860,Revenue growth rate of firms supported by WD programs,aff8bf55-6e4c-42de-96f2-69604742d1ee,Revenue Growth_e.csv,ca36a386-3f63-4c55-96a7-6394efdc0ccf,datatables_view
-,432527ab-7aac-45b5-81d6-7597107a7013,,1d15a62f-5656-49ad-8c88-f40ce689d831,,d8a1304f-962b-4464-ae0f-850b6638281c,datatables_view
-,432527ab-7aac-45b5-81d6-7597107a7013,,4e4db232-f5e8-43c7-b8b2-439eb7d55475,,2c9863d4-b408-46b2-b3db-cbbb28fd4bb1,datatables_view
