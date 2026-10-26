@@ -44,8 +44,8 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-25T16:10:41+00:00`
-As of date: `2026-10-25`
+Generated at: `2026-10-26T04:40:33+00:00`
+As of date: `2026-10-26`
 Packages assessed: `48152`
 Resources assessed: `243447`
 
@@ -68,8 +68,8 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 38141
-    "late": 5060
-    "current": 4823
+    "late": 5062
+    "current": 4821
     "due_soon": 128
 ```
 
@@ -77,9 +77,9 @@ pie showData title Package freshness status
 ```mermaid
 pie showData title Resource freshness status
     "unknown": 172945
-    "late": 38729
-    "current": 31084
-    "due_soon": 689
+    "late": 38745
+    "current": 31002
+    "due_soon": 755
 ```
 
 ### Package Update Timing
@@ -87,12 +87,12 @@ pie showData title Resource freshness status
 pie showData title Package timing against expected update date
     "Late > 1 year": 3362
     "Late 91-365 days": 1225
-    "Late 31-90 days": 224
+    "Late 31-90 days": 227
     "Late 8-30 days": 149
-    "Late 1-7 days": 100
+    "Late 1-7 days": 99
     "Due in 0-7 days": 128
-    "Due in 8-30 days": 458
-    "Current > 30 days": 4365
+    "Due in 8-30 days": 477
+    "Current > 30 days": 4344
     "Unknown": 38141
 ```
 
