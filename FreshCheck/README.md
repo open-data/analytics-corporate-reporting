@@ -44,15 +44,15 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-26T04:40:33+00:00`
+Generated at: `2026-10-26T18:41:35+00:00`
 As of date: `2026-10-26`
 Packages assessed: `48152`
-Resources assessed: `243447`
+Resources assessed: `243450`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36120 | 165926 |
+| freshness_tree_federal.json | Federal | federal | 36120 | 165929 |
 | freshness_tree_provincial.json | Provincial | provincial | 11746 | 75866 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1655 |
 
@@ -68,18 +68,18 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 38141
-    "late": 5062
-    "current": 4821
-    "due_soon": 128
+    "late": 5058
+    "current": 4823
+    "due_soon": 130
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 172945
-    "late": 38745
-    "current": 31002
-    "due_soon": 755
+    "unknown": 172948
+    "late": 38721
+    "current": 31012
+    "due_soon": 769
 ```
 
 ### Package Update Timing
@@ -87,12 +87,12 @@ pie showData title Resource freshness status
 pie showData title Package timing against expected update date
     "Late > 1 year": 3362
     "Late 91-365 days": 1225
-    "Late 31-90 days": 227
+    "Late 31-90 days": 226
     "Late 8-30 days": 149
-    "Late 1-7 days": 99
-    "Due in 0-7 days": 128
-    "Due in 8-30 days": 477
-    "Current > 30 days": 4344
+    "Late 1-7 days": 96
+    "Due in 0-7 days": 130
+    "Due in 8-30 days": 472
+    "Current > 30 days": 4351
     "Unknown": 38141
 ```
 
