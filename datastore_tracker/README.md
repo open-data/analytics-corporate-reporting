@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4192
+    "success": 4193
     "failure": 2875
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3929
+    "datatables_view": 3930
     "text_view": 216
     "image_view": 4
     "openapi_view": 4
@@ -71,7 +71,7 @@ pie showData title Resource View Types
 | open.canada.ca | elections | 23 |
 | open.canada.ca | esdc-edsc | 607 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 186 |
+| open.canada.ca | hc-sc | 187 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 6 |
@@ -105,7 +105,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.00099, 0.00091}
+  curve u["Upload"]{0.00084, 0.00099, 0.00091}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -131,7 +131,7 @@ pie showData title Top 20 Orgs by View Count
     "esdc-edsc": 653
     "tbs-sct": 330
     "cfia-acia": 230
-    "hc-sc": 211
+    "hc-sc": 212
     "psc-cfp": 158
     "osfi-bsif": 74
     "dfatd-maecd": 68
