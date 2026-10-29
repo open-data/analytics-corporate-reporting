@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4193
-    "failure": 2875
+    "success": 3484
+    "failure": 2418
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -51,52 +51,51 @@ pie showData title Resource View Types
 <!-- RESOURCE_COUNTS_START -->
 | url_host | owner | resource_count |
 |---|---|---|
-| od-do.agr.gc.ca | aafc-aac | 25 |
+| od-do.agr.gc.ca | aafc-aac | 23 |
 | open.canada.ca | aafc-aac | 2 |
-| open.canada.ca | atssc-scdata | 4 |
-| open.canada.ca | cbsa-asfc | 6 |
+| open.canada.ca | cbsa-asfc | 4 |
 | open.canada.ca | cer-rec | 3 |
-| open.canada.ca | cfia-acia | 214 |
+| open.canada.ca | cfia-acia | 178 |
 | open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 30 |
-| open.canada.ca | cra-arc | 598 |
+| open.canada.ca | cra-arc | 583 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
-| open.canada.ca | csec-cstc | 16 |
+| open.canada.ca | csec-cstc | 11 |
 | open.canada.ca | csps-efpc | 1 |
-| open.canada.ca | dfatd-maecd | 68 |
+| open.canada.ca | dfatd-maecd | 56 |
 | open.canada.ca | dfo-mpo | 2 |
-| open.canada.ca | dnd-mdn | 22 |
-| open.canada.ca | ec | 23 |
+| open.canada.ca | dnd-mdn | 20 |
+| open.canada.ca | ec | 21 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 607 |
+| open.canada.ca | esdc-edsc | 338 |
+| open.canada.ca | fcac-acfc | 10 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 187 |
+| open.canada.ca | hc-sc | 157 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
-| open.canada.ca | infc | 6 |
+| open.canada.ca | infc | 2 |
 | open.canada.ca | irb-cisr | 9 |
 | open.canada.ca | isc-sac | 14 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
-| open.canada.ca | nrcan-rncan | 42 |
-| open.canada.ca | opc-cpvp | 17 |
+| open.canada.ca | nrcan-rncan | 34 |
+| open.canada.ca | opc-cpvp | 13 |
 | open.canada.ca | osfi-bsif | 74 |
-| open.canada.ca | pc | 969 |
+| open.canada.ca | pc | 817 |
 | open.canada.ca | pch | 11 |
 | open.canada.ca | pco-bcp | 3 |
 | open.canada.ca | phac-aspc | 44 |
 | open.canada.ca | ps-sp | 4 |
-| open.canada.ca | psc-cfp | 145 |
-| open.canada.ca | pwgsc-tpsgc | 1 |
+| open.canada.ca | psc-cfp | 133 |
 | open.canada.ca | rcmp-grc | 1 |
-| open.canada.ca | ssc-spc | 41 |
-| open.canada.ca | tbs-sct | 221 |
-| open.canada.ca | tc | 41 |
+| open.canada.ca | ssc-spc | 31 |
+| open.canada.ca | tbs-sct | 165 |
+| open.canada.ca | tc | 29 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
-| www.canada.ca | cra-arc | 301 |
-| www.canada.ca | tbs-sct | 37 |
+| www.canada.ca | cra-arc | 279 |
+| www.canada.ca | tbs-sct | 30 |
 <!-- RESOURCE_COUNTS_END -->
 
 
@@ -105,7 +104,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.00098, 0.0009}
+  curve u["Upload"]{0.00059, 0.00093, 0.00086}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -126,26 +125,26 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "pc": 982
-    "cra-arc": 897
-    "esdc-edsc": 653
-    "tbs-sct": 330
-    "cfia-acia": 230
-    "hc-sc": 212
-    "psc-cfp": 158
+    "cra-arc": 859
+    "pc": 826
+    "Unknown": 699
+    "esdc-edsc": 379
+    "tbs-sct": 263
+    "cfia-acia": 187
+    "hc-sc": 176
+    "psc-cfp": 145
     "osfi-bsif": 74
-    "dfatd-maecd": 68
-    "nrcan-rncan": 54
+    "dfatd-maecd": 56
     "phac-aspc": 53
-    "ssc-spc": 43
-    "tc": 40
+    "nrcan-rncan": 46
     "cnsc-ccsn": 35
-    "ec": 24
+    "ssc-spc": 33
+    "tc": 28
     "ic": 24
-    "dnd-mdn": 23
+    "ec": 22
     "elections": 22
+    "dnd-mdn": 21
     "fin": 19
-    "cic": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
