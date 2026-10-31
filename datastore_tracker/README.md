@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4221
+    "success": 4223
     "failure": 2875
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3958
+    "datatables_view": 3960
     "text_view": 216
     "image_view": 4
     "openapi_view": 4
@@ -60,6 +60,7 @@ pie showData title Resource View Types
 | open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 30 |
 | open.canada.ca | cra-arc | 608 |
+| open.canada.ca | crtc | 2 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 16 |
@@ -106,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00064, 0.00092, 0.00086}
+  curve u["Upload"]{0.00064, 0.00094, 0.00085}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
