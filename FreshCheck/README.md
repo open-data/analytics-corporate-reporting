@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-10-31T05:31:53+00:00`
+Generated at: `2026-10-31T17:16:14+00:00`
 As of date: `2026-10-31`
-Packages assessed: `48202`
-Resources assessed: `243741`
+Packages assessed: `48203`
+Resources assessed: `243750`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36167 | 166152 |
+| freshness_tree_federal.json | Federal | federal | 36168 | 166161 |
 | freshness_tree_provincial.json | Provincial | provincial | 11749 | 75934 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1655 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36167
+    "federal": 36168
     "provincial": 11749
     "municipal": 286
 ```
@@ -67,19 +67,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 38183
-    "late": 5059
-    "current": 4802
-    "due_soon": 158
+    "unknown": 38184
+    "late": 5056
+    "current": 4804
+    "due_soon": 159
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 173147
-    "late": 38579
-    "current": 30531
-    "due_soon": 1484
+    "unknown": 173152
+    "late": 38433
+    "current": 30671
+    "due_soon": 1494
 ```
 
 ### Package Update Timing
@@ -88,12 +88,12 @@ pie showData title Package timing against expected update date
     "Late > 1 year": 3364
     "Late 91-365 days": 1229
     "Late 31-90 days": 217
-    "Late 8-30 days": 150
-    "Late 1-7 days": 99
-    "Due in 0-7 days": 158
+    "Late 8-30 days": 148
+    "Late 1-7 days": 98
+    "Due in 0-7 days": 159
     "Due in 8-30 days": 554
-    "Current > 30 days": 4248
-    "Unknown": 38183
+    "Current > 30 days": 4250
+    "Unknown": 38184
 ```
 
 ### Departments Keeping Data Current
