@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4245
-    "failure": 2878
+    "success": 4243
+    "failure": 2879
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -73,7 +73,7 @@ pie showData title Resource View Types
 | open.canada.ca | esdc-edsc | 629 |
 | open.canada.ca | fcac-acfc | 10 |
 | open.canada.ca | fin | 18 |
-| open.canada.ca | hc-sc | 187 |
+| open.canada.ca | hc-sc | 186 |
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 6 |
@@ -93,7 +93,7 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 41 |
-| open.canada.ca | tbs-sct | 221 |
+| open.canada.ca | tbs-sct | 220 |
 | open.canada.ca | tc | 41 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
@@ -107,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00062, 0.00097, 0.00089}
+  curve u["Upload"]{0.0006, 0.00096, 0.00088}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
