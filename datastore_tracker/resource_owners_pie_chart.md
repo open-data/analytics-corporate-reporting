@@ -7,7 +7,7 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 982
     "cra-arc": 907
-    "esdc-edsc": 676
+    "esdc-edsc": 678
     "tbs-sct": 349
     "cfia-acia": 242
     "hc-sc": 211
