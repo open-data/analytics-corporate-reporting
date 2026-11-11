@@ -5,24 +5,24 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "cra-arc": 861
-    "pc": 830
-    "esdc-edsc": 379
-    "tbs-sct": 262
-    "cfia-acia": 197
-    "hc-sc": 176
-    "psc-cfp": 145
+    "pc": 982
+    "cra-arc": 907
+    "esdc-edsc": 676
+    "tbs-sct": 349
+    "cfia-acia": 242
+    "hc-sc": 211
+    "psc-cfp": 158
     "osfi-bsif": 74
+    "dfatd-maecd": 68
+    "nrcan-rncan": 65
     "phac-aspc": 61
-    "nrcan-rncan": 57
-    "dfatd-maecd": 56
+    "ssc-spc": 43
+    "tc": 40
     "cnsc-ccsn": 35
-    "ssc-spc": 33
-    "tc": 28
+    "ec": 24
     "ic": 24
-    "ec": 22
+    "dnd-mdn": 23
     "elections": 22
-    "dnd-mdn": 21
     "fin": 19
-    "isc-sac": 16
+    "cic": 17
 ```

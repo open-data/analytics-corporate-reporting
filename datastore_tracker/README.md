@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4277
+    "success": 4289
     "failure": 2878
 ```
 
@@ -38,11 +38,11 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3301
-    "text_view": 193
+    "datatables_view": 4024
+    "text_view": 216
     "image_view": 4
     "openapi_view": 4
-    "power_bi_view": 3
+    "power_bi_view": 4
 ```
 
 <!-- RESOURCE_VIEW_TYPES_CHART_END -->
@@ -93,12 +93,12 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 41 |
-| open.canada.ca | tbs-sct | 228 |
+| open.canada.ca | tbs-sct | 234 |
 | open.canada.ca | tc | 41 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
 | www.canada.ca | cra-arc | 301 |
-| www.canada.ca | tbs-sct | 37 |
+| www.canada.ca | tbs-sct | 43 |
 <!-- RESOURCE_COUNTS_END -->
 
 
@@ -107,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00066, 0.00096, 0.00088}
+  curve u["Upload"]{0.00067, 0.00102, 0.00095}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -128,26 +128,26 @@ config:
   theme: dark
 ---
 pie showData title Top 20 Orgs by View Count
-    "cra-arc": 861
-    "pc": 830
-    "esdc-edsc": 379
-    "tbs-sct": 262
-    "cfia-acia": 197
-    "hc-sc": 176
-    "psc-cfp": 145
+    "pc": 982
+    "cra-arc": 907
+    "esdc-edsc": 676
+    "tbs-sct": 349
+    "cfia-acia": 242
+    "hc-sc": 211
+    "psc-cfp": 158
     "osfi-bsif": 74
+    "dfatd-maecd": 68
+    "nrcan-rncan": 65
     "phac-aspc": 61
-    "nrcan-rncan": 57
-    "dfatd-maecd": 56
+    "ssc-spc": 43
+    "tc": 40
     "cnsc-ccsn": 35
-    "ssc-spc": 33
-    "tc": 28
+    "ec": 24
     "ic": 24
-    "ec": 22
+    "dnd-mdn": 23
     "elections": 22
-    "dnd-mdn": 21
     "fin": 19
-    "isc-sac": 16
+    "cic": 17
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
