@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:05:26+00:00",
+  "generated_at": "2026-11-12T19:54:03+00:00",
   "as_of_date": "2026-11-12",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "municipal_user",
@@ -17733,57 +17733,57 @@
       "package_name": "b9871478-b6e9-44a7-8d4e-0a5eb9e5c36f",
       "title": "Access to the open data portal",
       "metadata_created": "2020-09-11T15:17:59.166566",
-      "metadata_modified": "2026-05-27T16:10:49.604483",
+      "metadata_modified": "2026-11-11T17:00:51.519270",
       "frequency": "P3M",
       "resources": [
         {
-          "id": "37f3b1a5-ccaa-4d05-bd37-224944da19a2",
+          "id": "347bf912-4fb8-4f18-9506-2239346a8302",
           "name": "Original metadata (https://www.donneesquebec.ca)",
           "format": "HTML",
-          "metadata_modified": "2026-05-27T16:10:49.600890",
+          "metadata_modified": "2026-11-11T17:00:51.514036",
           "last_modified": null,
-          "created": "2026-05-27T16:10:49.639397",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -77,
-          "freshness_status": "late"
+          "created": "2026-11-11T17:00:51.559748",
+          "expected_update_date": "2027-02-11",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
         },
         {
-          "id": "44670e09-8349-470c-95dc-63346332ef6a",
+          "id": "3657b189-93bf-45db-adcb-bf4ee3bb802a",
           "name": "Attendance since July 2021",
           "format": "CSV",
-          "metadata_modified": "2026-05-27T16:10:49.600640",
+          "metadata_modified": "2026-11-11T17:00:51.513782",
           "last_modified": null,
-          "created": "2026-05-27T16:10:49.639389",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -77,
-          "freshness_status": "late"
+          "created": "2026-11-11T17:00:51.559736",
+          "expected_update_date": "2027-02-11",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
         },
         {
-          "id": "d0737842-be55-43b7-854a-554b85297b0f",
-          "name": "Attendance 2023-2024",
+          "id": "3d72d4e5-27f4-4875-94c9-c94b3fbd18f8",
+          "name": "Attendance 2023-2026",
           "format": "CSV",
-          "metadata_modified": "2026-05-27T16:10:49.600818",
+          "metadata_modified": "2026-11-11T17:00:51.513960",
           "last_modified": null,
-          "created": "2026-05-27T16:10:49.639395",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -77,
-          "freshness_status": "late"
+          "created": "2026-11-11T17:00:51.559746",
+          "expected_update_date": "2027-02-11",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
         },
         {
-          "id": "d07ee8e3-84a2-4cdb-bca3-69aef7fea0ea",
+          "id": "a5763e85-a331-4f14-b90f-d3b985ad96b8",
           "name": "Attendance until June 2020",
           "format": "CSV",
-          "metadata_modified": "2026-05-27T16:10:49.600742",
+          "metadata_modified": "2026-11-11T17:00:51.513880",
           "last_modified": null,
-          "created": "2026-05-27T16:10:49.639394",
-          "expected_update_date": "2026-08-27",
-          "days_until_expected_update": -77,
-          "freshness_status": "late"
+          "created": "2026-11-11T17:00:51.559743",
+          "expected_update_date": "2027-02-11",
+          "days_until_expected_update": 91,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-08-27",
-      "days_until_expected_update": -77,
-      "freshness_status": "late"
+      "expected_update_date": "2027-02-11",
+      "days_until_expected_update": 91,
+      "freshness_status": "current"
     },
     {
       "name": "qc",

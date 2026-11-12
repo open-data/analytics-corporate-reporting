@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-12T07:05:26+00:00",
+  "generated_at": "2026-11-12T19:54:03+00:00",
   "as_of_date": "2026-11-12",
   "source": "https://open.canada.ca/static/od-do-canada.jsonl.gz",
   "group": "federal",
@@ -16,71 +16,71 @@
       "package_name": "0333e9d8-1c47-43f7-9933-9214cdecb7b4",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Percent of average precipitation",
       "metadata_created": "2026-05-26T19:31:08.008516",
-      "metadata_modified": "2026-05-26T19:31:08.356839",
+      "metadata_modified": "2026-11-12T13:31:07.645404",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "2f6cdb21-e050-4b0e-a8e7-cc9f4dab2341",
-          "name": "Data Product Specification (English)",
-          "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:08.004088",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:08.334312",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "bc269110-2291-442b-918c-6ccdc2d0741e",
-          "name": "Data Product Specification (French)",
-          "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:08.004012",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:08.334311",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "bc885782-4d35-4bee-8397-9160624d2010",
-          "name": "Percent of average precipitation",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:08.003929",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:08.334309",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "c18ed252-88cc-42e2-87bb-a270f4a180df",
-          "name": "Pre-packaged GeoTIF files (monthly)",
-          "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:08.004166",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:08.334313",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "da51a74c-ce36-4857-9456-9886d0c61e00",
-          "name": "Percent of average precipitation",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:08.003820",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:08.334303",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "f3d4ea8f-669c-47e8-ac2c-77b563387a8b",
+          "id": "19ec4fcb-32b4-4cff-835c-9d17a232da7e",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:08.004241",
+          "metadata_modified": "2026-11-12T13:31:07.639958",
           "last_modified": null,
-          "created": "2026-05-26T19:31:08.334315",
+          "created": "2026-11-12T13:31:07.711128",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "48033c8e-8cf1-42ba-86d3-fe37c46b88b6",
+          "name": "Data Product Specification (English)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:07.639788",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:07.711126",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "657e580f-d1bf-43cc-b049-2cf6d1371606",
+          "name": "Percent of average precipitation",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:07.639617",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:07.711123",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "6fc33961-10a7-45a5-b563-e72b2fa6da40",
+          "name": "Percent of average precipitation",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:07.639509",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:07.711117",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "8493fb1a-cd7d-4525-8c20-4faf7cc90021",
+          "name": "Data Product Specification (French)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:07.639704",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:07.711125",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "cfd2e44b-ab54-42f9-8e20-0943470fdb3d",
+          "name": "Pre-packaged GeoTIF files (monthly)",
+          "format": "GeoTIF",
+          "metadata_modified": "2026-11-12T13:31:07.639874",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:07.711127",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -5592,60 +5592,60 @@
       "package_name": "2b72996a-2905-4cea-a565-8bfb85cd42ac",
       "title": "National Agroclimate Series of Derived Indicators (NASDI)",
       "metadata_created": "2026-05-26T19:30:53.853671",
-      "metadata_modified": "2026-05-26T19:30:54.394768",
+      "metadata_modified": "2026-11-12T13:30:56.103235",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "3a25a7f3-0e35-49e4-85cf-1bffbe03c174",
+          "id": "01ed16bc-70da-4f89-b18f-33278aacee1d",
+          "name": "National Agroclimate Series of Derived Indicators (NASDI)",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:30:56.096976",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:56.167715",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "1091bc37-ed90-4a8d-993e-f10a916aba0f",
           "name": "Data Product Specification (French)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:30:53.849498",
+          "metadata_modified": "2026-11-12T13:30:56.097203",
           "last_modified": null,
-          "created": "2026-05-26T19:30:54.361396",
+          "created": "2026-11-12T13:30:56.167719",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "6bc8e06f-951d-477e-9ee0-5f2f8738253d",
-          "name": "National Agroclimate Series of Derived Indicators (NASDI)",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:30:53.849137",
-          "last_modified": null,
-          "created": "2026-05-26T19:30:54.361386",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "6d0aade6-4f4f-4a89-b6c3-6b789319eaa8",
+          "id": "26dc0767-3709-418f-8bd6-331f808af5cd",
           "name": "Pre-packaged GeoTIF files (No linguistic component)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:30:53.849318",
+          "metadata_modified": "2026-11-12T13:30:56.097054",
           "last_modified": null,
-          "created": "2026-05-26T19:30:54.361393",
+          "created": "2026-11-12T13:30:56.167716",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "cadfc5f6-fc46-4a68-96e4-ec5a8979c3c5",
-          "name": "National Agroclimate Series of Derived Indicators (NASDI)",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:30:53.849238",
-          "last_modified": null,
-          "created": "2026-05-26T19:30:54.361391",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "df398d78-0e49-4884-a386-6f02c1a1b5bd",
+          "id": "35d40b87-db09-43e1-81b8-ecf7ee5d14f1",
           "name": "Data Product Specification (English)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:30:53.849422",
+          "metadata_modified": "2026-11-12T13:30:56.097129",
           "last_modified": null,
-          "created": "2026-05-26T19:30:54.361394",
+          "created": "2026-11-12T13:30:56.167718",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "db072c11-3213-48a9-85e1-33c094ff7c15",
+          "name": "National Agroclimate Series of Derived Indicators (NASDI)",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:30:56.096879",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:56.167710",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -7511,71 +7511,71 @@
       "package_name": "3b1e3395-287f-4d2e-a851-b2ea2963d5e2",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Accumulated precipitation (mm)",
       "metadata_created": "2026-05-26T19:31:11.437776",
-      "metadata_modified": "2026-07-27T16:31:13.262457",
+      "metadata_modified": "2026-11-12T13:31:05.357374",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "247f6b1e-bf0d-438b-bf8a-a06a9d76df9b",
-          "name": "Data Product Specification (French)",
-          "format": "PDF",
-          "metadata_modified": "2026-07-27T16:31:13.255988",
-          "last_modified": null,
-          "created": "2026-07-27T16:31:13.339279",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "4a058f8d-f6bb-4a1b-9c1c-22285c15e11e",
+          "id": "023f0d40-4d00-4c2d-8cce-f93aa92b53ef",
           "name": "Accumulated precipitation (mm)",
           "format": "ESRI REST",
-          "metadata_modified": "2026-07-27T16:31:13.256283",
+          "metadata_modified": "2026-11-12T13:31:05.349968",
           "last_modified": null,
-          "created": "2026-07-27T16:31:13.339289",
+          "created": "2026-11-12T13:31:05.419014",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "5321561a-1f59-496d-b840-0d250e5de5cd",
+          "id": "517bf02f-2b2c-4556-b5e8-6960a95cd9cd",
           "name": "Pre-packaged GeoTIF files (monthly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-07-27T16:31:13.256066",
+          "metadata_modified": "2026-11-12T13:31:05.349749",
           "last_modified": null,
-          "created": "2026-07-27T16:31:13.339282",
+          "created": "2026-11-12T13:31:05.419010",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "54337652-b273-470d-a6d5-57b80a94db77",
+          "id": "57759cf5-ab87-4577-a325-3b8fe1535692",
           "name": "Data Product Specification (English)",
           "format": "PDF",
-          "metadata_modified": "2026-07-27T16:31:13.255896",
+          "metadata_modified": "2026-11-12T13:31:05.349578",
           "last_modified": null,
-          "created": "2026-07-27T16:31:13.339272",
+          "created": "2026-11-12T13:31:05.419004",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "7165f958-bba5-42f3-9339-be2d673b0126",
+          "id": "ba738951-fab0-41e3-82a6-4e4b3a569eb0",
           "name": "Accumulated precipitation (mm)",
           "format": "ESRI REST",
-          "metadata_modified": "2026-07-27T16:31:13.256213",
+          "metadata_modified": "2026-11-12T13:31:05.349896",
           "last_modified": null,
-          "created": "2026-07-27T16:31:13.339287",
+          "created": "2026-11-12T13:31:05.419013",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "726063c5-46a7-4360-9b0c-af16c8a8210b",
+          "id": "c6d090a9-4bc3-4ddd-9ee4-410543160588",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-07-27T16:31:13.256140",
+          "metadata_modified": "2026-11-12T13:31:05.349823",
           "last_modified": null,
-          "created": "2026-07-27T16:31:13.339284",
+          "created": "2026-11-12T13:31:05.419012",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "d36faa50-cc4c-4d29-8838-600be51d1e87",
+          "name": "Data Product Specification (French)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:05.349670",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:05.419009",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -13729,60 +13729,71 @@
       "package_name": "61a9c48e-d7a0-47d4-945d-93a88ab55d68",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Difference from normal temperature",
       "metadata_created": "2026-05-26T19:30:57.449212",
-      "metadata_modified": "2026-08-21T17:00:54.887471",
+      "metadata_modified": "2026-11-12T13:30:58.331230",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "090580f6-9307-4d8a-9fbe-658c2dbbb66d",
-          "name": "Mean Temperature Difference From Normal",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-08-21T17:00:54.881887",
-          "last_modified": null,
-          "created": "2026-08-21T17:00:54.941580",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "26ef9684-5588-4b20-b00f-43539df65504",
-          "name": "Mean Temperature Difference From Normal",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-08-21T17:00:54.881795",
-          "last_modified": null,
-          "created": "2026-08-21T17:00:54.941575",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "6f8ed8d2-720f-4366-8e5e-494332af6e21",
-          "name": "Data Product Specification (French)",
-          "format": "PDF",
-          "metadata_modified": "2026-08-21T17:00:54.882113",
-          "last_modified": null,
-          "created": "2026-08-21T17:00:54.941584",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "7f76cf56-5563-411e-bc63-f8ad4e7c6791",
-          "name": "Data Product Specification (English)",
-          "format": "PDF",
-          "metadata_modified": "2026-08-21T17:00:54.882040",
-          "last_modified": null,
-          "created": "2026-08-21T17:00:54.941583",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "933b0db0-7ce0-40bc-a1ff-5c0fc67a2377",
+          "id": "163c11fb-b228-49b5-9dc9-ac7ab5f258ee",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-08-21T17:00:54.881965",
+          "metadata_modified": "2026-11-12T13:30:58.325650",
           "last_modified": null,
-          "created": "2026-08-21T17:00:54.941582",
+          "created": "2026-11-12T13:30:58.382535",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "389cff6e-1653-497d-8efe-6b16e3235886",
+          "name": "Data Product Specification (English)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:30:58.325728",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:58.382536",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "6be0933f-ea59-4f23-9233-6f7bea065842",
+          "name": "Mean Temperature Difference From Normal",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:30:58.325438",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:58.382528",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "9765943b-2850-4f19-a7d4-3df3cdce4295",
+          "name": "Data Product Specification (French)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:30:58.325803",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:58.382537",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "c670eae0-fbb7-4a67-82ef-bfaf477f5448",
+          "name": "Pre-packaged GeoTIF files (monthly)",
+          "format": "GeoTIF",
+          "metadata_modified": "2026-11-12T13:30:58.325877",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:58.382538",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "db51e80d-c0c6-4ff2-b750-450de32b43b8",
+          "name": "Mean Temperature Difference From Normal",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:30:58.325536",
+          "last_modified": null,
+          "created": "2026-11-12T13:30:58.382533",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -20708,71 +20719,71 @@
       "package_name": "9704ceb1-287e-42ed-a04d-39ca4154b99f",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Standardized Precipitation Evapotranspiration Index (SPEI)",
       "metadata_created": "2026-05-26T19:31:04.467979",
-      "metadata_modified": "2026-05-26T19:31:04.918636",
+      "metadata_modified": "2026-11-12T13:31:00.692139",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "0470fd88-2e1f-4b4b-b002-cbeb76a10c08",
+          "id": "114b4879-58fd-4e7d-b531-2646612d5bdc",
+          "name": "Standardized precipitation evapotranspiration index (SPEI)",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:00.680565",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:00.776417",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "3de3fedc-d092-439d-b97c-3dcd07b26b59",
           "name": "Pre-packaged GeoTIF files (monthly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:04.464077",
+          "metadata_modified": "2026-11-12T13:31:00.681161",
           "last_modified": null,
-          "created": "2026-05-26T19:31:04.877411",
+          "created": "2026-11-12T13:31:00.776429",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "2665e6ad-f59b-4a35-ae49-d309121f0517",
-          "name": "Pre-packaged GeoTIF files (weekly)",
-          "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:04.463949",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:04.877409",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "2aad27b2-8336-40b2-8e2b-6f2f20311645",
+          "id": "aa4e7447-cbf9-4221-9458-7dc3a09ce742",
           "name": "Standardized precipitation evapotranspiration index (SPEI)",
           "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:04.463621",
+          "metadata_modified": "2026-11-12T13:31:00.680700",
           "last_modified": null,
-          "created": "2026-05-26T19:31:04.877399",
+          "created": "2026-11-12T13:31:00.776423",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "a4e4cd65-f574-4587-8718-1aa48d889d52",
-          "name": "Standardized precipitation evapotranspiration index (SPEI)",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:04.463707",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:04.877405",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "c1dbc32a-26f6-4e61-8ff0-12380d37c28c",
+          "id": "b9a44cbc-4d4d-41d4-9fb2-6982ae3b75d5",
           "name": "Data Product Specification (English)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:04.463780",
+          "metadata_modified": "2026-11-12T13:31:00.680784",
           "last_modified": null,
-          "created": "2026-05-26T19:31:04.877407",
+          "created": "2026-11-12T13:31:00.776425",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "d99eae2a-8784-48d5-b702-a4312ca9fca8",
+          "id": "cacee9ec-cd75-43d8-a2b7-ba826774f7a0",
+          "name": "Pre-packaged GeoTIF files (weekly)",
+          "format": "GeoTIF",
+          "metadata_modified": "2026-11-12T13:31:00.680936",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:00.776428",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "d58a7ae0-610e-41c8-94ba-1cace762990e",
           "name": "Data Product Specification (French)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:04.463850",
+          "metadata_modified": "2026-11-12T13:31:00.680862",
           "last_modified": null,
-          "created": "2026-05-26T19:31:04.877408",
+          "created": "2026-11-12T13:31:00.776426",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -29044,71 +29055,71 @@
       "package_name": "c6f0b591-881f-4fb4-a3ff-3944c8b5c21b",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Precipitation percentiles",
       "metadata_created": "2026-05-26T19:31:18.223879",
-      "metadata_modified": "2026-07-27T16:31:16.337250",
+      "metadata_modified": "2026-11-12T13:31:12.262740",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "29e82b97-1c31-49ad-967c-f1b8ff43e25e",
-          "name": "Pre-packaged GeoTIF files (monthly)",
-          "format": "GeoTIF",
-          "metadata_modified": "2026-07-27T16:31:16.333090",
-          "last_modified": null,
-          "created": "2026-07-27T16:31:16.391720",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "49a37ede-b69e-4f7a-97dc-c0c288f5da78",
-          "name": "Data Product Specification (French)",
-          "format": "PDF",
-          "metadata_modified": "2026-07-27T16:31:16.333013",
-          "last_modified": null,
-          "created": "2026-07-27T16:31:16.391718",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "6a5c062c-8666-4a63-ba14-eec69fe12560",
+          "id": "00e8ea77-773d-4455-aa9e-944de8df5e51",
           "name": "Data Product Specification (English)",
           "format": "PDF",
-          "metadata_modified": "2026-07-27T16:31:16.332924",
+          "metadata_modified": "2026-11-12T13:31:12.256421",
           "last_modified": null,
-          "created": "2026-07-27T16:31:16.391712",
+          "created": "2026-11-12T13:31:12.310954",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "c1e5dc50-d9f3-4e63-b7b0-1ef26b614066",
-          "name": "Precipitation percentiles",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-07-27T16:31:16.333239",
-          "last_modified": null,
-          "created": "2026-07-27T16:31:16.391723",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "c35c834d-2f3e-46e3-bb50-0a8351f66b34",
+          "id": "20927665-0e1d-445e-bb2d-d90a481cee78",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-07-27T16:31:16.333165",
+          "metadata_modified": "2026-11-12T13:31:12.256682",
           "last_modified": null,
-          "created": "2026-07-27T16:31:16.391721",
+          "created": "2026-11-12T13:31:12.310967",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "d4c765b1-1990-4b28-99ad-6423d6edb9ec",
+          "id": "6df394a8-2128-4781-b58c-0f436a1d5e3e",
           "name": "Precipitation percentiles",
           "format": "ESRI REST",
-          "metadata_modified": "2026-07-27T16:31:16.333312",
+          "metadata_modified": "2026-11-12T13:31:12.256754",
           "last_modified": null,
-          "created": "2026-07-27T16:31:16.391725",
+          "created": "2026-11-12T13:31:12.310969",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "6f82fb40-919a-4825-8f1b-d18669c56503",
+          "name": "Precipitation percentiles",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:12.256825",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:12.310971",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "bcb8b2fe-ace8-4b76-928a-4b5f59b3ff61",
+          "name": "Data Product Specification (French)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:12.256526",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:12.310963",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "bfcf34b0-ed91-43ee-b9f1-3e5bd346eaf8",
+          "name": "Pre-packaged GeoTIF files (monthly)",
+          "format": "GeoTIF",
+          "metadata_modified": "2026-11-12T13:31:12.256606",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:12.310965",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -30285,71 +30296,71 @@
       "package_name": "cdc59a23-ca37-4645-b96d-4e7737404e54",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Standardized Precipitation Index (SPI)",
       "metadata_created": "2026-05-26T19:31:14.864884",
-      "metadata_modified": "2026-05-26T19:31:15.186237",
+      "metadata_modified": "2026-11-12T13:31:10.022569",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "2955acb6-77cc-43da-b0ab-ab62fae5b034",
-          "name": "Data Product Specification (English)",
-          "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:14.860757",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:15.157768",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "48ea9035-c23c-4832-93cc-6289f30cc764",
+          "id": "1f4deeb7-49fb-4d68-8d7f-82cdb93b32a1",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:14.860678",
+          "metadata_modified": "2026-11-12T13:31:10.017294",
           "last_modified": null,
-          "created": "2026-05-26T19:31:15.157765",
+          "created": "2026-11-12T13:31:10.092328",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "4fc3b73d-c573-4ab9-8f7c-9d5c567aa773",
-          "name": "Data Product Specification (French)",
-          "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:14.860830",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:15.157770",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "541a7ee2-bf31-4c27-94be-c709bb56a91a",
+          "id": "455bfca3-0007-48de-ab65-fadb88d386f1",
           "name": "Standardized precipitation index (SPI)",
           "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:14.860902",
+          "metadata_modified": "2026-11-12T13:31:10.017617",
           "last_modified": null,
-          "created": "2026-05-26T19:31:15.157773",
+          "created": "2026-11-12T13:31:10.092333",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "594c9a23-e445-4cac-a9d2-8b8f2033b107",
+          "id": "6dca6b06-590f-4d9b-8b4d-bfcaa32d6e70",
+          "name": "Standardized precipitation index (SPI)",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:10.017545",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:10.092332",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "7dd4e1c8-db55-484b-93df-36d3cdbbe080",
           "name": "Pre-packaged GeoTIF files (monthly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:14.860568",
+          "metadata_modified": "2026-11-12T13:31:10.017201",
           "last_modified": null,
-          "created": "2026-05-26T19:31:15.157758",
+          "created": "2026-11-12T13:31:10.092321",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "77fff466-7f7e-4b1e-b3b9-956024b5a8ae",
-          "name": "Standardized precipitation index (SPI)",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:14.860973",
+          "id": "8cf35616-ab91-44ae-8939-556cd98d6fc0",
+          "name": "Data Product Specification (French)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:10.017471",
           "last_modified": null,
-          "created": "2026-05-26T19:31:15.157775",
+          "created": "2026-11-12T13:31:10.092331",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "932b6995-f0cc-48ae-8315-16da250dfa4e",
+          "name": "Data Product Specification (English)",
+          "format": "PDF",
+          "metadata_modified": "2026-11-12T13:31:10.017396",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:10.092329",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -32275,71 +32286,71 @@
       "package_name": "e1807beb-19fe-4792-b030-824c7d820b95",
       "title": "National Agroclimate Series of Derived Indicators (NASDI) - Difference from average precipitation",
       "metadata_created": "2026-05-26T19:31:00.968185",
-      "metadata_modified": "2026-05-26T19:31:01.333808",
+      "metadata_modified": "2026-11-12T13:31:03.056735",
       "frequency": "as_needed",
       "resources": [
         {
-          "id": "106e05f1-8d68-4a26-97a0-52687d39cbfc",
+          "id": "8e88d2d7-be78-43fe-b434-49db6d45bbcc",
+          "name": "Difference from average precipitation",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:03.051214",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:03.119727",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "95006ed7-b0e0-49b5-b323-173e84fb921f",
           "name": "Pre-packaged GeoTIF files (weekly)",
           "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:00.964065",
+          "metadata_modified": "2026-11-12T13:31:03.051530",
           "last_modified": null,
-          "created": "2026-05-26T19:31:01.286799",
+          "created": "2026-11-12T13:31:03.119732",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "6d146bf9-7705-4ae7-aa54-64d973928fa2",
-          "name": "Pre-packaged GeoTIF files (monthly)",
-          "format": "GeoTIF",
-          "metadata_modified": "2026-05-26T19:31:00.963992",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:01.286798",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "8033e722-f5b5-4074-a95b-594feb68ae57",
+          "id": "a439aee7-6260-4f01-9d4f-d4c36aed834a",
           "name": "Data Product Specification (English)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:00.963917",
+          "metadata_modified": "2026-11-12T13:31:03.051383",
           "last_modified": null,
-          "created": "2026-05-26T19:31:01.286797",
+          "created": "2026-11-12T13:31:03.119730",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
         },
         {
-          "id": "85177548-76bb-4bca-b895-26f53eb9ad88",
-          "name": "Difference from average precipitation",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:00.963659",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:01.286787",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "e65ab156-eeca-4acb-abf3-44168fa455b9",
-          "name": "Difference from average precipitation",
-          "format": "ESRI REST",
-          "metadata_modified": "2026-05-26T19:31:00.963762",
-          "last_modified": null,
-          "created": "2026-05-26T19:31:01.286794",
-          "expected_update_date": null,
-          "days_until_expected_update": null,
-          "freshness_status": "unknown"
-        },
-        {
-          "id": "f49b38dd-1ca6-450c-b8c4-387c7be64621",
+          "id": "e7380a06-f8bd-42d9-99a0-f000c47f60bd",
           "name": "Data Product Specification (French)",
           "format": "PDF",
-          "metadata_modified": "2026-05-26T19:31:00.963842",
+          "metadata_modified": "2026-11-12T13:31:03.051293",
           "last_modified": null,
-          "created": "2026-05-26T19:31:01.286796",
+          "created": "2026-11-12T13:31:03.119728",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "f13fb260-e4f3-4a3a-80f4-69652f743241",
+          "name": "Pre-packaged GeoTIF files (monthly)",
+          "format": "GeoTIF",
+          "metadata_modified": "2026-11-12T13:31:03.051458",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:03.119731",
+          "expected_update_date": null,
+          "days_until_expected_update": null,
+          "freshness_status": "unknown"
+        },
+        {
+          "id": "f9ca39cd-be04-46b5-854e-1967ef6b597b",
+          "name": "Difference from average precipitation",
+          "format": "ESRI REST",
+          "metadata_modified": "2026-11-12T13:31:03.051119",
+          "last_modified": null,
+          "created": "2026-11-12T13:31:03.119704",
           "expected_update_date": null,
           "days_until_expected_update": null,
           "freshness_status": "unknown"
@@ -72509,7 +72520,7 @@
       "package_name": "c73dde6e-a35d-4453-a0ec-c92c8fa10183",
       "title": "Food Safety Action Plan Targeted Survey - Polycyclic Aromatic Hydrocarbons in Selected Foods - 2014/15 to 2017/18",
       "metadata_created": "2026-11-04T18:33:21.291274",
-      "metadata_modified": "2026-11-11T14:41:25.078811",
+      "metadata_modified": "2026-11-12T14:41:00.520990",
       "frequency": "not_planned",
       "resources": [
         {
@@ -663681,7 +663692,7 @@
       "package_name": "7ca30e18-619a-457a-8ee2-b9cc78938cad",
       "title": "Old Age Security Monthly Statistics",
       "metadata_created": "2026-09-25T18:12:24.406789",
-      "metadata_modified": "2026-11-11T14:31:11.061321",
+      "metadata_modified": "2026-11-12T14:30:50.619317",
       "frequency": "P1M",
       "resources": [
         {
@@ -663751,8 +663762,8 @@
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -674037,7 +674048,7 @@
       "package_name": "dfa4daf1-669e-4514-82cd-982f27707ed0",
       "title": "Old Age Security (OAS) - Table of Benefit Amounts by marital status and income level",
       "metadata_created": "2016-09-25T15:28:20.763069",
-      "metadata_modified": "2026-11-11T14:51:17.533478",
+      "metadata_modified": "2026-11-12T14:50:47.855032",
       "frequency": "P3M",
       "resources": [
         {
@@ -674173,8 +674184,8 @@
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -677901,7 +677912,7 @@
       "package_name": "f064a144-b4e0-4e9b-9970-e0fc2f84d1a8",
       "title": "Canada Pension Plan (CPP) and Old Age Security (OAS) - Annual Statistics Tables",
       "metadata_created": "2016-09-26T17:04:00.224020",
-      "metadata_modified": "2026-11-11T14:51:24.055239",
+      "metadata_modified": "2026-11-12T14:50:55.397207",
       "frequency": "P1Y",
       "resources": [
         {
@@ -678081,8 +678092,8 @@
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-11-11",
-      "days_until_expected_update": 364,
+      "expected_update_date": "2027-11-12",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -830580,95 +830591,95 @@
       "package_name": "0032ce54-c5dd-4b66-99a0-320a7b5e99f2",
       "title": "Federal Corporations",
       "metadata_created": "2016-09-23T23:24:00.007677",
-      "metadata_modified": "2026-11-11T14:02:10.628310",
+      "metadata_modified": "2026-11-12T14:01:55.797568",
       "frequency": "P1D",
       "resources": [
         {
           "id": "7801dcbb-c2d1-4928-b78d-fd32c32d90c3",
           "name": "Other active corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.785990",
-          "last_modified": "2026-11-11T11:06:43.831865",
+          "metadata_modified": "2026-11-12T11:11:50.892678",
+          "last_modified": "2026-11-12T11:07:11.351366",
           "created": "2026-05-07T20:52:03.822026",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "7b6dd154-aa04-46ce-8880-ce4a5fa0a680",
           "name": "Active business corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.785819",
-          "last_modified": "2026-11-11T11:06:31.285467",
+          "metadata_modified": "2026-11-12T11:11:50.892471",
+          "last_modified": "2026-11-12T11:06:58.436066",
           "created": "2026-05-07T20:41:49.953029",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "95b36c01-e21b-4a8a-8bdf-0c128928dc27",
           "name": "Inactive business corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.786039",
-          "last_modified": "2026-11-11T11:06:37.731562",
+          "metadata_modified": "2026-11-12T11:11:50.892727",
+          "last_modified": "2026-11-12T11:07:04.929501",
           "created": "2026-05-07T20:52:04.682938",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "96b12d9e-f562-4fbd-bf42-d200e496e3d7",
           "name": "Other inactive corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.786182",
-          "last_modified": "2026-11-11T11:06:49.479709",
+          "metadata_modified": "2026-11-12T11:11:50.892900",
+          "last_modified": "2026-11-12T11:07:17.429896",
           "created": "2026-05-07T21:01:49.565289",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "a1cbafa3-df2b-44c9-8488-833b31b76e01",
           "name": "Active business corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.785887",
-          "last_modified": "2026-11-11T11:06:42.471390",
+          "metadata_modified": "2026-11-12T11:11:50.892570",
+          "last_modified": "2026-11-12T11:07:09.874631",
           "created": "2026-05-07T20:41:49.953032",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "b84ce3e2-8c56-4736-bb4b-06ca5042a598",
           "name": "Inactive business corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.786088",
-          "last_modified": "2026-11-11T11:06:48.157435",
+          "metadata_modified": "2026-11-12T11:11:50.892784",
+          "last_modified": "2026-11-12T11:07:15.990390",
           "created": "2026-05-07T21:01:49.565283",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "e9f89fec-428d-4a30-a9e8-fc8e42d91bf6",
           "name": "Other inactive corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.786136",
-          "last_modified": "2026-11-11T11:06:39.044692",
+          "metadata_modified": "2026-11-12T11:11:50.892850",
+          "last_modified": "2026-11-12T11:07:06.424304",
           "created": "2026-05-07T21:01:49.565287",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "eb1a8f01-b85b-4190-9aa7-65dde7c623b9",
           "name": "Other active corporations",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T11:12:10.785940",
-          "last_modified": "2026-11-11T11:06:33.270099",
+          "metadata_modified": "2026-11-12T11:11:50.892628",
+          "last_modified": "2026-11-12T11:07:00.178060",
           "created": "2026-05-07T20:52:03.822021",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
@@ -830694,8 +830705,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-12",
-      "days_until_expected_update": 0,
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
       "freshness_status": "due_soon"
     },
     {
@@ -1486013,7 +1486024,7 @@
       "package_name": "7c03f039-3753-4093-af60-74b0f7b2385d",
       "title": "Government of Canada - Consultations",
       "metadata_created": "2018-11-26T22:00:35.138219",
-      "metadata_modified": "2026-11-11T14:22:11.380091",
+      "metadata_modified": "2026-11-12T14:31:57.200012",
       "frequency": "continual",
       "resources": [
         {
@@ -1486042,8 +1486053,8 @@
           "id": "92bec4b7-6feb-4215-a5f7-61da342b2354",
           "name": "Consultations - All ",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T13:52:11.345242",
-          "last_modified": "2026-11-11T13:43:08.175131",
+          "metadata_modified": "2026-11-12T13:51:55.826783",
+          "last_modified": "2026-11-12T13:43:09.611828",
           "created": "2019-02-05T15:21:04.591199",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -1486053,8 +1486064,8 @@
           "id": "aa606d25-4387-4bc6-89eb-12d66f5e9044",
           "name": "Consultations - Last two years",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T13:52:11.345416",
-          "last_modified": "2026-11-11T13:42:01",
+          "metadata_modified": "2026-11-12T13:51:55.826955",
+          "last_modified": "2026-11-12T13:42:01",
           "created": "2019-03-01T16:33:04.753752",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -1577537,7 +1577548,7 @@
       "package_name": "e61c8587-2cc9-4775-b34e-f1041ad00410",
       "title": "Advertisements to the Public Service ",
       "metadata_created": "2022-09-08T17:53:04.192096",
-      "metadata_modified": "2026-11-11T14:51:11.115275",
+      "metadata_modified": "2026-11-12T14:40:51.214351",
       "frequency": "P3M",
       "resources": [
         {
@@ -1577695,8 +1577706,8 @@
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -1593858,51 +1593869,51 @@
       "package_name": "6abd20d4-7a1c-4b38-baa2-9525d0bb2fd2",
       "title": "CanadaBuys tender notices",
       "metadata_created": "2023-04-27T13:49:58.155363",
-      "metadata_modified": "2026-11-11T06:12:18.451891",
+      "metadata_modified": "2026-11-12T06:12:03.093633",
       "frequency": "P1D",
       "resources": [
         {
           "id": "05b804dd-11ec-4271-8d69-d6044e1a5481",
           "name": "New tender notices",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:18.441484",
-          "last_modified": "2026-11-11T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.082728",
+          "last_modified": "2026-11-12T00:00:00",
           "created": "2023-04-27T13:49:58.283352",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "5870de7c-86fe-4d05-8d73-cd412e12fdeb",
           "name": "Open tender notices",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:18.441562",
-          "last_modified": "2026-11-10T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.082797",
+          "last_modified": "2026-11-11T00:00:00",
           "created": "2023-04-27T13:49:58.283355",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "5f1d6ffe-c038-407e-afbf-94b920286b40",
           "name": "All CanadaBuys tender notices, 2022-08-08 onwards",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:18.441857",
-          "last_modified": "2026-11-10T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.083084",
+          "last_modified": "2026-11-11T00:00:00",
           "created": "2023-04-27T13:49:58.283358",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "fa0e6965-4339-4694-9f91-7b84e7216c72",
           "name": "Tender notices, 2026-2027",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:18.441617",
-          "last_modified": "2026-11-10T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.082850",
+          "last_modified": "2026-11-11T00:00:00",
           "created": "2026-04-01T10:18:56.162038",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
@@ -1593994,8 +1594005,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-12",
-      "days_until_expected_update": 0,
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
       "freshness_status": "due_soon"
     },
     {
@@ -1601144,29 +1601155,29 @@
       "package_name": "a1acb126-9ce8-40a9-b889-5da2b1dd20cb",
       "title": "CanadaBuys award notices",
       "metadata_created": "2023-04-27T13:49:54.523338",
-      "metadata_modified": "2026-11-11T06:12:19.344584",
+      "metadata_modified": "2026-11-12T06:12:04.002383",
       "frequency": "P1D",
       "resources": [
         {
           "id": "643c2420-0944-4a76-a455-e20da6493b4c",
           "name": "Award notices, 2026-2027",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:19.335364",
-          "last_modified": "2026-11-10T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.992436",
+          "last_modified": "2026-11-11T00:00:00",
           "created": "2026-04-01T10:18:56.984987",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
           "id": "ff4414ba-7d0b-40a4-8bd0-d102e83d9f32",
           "name": "All CanadaBuys award notices, 2022-08-08 onwards",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:19.335192",
-          "last_modified": "2026-11-10T00:00:00",
+          "metadata_modified": "2026-11-12T06:12:03.992279",
+          "last_modified": "2026-11-11T00:00:00",
           "created": "2023-04-27T13:49:54.827422",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         },
         {
@@ -1601280,8 +1601291,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-12",
-      "days_until_expected_update": 0,
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
       "freshness_status": "due_soon"
     },
     {
@@ -1710321,68 +1710332,68 @@
       "package_name": "1ca9756d-eec1-4779-8e53-f0b44b7afc55",
       "title": "Building permits, by type of structure and type of work",
       "metadata_created": "2025-06-11T12:46:47.604377",
-      "metadata_modified": "2026-10-14T12:48:37.930033",
+      "metadata_modified": "2026-11-12T13:48:21.976431",
       "frequency": "P1M",
       "resources": [
         {
-          "id": "500512cf-0c1d-4834-8fda-b3fa7d99e6b9",
+          "id": "525c5e05-c272-465f-9907-67ac8f53e9ae",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:21.969570",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:22.037004",
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
+        },
+        {
+          "id": "677fa133-2d37-478d-91dd-bd4ca712f86f",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-10-14T12:48:37.923075",
+          "metadata_modified": "2026-11-12T13:48:21.969666",
           "last_modified": null,
-          "created": "2026-10-14T12:48:37.968394",
-          "expected_update_date": "2026-11-14",
-          "days_until_expected_update": 2,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.037005",
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
         },
         {
-          "id": "abfa45c6-5e37-4b80-8175-ad753e810390",
+          "id": "b2a6ece9-0511-4cb2-9df8-9a47c8f167c0",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-14T12:48:37.922995",
+          "metadata_modified": "2026-11-12T13:48:21.969450",
           "last_modified": null,
-          "created": "2026-10-14T12:48:37.968392",
-          "expected_update_date": "2026-11-14",
-          "days_until_expected_update": 2,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.036998",
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
         },
         {
-          "id": "c22f7da0-145c-44e3-942f-e535828a4e6f",
+          "id": "d70f578b-1d5c-4fb3-a145-965684172c3a",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-10-14T12:48:37.923153",
+          "metadata_modified": "2026-11-12T13:48:21.969820",
           "last_modified": null,
-          "created": "2026-10-14T12:48:37.968397",
-          "expected_update_date": "2026-11-14",
-          "days_until_expected_update": 2,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.037008",
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
         },
         {
-          "id": "c5ad562b-818c-468f-97d5-fbeaeccd66a2",
+          "id": "fe57455a-80ff-4e5c-8dff-e05abaa5699f",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-10-14T12:48:37.923324",
+          "metadata_modified": "2026-11-12T13:48:21.969745",
           "last_modified": null,
-          "created": "2026-10-14T12:48:37.968399",
-          "expected_update_date": "2026-11-14",
-          "days_until_expected_update": 2,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "d39fa072-1a04-4341-805b-aaf5324528a6",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-10-14T12:48:37.922874",
-          "last_modified": null,
-          "created": "2026-10-14T12:48:37.968375",
-          "expected_update_date": "2026-11-14",
-          "days_until_expected_update": 2,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.037007",
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-11-14",
-      "days_until_expected_update": 2,
-      "freshness_status": "due_soon"
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
+      "freshness_status": "current"
     },
     {
       "name": "statcan",
@@ -1714187,68 +1714198,68 @@
       "package_name": "1e19f5e7-984f-47d7-89c9-337612a04dcb",
       "title": "Consulting Services Price Index, quarterly",
       "metadata_created": "2019-11-01T12:47:23.945395",
-      "metadata_modified": "2026-08-13T12:48:23.883301",
+      "metadata_modified": "2026-11-12T13:48:22.612111",
       "frequency": "P3M",
       "resources": [
         {
-          "id": "070cc78e-01f1-4603-b9e9-f9a407eead83",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-08-13T12:48:23.876411",
+          "id": "447b3b1f-ccb4-486f-96fa-45727f58145b",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:22.607763",
           "last_modified": null,
-          "created": "2026-08-13T12:48:23.927584",
-          "expected_update_date": "2026-11-13",
-          "days_until_expected_update": 1,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.648438",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "1af78494-fb3d-402a-a2ec-3d21062bba29",
+          "id": "51788263-294a-4064-aff2-e20a54bd90fd",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-08-13T12:48:23.876237",
+          "metadata_modified": "2026-11-12T13:48:22.607480",
           "last_modified": null,
-          "created": "2026-08-13T12:48:23.927575",
-          "expected_update_date": "2026-11-13",
-          "days_until_expected_update": 1,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.648430",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "26f525f7-db69-4759-882a-8cccfcefc812",
+          "id": "73d26fec-45d5-4c25-a833-a5541984c30e",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-08-13T12:48:23.876555",
+          "metadata_modified": "2026-11-12T13:48:22.607688",
           "last_modified": null,
-          "created": "2026-08-13T12:48:23.927586",
-          "expected_update_date": "2026-11-13",
-          "days_until_expected_update": 1,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.648437",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "63f0379b-4345-4ed1-a4e7-45208f3db81c",
+          "id": "74cf95be-3147-431c-9fbd-bdf78d47228c",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-08-13T12:48:23.876836",
+          "metadata_modified": "2026-11-12T13:48:22.607836",
           "last_modified": null,
-          "created": "2026-08-13T12:48:23.927589",
-          "expected_update_date": "2026-11-13",
-          "days_until_expected_update": 1,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.648439",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "f5e4ae06-b0ad-4c24-964a-71f8ef1b52bc",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-08-13T12:48:23.876692",
+          "id": "f6811e5c-1a44-4e09-b9f5-f0119f3fc135",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:22.607603",
           "last_modified": null,
-          "created": "2026-08-13T12:48:23.927587",
-          "expected_update_date": "2026-11-13",
-          "days_until_expected_update": 1,
-          "freshness_status": "due_soon"
+          "created": "2026-11-12T13:48:22.648435",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-11-13",
-      "days_until_expected_update": 1,
-      "freshness_status": "due_soon"
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
+      "freshness_status": "current"
     },
     {
       "name": "statcan",
@@ -1816870,67 +1816881,67 @@
       "package_name": "441f09ce-b61a-4bbd-b29e-4f4694868d53",
       "title": "Chartered banks, regional distribution of selected assets and liabilities, at end of period, Canada, provinces and international, Bank of Canada",
       "metadata_created": "2018-06-27T14:51:19.805282",
-      "metadata_modified": "2026-09-10T12:48:35.845771",
+      "metadata_modified": "2026-11-12T13:48:25.797141",
       "frequency": "P3M",
       "resources": [
         {
-          "id": "104de881-f526-4e42-8531-9651be2a2e0c",
+          "id": "3194e730-b022-453c-b569-bc71fde0f307",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:25.790845",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:25.839910",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        },
+        {
+          "id": "609a8713-574a-4dd3-8473-dc41d1a51ef6",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:25.790528",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:25.839906",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        },
+        {
+          "id": "746898f3-d90e-4f68-a41a-afca5dcffc2b",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:25.790768",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:25.839909",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        },
+        {
+          "id": "e9671a75-bcd6-445a-804c-5203ef606a75",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-09-10T12:48:35.839900",
+          "metadata_modified": "2026-11-12T13:48:25.790687",
           "last_modified": null,
-          "created": "2026-09-10T12:48:35.881563",
-          "expected_update_date": "2026-12-10",
-          "days_until_expected_update": 28,
+          "created": "2026-11-12T13:48:25.839908",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
-          "id": "3a78427b-ffd3-4968-926a-c59ef929ac75",
+          "id": "f2df9442-0198-486f-b3a7-927e4beafbd9",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-09-10T12:48:35.839714",
+          "metadata_modified": "2026-11-12T13:48:25.790387",
           "last_modified": null,
-          "created": "2026-09-10T12:48:35.881557",
-          "expected_update_date": "2026-12-10",
-          "days_until_expected_update": 28,
-          "freshness_status": "current"
-        },
-        {
-          "id": "6fc1f97b-ac4d-4d09-a1d1-ce4faeeca4b4",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-09-10T12:48:35.840053",
-          "last_modified": null,
-          "created": "2026-09-10T12:48:35.881566",
-          "expected_update_date": "2026-12-10",
-          "days_until_expected_update": 28,
-          "freshness_status": "current"
-        },
-        {
-          "id": "7977982f-8e14-4f2f-b68b-2a84037697e3",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-09-10T12:48:35.839818",
-          "last_modified": null,
-          "created": "2026-09-10T12:48:35.881562",
-          "expected_update_date": "2026-12-10",
-          "days_until_expected_update": 28,
-          "freshness_status": "current"
-        },
-        {
-          "id": "cfd93dbf-cf59-47b3-86a4-72ab26feb2af",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-09-10T12:48:35.839978",
-          "last_modified": null,
-          "created": "2026-09-10T12:48:35.881564",
-          "expected_update_date": "2026-12-10",
-          "days_until_expected_update": 28,
+          "created": "2026-11-12T13:48:25.839901",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-12-10",
-      "days_until_expected_update": 28,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -1823165,68 +1823176,68 @@
       "package_name": "46bd8c84-ed61-47c9-b2ac-e689629a4f52",
       "title": "Leading indicator, International visitors entering or returning to Canada by air, by country of residence and traveller type",
       "metadata_created": "2022-03-02T19:26:19.253954",
-      "metadata_modified": "2026-10-13T12:49:28.155998",
+      "metadata_modified": "2026-11-12T13:48:26.445377",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "0fd73191-3e47-41e5-92b3-2696101062d3",
+          "id": "0bbca709-e1bd-406d-9110-8f3a4c6c0385",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:28.150770",
+          "metadata_modified": "2026-11-12T13:48:26.438217",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.196521",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:26.489723",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "1452a553-2bdd-44cb-b2b9-f432e86ed5a3",
+          "id": "1091702a-a0c6-478e-b2d8-89c140b34a45",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:26.438978",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:26.489733",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "adde9f35-f133-413f-a9cf-efb4af5506f6",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:28.150660",
+          "metadata_modified": "2026-11-12T13:48:26.438438",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.196517",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:26.489728",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "6d563c4d-c1cc-4ef8-af85-7738a441547c",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:28.150998",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:28.196525",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "c11d210f-f01c-4661-a05b-e5cceb5c922e",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:28.150926",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:28.196524",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "ea63c90b-cdf2-4be6-a8e4-49f8fe6ea887",
+          "id": "c0724316-b250-44bd-baee-8ae1379a4cb8",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-10-13T12:49:28.150851",
+          "metadata_modified": "2026-11-12T13:48:26.438629",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.196523",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:26.489730",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "c091c04e-2268-455d-8c59-13884414e168",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:26.438806",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:26.489731",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-14",
-      "days_until_expected_update": -29,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -1843801,68 +1843812,68 @@
       "package_name": "4e414765-29de-4189-b1ed-21de1adb2b33",
       "title": "Leading indicator, Vehicles entering Canada by land, by vehicle type and licence plate",
       "metadata_created": "2022-03-02T19:26:14.283755",
-      "metadata_modified": "2026-10-13T12:49:29.328544",
+      "metadata_modified": "2026-11-12T13:48:27.804268",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "0ec80195-9d89-42d1-9169-a45600c47697",
+          "id": "1b510275-1e13-4cca-9ce0-2541eab94cec",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:27.799722",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:27.835176",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "1d8c2ee1-8483-4140-8719-b9140bbedbce",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:27.799973",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:27.835184",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "73580ca0-6030-4ad9-b969-038dd48d73ce",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:27.799818",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:27.835181",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b0c5d816-2d0c-4f30-a385-ac8e64130a90",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-10-13T12:49:29.323336",
+          "metadata_modified": "2026-11-12T13:48:27.799897",
           "last_modified": null,
-          "created": "2026-10-13T12:49:29.367698",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:27.835182",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "2a8ce5bf-42dd-4f99-a6c6-51f9ed5735fc",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:29.323018",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.367688",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "449b0ed3-1b90-4298-ba86-cdc1744c7a05",
+          "id": "f8f1b6e0-8d06-4b3a-b003-92fab6899067",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:29.323425",
+          "metadata_modified": "2026-11-12T13:48:27.800046",
           "last_modified": null,
-          "created": "2026-10-13T12:49:29.367700",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "4bc8eb56-2390-424f-a483-6537e307aca3",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:29.323502",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.367702",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "4c6bf551-c779-439e-b008-29d03369b122",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:29.323209",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.367695",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:27.835185",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-14",
-      "days_until_expected_update": -29,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -1930557,68 +1930568,68 @@
       "package_name": "6eb2de3d-ebe2-4fa3-828f-578ba8586a9c",
       "title": "Leading indicator, International visitors entering or returning to Canada by land, by vehicle type, vehicle licence plate and traveller type",
       "metadata_created": "2022-03-02T19:26:21.720223",
-      "metadata_modified": "2026-10-13T12:49:28.724473",
+      "metadata_modified": "2026-11-12T13:48:27.134241",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "1aa0ee17-2782-48d8-9282-6fd8261efda5",
+          "id": "04dcad2d-30df-43e3-9e68-77fe9c624133",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:28.720552",
+          "metadata_modified": "2026-11-12T13:48:27.129599",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.755637",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:27.168680",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "3f0d659b-1471-4159-966a-916f40b1cb2b",
+          "id": "0cf711f5-88c3-46cf-aa27-b3f9c2c76811",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:27.129930",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:27.168696",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "12afedfc-6f74-48f5-8119-8a9618e0f8d6",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:27.129856",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:27.168694",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "426a97dc-b879-431c-8a18-750383936e2d",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:28.720459",
+          "metadata_modified": "2026-11-12T13:48:27.129701",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.755631",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:27.168689",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "9f081296-1179-46fa-ae4a-0c1a7a186993",
+          "id": "843494ae-db2a-4a01-b2e1-84dbf6d6214a",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-10-13T12:49:28.720645",
+          "metadata_modified": "2026-11-12T13:48:27.129780",
           "last_modified": null,
-          "created": "2026-10-13T12:49:28.755638",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "c624f713-2a7e-4deb-9a26-185d639b0aa9",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:28.720724",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:28.755640",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "f6674bff-60cb-4f73-badb-dbe955dbf5f3",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:28.720799",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:28.755641",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:27.168691",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-14",
-      "days_until_expected_update": -29,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -1967558,68 +1967569,68 @@
       "package_name": "7bc49326-0f4f-4622-9f7b-4c97ab4f5875",
       "title": "Residential renovation price indexes, by project",
       "metadata_created": "2024-10-25T14:04:11.966285",
-      "metadata_modified": "2026-08-11T12:51:55.555257",
+      "metadata_modified": "2026-11-12T13:48:23.259757",
       "frequency": "P3M",
       "resources": [
         {
-          "id": "4a274188-13cb-4c9e-9dfe-97e2072c1a20",
+          "id": "2d56f9a8-5af6-4f9a-8254-00a75a25ff22",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:23.255185",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:23.299760",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
+        },
+        {
+          "id": "41b48420-c6e8-4bf6-8837-f404f78152e3",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-08-11T12:51:55.550977",
+          "metadata_modified": "2026-11-12T13:48:23.255275",
           "last_modified": null,
-          "created": "2026-08-11T12:51:55.588297",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:23.299761",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "a27e0681-efee-4b9e-a85f-5a077c4526a2",
+          "id": "4bb31697-8948-4777-b66f-a2ca36924fea",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-08-11T12:51:55.550778",
+          "metadata_modified": "2026-11-12T13:48:23.255096",
           "last_modified": null,
-          "created": "2026-08-11T12:51:55.588288",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:23.299754",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "b73c418b-18a1-49b1-82ad-c462f1526e44",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-08-11T12:51:55.550873",
-          "last_modified": null,
-          "created": "2026-08-11T12:51:55.588295",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "c04c8bcb-6c33-444a-bee7-a7a1fcc1b6a4",
+          "id": "af3d9f45-0347-4420-865c-959571de4b2f",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-08-11T12:51:55.551138",
+          "metadata_modified": "2026-11-12T13:48:23.255446",
           "last_modified": null,
-          "created": "2026-08-11T12:51:55.588300",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:23.299764",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         },
         {
-          "id": "f6bc21f8-b6f0-473b-bcb7-63c35d5135a7",
+          "id": "e5c30109-9963-4696-b216-d8adc78740cd",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-08-11T12:51:55.551061",
+          "metadata_modified": "2026-11-12T13:48:23.255370",
           "last_modified": null,
-          "created": "2026-08-11T12:51:55.588298",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:23.299763",
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2026-11-11",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
+      "freshness_status": "current"
     },
     {
       "name": "statcan",
@@ -2106043,67 +2106054,67 @@
       "package_name": "aee3d2bf-743c-42c8-ad70-f057c08744f4",
       "title": "Bank of Canada, assets and liabilities, Wednesdays",
       "metadata_created": "2018-06-27T16:52:57.963370",
-      "metadata_modified": "2026-11-09T13:48:27.819523",
+      "metadata_modified": "2026-11-12T13:48:23.892310",
       "frequency": "P1W",
       "resources": [
         {
-          "id": "30aa931e-773f-4e61-a671-467b531c0fc8",
+          "id": "090f075a-34e8-44c7-aecf-2ade6cc31c55",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-11-09T13:48:27.814159",
+          "metadata_modified": "2026-11-12T13:48:23.886144",
           "last_modified": null,
-          "created": "2026-11-09T13:48:27.853472",
-          "expected_update_date": "2026-11-16",
-          "days_until_expected_update": 4,
+          "created": "2026-11-12T13:48:23.940472",
+          "expected_update_date": "2026-11-19",
+          "days_until_expected_update": 7,
           "freshness_status": "due_soon"
         },
         {
-          "id": "5fe3aab5-9287-40c4-b5b2-e44d62e32994",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-11-09T13:48:27.814027",
-          "last_modified": null,
-          "created": "2026-11-09T13:48:27.853471",
-          "expected_update_date": "2026-11-16",
-          "days_until_expected_update": 4,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "9b4b1422-0065-4b81-853f-be76c0ca0062",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-11-09T13:48:27.813590",
-          "last_modified": null,
-          "created": "2026-11-09T13:48:27.853463",
-          "expected_update_date": "2026-11-16",
-          "days_until_expected_update": 4,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "a1ab3054-0c98-4c56-959d-24034ec4232e",
+          "id": "0b275349-3114-4ee6-9455-f512388785f5",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-11-09T13:48:27.813896",
+          "metadata_modified": "2026-11-12T13:48:23.886070",
           "last_modified": null,
-          "created": "2026-11-09T13:48:27.853470",
-          "expected_update_date": "2026-11-16",
-          "days_until_expected_update": 4,
+          "created": "2026-11-12T13:48:23.940471",
+          "expected_update_date": "2026-11-19",
+          "days_until_expected_update": 7,
           "freshness_status": "due_soon"
         },
         {
-          "id": "d03f6419-c5f5-4109-ae5a-3a2d3030f337",
+          "id": "1d4eaf61-efeb-4332-81a4-4e0d30b1f119",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-11-09T13:48:27.813771",
+          "metadata_modified": "2026-11-12T13:48:23.885991",
           "last_modified": null,
-          "created": "2026-11-09T13:48:27.853468",
-          "expected_update_date": "2026-11-16",
-          "days_until_expected_update": 4,
+          "created": "2026-11-12T13:48:23.940469",
+          "expected_update_date": "2026-11-19",
+          "days_until_expected_update": 7,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "8a497e5d-fa73-4d99-aef9-2ce8586c322f",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:23.885902",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:23.940463",
+          "expected_update_date": "2026-11-19",
+          "days_until_expected_update": 7,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b2c1a4bf-fb81-497d-8ef6-a26b13f0964c",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:23.886216",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:23.940473",
+          "expected_update_date": "2026-11-19",
+          "days_until_expected_update": 7,
           "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-16",
-      "days_until_expected_update": 4,
+      "expected_update_date": "2026-11-19",
+      "days_until_expected_update": 7,
       "freshness_status": "due_soon"
     },
     {
@@ -2111163,68 +2111174,68 @@
       "package_name": "b0abb94e-c90f-4598-9725-de2789574119",
       "title": "Leading indicator, Trucks and drivers entering or returning to Canada, by vehicle licence plate",
       "metadata_created": "2022-03-02T19:26:16.950070",
-      "metadata_modified": "2026-10-13T12:49:29.929304",
+      "metadata_modified": "2026-11-12T13:48:28.644240",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "126d3539-e485-4023-a504-a608d4c49620",
+          "id": "13bb1886-2641-4a9a-afb9-2f25a79cab35",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:29.923964",
+          "metadata_modified": "2026-11-12T13:48:28.640381",
           "last_modified": null,
-          "created": "2026-10-13T12:49:29.966737",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:28.683943",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "88b5c17c-d629-4c3e-85a4-bb01e622179a",
+          "id": "1ef49c1e-0f23-4c0b-8e71-2a843c413bc5",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:28.640069",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:28.683934",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "257f7644-6f46-4b7a-ae1f-7511d1a9abc5",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:28.640158",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:28.683939",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "9345ec99-eff7-481a-adb1-0aa16b7311e0",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:28.640309",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:28.683942",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "fc23a548-8af0-431f-96b6-4a98fec53589",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-10-13T12:49:29.923876",
+          "metadata_modified": "2026-11-12T13:48:28.640235",
           "last_modified": null,
-          "created": "2026-10-13T12:49:29.966736",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "cd7852fd-597e-4573-87d4-afe14870ca83",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-10-13T12:49:29.924040",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.966738",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "ea673cdf-601a-4038-be79-f708333fdaad",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:29.923675",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.966729",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
-        },
-        {
-          "id": "fecc8d01-71be-4314-a5ff-074c8e6291c1",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-10-13T12:49:29.923772",
-          "last_modified": null,
-          "created": "2026-10-13T12:49:29.966735",
-          "expected_update_date": "2026-10-14",
-          "days_until_expected_update": -29,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:28.683941",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-10-14",
-      "days_until_expected_update": -29,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -2142901,68 +2142912,68 @@
       "package_name": "bb66787c-9509-456d-bd72-5016abdf39c5",
       "title": "Daily average foreign exchange rates in Canadian dollars, Bank of Canada",
       "metadata_created": "2018-06-27T14:23:30.677171",
-      "metadata_modified": "2026-11-10T13:49:16.650420",
+      "metadata_modified": "2026-11-12T13:48:21.311852",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "1fe252d8-d5a5-4b37-94d8-3d550e423d19",
+          "id": "094ea8c8-edd9-47a3-93fe-e79d12df54cb",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-11-10T13:49:16.646532",
+          "metadata_modified": "2026-11-12T13:48:21.306767",
           "last_modified": null,
-          "created": "2026-11-10T13:49:16.693708",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:21.359212",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "4fc9f12f-9afe-4fb1-9421-ce86824655c8",
+          "id": "490f03d6-f91f-43bd-8606-27244b0b15c0",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-11-10T13:49:16.646247",
+          "metadata_modified": "2026-11-12T13:48:21.306499",
           "last_modified": null,
-          "created": "2026-11-10T13:49:16.693703",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:21.359208",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "a740128f-40ea-452e-910a-b65754a8a48e",
+          "id": "a3ef96dc-00fd-404e-b4db-0dc96a11fcf9",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-11-10T13:49:16.646457",
+          "metadata_modified": "2026-11-12T13:48:21.306691",
           "last_modified": null,
-          "created": "2026-11-10T13:49:16.693706",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:21.359210",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "c5dbd80a-a8b0-487b-a40a-288dfe258869",
+          "id": "bb32a96a-01f5-4d8c-a35a-01e2d7491038",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:21.306402",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:21.359202",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "ebfc7329-6165-4a3f-addd-953c944082cf",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-11-10T13:49:16.646367",
+          "metadata_modified": "2026-11-12T13:48:21.306608",
           "last_modified": null,
-          "created": "2026-11-10T13:49:16.693705",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "fc7c2341-b547-4a2f-83ae-12b5915afb44",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T13:49:16.646158",
-          "last_modified": null,
-          "created": "2026-11-10T13:49:16.693698",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:21.359209",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-11",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -2215858,68 +2215869,68 @@
       "package_name": "d5ffb2fb-3607-4bda-8f74-2f7b264a9a85",
       "title": "Bank of Canada, money market and other interest rates",
       "metadata_created": "2018-06-27T16:53:43.033739",
-      "metadata_modified": "2026-11-10T13:49:15.239632",
+      "metadata_modified": "2026-11-12T13:48:24.547611",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "04c46ec3-afe2-4378-947a-543c44e94997",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T13:49:15.234932",
-          "last_modified": null,
-          "created": "2026-11-10T13:49:15.278493",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "18104d99-f167-41de-87ef-c371f1de5491",
+          "id": "06546f8d-771c-470e-9090-b83ebd9507eb",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-11-10T13:49:15.235085",
+          "metadata_modified": "2026-11-12T13:48:24.543149",
           "last_modified": null,
-          "created": "2026-11-10T13:49:15.278496",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:24.586170",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "a663358d-5d5e-47f5-bd0b-9f3089d2e449",
+          "id": "4f83f323-d474-4c7c-849c-31445cbf162b",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:24.542907",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:24.586162",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "4f8c1c18-a04e-4982-a8b5-4067f0e98401",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:24.542995",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:24.586167",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "7f5e843b-cb64-43d2-a5b3-8680b7157aee",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:24.543223",
+          "last_modified": null,
+          "created": "2026-11-12T13:48:24.586171",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "ccde87f8-e511-4d3f-b66d-9e34ec6a9a7f",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-11-10T13:49:15.235010",
+          "metadata_modified": "2026-11-12T13:48:24.543073",
           "last_modified": null,
-          "created": "2026-11-10T13:49:15.278494",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "bd62535c-a687-407e-9713-613f32b8c965",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-11-10T13:49:15.235158",
-          "last_modified": null,
-          "created": "2026-11-10T13:49:15.278497",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "bdad3bf1-ee10-4edc-848d-75b2f30d0125",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T13:49:15.234843",
-          "last_modified": null,
-          "created": "2026-11-10T13:49:15.278486",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:24.586169",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-11",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -2258172,68 +2258183,68 @@
       "package_name": "e647bbe8-8c57-40de-b159-db45983bf883",
       "title": "Canada's official international reserves, millions of United States dollars, Bank of Canada, daily",
       "metadata_created": "2018-06-27T15:02:49.098457",
-      "metadata_modified": "2026-11-05T13:49:06.190966",
+      "metadata_modified": "2026-11-12T13:48:25.174483",
       "frequency": "P1D",
       "resources": [
         {
-          "id": "110a6725-2831-453b-986b-3e9f3577e507",
+          "id": "5afb6814-acb3-4930-90fe-206dbe9bfe99",
           "name": "Dataset",
           "format": "CSV",
-          "metadata_modified": "2026-11-05T13:49:06.185750",
+          "metadata_modified": "2026-11-12T13:48:25.168997",
           "last_modified": null,
-          "created": "2026-11-05T13:49:06.223720",
-          "expected_update_date": "2026-11-06",
-          "days_until_expected_update": -6,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:25.215359",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "4f09d22b-d5ac-47bf-a28d-5ce5b1916d26",
-          "name": "Dataset",
-          "format": "CSV",
-          "metadata_modified": "2026-11-05T13:49:06.185843",
+          "id": "60faf086-f01c-42c0-bbcc-bfdb566d6780",
+          "name": "Supporting Document",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:48:25.169272",
           "last_modified": null,
-          "created": "2026-11-05T13:49:06.223730",
-          "expected_update_date": "2026-11-06",
-          "days_until_expected_update": -6,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:25.215362",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "820dfd37-989e-4e3f-aea7-2bbc17395fae",
+          "id": "aec45b80-c4c3-4455-9eb3-c57a44a16a07",
           "name": "Dataset",
           "format": "XML",
-          "metadata_modified": "2026-11-05T13:49:06.185922",
+          "metadata_modified": "2026-11-12T13:48:25.169137",
           "last_modified": null,
-          "created": "2026-11-05T13:49:06.223735",
-          "expected_update_date": "2026-11-06",
-          "days_until_expected_update": -6,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:25.215361",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "d7074a87-c526-45ff-98e2-d8e48f345c12",
+          "id": "b6fa6fe9-35b1-4a2f-a1f1-1e04fd8964ea",
           "name": "Supporting Document",
           "format": "HTML",
-          "metadata_modified": "2026-11-05T13:49:06.186073",
+          "metadata_modified": "2026-11-12T13:48:25.169412",
           "last_modified": null,
-          "created": "2026-11-05T13:49:06.223743",
-          "expected_update_date": "2026-11-06",
-          "days_until_expected_update": -6,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:25.215363",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         },
         {
-          "id": "f278a2c6-ec8e-40e0-aa48-b17ab194cba8",
-          "name": "Supporting Document",
-          "format": "HTML",
-          "metadata_modified": "2026-11-05T13:49:06.185998",
+          "id": "ea8122bc-227f-46d0-a656-dc71b34db0ac",
+          "name": "Dataset",
+          "format": "CSV",
+          "metadata_modified": "2026-11-12T13:48:25.168832",
           "last_modified": null,
-          "created": "2026-11-05T13:49:06.223739",
-          "expected_update_date": "2026-11-06",
-          "days_until_expected_update": -6,
-          "freshness_status": "late"
+          "created": "2026-11-12T13:48:25.215353",
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
+          "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-06",
-      "days_until_expected_update": -6,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
+      "freshness_status": "due_soon"
     },
     {
       "name": "statcan",
@@ -2330182,29 +2330193,29 @@
       "package_name": "009f9a49-c2d9-4d29-a6d4-1a228da335ce",
       "title": "Proactive Disclosure - Travel Expenses",
       "metadata_created": "2017-02-20T20:30:25.376849",
-      "metadata_modified": "2026-11-11T14:02:00.275835",
+      "metadata_modified": "2026-11-12T14:01:42.626959",
       "frequency": "P1M",
       "resources": [
         {
           "id": "8282db2a-878f-475c-af10-ad56aa8fa72c",
           "name": "Proactive Disclosure - Travel Expenses",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:08:17.855369",
-          "last_modified": "2026-11-11T06:57:32.903968",
+          "metadata_modified": "2026-11-12T09:02:01.240710",
+          "last_modified": "2026-11-12T06:59:55.919291",
           "created": "2017-02-20T15:30:25.718137",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
           "id": "d3f883ce-4133-48da-bc76-c6b063d257a2",
           "name": "Proactive Disclosure - Travel Expenses Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:08:17.855440",
-          "last_modified": "2026-11-11T06:57:45.367493",
+          "metadata_modified": "2026-11-12T09:02:01.240786",
+          "last_modified": "2026-11-12T07:00:08.543165",
           "created": "2017-04-19T10:10:12.182040",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
@@ -2330285,8 +2330296,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -2330729,18 +2330740,18 @@
       "package_name": "059f7416-cfb3-44e9-a6f8-4c5f74bd5b4f",
       "title": "6th National Action Plan on Open Government Reporting Data",
       "metadata_created": "2026-06-03T14:42:28.006577",
-      "metadata_modified": "2026-11-11T14:01:42.598659",
+      "metadata_modified": "2026-11-12T14:01:35.205863",
       "frequency": "P3M",
       "resources": [
         {
           "id": "c515847c-9209-4841-8207-1afc412b5791",
           "name": "NAP data",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:15.686591",
-          "last_modified": "2026-11-11T06:56:28.509715",
+          "metadata_modified": "2026-11-12T09:01:51.702944",
+          "last_modified": "2026-11-12T06:58:47.649677",
           "created": "2026-06-03T14:42:28.114119",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2330788,8 +2330799,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2331294,29 +2331305,29 @@
       "package_name": "0797e893-751e-4695-8229-a5066e4fe43c",
       "title": "Completed Access to Information Request Summaries dataset",
       "metadata_created": "2016-09-24T01:10:49.951130",
-      "metadata_modified": "2026-11-11T14:01:35.642643",
+      "metadata_modified": "2026-11-12T14:01:18.705245",
       "frequency": "P1M",
       "resources": [
         {
           "id": "19383ca2-b01a-487d-88f7-e1ffbc7d39c2",
           "name": "Completed Access to Information Request Summaries dataset",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:01:49.227562",
-          "last_modified": "2026-11-11T06:51:56.599997",
+          "metadata_modified": "2026-11-12T09:01:31.328061",
+          "last_modified": "2026-11-12T06:54:22.066944",
           "created": "2016-11-24T13:30:18.115239",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
           "id": "5a1386a5-ba69-4725-8338-2f26004d7382",
           "name": "Completed Access to Information Request Summaries dataset (Nothing to report)",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:01:49.227686",
-          "last_modified": "2026-11-11T06:52:12.147624",
+          "metadata_modified": "2026-11-12T09:01:31.328136",
+          "last_modified": "2026-11-12T06:54:36.656866",
           "created": "2016-11-24T13:30:18.115272",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
@@ -2331364,8 +2331375,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -2335726,7 +2335737,7 @@
       "package_name": "2916fad5-ebcc-4c86-b0f3-4f619b29f412",
       "title": "Open Government Analytics",
       "metadata_created": "2016-09-24T06:31:44.896265",
-      "metadata_modified": "2026-11-11T14:12:08.184191",
+      "metadata_modified": "2026-11-12T14:11:52.743149",
       "frequency": "P1M",
       "resources": [
         {
@@ -2335865,11 +2335876,11 @@
           "id": "8353523a-8e4e-4cd0-a91e-b42abe2e6ee5",
           "name": "User Ratings",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:10:16.254477",
-          "last_modified": "2026-11-11T07:15:12.266512",
+          "metadata_modified": "2026-11-12T09:02:09.793670",
+          "last_modified": "2026-11-12T07:15:12.462644",
           "created": "2024-11-25T14:20:21.623815",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
@@ -2335939,8 +2335950,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -2337817,23 +2337828,23 @@
       "package_name": "39954bc7-ff7a-4180-8b6e-b02bee35078a",
       "title": "Experimentation Inventory",
       "metadata_created": "2021-05-07T19:31:30.375791",
-      "metadata_modified": "2026-11-11T14:11:42.479999",
+      "metadata_modified": "2026-11-12T14:11:26.085480",
       "frequency": "P1D",
       "resources": [
         {
           "id": "07151ad9-52e2-4f99-b4fd-7cd208816a64",
           "name": "Experimental Inventory",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:13.579364",
-          "last_modified": "2026-11-11T06:54:40.137032",
+          "metadata_modified": "2026-11-12T09:01:44.421310",
+          "last_modified": "2026-11-12T06:57:02.722952",
           "created": "2021-05-07T19:31:30.523045",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-12",
-      "days_until_expected_update": 0,
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
       "freshness_status": "due_soon"
     },
     {
@@ -2337882,7 +2337893,7 @@
       "package_name": "3ac0d080-6149-499a-8b06-7ce5f00ec56c",
       "title": "GC Service Inventory",
       "metadata_created": "2018-08-03T15:21:05.279181",
-      "metadata_modified": "2026-11-11T14:11:58.882453",
+      "metadata_modified": "2026-11-12T14:11:35.966048",
       "frequency": "P1Y",
       "resources": [
         {
@@ -2337933,27 +2337944,27 @@
           "id": "8736cd7e-9bf9-4a45-9eee-a6cb3c43c07e",
           "name": "Service Standards & Performance Results (2024)",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:07:53.244627",
-          "last_modified": "2026-11-11T06:57:11.698315",
+          "metadata_modified": "2026-11-12T09:01:56.801978",
+          "last_modified": "2026-11-12T06:59:33.490039",
           "created": "2024-09-26T15:40:38.880795",
-          "expected_update_date": "2027-11-11",
-          "days_until_expected_update": 364,
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         },
         {
           "id": "c0cf9766-b85b-48c3-b295-34f72305aaf6",
           "name": "Service Identification Information & Metrics (2024)",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:07:53.244692",
-          "last_modified": "2026-11-11T06:57:00.601831",
+          "metadata_modified": "2026-11-12T09:01:56.802037",
+          "last_modified": "2026-11-12T06:59:20.960096",
           "created": "2024-09-26T15:40:38.880790",
-          "expected_update_date": "2027-11-11",
-          "days_until_expected_update": 364,
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-11-11",
-      "days_until_expected_update": 364,
+      "expected_update_date": "2027-11-12",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -2338740,29 +2338751,29 @@
       "package_name": "432527ab-7aac-45b5-81d6-7597107a7013",
       "title": "Proactive Disclosure - Grants and Contributions",
       "metadata_created": "2017-02-20T20:30:44.989526",
-      "metadata_modified": "2026-11-11T14:11:54.735343",
+      "metadata_modified": "2026-11-12T14:11:27.715819",
       "frequency": "P3M",
       "resources": [
         {
           "id": "1d15a62f-5656-49ad-8c88-f40ce689d831",
           "name": "Proactive Disclosure - Grants and Contributions",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:31:45.603446",
-          "last_modified": "2026-11-11T06:54:50.625133",
+          "metadata_modified": "2026-11-12T09:01:46.613444",
+          "last_modified": "2026-11-12T06:57:13.595103",
           "created": "2017-02-20T15:30:45.414189",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "4e4db232-f5e8-43c7-b8b2-439eb7d55475",
           "name": "Proactive Disclosure - Grants and Contributions Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:31:45.603386",
-          "last_modified": "2026-11-11T06:55:44.656363",
+          "metadata_modified": "2026-11-12T09:01:46.613384",
+          "last_modified": "2026-11-12T06:58:04.177649",
           "created": "2017-04-19T09:50:10.158312",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2338810,8 +2338821,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2339297,7 +2339308,7 @@
       "package_name": "4ae27978-0931-49ab-9c17-0b119c0ba92f",
       "title": "Proactive Disclosure - Annual Expenditures on Travel, Hospitality and Conferences",
       "metadata_created": "2017-01-18T15:20:15.908371",
-      "metadata_modified": "2026-11-11T14:12:00.896302",
+      "metadata_modified": "2026-11-12T14:21:37.356827",
       "frequency": "P1Y",
       "resources": [
         {
@@ -2339370,16 +2339381,16 @@
           "id": "a811cac0-2a2a-4440-8a81-2994fc753171",
           "name": "Annual Expenditures on Travel, Hospitality and Conferences",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:08:08.174841",
-          "last_modified": "2026-11-11T06:57:22.186620",
+          "metadata_modified": "2026-11-12T09:01:59.497604",
+          "last_modified": "2026-11-12T06:59:44.997810",
           "created": "2017-01-18T10:20:16.094124",
-          "expected_update_date": "2027-11-11",
-          "days_until_expected_update": 364,
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-11-11",
-      "days_until_expected_update": 364,
+      "expected_update_date": "2027-11-12",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
@@ -2343009,7 +2343020,7 @@
       "package_name": "6e75f19c-d19d-48aa-984e-609c8d9bc403",
       "title": "Proactive Disclosure - Acts of Founded Wrongdoing",
       "metadata_created": "2017-03-02T15:40:15.544182",
-      "metadata_modified": "2026-11-11T14:21:50.169323",
+      "metadata_modified": "2026-11-12T14:21:40.283471",
       "frequency": "as_needed",
       "resources": [
         {
@@ -2343049,8 +2343060,8 @@
           "id": "84a77a58-6bce-4bfb-ad67-bbe452523b14",
           "name": "Proactive Disclosure - Acts of Founded Wrongdoing",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:31:42.468055",
-          "last_modified": "2026-11-11T06:57:55.826138",
+          "metadata_modified": "2026-11-12T09:02:02.774322",
+          "last_modified": "2026-11-12T07:00:19.596651",
           "created": "2017-03-02T10:40:15.868348",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -2347088,18 +2347099,18 @@
       "package_name": "8634f1c9-597e-416d-91f2-df24d2ffbeea",
       "title": "Proactive Disclosure - Departmental Audit Committees",
       "metadata_created": "2018-10-17T18:50:18.542805",
-      "metadata_modified": "2026-11-11T14:31:49.814234",
+      "metadata_modified": "2026-11-12T14:31:26.312325",
       "frequency": "P3M",
       "resources": [
         {
           "id": "499383b6-cd2a-466a-9fcf-910d3e427700",
           "name": "Proactive Disclosure - Departmental Audit Committees (2018-2019-Q2 and later)",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:31:37.353019",
-          "last_modified": "2026-11-11T06:54:29.674087",
+          "metadata_modified": "2026-11-12T09:01:43.164270",
+          "last_modified": "2026-11-12T06:56:52.008255",
           "created": "2018-10-17T18:50:20.034972",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2347136,8 +2347147,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2347148,7 +2347159,7 @@
       "package_name": "880f9bbe-0234-411c-a68c-259edf09f869",
       "title": "Horizontal Initiative Database",
       "metadata_created": "2016-09-24T22:30:30.752003",
-      "metadata_modified": "2026-11-11T14:30:58.994681",
+      "metadata_modified": "2026-11-11T14:40:59.194770",
       "frequency": "P1Y",
       "resources": [
         {
@@ -2348266,23 +2348277,23 @@
       "package_name": "933c7f9d-deb0-4367-940d-06c38f494153",
       "title": "Open Government Portal Department List",
       "metadata_created": "2019-02-11T21:30:28.918018",
-      "metadata_modified": "2026-11-11T14:31:34.993561",
+      "metadata_modified": "2026-11-12T14:31:15.562389",
       "frequency": "P1D",
       "resources": [
         {
           "id": "04cbec5c-5a3d-4d34-927d-e41c9e6e3736",
           "name": "Government of Canada Department List",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T06:12:20.154261",
-          "last_modified": "2026-11-11T06:09:55.659353",
+          "metadata_modified": "2026-11-12T06:12:05.207750",
+          "last_modified": "2026-11-12T06:10:21.643957",
           "created": "2019-02-11T21:30:29.387875",
-          "expected_update_date": "2026-11-12",
-          "days_until_expected_update": 0,
+          "expected_update_date": "2026-11-13",
+          "days_until_expected_update": 1,
           "freshness_status": "due_soon"
         }
       ],
-      "expected_update_date": "2026-11-12",
-      "days_until_expected_update": 0,
+      "expected_update_date": "2026-11-13",
+      "days_until_expected_update": 1,
       "freshness_status": "due_soon"
     },
     {
@@ -2348779,15 +2348790,15 @@
       "package_name": "98abeb62-7c76-4dfb-a134-1551f55ede55",
       "title": "Proactive Disclosure - Use of Administrative Aircraft ",
       "metadata_created": "2022-02-17T04:03:10.508785",
-      "metadata_modified": "2026-11-11T14:31:52.031079",
+      "metadata_modified": "2026-11-12T14:31:44.574371",
       "frequency": "continual",
       "resources": [
         {
           "id": "1495406e-338c-43ec-9995-ec8d8c90d17e",
           "name": "Use of Government Administrative Aircraft",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:31:43.456931",
-          "last_modified": "2026-11-11T06:58:06.554573",
+          "metadata_modified": "2026-11-12T09:02:04.033309",
+          "last_modified": "2026-11-12T07:00:30.346204",
           "created": "2022-02-17T04:03:10.800039",
           "expected_update_date": null,
           "days_until_expected_update": null,
@@ -2354022,29 +2354033,29 @@
       "package_name": "b9f51ef4-4605-4ef2-8231-62a2edda1b54",
       "title": "Proactive Disclosure - Hospitality Expenses",
       "metadata_created": "2017-02-20T20:30:31.608730",
-      "metadata_modified": "2026-11-11T14:41:52.968628",
+      "metadata_modified": "2026-11-12T14:41:23.232835",
       "frequency": "P1M",
       "resources": [
         {
           "id": "36a3b6cc-4f45-4081-8dbd-2340ca487041",
           "name": "Proactive Disclosure - Hospitality Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:07:10.756711",
-          "last_modified": "2026-11-11T06:56:06.704993",
+          "metadata_modified": "2026-11-12T09:01:48.979990",
+          "last_modified": "2026-11-12T06:58:26.011462",
           "created": "2017-04-19T10:00:10.901883",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
           "id": "7b301f1a-2a7a-48bd-9ea9-e0ac4a5313ed",
           "name": "Proactive Disclosure - Hospitality Expenses",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T10:07:10.756587",
-          "last_modified": "2026-11-11T06:55:55.540794",
+          "metadata_modified": "2026-11-12T09:01:48.979919",
+          "last_modified": "2026-11-12T06:58:14.763111",
           "created": "2017-02-20T15:30:32.127768",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
@@ -2354114,8 +2354125,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -2355150,9 +2355161,97 @@
       "package_name": "c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7",
       "title": "Open Data Portal Catalogue",
       "metadata_created": "2016-09-25T10:07:34.657467",
-      "metadata_modified": "2026-11-10T15:06:57.379161",
+      "metadata_modified": "2026-11-11T15:07:05.132599",
       "frequency": "P1D",
       "resources": [
+        {
+          "id": "09c51a72-e803-4050-8b8f-165809bccf05",
+          "name": "Data Package Fields ",
+          "format": "CSV",
+          "metadata_modified": "2026-11-11T15:06:27.892880",
+          "last_modified": "2026-11-11T15:06:27.860328",
+          "created": "2024-02-21T16:52:30.605586",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "312a65c5-d0bc-4445-8a24-95b2690cc62b",
+          "name": "datasets metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-11-11T15:06:36.980119",
+          "last_modified": "2026-11-11T15:06:36.951954",
+          "created": "2024-02-18T17:51:16.815935",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "3733106d-74f1-428e-beda-cad530b473cf",
+          "name": "datastore fields metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-11-11T15:06:26.603383",
+          "last_modified": "2026-11-11T15:06:26.566722",
+          "created": "2024-02-21T16:52:30.605581",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "3c911562-c541-463f-8cd4-490182cd57f9",
+          "name": "Resources Metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-11-11T15:07:00.171983",
+          "last_modified": "2026-11-11T15:07:00.041988",
+          "created": "2024-02-18T18:01:17.301996",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "a79f7297-9b20-427a-be79-d286daa92412",
+          "name": "resource views metadata",
+          "format": "CSV",
+          "metadata_modified": "2026-11-11T15:07:05.100550",
+          "last_modified": "2026-11-11T15:07:05.066471",
+          "created": "2024-02-18T18:01:17.302001",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b7f0c11e-e81f-46e7-958d-0bbf878a3df6",
+          "name": "SQLite Database ",
+          "format": "SQLITE",
+          "metadata_modified": "2026-11-11T15:06:13.594754",
+          "last_modified": "2026-11-11T15:06:13.566199",
+          "created": "2024-02-21T16:52:30.605591",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "b8931c16-0710-4c31-bbda-f60841e98cb4",
+          "name": "Catalogue",
+          "format": "XLSX",
+          "metadata_modified": "2026-11-11T15:05:46.934591",
+          "last_modified": "2026-11-11T15:05:46.883103",
+          "created": "2024-02-18T17:41:23.540448",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
+        {
+          "id": "f13ed9cc-e460-42ca-a526-56e02ecaefaa",
+          "name": "Data Package",
+          "format": "JSON",
+          "metadata_modified": "2026-11-11T15:06:22.790819",
+          "last_modified": "2026-11-11T15:06:22.757034",
+          "created": "2024-02-18T17:41:23.540456",
+          "expected_update_date": "2026-11-12",
+          "days_until_expected_update": 0,
+          "freshness_status": "due_soon"
+        },
         {
           "id": "21ad0300-b9f5-444e-b43b-8bd164901b55",
           "name": "data package entity relation diagram",
@@ -2355174,99 +2355273,11 @@
           "expected_update_date": "2026-08-11",
           "days_until_expected_update": -93,
           "freshness_status": "late"
-        },
-        {
-          "id": "09c51a72-e803-4050-8b8f-165809bccf05",
-          "name": "Data Package Fields ",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T15:06:26.449123",
-          "last_modified": "2026-11-10T15:06:26.404445",
-          "created": "2024-02-21T16:52:30.605586",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "312a65c5-d0bc-4445-8a24-95b2690cc62b",
-          "name": "datasets metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T15:06:36.140872",
-          "last_modified": "2026-11-10T15:06:36.086413",
-          "created": "2024-02-18T17:51:16.815935",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "3733106d-74f1-428e-beda-cad530b473cf",
-          "name": "datastore fields metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T15:06:25.225167",
-          "last_modified": "2026-11-10T15:06:25.193112",
-          "created": "2024-02-21T16:52:30.605581",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "3c911562-c541-463f-8cd4-490182cd57f9",
-          "name": "Resources Metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T15:06:52.973197",
-          "last_modified": "2026-11-10T15:06:52.941114",
-          "created": "2024-02-18T18:01:17.301996",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "a79f7297-9b20-427a-be79-d286daa92412",
-          "name": "resource views metadata",
-          "format": "CSV",
-          "metadata_modified": "2026-11-10T15:06:57.338327",
-          "last_modified": "2026-11-10T15:06:57.281640",
-          "created": "2024-02-18T18:01:17.302001",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "b7f0c11e-e81f-46e7-958d-0bbf878a3df6",
-          "name": "SQLite Database ",
-          "format": "SQLITE",
-          "metadata_modified": "2026-11-10T15:06:12.990919",
-          "last_modified": "2026-11-10T15:06:12.955409",
-          "created": "2024-02-21T16:52:30.605591",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "b8931c16-0710-4c31-bbda-f60841e98cb4",
-          "name": "Catalogue",
-          "format": "XLSX",
-          "metadata_modified": "2026-11-10T15:05:46.806543",
-          "last_modified": "2026-11-10T15:05:46.769049",
-          "created": "2024-02-18T17:41:23.540448",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
-        },
-        {
-          "id": "f13ed9cc-e460-42ca-a526-56e02ecaefaa",
-          "name": "Data Package",
-          "format": "JSON",
-          "metadata_modified": "2026-11-10T15:06:21.227214",
-          "last_modified": "2026-11-10T15:06:21.191765",
-          "created": "2024-02-18T17:41:23.540456",
-          "expected_update_date": "2026-11-11",
-          "days_until_expected_update": -1,
-          "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-11-11",
-      "days_until_expected_update": -1,
-      "freshness_status": "late"
+      "expected_update_date": "2026-11-12",
+      "days_until_expected_update": 0,
+      "freshness_status": "due_soon"
     },
     {
       "name": "tbs-sct",
@@ -2358231,7 +2358242,7 @@
       "package_name": "d8f85d91-7dec-4fd1-8055-483b77225d8b",
       "title": "Proactive Publication - Contracts",
       "metadata_created": "2016-09-25T14:06:36.757889",
-      "metadata_modified": "2026-11-11T14:41:45.123644",
+      "metadata_modified": "2026-11-12T14:51:07.428408",
       "frequency": "P3M",
       "resources": [
         {
@@ -2358249,33 +2358260,33 @@
           "id": "2e9a82e2-bb18-4bff-a61e-59af3b429672",
           "name": "Aggregated Total - Contracts $10K and under",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:19.581339",
-          "last_modified": "2026-11-11T06:54:19.106467",
+          "metadata_modified": "2026-11-12T09:01:40.034794",
+          "last_modified": "2026-11-12T06:56:41.099028",
           "created": "2018-03-07T16:00:39.376061",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "fa4ff6c4-e9af-4491-9d4e-2b468e415a68",
           "name": "Proactive Publication - Contracts Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:19.581285",
-          "last_modified": "2026-11-11T06:54:08.487159",
+          "metadata_modified": "2026-11-12T09:01:40.034739",
+          "last_modified": "2026-11-12T06:56:30.484020",
           "created": "2017-04-19T09:40:09.664069",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "fac950c0-00d5-4ec1-a4d3-9cbebf98a305",
           "name": "Contracts over $10,000",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:19.581223",
-          "last_modified": "2026-11-11T06:53:43.409431",
+          "metadata_modified": "2026-11-12T09:01:40.034674",
+          "last_modified": "2026-11-12T06:56:06.205508",
           "created": "2016-12-01T12:05:20.080904",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2358356,8 +2358367,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2358805,18 +2358816,18 @@
       "package_name": "e0d1f0bf-699f-437e-805d-4aaa428f96b8",
       "title": "5th National Action Plan on Open Government Reporting Data",
       "metadata_created": "2022-09-22T13:58:17.461455",
-      "metadata_modified": "2026-11-11T14:51:35.799254",
+      "metadata_modified": "2026-11-12T14:51:16.590329",
       "frequency": "P3M",
       "resources": [
         {
           "id": "0305a157-9d10-4ec2-8ca4-e39ab2b34396",
           "name": "NAP data",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:14.635075",
-          "last_modified": "2026-11-11T06:56:17.228982",
+          "metadata_modified": "2026-11-12T09:01:50.470765",
+          "last_modified": "2026-11-12T06:58:36.783954",
           "created": "2022-09-22T13:58:17.799650",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2358864,8 +2358875,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2359969,7 +2359980,7 @@
       "package_name": "ecd1a913-47da-47fc-8f96-2432be420986",
       "title": "Proactive Disclosure - Question Period notes",
       "metadata_created": "2020-01-12T15:00:55.460626",
-      "metadata_modified": "2026-11-11T14:51:31.539930",
+      "metadata_modified": "2026-11-12T14:51:04.599268",
       "frequency": "P6M",
       "resources": [
         {
@@ -2360020,27 +2360031,27 @@
           "id": "c55a2862-7ec4-462c-a844-22acab664812",
           "name": "Question Period Notes",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:03:51.384575",
-          "last_modified": "2026-11-11T06:52:46.245671",
+          "metadata_modified": "2026-11-12T09:01:35.514751",
+          "last_modified": "2026-11-12T06:55:09.882537",
           "created": "2020-01-12T15:01:01.768516",
-          "expected_update_date": "2027-05-11",
-          "days_until_expected_update": 180,
+          "expected_update_date": "2027-05-12",
+          "days_until_expected_update": 181,
           "freshness_status": "current"
         },
         {
           "id": "dba8cc4a-2a57-435c-a270-fa024474e609",
           "name": "Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:03:51.384498",
-          "last_modified": "2026-11-11T06:52:59.888942",
+          "metadata_modified": "2026-11-12T09:01:35.514694",
+          "last_modified": "2026-11-12T06:55:23.168179",
           "created": "2024-08-21T20:00:29.559846",
-          "expected_update_date": "2027-05-11",
-          "days_until_expected_update": 180,
+          "expected_update_date": "2027-05-12",
+          "days_until_expected_update": 181,
           "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-05-11",
-      "days_until_expected_update": 180,
+      "expected_update_date": "2027-05-12",
+      "days_until_expected_update": 181,
       "freshness_status": "current"
     },
     {
@@ -2360051,29 +2360062,29 @@
       "package_name": "ee9bd7e8-90a5-45db-9287-85c8cf3589b6",
       "title": "Proactive Disclosure - Briefing Note Titles and Numbers",
       "metadata_created": "2019-06-24T13:40:25.697400",
-      "metadata_modified": "2026-11-11T14:51:33.443017",
+      "metadata_modified": "2026-11-12T14:51:02.814922",
       "frequency": "P1M",
       "resources": [
         {
           "id": "299a2e26-5103-4a49-ac3a-53db9fcc06c7",
           "name": "Proactive Disclosure - Briefing Note Titles and Numbers",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:03:53.090854",
-          "last_modified": "2026-11-11T06:52:23.637399",
+          "metadata_modified": "2026-11-12T09:01:33.525565",
+          "last_modified": "2026-11-12T06:54:47.410830",
           "created": "2019-06-24T13:40:29.606040",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
           "id": "5e28b544-720b-4745-9e55-3aac6464a4fb",
           "name": "Proactive Publication - Briefing Note Titles and Numbers Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:03:53.090943",
-          "last_modified": "2026-11-11T06:52:35.381887",
+          "metadata_modified": "2026-11-12T09:01:33.525626",
+          "last_modified": "2026-11-12T06:54:58.996545",
           "created": "2024-01-03T19:12:32.968075",
-          "expected_update_date": "2026-12-11",
-          "days_until_expected_update": 29,
+          "expected_update_date": "2026-12-12",
+          "days_until_expected_update": 30,
           "freshness_status": "current"
         },
         {
@@ -2360121,8 +2360132,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2026-12-11",
-      "days_until_expected_update": 29,
+      "expected_update_date": "2026-12-12",
+      "days_until_expected_update": 30,
       "freshness_status": "current"
     },
     {
@@ -2360577,29 +2360588,29 @@
       "package_name": "f132b8a6-abad-43d6-b6ad-2301e778b1b6",
       "title": "Proactive Disclosure - Position Reclassification",
       "metadata_created": "2017-03-02T14:50:15.659882",
-      "metadata_modified": "2026-11-11T14:51:38.520460",
+      "metadata_modified": "2026-11-12T14:51:19.140850",
       "frequency": "P3M",
       "resources": [
         {
           "id": "1e955e4d-df35-4441-bf38-b7086192ece2",
           "name": "Proactive Disclosure - Position Reclassification Nothing to Report",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:17.085060",
-          "last_modified": "2026-11-11T06:56:49.955500",
+          "metadata_modified": "2026-11-12T09:01:53.366965",
+          "last_modified": "2026-11-12T06:59:08.916751",
           "created": "2017-04-19T10:00:11.758121",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
           "id": "bdaa5515-3782-4e5c-9d44-c25e032addb7",
           "name": "Proactive Disclosure - Position Reclassification",
           "format": "CSV",
-          "metadata_modified": "2026-11-11T09:05:17.084988",
-          "last_modified": "2026-11-11T06:56:39.334150",
+          "metadata_modified": "2026-11-12T09:01:53.366895",
+          "last_modified": "2026-11-12T06:58:58.223948",
           "created": "2017-03-02T09:50:16.039430",
-          "expected_update_date": "2027-02-11",
-          "days_until_expected_update": 91,
+          "expected_update_date": "2027-02-12",
+          "days_until_expected_update": 92,
           "freshness_status": "current"
         },
         {
@@ -2360647,8 +2360658,8 @@
           "freshness_status": "late"
         }
       ],
-      "expected_update_date": "2027-02-11",
-      "days_until_expected_update": 91,
+      "expected_update_date": "2027-02-12",
+      "days_until_expected_update": 92,
       "freshness_status": "current"
     },
     {
@@ -2370387,210 +2370398,232 @@
       "package_name": "3361d39b-4125-4d7e-804d-1729c4a4f012",
       "title": "Departmental Results Report (DRR)",
       "metadata_created": "2019-08-01T13:33:36.218620",
-      "metadata_modified": "2026-03-06T15:23:39.663509",
+      "metadata_modified": "2026-11-12T13:22:02.195717",
       "frequency": "P1Y",
       "resources": [
         {
           "id": "0b138021-4b91-4036-875e-9dec24b15dfc",
           "name": "Period ending March 31, 2018",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.579009",
+          "metadata_modified": "2026-11-12T13:22:02.184722",
           "last_modified": null,
           "created": "2019-08-01T13:33:37.466905",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "0df80aa7-9038-47cb-93cf-77ed1be77583",
           "name": "Period ending March 31, 2022",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578538",
+          "metadata_modified": "2026-11-12T13:22:02.184365",
           "last_modified": null,
           "created": "2022-12-02T16:26:38.277727",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "10577d1a-bd2b-4ed5-a095-58faa270dbf9",
           "name": "Period ending March 31, 2023",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578362",
+          "metadata_modified": "2026-11-12T13:22:02.184225",
           "last_modified": null,
           "created": "2023-11-09T16:32:34.958952",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "638a5708-fe19-4826-ae5d-26ab2a1ecbf0",
           "name": "Period ending March 31, 2020",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578707",
+          "metadata_modified": "2026-11-12T13:22:02.184493",
           "last_modified": null,
           "created": "2021-01-13T15:31:23.490477",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "75267e33-7ae8-457c-98d2-887b6ad009c0",
           "name": "Period ending March 31, 2017",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.579119",
+          "metadata_modified": "2026-11-12T13:22:02.184824",
           "last_modified": null,
           "created": "2019-08-01T13:33:37.466911",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "85a6215a-15a6-4858-bdc9-ae0cfd33d39b",
           "name": "Period ending March 31, 2020",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578764",
+          "metadata_modified": "2026-11-12T13:22:02.184550",
           "last_modified": null,
           "created": "2021-01-13T15:41:14.962731",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "8d905897-4569-4827-8a82-22a279ea2b5a",
           "name": "Period ending March 31, 2025",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.580331",
+          "metadata_modified": "2026-11-12T13:22:02.184023",
           "last_modified": null,
           "created": "2025-11-19T16:21:22.598865",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "93a8684c-c6fc-4c02-b190-42781d1bc89e",
           "name": "Period ending March 31, 2025",
           "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.581730",
+          "metadata_modified": "2026-11-12T13:22:02.184085",
           "last_modified": null,
           "created": "2025-11-19T16:21:22.598869",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "a9e87dc7-b1be-44b5-9fa9-706a3f6d22ee",
-          "name": "Period ending March 31, 2021",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578651",
-          "last_modified": null,
-          "created": "2022-06-28T13:33:48.317565",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "ac43a81f-4df8-4f33-b8f0-e32130ddec27",
-          "name": "Period ending March 31, 2019",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578899",
-          "last_modified": null,
-          "created": "2020-03-02T13:36:32.818136",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "af2773f8-ea2b-43c9-8b5d-558d0357e5d1",
-          "name": "Period ending March 31, 2021",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578594",
-          "last_modified": null,
-          "created": "2022-06-28T13:33:48.317557",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "cb1a01b7-7117-40f6-80b7-2d5d4161edb7",
-          "name": "Period ending March 31, 2017",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.579064",
-          "last_modified": null,
-          "created": "2019-08-01T13:33:37.466909",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "d1375c53-1fef-49ef-9efb-cfeb7bee3472",
-          "name": "Period ending March 31, 2023",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578423",
-          "last_modified": null,
-          "created": "2023-11-09T16:32:34.958963",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "d9b02633-f34e-4597-b379-7e9211037be8",
-          "name": "Period ending March 31, 2024",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578179",
-          "last_modified": null,
-          "created": "2024-12-17T16:00:45.946985",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "e83c3bb2-b177-4dba-8216-564bc245335d",
-          "name": "Period ending March 31, 2019",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578841",
-          "last_modified": null,
-          "created": "2020-03-02T13:36:32.818130",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "ef4f56d3-8bc4-4c1c-b39b-0b348dbedd7c",
-          "name": "Period ending March 31, 2024",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578295",
-          "last_modified": null,
-          "created": "2024-12-17T16:00:45.946988",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
-        },
-        {
-          "id": "f5d88c8f-05f4-4c9b-941f-064ffb6475c6",
-          "name": "Period ending March 31, 2018",
-          "format": "HTML",
-          "metadata_modified": "2025-11-19T16:21:22.578954",
-          "last_modified": null,
-          "created": "2019-08-01T13:33:37.466897",
-          "expected_update_date": "2026-11-19",
-          "days_until_expected_update": 7,
-          "freshness_status": "due_soon"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         },
         {
           "id": "96faa7d8-a501-4816-9c49-6d742c24b72c",
           "name": "Period ending March 31, 2022",
           "format": "HTML",
-          "metadata_modified": "2024-12-17T16:00:45.926446",
+          "metadata_modified": "2026-11-12T13:22:02.184322",
           "last_modified": null,
           "created": "2022-12-02T16:26:38.277715",
-          "expected_update_date": "2025-12-17",
-          "days_until_expected_update": -330,
-          "freshness_status": "late"
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "a9e87dc7-b1be-44b5-9fa9-706a3f6d22ee",
+          "name": "Period ending March 31, 2021",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184450",
+          "last_modified": null,
+          "created": "2022-06-28T13:33:48.317565",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "ac43a81f-4df8-4f33-b8f0-e32130ddec27",
+          "name": "Period ending March 31, 2019",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184638",
+          "last_modified": null,
+          "created": "2020-03-02T13:36:32.818136",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "af2773f8-ea2b-43c9-8b5d-558d0357e5d1",
+          "name": "Period ending March 31, 2021",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184408",
+          "last_modified": null,
+          "created": "2022-06-28T13:33:48.317557",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "c509d503-0d2d-4d9a-b0b7-6b7c0dad51b9",
+          "name": "Period ending March 31, 2026",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.181018",
+          "last_modified": null,
+          "created": "2026-11-12T13:22:02.291589",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "cb1a01b7-7117-40f6-80b7-2d5d4161edb7",
+          "name": "Period ending March 31, 2017",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184765",
+          "last_modified": null,
+          "created": "2019-08-01T13:33:37.466909",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "d0ed2249-ebad-40ef-8f60-78b5d84b38e4",
+          "name": "Period ending March 31, 2026",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.183933",
+          "last_modified": null,
+          "created": "2026-11-12T13:22:02.291595",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "d1375c53-1fef-49ef-9efb-cfeb7bee3472",
+          "name": "Period ending March 31, 2023",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184277",
+          "last_modified": null,
+          "created": "2023-11-09T16:32:34.958963",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "d9b02633-f34e-4597-b379-7e9211037be8",
+          "name": "Period ending March 31, 2024",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184134",
+          "last_modified": null,
+          "created": "2024-12-17T16:00:45.946985",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "e83c3bb2-b177-4dba-8216-564bc245335d",
+          "name": "Period ending March 31, 2019",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184595",
+          "last_modified": null,
+          "created": "2020-03-02T13:36:32.818130",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "ef4f56d3-8bc4-4c1c-b39b-0b348dbedd7c",
+          "name": "Period ending March 31, 2024",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184181",
+          "last_modified": null,
+          "created": "2024-12-17T16:00:45.946988",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
+        },
+        {
+          "id": "f5d88c8f-05f4-4c9b-941f-064ffb6475c6",
+          "name": "Period ending March 31, 2018",
+          "format": "HTML",
+          "metadata_modified": "2026-11-12T13:22:02.184680",
+          "last_modified": null,
+          "created": "2019-08-01T13:33:37.466897",
+          "expected_update_date": "2027-11-12",
+          "days_until_expected_update": 365,
+          "freshness_status": "current"
         }
       ],
-      "expected_update_date": "2027-03-06",
-      "days_until_expected_update": 114,
+      "expected_update_date": "2027-11-12",
+      "days_until_expected_update": 365,
       "freshness_status": "current"
     },
     {
