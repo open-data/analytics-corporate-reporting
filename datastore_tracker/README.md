@@ -23,8 +23,8 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4233
-    "failure": 2900
+    "success": 4309
+    "failure": 2901
 ```
 
 <!-- VALIDATION_STATUS_CHART_END -->
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 3969
+    "datatables_view": 4045
     "text_view": 216
     "image_view": 4
     "openapi_view": 4
@@ -59,7 +59,7 @@ pie showData title Resource View Types
 | open.canada.ca | cfia-acia | 226 |
 | open.canada.ca | cic | 1 |
 | open.canada.ca | cnsc-ccsn | 30 |
-| open.canada.ca | cra-arc | 551 |
+| open.canada.ca | cra-arc | 628 |
 | open.canada.ca | crtc | 2 |
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
@@ -77,7 +77,7 @@ pie showData title Resource View Types
 | open.canada.ca | iaac-aeic | 2 |
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 6 |
-| open.canada.ca | irb-cisr | 9 |
+| open.canada.ca | irb-cisr | 10 |
 | open.canada.ca | isc-sac | 14 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
@@ -93,7 +93,7 @@ pie showData title Resource View Types
 | open.canada.ca | pwgsc-tpsgc | 1 |
 | open.canada.ca | rcmp-grc | 1 |
 | open.canada.ca | ssc-spc | 41 |
-| open.canada.ca | tbs-sct | 234 |
+| open.canada.ca | tbs-sct | 232 |
 | open.canada.ca | tc | 41 |
 | open.canada.ca | vac-acc | 12 |
 | open.canada.ca | wd-deo | 10 |
@@ -107,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.0008, 0.00108, 0.001}
+  curve u["Upload"]{0.0008, 0.00109, 0.00101}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -129,9 +129,9 @@ config:
 ---
 pie showData title Top 20 Orgs by View Count
     "pc": 982
-    "cra-arc": 850
+    "cra-arc": 927
     "esdc-edsc": 678
-    "tbs-sct": 349
+    "tbs-sct": 347
     "cfia-acia": 242
     "hc-sc": 211
     "psc-cfp": 158
