@@ -4108,10 +4108,10 @@ tbs-sct,c2e19896-fe09-432b-85cf-4ab7788a0407,Suggested Dataset Submissions,41211
 tbs-sct,c45c4cda-7134-4e65-8e99-5214eb07bcf3,"Consultations on the Canada-European Union Comprehensive Economic Trade Agreement, Regulatory Cooperation Forum",4814d7c0-c13a-4def-a81d-c1ea532be418,Groupement provincial de l'industrie du medicament RCF submission,5d761444-7b75-48d5-8095-f95f7e938763,text_view
 tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,09c51a72-e803-4050-8b8f-165809bccf05,Data Package Fields ,34ad10eb-5f7b-4495-9ca3-8d2f0f7e4b09,datatables_view
 tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,21ad0300-b9f5-444e-b43b-8bd164901b55,data package entity relation diagram,40d3b722-60fc-4bfd-a3f8-d8790e9cb2b7,image_view
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,97d65b94-5574-483a-bac1-48aff25b8b9b,datatables_view
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,312a65c5-d0bc-4445-8a24-95b2690cc62b,datasets metadata,3570a784-9ed9-4c3d-91e4-9475faee2ad4,datatables_view
 tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3733106d-74f1-428e-beda-cad530b473cf,datastore fields metadata,022c9a82-e6da-4c11-9f45-993c7ee3e655,datatables_view
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,614f82b4-1914-4281-8e11-8fe9f0f8fdf8,datatables_view
-tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,9ee32c2e-f115-48ce-82ba-466ea71aeac0,datatables_view
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,3c911562-c541-463f-8cd4-490182cd57f9,Resources Metadata,e8f7ccba-e68c-49d0-89d5-02b472b1796f,datatables_view
+tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,a79f7297-9b20-427a-be79-d286daa92412,resource views metadata,07e6ee16-d773-4a96-9616-884bcba68f02,datatables_view
 tbs-sct,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,Open Data Portal Catalogue,f13ed9cc-e460-42ca-a526-56e02ecaefaa,Data Package,0ad9b337-bffb-47c8-a35e-e36e0b1ab55b,text_view
 tbs-sct,c922e515-1ac1-442c-8b10-f26e798bab18,Government of Canada classifications,b9a2dfb9-7c26-4ff3-893e-03c0832348df,Reference Data ,b8605130-c427-4121-9455-daf4f6d2e7f3,datatables_view
 tbs-sct,cd8fad92-b276-4250-972f-2d6c40ca04fa,Data reference standard on Canadian Provinces and Territories,4cb827a6-a313-4d97-a66b-26fe23984931,Reference data on Canadian Provinces and Territories,577143c6-d8da-496f-89c6-d61061faeb0b,datatables_view
