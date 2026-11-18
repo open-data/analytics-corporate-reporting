@@ -5,7 +5,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 4063
+    "datatables_view": 4066
     "text_view": 216
     "image_view": 4
     "openapi_view": 4

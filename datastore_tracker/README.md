@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4327
+    "success": 4330
     "failure": 2901
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 4063
+    "datatables_view": 4066
     "text_view": 216
     "image_view": 4
     "openapi_view": 4
@@ -78,7 +78,7 @@ pie showData title Resource View Types
 | open.canada.ca | ic | 23 |
 | open.canada.ca | infc | 6 |
 | open.canada.ca | irb-cisr | 10 |
-| open.canada.ca | isc-sac | 14 |
+| open.canada.ca | isc-sac | 17 |
 | open.canada.ca | lac-bac | 8 |
 | open.canada.ca | nrc-cnrc | 1 |
 | open.canada.ca | nrcan-rncan | 53 |
@@ -107,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00083, 0.00106, 0.00098}
+  curve u["Upload"]{0.00084, 0.00106, 0.00099}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -147,7 +147,7 @@ pie showData title Top 20 Orgs by View Count
     "dnd-mdn": 23
     "elections": 22
     "fin": 19
-    "cic": 17
+    "isc-sac": 19
 ```
 
 <!-- TOP_20_OWNERS_CHART_END -->
