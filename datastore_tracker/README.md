@@ -23,7 +23,7 @@ config:
   theme: dark
 ---
 pie showData title Resource Validation Status
-    "success": 4330
+    "success": 4337
     "failure": 2901
 ```
 
@@ -38,7 +38,7 @@ config:
   theme: dark
 ---
 pie showData title Resource View Types
-    "datatables_view": 4066
+    "datatables_view": 4073
     "text_view": 216
     "image_view": 4
     "openapi_view": 4
@@ -64,13 +64,13 @@ pie showData title Resource View Types
 | open.canada.ca | csa-asc | 3 |
 | open.canada.ca | csc-scc | 14 |
 | open.canada.ca | csec-cstc | 16 |
-| open.canada.ca | csps-efpc | 1 |
+| open.canada.ca | csps-efpc | 7 |
 | open.canada.ca | dfatd-maecd | 68 |
 | open.canada.ca | dfo-mpo | 2 |
 | open.canada.ca | dnd-mdn | 22 |
 | open.canada.ca | ec | 23 |
 | open.canada.ca | elections | 23 |
-| open.canada.ca | esdc-edsc | 631 |
+| open.canada.ca | esdc-edsc | 632 |
 | open.canada.ca | fcac-acfc | 10 |
 | open.canada.ca | fin | 18 |
 | open.canada.ca | hc-sc | 186 |
@@ -107,7 +107,7 @@ pie showData title Resource View Types
 ```mermaid
 radar-beta
   axis T["Type"], L["Label"], N["Notes"]
-  curve u["Upload"]{0.00087, 0.00109, 0.00101}
+  curve u["Upload"]{0.00087, 0.00111, 0.00102}
   curve r["Remote"]{0, 0, 0}
 
   showLegend true
@@ -130,7 +130,7 @@ config:
 pie showData title Top 20 Orgs by View Count
     "pc": 982
     "cra-arc": 945
-    "esdc-edsc": 678
+    "esdc-edsc": 679
     "tbs-sct": 347
     "cfia-acia": 242
     "hc-sc": 211

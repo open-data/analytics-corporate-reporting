@@ -1313,6 +1313,12 @@ csec-cstc,e95a44a5-65b4-476f-aaae-f8406fd3e7fd,2011-2023 Age distribution for th
 csec-cstc,e9f71825-2d08-49d1-9725-bd4c0d77c8d1,2019-2023 Waste Diversion Report,d1cc1dec-afe3-4186-9d72-31cd7e782a90,CSV EN/FR,effe3a1b-f52a-458e-8d82-8f6dc2423e5b,datatables_view
 csec-cstc,f94b9490-e220-4dd3-b38c-7d2f63ec4042,2011-2026 Age distribution for the Communications Security Establishment,95fd2b03-daf5-413f-827a-b873dad881f5,CSV EN/FR,15e582e0-95a5-43a1-8903-22fdbce71abc,datatables_view
 csps-efpc,4f2fedd4-a1be-4440-bac5-d96ee8d71e30,Shape Your Learning,b39f7b34-49d6-43e7-9369-d3b7405e505f,Shape Your Learning Dataset 2021,9864c044-97e5-470f-ba54-1e78bdeef10a,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,08797f72-64b3-49b2-acaa-1ce76e8085f4,DMAT 2026 Assessment Components (CSV),a3d61c21-cce7-4ba5-b49d-0a8d468373cc,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,1264fb5a-d4c9-4a9b-805e-45e7e0448a33,DMAT 2026 Assessment Components (CSV),21f0dd41-a40a-438f-9859-1b81f6d2998b,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,12a622f3-e8d4-4e7e-a00e-3938be7a34e0,DMAT 2026 Legend (CSV),28b499bf-89df-47f8-8213-13bf08b1327c,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,2662d879-e802-4de6-ac39-df05ab33cb52,DMAT 2026 Legend (CSV),42ac15cc-46a6-4ba9-9ba6-4547fa3e60da,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,860d2d29-e661-4e29-8d71-190bbe56e34e,DMAT 2026 Instructions (CSV),20728302-b69e-43f9-b4d8-39e22f4a754e,datatables_view
+csps-efpc,acf1b0f9-1c52-43f2-8729-db918d769873,Data Maturity Assessment Tool (DMAT) 2026,fd7e18c4-97eb-4346-a368-9659e0fb5deb,DMAT 2026 Instructions (CSV),c61753e2-d3c8-4b6d-be4f-e722ff4b8ce8,datatables_view
 dfatd-maecd,0f464f02-a565-47e5-b7ca-a004f4943bf9,Beef and Veal Report,b14a8fd5-bd40-4a05-bf82-b8ba207efe35,Beef and Veal Report,d7ff8f28-e1f6-4f93-a0f5-ae0f3c99bdfb,datatables_view
 dfatd-maecd,100b3a1d-ce92-4722-a1ae-651d788092de,"Security and Emergency Management Commitment Report, Showing Alignment to Global Affairs Canada's Departmental Priorities",0abc9dfc-f49e-4d1f-afb1-82ca368d7f5c,"Security and Emergency Management Commitment Report, Showing Alignment to Global Affairs Canada's Departmental Priorities",3e907560-61ea-4e2c-a3ab-a56f8dbdafc6,datatables_view
 dfatd-maecd,100b3a1d-ce92-4722-a1ae-651d788092de,"Security and Emergency Management Commitment Report, Showing Alignment to Global Affairs Canada's Departmental Priorities",2118444e-2499-4370-a0fb-fae15187aeed,"Security and Emergency Management Commitment Report, Showing Alignment to Global Affairs Canada's Departmental Priorities",8ba725ac-17c4-4d11-ae84-a3246308b238,datatables_view
@@ -1806,6 +1812,7 @@ esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,c2db20d5-92bc-40d2-aa9f-6c
 esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,c4bcd5c4-9b04-4bb8-8067-f5484a69e592,2013 Wages,09113a30-1a88-4f9e-9420-dec3881524c2,datatables_view
 esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,c8a9c949-c21a-49f0-bfa8-c2d943cf4d29,2017 Wages ,8a0c8f84-54af-476b-ad20-454c5c0ec86b,datatables_view
 esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,d16e10ea-77bf-4db8-bdb5-adc709e6cada,2024 Wages,ea428bbf-4f42-4fd1-b4bc-b8a96b5d8367,datatables_view
+esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,d40ef986-af07-4682-8f7f-43f019a6e588,2026 Wages,2bf927e9-c0bc-460f-ae3a-42f8a3730f7d,datatables_view
 esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,ff3ea4e1-896f-4fa2-8754-c8a9f83c89b0,2014 Wages,c84215f2-5e43-4639-9766-f6964712b890,datatables_view
 esdc-edsc,adad580f-76b0-4502-bd05-20c125de9116,Wages ,ff45366b-1c17-4862-8325-f6e7797c7c56,2023 Wages,ee74af9e-c1fd-44e8-ac5c-9d03bf6b8de5,datatables_view
 esdc-edsc,b0e112e9-cf53-4e79-8838-23cd98debe5b,3-Year Employment Outlooks,56ab7900-20a0-4438-94ed-8d4582041fcd,2023-2025 Employment Outlooks - NOC 2021,3d672d6e-9c2b-44d9-8164-d5acf59dddd1,datatables_view
