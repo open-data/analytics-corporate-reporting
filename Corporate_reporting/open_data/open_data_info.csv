@@ -30,7 +30,7 @@ Natural Resources Canada ,dataset,002a9efb-7aa9-5dda-9c8f-882aaf3cfec2,2016-09-2
 Natural Resources Canada ,dataset,002eaa04-d85d-5a3c-b2ea-ff3181544559,2016-09-24,2022-02-22,9,"[False, False, False, False, False, False, False, False, False]",False,False,geogratis
 Global Affairs Canada ,info,00311417-b711-4c8a-a6f2-3729a28f7e7c,2026-02-27,2026-09-25,1,[False],False,False,publication
 Parks Canada ,info,00311a21-c6da-4b3d-98be-7cdea45af4bb,2025-05-28,2025-05-28,3,"[False, False, False]",False,False,publication
-"Innovation, Science and Economic Development Canada ",dataset,0032ce54-c5dd-4b66-99a0-320a7b5e99f2,2016-09-23,2026-11-19,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,primary
+"Innovation, Science and Economic Development Canada ",dataset,0032ce54-c5dd-4b66-99a0-320a7b5e99f2,2016-09-23,2026-11-20,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Government of Saskatchewan ,dataset,0033605e-98de-32cf-18d1-b5bd18cc88ae,2023-04-22,2025-10-15,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,0033e8c1-49a4-44f0-9706-b22fd638752a,2016-09-24,2020-09-25,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,00342844-06c2-4a34-bacf-d4c0768ce172,2023-05-08,2026-06-29,5,"[False, False, False, False, False]",False,False,primary
@@ -99,7 +99,7 @@ Government of Alberta ,dataset,008e971f-0929-4198-ad30-6d1b9cd2d722,2018-06-27,2
 Natural Resources Canada ,dataset,009a4262-fc88-5a20-a4a6-65c761847a88,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Government of New Brunswick ,dataset,009ba67a-86ea-58ff-ce3c-3f2b08bab3ee,2026-03-25,2026-03-25,13,"[False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,009d17af-9c3b-5527-9ce6-a7915fc87cd4,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
-Treasury Board of Canada Secretariat ,dataset,009f9a49-c2d9-4d29-a6d4-1a228da335ce,2017-02-20,2026-11-19,9,"[True, True, False, False, False, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,009f9a49-c2d9-4d29-a6d4-1a228da335ce,2017-02-20,2026-11-20,9,"[True, True, False, False, False, False, False, False, False]",True,False,primary
 Government of Nova Scotia ,dataset,009fb81f-cf11-6ac7-bf33-765ff86c87d9,2022-05-03,2026-04-17,8,"[False, False, False, False, False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,00a14022-c611-420e-94d4-54eed8e0fe41,2023-11-08,2023-11-08,5,"[False, False, False, False, False]",False,False,primary
 "Innovation, Science and Economic Development Canada ",dataset,00a331db-121b-445d-b119-35dbbe3eedd9,2016-09-23,2026-06-18,15,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
@@ -1053,7 +1053,7 @@ Health Canada ,info,059950d8-2197-46de-ab45-1e380b5aecf3,2021-10-19,2021-10-19,3
 Government of Yukon ,dataset,0599a96b-342b-4262-8d20-5914dade5ec4,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Government of Ontario ,dataset,0599bcd8-2c9b-497b-8d2d-1b35c7fa7da3,2021-01-27,2026-09-16,30,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,federated
 Government of Yukon ,dataset,059d3b10-a8fd-404d-ae14-cc6b3ab3a889,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
-Treasury Board of Canada Secretariat ,dataset,059f7416-cfb3-44e9-a6f8-4c5f74bd5b4f,2026-06-03,2026-11-19,5,"[True, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,059f7416-cfb3-44e9-a6f8-4c5f74bd5b4f,2026-06-03,2026-11-20,5,"[True, False, False, False, False]",True,False,primary
 Statistics Canada ,dataset,05a00263-2155-4e20-8241-b31996f9e58b,2016-09-24,2022-03-11,1,[False],False,False,primary
 Department of Justice Canada ,info,05a156cd-3373-48eb-8b22-49c254f7dcfe,2025-11-03,2025-11-03,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,05a4abbf-bf6d-4f6f-9118-2b9d5de21f06,2025-02-14,2025-02-14,5,"[False, False, False, False, False]",False,False,primary
@@ -1387,7 +1387,7 @@ Government of Nova Scotia ,dataset,0794d1a8-1562-7ab5-d57a-9ca0f0cf35a1,2022-05-
 Statistics Canada ,dataset,07957093-c8cf-4d78-ba38-4569b7822413,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,0796b610-5860-48d8-9833-2c483b6bee28,2016-09-24,2020-09-25,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,07979bc7-9b0f-4ea1-b451-3b17b21d2081,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,0797e893-751e-4695-8229-a5066e4fe43c,2016-09-24,2026-11-19,6,"[True, True, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,0797e893-751e-4695-8229-a5066e4fe43c,2016-09-24,2026-11-20,6,"[True, True, False, False, False, False]",True,False,primary
 Health Canada ,info,0798d9ec-0109-4299-a83c-65b73c9187dc,2020-12-14,2020-12-14,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,079f39ee-6a16-584d-9de9-8e8bdd8ba0c1,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,07a1dcf0-54bf-48ed-b2f1-eb4f1a81ade9,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
@@ -1549,7 +1549,7 @@ Government of Yukon ,dataset,087ada9d-da8b-494f-95a8-e83e95d574cf,2026-01-14,202
 Statistics Canada ,dataset,087db2ad-4f1f-428e-a8c0-5302b7b33686,2021-07-27,2024-07-31,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,088007be-4f48-467f-8f30-ed84215966f0,2016-09-24,2020-09-25,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,08805015-0a8c-4e43-a15d-0551c6cd8911,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Agriculture and Agri-Food Canada ,dataset,0881316a-78b5-4b64-9ccd-8987d2840a9b,2026-10-19,2026-10-19,102,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
+Agriculture and Agri-Food Canada ,dataset,0881316a-78b5-4b64-9ccd-8987d2840a9b,2026-10-19,2026-11-19,104,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,088148c9-b3dd-4a4b-bb33-6ada90354014,2019-04-17,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of British Columbia ,dataset,0881df25-a55b-4428-9763-e37be74ba77e,2020-04-24,2026-07-29,4,"[False, False, False, False]",False,False,fgp
 Office of the Auditor General of Canada ,info,0883f34a-53aa-4a0b-a77a-17ac2056462a,2022-05-02,2024-11-21,4,"[False, False, False, False]",False,False,parliament_report
@@ -3321,7 +3321,7 @@ Canada Revenue Agency ,dataset,11f2a4db-2c9c-439c-8a3d-46f00c9c60ac,2021-12-08,2
 Natural Resources Canada ,dataset,11f67db9-2555-40ee-b7be-6ea1c8655de3,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Canadian Nuclear Safety Commission ,info,11fd7647-b174-4abe-b81f-fa6d9e6e9546,2026-05-11,2026-09-25,2,"[False, False]",False,False,publication
 Communications Security Establishment Canada ,info,11fe76d8-4482-4def-85ed-bdf372051f6b,2019-12-10,2023-02-10,2,"[False, False]",False,False,publication
-Canadian Food Inspection Agency ,dataset,11fedc77-176a-4af0-9ddc-1bfa8ae1a894,2026-03-27,2026-11-16,3,"[False, False, True]",True,False,primary
+Canadian Food Inspection Agency ,dataset,11fedc77-176a-4af0-9ddc-1bfa8ae1a894,2026-03-27,2026-11-19,3,"[False, False, True]",True,False,primary
 Government of Yukon ,dataset,11ffb75f-1c05-48a6-807e-cb9bae635a30,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Global Affairs Canada ,info,120052ba-2aec-455d-80cc-4ca4cec740ae,2023-09-15,2026-09-01,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,1201c124-0ad6-59ec-ada7-690526e72c21,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -4490,6 +4490,7 @@ Public Health Agency of Canada ,info,18214ae4-9ba9-4b63-b7e5-a4b304c176a1,2021-1
 Statistics Canada ,dataset,182177b4-79a6-4dc5-a62d-e1ae57c87bf2,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Ontario ,dataset,18223291-09a2-44b8-b0d4-38f0658466f5,2021-08-25,2026-04-17,3,"[False, False, False]",False,False,federated
 Financial Consumer Agency of Canada ,info,1822ce94-04ac-4543-b710-dff0f8c1ba48,2025-11-04,2026-04-09,2,"[False, False]",False,False,publication
+Public Safety Canada ,dataset,1824b622-081d-45f8-9f08-6f43ecf0dfb2,2026-11-19,2026-11-20,2,"[True, True]",True,True,primary
 Natural Resources Canada ,dataset,18256680-0150-440c-8567-3df028fe03df,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,1827c221-6176-473d-ae4a-4ba5d1ea4568,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
 Statistics Canada ,dataset,18297f1d-a047-4819-a878-037b82936dc2,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
@@ -5130,6 +5131,7 @@ Health Canada ,info,1b7c2574-af58-430d-9dc7-6ccde2014198,2026-03-02,2026-04-01,2
 Natural Resources Canada ,dataset,1b7dd9e9-9415-4ad2-a0d9-5ae848226f1c,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Alberta ,dataset,1b7ec23c-ad84-430d-bcdb-d063aececb64,2022-03-30,2026-04-17,4,"[False, False, False, False]",False,False,federated
 Health Canada ,info,1b7f87fa-369f-485d-8ac9-1b83e2055ce4,2023-06-30,2023-06-30,2,"[False, False]",False,False,publication
+Social Sciences and Humanities Research Council of Canada ,info,1b80050d-925c-44dd-a7e3-9e52fd6e07d4,2026-11-19,2026-11-19,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,1b801275-49fc-4bb9-89a7-b968453becb5,2023-11-08,2023-11-08,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,1b831f2e-02d8-4d8a-8de1-387170face93,2021-03-30,2026-10-01,5,"[False, False, False, False, False]",False,False,primary
 Administrative Tribunals Support Service of Canada ,dataset,1b85d621-8e09-4b49-b0db-bcc1a228d21d,2023-04-17,2024-11-21,4,"[False, False, False, False]",False,False,primary
@@ -6065,6 +6067,7 @@ Government of Yukon ,dataset,20a28614-1d54-41b7-afd0-c012cf71cf3d,2025-09-17,202
 Global Affairs Canada ,info,20a3516f-0857-425a-860f-1fca60fef171,2022-08-11,2026-06-25,6,"[False, False, False, False, False, False]",False,False,publication
 Government of British Columbia ,dataset,20a44728-3cc6-48d2-9360-9d6c53389109,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
 Natural Resources Canada ,dataset,20a67831-b725-5d8d-9443-a479fccd1e24,2017-04-18,2021-01-11,6,"[False, False, False, False, False, False]",False,False,geogratis
+Prairies Economic Development Canada ,info,20aa6a7a-37c1-4b79-abe8-d977cb4c8563,2026-11-19,2026-11-19,3,"[False, False, False]",False,False,aia
 Government of Alberta ,dataset,20aa6c44-6b90-4935-985e-8de7bc82101a,2023-12-20,2026-07-01,4,"[False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,20aafecc-b36d-58d5-810d-932d1a3241c8,2016-09-24,2017-01-26,2,"[False, False]",False,False,geogratis
 Environment and Climate Change Canada ,dataset,20ad7856-abe6-48c6-bead-9470a6a31aea,2024-07-15,2026-01-14,2,"[False, False]",False,False,fgp
@@ -7389,7 +7392,7 @@ Natural Resources Canada ,dataset,27bf7a03-9067-5788-b002-766bfe6ad8e6,2017-04-1
 Statistics Canada ,dataset,27bfe874-b9cd-465f-963f-9b65f495972b,2016-09-24,2022-03-09,1,[False],False,False,primary
 Canada Revenue Agency ,dataset,27c0178b-6bcf-431e-b75a-3a40aa7f7a4a,2023-02-14,2024-11-21,2,"[False, False]",False,False,primary
 Government of Alberta ,dataset,27c246b6-db1b-4f13-ae8c-64d408856daf,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
-Statistics Canada ,dataset,27c490d8-b51b-45a6-8e6f-24ca7becc899,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,27c490d8-b51b-45a6-8e6f-24ca7becc899,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Government of Nova Scotia ,dataset,27c69e48-6bfe-e0d5-4546-26b019442ba8,2022-05-03,2026-04-17,8,"[False, False, False, False, False, False, False, False]",False,False,federated
 Agriculture and Agri-Food Canada ,dataset,27c70cf8-2ad2-4c69-a529-90f91561b741,2016-09-24,2025-10-15,4,"[False, False, False, False]",False,False,fgp
 Government of Nova Scotia ,dataset,27c78efe-d7f1-7760-0608-877638cb6c8b,2022-05-03,2026-06-24,9,"[False, False, False, False, False, False, False, False, False]",False,False,federated
@@ -7618,7 +7621,7 @@ Government of New Brunswick ,dataset,29122e72-5762-25f0-732f-c6377f11763f,2025-0
 Natural Resources Canada ,dataset,29149573-ca3a-5e98-991a-3e99e3eb9429,2016-09-24,2022-03-14,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,2915aedc-514d-455e-b32b-faba3af01048,2025-09-17,2026-08-26,4,"[False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,2916dc95-dc60-4534-8f67-d0bcaa3e85e2,2024-02-26,2024-02-26,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,2916fad5-ebcc-4c86-b0f3-4f619b29f412,2016-09-24,2026-11-19,19,"[False, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,2916fad5-ebcc-4c86-b0f3-4f619b29f412,2016-09-24,2026-11-20,19,"[False, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, False]",True,False,primary
 Government of Alberta ,dataset,291718fa-597b-4a01-8514-c9002097ac08,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,291733be-8df4-46f0-a676-c60fa23a903f,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,2919a3c8-65c7-53b5-bc1d-e803fb5c03a7,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
@@ -7808,7 +7811,7 @@ Statistics Canada ,dataset,2a387dcf-5b55-4cc9-adad-78cf5e430f3f,2021-08-11,2023-
 Global Affairs Canada ,info,2a39a37c-4b7a-49f2-8672-344cabbfcf4c,2025-02-17,2025-10-08,18,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,2a39f6ca-22c5-486e-afde-eb63f2ecfab7,2018-06-27,2023-07-28,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,2a3c8628-40fa-4c8e-b4f9-02c4fb2f978d,2024-05-31,2026-05-29,5,"[False, False, False, False, False]",False,False,primary
-Statistics Canada ,dataset,2a3d1993-cf88-406d-b8d5-23aad0c65a22,2018-06-27,2026-11-13,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,2a3d1993-cf88-406d-b8d5-23aad0c65a22,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,2a3d329b-6ab0-5ad2-a9f9-8326e5686175,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Health Canada ,info,2a3e20e4-ae17-4e98-8069-eab1edb64481,2021-07-27,2021-07-27,2,"[False, False]",False,False,publication
 Government and Municipalities of Québec ,dataset,2a3fac45-2345-4f7d-9001-53994d6f569c,2020-09-14,2026-11-18,4,"[False, False, False, False]",False,False,fgp
@@ -8515,7 +8518,7 @@ Health Canada ,info,2dfa9c98-8ae6-44a0-b6e9-d93f86a1b5f1,2021-06-30,2021-06-30,2
 Statistics Canada ,dataset,2dfb025e-2728-47a5-973c-a38038a31abd,2023-11-08,2023-11-08,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,2dffb7fe-b892-41aa-8b67-0b6f88e2e013,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Alberta ,dataset,2e025222-83e3-4287-bf94-69da3ab61975,2018-06-27,2026-07-01,13,"[False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,federated
-Statistics Canada ,dataset,2e02db44-ff1e-4250-9df4-5d011b1e65bd,2018-06-27,2026-10-21,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,2e02db44-ff1e-4250-9df4-5d011b1e65bd,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,2e05da06-5b0a-406b-af56-5f344f6d94e5,2021-04-13,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,2e090ee2-34f3-4008-8d00-1b3e1e758c48,2025-09-17,2026-11-04,5,"[False, False, False, False, False]",False,False,fgp
 Government of British Columbia ,dataset,2e097125-7011-4aff-b9e6-2a21ff9dce7d,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
@@ -9848,7 +9851,7 @@ Statistics Canada ,dataset,35271f08-9b31-4f4b-aa85-faf07a6d382d,2018-06-27,2023-
 Government and Municipalities of Québec ,dataset,3527e0b8-f1d3-4b04-9301-ff4361f41c07,2023-11-01,2026-05-27,7,"[False, False, False, False, False, False, False]",False,False,federated
 Government of British Columbia ,dataset,352897f1-1587-48bd-b26e-980cb41964e4,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
 Government of Nova Scotia ,dataset,352943ba-62a3-fa95-a16b-0e5c718de591,2022-09-14,2026-08-26,11,"[False, False, False, False, False, False, False, False, False, False, False]",False,False,federated
-Statistics Canada ,dataset,352bb9e6-714c-499e-9e3f-74613d1daf43,2023-03-24,2026-10-23,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,352bb9e6-714c-499e-9e3f-74613d1daf43,2023-03-24,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,352c1df9-b404-583d-ad16-59233e79df78,2016-09-24,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Public Services and Procurement Canada ,dataset,352c2db8-8797-4473-a034-1034f000e0c4,2019-06-10,2026-04-14,3,"[False, False, False]",False,False,primary
 Health Canada ,info,352cc6eb-ec3c-43e5-b8dd-56a5382434ec,2023-06-30,2023-06-30,2,"[False, False]",False,False,publication
@@ -10079,7 +10082,7 @@ Statistics Canada ,dataset,3648cb67-ef41-420f-99d6-9580a434cc90,2021-01-19,2026-
 Canadian Space Agency ,info,3648d7fe-d98b-4af0-805f-8e94d3621e9e,2017-06-07,2024-11-20,8,"[False, False, False, False, False, False, False, False]",False,False,publication
 Government and Municipalities of Québec ,dataset,364b5a99-4bd3-46bf-ba2c-0cd042273b8f,2020-09-11,2026-05-27,2,"[False, False]",False,False,federated
 Natural Resources Canada ,dataset,364fb93e-d082-5617-9974-45263a9a76ad,2019-09-17,2019-09-17,2,"[False, False]",False,False,fgp
-Statistics Canada ,dataset,36515a02-cc2e-4f17-a1d8-6bcbfc92bce1,2023-03-24,2026-10-23,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,36515a02-cc2e-4f17-a1d8-6bcbfc92bce1,2023-03-24,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,36518350-03b3-5700-95ec-2c672c78dc93,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Global Affairs Canada ,info,3656b2ad-8cf1-4241-8b58-e20154ac2037,2024-04-22,2025-10-08,8,"[False, False, False, False, False, False, False, False]",False,False,publication
 Government of Ontario ,dataset,3658fe5c-29dd-429a-835a-3411ad3005fe,2020-11-27,2026-10-07,16,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
@@ -10183,7 +10186,7 @@ Statistics Canada ,dataset,36d9d9be-cf03-409b-bf82-387e4458166d,2019-12-17,2026-
 Health Canada ,info,36db521e-6992-46f5-89ad-90f4d77c3464,2023-12-01,2023-12-02,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,36dc6668-1516-5060-95a8-5ccc53b6cbdd,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,36dd3828-33ca-44ba-884d-c1a605320385,2021-04-13,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Statistics Canada ,dataset,36dd59c5-de89-4d93-a998-b981e9118e0d,2021-04-13,2025-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,36dd59c5-de89-4d93-a998-b981e9118e0d,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,36ddc335-475a-4229-8533-45c4a34c90bb,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,36de538a-a395-46f3-94dc-bbc33817cae6,2025-09-17,2026-11-04,5,"[False, False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,36debc19-efd1-4cd8-8fa5-6f99943cb499,2021-06-22,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
@@ -10235,7 +10238,7 @@ Government of Nova Scotia ,dataset,37196fcc-e28e-857b-40dd-716684fd5f8b,2022-05-
 Global Affairs Canada ,info,3719addb-cdf4-430a-87d0-413550ed48f4,2025-09-02,2025-10-09,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,371aa130-c33f-4c97-972a-5a6f2715e121,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,371d503e-867e-43fb-a783-7986c4a9d9aa,2025-09-17,2026-08-26,5,"[False, False, False, False, False]",False,False,fgp
-Health Canada ,info,371d84b2-e439-4c39-a4ef-8817d65a1485,2025-10-21,2025-12-05,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
+Health Canada ,info,371d84b2-e439-4c39-a4ef-8817d65a1485,2025-10-21,2026-11-19,14,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,371f89ee-53d9-4a19-be4c-d784ebe9eccd,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,3721618f-6371-4613-87be-53d31cf9551b,2024-10-15,2024-11-20,2,"[False, False]",False,False,parliament_committee
 Government of Alberta ,dataset,372487fd-f238-4ae9-9943-6228db491351,2023-12-27,2026-04-17,4,"[False, False, False, False]",False,False,federated
@@ -10653,7 +10656,7 @@ Natural Resources Canada ,dataset,39933e75-2313-59a6-8449-977f369c3c70,2016-09-2
 Natural Resources Canada ,dataset,3993e299-80a0-4db1-a9f1-5dd261f256a0,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,3993e528-cb56-4f25-a770-d783577d366f,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,39946bd8-180a-4daf-a68b-70a021deb401,2021-03-29,2026-10-01,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,39954bc7-ff7a-4180-8b6e-b02bee35078a,2021-05-07,2026-11-19,1,[True],True,True,primary
+Treasury Board of Canada Secretariat ,dataset,39954bc7-ff7a-4180-8b6e-b02bee35078a,2021-05-07,2026-11-20,1,[True],True,True,primary
 Natural Resources Canada ,dataset,3995ab19-528d-5768-bee1-8c0d839dd21b,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Government of Alberta ,dataset,39965bcf-cb43-40a8-845c-241b29c9bad6,2023-04-05,2026-04-17,2,"[False, False]",False,False,federated
 National Defence ,info,399bed37-bfe4-4801-b0a3-ec2d155a6d38,2025-02-10,2025-02-10,1,[False],False,False,parliament_committee
@@ -10888,7 +10891,7 @@ Veterans Affairs Canada ,info,3aba7b14-2024-4689-bba3-733c19eb4655,2017-08-10,20
 Department of Justice Canada ,info,3abb5c74-3bbf-4647-b1c1-fe8390e98223,2021-06-10,2023-05-17,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Environment and Climate Change Canada ,dataset,3abbdf26-7a0d-4b33-b6be-cf5303167ff2,2017-04-28,2024-12-10,2,"[False, False]",False,False,fgp
 Government of Alberta ,dataset,3abf4b0c-f1ae-40b7-9edc-ecaa4879ffbf,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
-Treasury Board of Canada Secretariat ,dataset,3ac0d080-6149-499a-8b06-7ce5f00ec56c,2018-08-03,2026-11-19,6,"[False, False, True, True, True, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,3ac0d080-6149-499a-8b06-7ce5f00ec56c,2018-08-03,2026-11-20,6,"[False, False, True, True, True, True]",True,False,primary
 Statistics Canada ,dataset,3ac161cf-1517-4183-b22f-8079c80c88a3,2018-06-27,2026-03-10,5,"[False, False, False, False, False]",False,False,primary
 Canadian Nuclear Safety Commission ,dataset,3ac296d1-4a97-45ab-82c5-2a4f963cf4e6,2022-08-24,2024-08-30,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,3ac36136-daba-50c7-8e3b-08f20646a9a9,2016-09-24,2022-03-14,2,"[False, False]",False,False,geogratis
@@ -11169,7 +11172,7 @@ Government and Municipalities of Québec ,dataset,3c0a34a6-2d4f-4320-88ae-e84347
 Government of Alberta ,dataset,3c0cb956-8068-41c6-bf1d-2a86ad2a4cc1,2026-02-18,2026-07-03,3,"[False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,3c0d93e1-510f-5bd2-80d0-478b7be46062,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Alberta ,dataset,3c0e361b-dc7f-45a1-bc16-a2e1909a2d5f,2018-06-27,2026-04-17,2,"[False, False]",False,False,federated
-Statistics Canada ,dataset,3c0f2a93-c93f-4fa0-95f1-b9a8a09ad9d7,2018-06-27,2026-11-13,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,3c0f2a93-c93f-4fa0-95f1-b9a8a09ad9d7,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Communications Security Establishment Canada ,info,3c1020f5-17da-4cc7-aac8-0ccdbcb6920e,2025-09-02,2025-09-02,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,3c10c922-3eb4-48ba-b00f-a95c09ca3ee0,2016-09-24,2022-02-24,8,"[False, False, False, False, False, False, False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,3c1430e7-4174-5cc0-96c5-e6a299953638,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
@@ -11285,6 +11288,7 @@ Government of British Columbia ,dataset,3cb4845e-fa06-4fd2-87af-f66a7832f879,202
 Global Affairs Canada ,info,3cb7095f-71fb-4276-893c-09d300c4a39f,2026-08-20,2026-08-20,28,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Health Canada ,info,3cb8a25f-ac3c-4102-8a32-2497eaf3f187,2021-01-27,2021-01-27,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,3cbc48b7-a0aa-4361-8227-41426737b7a1,2016-09-24,2022-03-09,1,[False],False,False,primary
+Global Affairs Canada ,info,3cbcd861-8a9b-492c-a2c9-39b5c4e79f0a,2026-11-19,2026-11-19,8,"[False, False, False, False, False, False, False, False]",False,False,publication
 Government of Alberta ,dataset,3cbdef0b-ec79-4b81-bcfd-1a47d8c00d86,2022-03-29,2026-03-04,6,"[False, False, False, False, False, False]",False,False,fgp
 Government and Municipalities of Québec ,dataset,3cbdffce-c965-4ef4-b10c-efa3e7702d19,2022-03-29,2026-11-18,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Government of Yukon ,dataset,3cbea519-b1a9-4ff2-b115-23f3827f783e,2026-10-14,2026-11-04,3,"[False, False, False]",False,False,federated
@@ -12103,7 +12107,7 @@ Government of Northwest Territories ,dataset,41200f04-ab31-8c9b-f3d0-ddf263940ea
 Natural Resources Canada ,dataset,4121f6d2-7d0b-5b62-9b5d-f828b3ec8f6f,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Fisheries and Oceans Canada ,dataset,412431c4-7363-410e-86a4-76feb9a6dcde,2021-09-29,2026-03-24,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Global Affairs Canada ,info,41252fe6-9021-4dca-b9d3-a3ba8a5c79da,2026-03-05,2026-09-28,5,"[False, False, False, False, False]",False,False,publication
-Statistics Canada ,dataset,4125a95f-6d61-4305-9715-85ec4471d2f0,2021-04-13,2025-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,4125a95f-6d61-4305-9715-85ec4471d2f0,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 National Research Council Canada ,info,41291708-c1bf-42b3-8d6c-240d2f4c950b,2020-12-14,2023-11-19,34,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,parliament_report
 Health Canada ,info,4129c143-a6dd-4781-afa1-874c23a5419d,2021-11-30,2021-11-30,2,"[False, False]",False,False,publication
 "Innovation, Science and Economic Development Canada ",dataset,4129e42c-bfa6-40f1-9b2a-19dc04136bb4,2018-08-22,2024-06-18,5,"[False, False, False, False, False]",False,False,primary
@@ -12473,7 +12477,7 @@ Natural Resources Canada ,dataset,43206406-20a2-4fa0-8633-67d9a004a4ad,2016-09-2
 Federal Economic Development Agency for Southern Ontario ,info,4321295a-c79d-471a-88ba-77299aff3737,2021-12-22,2022-11-09,2,"[False, False]",False,False,transition_deputy
 Health Canada ,info,43225cd1-fe8a-4c49-8d23-1aa80c9aaffb,2023-09-01,2023-09-03,2,"[False, False]",False,False,publication
 Government of Alberta ,dataset,43247aaf-4560-4e79-b6e7-f2052081b5ba,2022-03-30,2026-06-12,5,"[False, False, False, False, False]",False,False,fgp
-Treasury Board of Canada Secretariat ,dataset,432527ab-7aac-45b5-81d6-7597107a7013,2017-02-20,2026-11-19,6,"[False, False, False, False, True, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,432527ab-7aac-45b5-81d6-7597107a7013,2017-02-20,2026-11-20,6,"[False, False, False, False, True, True]",True,False,primary
 Natural Resources Canada ,dataset,432742d2-9bf7-51c3-b859-62b4c43892fc,2016-09-24,2022-02-22,1,[False],False,False,geogratis
 Global Affairs Canada ,info,43278523-a4b4-4ea6-88ba-3122a8a5d366,2024-08-22,2025-10-08,6,"[False, False, False, False, False, False]",False,False,publication
 Global Affairs Canada ,info,4327ab1c-831d-41a4-ad51-9aa1d7798e7f,2025-02-25,2025-10-09,4,"[False, False, False, False]",False,False,publication
@@ -12651,7 +12655,7 @@ Department of Justice Canada ,info,44041972-cf25-47bf-bb6f-9221979ac71a,2024-06-
 Public Services and Procurement Canada ,dataset,44046a1e-537b-45f8-9a7a-4a297001b001,2018-06-06,2026-03-09,2,"[False, False]",False,False,primary
 Natural Resources Canada ,dataset,4409e952-3340-4c0b-a7c7-b80817f15558,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Department of Justice Canada ,info,4409f2a3-1d2b-4ef5-9fcd-fbe1dde98c0c,2025-09-04,2025-09-04,2,"[False, False]",False,False,publication
-Indigenous Services Canada ,dataset,440a10df-4f65-47f4-851c-6acf30d37841,2025-01-22,2026-11-19,5,"[True, True, False, False, False]",True,False,primary
+Indigenous Services Canada ,dataset,440a10df-4f65-47f4-851c-6acf30d37841,2025-01-22,2026-11-20,5,"[True, True, False, False, False]",True,False,primary
 Statistics Canada ,dataset,440be770-8816-4956-9a9d-8c4c97e35242,2018-06-27,2026-10-19,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,440cc2a0-0ac4-4436-b557-1de06c39ce0c,2021-04-13,2026-01-13,5,"[False, False, False, False, False]",False,False,primary
 Government of Nova Scotia ,dataset,440f0c9f-474e-5d4f-417f-c23f40346731,2022-04-14,2026-11-11,14,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
@@ -13249,7 +13253,7 @@ National Film Board ,info,474306b4-add9-44fe-986a-fbd1f89c1108,2017-10-04,2017-1
 Public Health Agency of Canada ,info,474328d8-e710-421c-9375-6af8bd212048,2019-09-17,2019-09-17,4,"[False, False, False, False]",False,False,publication
 Natural Resources Canada ,dataset,4743729c-6efd-5b43-a4ac-66f6fa540def,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Health Canada ,info,47444b75-237c-41fe-b1e9-b63f467733f8,2022-12-02,2022-12-02,2,"[False, False]",False,False,publication
-Health Canada ,dataset,4744a5e2-a35d-41fc-b4a5-17ea3cfabf49,2026-10-16,2026-10-21,19,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False]",True,False,primary
+Health Canada ,dataset,4744a5e2-a35d-41fc-b4a5-17ea3cfabf49,2026-10-16,2026-11-20,19,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False]",True,False,primary
 Government of Nova Scotia ,dataset,47466568-c38d-8bb9-26d9-331079dad727,2022-05-03,2026-04-17,8,"[False, False, False, False, False, False, False, False]",False,False,federated
 Government of Nova Scotia ,dataset,47487564-1e4d-2f4d-81a5-ef7ad266e974,2022-05-03,2026-11-11,8,"[False, False, False, False, False, False, False, False]",False,False,federated
 Correctional Service of Canada ,info,4748cf37-9e97-414a-9cbd-664b7e28db23,2026-04-16,2026-04-16,2,"[False, False]",False,False,parliament_report
@@ -13913,7 +13917,7 @@ Statistics Canada ,dataset,4add5f7d-ec19-411a-aa00-4289f40521a9,2021-04-13,2026-
 Statistics Canada ,dataset,4adde862-c238-4197-8c36-7f7a176751c0,2019-04-17,2026-03-02,5,"[False, False, False, False, False]",False,False,primary
 Fisheries and Oceans Canada ,info,4ade0a9f-5ca3-4eb2-9531-a3e5ff11647e,2016-09-23,2022-02-24,4,"[False, False, False, False]",False,False,publication
 Government of Alberta ,dataset,4ae12d1a-f78d-448e-baeb-8241f9c7fc5e,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
-Treasury Board of Canada Secretariat ,dataset,4ae27978-0931-49ab-9c17-0b119c0ba92f,2017-01-18,2026-11-19,7,"[False, False, False, False, False, False, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,4ae27978-0931-49ab-9c17-0b119c0ba92f,2017-01-18,2026-11-20,7,"[False, False, False, False, False, False, True]",True,False,primary
 Statistics Canada ,dataset,4ae34372-025b-4217-8573-e160171c2597,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Canadian Food Inspection Agency ,dataset,4ae4c2b3-e1b7-451a-b313-02e51d73da73,2026-02-19,2026-02-19,3,"[True, False, False]",True,False,primary
 Agriculture and Agri-Food Canada ,dataset,4ae5b0d1-b811-4238-9aed-ce97363f51eb,2019-08-01,2026-04-29,9,"[False, False, False, False, False, False, False, False, False]",False,False,fgp
@@ -14651,7 +14655,7 @@ Treasury Board of Canada Secretariat ,dataset,4ec066d6-4833-48e7-b5ec-00457d778a
 Government of Ontario ,dataset,4ec1ad6c-49c0-4e65-ae4e-fbd16338b225,2020-11-27,2026-03-25,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Government of British Columbia ,dataset,4ec2a751-69c1-4630-ab23-554881cb92d8,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
 Government and Municipalities of Québec ,dataset,4ec5702d-c307-4e7d-a858-5f40e019d821,2020-09-11,2026-05-27,3,"[False, False, False]",False,False,federated
-Statistics Canada ,dataset,4ec59af5-ce1d-486c-b62a-53c41bc66a0c,2020-04-09,2026-10-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,4ec59af5-ce1d-486c-b62a-53c41bc66a0c,2020-04-09,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,4ec6a8c9-b0b6-4f0e-9f4d-b144bf31decc,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,4ec73314-8dff-5bee-8748-7b2d9a797a09,2016-09-24,2022-02-22,4,"[False, False, False, False]",False,False,geogratis
 Government of British Columbia ,dataset,4eca189b-ad46-4678-9410-c0eb7daaea89,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
@@ -15277,7 +15281,7 @@ Government of Ontario ,dataset,522899b3-bce2-4244-935a-c2da2029c79a,2020-11-27,2
 Natural Resources Canada ,dataset,522b07b9-78e2-4819-b736-ad9208eb1067,2017-03-29,2024-02-15,26,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Government of British Columbia ,dataset,522b4fac-8030-4ea8-ada8-aeb4b85c7658,2023-04-13,2026-04-17,3,"[False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,522c47b7-396d-4a66-b479-2ae1fa14dcfd,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
-Fisheries and Oceans Canada ,dataset,522d1b67-30d8-4a34-9b62-5da99b1035e6,2017-04-28,2026-10-29,18,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
+Fisheries and Oceans Canada ,dataset,522d1b67-30d8-4a34-9b62-5da99b1035e6,2017-04-28,2026-11-19,18,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,522df248-e7b8-59e7-a323-437d803d1cfb,2016-09-24,2022-02-22,3,"[False, False, False]",False,False,geogratis
 Health Canada ,info,522e5ab8-e9d5-49a8-be90-56f10e509c05,2023-07-26,2023-07-26,2,"[False, False]",False,False,publication
 Parks Canada ,dataset,522ee7d2-4cf3-4c84-a55b-b03491ad62b0,2018-04-03,2024-12-09,2,"[True, True]",True,True,primary
@@ -15543,7 +15547,7 @@ Statistics Canada ,dataset,539ac170-bdb0-4e78-afa3-4493b6425e6f,2018-06-27,2023-
 Statistics Canada ,dataset,539b8f60-66ac-42ab-9138-187fe751a792,2025-06-17,2025-06-17,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,539ddaab-75f5-4470-a07b-d75d616fda60,2018-06-27,2025-08-21,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,539e4dac-e1df-429c-9316-bda730d4fc92,2023-04-12,2026-09-09,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,53a00090-9ad7-4915-bf99-5e63489596ac,2018-06-27,2026-10-21,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,53a00090-9ad7-4915-bf99-5e63489596ac,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,53a03b1c-38d3-4010-b894-31045cd070cc,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
 Canadian Food Inspection Agency ,dataset,53a0fa44-b9dd-4afe-a0ef-b7076d33e939,2024-07-15,2024-12-09,1,[True],True,True,primary
 Statistics Canada ,dataset,53a10d33-fa57-4853-897c-2d879db09f6b,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
@@ -16539,7 +16543,7 @@ Natural Resources Canada ,dataset,58bacfb9-37dd-417d-9fed-1afe56def271,2016-09-2
 Government of Nova Scotia ,dataset,58bb5034-4380-58c6-391e-92cfb90d7b59,2022-04-14,2026-11-18,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Government of Nova Scotia ,dataset,58bb804c-1431-4e8a-eb07-2d982d6f81b2,2022-05-03,2026-06-24,9,"[False, False, False, False, False, False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,58bc854a-7069-5705-a957-b900b4a5fbf2,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
-Fisheries and Oceans Canada ,dataset,58be6932-8f3f-459d-9ace-8b7efd1b15dc,2021-01-22,2026-05-08,6,"[False, False, False, False, False, False]",False,False,fgp
+Fisheries and Oceans Canada ,dataset,58be6932-8f3f-459d-9ace-8b7efd1b15dc,2021-01-22,2026-11-19,6,"[False, False, False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,58bec518-a96c-48e3-92a2-aa4603f753d1,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,58c0bb12-9fc4-456f-9f6e-82adc5e2963a,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,58c0f8e4-f3d3-4d7c-8d51-4640bb9cb1b3,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -16706,7 +16710,7 @@ Global Affairs Canada ,info,59886ab3-3a7d-4d65-beb4-06ac135b0f54,2024-08-21,2025
 Global Affairs Canada ,info,598b4cfc-8904-4a61-9fcf-eee1a8ea0df6,2024-06-21,2025-10-08,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,598dd193-7b59-4253-b452-5d434d6dfc20,2021-04-13,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,5990ac8f-4d6a-4284-bc9d-8512d5454d19,2020-05-01,2020-05-01,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,599125f7-82c2-465b-9e06-badebaa496ed,2021-04-13,2025-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,599125f7-82c2-465b-9e06-badebaa496ed,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Fisheries and Oceans Canada ,dataset,5991274e-4364-4aa8-828a-81ac235e0b65,2021-08-12,2026-03-24,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,59913168-9f60-4310-9986-219b60079270,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Alberta ,dataset,5992f587-5836-404c-9eba-6a78e6389883,2018-06-27,2026-04-17,2,"[False, False]",False,False,federated
@@ -16799,7 +16803,7 @@ Canada Energy Regulator ,info,5a1176c8-f1c3-40db-9f3a-ac33dd83142f,2020-11-04,20
 Health Canada ,info,5a170a56-debb-4944-b5c9-d6fce1e12657,2021-07-29,2021-07-29,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,5a172280-cbfa-4101-91c2-8bf5447a1697,2016-09-24,2022-03-09,1,[False],False,False,primary
 Canadian Nuclear Safety Commission ,info,5a17e6c8-a0a5-4113-8d55-45f96a124c7d,2025-08-13,2025-08-13,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,5a183c22-80e7-40ea-850d-4dc98e1748ad,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,5a183c22-80e7-40ea-850d-4dc98e1748ad,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Government of British Columbia ,dataset,5a18c401-7c99-48fe-8a1a-b4597072d8b6,2020-06-05,2026-01-28,5,"[False, False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,5a1b346a-6d19-4d65-8665-7d44be6ccd49,2018-06-27,2023-01-30,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,5a1e6543-4cbb-4d9a-a4e0-95b59ccf4d09,2018-06-27,2026-11-06,5,"[False, False, False, False, False]",False,False,primary
@@ -17104,6 +17108,7 @@ Health Canada ,info,5bab3633-9a7b-4ce5-8f9a-1630c8312045,2022-07-26,2022-07-26,2
 Natural Resources Canada ,dataset,5bac846c-438f-47ea-9b21-16c87711c4ba,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,5bacf9ae-7a85-5ee0-8ca4-5460eb32f1c3,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Global Affairs Canada ,dataset,5bb030d0-cafc-4c61-89f8-9f9ec689a8ce,2026-06-10,2026-10-04,2,"[True, False]",True,False,primary
+Fisheries and Oceans Canada ,dataset,5bb07805-48bf-4c0f-bf60-d8112baa0247,2026-11-20,2026-11-20,7,"[False, False, False, False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,5bb2342c-13a0-49e4-9039-ad0309d430ef,2021-03-17,2024-10-24,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,5bb2f1e6-7381-4bfe-9234-5b4942fa05f0,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Crown-Indigenous Relations and Northern Affairs Canada ,dataset,5bb7e2ef-a5f5-4176-acab-8a7f05a2d6a3,2019-03-27,2025-03-26,28,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
@@ -17241,7 +17246,7 @@ Statistics Canada ,dataset,5c707f43-3fac-4a28-ba00-1ddd8ba6d795,2018-06-27,2023-
 Health Canada ,info,5c70967a-3d5b-4d10-869b-790b74cd0e70,2023-10-26,2023-10-28,2,"[False, False]",False,False,publication
 Global Affairs Canada ,info,5c720011-0a06-47de-b368-723443390d61,2023-12-19,2025-10-10,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,5c72fedc-3c40-5f14-9f24-15b9fcdfd462,2017-04-18,2021-01-11,6,"[False, False, False, False, False, False]",False,False,geogratis
-Environment and Climate Change Canada ,dataset,5c73de1e-cb73-46f4-a74d-b00c6e76a341,2026-11-18,2026-11-18,56,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
+Environment and Climate Change Canada ,dataset,5c73de1e-cb73-46f4-a74d-b00c6e76a341,2026-11-18,2026-11-19,57,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,5c746d35-44d1-4375-8867-07722099fc20,2016-09-24,2022-03-09,1,[False],False,False,primary
 Statistics Canada ,dataset,5c75d69e-47d7-4562-9673-f8214c3d7269,2023-10-17,2026-02-05,5,"[False, False, False, False, False]",False,False,primary
 Government of Alberta ,dataset,5c77a786-9736-4bf1-acef-e3c7840fb3a2,2024-02-14,2026-07-01,4,"[False, False, False, False]",False,False,federated
@@ -17320,7 +17325,7 @@ Global Affairs Canada ,info,5ce06055-003d-45f4-a522-5c4843064aee,2026-07-20,2026
 Global Affairs Canada ,info,5ce518b0-0daa-44b8-a009-a28e5f6044f1,2025-08-28,2026-01-29,2,"[False, False]",False,False,publication
 Employment and Social Development Canada ,info,5cea4839-da98-4768-b8f7-b3e519eac719,2021-10-22,2021-10-22,2,"[False, False]",False,False,parliament_committee
 Statistics Canada ,dataset,5ceb5e2e-128b-4149-a51e-412c1e1cef4e,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Statistics Canada ,dataset,5cee2dc0-781c-4689-a3d7-c0fd4dfa2ca4,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,5cee2dc0-781c-4689-a3d7-c0fd4dfa2ca4,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,5ceff246-c535-4776-a84b-11828f9aa219,2016-09-24,2022-03-09,1,[False],False,False,primary
 Natural Resources Canada ,dataset,5cf00d3b-4821-5224-a31d-34d1fdb4b2d9,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Government and Municipalities of Québec ,dataset,5cf0220b-c149-43c4-ac23-758c55648584,2020-09-11,2026-05-27,4,"[False, False, False, False]",False,False,federated
@@ -19126,7 +19131,7 @@ Statistics Canada ,dataset,66c64c7c-c6a7-4244-bbba-b16425b1c133,2025-01-24,2026-
 Health Canada ,info,66c6b124-ff08-4281-9529-b80b80dc3a6a,2022-09-27,2022-09-27,2,"[False, False]",False,False,publication
 Government of Alberta ,dataset,66c708e4-fd14-4bc7-980a-46749255372e,2022-03-29,2026-04-17,4,"[False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,66c7091a-9882-4668-8104-1931044d37a0,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Canadian Food Inspection Agency ,dataset,66c8ff38-27e8-4e1a-9270-ebbdede8a2e6,2021-06-03,2026-10-16,1,[True],True,True,primary
+Canadian Food Inspection Agency ,dataset,66c8ff38-27e8-4e1a-9270-ebbdede8a2e6,2021-06-03,2026-11-20,1,[True],True,True,primary
 Parks Canada ,dataset,66c92688-4d15-4fd1-a612-97ed3130e50c,2018-02-09,2024-12-09,1,[True],True,True,primary
 Environment and Climate Change Canada ,dataset,66caa8cc-0e9c-4fdb-ae40-fab9c255b811,2023-03-20,2025-10-15,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Global Affairs Canada ,info,66cb3c8e-5711-4619-bd5c-03453f3f46ba,2023-09-14,2026-09-01,4,"[False, False, False, False]",False,False,publication
@@ -19825,7 +19830,7 @@ Statistics Canada ,dataset,6a749ed7-6f69-403e-8afb-c243354642db,2018-06-27,2023-
 Natural Resources Canada ,dataset,6a75b814-52ab-4f18-ba69-009517b0da26,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,6a7698dd-ded8-4579-a434-345ec1f584d0,2018-06-27,2026-11-06,5,"[False, False, False, False, False]",False,False,primary
 Elections Canada ,dataset,6a78ccfd-6bba-4109-b040-87cb8c71ec35,2016-09-26,2021-08-11,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,fgp
-Statistics Canada ,dataset,6a791563-8e7c-45c1-baec-8ea486830edc,2018-06-27,2026-11-13,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,6a791563-8e7c-45c1-baec-8ea486830edc,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,6a7a5ebc-9bfe-5895-b309-ec30424ccb62,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Department of Finance Canada ,info,6a7cc529-94b9-43b4-97fd-c507f45df7b4,2020-03-19,2020-03-19,4,"[False, False, False, False]",False,False,transition
 Government of Yukon ,dataset,6a7f4c6f-f21e-4171-ab0f-ede9db0ecf5e,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
@@ -19864,7 +19869,7 @@ Fisheries and Oceans Canada ,dataset,6ab2803a-aace-4e60-83ed-44a7e0ccd1d8,2020-0
 Natural Resources Canada ,dataset,6ab3d840-ae19-58f4-b090-332f0538df82,2016-09-24,2017-02-01,2,"[False, False]",False,False,geogratis
 Health Canada ,info,6ab6c12e-c2e7-4d11-bec9-9363febc78a9,2024-04-02,2024-04-04,2,"[False, False]",False,False,publication
 Environment and Climate Change Canada ,dataset,6ab784be-1197-4820-8bc2-fd20da32632c,2017-03-22,2025-11-28,7,"[False, False, False, False, False, False, False]",False,False,fgp
-Public Services and Procurement Canada ,dataset,6abd20d4-7a1c-4b38-baa2-9525d0bb2fd2,2023-04-27,2026-11-19,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
+Public Services and Procurement Canada ,dataset,6abd20d4-7a1c-4b38-baa2-9525d0bb2fd2,2023-04-27,2026-11-20,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Public Health Agency of Canada ,info,6ac089df-9721-47e1-ad9d-5eb1ad3f33bb,2021-08-25,2021-08-31,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,6ac23f7d-7c13-4038-84b7-3bf7efe5c527,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Nova Scotia ,dataset,6ac5555e-7df4-6201-8462-3a2d5c4f1721,2022-05-03,2026-08-12,8,"[False, False, False, False, False, False, False, False]",False,False,federated
@@ -20490,7 +20495,7 @@ Health Canada ,info,6e4f46c0-301c-46d3-8403-84ae53a1c69a,2022-09-27,2022-09-27,2
 Statistics Canada ,dataset,6e4fd0b7-6ce6-46d8-abb9-4c56886dc6d2,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Public Health Agency of Canada ,info,6e50d29a-d65b-483b-8c29-af07fc0d3c49,2021-02-17,2024-11-20,4,"[False, False, False, False]",False,False,publication
 Natural Resources Canada ,dataset,6e5122f6-098e-47e1-a43c-7908f28cf5fe,2024-03-08,2024-03-10,1,[False],False,False,primary
-Statistics Canada ,dataset,6e53bd14-3dde-46cd-9f36-31e9ed0ca6a0,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,6e53bd14-3dde-46cd-9f36-31e9ed0ca6a0,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,6e5862c7-f86f-4100-b5ff-b36c222631e9,2019-12-03,2023-02-17,5,"[False, False, False, False, False]",False,False,primary
 Government of British Columbia ,dataset,6e58aa4d-7e29-4a0e-8ca4-66752d9355db,2020-06-05,2026-01-28,5,"[False, False, False, False, False]",False,False,fgp
 Government of Yukon ,dataset,6e594b10-b5cf-4858-b8c0-b6bd93984256,2025-09-17,2026-11-04,5,"[False, False, False, False, False]",False,False,fgp
@@ -20520,7 +20525,7 @@ Office of the Superintendent of Financial Institutions Canada ,info,6e7227b9-614
 Impact Assessment Agency of Canada ,info,6e733dd0-e6f0-4566-832e-263dd4ac3f42,2021-03-12,2021-03-12,2,"[False, False]",False,False,parliament_committee_deputy
 Health Canada ,info,6e7413e9-683a-48fc-9755-9c6586afda71,2021-12-29,2021-12-29,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,6e74e878-ce7f-4d6d-9438-85a48923c18b,2017-11-29,2022-02-23,3,"[False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,6e75f19c-d19d-48aa-984e-609c8d9bc403,2017-03-02,2026-11-19,5,"[False, False, False, False, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,6e75f19c-d19d-48aa-984e-609c8d9bc403,2017-03-02,2026-11-20,5,"[False, False, False, False, True]",True,False,primary
 Natural Resources Canada ,dataset,6e769b98-637d-593f-9c6b-3e4fe0d2fbab,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Alberta ,dataset,6e769cb0-9b01-49c6-87aa-9d9a0c484761,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Veterans Affairs Canada ,info,6e7736d9-1963-475e-8957-bf0a9ece6437,2017-09-27,2025-11-15,6,"[False, False, False, False, False, False]",False,False,publication
@@ -22814,7 +22819,7 @@ Government and Municipalities of Québec ,dataset,7a8ff756-92f2-4e3e-9daf-0fecd4
 Statistics Canada ,dataset,7a911b19-73fd-4ffa-9638-931d97cedd7a,2021-03-23,2025-12-08,5,"[False, False, False, False, False]",False,False,primary
 Parks Canada ,dataset,7a9190d4-baa3-4b71-aba6-a085055d8e9e,2018-06-04,2024-12-09,4,"[True, True, True, True]",True,True,primary
 Global Affairs Canada ,info,7a92e517-aef9-4844-89af-b81e94864428,2024-08-22,2025-10-08,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,7a9591cc-9df6-463c-9934-aad6dbc0eb12,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,7a9591cc-9df6-463c-9934-aad6dbc0eb12,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,7a963332-74d6-4b95-a1e3-61e908c269a3,2023-07-27,2023-07-27,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,7a96eaa7-f252-438f-9790-7fa218b3165f,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Transportation Safety Board of Canada ,info,7a96f7e9-1594-46ba-9c05-7004ffb0f1cb,2021-09-02,2026-03-08,2,"[False, False]",False,False,publication
@@ -23067,7 +23072,7 @@ Statistics Canada ,dataset,7bfd4117-97ac-4563-90d2-383dfc35a80a,2018-03-28,2022-
 Statistics Canada ,dataset,7bfdd93b-5806-474a-9821-fdb1daf6f1b1,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,7bff9226-65be-4bdf-a819-e3e30017bb9c,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,7c01702c-b379-48d2-afd5-7085b2390ad9,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
-Privy Council Office ,dataset,7c03f039-3753-4093-af60-74b0f7b2385d,2018-11-26,2026-11-19,4,"[True, False, False, False]",True,False,primary
+Privy Council Office ,dataset,7c03f039-3753-4093-af60-74b0f7b2385d,2018-11-26,2026-11-20,4,"[True, False, False, False]",True,False,primary
 Government of Yukon ,dataset,7c04f220-0449-4e72-af7f-0ab6a6c56651,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
 Government and Municipalities of Québec ,dataset,7c05a680-6615-4fab-825d-588c2234f160,2020-09-11,2024-07-24,2,"[False, False]",False,False,federated
 Public Health Agency of Canada ,dataset,7c0688d3-4878-466e-8397-ca51c2debdb7,2016-09-24,2025-10-30,14,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
@@ -24205,7 +24210,7 @@ Government and Municipalities of Québec ,dataset,821eed5c-0b3d-4d96-9ea4-a670e5
 Statistics Canada ,dataset,821ef476-d554-4bb4-bc32-bc916640fc9d,2016-09-24,2022-02-24,8,"[False, False, False, False, False, False, False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,8223663a-c3cb-54ec-8032-a748bee4f2b4,2016-09-24,2022-02-22,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,822397d0-2543-48b5-8093-7cee7fe8a4c9,2016-09-24,2022-03-09,1,[False],False,False,primary
-Statistics Canada ,dataset,8225a0cb-0f2d-4eef-9ed4-d1be99757f7c,2020-04-09,2026-10-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,8225a0cb-0f2d-4eef-9ed4-d1be99757f7c,2020-04-09,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,82265d27-5fe0-5d08-b7de-fa718953b36d,2016-09-24,2022-03-14,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,822667d5-6e25-4491-ae41-b5f7b3a635b0,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Health Canada ,dataset,8226da92-efa5-4142-b5e4-2d055b0bd7ce,2021-08-12,2025-11-12,4,"[False, False, True, False]",True,False,primary
@@ -24933,7 +24938,7 @@ Statistics Canada ,dataset,86315526-6ceb-4aec-bcab-195188072f60,2024-03-22,2025-
 Government of Yukon ,dataset,8631af08-58da-4088-be8f-a1c15cc455f0,2026-06-17,2026-08-26,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,federated
 Health Canada ,info,8632ba5e-01c4-4f88-990b-c8f2f87f122a,2022-09-28,2022-09-28,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,86347e49-eb08-5467-ac9a-5470b095f065,2016-09-24,2022-03-14,2,"[False, False]",False,False,geogratis
-Treasury Board of Canada Secretariat ,dataset,8634f1c9-597e-416d-91f2-df24d2ffbeea,2018-10-17,2026-11-19,4,"[False, False, False, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,8634f1c9-597e-416d-91f2-df24d2ffbeea,2018-10-17,2026-11-20,4,"[False, False, False, True]",True,False,primary
 Global Affairs Canada ,info,8637b376-143c-4cef-b0f6-abca4ba202d1,2025-10-07,2025-10-07,8,"[False, False, False, False, False, False, False, False]",False,False,publication
 Government of Alberta ,dataset,86387963-d8b6-49c2-b5f9-0ad377d4c633,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 The Seaway International Bridge Corporation ,info,86387cc5-d894-47f4-b03f-c38538de23d5,2023-11-07,2024-11-20,2,"[False, False]",False,False,parliament_report
@@ -25379,7 +25384,7 @@ Natural Resources Canada ,dataset,88b8b2c3-ee66-5f87-9d05-95b6a243e16e,2016-09-2
 Statistics Canada ,dataset,88ba6144-a6b6-4998-b481-ed526494f4a7,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,88bbfdae-ebb5-5f0a-ac00-fca53a5cab7a,2016-09-24,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Government of Yukon ,dataset,88bc8acc-950a-4c64-9b17-ef52fb1525fd,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
-Indigenous Services Canada ,dataset,88bd5306-e0a1-46dd-8e02-909931ade592,2025-09-05,2026-11-19,6,"[True, True, True, False, False, False]",True,False,primary
+Indigenous Services Canada ,dataset,88bd5306-e0a1-46dd-8e02-909931ade592,2025-09-05,2026-11-20,6,"[True, True, True, False, False, False]",True,False,primary
 Statistics Canada ,dataset,88bffb90-bef7-43b3-9fdc-4c2752f06f4f,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,88c1689b-9327-406e-860b-3d0e2dd518fa,2018-07-11,2024-02-15,23,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,88c3774b-0622-589e-b114-d9631a8825ad,2016-09-24,2022-02-22,5,"[False, False, False, False, False]",False,False,geogratis
@@ -25546,7 +25551,6 @@ Government of Northwest Territories ,dataset,89a6768e-3031-1026-3827-8ce947740af
 Statistics Canada ,dataset,89aabb4b-93c8-429b-ae48-bc5fcaf9652a,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,89aec3a1-7c34-4ba1-95ba-93e55dbccecf,2025-01-23,2025-10-08,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,89b05ad2-b59d-40f2-a6c1-8c09df7f6aad,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Environment and Climate Change Canada ,dataset,89b0ebb9-7333-4ec5-9efb-a7fa106b5f2e,2024-05-22,2025-01-10,9,"[False, False, False, False, False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,89b10cf3-523a-4e04-b50d-651342638e0d,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 National Defence ,dataset,89b12d0b-e844-4470-8123-bd062d27be0b,2020-04-02,2026-04-30,1,[False],False,False,primary
 Environment and Climate Change Canada ,dataset,89b14c19-69b3-491b-9b78-d0ae2c4dffd6,2019-02-25,2023-02-23,5,"[False, False, False, False, False]",False,False,fgp
@@ -26224,7 +26228,7 @@ Correctional Service of Canada ,info,8d4984a4-ae61-4a09-b64b-d497bee7fe91,2023-1
 Statistics Canada ,dataset,8d49af36-624c-45de-a143-4da159dd7167,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,8d4a8331-ae71-45c1-87a2-d3fc14142443,2021-12-29,2021-12-29,2,"[False, False]",False,False,publication
 Health Canada ,info,8d4b7d9c-9967-4551-b703-5138474e9c3a,2022-09-28,2022-09-28,2,"[False, False]",False,False,publication
-Public Safety Canada ,dataset,8d4c1f24-c6b3-4a5a-8e20-00f487e27af8,2026-09-18,2026-11-19,2,"[True, True]",True,True,primary
+Public Safety Canada ,dataset,8d4c1f24-c6b3-4a5a-8e20-00f487e27af8,2026-09-18,2026-11-20,2,"[True, True]",True,True,primary
 Government of Alberta ,dataset,8d50b9b4-02d1-424f-848a-4f185de3f7d9,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,8d50cc37-1570-41ee-a7d8-7037a83d5532,2024-05-27,2024-08-09,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,8d513a14-cb43-45c7-b656-48451491aa77,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
@@ -26423,7 +26427,7 @@ Global Affairs Canada ,info,8e551324-1ca0-4f31-8af5-4487490e2d4d,2025-09-02,2025
 Communications Security Establishment Canada ,info,8e55a7d4-7bf4-4b87-91d3-505ef2763743,2023-03-08,2023-03-08,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,8e562033-09b3-4590-88d6-c19facb0d08b,2016-09-24,2017-01-30,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,8e563479-31d4-4c1c-8801-71a33d0d26fa,2021-04-13,2025-05-26,5,"[False, False, False, False, False]",False,False,primary
-Statistics Canada ,dataset,8e56cad4-4e1b-4e7d-be21-5034feb6190a,2021-04-13,2025-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,8e56cad4-4e1b-4e7d-be21-5034feb6190a,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Canada Revenue Agency ,dataset,8e56e318-cf43-47db-8a58-9989aa9a43a6,2025-11-19,2025-11-19,2,"[True, True]",True,True,primary
 Royal Canadian Mounted Police ,info,8e56f67a-4d16-4b53-8e0b-e020f6931f65,2023-06-01,2026-10-26,2,"[False, False]",False,False,publication
 Public Services and Procurement Canada ,info,8e57d314-3857-4865-b7bb-c3e44691513a,2025-03-22,2026-04-09,5,"[False, False, False, False, False]",False,False,publication
@@ -27347,7 +27351,7 @@ Government of Yukon ,dataset,9338bea3-702e-467b-9689-0bd97107dddb,2025-09-17,202
 Natural Resources Canada ,dataset,9339d32c-b71c-5685-adc8-aa696051102c,2016-09-25,2022-02-22,3,"[False, False, False]",False,False,geogratis
 Government of Alberta ,dataset,933a2c6f-8440-4cb3-8128-8e9950f3ead7,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,933b7bea-ee8a-4798-87b6-ba6c60d59e4f,2023-05-08,2024-09-26,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,933c7f9d-deb0-4367-940d-06c38f494153,2019-02-11,2026-11-19,1,[True],True,True,primary
+Treasury Board of Canada Secretariat ,dataset,933c7f9d-deb0-4367-940d-06c38f494153,2019-02-11,2026-11-20,1,[True],True,True,primary
 Statistics Canada ,dataset,933da31c-8891-4954-a7ce-ba60442e24bb,2024-08-14,2024-08-14,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,933da5aa-2d87-4baa-b0eb-6f4417610e1f,2023-12-01,2023-12-02,2,"[False, False]",False,False,publication
 Treasury Board of Canada Secretariat ,dataset,933f8f6e-daee-4368-a7dc-4eadc8b5ecfa,2016-09-25,2019-08-09,4,"[False, False, False, False]",False,False,primary
@@ -28317,7 +28321,7 @@ Global Affairs Canada ,info,98a8d74c-743a-4312-8ea3-c8ab9f946d2d,2026-04-02,2026
 Natural Resources Canada ,dataset,98a8d8e5-dd28-4a8b-a62a-2aa06c2d9fe2,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,98a92f8d-2792-41b9-b4a9-00a6483b8a9f,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,98a9c05f-4781-47d2-9e2c-fa71a4014945,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
-Treasury Board of Canada Secretariat ,dataset,98abeb62-7c76-4dfb-a134-1551f55ede55,2022-02-17,2026-11-19,5,"[False, False, False, False, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,98abeb62-7c76-4dfb-a134-1551f55ede55,2022-02-17,2026-11-20,5,"[False, False, False, False, True]",True,False,primary
 Natural Resources Canada ,dataset,98ac66d1-00e2-49c0-a582-d46140e78d23,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Nova Scotia ,dataset,98adde39-a8c8-4094-f9c4-43a1b1909d54,2022-05-03,2026-04-17,8,"[False, False, False, False, False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,98af79d7-d0de-425a-b70e-14cf5b526583,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -29021,7 +29025,6 @@ Government of Saskatchewan ,dataset,9cd6164c-daef-95ca-c595-849e84a0d6d5,2023-04
 Environment and Climate Change Canada ,dataset,9cd6f8a1-e660-4e78-89a8-6e3f781da556,2016-09-25,2026-02-27,4,"[False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,9cd7f0d9-19c3-4f48-976f-639676bad339,2022-11-30,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,9cdb904e-3940-421c-bb48-8f946fdf6eb2,2016-09-25,2022-03-09,1,[False],False,False,primary
-Environment and Climate Change Canada ,dataset,9cddead7-1dc8-4379-afc5-0275b7449bd5,2025-03-12,2025-03-12,9,"[False, False, False, False, False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,9cdf9349-e4e0-4813-9462-4be39b35073f,2025-09-17,2026-08-26,4,"[False, False, False, False]",False,False,federated
 Government and Municipalities of Québec ,dataset,9cdffa06-a461-4e90-9194-7ac884840cd5,2022-03-30,2026-11-18,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Government of Yukon ,dataset,9cdfff4b-9a6a-4122-8657-82d15f75189a,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
@@ -29859,7 +29862,7 @@ Statistics Canada ,dataset,a1a63522-454e-44a1-9a07-aa70a2d53e95,2023-02-20,2025-
 Natural Resources Canada ,dataset,a1aacd9b-a21b-5648-8a86-84a860a75110,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Government of Yukon ,dataset,a1abb3ec-185a-41a4-8c41-fe2a3da5428b,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Health Canada ,info,a1abf3db-d3b3-4f72-bb50-b125322ca365,2022-12-29,2022-12-29,2,"[False, False]",False,False,publication
-Public Services and Procurement Canada ,dataset,a1acb126-9ce8-40a9-b889-5da2b1dd20cb,2023-04-27,2026-11-19,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
+Public Services and Procurement Canada ,dataset,a1acb126-9ce8-40a9-b889-5da2b1dd20cb,2023-04-27,2026-11-20,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,primary
 Government of British Columbia ,dataset,a1acf53f-e7e7-4be5-bc63-af25180a2807,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
 Health Canada ,info,a1b26b47-7364-4194-9f88-c6cb1e0ed4b5,2024-01-31,2024-02-02,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,a1b2e68a-c220-5f13-865e-b4ec248b72c8,2017-04-18,2021-01-11,4,"[False, False, False, False]",False,False,geogratis
@@ -30558,7 +30561,7 @@ Crown-Indigenous Relations and Northern Affairs Canada ,dataset,a53c266d-7b9b-49
 Statistics Canada ,dataset,a53daff4-c86c-4f21-8403-0644edca1a8c,2018-06-27,2025-03-24,5,"[False, False, False, False, False]",False,False,primary
 Government of Alberta ,dataset,a53f243e-893e-4aa2-bab6-9ffa2ff895a5,2022-03-29,2026-04-17,4,"[False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,a54097e7-6a7b-4b96-8ec8-b4801912b002,2016-09-25,2022-02-21,1,[False],False,False,primary
-Canadian Food Inspection Agency ,dataset,a5417643-7f38-4ee6-aee6-0086e79888b9,2026-10-06,2026-10-15,3,"[True, False, False]",True,False,primary
+Canadian Food Inspection Agency ,dataset,a5417643-7f38-4ee6-aee6-0086e79888b9,2026-10-06,2026-11-20,3,"[True, False, False]",True,False,primary
 Global Affairs Canada ,info,a5420687-b440-4b1c-8716-bb3e289213d1,2023-12-20,2025-10-14,2,"[False, False]",False,False,publication
 Health Canada ,info,a5424b06-efc1-4430-b79b-a348bc338c0a,2023-10-30,2023-11-01,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,a54352e7-172c-4375-aa0c-58d22592a5de,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -30915,7 +30918,7 @@ Transportation Safety Board of Canada ,info,a70cb333-0186-4c7f-a179-5116f0ae30b7
 Statistics Canada ,dataset,a70fcb3b-9a57-4e10-8372-9016935fc5d9,2022-05-20,2026-06-26,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,a7111394-6cd8-4397-8795-20a86d40aaa0,2020-07-09,2024-11-20,2,"[False, False]",False,False,parliament_committee
 Statistics Canada ,dataset,a7113f45-2e68-418e-bf8b-244d5fd13968,2016-09-25,2022-02-21,1,[False],False,False,primary
-Statistics Canada ,dataset,a7114f83-2b1e-485d-abe1-1563a50b8fcb,2018-06-27,2026-10-21,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,a7114f83-2b1e-485d-abe1-1563a50b8fcb,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Government of British Columbia ,dataset,a7119310-c5be-4a0b-8d1c-ab38947f5ae2,2024-06-26,2026-04-17,6,"[False, False, False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,a711aa89-d2a5-51c5-a95a-7e6bcd1d03c4,2016-09-25,2022-02-22,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,a71262e2-0cc3-4e07-9b0f-67ffc6762349,2018-06-27,2026-05-04,5,"[False, False, False, False, False]",False,False,primary
@@ -30943,7 +30946,7 @@ Natural Resources Canada ,dataset,a7300079-4268-a74e-6298-582f3ac4b5bf,2026-05-2
 Natural Resources Canada ,dataset,a7315499-8f39-40c3-8ab0-3f3af69ab868,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Government of Yukon ,dataset,a7331d78-ce0e-478d-9e8c-2c81f7740978,2025-09-17,2026-08-26,4,"[False, False, False, False]",False,False,federated
 Fisheries and Oceans Canada ,dataset,a733fb88-ddaf-47f8-95bb-e107630e8e62,2023-02-28,2026-03-24,24,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
-Statistics Canada ,dataset,a737ce3c-0208-4fc1-bf95-3dc576390a86,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,a737ce3c-0208-4fc1-bf95-3dc576390a86,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,a7381628-d8ef-5d46-9d90-45d48217dd32,2016-09-25,2017-01-26,2,"[False, False]",False,False,geogratis
 Health Canada ,info,a73982de-7919-46d1-bb4c-19ca33573001,2021-09-09,2021-09-09,2,"[False, False]",False,False,publication
 Health Canada ,info,a739af6f-c4b0-4a55-9030-40539e0a79e0,2020-11-17,2020-11-17,2,"[False, False]",False,False,publication
@@ -31442,6 +31445,7 @@ Health Canada ,dataset,a9c18c37-b7b9-48ce-ac1d-b40a65bafa9e,2019-05-30,2025-10-0
 Health Canada ,info,a9c26fd1-c24c-4068-8a75-50315edd45cb,2023-05-29,2023-05-29,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,a9c2e944-446b-571a-a209-4cbf9350971e,2016-09-25,2022-02-22,1,[False],False,False,geogratis
 Statistics Canada ,dataset,a9cb2d8e-2351-41c9-b2a9-934757ec1de2,2018-06-27,2023-07-28,5,"[False, False, False, False, False]",False,False,primary
+Canadian Nuclear Safety Commission ,info,a9cb8dde-9645-4851-b8df-0bd1bab41f18,2026-11-19,2026-11-19,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,a9cc12e8-c7e1-4eab-9b32-b266682d4323,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Office of the Auditor General of Canada ,info,a9cc4c5e-259c-450b-850a-56528a1a76c7,2024-12-05,2024-12-05,4,"[False, False, False, False]",False,False,publication
 Natural Resources Canada ,dataset,a9cdd7e4-b5d6-5fe1-bd30-2ee8a1145651,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
@@ -31803,7 +31807,7 @@ Government of Alberta ,dataset,abbfa986-263e-4794-afdb-d5ee76797854,2022-03-30,2
 Fisheries and Oceans Canada ,dataset,abbfe250-8202-4822-8bd1-aaaf393bbfd5,2021-03-30,2026-03-24,13,"[False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Health Canada ,info,abc00820-1993-4cdf-ac4f-9ac9fa311306,2022-09-27,2022-09-27,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,abc0fd3e-415e-526f-8fb9-5f2b6a9a5277,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
-Canadian Food Inspection Agency ,dataset,abc1b7e7-6fcc-4bd5-a0a9-deac523bee2f,2025-08-21,2026-10-13,1,[True],True,True,primary
+Canadian Food Inspection Agency ,dataset,abc1b7e7-6fcc-4bd5-a0a9-deac523bee2f,2025-08-21,2026-11-19,1,[True],True,True,primary
 Statistics Canada ,dataset,abc1e2e1-593d-408a-84d9-3901c233adff,2016-09-25,2022-03-09,1,[False],False,False,primary
 Natural Resources Canada ,dataset,abc275b8-b05e-5dbf-b56d-4c83010b4817,2016-09-25,2022-03-14,2,"[False, False]",False,False,geogratis
 "Innovation, Science and Economic Development Canada ",dataset,abc37c0b-9dc2-42f3-945c-54be2d1b0f0d,2021-03-02,2026-11-16,1,[False],False,False,primary
@@ -32044,7 +32048,7 @@ Employment and Social Development Canada ,info,acedc015-1c8a-4ba6-96a1-3b3de21ad
 Financial Transactions and Reports Analysis Centre of Canada ,info,acefcb5d-9e36-452f-832d-003744f6e906,2025-02-19,2025-02-19,2,"[False, False]",False,False,parliament_committee_deputy
 Government of Yukon ,dataset,acf020b9-5ac9-4811-8eea-d6bfb4659558,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Government of Yukon ,dataset,acf186cd-5183-459c-8061-1b4289b1f131,2025-09-17,2026-11-04,5,"[False, False, False, False, False]",False,False,fgp
-Canada School of Public Service ,dataset,acf1b0f9-1c52-43f2-8729-db918d769873,2026-11-18,2026-11-19,8,"[False, False, True, True, True, True, True, True]",True,False,primary
+Canada School of Public Service ,dataset,acf1b0f9-1c52-43f2-8729-db918d769873,2026-11-18,2026-11-20,8,"[False, False, True, True, True, True, True, True]",True,False,primary
 Statistics Canada ,dataset,acf1f341-b11d-4b64-b0c3-c21febb8fe36,2025-11-26,2025-11-26,5,"[False, False, False, False, False]",False,False,primary
 Parks Canada ,dataset,acf24f12-9f40-4bbe-b87f-54e0fa3ab23b,2018-02-15,2024-12-09,2,"[True, True]",True,True,primary
 Health Canada ,info,acf4ae91-9de2-419b-94f7-1919d6f01ef2,2022-06-07,2022-06-07,2,"[False, False]",False,False,publication
@@ -32177,7 +32181,7 @@ Statistics Canada ,dataset,adaa6cc7-27b0-487a-8589-3703aa3c991a,2023-11-27,2023-
 Natural Resources Canada ,dataset,adab1c44-856b-54fa-98a5-8715ed645ae8,2016-09-25,2022-02-22,2,"[False, False]",False,False,geogratis
 Government of Ontario ,dataset,adab9089-b75f-430c-adc3-fca6be5f79b7,2021-01-27,2026-06-17,4,"[False, False, False, False]",False,False,federated
 Government of New Brunswick ,dataset,adac7ceb-136f-617e-c578-bd8b7ef39e10,2024-04-17,2025-01-09,3,"[False, False, False]",False,False,fgp
-Employment and Social Development Canada ,dataset,adad580f-76b0-4502-bd05-20c125de9116,2018-01-22,2026-11-19,15,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",True,True,primary
+Employment and Social Development Canada ,dataset,adad580f-76b0-4502-bd05-20c125de9116,2018-01-22,2026-11-20,15,"[True, True, True, True, True, True, True, True, True, True, True, True, True, True, True]",True,True,primary
 Government of Alberta ,dataset,adade235-fbf9-4d51-9e87-4d3b7ad30f31,2022-03-30,2026-08-19,6,"[False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,adb01817-2248-414b-99f8-770f164d5adf,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,adb03724-35c6-40a7-885d-5c361b8bef4f,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -33106,7 +33110,7 @@ Health Canada ,info,b2858db9-4176-4a23-b808-dd5da04c59e3,2023-05-31,2023-05-31,2
 Statistics Canada ,dataset,b2864a64-598b-46d0-87c6-54fee640715d,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,b2897843-3e1e-4a4d-b59d-48c3157997da,2025-09-17,2026-08-26,4,"[False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,b28a3861-bf9e-4d67-9164-fdeb64ec3b02,2018-08-30,2026-10-30,5,"[False, False, False, False, False]",False,False,primary
-Statistics Canada ,dataset,b28ce95f-a075-4ea9-89b9-ca955f94689d,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,b28ce95f-a075-4ea9-89b9-ca955f94689d,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,b29118c7-888e-4895-b042-f58432a0395d,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Impact Assessment Agency of Canada ,info,b2973a58-0296-48c5-b874-e9d3d1ca2045,2024-03-05,2025-07-14,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,b2984af5-64c9-460b-9da8-931dbdde22c5,2018-06-27,2026-03-17,5,"[False, False, False, False, False]",False,False,primary
@@ -33377,7 +33381,6 @@ Statistics Canada ,dataset,b418df6f-c208-41eb-8b27-b0f9c8750d5a,2020-09-22,2023-
 Government of Nova Scotia ,dataset,b41b084d-d3c0-d045-4269-6db6c6d6578f,2023-08-03,2026-11-11,13,"[False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Government of Saskatchewan ,dataset,b41bffc3-2ee4-56ec-6418-cde2aeb8f9b0,2023-04-21,2025-02-05,7,"[False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,b41d2e6a-5970-404e-b072-ead1cb79f612,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
-Environment and Climate Change Canada ,dataset,b41e59cb-54d1-4f04-9cc3-8c62484b25d3,2026-01-13,2026-01-13,7,"[False, False, False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,b420ecfd-255e-496f-8099-b3a3eaa75e1d,2023-05-08,2026-09-29,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,b421cb53-f527-47e7-aa2f-64baf1ec9ecd,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Public Health Agency of Canada ,info,b4230781-6cec-45f9-bdc0-8d0bcbf17b60,2021-11-05,2021-11-05,2,"[False, False]",False,False,publication
@@ -33569,7 +33572,7 @@ Statistics Canada ,dataset,b50705cc-b85a-4390-b0c2-8af74f91dd15,2017-10-25,2022-
 Statistics Canada ,dataset,b508f1b9-a1aa-46ce-8da8-56cf86f4dbb7,2023-10-04,2023-10-04,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,b50ba4b6-7d96-4bcd-a4b3-09d739b59796,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,b50cb469-31a8-49f7-9e53-c3cffe7e60dc,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Indigenous Services Canada ,dataset,b50ee7ee-2bda-4b66-a1ef-7c4d1332da1f,2026-11-17,2026-11-19,8,"[False, False, True, False, True, False, True, False]",True,False,primary
+Indigenous Services Canada ,dataset,b50ee7ee-2bda-4b66-a1ef-7c4d1332da1f,2026-11-17,2026-11-20,8,"[False, False, True, False, True, False, True, False]",True,False,primary
 Global Affairs Canada ,info,b50f92f5-9d45-45e6-a4e2-529124927b06,2025-09-02,2025-10-09,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,b5127b41-8fa4-4746-8e25-d2bef8c480c3,2016-09-25,2022-03-09,1,[False],False,False,primary
 Natural Resources Canada ,dataset,b5132e25-ab53-40b3-b137-b907909b1802,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
@@ -33652,7 +33655,7 @@ Global Affairs Canada ,info,b5796782-8df2-457a-a4e2-595fb47b150d,2024-05-08,2025
 National Defence ,dataset,b579bb2a-8799-49d9-9aa4-dd55b8ccecf1,2020-04-02,2026-04-29,1,[False],False,False,primary
 Government of Yukon ,dataset,b57aa7b3-437a-4e77-80ab-11b9141d3f3b,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Government and Municipalities of Québec ,dataset,b57cdeb1-98e7-4db7-bb84-32530f0367eb,2020-09-14,2026-05-27,2,"[False, False]",False,False,fgp
-Statistics Canada ,dataset,b57e1527-f170-43dd-b28c-f948bcb07457,2020-04-14,2026-10-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,b57e1527-f170-43dd-b28c-f948bcb07457,2020-04-14,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,b580725c-5f4b-43fa-b9c2-835d32881d67,2026-01-15,2026-09-23,8,"[False, False, False, False, False, False, False, False]",False,False,publication
 Government of Alberta ,dataset,b5819c42-c943-4ae0-89a8-4df5e8a38658,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Canadian Food Inspection Agency ,dataset,b581a6e0-2bfc-448f-a8b8-a98939f5cf6b,2020-12-01,2026-03-31,1,[True],True,True,primary
@@ -33829,7 +33832,7 @@ Health Canada ,info,b6857bc3-abbe-43e1-94f2-09851d7097e8,2021-06-30,2021-06-30,2
 Fisheries and Oceans Canada ,dataset,b685e744-7a2d-48f8-9998-865c3beb74e4,2021-01-25,2026-03-24,9,"[False, False, False, False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,b686bf2b-7d51-52a2-a277-422e1c7ede31,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Health Canada ,info,b687f603-f547-4786-b333-5d0f9e934e7e,2023-03-27,2023-03-27,2,"[False, False]",False,False,publication
-Environment and Climate Change Canada ,dataset,b6897990-5d83-46c0-9e93-3bd7cfde3060,2026-03-13,2026-10-28,8,"[False, False, False, False, False, False, False, False]",False,False,primary
+Environment and Climate Change Canada ,dataset,b6897990-5d83-46c0-9e93-3bd7cfde3060,2026-03-13,2026-11-20,8,"[False, False, False, False, False, False, False, False]",False,False,fgp
 Health Canada ,info,b6899bc2-28f9-43a9-bae1-16c3115b008c,2020-09-17,2020-09-17,2,"[False, False]",False,False,publication
 Government and Municipalities of Québec ,dataset,b68b2510-5704-48ba-95ca-cb2cf1c25d61,2023-01-18,2026-05-27,4,"[False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,b68b41d9-ec5e-41b7-a6e0-10e2b6279093,2025-02-28,2025-02-28,5,"[False, False, False, False, False]",False,False,primary
@@ -34398,7 +34401,7 @@ Global Affairs Canada ,info,b97471a0-0bdc-4cec-a7cc-b6fb1670b6ee,2025-09-02,2025
 Government of British Columbia ,dataset,b9752706-b7f5-4d85-96d8-01d01920e5a6,2023-04-13,2026-04-17,2,"[False, False]",False,False,federated
 Government of Alberta ,dataset,b9761193-455a-4db7-8946-1bc38059ee26,2018-06-27,2026-04-17,3,"[False, False, False]",False,False,federated
 Statistics Canada ,dataset,b9792659-0b9b-4450-92cb-fed1954d98aa,2023-09-18,2023-09-18,5,"[False, False, False, False, False]",False,False,primary
-Canadian Nuclear Safety Commission ,info,b97a80c8-3081-4a3f-a45d-efc7ae06f543,2024-11-27,2026-11-19,12,"[False, False, False, False, False, False, True, True, False, False, False, False]",True,False,publication
+Canadian Nuclear Safety Commission ,info,b97a80c8-3081-4a3f-a45d-efc7ae06f543,2024-11-27,2026-11-20,12,"[False, False, False, False, False, False, True, True, False, False, False, False]",True,False,publication
 Statistics Canada ,dataset,b97d2b32-22dc-4355-b24e-920d46c981af,2023-05-08,2025-07-18,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,b97d635f-3774-5aa0-9a40-3d53d6fe6acc,2016-09-25,2022-02-22,1,[False],False,False,geogratis
 Health Canada ,info,b9815a02-61f9-467b-9a79-e3945b6bf65f,2024-05-31,2024-06-02,2,"[False, False]",False,False,publication
@@ -34406,7 +34409,6 @@ Statistics Canada ,dataset,b9824c16-4089-49fc-b4cd-582efc411d68,2018-06-27,2023-
 Government of Yukon ,dataset,b9829d82-0e14-4d0f-ad3e-8772041ca54e,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
 Statistics Canada ,dataset,b982ac96-038a-4b4f-9b19-76ebae6169d9,2023-11-27,2023-11-27,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,b983389e-ebeb-466f-9a73-195a7e120590,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
-Environment and Climate Change Canada ,dataset,b985a5b0-f421-4eda-97b0-56f3aea8d770,2024-10-15,2025-12-04,2,"[False, False]",False,False,primary
 Government and Municipalities of Québec ,dataset,b9871478-b6e9-44a7-8d4e-0a5eb9e5c36f,2020-09-11,2026-11-11,4,"[False, False, False, False]",False,False,federated
 Government of Ontario ,dataset,b989f5fb-e5f7-4230-a53a-bfcd69754496,2020-11-27,2026-10-07,13,"[False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Government of Yukon ,dataset,b98a20aa-16b0-431c-9ff9-16547ff3d0a4,2025-09-17,2026-08-26,5,"[False, False, False, False, False]",False,False,federated
@@ -34490,7 +34492,7 @@ Employment and Social Development Canada ,dataset,b9f150d7-d55d-445c-994e-269f1a
 Government of Alberta ,dataset,b9f155bf-69b4-4ad0-b6c0-7c7ea033c3ba,2022-03-30,2026-04-17,4,"[False, False, False, False]",False,False,federated
 Parks Canada ,dataset,b9f21e91-d34d-4730-8195-edf051121e9d,2018-06-05,2024-12-09,2,"[True, True]",True,True,primary
 Statistics Canada ,dataset,b9f3e088-b22a-405a-82dd-50ab4650dbd5,2020-09-22,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,b9f51ef4-4605-4ef2-8231-62a2edda1b54,2017-02-20,2026-11-19,8,"[True, True, False, False, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,b9f51ef4-4605-4ef2-8231-62a2edda1b54,2017-02-20,2026-11-20,8,"[True, True, False, False, False, False, False, False]",True,False,primary
 Government of British Columbia ,dataset,b9f74385-e5b2-4c84-a049-ce2f5d207338,2020-04-24,2026-01-28,2,"[False, False]",False,False,fgp
 Government and Municipalities of Québec ,dataset,b9f97b6a-0b5c-4930-9240-501ebe8c0a55,2020-09-14,2026-05-27,5,"[False, False, False, False, False]",False,False,fgp
 Fisheries and Oceans Canada ,info,b9faba87-b4e7-465e-9bc5-8c21223db5b3,2021-10-12,2021-10-12,2,"[False, False]",False,False,parliament_committee
@@ -34774,7 +34776,7 @@ Government of Yukon ,dataset,bb64d26f-84a8-4852-b3f6-2abab18199c7,2026-06-17,202
 Natural Resources Canada ,dataset,bb65122c-d958-5a5c-955d-1b69df5995b9,2016-09-25,2022-02-22,1,[False],False,False,geogratis
 Health Canada ,info,bb65518f-6462-44d7-ac47-7932d3e52506,2020-05-01,2020-05-01,2,"[False, False]",False,False,publication
 Health Canada ,info,bb662bb8-1e2c-492f-9afb-86e8f5d943c2,2023-02-01,2023-02-01,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,bb66787c-9509-456d-bd72-5016abdf39c5,2018-06-27,2026-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,bb66787c-9509-456d-bd72-5016abdf39c5,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,bb69e7c9-2491-4687-b981-b263d866cc70,2021-03-25,2026-11-04,5,"[False, False, False, False, False]",False,False,primary
 Canadian Nuclear Safety Commission ,info,bb6a831d-633f-48ae-a66e-8ca550ff9aa6,2024-11-27,2024-12-17,1,[False],False,False,publication
 Government of Alberta ,dataset,bb6c3ed0-2b0f-46c0-ac06-d670037fedef,2024-12-11,2026-04-17,2,"[False, False]",False,False,federated
@@ -35683,6 +35685,7 @@ Health Canada ,info,c02de215-8db6-408c-a574-820550c6ffa2,2021-01-27,2021-01-27,2
 Government of Alberta ,dataset,c02e7957-d9c6-4808-8e34-e63070d3f8d1,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Government of Alberta ,dataset,c0341021-a6f4-41c1-afa1-4e07573aec62,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Statistics Canada ,dataset,c03637ff-1bb2-4ede-82e7-546b2c7e3c51,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
+Canadian Nuclear Safety Commission ,info,c036f328-c98e-4d6a-b9a5-77d18d87fdcb,2026-11-19,2026-11-19,1,[False],False,False,publication
 Natural Resources Canada ,dataset,c039037c-24a6-42d5-a17e-49ca29659fa1,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Office of the Auditor General of Canada ,info,c03a5c8e-172d-405c-bb37-704c2abc4da6,2026-05-19,2026-05-19,2,"[False, False]",False,False,parliament_committee_deputy
 Government of Yukon ,dataset,c03a75ca-4061-4368-808a-9cbbb07555ae,2025-09-17,2026-08-26,5,"[False, False, False, False, False]",False,False,fgp
@@ -36480,6 +36483,7 @@ Government of Ontario ,dataset,c4760737-da46-4653-bdf1-b87957260886,2023-09-14,2
 Health Canada ,info,c47a587d-6acd-4eb4-886a-c5405080cd20,2021-11-23,2021-11-23,2,"[False, False]",False,False,publication
 Government of New Brunswick ,dataset,c47bb599-d05c-180a-827c-8adf48671df7,2021-12-21,2026-04-17,2,"[False, False]",False,False,federated
 Natural Resources Canada ,dataset,c47bd88a-4e13-11df-85e0-00241dad17ff,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
+Canadian Nuclear Safety Commission ,info,c47c2615-3916-455c-8d4f-deba8eab9e69,2026-11-19,2026-11-19,1,[False],False,False,publication
 Canada Revenue Agency ,dataset,c47c6134-9255-4e5c-93f3-107efa4510f2,2025-11-19,2025-11-19,2,"[True, True]",True,True,primary
 Natural Resources Canada ,dataset,c47c92e5-2d18-5181-9ce4-89c51a37bf89,2016-09-25,2022-02-22,1,[False],False,False,geogratis
 Government of Yukon ,dataset,c47d1e45-f9ac-4e29-9971-1568805817d6,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
@@ -36534,7 +36538,7 @@ Government of Yukon ,dataset,c4b1d497-3436-4e83-ac13-3e28822258ac,2026-06-17,202
 Natural Resources Canada ,dataset,c4b34270-f154-5074-babc-9a67bc96455f,2016-09-25,2022-03-14,2,"[False, False]",False,False,geogratis
 Health Canada ,info,c4b5809c-b78d-4bb0-8fdf-844ea550d2ef,2021-06-30,2021-06-30,2,"[False, False]",False,False,publication
 Government and Municipalities of Québec ,dataset,c4c5104e-1c44-40d8-862e-4019cf104d26,2020-09-11,2026-05-27,4,"[False, False, False, False]",False,False,federated
-Treasury Board of Canada Secretariat ,dataset,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,2016-09-25,2026-11-18,10,"[False, False, False, True, True, True, True, True, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,c4c5c7f1-bfa6-4ff6-b4a0-c164cb2060f7,2016-09-25,2026-11-19,10,"[False, False, False, True, True, True, True, True, False, False]",True,False,primary
 Health Canada ,info,c4c5e924-f72f-4c8e-83a3-e588dd4d43ca,2024-01-31,2024-02-02,3,"[False, False, False]",False,False,publication
 Statistics Canada ,dataset,c4c79395-a0d9-4f32-a5ad-040fde9b292a,2025-03-14,2026-11-16,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,c4c832ca-c54b-44a8-86b2-61076ddf08e1,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
@@ -37443,7 +37447,7 @@ Government of Alberta ,dataset,c9b480e8-6620-41f2-9757-fe1840790d81,2022-03-29,2
 Natural Resources Canada ,dataset,c9b552a5-72a1-5ac2-866f-9a0818da147a,2016-09-25,2022-02-22,4,"[False, False, False, False]",False,False,geogratis
 Government of Alberta ,dataset,c9b57f5f-47e6-4638-9439-6a1d31d2ec97,2022-03-29,2026-03-04,4,"[False, False, False, False]",False,False,fgp
 Fisheries and Oceans Canada ,dataset,c9b59930-f38b-11ef-88e3-5d0a2a9fd0c5,2025-03-10,2026-03-24,3,"[False, False, False]",False,False,primary
-Canadian Nuclear Safety Commission ,info,c9b7aab2-f5fb-4d64-aa68-afd2396ae584,2026-05-11,2026-10-29,4,"[False, False, False, False]",False,False,publication
+Canadian Nuclear Safety Commission ,info,c9b7aab2-f5fb-4d64-aa68-afd2396ae584,2026-05-11,2026-11-19,6,"[False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,c9ba06fc-6003-4c45-91b2-bc5be10e66f3,2018-06-27,2026-09-25,5,"[False, False, False, False, False]",False,False,primary
 Environment and Climate Change Canada ,dataset,c9baf435-3011-434d-ac7e-d28137e77649,2025-03-12,2025-03-12,1,[False],False,False,primary
 Statistics Canada ,dataset,c9bb1d2d-f8b8-4777-9cd0-b4653a5694ca,2024-03-28,2024-10-24,5,"[False, False, False, False, False]",False,False,primary
@@ -38129,7 +38133,7 @@ Natural Resources Canada ,dataset,ccef9be1-8893-11e0-a1d4-6cf049291510,2016-09-2
 Global Affairs Canada ,info,ccf399de-360d-4de4-8af8-b654ee98095d,2025-02-21,2025-10-09,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,ccf59da4-c513-420f-9c27-d7682d5dc0de,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Saskatchewan ,dataset,ccf64373-8a66-4262-5273-fed162e8aca3,2023-04-22,2025-02-26,7,"[False, False, False, False, False, False, False]",False,False,fgp
-Public Services and Procurement Canada ,info,ccf67c0d-cbd5-4832-8e74-cae04d27968a,2020-02-27,2026-11-07,26,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,parliament_report
+Public Services and Procurement Canada ,info,ccf67c0d-cbd5-4832-8e74-cae04d27968a,2020-02-27,2026-11-19,26,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,parliament_report
 Statistics Canada ,dataset,ccf6f719-dc22-4d3f-8fa3-b1e0356e8c14,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Treasury Board of Canada Secretariat ,dataset,ccf74651-aef9-4f9e-b13c-f4bf15f18697,2018-01-23,2019-08-11,4,"[False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,ccf85678-bbe3-4d98-be7e-e0e09c724335,2025-03-24,2025-03-24,5,"[False, False, False, False, False]",False,False,primary
@@ -38461,7 +38465,7 @@ Statistics Canada ,dataset,ce9768ac-a21c-4c4f-8af6-39cc52e23049,2024-03-26,2025-
 Statistics Canada ,dataset,ce9776bf-7854-4091-af47-8eed820fbf83,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Ontario ,dataset,ce97cb29-eb95-4652-b597-9985304ad305,2021-01-27,2026-06-17,4,"[False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,ce97cda1-8893-11e0-a10e-6cf049291510,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
-Employment and Social Development Canada ,dataset,ce99c2c9-c224-43eb-aef0-1f379b70c91d,2016-09-25,2026-11-19,4,"[True, True, False, False]",True,False,primary
+Employment and Social Development Canada ,dataset,ce99c2c9-c224-43eb-aef0-1f379b70c91d,2016-09-25,2026-11-20,4,"[True, True, False, False]",True,False,primary
 Health Canada ,info,ce99ded0-29e0-4dbb-933b-d6a0d1e5287a,2022-10-21,2022-10-21,2,"[False, False]",False,False,publication
 Transportation Safety Board of Canada ,info,ce9b3fdc-e0ac-4359-a31f-fbac900c793d,2023-11-01,2026-03-08,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,ce9ddd75-c64c-5049-b356-b90ca189a164,2016-09-25,2022-02-22,3,"[False, False, False]",False,False,geogratis
@@ -38626,7 +38630,7 @@ Public Health Agency of Canada ,info,cf69ab87-c86e-4a6e-be12-e193cfe98383,2020-0
 Statistics Canada ,dataset,cf69dbfb-e5ab-4ca0-9580-98a79e976168,2025-03-26,2026-01-21,5,"[False, False, False, False, False]",False,False,primary
 Shared Services Canada ,info,cf6b4601-695d-4bf1-b6ae-cd78e98e37b2,2017-03-08,2026-05-13,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,cf6b6448-a417-43e0-b43c-bcd50dc8897a,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
-Statistics Canada ,dataset,cf6b6789-4dfd-4860-b45a-291842fea06f,2021-04-13,2025-11-24,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,cf6b6789-4dfd-4860-b45a-291842fea06f,2021-04-13,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,cf6dbced-35eb-50db-9b3a-ad0bf6d49247,2016-09-25,2022-02-22,2,"[False, False]",False,False,geogratis
 Public Health Agency of Canada ,info,cf702224-a7b8-4e36-8a0a-d6a25457bf08,2021-06-21,2021-10-04,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Natural Resources Canada ,dataset,cf71683f-9364-58f2-a8bb-ff049597bd6b,2016-09-25,2022-02-22,2,"[False, False]",False,False,geogratis
@@ -39572,7 +39576,7 @@ Natural Resources Canada ,dataset,d404f69e-8893-11e0-a020-6cf049291510,2016-09-2
 Natural Resources Canada ,dataset,d405be07-39e4-4303-a5e8-831d20868c90,2016-09-25,2017-01-30,2,"[False, False]",False,False,geogratis
 Health Canada ,info,d408bd05-39d2-425d-a96c-87599bdb44aa,2023-10-30,2023-11-01,2,"[False, False]",False,False,publication
 Government of Alberta ,dataset,d408d2d7-6230-47a0-b659-6f9e26c9c9c0,2024-12-11,2026-04-17,2,"[False, False]",False,False,federated
-Statistics Canada ,dataset,d40af834-ae9c-43f2-82ea-57641910ac6f,2018-06-27,2026-11-13,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,d40af834-ae9c-43f2-82ea-57641910ac6f,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Veterans Affairs Canada ,info,d40f133e-ea10-4508-aaa8-5111edb7a140,2017-08-10,2025-11-13,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,d40ff31e-8893-11e0-9cdf-6cf049291510,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Government and Municipalities of Québec ,dataset,d4121ca5-6a7a-4776-964b-8e237b6a89e3,2020-09-11,2026-05-27,2,"[False, False]",False,False,federated
@@ -39966,7 +39970,7 @@ Natural Resources Canada ,dataset,d5fcddf4-0392-5b62-bf8c-a3238cdcebc4,2017-04-1
 Parks Canada ,dataset,d5fd45b9-7c70-4339-a68b-e60d7cbf42e8,2018-04-06,2024-12-09,1,[True],True,True,primary
 Environment and Climate Change Canada ,dataset,d5fe01ba-9315-4ab0-9083-abec447daa27,2019-02-21,2024-06-08,5,"[False, False, False, False, False]",False,False,primary
 National Defence ,dataset,d5ff6db3-831b-488d-8f10-64b690386fe0,2024-03-22,2026-04-09,1,[False],False,False,primary
-Statistics Canada ,dataset,d5ffb2fb-3607-4bda-8f74-2f7b264a9a85,2018-06-27,2026-11-19,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,d5ffb2fb-3607-4bda-8f74-2f7b264a9a85,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,d60133f7-0680-4a8c-8733-c3cf0d4d4846,2026-02-27,2026-09-25,1,[False],False,False,publication
 Parks Canada ,dataset,d602fbd0-0159-414e-9ea5-72c3127340d9,2018-04-12,2024-12-09,1,[True],True,True,primary
 Natural Resources Canada ,dataset,d603d3de-8893-11e0-9d21-6cf049291510,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
@@ -40090,7 +40094,7 @@ Statistics Canada ,dataset,d6a773d0-55c1-4f0c-8000-8ad6114bfb47,2024-11-25,2024-
 Natural Resources Canada ,dataset,d6a88c35-82f2-5779-b78e-62c8e6342040,2016-09-25,2022-02-22,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,d6a9984c-348d-48dd-9a4f-6aaa1034a72a,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Government of Alberta ,dataset,d6a99e55-247c-4578-baea-9fa131fe5666,2022-03-30,2026-03-04,4,"[False, False, False, False]",False,False,fgp
-Statistics Canada ,dataset,d6a9c2a5-a87a-4314-8310-0f1157f3caaf,2020-04-14,2026-10-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,d6a9c2a5-a87a-4314-8310-0f1157f3caaf,2020-04-14,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Crown-Indigenous Relations and Northern Affairs Canada ,info,d6aa264c-911b-4599-afa0-20b003ea98b3,2016-09-23,2022-02-23,4,"[False, False, False, False]",False,False,publication
 Natural Resources Canada ,dataset,d6aae94f-8893-11e0-8646-6cf049291510,2016-09-25,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Government of Alberta ,dataset,d6ab23ad-149f-40de-9b1f-640abd4debde,2023-04-05,2026-05-27,19,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,federated
@@ -40563,7 +40567,7 @@ Natural Resources Canada ,dataset,d8f19df3-cdec-479b-9584-27f3ac12b665,2016-09-2
 Health Canada ,info,d8f1d077-9a73-4ab1-9bd5-af8a02a11d62,2021-09-09,2021-09-09,2,"[False, False]",False,False,publication
 Impact Assessment Agency of Canada ,info,d8f4f2f3-0b64-4d54-8661-6219a0315a47,2022-06-14,2025-08-20,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
 Statistics Canada ,dataset,d8f63081-a0ee-48f9-9fb4-32da0de7e74d,2025-03-21,2025-03-21,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,d8f85d91-7dec-4fd1-8055-483b77225d8b,2016-09-25,2026-11-19,11,"[False, True, True, True, False, False, False, False, False, False, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,d8f85d91-7dec-4fd1-8055-483b77225d8b,2016-09-25,2026-11-20,11,"[False, True, True, True, False, False, False, False, False, False, True]",True,False,primary
 Government of Yukon ,dataset,d8fa4761-83e1-48e5-b069-65201b7d6018,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,d8fa9a38-c4df-442a-8319-9bbcbdc29060,2019-09-20,2026-10-21,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Global Affairs Canada ,info,d8fb12db-0f3a-487f-baad-7ed76911c91a,2024-12-27,2025-10-08,14,"[False, False, False, False, False, False, False, False, False, False, False, False, False, False]",False,False,publication
@@ -42169,7 +42173,7 @@ Public Service Commission of Canada ,info,e0bbbb51-68cc-412f-bd59-f8d287def563,2
 Statistics Canada ,dataset,e0bc0651-4036-4b74-9a86-216dcd58d12f,2023-11-08,2023-11-08,5,"[False, False, False, False, False]",False,False,primary
 Government of Saskatchewan ,dataset,e0bdbb1e-2a9b-415c-f7d0-e79baf38fc03,2023-04-22,2025-10-29,12,"[False, False, False, False, False, False, False, False, False, False, False, False]",False,False,fgp
 Correctional Service of Canada ,info,e0becf41-b281-4c37-9019-d30eee6819d3,2024-09-09,2024-09-09,2,"[False, False]",False,False,publication
-Statistics Canada ,dataset,e0c09e04-fd13-4fc4-8d89-74a96a1cdb52,2018-06-27,2025-11-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,e0c09e04-fd13-4fc4-8d89-74a96a1cdb52,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Government of Yukon ,dataset,e0c2b3aa-39fc-4eb2-ac2c-9d3ca7613de1,2025-09-17,2026-11-04,2,"[False, False]",False,False,federated
 Natural Resources Canada ,dataset,e0c363cf-484a-4ae0-877f-a504b7781c28,2016-09-26,2017-01-30,2,"[False, False]",False,False,geogratis
 Parks Canada ,dataset,e0c54d69-5113-4d8f-8522-30e23dc7ab26,2018-02-09,2024-12-09,2,"[True, True]",True,True,primary
@@ -42183,7 +42187,7 @@ Natural Resources Canada ,dataset,e0cac4f0-8893-11e0-942a-6cf049291510,2016-09-2
 Statistics Canada ,dataset,e0cd9b51-6679-46b4-976d-a92d6b353b20,2022-12-19,2025-12-19,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,e0cf1fde-e7f4-455d-b30a-7d121b43e038,2026-03-12,2026-09-24,2,"[False, False]",False,False,publication
 Government of Yukon ,dataset,e0d0b610-487d-405c-9d78-88d438737a80,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
-Treasury Board of Canada Secretariat ,dataset,e0d1f0bf-699f-437e-805d-4aaa428f96b8,2022-09-22,2026-11-19,5,"[True, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,e0d1f0bf-699f-437e-805d-4aaa428f96b8,2022-09-22,2026-11-20,5,"[True, False, False, False, False]",True,False,primary
 Health Canada ,info,e0d30160-ff74-4e94-9efb-302b3414ec15,2023-03-28,2023-03-28,2,"[False, False]",False,False,publication
 Statistics Canada ,dataset,e0d3d657-de21-4737-93bd-b37b379d2fc1,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Health Canada ,info,e0d41bc2-771e-424f-afc6-a931b08b5e88,2022-10-31,2022-10-31,2,"[False, False]",False,False,publication
@@ -43325,7 +43329,6 @@ Global Affairs Canada ,info,e6487184-40a0-42f4-9bac-7e1aeee1e728,2025-05-14,2025
 Statistics Canada ,dataset,e64a37d5-93df-4b49-b6f6-7bcc13962f9f,2016-09-26,2022-03-09,1,[False],False,False,primary
 Public Health Agency of Canada ,info,e64b0af7-441d-4ecd-8457-4b49cf546c7a,2021-06-30,2021-09-27,2,"[False, False]",False,False,publication
 Natural Resources Canada ,dataset,e64beb1e-8893-11e0-aade-6cf049291510,2016-09-26,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
-Environment and Climate Change Canada ,dataset,e64c05a8-5000-4266-beb4-2c8915f38328,2024-10-15,2025-01-29,2,"[False, False]",False,False,primary
 Global Affairs Canada ,info,e64d83df-fef3-4da7-8ade-4bdcd79559a3,2026-04-08,2026-04-08,2,"[False, False]",False,False,publication
 Government of Alberta ,dataset,e65187cf-065f-476c-9e09-3698f78c229f,2022-03-30,2026-03-04,6,"[False, False, False, False, False, False]",False,False,fgp
 Natural Resources Canada ,dataset,e6523197-0bbd-5b9e-b716-c59ad6086115,2016-09-26,2022-02-22,2,"[False, False]",False,False,geogratis
@@ -43482,7 +43485,7 @@ Natural Resources Canada ,dataset,e71d1dcf-8893-11e0-bdba-6cf049291510,2016-09-2
 Government of Alberta ,dataset,e71d45e4-84ad-49b9-a8ec-d46e430dd557,2022-03-29,2026-04-17,4,"[False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,e71dfc2e-b395-4884-92d0-2cc2c55c71c9,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,e71ed223-3de3-41b6-8f2c-7554f81e18f4,2016-09-26,2022-03-09,1,[False],False,False,primary
-Statistics Canada ,dataset,e720b954-a520-4ada-8b27-6286bed48132,2018-06-27,2025-11-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,e720b954-a520-4ada-8b27-6286bed48132,2018-06-27,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,e721eb42-4bdc-54f5-ab97-c2ebcd8e680d,2016-09-26,2022-02-22,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,e7231072-432c-48ae-983b-af5f2dddff50,2018-06-27,2026-09-23,5,"[False, False, False, False, False]",False,False,primary
 Statistics Canada ,dataset,e7234973-5a83-4f3e-9cdc-91e05ccb0e32,2023-03-29,2023-03-29,5,"[False, False, False, False, False]",False,False,primary
@@ -44037,7 +44040,7 @@ Statistics Canada ,dataset,e9dba871-20d3-4aba-8818-0dacb9232a3e,2018-06-27,2023-
 Statistics Canada ,dataset,e9ddd8d5-ceac-44ed-8bde-0340a29f6ed7,2016-09-26,2022-03-09,1,[False],False,False,primary
 Transportation Safety Board of Canada ,info,e9de11e5-e7d7-4c9c-a72e-807f7dcba486,2019-11-06,2026-03-07,4,"[False, False, False, False]",False,False,publication
 Agriculture and Agri-Food Canada ,dataset,e9dee957-e04d-46fb-b7e4-701739736173,2016-09-26,2025-07-21,7,"[False, False, False, False, False, False, False]",False,False,fgp
-Statistics Canada ,dataset,e9def811-63a4-4220-9a38-bc86c03b2d2b,2020-04-14,2026-10-20,5,"[False, False, False, False, False]",False,False,primary
+Statistics Canada ,dataset,e9def811-63a4-4220-9a38-bc86c03b2d2b,2020-04-14,2026-11-20,5,"[False, False, False, False, False]",False,False,primary
 Environment and Climate Change Canada ,dataset,e9df3ccc-4434-4024-a3f7-ab58e7979ea2,2019-03-04,2023-02-23,5,"[False, False, False, False, False]",False,False,fgp
 Government and Municipalities of Québec ,dataset,e9e2429f-7f23-41f2-bd0e-e41a6e349aa5,2025-07-16,2026-11-18,4,"[False, False, False, False]",False,False,fgp
 Government of Northwest Territories ,dataset,e9e34afd-7bb6-c999-b248-90771f74681a,2023-03-20,2026-10-28,1,[False],False,False,fgp
@@ -44684,7 +44687,7 @@ Global Affairs Canada ,info,ecccd850-fd12-4f7c-963b-8be70209b9cb,2026-09-08,2026
 Statistics Canada ,dataset,eccd8a96-0c90-4c1c-ab16-bf41705f7829,2018-06-27,2026-05-25,5,"[False, False, False, False, False]",False,False,primary
 Communications Security Establishment Canada ,info,ecd0006b-4681-44c6-8f7d-7b138d4dda17,2022-04-13,2023-03-01,2,"[False, False]",False,False,publication
 Department of Justice Canada ,info,ecd04d83-aee3-4107-8fb6-5919527031f4,2023-01-27,2023-05-17,4,"[False, False, False, False]",False,False,publication
-Treasury Board of Canada Secretariat ,dataset,ecd1a913-47da-47fc-8f96-2432be420986,2020-01-12,2026-11-19,6,"[False, False, False, False, True, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,ecd1a913-47da-47fc-8f96-2432be420986,2020-01-12,2026-11-20,6,"[False, False, False, False, True, True]",True,False,primary
 Impact Assessment Agency of Canada ,info,ecd245f4-6d4d-4660-b478-7301fbbbfcb8,2025-06-06,2025-06-06,2,"[False, False]",False,False,parliament_report
 Government and Municipalities of Québec ,dataset,ecd2af68-731c-4896-be5f-55e58adaad0e,2020-09-11,2026-05-27,4,"[False, False, False, False]",False,False,federated
 Statistics Canada ,dataset,ecd47463-2611-4943-84c6-83cf3751b670,2016-09-26,2022-03-09,1,[False],False,False,primary
@@ -44781,7 +44784,7 @@ Statistics Canada ,dataset,ed4afd41-a00d-499e-b7d9-9f233bb5c10f,2023-10-13,2023-
 Natural Resources Canada ,dataset,ed4bc20f-8893-11e0-9d70-6cf049291510,2016-09-26,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Statistics Canada ,dataset,ed4c119e-d39e-4cd4-94c9-fda94b038f17,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,ed4cfb1c-fe2f-4290-98d4-abc02d1fd58b,2016-09-26,2017-01-30,2,"[False, False]",False,False,geogratis
-"Innovation, Science and Economic Development Canada ",dataset,ed4d48f3-750f-4eeb-93f9-cb62be138264,2019-12-16,2025-07-24,1,[False],False,False,primary
+"Innovation, Science and Economic Development Canada ",dataset,ed4d48f3-750f-4eeb-93f9-cb62be138264,2019-12-16,2026-11-19,1,[False],False,False,primary
 Parks Canada ,dataset,ed4e38c9-f140-4b50-b55c-6c75eeeb48b7,2018-09-25,2024-12-09,3,"[True, True, False]",True,False,primary
 Government of Alberta ,dataset,ed513825-96d0-4ce0-9312-24b4b9730ff9,2018-06-27,2026-04-17,2,"[False, False]",False,False,federated
 Crown-Indigenous Relations and Northern Affairs Canada ,info,ed517024-f532-4692-aaa5-e3c501c2cbd6,2023-11-20,2024-11-21,2,"[False, False]",False,False,transition
@@ -45048,7 +45051,7 @@ Statistics Canada ,dataset,ee9542f3-39c7-4300-b505-29da50f9af9d,2023-11-08,2023-
 Statistics Canada ,dataset,ee96b614-36e2-413a-8bfc-e205828e3897,2017-08-04,2022-02-23,5,"[False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,ee96dfb0-8893-11e0-aee8-6cf049291510,2016-09-26,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Public Services and Procurement Canada ,dataset,ee980903-5f14-4667-aa29-5ef3761fb591,2024-02-21,2026-07-24,4,"[False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,ee9bd7e8-90a5-45db-9287-85c8cf3589b6,2019-06-24,2026-11-19,6,"[False, False, False, False, True, True]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,ee9bd7e8-90a5-45db-9287-85c8cf3589b6,2019-06-24,2026-11-20,6,"[False, False, False, False, True, True]",True,False,primary
 Government of Northwest Territories ,dataset,ee9ce40e-1ae4-2db0-354c-cf98289a563b,2023-04-05,2026-11-18,1,[False],False,False,federated
 Environment and Climate Change Canada ,dataset,ee9ee66d-dda9-4a49-9a41-b97ebaae137a,2019-03-22,2019-03-22,3,"[False, False, False]",False,False,primary
 Government of British Columbia ,dataset,eea00d0d-a3a6-4a32-b5cc-372359546ca9,2020-06-05,2026-01-28,5,"[False, False, False, False, False]",False,False,fgp
@@ -45592,7 +45595,7 @@ Environment and Climate Change Canada ,dataset,f12e387b-5c72-4358-9dc1-c58a1121e
 Government of Nova Scotia ,dataset,f12edf82-54a5-c0c7-6203-d86824961f3e,2022-05-03,2026-04-17,10,"[False, False, False, False, False, False, False, False, False, False]",False,False,federated
 Natural Resources Canada ,dataset,f12f30ac-491c-588a-9f10-0e3ef5940414,2016-09-26,2022-03-14,2,"[False, False]",False,False,geogratis
 Statistics Canada ,dataset,f130fd17-3382-4932-ae60-fb167d62dc58,2018-06-27,2023-01-17,5,"[False, False, False, False, False]",False,False,primary
-Treasury Board of Canada Secretariat ,dataset,f132b8a6-abad-43d6-b6ad-2301e778b1b6,2017-03-02,2026-11-19,6,"[True, True, False, False, False, False]",True,False,primary
+Treasury Board of Canada Secretariat ,dataset,f132b8a6-abad-43d6-b6ad-2301e778b1b6,2017-03-02,2026-11-20,6,"[True, True, False, False, False, False]",True,False,primary
 Natural Resources Canada ,dataset,f133d1ae-8893-11e0-8082-6cf049291510,2016-09-26,2022-03-14,4,"[False, False, False, False]",False,False,geogratis
 Natural Resources Canada ,dataset,f134038e-ba9f-5815-bebd-70f74bbda004,2016-09-26,2022-02-23,2,"[False, False]",False,False,geogratis
 Government and Municipalities of Québec ,dataset,f1341a6b-3741-47d8-9dfd-a8e68e0f88b5,2023-10-05,2026-11-18,5,"[False, False, False, False, False]",False,False,fgp
@@ -47648,6 +47651,7 @@ Natural Resources Canada ,dataset,fc127e0d-cdc8-4440-ac5a-78609b6253fd,2016-09-2
 Environment and Climate Change Canada ,dataset,fc12983d-b8b2-43a1-8c4f-183b2768c88d,2018-01-23,2022-02-23,6,"[False, False, False, False, False, False]",False,False,primary
 Natural Resources Canada ,dataset,fc165adb-a6fb-5e95-aeb0-f345012b5c9a,2016-09-26,2022-03-14,2,"[False, False]",False,False,geogratis
 Global Affairs Canada ,info,fc1c1cf1-e1a7-42ec-a558-783a62239124,2022-09-29,2025-11-24,2,"[False, False]",False,False,publication
+Environment and Climate Change Canada ,dataset,fc1c477b-8270-47e7-a5e5-cbb61192a903,2024-03-12,2026-11-19,2,"[False, False]",False,False,fgp
 Government of Yukon ,dataset,fc1d09bf-003b-49a9-9bbf-54c18151cbf7,2025-09-17,2026-08-26,3,"[False, False, False]",False,False,federated
 Statistics Canada ,dataset,fc1e9247-12d3-41c4-93a5-682bd2d3dde4,2018-06-27,2026-08-27,5,"[False, False, False, False, False]",False,False,primary
 Global Affairs Canada ,info,fc1eb5a1-7811-4d38-aaf3-96d354507c9e,2025-12-15,2026-09-23,6,"[False, False, False, False, False, False]",False,False,publication
