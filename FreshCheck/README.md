@@ -44,22 +44,22 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-11-23T07:28:05+00:00`
+Generated at: `2026-11-23T23:50:12+00:00`
 As of date: `2026-11-23`
-Packages assessed: `48350`
-Resources assessed: `244692`
+Packages assessed: `48359`
+Resources assessed: `244764`
 
 ### Split JSON Outputs
 | File | Group | Jurisdiction values | Packages | Resources |
 | --- | --- | --- | --- | --- |
-| freshness_tree_federal.json | Federal | federal | 36303 | 167086 |
+| freshness_tree_federal.json | Federal | federal | 36312 | 167158 |
 | freshness_tree_provincial.json | Provincial | provincial | 11761 | 75949 |
 | freshness_tree_municipal_user.json | Municipal and user | municipal, user | 286 | 1657 |
 
 ### Package Jurisdictions
 ```mermaid
 pie showData title Package jurisdiction
-    "federal": 36303
+    "federal": 36312
     "provincial": 11761
     "municipal": 286
 ```
@@ -67,19 +67,19 @@ pie showData title Package jurisdiction
 ### Package Freshness Status
 ```mermaid
 pie showData title Package freshness status
-    "unknown": 38310
-    "late": 5091
-    "current": 4716
-    "due_soon": 233
+    "unknown": 38319
+    "late": 5082
+    "current": 4727
+    "due_soon": 231
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
-    "unknown": 174031
-    "late": 38622
-    "current": 30478
-    "due_soon": 1561
+    "unknown": 174103
+    "late": 38574
+    "current": 30533
+    "due_soon": 1554
 ```
 
 ### Package Update Timing
@@ -89,11 +89,11 @@ pie showData title Package timing against expected update date
     "Late 91-365 days": 1058
     "Late 31-90 days": 270
     "Late 8-30 days": 95
-    "Late 1-7 days": 75
-    "Due in 0-7 days": 233
-    "Due in 8-30 days": 523
-    "Current > 30 days": 4193
-    "Unknown": 38310
+    "Late 1-7 days": 66
+    "Due in 0-7 days": 231
+    "Due in 8-30 days": 530
+    "Current > 30 days": 4197
+    "Unknown": 38319
 ```
 
 ### Departments Keeping Data Current
