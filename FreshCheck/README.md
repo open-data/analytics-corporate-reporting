@@ -44,8 +44,8 @@ rm -rf FreshCheck/smoke_output FreshCheck/smoke_README.md
 ```
 
 <!-- FRESHCHECK_REPORT_START -->
-Generated at: `2026-11-27T21:11:23+00:00`
-As of date: `2026-11-27`
+Generated at: `2026-11-28T07:40:31+00:00`
+As of date: `2026-11-28`
 Packages assessed: `48363`
 Resources assessed: `244820`
 
@@ -68,31 +68,31 @@ pie showData title Package jurisdiction
 ```mermaid
 pie showData title Package freshness status
     "unknown": 38312
-    "late": 5090
-    "current": 4775
-    "due_soon": 186
+    "late": 5141
+    "current": 4761
+    "due_soon": 149
 ```
 
 ### Resource Freshness Status
 ```mermaid
 pie showData title Resource freshness status
     "unknown": 174032
-    "late": 38534
-    "current": 30908
-    "due_soon": 1346
+    "late": 38861
+    "current": 30882
+    "due_soon": 1045
 ```
 
 ### Package Update Timing
 ```mermaid
 pie showData title Package timing against expected update date
     "Late > 1 year": 3599
-    "Late 91-365 days": 1076
-    "Late 31-90 days": 247
-    "Late 8-30 days": 96
-    "Late 1-7 days": 72
-    "Due in 0-7 days": 186
-    "Due in 8-30 days": 539
-    "Current > 30 days": 4236
+    "Late 91-365 days": 1077
+    "Late 31-90 days": 246
+    "Late 8-30 days": 102
+    "Late 1-7 days": 117
+    "Due in 0-7 days": 149
+    "Due in 8-30 days": 534
+    "Current > 30 days": 4227
     "Unknown": 38312
 ```
 
@@ -100,9 +100,9 @@ pie showData title Package timing against expected update date
 ```mermaid
 xychart-beta
     title "Departments with highest current package share"
-    x-axis ["chrc-ccdp", "fintrac-canafe", "apa", "csps-efpc", "pei-ipe", "pwgsc-tpsgc", "tf", "ns-ne", "ic", "on", "ccohs-cchst", "cmc-mcc", "bc-cb", "ab", "cmhc-schl"]
+    x-axis ["chrc-ccdp", "fintrac-canafe", "apa", "csps-efpc", "pei-ipe", "tf", "pwgsc-tpsgc", "ns-ne", "ic", "on", "ccohs-cchst", "cmc-mcc", "bc-cb", "ab", "cmhc-schl"]
     y-axis "Current packages (%)" 0 --> 100
-    bar [78, 75, 67, 60, 58, 50, 50, 44, 41, 41, 40, 36, 35, 27, 27]
+    bar [78, 75, 67, 60, 58, 50, 48, 44, 41, 41, 40, 36, 35, 27, 27]
 ```
 
 ### Skipped Jurisdictions
